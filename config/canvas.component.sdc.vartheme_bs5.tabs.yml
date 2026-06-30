@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - vartheme_bs5_horizonaid
+label: Tabs
+id: sdc.vartheme_bs5_horizonaid.tabs
+source: sdc
+source_local_id: 'vartheme_bs5_horizonaid:tabs'
+provider: vartheme_bs5_horizonaid
+active_version: a672799ea76aabd6
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        shape:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: null
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions: {  }

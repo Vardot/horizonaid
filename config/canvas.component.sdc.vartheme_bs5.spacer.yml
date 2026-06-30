@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - vartheme_bs5_horizonaid
+label: Spacer
+id: sdc.vartheme_bs5_horizonaid.spacer
+source: sdc
+source_local_id: 'vartheme_bs5_horizonaid:spacer'
+provider: vartheme_bs5_horizonaid
+active_version: 409081be7dd0a59b
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        size:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: null
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions: {  }

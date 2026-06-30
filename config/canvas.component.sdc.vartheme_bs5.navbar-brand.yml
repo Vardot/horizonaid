@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - vartheme_bs5_horizonaid
+label: 'Navbar brand'
+id: sdc.vartheme_bs5_horizonaid.navbar-brand
+source: sdc
+source_local_id: 'vartheme_bs5_horizonaid:navbar-brand'
+provider: vartheme_bs5_horizonaid
+active_version: 6327ef89b7918360
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        navbar_brand_utility_classes:
+          required: false
+          field_type: string
+          cardinality: -1
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }

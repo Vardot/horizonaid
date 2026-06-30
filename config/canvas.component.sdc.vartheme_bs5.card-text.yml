@@ -1,0 +1,101 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - options
+  theme:
+    - vartheme_bs5_horizonaid
+label: 'Text Card'
+id: sdc.vartheme_bs5_horizonaid.card-text
+source: sdc
+source_local_id: 'vartheme_bs5_horizonaid:card-text'
+provider: vartheme_bs5_horizonaid
+active_version: 1b5e59a0921b3d9c
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        card_border:
+          required: false
+          field_type: boolean
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+        background_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: null
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        padded:
+          required: false
+          field_type: boolean
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+        box_shadow:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: null
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        corner_style:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: null
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        equal_height:
+          required: false
+          field_type: boolean
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+        stretched_link:
+          required: false
+          field_type: boolean
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+        link_url:
+          required: false
+          field_type: link
+          field_storage_settings: null
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value: null
+          expression: ℹ︎link␟url
+        link_target:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: null
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: 'Card content'
+          description: 'Drag & drop content slot for text/buttons/etc.'

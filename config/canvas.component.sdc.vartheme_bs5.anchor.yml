@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - vartheme_bs5_horizonaid
+label: Anchor
+id: sdc.vartheme_bs5_horizonaid.anchor
+source: sdc
+source_local_id: 'vartheme_bs5_horizonaid:anchor'
+provider: vartheme_bs5_horizonaid
+active_version: 0e83689ad8382f6c
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        id:
+          required: true
+          field_type: string
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: string_textfield
+          default_value:
+            -
+              value: anchor-id
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }

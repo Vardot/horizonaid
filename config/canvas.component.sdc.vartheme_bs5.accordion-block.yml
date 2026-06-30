@@ -1,0 +1,96 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - vartheme_bs5_horizonaid
+label: Accordion
+id: sdc.vartheme_bs5_horizonaid.accordion-block
+source: sdc
+source_local_id: 'vartheme_bs5_horizonaid:accordion-block'
+provider: vartheme_bs5_horizonaid
+active_version: d15857c73d3eb93c
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        title:
+          required: false
+          field_type: string
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: string_textfield
+          default_value:
+            -
+              value: 'Section title'
+          expression: ℹ︎string␟value
+        heading_level:
+          required: false
+          field_type: list_integer
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: null
+          field_widget: options_select
+          default_value:
+            -
+              value: 3
+          expression: ℹ︎list_integer␟value
+        open_by_default:
+          required: false
+          field_type: boolean
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+        parent_id:
+          required: false
+          field_type: string
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        item_id:
+          required: false
+          field_type: string
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        always_open:
+          required: false
+          field_type: boolean
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+        extra_classes:
+          required: false
+          field_type: string
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: null
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+    fallback_metadata:
+      slot_definitions:
+        accordion_content:
+          title: 'Accordion content'
+          description: 'Content in this slot will be hidden when the accordion is collapsed.'
+          examples:
+            - '<p>Accordion body content…</p>'

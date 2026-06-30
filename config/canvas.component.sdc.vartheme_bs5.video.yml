@@ -1,0 +1,64 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.video.field_media_video_file
+    - media.type.video
+  module:
+    - file
+    - media
+    - media_library
+    - options
+  theme:
+    - vartheme_bs5_horizonaid
+label: Video
+id: sdc.vartheme_bs5_horizonaid.video
+source: sdc
+source_local_id: 'vartheme_bs5_horizonaid:video'
+provider: vartheme_bs5_horizonaid
+active_version: 9e5580fde4a899b0
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        video_file:
+          required: false
+          field_type: entity_reference
+          field_storage_settings:
+            target_type: media
+          field_instance_settings:
+            handler: 'default:media'
+            handler_settings:
+              target_bundles:
+                video: video
+          field_widget: media_library_widget
+          default_value: {  }
+          expression: 'ℹ︎entity_reference␟entity␜␜entity:media:video␝field_media_video_file␞␟{src↝entity␜␜entity:file␝uri␞␟url}'
+        ratio:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: null
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        loading:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: null
+          field_widget: options_select
+          default_value: null
+          expression: ℹ︎list_string␟value
+        extra_classes:
+          required: false
+          field_type: string
+          field_storage_settings: null
+          field_instance_settings: null
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+    fallback_metadata:
+      slot_definitions: {  }
