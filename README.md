@@ -1,4 +1,4 @@
-[![Varbase](https://raw.githubusercontent.com/Vardot/varbase/11.0.x/images/varbase-logo.png)](https://www.drupal.org/project/varbase)
+<img src="logo.png" alt="Horizon Aid" width="96">
 
 # Horizon Aid
 [![pipeline status](https://git.drupalcode.org/project/horizonaid/badges/1.0.x/pipeline.svg)](https://git.drupalcode.org/project/horizonaid/-/pipelines)
