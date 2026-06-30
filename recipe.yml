@@ -38,6 +38,31 @@ config:
     system.theme:
       simpleConfigUpdate:
         default: vartheme_bs5_horizonaid
+    # Override only the Varbase admin/navigation logo + favicon paths with the
+    # site template icon; the rest of the varbase_*_base recipe config is kept.
+    gin.settings:
+      simpleConfigUpdate:
+        logo:
+          use_default: false
+          path: themes/contrib/vartheme_bs5_horizonaid/logo-icon.svg
+        favicon:
+          use_default: false
+          mimetype: image/vnd.microsoft.icon
+          path: themes/contrib/vartheme_bs5_horizonaid/favicon.ico
+    gin_login.settings:
+      simpleConfigUpdate:
+        logo:
+          use_default: false
+          path: themes/contrib/vartheme_bs5_horizonaid/logo.svg
+    navigation.settings:
+      simpleConfigUpdate:
+        logo:
+          provider: custom
+          path: themes/contrib/vartheme_bs5_horizonaid/logo-icon.svg
+          max:
+            filesize: 1048576
+            height: 40
+            width: 40
     package_manager.settings:
       simpleConfigUpdate:
         additional_trusted_composer_plugins:
