@@ -956,117 +956,6 @@ default:
       level: 2
       target: _self
   - parent_uuid: 6b18bf4c-9667-4fdb-a01e-084c51838498
-    slot: col_1
-    uuid: f42b7988-1281-4a47-a2cd-6b712df3760b
-    component_id: sdc.vartheme_bs5_horizonaid.card-events
-    inputs:
-      taxonomy_label: Webinar
-      date_start: 12 Aug
-      date_end: 30 Aug
-      time: 11:00 - 2:30 CET
-      card_border: false
-      box_shadow: shadow-none
-      corner_style: rounded-4
-      equal_height: false
-      stretched_link: true
-      link_target: default
-      link_url:
-        uri: internal:/event-page
-        options: {}
-  - parent_uuid: f42b7988-1281-4a47-a2cd-6b712df3760b
-    slot: content
-    uuid: d702ced1-9992-433e-b671-ad0b81a6aebc
-    component_id: sdc.vartheme_bs5_horizonaid.heading
-    inputs:
-      heading_text: Digital Security for Advocacy Groups
-      level: 3
-      target: _self
-  - parent_uuid: f42b7988-1281-4a47-a2cd-6b712df3760b
-    slot: content
-    uuid: 66280579-76f9-4611-833e-2f25e4b9d18e
-    component_id: sdc.vartheme_bs5_horizonaid.text
-    inputs:
-      text:
-        value: <p>Learn how to protect field communications, secure donor data, and
-          defend your organisation against cyber threats</p>
-        format: canvas_html_block
-      text_size: none
-      text_color: text-body
-  - parent_uuid: 6b18bf4c-9667-4fdb-a01e-084c51838498
-    slot: col_2
-    uuid: bb755178-68b0-4a0f-b451-3fbc65d81cb7
-    component_id: sdc.vartheme_bs5_horizonaid.card-events
-    inputs:
-      taxonomy_label: Webinar
-      date_start: 3 Aug
-      date_end: 19 Aug
-      time: 11:00 - 2:30 CET
-      card_border: false
-      box_shadow: shadow-none
-      corner_style: rounded-4
-      equal_height: false
-      stretched_link: true
-      link_target: default
-      link_url:
-        uri: internal:/event-page
-        options: {}
-  - parent_uuid: bb755178-68b0-4a0f-b451-3fbc65d81cb7
-    slot: content
-    uuid: b604bb5f-dd37-4662-b93d-dcc1f3fa9547
-    component_id: sdc.vartheme_bs5_horizonaid.heading
-    inputs:
-      heading_text: Digital Security for Advocacy Groups
-      level: 3
-      target: _self
-  - parent_uuid: bb755178-68b0-4a0f-b451-3fbc65d81cb7
-    slot: content
-    uuid: 0a0592e3-9df8-4f05-ba46-6792aa249431
-    component_id: sdc.vartheme_bs5_horizonaid.text
-    inputs:
-      text:
-        value: <p>Learn how to protect field communications, secure donor data, and
-          defend your organisation against cyber threats</p>
-        format: canvas_html_block
-      text_size: none
-      text_color: text-body
-  - parent_uuid: 6b18bf4c-9667-4fdb-a01e-084c51838498
-    slot: col_3
-    uuid: e3457787-4b03-422b-b981-4a6f280a7215
-    component_id: sdc.vartheme_bs5_horizonaid.card-events
-    inputs:
-      taxonomy_label: Webinar
-      date_start: 4 Sep
-      date_end: 27 Sep
-      time: 11:00 - 2:30 CET
-      card_border: false
-      box_shadow: shadow-none
-      corner_style: rounded-4
-      equal_height: false
-      stretched_link: true
-      link_target: default
-      link_url:
-        uri: internal:/event-page
-        options: {}
-  - parent_uuid: e3457787-4b03-422b-b981-4a6f280a7215
-    slot: content
-    uuid: ec2f993f-fb28-472f-8011-c06c6b1e3103
-    component_id: sdc.vartheme_bs5_horizonaid.heading
-    inputs:
-      heading_text: Digital Security for Advocacy Groups
-      level: 3
-      target: _self
-  - parent_uuid: e3457787-4b03-422b-b981-4a6f280a7215
-    slot: content
-    uuid: 0542471f-6327-44b0-b813-417431022f01
-    component_id: sdc.vartheme_bs5_horizonaid.text
-    inputs:
-      text:
-        value: <p>Learn how to protect field communications, secure donor data, and
-          defend your organisation against cyber threats</p>
-        format: canvas_html_block
-      text_size: none
-      text_color: text-body
-  - parent_uuid: 6b18bf4c-9667-4fdb-a01e-084c51838498
     slot: footer_slot
     uuid: 9f88d5d8-ee32-4a2e-8a05-c0fab6bfd4e2
     component_id: sdc.vartheme_bs5_horizonaid.button
@@ -1094,6 +983,17 @@ default:
       label_display: '0'
       views_label: ''
       items_per_page: '4'
+      exposed: {}
+  - parent_uuid: 6b18bf4c-9667-4fdb-a01e-084c51838498
+    slot: col_1
+    uuid: e950a489-9a2f-4dcc-a1ea-8763b1772150
+    component_id: block.views_block.events-block_1
+    component_version: 9e5fa8961a428d5e
+    inputs:
+      label: Upcoming events
+      label_display: '0'
+      views_label: ''
+      items_per_page: 3
       exposed: {}
   path:
   - alias: /home

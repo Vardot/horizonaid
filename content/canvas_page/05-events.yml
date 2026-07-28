@@ -8,143 +8,127 @@ _meta:
     b37f3dfb-a751-45a9-b078-157b158f6d2f: media
 default:
   revision_user:
-    -
-      target_id: 1
+  - target_id: 1
   revision_log:
-    -
-      value: 'Updated the Components field'
+  - value: Updated the Components field
   status:
-    -
-      value: true
+  - value: true
   owner:
-    -
-      target_id: 1
+  - target_id: 1
   title:
-    -
-      value: Events
+  - value: Events
   components:
-    -
-      uuid: 4b2da0b4-eced-47ac-b52b-867ba55b9348
-      component_id: sdc.vartheme_bs5_horizonaid.media-banner
-      inputs:
-        media:
-          CANVAS_ENTITY_REFERENCE:
-            target_uuid: b37f3dfb-a751-45a9-b078-157b158f6d2f
-            target_type: media
-        image_radius: rounded-hero
-        content_bg: bg-light
-        content_color: auto
-    -
-      parent_uuid: 4b2da0b4-eced-47ac-b52b-867ba55b9348
-      slot: content
-      uuid: 6bbc46e8-7279-4066-9833-36f9f6ea1d9c
-      component_id: sdc.vartheme_bs5_horizonaid.heading
-      inputs:
-        heading_text: Events
-        level: 1
-        target: _self
-    -
-      parent_uuid: 4b2da0b4-eced-47ac-b52b-867ba55b9348
-      slot: content
-      uuid: 771521d4-5970-4b49-a1a0-1aaacb3d4775
-      component_id: sdc.vartheme_bs5_horizonaid.text
-      inputs:
-        text:
-          value: '<p>Learn more about what we do here at Horizon Aid.</p>'
-          format: canvas_html_block
-        text_size: none
-        text_color: text-body
-    -
-      uuid: bbd53bdb-6169-40aa-ba36-66ddb03f618d
-      component_id: sdc.vartheme_bs5_horizonaid.section
-      inputs:
-        bg_edge2edge: false
-        container_type: none
-        background_color: none
-        text_color: auto
-        background_overlay: none
-        columns: '100'
-        gutter: 'gx-3 gy-3'
-        padding_block_start: pt-5
-        padding_block_end: pb-5
-        padding_inline_start: ps-0
-        padding_inline_end: pe-0
-        margin_block_start: mt-5
-        margin_block_end: mb-5
-        margin_inline_start: ms-0
-        margin_inline_end: me-0
-        shadow: none
-        radius: none
-        border: none
-        border_color: none
-        border_width: none
-        vertical_alignment: align-items-start
-        horizontal_alignment: text-start
-        section_header: true
-        section_footer: false
-        aos_animation: none
-        aos_duration: default
-        aos_delay: '0'
-        aos_once: true
-    -
-      parent_uuid: bbd53bdb-6169-40aa-ba36-66ddb03f618d
-      slot: header_slot
-      uuid: 8e305d17-90ed-4ec9-94c2-42269f6a0e20
-      component_id: sdc.vartheme_bs5_horizonaid.heading
-      inputs:
-        heading_text: 'Upcoming Events'
-        level: 2
-        target: _self
-    -
-      parent_uuid: bbd53bdb-6169-40aa-ba36-66ddb03f618d
-      slot: header_slot
-      uuid: b2109562-886c-431a-b2a2-b7f1e62c0955
-      component_id: sdc.vartheme_bs5_horizonaid.spacer
-      inputs:
-        size: py-3
-    -
-      parent_uuid: bbd53bdb-6169-40aa-ba36-66ddb03f618d
-      slot: header_slot
-      uuid: b34e5e69-25bb-420e-8a9a-e520349e944d
-      component_id: sdc.vartheme_bs5_horizonaid.card-text
-      inputs:
-        card_border: false
-        background_color: bg-secondary-subtle
-        padded: true
-        box_shadow: shadow-none
-        corner_style: rounded-4
-        equal_height: false
-        stretched_link: false
-        link_target: default
-        icon_image: null
-        icon_alignment: start
-    -
-      parent_uuid: b34e5e69-25bb-420e-8a9a-e520349e944d
-      slot: content
-      uuid: ecd5c71b-66ea-4312-b87a-a9751a209e4b
-      component_id: block.views_exposed_filter_block.blog-all
-      inputs:
-        label: 'Exposed form: blog-all'
-        label_display: '0'
-        views_label: ''
-    -
-      parent_uuid: bbd53bdb-6169-40aa-ba36-66ddb03f618d
-      slot: col_1
-      uuid: 2639b546-256d-4b9f-83b4-05341fcb0044
-      component_id: block.views_block.blog-all
-      inputs:
-        label: 'Blog: All blog posts'
-        label_display: '0'
-        views_label: ''
-        items_per_page: 9
-        exposed: {  }
+  - uuid: 4b2da0b4-eced-47ac-b52b-867ba55b9348
+    component_id: sdc.vartheme_bs5_horizonaid.media-banner
+    inputs:
+      media:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: b37f3dfb-a751-45a9-b078-157b158f6d2f
+          target_type: media
+      image_radius: rounded-hero
+      content_bg: bg-light
+      content_color: auto
+  - parent_uuid: 4b2da0b4-eced-47ac-b52b-867ba55b9348
+    slot: content
+    uuid: 6bbc46e8-7279-4066-9833-36f9f6ea1d9c
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    inputs:
+      heading_text: Events
+      level: 1
+      target: _self
+  - parent_uuid: 4b2da0b4-eced-47ac-b52b-867ba55b9348
+    slot: content
+    uuid: 771521d4-5970-4b49-a1a0-1aaacb3d4775
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    inputs:
+      text:
+        value: <p>Learn more about what we do here at Horizon Aid.</p>
+        format: canvas_html_block
+      text_size: none
+      text_color: text-body
+  - uuid: bbd53bdb-6169-40aa-ba36-66ddb03f618d
+    component_id: sdc.vartheme_bs5_horizonaid.section
+    inputs:
+      bg_edge2edge: false
+      container_type: none
+      background_color: none
+      text_color: auto
+      background_overlay: none
+      columns: '100'
+      gutter: gx-3 gy-3
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      padding_inline_start: ps-0
+      padding_inline_end: pe-0
+      margin_block_start: mt-5
+      margin_block_end: mb-5
+      margin_inline_start: ms-0
+      margin_inline_end: me-0
+      shadow: none
+      radius: none
+      border: none
+      border_color: none
+      border_width: none
+      vertical_alignment: align-items-start
+      horizontal_alignment: text-start
+      section_header: true
+      section_footer: false
+      aos_animation: none
+      aos_duration: default
+      aos_delay: '0'
+      aos_once: true
+  - parent_uuid: bbd53bdb-6169-40aa-ba36-66ddb03f618d
+    slot: header_slot
+    uuid: 8e305d17-90ed-4ec9-94c2-42269f6a0e20
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    inputs:
+      heading_text: Upcoming Events
+      level: 2
+      target: _self
+  - parent_uuid: bbd53bdb-6169-40aa-ba36-66ddb03f618d
+    slot: header_slot
+    uuid: b2109562-886c-431a-b2a2-b7f1e62c0955
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    inputs:
+      size: py-3
+  - parent_uuid: bbd53bdb-6169-40aa-ba36-66ddb03f618d
+    slot: header_slot
+    uuid: b34e5e69-25bb-420e-8a9a-e520349e944d
+    component_id: sdc.vartheme_bs5_horizonaid.card-text
+    inputs:
+      card_border: false
+      background_color: bg-secondary-subtle
+      padded: true
+      box_shadow: shadow-none
+      corner_style: rounded-4
+      equal_height: false
+      stretched_link: false
+      link_target: default
+      icon_image: null
+      icon_alignment: start
+  - parent_uuid: b34e5e69-25bb-420e-8a9a-e520349e944d
+    slot: content
+    uuid: ecd5c71b-66ea-4312-b87a-a9751a209e4b
+    component_id: block.views_exposed_filter_block.events-block_1
+    inputs:
+      label: 'Exposed form: events-block_1'
+      label_display: '0'
+      views_label: ''
+  - parent_uuid: bbd53bdb-6169-40aa-ba36-66ddb03f618d
+    slot: col_1
+    uuid: 2639b546-256d-4b9f-83b4-05341fcb0044
+    component_id: block.views_block.events-block_1
+    inputs:
+      label: Upcoming events
+      label_display: '0'
+      views_label: ''
+      items_per_page: 12
+      exposed: {}
   path:
-    -
-      alias: /events
-      langcode: en
+  - alias: /events
+    langcode: en
   revision_translation_affected:
-    -
-      value: true
+  - value: true
   metatags:
-    -
-      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'
+  - value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title]
+      | [site:name]"}'

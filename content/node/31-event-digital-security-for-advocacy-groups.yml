@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9f1664a2-968b-428c-ab5d-d780394a0c7c
+  bundle: event
+  default_langcode: en
+  depends:
+    896a80bb-51f9-4335-ac9f-b2b504e94e72: taxonomy_term
+    ed3320e8-fe39-471f-b6c2-57fdcfac8ab8: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Digital security for advocacy groups
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/digital-security-for-advocacy-groups
+    langcode: en
+  field_description:
+  - value: Learn how to protect field communications, secure donor data, and defend
+      your organisation against cyber threats.
+  field_location:
+  - value: Online
+  field_event_categories:
+  - entity: 896a80bb-51f9-4335-ac9f-b2b504e94e72
+  field_when:
+  - value: 1786532400
+    end_value: 1788100200
+    duration: 26130
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: ed3320e8-fe39-471f-b6c2-57fdcfac8ab8

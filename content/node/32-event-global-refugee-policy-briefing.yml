@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 328a0ba5-d043-4f03-a5a5-ba351af7a171
+  bundle: event
+  default_langcode: en
+  depends:
+    66287fb3-357b-4c3f-ade9-d5f2b7876cec: taxonomy_term
+    efa70a24-8f96-4997-85ca-c5f9bc7c7f55: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Global refugee policy briefing
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/global-refugee-policy-briefing
+    langcode: en
+  field_description:
+  - value: Senior legal advisors present new frameworks on asylum rights and cross-border
+      protection standards.
+  field_location:
+  - value: Geneva, Switzerland
+  field_event_categories:
+  - entity: 66287fb3-357b-4c3f-ade9-d5f2b7876cec
+  field_when:
+  - value: 1785754800
+    end_value: 1787149800
+    duration: 23250
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: efa70a24-8f96-4997-85ca-c5f9bc7c7f55

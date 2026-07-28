@@ -1,0 +1,22 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: c881662f-29fc-4e71-a6b2-205a516288f8
+  bundle: event_categories
+  default_langcode: en
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Event categories
+  status:
+  - value: true
+  name:
+  - value: Summit
+  weight:
+  - value: 0
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null

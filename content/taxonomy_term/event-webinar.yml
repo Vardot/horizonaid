@@ -1,0 +1,22 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 896a80bb-51f9-4335-ac9f-b2b504e94e72
+  bundle: event_categories
+  default_langcode: en
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Event categories
+  status:
+  - value: true
+  name:
+  - value: Webinar
+  weight:
+  - value: 0
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null

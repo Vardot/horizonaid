@@ -24,6 +24,7 @@ recipes:
   - varbase_webform_base
   - varbase_page_base
   - varbase_blog_base
+  - varbase_events_base
   - varbase_performance_base
 install:
   - vartheme_bs5_horizonaid
@@ -259,6 +260,15 @@ config:
       repointComponentTreeToTheme:
         theme: default
     canvas.content_template.node.country.overlay_card_medium:
+      repointComponentTreeToTheme:
+        theme: default
+    views.view.events:
+      setViewsComponentStyleTheme:
+        theme: default
+    canvas.content_template.node.event.full:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.event.text_card_medium:
       repointComponentTreeToTheme:
         theme: default
     views.view.countries:
