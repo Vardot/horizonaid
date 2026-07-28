@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.node.field_description
+  - node.type.country
+id: node.country.field_description
+field_name: field_description
+entity_type: node
+bundle: country
+label: Summary
+description: A short introduction shown under the country title.
+required: true
+translatable: true
+default_value: []
+default_value_callback: ''
+settings: []
+field_type: string_long

@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6e55f5d3-20dc-4f24-ad34-04266b987d0e
+  bundle: image
+  default_langcode: en
+  depends:
+    4db9efa8-d201-46c7-a5e2-6654ff28b726: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Kenya
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Kenya country programme
+    title: ''
+    width: 2640
+    height: 1760
+    entity: 4db9efa8-d201-46c7-a5e2-6654ff28b726

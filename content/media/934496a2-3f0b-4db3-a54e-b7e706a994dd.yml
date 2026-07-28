@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 934496a2-3f0b-4db3-a54e-b7e706a994dd
+  bundle: image
+  default_langcode: en
+  depends:
+    81e0c27d-4aa4-4ae3-a1b3-e673038b7d6e: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Ukraine
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Ukraine country programme
+    title: ''
+    width: 1024
+    height: 670
+    entity: 81e0c27d-4aa4-4ae3-a1b3-e673038b7d6e

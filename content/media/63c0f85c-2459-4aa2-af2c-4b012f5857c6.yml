@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 63c0f85c-2459-4aa2-af2c-4b012f5857c6
+  bundle: image
+  default_langcode: en
+  depends:
+    7a1e2e2f-8e45-4363-af2b-e009804d05bd: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Ecuador
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Ecuador country programme
+    title: ''
+    width: 1600
+    height: 1067
+    entity: 7a1e2e2f-8e45-4363-af2b-e009804d05bd

@@ -252,6 +252,18 @@ config:
     canvas.content_template.node.blog.overlay_card_xlarge:
       repointComponentTreeToTheme:
         theme: default
+    canvas.content_template.node.country.full:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.country.card:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.country.overlay_card_medium:
+      repointComponentTreeToTheme:
+        theme: default
+    views.view.countries:
+      setViewsComponentStyleTheme:
+        theme: default
 extra:
   recipe_installer_kit:
     finish_url: '/admin/dashboard/welcome'

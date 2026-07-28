@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d1a2b3c4-3333-4a2b-ab03-2c3d4e5f6a03
+  bundle: country
+  default_langcode: en
+  depends:
+    e6275459-a7b4-4662-919b-6c03c02524c6: media
+    d9b90fa4-cbc0-410f-a2a3-741754126f88: media
+    38771a02-8334-4057-9022-f7f4d5342612: media
+    76a6a186-65a3-4c80-a494-5d00ff312eae: media
+    970e04cf-e3f9-404d-a572-e575f628a629: media
+    6e55f5d3-20dc-4f24-ad34-04266b987d0e: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Country
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Kenya
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /countries/kenya
+    langcode: en
+  field_description:
+  - value: Climate-resilient tools and training that move rural agricultural communities
+      towards long-term food independence.
+  field_featured_image:
+  - entity: 6e55f5d3-20dc-4f24-ad34-04266b987d0e
+  field_our_role:
+  - value: <p>We equip rural agricultural communities with climate-resilient seed,
+      shared irrigation and farmer-to-farmer training, so households move from food
+      aid to their own harvest.</p>
+    format: content_format
+  field_on_the_ground:
+  - value: <p>Cooperatives repay their seed loans in seed, which stocks the next cooperative's
+      bank and keeps the programme running after we leave.</p>
+    format: content_format
+  field_on_the_ground_image:
+  - entity: e6275459-a7b4-4662-919b-6c03c02524c6
+  field_figures_description:
+  - value: Our agricultural programme works with cooperatives across the drylands.
+  field_figure_number:
+  - value: 34K+
+  - value: 12K+
+  - value: 800+
+  field_figure_description:
+  - value: People with improved food security
+  - value: Farmers trained
+  - value: Cooperatives supported
+  field_partners:
+  - entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
+  - entity: 38771a02-8334-4057-9022-f7f4d5342612
+  - entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
+  - entity: 970e04cf-e3f9-404d-a572-e575f628a629

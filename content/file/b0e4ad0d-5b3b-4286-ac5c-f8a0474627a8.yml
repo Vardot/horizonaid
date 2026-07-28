@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b0e4ad0d-5b3b-4286-ac5c-f8a0474627a8
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: afghanistan-country-hero.jpg
+  uri:
+  - value: public://2026-07/afghanistan-country-hero.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 1183413
+  status:
+  - value: true

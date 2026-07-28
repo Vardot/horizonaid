@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7a1e2e2f-8e45-4363-af2b-e009804d05bd
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: ecuador-country-hero.jpg
+  uri:
+  - value: public://2026-07/ecuador-country-hero.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 144585
+  status:
+  - value: true

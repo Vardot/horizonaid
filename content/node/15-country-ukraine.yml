@@ -1,0 +1,67 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d1a2b3c4-5555-4a2b-ab05-2c3d4e5f6a05
+  bundle: country
+  default_langcode: en
+  depends:
+    87b051ce-b31d-4586-9704-ffb20ae47b5f: media
+    d9b90fa4-cbc0-410f-a2a3-741754126f88: media
+    38771a02-8334-4057-9022-f7f4d5342612: media
+    76a6a186-65a3-4c80-a494-5d00ff312eae: media
+    970e04cf-e3f9-404d-a572-e575f628a629: media
+    934496a2-3f0b-4db3-a54e-b7e706a994dd: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Country
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Ukraine
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /countries/ukraine
+    langcode: en
+  field_description:
+  - value: Rapid emergency relief, shelter restoration and winterization supplies
+      for families in active conflict zones.
+  field_featured_image:
+  - entity: 934496a2-3f0b-4db3-a54e-b7e706a994dd
+  field_our_role:
+  - value: <p>We coordinate rapid emergency relief, temporary shelter restoration
+      and essential winterization supplies for families living close to active front
+      lines.</p>
+    format: content_format
+  field_on_the_ground:
+  - value: <p>Winter is the hardest season. Our teams pre-position generators, insulation
+      kits and fuel before the first freeze so households are not cut off.</p>
+    format: content_format
+  field_on_the_ground_image:
+  - entity: 87b051ce-b31d-4586-9704-ffb20ae47b5f
+  field_figures_description:
+  - value: Our emergency response focuses on frontline communities and the winter
+      months.
+  field_figure_number:
+  - value: 64K+
+  - value: 18K+
+  - value: 40+
+  field_figure_description:
+  - value: People reached with emergency relief
+  - value: Homes repaired or insulated
+  - value: Frontline settlements served
+  field_partners:
+  - entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
+  - entity: 38771a02-8334-4057-9022-f7f4d5342612
+  - entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
+  - entity: 970e04cf-e3f9-404d-a572-e575f628a629

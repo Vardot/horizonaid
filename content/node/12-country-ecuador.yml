@@ -1,0 +1,68 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d1a2b3c4-2222-4a2b-ab02-2c3d4e5f6a02
+  bundle: country
+  default_langcode: en
+  depends:
+    ecc68091-64c6-4e9d-be6e-39a98bc33e8a: media
+    d9b90fa4-cbc0-410f-a2a3-741754126f88: media
+    38771a02-8334-4057-9022-f7f4d5342612: media
+    76a6a186-65a3-4c80-a494-5d00ff312eae: media
+    970e04cf-e3f9-404d-a572-e575f628a629: media
+    63c0f85c-2459-4aa2-af2c-4b012f5857c6: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Country
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Ecuador
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /countries/ecuador
+    langcode: en
+  field_description:
+  - value: Emergency legal aid and protection services for migrant families moving
+      through major border corridors.
+  field_featured_image:
+  - entity: 63c0f85c-2459-4aa2-af2c-4b012f5857c6
+  field_our_role:
+  - value: <p>We provide emergency legal aid and critical protection services for
+      migrant families navigating the northern border corridors, with mobile teams
+      that follow the routes people actually travel.</p>
+    format: content_format
+  field_on_the_ground:
+  - value: <p>Our teams work at four border crossings, where families arrive after
+      weeks on the road and need documentation, medical screening and a safe place
+      to sleep.</p>
+    format: content_format
+  field_on_the_ground_image:
+  - entity: ecc68091-64c6-4e9d-be6e-39a98bc33e8a
+  field_figures_description:
+  - value: Our teams cover the border corridors where the need is highest and formal
+      services are thinnest.
+  field_figure_number:
+  - value: 21K+
+  - value: 7K+
+  - value: 3K+
+  field_figure_description:
+  - value: People supported at border crossings
+  - value: Legal consultations delivered
+  - value: Families reunified
+  field_partners:
+  - entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
+  - entity: 38771a02-8334-4057-9022-f7f4d5342612
+  - entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
+  - entity: 970e04cf-e3f9-404d-a572-e575f628a629

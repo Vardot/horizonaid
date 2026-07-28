@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.node.field_figure_number
+  - node.type.country
+id: node.country.field_figure_number
+field_name: field_figure_number
+entity_type: node
+bundle: country
+label: Figure number
+description: Key figure, for example 48K+.
+required: false
+translatable: true
+default_value: []
+default_value_callback: ''
+settings: {}
+field_type: string

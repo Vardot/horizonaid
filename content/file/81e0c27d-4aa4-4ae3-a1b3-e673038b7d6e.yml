@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 81e0c27d-4aa4-4ae3-a1b3-e673038b7d6e
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: ukraine-country-hero.jpg
+  uri:
+  - value: public://2026-07/ukraine-country-hero.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 169855
+  status:
+  - value: true

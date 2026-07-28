@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e1408d47-fc69-4b5e-a7bb-38ea345953f5
+  bundle: image
+  default_langcode: en
+  depends:
+    b0e4ad0d-5b3b-4286-ac5c-f8a0474627a8: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Afghanistan
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Afghanistan country programme
+    title: ''
+    width: 2640
+    height: 3520
+    entity: b0e4ad0d-5b3b-4286-ac5c-f8a0474627a8

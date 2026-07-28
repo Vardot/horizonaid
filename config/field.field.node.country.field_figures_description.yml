@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.node.field_figures_description
+  - node.type.country
+id: node.country.field_figures_description
+field_name: field_figures_description
+entity_type: node
+bundle: country
+label: Figures description
+description: Introduction above the key figures.
+required: false
+translatable: true
+default_value: []
+default_value_callback: ''
+settings: {}
+field_type: string_long

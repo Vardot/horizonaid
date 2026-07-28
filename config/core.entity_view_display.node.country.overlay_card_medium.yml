@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.overlay_card_medium
+  - node.type.country
+  module:
+  - canvas
+id: node.country.overlay_card_medium
+targetEntityType: node
+bundle: country
+mode: overlay_card_medium
+content: {}
+hidden: {}

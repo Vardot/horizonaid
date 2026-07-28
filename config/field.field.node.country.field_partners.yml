@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.node.field_partners
+  - node.type.country
+  module:
+  - media
+id: node.country.field_partners
+field_name: field_partners
+entity_type: node
+bundle: country
+label: Key partners
+description: Partner logos for this country.
+required: false
+translatable: true
+default_value: []
+default_value_callback: ''
+settings:
+  handler: default:media
+  handler_settings:
+    target_bundles:
+      image: image
+      svg_image: svg_image
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

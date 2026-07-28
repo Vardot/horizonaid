@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4db9efa8-d201-46c7-a5e2-6654ff28b726
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: kenya-country-hero.jpg
+  uri:
+  - value: public://2026-07/kenya-country-hero.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 543687
+  status:
+  - value: true
