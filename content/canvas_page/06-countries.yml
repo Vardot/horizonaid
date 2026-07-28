@@ -509,7 +509,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus.</p>'
+          value: '<p>We work where displacement, conflict and climate pressure hit hardest. Each country page sets out our role, the work on the ground, the figures behind it and the partners we work with.</p>'
           format: canvas_html_block
         text_size: none
         text_color: text-body
@@ -550,7 +550,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white
@@ -591,7 +591,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white
@@ -632,7 +632,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white
@@ -673,7 +673,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white
@@ -746,7 +746,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white
@@ -787,7 +787,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white
@@ -828,7 +828,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white
@@ -869,7 +869,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white
@@ -942,7 +942,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white
@@ -983,7 +983,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white
@@ -1024,7 +1024,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white
@@ -1065,7 +1065,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          value: '<p>Our teams work alongside local organisations, and report what the work delivers country by country.</p>'
           format: canvas_html_block
         text_size: fs-5
         text_color: text-white

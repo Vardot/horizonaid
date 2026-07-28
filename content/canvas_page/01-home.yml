@@ -540,7 +540,7 @@ default:
         heading_text: 'Where We Work'
         heading_level: 2
         description_text:
-          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus.</p>'
+          value: '<p>We work where displacement, conflict and climate pressure hit hardest. Each country page sets out our role, the work on the ground, the figures behind it and the partners we work with.</p>'
           format: canvas_html_block
         container_type: container
         cta_label: 'View All Countries'
