@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 345fa7df-01b6-46d0-aa9e-82f13b730230
+  bundle: image
+  default_langcode: en
+  depends:
+    9de8bc53-891a-465c-8ff2-0548060532f0: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: James Greenpoint
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: James Greenpoint
+    title: ''
+    width: 359
+    height: 370
+    entity: 9de8bc53-891a-465c-8ff2-0548060532f0

@@ -1,0 +1,1187 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: beb15247-359b-48ba-8dd7-c1ade98ff6c4
+  default_langcode: en
+  depends:
+    0d3956bd-f55f-4b44-8c8a-dcc12f54c0dc: file
+    ee0c4672-3672-423e-87f3-10aa42804ca7: media
+    a1be58a1-e9f5-4bc2-99db-65533cdd7254: file
+    bdff596c-46c9-4a01-bf78-f568ccc12755: media
+    6273dfec-ad04-4c03-b570-2c3f43610d7b: file
+    c395f23d-ac13-4786-a346-a3da7cadcbcb: media
+    d2b46c83-2bb1-4612-8b19-405120415c67: file
+    be05d111-5968-4660-a0ba-aff9124b67eb: media
+    9bec1282-fc07-4df6-956d-f88aba18d38b: file
+    d9a8afc7-a393-4489-9ffa-60c3692953d4: media
+    316f4645-8229-463d-bdaf-8660db91c3ef: file
+    6016aaf6-03f4-40c5-8119-40a7e1dfccb6: media
+    e6a45314-1dcd-4214-adfb-1f1a0ae34f93: file
+    184fa3db-624a-4ccd-9202-012ecfc5be5a: media
+    5e2c8089-151a-4aa3-9537-bd06aae363ca: file
+    7fd1d440-8109-40c6-8f18-a57b015ac54e: media
+    ac273ab4-60bf-4760-8951-c806ef6cb8c2: file
+    b89c3414-f04f-4498-9169-c344d567426b: media
+    835ba4e2-c6af-4bc4-a00a-dda27dc2c84e: file
+    9a36d753-9d1e-4913-9c33-14dec94831a5: media
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Updated the Components field'
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Program Page'
+  components:
+    -
+      uuid: 613ec297-a09e-4b76-ac86-a1792b1bf046
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: bg-secondary-subtle
+        text_color: auto
+        background_overlay: none
+        columns: '100'
+        gutter: 'gx-3 gy-3'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-5
+        padding_inline_end: pe-5
+        margin_block_end: mb-5
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: rounded-4
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 613ec297-a09e-4b76-ac86-a1792b1bf046
+      slot: header_slot
+      uuid: 33a5df66-fd12-4f60-993f-127e43ffe28d
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Education
+        level: 1
+        align: text-center
+        target: _self
+    -
+      parent_uuid: 613ec297-a09e-4b76-ac86-a1792b1bf046
+      slot: header_slot
+      uuid: 7b789101-f9dd-4382-b061-c587283a8d8d
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p class="text-align-center">Building safe schools and training local teachers to give children a clear path to a brighter future.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 613ec297-a09e-4b76-ac86-a1792b1bf046
+      slot: col_1
+      uuid: 8510a38a-1453-466f-9074-a66540c5afac
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: ee0c4672-3672-423e-87f3-10aa42804ca7
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: rounded-4
+        loading: lazy
+    -
+      uuid: 482a66d3-0d2e-49ec-8d5f-ff89520c15b1
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 40-60
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 482a66d3-0d2e-49ec-8d5f-ff89520c15b1
+      slot: header_slot
+      uuid: 9b0306fa-fbe3-43a3-82a2-9c3077cd029e
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Education is the one thing conflict cannot take away — unless we let it.'
+        level: 2
+        target: _self
+        align: text-center
+    -
+      parent_uuid: 482a66d3-0d2e-49ec-8d5f-ff89520c15b1
+      slot: col_1
+      uuid: 30bd6d93-8d87-49c9-88ed-77d0e5626e87
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+    -
+      parent_uuid: 30bd6d93-8d87-49c9-88ed-77d0e5626e87
+      slot: content
+      uuid: 6004d274-c1ed-4244-92cd-928b6226f81a
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 30bd6d93-8d87-49c9-88ed-77d0e5626e87
+      slot: content
+      uuid: cda1c4f0-8e00-4d01-a0a5-063bf0258630
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 30bd6d93-8d87-49c9-88ed-77d0e5626e87
+      slot: content
+      uuid: f9258a97-041d-4164-bbe4-7525d731a57c
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-1
+    -
+      parent_uuid: 30bd6d93-8d87-49c9-88ed-77d0e5626e87
+      slot: content
+      uuid: 7fb48ca6-2afc-4457-9660-c5c0b2eb0214
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'No Child Left Without a Classroom'
+        level: 2
+        target: _self
+    -
+      parent_uuid: 30bd6d93-8d87-49c9-88ed-77d0e5626e87
+      slot: content
+      uuid: a2d2b0c7-1936-4c54-90d0-82d18fc5a558
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>We build safe schools, train local teachers, and design every programme around the community it serves — so learning continues no matter what.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 30bd6d93-8d87-49c9-88ed-77d0e5626e87
+      slot: content
+      uuid: 25c8dfd1-f51f-44d1-ad56-18e28b80698e
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-1
+    -
+      parent_uuid: 30bd6d93-8d87-49c9-88ed-77d0e5626e87
+      slot: content
+      uuid: dc3e0f88-a395-4913-9807-ec92faf1f320
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 30bd6d93-8d87-49c9-88ed-77d0e5626e87
+      slot: content
+      uuid: 68fb7984-dc55-48e9-9df4-d33025f3aa9b
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 482a66d3-0d2e-49ec-8d5f-ff89520c15b1
+      slot: col_2
+      uuid: 8cde58a1-9919-42f2-8427-557cfcb90e4b
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: bdff596c-46c9-4a01-bf78-f568ccc12755
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: rounded-3
+        loading: lazy
+    -
+      uuid: dcc2b694-fb16-4a30-ad30-218ec253a03b
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: bg-light
+        text_color: auto
+        background_overlay: none
+        columns: 33-33-33
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-5
+        padding_inline_end: pe-4
+        margin_block_start: mt-5
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: rounded-4
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: dcc2b694-fb16-4a30-ad30-218ec253a03b
+      slot: header_slot
+      uuid: 12dbfa4e-375c-4550-bcc0-b1835c734da4
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: text-dark
+        background_overlay: none
+        columns: 75-25
+        gutter: 'gx-4 gy-4'
+        padding_block_start: pt-0
+        padding_block_end: pb-0
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 12dbfa4e-375c-4550-bcc0-b1835c734da4
+      slot: col_1
+      uuid: 66ef88dd-a15c-4d89-a716-0098980723fc
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Education by the Numbers'
+        level: 2
+        target: _self
+    -
+      parent_uuid: 12dbfa4e-375c-4550-bcc0-b1835c734da4
+      slot: col_1
+      uuid: 5a739b98-65fa-4455-be58-dec1d0f9e109
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Since 2008, our Education programme has reached children and teachers across 16 countries — building safe learning environments and training local educators to give every child a path forward.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: dcc2b694-fb16-4a30-ad30-218ec253a03b
+      slot: col_1
+      uuid: d86d18d9-8f2d-42a6-bf46-6b69f7c908a6
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: 8K+
+        description: 'Children enrolled in safe learning spaces'
+        background_color: none
+        align: text-center
+        number_size: display-1
+        number_color: text-black
+        description_size: fs-6
+        description_color: text-black
+    -
+      parent_uuid: dcc2b694-fb16-4a30-ad30-218ec253a03b
+      slot: col_2
+      uuid: 9b7f6f13-7761-42a7-a09e-e75312190641
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: 20K+
+        description: 'Teaching hours delivered by trained educators'
+        background_color: none
+        align: text-center
+        number_size: display-1
+        number_color: text-black
+        description_size: fs-6
+        description_color: text-black
+    -
+      parent_uuid: dcc2b694-fb16-4a30-ad30-218ec253a03b
+      slot: col_3
+      uuid: 0cc729b8-7c29-4796-912b-b0b32c67e250
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: '288'
+        description: 'Schools built or rehabilitated'
+        background_color: none
+        align: text-center
+        number_size: display-1
+        number_color: text-black
+        description_size: fs-6
+        description_color: text-black
+    -
+      uuid: e24c3cb5-bea1-4d89-9637-568af01281a0
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 33-33-33
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-5
+        margin_block_end: mb-5
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: e24c3cb5-bea1-4d89-9637-568af01281a0
+      slot: col_1
+      uuid: 6885588d-facc-4c32-aba0-e82f0c6e35c6
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'What Drives Everything We Do'
+        level: 2
+        target: _self
+    -
+      parent_uuid: e24c3cb5-bea1-4d89-9637-568af01281a0
+      slot: col_1
+      uuid: abc26edb-4033-402d-bdf9-fd1252e6b171
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Every decision we make and every community we serve is guided by four values that have defined Horizon Aid since our founding.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: e24c3cb5-bea1-4d89-9637-568af01281a0
+      slot: col_1
+      uuid: b30d0263-1ee1-4e64-bb2b-83f969da9bc3
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-link
+        outline: false
+        size: btn-md
+        label: 'Explore More'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-1
+    -
+      parent_uuid: e24c3cb5-bea1-4d89-9637-568af01281a0
+      slot: col_2
+      uuid: f6476f81-572f-48a5-a42d-7ef60cd2098c
+      component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+      inputs:
+        icon_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: c395f23d-ac13-4786-a346-a3da7cadcbcb
+            target_type: media
+        icon_alignment: start
+        card_border: false
+        background_color: bg-accent-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: f6476f81-572f-48a5-a42d-7ef60cd2098c
+      slot: content
+      uuid: 680b1702-cfbb-4fec-9a22-17e0e64f553d
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Transparency
+        level: 3
+        target: _self
+    -
+      parent_uuid: f6476f81-572f-48a5-a42d-7ef60cd2098c
+      slot: content
+      uuid: a688ac02-d928-4311-b45f-e7c31f1c8876
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Every dollar accounted for. Full visibility for our donors, partners, and communities — always.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: e24c3cb5-bea1-4d89-9637-568af01281a0
+      slot: col_2
+      uuid: 55907565-db2b-4a41-ae72-3458617114d2
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: e24c3cb5-bea1-4d89-9637-568af01281a0
+      slot: col_2
+      uuid: d58c996a-2ec1-4368-9373-cb265bad09a5
+      component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+      inputs:
+        icon_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: be05d111-5968-4660-a0ba-aff9124b67eb
+            target_type: media
+        icon_alignment: start
+        card_border: false
+        background_color: bg-primary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: d58c996a-2ec1-4368-9373-cb265bad09a5
+      slot: content
+      uuid: 45781885-4d43-4da8-a787-23dad47a2eb1
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Accountability
+        level: 3
+        target: _self
+    -
+      parent_uuid: d58c996a-2ec1-4368-9373-cb265bad09a5
+      slot: content
+      uuid: 89dbbf86-f5a9-46cb-87e4-5ea7beec468e
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Every dollar accounted for. Full visibility for our donors, partners, and communities — always.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: e24c3cb5-bea1-4d89-9637-568af01281a0
+      slot: col_3
+      uuid: a62fb338-46dd-4a93-adcd-ea52e4c2685c
+      component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+      inputs:
+        icon_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: d9a8afc7-a393-4489-9ffa-60c3692953d4
+            target_type: media
+        icon_alignment: start
+        card_border: false
+        background_color: bg-primary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: a62fb338-46dd-4a93-adcd-ea52e4c2685c
+      slot: content
+      uuid: b93419dd-ea20-4d68-a3c7-330aaad6fee9
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Community-Led
+        level: 3
+        target: _self
+    -
+      parent_uuid: a62fb338-46dd-4a93-adcd-ea52e4c2685c
+      slot: content
+      uuid: 675b24ff-e1d8-45df-b5b5-5db6d4ecfc5d
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Every dollar accounted for. Full visibility for our donors, partners, and communities — always.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: e24c3cb5-bea1-4d89-9637-568af01281a0
+      slot: col_3
+      uuid: 3d5b8bca-374e-46d4-aa52-08cc771491c4
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: e24c3cb5-bea1-4d89-9637-568af01281a0
+      slot: col_3
+      uuid: e712c663-4739-427f-a8c0-ab01daae3976
+      component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+      inputs:
+        icon_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 6016aaf6-03f4-40c5-8119-40a7e1dfccb6
+            target_type: media
+        icon_alignment: start
+        card_border: false
+        background_color: bg-accent-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: e712c663-4739-427f-a8c0-ab01daae3976
+      slot: content
+      uuid: 1add9815-dc39-4f2f-849c-8179f60c998e
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Dignity
+        level: 3
+        target: _self
+    -
+      parent_uuid: e712c663-4739-427f-a8c0-ab01daae3976
+      slot: content
+      uuid: 5f24ba98-f5ad-41ce-958d-987c36fac395
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Every dollar accounted for. Full visibility for our donors, partners, and communities — always.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      component_id: sdc.vartheme_bs5_horizonaid.map
+      inputs:
+        map_height: md
+        corner_style: rounded-4
+        box_shadow: shadow-none
+        background_color: bg-secondary-subtle
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: content
+      uuid: 809fcd5e-ffa5-492b-9941-f8a91297d0eb
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Where Education Runs'
+        level: 2
+        target: _self
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: content
+      uuid: 09aaf9a9-cab5-4e85-bc71-67b944434075
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: "<p>Horizon Aid's Education programme operates across more than 16 countries, working alongside communities facing conflict, displacement, and chronic poverty — where children are most at risk of losing access to learning entirely.</p>"
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: c14e101d-b698-4680-868f-4cd21444d3f9
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: SO
+        heading: Somalia
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: 4d7944bc-91ff-4637-b0ee-13578e3a6e16
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: BD
+        heading: Bangladesh
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: 9676e021-e536-4622-911e-3cbc30403b14
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: JO
+        heading: Jordan
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: 31e3dc43-7a75-47f7-842a-089d22269442
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: EG
+        heading: Egypt
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: 77f5e8ff-49e9-45f0-bf01-0a614e33ef9b
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: IN
+        heading: India
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: a87bb081-8d22-4120-8eea-ab12717ed1cb
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: AF
+        heading: Afghanistan
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: 48971adc-47f4-43ef-8c97-68eab05cb79d
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: CO
+        heading: Colombia
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: 9f23cfba-93d4-4a5b-95f7-4f603587cbb4
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: EC
+        heading: Ecuador
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: 711e6115-c6e7-4980-841d-9b0f4a7612f1
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: KE
+        heading: Kenya
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: f28984bf-8eac-4988-a3f7-b3b6e186a983
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: LB
+        heading: Lebanon
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: 4aacdc14-82a2-4a67-8771-db2192298df3
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: MM
+        heading: Myanmar
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: 2815a347-ddc6-4b36-a8f7-1a50056f6811
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: SS
+        heading: 'South Sudan'
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: 8adf9c4d-2a57-4db3-a7ab-46529db0649e
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: SY
+        heading: Syria
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: e967bccd-2c40-4f93-953c-7956eb6f0068
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: UA
+        heading: Ukraine
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: 3e8859a6-62a0-4e1a-bf6a-dbda1de5f12b
+      slot: countries
+      uuid: d653e992-7d76-4266-beae-916041d7aa6f
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: YE
+        heading: Yemen
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      uuid: 1c164121-b5b3-421b-9dff-5fb0562c9f9b
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-5
+    -
+      uuid: 053335f0-8d19-4ce8-9603-4c1bf7e0d7a9
+      component_id: sdc.vartheme_bs5_horizonaid.impressed-card-slider
+      inputs:
+        bg_edge2edge: true
+        background_color: bg-light
+        container_type: container
+        heading_text: 'Afghanistan Updates'
+        heading_level: 2
+        link_1_label: 'Healthcare & Medicine'
+        link_1_url:
+          uri: 'https://example.com/updates/healthcare'
+          options: {  }
+        link_1_active: true
+        link_2_label: 'Sustenance & Growth'
+        link_2_url:
+          uri: 'internal:/sustenance'
+          options: {  }
+        link_2_active: false
+        link_3_label: 'Universal Education'
+        link_3_url:
+          uri: 'internal:/education'
+          options: {  }
+        link_3_active: false
+        link_4_url:
+          uri: 'internal:/updates'
+          options: {  }
+        link_4_active: false
+        cta_label: 'Explore More'
+        cta_url:
+          uri: 'internal:/explore-more'
+          options: {  }
+        cta_target: default
+    -
+      parent_uuid: 053335f0-8d19-4ce8-9603-4c1bf7e0d7a9
+      slot: cards
+      uuid: 75a8756e-5d30-4695-b80e-260ac77686d0
+      component_id: sdc.vartheme_bs5_horizonaid.card-impressed
+      inputs:
+        media_position: top
+        media_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 184fa3db-624a-4ccd-9202-012ecfc5be5a
+            target_type: media
+        ratio: ratio-16x9
+        fit: object-fit-cover
+        card_border: false
+        background_color: bg-transparent
+        padded: false
+        box_shadow: shadow-none
+        corner_style: rounded-0
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: 75a8756e-5d30-4695-b80e-260ac77686d0
+      slot: overlay
+      uuid: 9b5cc80b-bbc5-4257-b9df-3353ccb0f23c
+      component_id: sdc.vartheme_bs5_horizonaid.taxonomy
+      inputs:
+        label: News
+        target: _self
+        size: taxonomy-lg
+        color: taxonomy-primary
+    -
+      parent_uuid: 75a8756e-5d30-4695-b80e-260ac77686d0
+      slot: content
+      uuid: 00556bdd-1e98-4854-9924-ca662b518003
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Bridging Medical Gaps in Border Corridors'
+        level: 4
+        text_size: h4
+        text_color: text-dark
+        target: _self
+    -
+      parent_uuid: 75a8756e-5d30-4695-b80e-260ac77686d0
+      slot: content
+      uuid: b861c1e4-4a29-4b5e-983b-0e46b1e944fe
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Our mobile health units successfully delivered emergency pediatric medicine and preventativ</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-dark
+    -
+      parent_uuid: 053335f0-8d19-4ce8-9603-4c1bf7e0d7a9
+      slot: cards
+      uuid: b237069b-4807-4f3e-9fce-13d6b080ed53
+      component_id: sdc.vartheme_bs5_horizonaid.card-impressed
+      inputs:
+        media_position: top
+        media_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 7fd1d440-8109-40c6-8f18-a57b015ac54e
+            target_type: media
+        ratio: ratio-16x9
+        fit: object-fit-cover
+        card_border: false
+        background_color: bg-transparent
+        padded: false
+        box_shadow: shadow-none
+        corner_style: rounded-0
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: b237069b-4807-4f3e-9fce-13d6b080ed53
+      slot: overlay
+      uuid: 58fa207c-46bc-4687-a8a5-3a82d14d5c4d
+      component_id: sdc.vartheme_bs5_horizonaid.taxonomy
+      inputs:
+        label: REPORT
+        target: _self
+        size: taxonomy-lg
+        color: taxonomy-secondary
+    -
+      parent_uuid: b237069b-4807-4f3e-9fce-13d6b080ed53
+      slot: content
+      uuid: e9148900-0bab-4dc9-9a6b-db35c1e0a112
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Cultivating Independence in Rural Farms'
+        level: 4
+        text_size: h4
+        text_color: text-dark
+        target: _self
+    -
+      parent_uuid: b237069b-4807-4f3e-9fce-13d6b080ed53
+      slot: content
+      uuid: f54db2b8-8ebf-417d-bb15-eaf151171d70
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Our mobile health units successfully delivered emergency pediatric medicine and preventativ</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-dark
+    -
+      parent_uuid: 053335f0-8d19-4ce8-9603-4c1bf7e0d7a9
+      slot: cards
+      uuid: 3320150e-206c-40eb-a938-38251b753d0a
+      component_id: sdc.vartheme_bs5_horizonaid.card-impressed
+      inputs:
+        media_position: top
+        media_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: b89c3414-f04f-4498-9169-c344d567426b
+            target_type: media
+        ratio: ratio-16x9
+        fit: object-fit-cover
+        card_border: false
+        background_color: bg-transparent
+        padded: false
+        box_shadow: shadow-none
+        corner_style: rounded-0
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: 3320150e-206c-40eb-a938-38251b753d0a
+      slot: overlay
+      uuid: 7400fe42-17ed-418d-8e9a-8a8c85cc7f40
+      component_id: sdc.vartheme_bs5_horizonaid.taxonomy
+      inputs:
+        label: News
+        target: _self
+        size: taxonomy-lg
+        color: taxonomy-primary
+    -
+      parent_uuid: 3320150e-206c-40eb-a938-38251b753d0a
+      slot: content
+      uuid: c5b99cd5-61cd-4a75-a4b5-c820adeef62c
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: '2026 Regional Human Rights Index'
+        level: 4
+        text_size: h4
+        text_color: text-dark
+        target: _self
+    -
+      parent_uuid: 3320150e-206c-40eb-a938-38251b753d0a
+      slot: content
+      uuid: 6f202c05-e54c-493d-840f-6951d307ccc1
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Our mobile health units successfully delivered emergency pediatric medicine and preventativ</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-dark
+    -
+      parent_uuid: 053335f0-8d19-4ce8-9603-4c1bf7e0d7a9
+      slot: cards
+      uuid: 1fa0bf52-9684-477d-85a2-5a8cc0bf6655
+      component_id: sdc.vartheme_bs5_horizonaid.card-impressed
+      inputs:
+        media_position: top
+        media_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 9a36d753-9d1e-4913-9c33-14dec94831a5
+            target_type: media
+        ratio: ratio-16x9
+        fit: object-fit-cover
+        card_border: false
+        background_color: bg-transparent
+        padded: false
+        box_shadow: shadow-none
+        corner_style: rounded-0
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: 1fa0bf52-9684-477d-85a2-5a8cc0bf6655
+      slot: overlay
+      uuid: 74807110-b92c-4b54-948e-797d7518a8b1
+      component_id: sdc.vartheme_bs5_horizonaid.taxonomy
+      inputs:
+        label: Taxonomy
+        target: _self
+        size: taxonomy-lg
+        color: taxonomy-tertiary
+    -
+      parent_uuid: 1fa0bf52-9684-477d-85a2-5a8cc0bf6655
+      slot: content
+      uuid: 9ae5ce3a-d665-4dea-833f-220d07ffb927
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Bridging Medical Gaps in Border Corridors'
+        level: 4
+        text_size: h4
+        text_color: text-dark
+        target: _self
+    -
+      parent_uuid: 1fa0bf52-9684-477d-85a2-5a8cc0bf6655
+      slot: content
+      uuid: 44be992b-93b7-43c4-ac06-c14ac98ed068
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Our mobile health units successfully delivered emergency pediatric medicine and preventativ</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-dark
+    -
+      uuid: 1b8bc144-2339-4063-af22-966aacd3b734
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      uuid: eb08b1f9-23c8-47c4-b4b0-591f6a4ed836
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-primary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+    -
+      parent_uuid: eb08b1f9-23c8-47c4-b4b0-591f6a4ed836
+      slot: content
+      uuid: 5caa950e-6311-475e-a8ce-969d4225a7ab
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: eb08b1f9-23c8-47c4-b4b0-591f6a4ed836
+      slot: content
+      uuid: 9e457ab8-f5ce-4c7d-99e4-034f2173098c
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Help Us Keep Every Classroom Open'
+        level: 2
+        target: _self
+    -
+      parent_uuid: eb08b1f9-23c8-47c4-b4b0-591f6a4ed836
+      slot: content
+      uuid: 8fe7ff81-a1a4-4b45-8ad9-95e4050d9872
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Your support funds safe learning spaces and trained teachers for children who have lost everything else.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: eb08b1f9-23c8-47c4-b4b0-591f6a4ed836
+      slot: content
+      uuid: fd650f39-4402-4d8d-b5ec-591e36e7a6ae
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-primary
+        outline: false
+        size: btn-md
+        label: 'Donate to Today'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-pill
+        href:
+          uri: 'internal:/donate'
+          options: {  }
+    -
+      parent_uuid: eb08b1f9-23c8-47c4-b4b0-591f6a4ed836
+      slot: content
+      uuid: 8aeb6428-633b-447c-8de1-5fcf37e8e452
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+  path:
+    -
+      alias: /program-page
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

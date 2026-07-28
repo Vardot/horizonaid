@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 84d95efd-b139-482c-aeb7-549158924bb0
+  bundle: image
+  default_langcode: en
+  depends:
+    7668f3b2-3222-4a4c-8bf7-00f9d5c47759: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Bangladesh
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Bangladesh
+    title: ''
+    width: 261
+    height: 332
+    entity: 7668f3b2-3222-4a4c-8bf7-00f9d5c47759

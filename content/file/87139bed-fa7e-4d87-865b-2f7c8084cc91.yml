@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 87139bed-fa7e-4d87-865b-2f7c8084cc91
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: media-banner.png
+  uri:
+  - value: public://2026-07/media-banner.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1625677
+  status:
+  - value: true

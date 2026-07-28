@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 48dc41a6-be05-468a-b5ce-0b78bff6358a
+  bundle: image
+  default_langcode: en
+  depends:
+    71d281ee-a510-4934-825f-5d1938d233a4: file
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Image'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: venezuelans-ecuador-migration-health-covid-19.jpg-4.png
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      langcode: en
+      alias: null
+  field_media_image:
+    -
+      alt: 'Ukraine Country'
+      title: ''
+      width: 261
+      height: 332
+      entity: 71d281ee-a510-4934-825f-5d1938d233a4

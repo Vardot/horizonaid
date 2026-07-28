@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 8fec97e9-4ec1-42fa-a5d9-e2d141f8fdca
+  bundle: image
+  default_langcode: en
+  depends:
+    3881a670-6def-4ea8-8a6c-e0c81bc0e207: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Lena Miller
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Lena Miller
+    title: ''
+    width: 359
+    height: 370
+    entity: 3881a670-6def-4ea8-8a6c-e0c81bc0e207

@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6a302aec-be45-4876-a1f7-360b7320fa7f
+  bundle: image
+  default_langcode: en
+  depends:
+    74586f6d-20db-49e1-a114-3d0005dd7761: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: About Us
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: About Us
+    title: ''
+    width: 1140
+    height: 514
+    entity: 74586f6d-20db-49e1-a114-3d0005dd7761

@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 107c81b7-1973-4d71-b95f-59e646a5be71
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: health-program.png
+  uri:
+  - value: public://2026-07/health-program.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1378438
+  status:
+  - value: true

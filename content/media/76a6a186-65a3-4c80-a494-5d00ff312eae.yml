@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 76a6a186-65a3-4c80-a494-5d00ff312eae
+  bundle: image
+  default_langcode: en
+  depends:
+    852b3e2a-eaf5-4abd-b6fc-51fde08b96d3: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Cloud Partner
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Cloud Partner
+    title: ''
+    width: 196
+    height: 127
+    entity: 852b3e2a-eaf5-4abd-b6fc-51fde08b96d3

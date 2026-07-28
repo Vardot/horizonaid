@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 0d3956bd-f55f-4b44-8c8a-dcc12f54c0dc
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: education.png
+  uri:
+  - value: public://2026-07/education.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1190704
+  status:
+  - value: true

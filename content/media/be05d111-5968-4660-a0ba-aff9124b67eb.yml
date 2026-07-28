@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: be05d111-5968-4660-a0ba-aff9124b67eb
+  bundle: image
+  default_langcode: en
+  depends:
+    d2b46c83-2bb1-4612-8b19-405120415c67: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Accountability
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Accountability
+    title: ''
+    width: 64
+    height: 57
+    entity: d2b46c83-2bb1-4612-8b19-405120415c67

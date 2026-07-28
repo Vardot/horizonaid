@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 5af448c1-49fa-4ac2-8c3d-284c881ca48b
+  bundle: image
+  default_langcode: en
+  depends:
+    754a8ab5-11f2-4653-bd12-4bb8a14474dc: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: On the Ground
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: On the Ground
+    title: ''
+    width: 652
+    height: 367
+    entity: 754a8ab5-11f2-4653-bd12-4bb8a14474dc

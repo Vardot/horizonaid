@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ad7df54a-4007-40a1-8555-4a1bdbbb9020
+  bundle: image
+  default_langcode: en
+  depends:
+    a2294f84-f563-4215-a24c-de8b081a05ba: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Afghanistan
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Afghanistan
+    title: ''
+    width: 261
+    height: 332
+    entity: a2294f84-f563-4215-a24c-de8b081a05ba

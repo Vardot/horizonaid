@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c04d4ad4-2ccf-403d-8a36-098b4ad3ab42
+  bundle: image
+  default_langcode: en
+  depends:
+    8ece6ad5-8023-4380-a904-7d77983490ef: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Ukraine
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Ukraine
+    title: ''
+    width: 261
+    height: 332
+    entity: 8ece6ad5-8023-4380-a904-7d77983490ef

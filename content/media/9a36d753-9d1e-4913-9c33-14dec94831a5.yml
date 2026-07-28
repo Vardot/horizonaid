@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 9a36d753-9d1e-4913-9c33-14dec94831a5
+  bundle: image
+  default_langcode: en
+  depends:
+    835ba4e2-c6af-4bc4-a00a-dda27dc2c84e: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Bridging Medical Gaps in Border Corridors
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Bridging Medical Gaps in Border Corridors
+    title: ''
+    width: 359
+    height: 201
+    entity: 835ba4e2-c6af-4bc4-a00a-dda27dc2c84e

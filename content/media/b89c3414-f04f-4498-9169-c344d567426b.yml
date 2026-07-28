@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: b89c3414-f04f-4498-9169-c344d567426b
+  bundle: image
+  default_langcode: en
+  depends:
+    ac273ab4-60bf-4760-8951-c806ef6cb8c2: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: 2026 Regional Human Rights Index
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: 2026 Regional Human Rights Index
+    title: ''
+    width: 359
+    height: 201
+    entity: ac273ab4-60bf-4760-8951-c806ef6cb8c2

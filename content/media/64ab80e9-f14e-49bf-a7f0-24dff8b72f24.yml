@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 64ab80e9-f14e-49bf-a7f0-24dff8b72f24
+  bundle: image
+  default_langcode: en
+  depends:
+    4d4ff033-f824-4f85-8e16-0df06dc9effb: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Home Page Header Banner
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Home Page Header Banner
+    title: ''
+    width: 1400
+    height: 600
+    entity: 4d4ff033-f824-4f85-8e16-0df06dc9effb

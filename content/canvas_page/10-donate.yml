@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: b2cfbb92-062f-42c2-9d7f-90ebd6de4829
+  default_langcode: en
+  depends:
+    87139bed-fa7e-4d87-865b-2f7c8084cc91: file
+    b37f3dfb-a751-45a9-b078-157b158f6d2f: media
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Updated the Published, Title, Components, and Metatags (Hidden field for JSON support) fields'
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: Donate
+  components:
+    -
+      uuid: 259f9fc8-8b3c-4308-a8c5-27cba0a965ce
+      component_id: sdc.vartheme_bs5_horizonaid.media-banner
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: b37f3dfb-a751-45a9-b078-157b158f6d2f
+            target_type: media
+        image_radius: rounded-hero
+        content_bg: bg-light
+        content_color: auto
+    -
+      parent_uuid: 259f9fc8-8b3c-4308-a8c5-27cba0a965ce
+      slot: content
+      uuid: fa431981-8eb8-48b5-9658-08c74409efb9
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Donate
+        level: 2
+        target: _self
+    -
+      parent_uuid: 259f9fc8-8b3c-4308-a8c5-27cba0a965ce
+      slot: content
+      uuid: fd763e2e-519c-4eb5-a350-3c10dbb0d0c3
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>For over two decades, we’ve supported communities too often overlooked. Learn why.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+  path:
+    -
+      alias: /donate
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

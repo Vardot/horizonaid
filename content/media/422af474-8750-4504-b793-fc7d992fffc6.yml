@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 422af474-8750-4504-b793-fc7d992fffc6
+  bundle: image
+  default_langcode: en
+  depends:
+    107c81b7-1973-4d71-b95f-59e646a5be71: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Health Program
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Health Program
+    title: ''
+    width: 1140
+    height: 641
+    entity: 107c81b7-1973-4d71-b95f-59e646a5be71

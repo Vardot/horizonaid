@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 413c36c7-883d-48fa-b972-786f4dcb4936
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    d6d4c475-2a54-4c8c-bf68-ae0e40ccb63d: menu_link_content
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Custom menu link'
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Impact
+  menu_name:
+    -
+      value: secondary
+  link:
+    -
+      uri: 'internal:#'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -48
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:d6d4c475-2a54-4c8c-bf68-ae0e40ccb63d'
+  revision_translation_affected:
+    -
+      value: true

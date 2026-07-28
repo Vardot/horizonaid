@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: afee652e-b49b-4718-b796-f2d9d527f7d6
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: greenish-partner.png
+  uri:
+  - value: public://2026-07/greenish-partner.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 2913
+  status:
+  - value: true

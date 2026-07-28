@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ed3320e8-fe39-471f-b6c2-57fdcfac8ab8
+  bundle: image
+  default_langcode: en
+  depends:
+    6b9cda9c-f85a-48cb-82c0-96c5b134f350: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Syria
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Syria
+    title: ''
+    width: 261
+    height: 332
+    entity: 6b9cda9c-f85a-48cb-82c0-96c5b134f350

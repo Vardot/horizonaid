@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9114a38d-4465-49fa-b357-71782b52a60b
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: minty-partner.png
+  uri:
+  - value: public://2026-07/minty-partner.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 2718
+  status:
+  - value: true

@@ -1,0 +1,54 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a1b2c3d4-1e2f-4a3b-9c4d-5e6f7a8b9c01
+  bundle: blog
+  default_langcode: en
+  depends:
+    184fa3db-624a-4ccd-9202-012ecfc5be5a: media
+    7c1f2a64-9d3b-4e51-8a62-1c4f5b7d9e80: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Created new Blog post'
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Bridging medical gaps in border corridors'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /blog/bridging-medical-gaps-in-border-corridors
+      langcode: en
+  field_content:
+    -
+      value: "<p>Mobile health units now cover three border corridors, bringing paediatric care, vaccination and maternal health screening to families who live days away from the nearest clinic.</p><h3>What the teams carry</h3><p>Each unit travels with a nurse, a community health worker and a translator, and reports back to the nearest referral hospital the same day. Cases that need surgery are transported under an agreement with two regional hospitals.</p><h3>What comes next</h3><p>Local health authorities are training a second cohort of community health workers so each corridor keeps a permanent team after the emergency phase ends.</p>"
+      format: content_format
+  field_description:
+    -
+      value: 'Mobile health units deliver emergency paediatric care where border clinics cannot reach families on the move.'
+  field_featured_image:
+    -
+      entity: 184fa3db-624a-4ccd-9202-012ecfc5be5a
+  field_tags:
+    -
+      entity: 7c1f2a64-9d3b-4e51-8a62-1c4f5b7d9e80

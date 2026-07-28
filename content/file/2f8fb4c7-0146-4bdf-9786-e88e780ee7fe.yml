@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2f8fb4c7-0146-4bdf-9786-e88e780ee7fe
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: kenya-country.png
+  uri:
+  - value: public://2026-07/kenya-country.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 183625
+  status:
+  - value: true

@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6e55bbc7-e34d-4cad-806d-d3d7f4406616
+  bundle: image
+  default_langcode: en
+  depends:
+    73ccb651-b48d-406b-9e70-dda32be9ddc5: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: South Sudan
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: South Sudan
+    title: ''
+    width: 261
+    height: 332
+    entity: 73ccb651-b48d-406b-9e70-dda32be9ddc5

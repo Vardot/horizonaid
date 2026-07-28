@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d2b46c83-2bb1-4612-8b19-405120415c67
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: accountability.png
+  uri:
+  - value: public://2026-07/accountability.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1194
+  status:
+  - value: true

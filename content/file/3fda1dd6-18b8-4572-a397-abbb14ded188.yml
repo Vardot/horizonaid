@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 3fda1dd6-18b8-4572-a397-abbb14ded188
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: resources.png
+  uri:
+  - value: public://2026-07/resources.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 7365707
+  status:
+  - value: true

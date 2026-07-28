@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: efef6879-4727-40f3-bc2c-90880360e429
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: how-we-show-up.png
+  uri:
+  - value: public://2026-07/how-we-show-up.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 618408
+  status:
+  - value: true

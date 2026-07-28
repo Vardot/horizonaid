@@ -1,0 +1,1081 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: f7c544db-f1b1-4485-a5b0-e048aebcd002
+  default_langcode: en
+  depends:
+    20647e3f-2a90-4b46-87ad-82d2c3263447: file
+    6ddcae64-1996-41e0-ab82-aa8085228a1f: media
+    a2294f84-f563-4215-a24c-de8b081a05ba: file
+    ad7df54a-4007-40a1-8555-4a1bdbbb9020: media
+    7668f3b2-3222-4a4c-8bf7-00f9d5c47759: file
+    84d95efd-b139-482c-aeb7-549158924bb0: media
+    349b0e82-5b68-4c3a-b8bf-fbc190eb0e28: file
+    efa70a24-8f96-4997-85ca-c5f9bc7c7f55: media
+    cb5bf19f-10d1-4173-b258-42c8b25f5204: file
+    ecc68091-64c6-4e9d-be6e-39a98bc33e8a: media
+    eb65e689-0880-4277-afaa-0d6c85fb0209: file
+    e6275459-a7b4-4662-919b-6c03c02524c6: media
+    1203ea59-e1e2-437e-a45d-22c3d4c2dbe2: file
+    50bf57b5-5c10-4e29-9d6d-23b3ad7ea315: media
+    96982c5c-183f-4c59-8c82-17638659b465: file
+    d6e23924-4e7a-4fb3-8496-e925a00d5d1f: media
+    7382f105-6877-4875-a878-c9135626c013: file
+    f5cd4df6-02f3-4a94-97c0-991f136ce2d9: media
+    73ccb651-b48d-406b-9e70-dda32be9ddc5: file
+    6e55bbc7-e34d-4cad-806d-d3d7f4406616: media
+    6b9cda9c-f85a-48cb-82c0-96c5b134f350: file
+    ed3320e8-fe39-471f-b6c2-57fdcfac8ab8: media
+    8ece6ad5-8023-4380-a904-7d77983490ef: file
+    c04d4ad4-2ccf-403d-8a36-098b4ad3ab42: media
+    43d942a9-b034-4428-ab46-5af093a47f26: file
+    87b051ce-b31d-4586-9704-ffb20ae47b5f: media
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Updated the Components field'
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: Countries
+  components:
+    -
+      uuid: 12f97804-deb9-4f48-a8de-b4af78964517
+      component_id: sdc.vartheme_bs5_horizonaid.media-banner
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 6ddcae64-1996-41e0-ab82-aa8085228a1f
+            target_type: media
+        image_radius: rounded-hero
+        content_bg: bg-light
+        content_color: auto
+    -
+      parent_uuid: 12f97804-deb9-4f48-a8de-b4af78964517
+      slot: content
+      uuid: 1ba728a0-f9ff-4e81-b381-445db9e89ab6
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Where We Work'
+        level: 1
+        target: _self
+    -
+      parent_uuid: 12f97804-deb9-4f48-a8de-b4af78964517
+      slot: content
+      uuid: 91335989-af46-4862-84bf-0109bade50a9
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>For over two decades, we’ve supported communities too often overlooked. Learn why.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      uuid: c307133d-2034-4e34-a970-800ccaee80e6
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: bg-light
+        text_color: auto
+        background_overlay: none
+        columns: 33-33-33
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-5
+        padding_inline_end: pe-4
+        margin_block_start: mt-5
+        margin_block_end: mb-5
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: rounded-4
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: c307133d-2034-4e34-a970-800ccaee80e6
+      slot: header_slot
+      uuid: 3aa4068c-28f8-4b6e-be82-0a937517b33a
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: text-dark
+        background_overlay: none
+        columns: 75-25
+        gutter: 'gx-4 gy-4'
+        padding_block_start: pt-0
+        padding_block_end: pb-0
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 3aa4068c-28f8-4b6e-be82-0a937517b33a
+      slot: col_1
+      uuid: b65b8dc0-9cd5-470f-b14d-f35a425e1df2
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Global Impact'
+        level: 2
+        target: _self
+    -
+      parent_uuid: 3aa4068c-28f8-4b6e-be82-0a937517b33a
+      slot: col_1
+      uuid: 622a1186-78c5-4fd8-bf8a-537ff81464de
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>We believe in absolute transparency. Through partnerships and direct community funding, we track every dollar to ensure your support creates immediate, sustainable protection for human rights worldwide.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 3aa4068c-28f8-4b6e-be82-0a937517b33a
+      slot: col_2
+      uuid: e1b22552-d8d7-454a-a40e-976b02206715
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-secondary
+        outline: false
+        size: btn-md
+        label: 'Explore Our Impact'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-pill
+    -
+      parent_uuid: c307133d-2034-4e34-a970-800ccaee80e6
+      slot: col_1
+      uuid: a7b41432-751d-4bf5-a484-71385707846a
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: 20K+
+        description: 'Lives Protected'
+        background_color: none
+        align: text-center
+        number_size: display-1
+        number_color: text-black
+        description_size: fs-6
+        description_color: text-black
+    -
+      parent_uuid: c307133d-2034-4e34-a970-800ccaee80e6
+      slot: col_2
+      uuid: dd3fe363-dc43-4266-9d4b-89fcbaae3d5a
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: 137K+
+        description: 'Legal Aid Hours'
+        background_color: none
+        align: text-center
+        number_size: display-1
+        number_color: text-black
+        description_size: fs-6
+        description_color: text-black
+    -
+      parent_uuid: c307133d-2034-4e34-a970-800ccaee80e6
+      slot: col_3
+      uuid: b33001f6-f9a7-4a81-8c0f-e6fce093f5aa
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: 11K+
+        description: 'Communities Served'
+        background_color: none
+        align: text-center
+        number_size: display-1
+        number_color: text-black
+        description_size: fs-6
+        description_color: text-black
+    -
+      uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      component_id: sdc.vartheme_bs5_horizonaid.map
+      inputs:
+        map_height: md
+        corner_style: rounded-4
+        box_shadow: shadow-none
+        background_color: bg-secondary-subtle
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: content
+      uuid: b4abdf9a-feec-4cc8-850e-23ffe7fc8325
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Where We Work'
+        level: 2
+        target: _self
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: content
+      uuid: 0c7a4d1c-c614-4903-98fd-0a1244621028
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Horizon Aid operates across more than 16 countries, working alongside communities facing the most acute humanitarian crises of our time — conflict, displacement, food insecurity, and climate-driven hardship. Our work is rooted in the regions where the need is greatest and the presence of international support is often weakest. Every country we work in is guided by local leadership, community trust, and a long-term commitment to dignity and self-determination.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: 1730d87c-1f0a-4115-aa0d-4d5b9636ee9a
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: SO
+        heading: Somalia
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: 3dd0b25c-d54b-4ce6-99f2-20ff6c3305c7
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: BD
+        heading: Bangladesh
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: b722e710-ce02-4cac-83d1-8b1ca65c961c
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: JO
+        heading: Jordan
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: 9b5831e9-78a3-491c-9672-08c8d0823889
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: EG
+        heading: Egypt
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: 2fed3a10-b03f-4e6e-8fd3-5507bc9812cb
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: IN
+        heading: India
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: c642e39d-5008-49ae-9a34-b607aaae6988
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: AF
+        heading: Afghanistan
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: abe1e1b6-8016-436a-9acd-4bb9d62ec2a6
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: CO
+        heading: Colombia
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: 5851ffa7-9123-4dbd-8f5d-4843e23e2084
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: EC
+        heading: Ecuador
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: e3d3376b-5b3a-4fe3-9895-b89a3d607d44
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: KE
+        heading: Kenya
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: dc82cdb9-7aea-4ff6-9b65-0605403b709a
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: LB
+        heading: Lebanon
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: 05ea2f56-6c66-495c-b7bd-c56182ff633c
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: MM
+        heading: Myanmar
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: 14845f43-471a-4585-b0d9-e15598d42928
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: SS
+        heading: 'South Sudan'
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: a943740e-0ff2-453a-9b99-688b8803c71f
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: SY
+        heading: Syria
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: a19f75f7-24a8-4a71-a837-d92ffcdbf04a
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: UA
+        heading: Ukraine
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      parent_uuid: c8982c14-e5ae-42f7-a109-85ef9abdf05d
+      slot: countries
+      uuid: 45d62731-3bc5-4ee3-8cd1-5dfb3c6c9be6
+      component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+      inputs:
+        country_code: YE
+        heading: Yemen
+        description: 'Supporting displaced communities and refugee populations across southern and central regions with emergency shelter, clean water access, and legal protection services.'
+        stat_1_value: 2.9M
+        stat_1_label: 'Internally displaced people reached'
+        stat_2_value: 14K
+        stat_2_label: 'Legal aid cases supported in 2025'
+        link_text: 'Learn More'
+    -
+      uuid: d5bc688b-c79c-4973-ad83-191987a0f4fe
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 25-25-25-25
+        gutter: 'gx-4 gy-4'
+        padding_block_start: pt-5
+        padding_block_end: pb-4
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-5
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: d5bc688b-c79c-4973-ad83-191987a0f4fe
+      slot: header_slot
+      uuid: c9fbba23-9d33-4493-89b8-3a80ade76cf0
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'See All Countries'
+        level: 2
+        target: _self
+    -
+      parent_uuid: d5bc688b-c79c-4973-ad83-191987a0f4fe
+      slot: header_slot
+      uuid: f2145340-ef5f-4471-ae3d-f83a69c205b8
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: d5bc688b-c79c-4973-ad83-191987a0f4fe
+      slot: col_1
+      uuid: 138d88e2-a313-4738-9a87-713487fc9005
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: ad7df54a-4007-40a1-8555-4a1bdbbb9020
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: 138d88e2-a313-4738-9a87-713487fc9005
+      slot: content
+      uuid: a66c1f09-d2e8-4774-8a7f-35378947bbdd
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Afghanistan
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: 138d88e2-a313-4738-9a87-713487fc9005
+      slot: content
+      uuid: 0fd3674b-b4af-4d45-a965-25409a509293
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+    -
+      parent_uuid: d5bc688b-c79c-4973-ad83-191987a0f4fe
+      slot: col_2
+      uuid: 8d390c18-2a33-4a63-9a4f-a131237d4852
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 84d95efd-b139-482c-aeb7-549158924bb0
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: 8d390c18-2a33-4a63-9a4f-a131237d4852
+      slot: content
+      uuid: 52595c5f-5584-46ce-bf7b-df2947a0411e
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Bangladesh
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: 8d390c18-2a33-4a63-9a4f-a131237d4852
+      slot: content
+      uuid: 31829e15-64d1-440d-8492-cc7791e166bf
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+    -
+      parent_uuid: d5bc688b-c79c-4973-ad83-191987a0f4fe
+      slot: col_3
+      uuid: 06d51705-b8a0-41a6-80cc-b9ead7fd4388
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: efa70a24-8f96-4997-85ca-c5f9bc7c7f55
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: 06d51705-b8a0-41a6-80cc-b9ead7fd4388
+      slot: content
+      uuid: 074e95a3-be20-4aea-a958-39f34f93ea3a
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Colombia
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: 06d51705-b8a0-41a6-80cc-b9ead7fd4388
+      slot: content
+      uuid: 74c330e8-17ca-4979-a624-8e412be4c8c5
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+    -
+      parent_uuid: d5bc688b-c79c-4973-ad83-191987a0f4fe
+      slot: col_4
+      uuid: 20f91265-92c5-4a53-abbc-12265893cc7e
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: ecc68091-64c6-4e9d-be6e-39a98bc33e8a
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: 20f91265-92c5-4a53-abbc-12265893cc7e
+      slot: content
+      uuid: 145da6b3-7da6-4d7d-bc0b-998eed99e053
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Ecuador
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: 20f91265-92c5-4a53-abbc-12265893cc7e
+      slot: content
+      uuid: b47a4ed6-b460-4bcb-b2d5-4ad339a3bff1
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+    -
+      uuid: 6dd24473-5352-4e2f-9ea9-1a3d9271727c
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 25-25-25-25
+        gutter: 'gx-4 gy-4'
+        padding_block_start: pt-1
+        padding_block_end: pb-4
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 6dd24473-5352-4e2f-9ea9-1a3d9271727c
+      slot: col_1
+      uuid: dd6648ef-9704-4bf8-a106-3d0805ead67e
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: e6275459-a7b4-4662-919b-6c03c02524c6
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: dd6648ef-9704-4bf8-a106-3d0805ead67e
+      slot: content
+      uuid: 2e67fbcb-e780-48ee-8fe6-0f7162ead5be
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Kenya
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: dd6648ef-9704-4bf8-a106-3d0805ead67e
+      slot: content
+      uuid: f1f9af24-2561-4c9b-b0e5-6b755a1deade
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+    -
+      parent_uuid: 6dd24473-5352-4e2f-9ea9-1a3d9271727c
+      slot: col_2
+      uuid: 68e2d3fe-4bd5-4bdc-8456-1d9c801ae481
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 50bf57b5-5c10-4e29-9d6d-23b3ad7ea315
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: 68e2d3fe-4bd5-4bdc-8456-1d9c801ae481
+      slot: content
+      uuid: f285a9ff-d21d-4e30-a232-ac301e17403d
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Lebanon
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: 68e2d3fe-4bd5-4bdc-8456-1d9c801ae481
+      slot: content
+      uuid: 6915631f-1356-41df-93a8-42cade03501d
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+    -
+      parent_uuid: 6dd24473-5352-4e2f-9ea9-1a3d9271727c
+      slot: col_3
+      uuid: dde1350c-d4c5-4040-a6a4-024560086360
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: d6e23924-4e7a-4fb3-8496-e925a00d5d1f
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: dde1350c-d4c5-4040-a6a4-024560086360
+      slot: content
+      uuid: bd90d69a-5618-4522-8431-969e7470b0a1
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Myanmar
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: dde1350c-d4c5-4040-a6a4-024560086360
+      slot: content
+      uuid: 5f4fede5-32ce-4865-9d51-3fdcd7f62427
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+    -
+      parent_uuid: 6dd24473-5352-4e2f-9ea9-1a3d9271727c
+      slot: col_4
+      uuid: bfc4452b-ae4d-485d-8cd8-61fd0c0d1f5e
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: f5cd4df6-02f3-4a94-97c0-991f136ce2d9
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: bfc4452b-ae4d-485d-8cd8-61fd0c0d1f5e
+      slot: content
+      uuid: 8a17f907-ce5f-4df5-b7d9-048d68080365
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Somalia
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: bfc4452b-ae4d-485d-8cd8-61fd0c0d1f5e
+      slot: content
+      uuid: 348195ae-dc1a-4791-b43b-84dd38ea5723
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+    -
+      uuid: 747e745d-d285-4c44-926d-59205590c77f
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 25-25-25-25
+        gutter: 'gx-4 gy-4'
+        padding_block_start: pt-1
+        padding_block_end: pb-4
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 747e745d-d285-4c44-926d-59205590c77f
+      slot: col_1
+      uuid: c85c971e-7f1f-47fd-8990-8591d7142321
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 6e55bbc7-e34d-4cad-806d-d3d7f4406616
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: c85c971e-7f1f-47fd-8990-8591d7142321
+      slot: content
+      uuid: 5de6b3b2-359d-4b2a-9e6d-bb192e452d98
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'South Sudan'
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: c85c971e-7f1f-47fd-8990-8591d7142321
+      slot: content
+      uuid: 5e27449d-10e3-4e8c-a24f-d0191f6465cd
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+    -
+      parent_uuid: 747e745d-d285-4c44-926d-59205590c77f
+      slot: col_2
+      uuid: 943f2da5-b729-451e-9ff5-bd5f075bfc09
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: ed3320e8-fe39-471f-b6c2-57fdcfac8ab8
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: 943f2da5-b729-451e-9ff5-bd5f075bfc09
+      slot: content
+      uuid: b13a1fed-0ea3-41e1-97e4-d80291efbfe7
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Syria
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: 943f2da5-b729-451e-9ff5-bd5f075bfc09
+      slot: content
+      uuid: 3c95f711-86a7-4634-b6fe-0f7634b040bf
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+    -
+      parent_uuid: 747e745d-d285-4c44-926d-59205590c77f
+      slot: col_3
+      uuid: 6cbd09ba-6fff-491d-9007-fb0f49cc16d8
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: c04d4ad4-2ccf-403d-8a36-098b4ad3ab42
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: 6cbd09ba-6fff-491d-9007-fb0f49cc16d8
+      slot: content
+      uuid: edc1c72c-095f-46ca-9c6a-42bdf5f9025f
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Ukraine
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: 6cbd09ba-6fff-491d-9007-fb0f49cc16d8
+      slot: content
+      uuid: a13049ef-29c5-413c-8ded-61244ea08385
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+    -
+      parent_uuid: 747e745d-d285-4c44-926d-59205590c77f
+      slot: col_4
+      uuid: 36f9869f-26ae-4d2d-9081-69ead7d65541
+      component_id: sdc.vartheme_bs5_horizonaid.card-country
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 87b051ce-b31d-4586-9704-ffb20ae47b5f
+            target_type: media
+        link_text: 'Learn more'
+        link_target: default
+        link_url:
+          uri: 'internal:/country-page'
+          options: {  }
+    -
+      parent_uuid: 36f9869f-26ae-4d2d-9081-69ead7d65541
+      slot: content
+      uuid: 0c30d145-9724-4e65-93ab-edaf4a4fc127
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Yemen
+        level: 3
+        target: _self
+        text_color: text-white
+    -
+      parent_uuid: 36f9869f-26ae-4d2d-9081-69ead7d65541
+      slot: content
+      uuid: b7aed36d-7186-4184-8676-0e6fa08557a0
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id...</p>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-white
+  path:
+    -
+      alias: /countries
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

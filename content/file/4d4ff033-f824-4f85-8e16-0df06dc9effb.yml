@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4d4ff033-f824-4f85-8e16-0df06dc9effb
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: home-page-header-banner.png
+  uri:
+  - value: public://2026-07/home-page-header-banner.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1451387
+  status:
+  - value: true

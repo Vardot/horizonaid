@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b1b57c79-6585-4270-abe1-720aec8ff769
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: partners.png
+  uri:
+    -
+      value: 'public://2026-07/partners.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 1737
+  status:
+    -
+      value: true

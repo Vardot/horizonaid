@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: d7720b6d-6264-45d7-8eb6-2cb44fe6771a
+  bundle: image
+  default_langcode: en
+  depends:
+    5a330cb7-17ac-42d4-8404-a6a69522381b: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Elena Vasquez
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Elena Vasquez
+    title: ''
+    width: 359
+    height: 370
+    entity: 5a330cb7-17ac-42d4-8404-a6a69522381b

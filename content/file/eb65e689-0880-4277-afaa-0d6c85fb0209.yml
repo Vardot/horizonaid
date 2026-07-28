@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: eb65e689-0880-4277-afaa-0d6c85fb0209
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: kenya.png
+  uri:
+  - value: public://2026-07/kenya.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 183625
+  status:
+  - value: true

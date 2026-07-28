@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7fd1d440-8109-40c6-8f18-a57b015ac54e
+  bundle: image
+  default_langcode: en
+  depends:
+    5e2c8089-151a-4aa3-9537-bd06aae363ca: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Cultivating Independence in Rural Farms
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Cultivating Independence in Rural Farms
+    title: ''
+    width: 359
+    height: 201
+    entity: 5e2c8089-151a-4aa3-9537-bd06aae363ca

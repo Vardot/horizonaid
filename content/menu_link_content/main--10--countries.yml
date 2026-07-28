@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: e423bd24-8811-4fcc-b67e-2ff82713ab6f
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    f7c544db-f1b1-4485-a5b0-e048aebcd002: canvas_page
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Custom menu link'
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Countries
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      title: ''
+      options: {  }
+      target_uuid: f7c544db-f1b1-4485-a5b0-e048aebcd002
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -45
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

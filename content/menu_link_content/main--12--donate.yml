@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: c2f73fb8-bd9f-4b47-85a9-e2e603f6b022
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    b2cfbb92-062f-42c2-9d7f-90ebd6de4829: canvas_page
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log_message:
+    -
+      value: 'Created new Custom menu link'
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Donate
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      title: ''
+      options: {  }
+      target_uuid: b2cfbb92-062f-42c2-9d7f-90ebd6de4829
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

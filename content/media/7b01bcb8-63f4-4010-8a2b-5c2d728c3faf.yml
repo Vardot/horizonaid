@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 7b01bcb8-63f4-4010-8a2b-5c2d728c3faf
+  bundle: image
+  default_langcode: en
+  depends:
+    229131a6-b17b-42b5-a2e9-02e6831aa632: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: David Park
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: David Park
+    title: ''
+    width: 359
+    height: 370
+    entity: 229131a6-b17b-42b5-a2e9-02e6831aa632

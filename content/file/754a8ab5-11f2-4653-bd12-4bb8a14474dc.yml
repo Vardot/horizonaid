@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 754a8ab5-11f2-4653-bd12-4bb8a14474dc
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: on-the-ground.png
+  uri:
+  - value: public://2026-07/on-the-ground.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 530132
+  status:
+  - value: true

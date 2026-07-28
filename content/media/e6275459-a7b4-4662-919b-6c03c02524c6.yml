@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e6275459-a7b4-4662-919b-6c03c02524c6
+  bundle: image
+  default_langcode: en
+  depends:
+    eb65e689-0880-4277-afaa-0d6c85fb0209: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Kenya
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Kenya
+    title: ''
+    width: 261
+    height: 332
+    entity: eb65e689-0880-4277-afaa-0d6c85fb0209

@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 450b8a1a-6b49-4edd-b7f8-d3c9686273e6
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: our-programs.png
+  uri:
+  - value: public://2026-07/our-programs.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1495058
+  status:
+  - value: true

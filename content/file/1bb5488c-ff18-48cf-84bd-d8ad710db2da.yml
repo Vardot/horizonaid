@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1bb5488c-ff18-48cf-84bd-d8ad710db2da
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: where-it-all-began.png
+  uri:
+  - value: public://2026-07/where-it-all-began.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 506181
+  status:
+  - value: true

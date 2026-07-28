@@ -1,0 +1,150 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 217e2d2b-114d-4eab-880b-86a4c135b670
+  default_langcode: en
+  depends:
+    3fda1dd6-18b8-4572-a397-abbb14ded188: file
+    8d0a50b1-b280-4507-ac9a-a917dd0533ca: media
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Updated the Components field'
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: Resources
+  components:
+    -
+      uuid: ea2bc356-1f7b-42d1-9917-c58cdc67848e
+      component_id: sdc.vartheme_bs5_horizonaid.media-banner
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 8d0a50b1-b280-4507-ac9a-a917dd0533ca
+            target_type: media
+        image_radius: rounded-hero
+        content_bg: bg-light
+        content_color: auto
+    -
+      parent_uuid: ea2bc356-1f7b-42d1-9917-c58cdc67848e
+      slot: content
+      uuid: 91623aac-a0de-459d-8ebe-80955583b64b
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Resources
+        level: 1
+        target: _self
+    -
+      parent_uuid: ea2bc356-1f7b-42d1-9917-c58cdc67848e
+      slot: content
+      uuid: 2551e0b2-9fab-4840-8d5c-1fcbd07f00d2
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Field updates and tracking stories directly from our teams.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      uuid: 7847c5fd-2e4a-4156-b7c6-9a692c9d8230
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: '100'
+        gutter: 'gx-3 gy-3'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-5
+        margin_block_end: mb-5
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 7847c5fd-2e4a-4156-b7c6-9a692c9d8230
+      slot: header_slot
+      uuid: ca0387ee-919b-4014-aad9-324f79325f85
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Latest Updates'
+        level: 2
+        target: _self
+    -
+      parent_uuid: 7847c5fd-2e4a-4156-b7c6-9a692c9d8230
+      slot: col_1
+      uuid: d21f9d2b-148e-4723-80ac-793c88f26f86
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+    -
+      parent_uuid: d21f9d2b-148e-4723-80ac-793c88f26f86
+      slot: content
+      uuid: aac75590-c944-4339-a7d6-d02a919144f8
+      component_id: block.views_exposed_filter_block.blog-all
+      inputs:
+        label: 'Exposed form: blog-all'
+        label_display: '0'
+        views_label: ''
+    -
+      parent_uuid: 7847c5fd-2e4a-4156-b7c6-9a692c9d8230
+      slot: col_1
+      uuid: a6519afa-bd34-44a2-9b55-9b3bf7d7fd29
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 7847c5fd-2e4a-4156-b7c6-9a692c9d8230
+      slot: col_1
+      uuid: 1182b1b8-4e2d-4bbf-8e32-e29b1bae7b52
+      component_id: block.views_block.blog-all
+      inputs:
+        label: 'Blog: All blog posts'
+        label_display: '0'
+        views_label: ''
+        items_per_page: 9
+        exposed: {  }
+  path:
+    -
+      alias: /resources
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

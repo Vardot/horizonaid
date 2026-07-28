@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 43d942a9-b034-4428-ab46-5af093a47f26
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: yemen.png
+  uri:
+  - value: public://2026-07/yemen.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 107571
+  status:
+  - value: true

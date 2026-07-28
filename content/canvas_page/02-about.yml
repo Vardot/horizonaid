@@ -1,0 +1,1263 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 3338b97d-da1e-4119-9300-311c9b39831f
+  default_langcode: en
+  depends:
+    74586f6d-20db-49e1-a114-3d0005dd7761: file
+    6a302aec-be45-4876-a1f7-360b7320fa7f: media
+    1bb5488c-ff18-48cf-84bd-d8ad710db2da: file
+    b40a6f70-d7c8-49ba-aaac-b2d0f0b43beb: media
+    efef6879-4727-40f3-bc2c-90880360e429: file
+    9cd01749-4f3a-431b-82af-757fd5c01df6: media
+    6273dfec-ad04-4c03-b570-2c3f43610d7b: file
+    c395f23d-ac13-4786-a346-a3da7cadcbcb: media
+    d2b46c83-2bb1-4612-8b19-405120415c67: file
+    be05d111-5968-4660-a0ba-aff9124b67eb: media
+    9bec1282-fc07-4df6-956d-f88aba18d38b: file
+    d9a8afc7-a393-4489-9ffa-60c3692953d4: media
+    316f4645-8229-463d-bdaf-8660db91c3ef: file
+    6016aaf6-03f4-40c5-8119-40a7e1dfccb6: media
+    5a330cb7-17ac-42d4-8404-a6a69522381b: file
+    d7720b6d-6264-45d7-8eb6-2cb44fe6771a: media
+    229131a6-b17b-42b5-a2e9-02e6831aa632: file
+    7b01bcb8-63f4-4010-8a2b-5c2d728c3faf: media
+    9de8bc53-891a-465c-8ff2-0548060532f0: file
+    345fa7df-01b6-46d0-aa9e-82f13b730230: media
+    3881a670-6def-4ea8-8a6c-e0c81bc0e207: file
+    8fec97e9-4ec1-42fa-a5d9-e2d141f8fdca: media
+    1527a000-d259-4fc9-96da-a50b93401967: file
+    272da304-fb4b-4a49-b05c-dcb8da1100cf: media
+    e776a5bf-47ec-4511-b74a-6fa90df22ec9: file
+    f77bfe55-7c7e-45af-95e7-380d438a1a8f: media
+    b1b57c79-6585-4270-abe1-720aec8ff769: file
+    559f1690-72b0-4373-9c1b-ca2cf833174f: media
+    852b3e2a-eaf5-4abd-b6fc-51fde08b96d3: file
+    76a6a186-65a3-4c80-a494-5d00ff312eae: media
+    9114a38d-4465-49fa-b357-71782b52a60b: file
+    d9b90fa4-cbc0-410f-a2a3-741754126f88: media
+    afee652e-b49b-4718-b796-f2d9d527f7d6: file
+    970e04cf-e3f9-404d-a572-e575f628a629: media
+    57646dd4-353f-4d57-a6a9-dbc2defdfa3c: file
+    38771a02-8334-4057-9022-f7f4d5342612: media
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Updated the Components field'
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: About
+  components:
+    -
+      uuid: a69fb162-6a38-4eb0-8176-a6bf6f8c142a
+      component_id: sdc.vartheme_bs5_horizonaid.media-banner
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 6a302aec-be45-4876-a1f7-360b7320fa7f
+            target_type: media
+        image_radius: rounded-hero
+        content_bg: bg-light
+        content_color: auto
+    -
+      parent_uuid: a69fb162-6a38-4eb0-8176-a6bf6f8c142a
+      slot: content
+      uuid: 35de2065-34aa-406c-ae2a-0aee65369b2e
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'About Us'
+        level: 1
+        target: _self
+    -
+      parent_uuid: a69fb162-6a38-4eb0-8176-a6bf6f8c142a
+      slot: content
+      uuid: 9b9b1670-e7fc-4cce-b50d-73fa6996b5d8
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>For over two decades, we’ve supported communities too often overlooked. Learn why.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      uuid: 9587f625-0e1c-4745-9981-dae328e028d1
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 60-40
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-5
+        margin_block_end: mb-5
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-center
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 9587f625-0e1c-4745-9981-dae328e028d1
+      slot: header_slot
+      uuid: e26b2801-1bb8-4cf7-a5f8-dace7f7a3983
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Our Mission'
+        level: 2
+        target: _self
+        align: text-center
+    -
+      parent_uuid: 9587f625-0e1c-4745-9981-dae328e028d1
+      slot: header_slot
+      uuid: f110fbb5-369a-4efb-852b-ede4f7e8ce34
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p class="text-align-center">To deliver immediate crisis relief and champion sustainable community development, empowering vulnerable populations worldwide to claim their fundamental human rights and build a foundation for long-term independence.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 9587f625-0e1c-4745-9981-dae328e028d1
+      slot: header_slot
+      uuid: b6336188-4610-499f-bd04-7bbdd8e0d9d7
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: 9587f625-0e1c-4745-9981-dae328e028d1
+      slot: col_1
+      uuid: 33b64fec-6320-4f70-8d37-4352c0f3a417
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: b40a6f70-d7c8-49ba-aaac-b2d0f0b43beb
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: rounded-4
+        loading: lazy
+    -
+      parent_uuid: 9587f625-0e1c-4745-9981-dae328e028d1
+      slot: col_2
+      uuid: 532b7623-1aec-46f1-a5c1-edfcbb6c6476
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-5
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+    -
+      parent_uuid: 532b7623-1aec-46f1-a5c1-edfcbb6c6476
+      slot: content
+      uuid: e7927511-c56a-4a39-80f9-1c2c70defc69
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-1
+    -
+      parent_uuid: 532b7623-1aec-46f1-a5c1-edfcbb6c6476
+      slot: content
+      uuid: 7b2e0da3-ad12-40b4-8d35-50b9e5832698
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 532b7623-1aec-46f1-a5c1-edfcbb6c6476
+      slot: content
+      uuid: 59352ccf-e192-45a3-8fac-3b2ab14c8a63
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Where It All Began'
+        level: 3
+        target: _self
+        text_size: h2
+    -
+      parent_uuid: 532b7623-1aec-46f1-a5c1-edfcbb6c6476
+      slot: content
+      uuid: d9a9cb9e-f52f-4343-a098-7b57b3a68583
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 532b7623-1aec-46f1-a5c1-edfcbb6c6476
+      slot: content
+      uuid: 7d5188ed-006f-4632-b335-f23597c69879
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Founded in 2008, Horizon Aid grew from a three-person team in Lebanon to work in 16 countries. Our mission remains the same: empower communities with the resources and protection to rebuild.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 532b7623-1aec-46f1-a5c1-edfcbb6c6476
+      slot: content
+      uuid: 75477469-fd1d-4727-98b6-020d51626bb0
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 532b7623-1aec-46f1-a5c1-edfcbb6c6476
+      slot: content
+      uuid: 6869d878-a3a5-4433-807b-2d50c7d6fa28
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-link
+        outline: false
+        size: btn-md
+        label: 'Read Our Full Story'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-1
+    -
+      parent_uuid: 532b7623-1aec-46f1-a5c1-edfcbb6c6476
+      slot: content
+      uuid: 9690851a-9d60-4019-82d5-c51d59e0c611
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      uuid: aefa757b-4f48-4ed6-9b46-b9a21823f8f7
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 60-40
+        padding_block_start: pt-0
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-center
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+    -
+      parent_uuid: aefa757b-4f48-4ed6-9b46-b9a21823f8f7
+      slot: col_1
+      uuid: 7d8761ed-22c4-46a0-9860-0d874446a211
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 9cd01749-4f3a-431b-82af-757fd5c01df6
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: rounded-4
+        loading: lazy
+    -
+      parent_uuid: aefa757b-4f48-4ed6-9b46-b9a21823f8f7
+      slot: col_2
+      uuid: 54fd81b4-b76e-409f-9bb1-cb9e7b8555ff
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-5
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+    -
+      parent_uuid: 54fd81b4-b76e-409f-9bb1-cb9e7b8555ff
+      slot: content
+      uuid: 549672cd-0d3d-4604-b9fe-af3825ca6990
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-1
+    -
+      parent_uuid: 54fd81b4-b76e-409f-9bb1-cb9e7b8555ff
+      slot: content
+      uuid: d2e1f221-f0a1-4e2e-8139-13617bb2e7a3
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 54fd81b4-b76e-409f-9bb1-cb9e7b8555ff
+      slot: content
+      uuid: dce66f06-036a-496c-a63e-3732ca099b8f
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'How We Show Up'
+        level: 3
+        target: _self
+        text_size: h2
+    -
+      parent_uuid: 54fd81b4-b76e-409f-9bb1-cb9e7b8555ff
+      slot: content
+      uuid: 77fb01d4-e107-4b35-84a9-9f7bceff7318
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 54fd81b4-b76e-409f-9bb1-cb9e7b8555ff
+      slot: content
+      uuid: 6dc21247-d957-4066-8b1d-cfe3c2c11a09
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Founded in 2008, Horizon Aid grew from a three-person team in Lebanon to work in 16 countries. Our mission remains the same: empower communities with the resources and protection to rebuild.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 54fd81b4-b76e-409f-9bb1-cb9e7b8555ff
+      slot: content
+      uuid: 114576d9-693c-4891-8801-b74bb7efae9d
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 54fd81b4-b76e-409f-9bb1-cb9e7b8555ff
+      slot: content
+      uuid: f0ed8f96-4104-4563-aff9-00ae999816f3
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-link
+        outline: false
+        size: btn-md
+        label: 'Learn About Our Approach'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-1
+    -
+      parent_uuid: 54fd81b4-b76e-409f-9bb1-cb9e7b8555ff
+      slot: content
+      uuid: 2cda9d7c-20e8-41cd-96cd-3bda4fafea23
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 54fd81b4-b76e-409f-9bb1-cb9e7b8555ff
+      slot: content
+      uuid: 0ce0223d-4b0b-4e31-b292-7232347ad378
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-1
+    -
+      uuid: 6ff7e757-e528-40e6-bc27-01991e3e82e7
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 33-33-33
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-5
+        margin_block_end: mb-5
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 6ff7e757-e528-40e6-bc27-01991e3e82e7
+      slot: col_1
+      uuid: d72a6380-a890-459d-aed6-bedcd5208a8e
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'What Drives Everything We Do'
+        level: 2
+        target: _self
+    -
+      parent_uuid: 6ff7e757-e528-40e6-bc27-01991e3e82e7
+      slot: col_1
+      uuid: a6391101-0210-4608-a171-ab5f79cc9005
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Every decision we make and every community we serve is guided by four values that have defined Horizon Aid since our founding.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 6ff7e757-e528-40e6-bc27-01991e3e82e7
+      slot: col_1
+      uuid: bf69995d-1d24-476c-820e-122a55955c8c
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-link
+        outline: false
+        size: btn-md
+        label: 'Explore More'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-1
+    -
+      parent_uuid: 6ff7e757-e528-40e6-bc27-01991e3e82e7
+      slot: col_2
+      uuid: 282e6e51-d49a-479d-bdd8-c4e1175f16d7
+      component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+      inputs:
+        icon_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: c395f23d-ac13-4786-a346-a3da7cadcbcb
+            target_type: media
+        icon_alignment: start
+        card_border: false
+        background_color: bg-accent-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: 282e6e51-d49a-479d-bdd8-c4e1175f16d7
+      slot: content
+      uuid: b9569f34-dc68-476c-a480-cfe61f837185
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Transparency
+        level: 3
+        target: _self
+    -
+      parent_uuid: 282e6e51-d49a-479d-bdd8-c4e1175f16d7
+      slot: content
+      uuid: b6b5fc77-6760-4a24-aff9-85a56824fbaf
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Every dollar accounted for. Full visibility for our donors, partners, and communities — always.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 6ff7e757-e528-40e6-bc27-01991e3e82e7
+      slot: col_2
+      uuid: 42cbba88-6b91-46fc-a1ba-d1b12969955f
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 6ff7e757-e528-40e6-bc27-01991e3e82e7
+      slot: col_2
+      uuid: 30279fe7-efb9-40a5-933d-f54c200741fa
+      component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+      inputs:
+        icon_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: be05d111-5968-4660-a0ba-aff9124b67eb
+            target_type: media
+        icon_alignment: start
+        card_border: false
+        background_color: bg-primary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: 30279fe7-efb9-40a5-933d-f54c200741fa
+      slot: content
+      uuid: 4348e7df-723b-4ef0-ab0d-e47982f050ce
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Accountability
+        level: 3
+        target: _self
+    -
+      parent_uuid: 30279fe7-efb9-40a5-933d-f54c200741fa
+      slot: content
+      uuid: 494ff2d9-73c8-48a9-82d9-51132b927ec4
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Every dollar accounted for. Full visibility for our donors, partners, and communities — always.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 6ff7e757-e528-40e6-bc27-01991e3e82e7
+      slot: col_3
+      uuid: 4f7421b2-8efa-4606-a94f-11f27a40d1ea
+      component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+      inputs:
+        icon_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: d9a8afc7-a393-4489-9ffa-60c3692953d4
+            target_type: media
+        icon_alignment: start
+        card_border: false
+        background_color: bg-primary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: 4f7421b2-8efa-4606-a94f-11f27a40d1ea
+      slot: content
+      uuid: 1c751666-a835-4c20-80dc-fbf23ddbf91c
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Community-Led
+        level: 3
+        target: _self
+    -
+      parent_uuid: 4f7421b2-8efa-4606-a94f-11f27a40d1ea
+      slot: content
+      uuid: b36a73c9-8079-4532-bb82-84ba699b0df0
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Every dollar accounted for. Full visibility for our donors, partners, and communities — always.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 6ff7e757-e528-40e6-bc27-01991e3e82e7
+      slot: col_3
+      uuid: 6b9879b9-6701-41d7-8561-186456e656d4
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 6ff7e757-e528-40e6-bc27-01991e3e82e7
+      slot: col_3
+      uuid: 91fe7aab-e644-4e72-a519-c3d9a09c6514
+      component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+      inputs:
+        icon_image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 6016aaf6-03f4-40c5-8119-40a7e1dfccb6
+            target_type: media
+        icon_alignment: start
+        card_border: false
+        background_color: bg-accent-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+    -
+      parent_uuid: 91fe7aab-e644-4e72-a519-c3d9a09c6514
+      slot: content
+      uuid: 0c1c9ea1-0ad1-4263-b7b9-16f186b3c984
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Dignity
+        level: 3
+        target: _self
+    -
+      parent_uuid: 91fe7aab-e644-4e72-a519-c3d9a09c6514
+      slot: content
+      uuid: 9f140629-db9e-449c-b9c9-9783b834138c
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Every dollar accounted for. Full visibility for our donors, partners, and communities — always.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: true
+        container_type: container
+        background_color: bg-light
+        text_color: auto
+        background_overlay: none
+        columns: 33-33-33
+        gutter: 'gx-3 gy-3'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: true
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: header_slot
+      uuid: e354984b-0237-460f-905e-064ec1a4a2d4
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: header_slot
+      uuid: be7b1472-a42f-4783-b0f9-fe5f89d48bd0
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Meet Our Team'
+        level: 2
+        target: _self
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: header_slot
+      uuid: 2c5870de-297d-4c38-9728-363b27155523
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>The people behind our mission — leading programmes across 16 countries.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: col_1
+      uuid: 74ec91e8-9c03-493c-bd53-e9d20da883c8
+      component_id: sdc.vartheme_bs5_horizonaid.card-profile
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: d7720b6d-6264-45d7-8eb6-2cb44fe6771a
+            target_type: media
+        linkedin_url:
+          uri: 'https://linkedin.com/'
+          options: {  }
+    -
+      parent_uuid: 74ec91e8-9c03-493c-bd53-e9d20da883c8
+      slot: content
+      uuid: b9c73cef-2899-454a-909d-91cc832bb014
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Elena Vasquez'
+        level: 3
+        text_color: text-white
+        target: _self
+    -
+      parent_uuid: 74ec91e8-9c03-493c-bd53-e9d20da883c8
+      slot: content
+      uuid: 17d99f11-0c85-4b0c-877b-458740bbbe60
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Executive Director</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-white
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: col_1
+      uuid: 969b846e-095c-47d4-b372-8370b64afb07
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: col_1
+      uuid: fceb5a3d-5ce4-4bb7-b09f-783fa51c7385
+      component_id: sdc.vartheme_bs5_horizonaid.card-profile
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 7b01bcb8-63f4-4010-8a2b-5c2d728c3faf
+            target_type: media
+        linkedin_url:
+          uri: 'https://linkedin.com/'
+          options: {  }
+    -
+      parent_uuid: fceb5a3d-5ce4-4bb7-b09f-783fa51c7385
+      slot: content
+      uuid: b9302023-8c58-4593-87fb-468f6863c561
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'David Park'
+        level: 3
+        text_color: text-white
+        target: _self
+    -
+      parent_uuid: fceb5a3d-5ce4-4bb7-b09f-783fa51c7385
+      slot: content
+      uuid: 5242ab56-6aa3-4f27-ae3f-171becefc065
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Program Officer</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-white
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: col_2
+      uuid: 0ec765d5-86bc-40a1-b8fa-759024222784
+      component_id: sdc.vartheme_bs5_horizonaid.card-profile
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 345fa7df-01b6-46d0-aa9e-82f13b730230
+            target_type: media
+        linkedin_url:
+          uri: 'https://linkedin.com/'
+          options: {  }
+    -
+      parent_uuid: 0ec765d5-86bc-40a1-b8fa-759024222784
+      slot: content
+      uuid: b7d49c43-ea33-4969-851a-16c1c8eb8916
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'James Greenpoint'
+        level: 3
+        text_color: text-white
+        target: _self
+    -
+      parent_uuid: 0ec765d5-86bc-40a1-b8fa-759024222784
+      slot: content
+      uuid: 1963fcf8-5487-45d0-adf2-ba501057a008
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Head of Field Operations</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-white
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: col_2
+      uuid: 98add638-0fd1-4e31-9cc2-ed5f896aebd2
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: col_2
+      uuid: 34fc2502-592b-4e48-a3d5-ee0316ea63cc
+      component_id: sdc.vartheme_bs5_horizonaid.card-profile
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 8fec97e9-4ec1-42fa-a5d9-e2d141f8fdca
+            target_type: media
+        linkedin_url:
+          uri: 'https://linkedin.com/'
+          options: {  }
+    -
+      parent_uuid: 34fc2502-592b-4e48-a3d5-ee0316ea63cc
+      slot: content
+      uuid: 847cbe5b-92b7-42be-939e-276ea67bebb9
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Lena Miller'
+        level: 3
+        text_color: text-white
+        target: _self
+    -
+      parent_uuid: 34fc2502-592b-4e48-a3d5-ee0316ea63cc
+      slot: content
+      uuid: a8cefd1f-fa9c-4d33-b7c0-48b0cc90e0c6
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Finance Director</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-white
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: col_3
+      uuid: 6e26e08c-9af1-44e0-a4b1-86baf3c91588
+      component_id: sdc.vartheme_bs5_horizonaid.card-profile
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 272da304-fb4b-4a49-b05c-dcb8da1100cf
+            target_type: media
+        linkedin_url:
+          uri: 'https://linkedin.com/'
+          options: {  }
+    -
+      parent_uuid: 6e26e08c-9af1-44e0-a4b1-86baf3c91588
+      slot: content
+      uuid: aa14abc8-6bdb-4174-8e7e-a6963aa66e59
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Philip Le'
+        level: 3
+        text_color: text-white
+        target: _self
+    -
+      parent_uuid: 6e26e08c-9af1-44e0-a4b1-86baf3c91588
+      slot: content
+      uuid: 0f0a57be-f00c-497d-89df-adaec8380fd2
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Director of Partnership</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-white
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: col_3
+      uuid: 77cdb645-ed8a-40de-a763-1afd5b6c7989
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: col_3
+      uuid: 77aa1178-17be-4f3e-b61c-0cb1982cb427
+      component_id: sdc.vartheme_bs5_horizonaid.card-profile
+      inputs:
+        card_border: false
+        background_color: bg-dark
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        image:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: f77bfe55-7c7e-45af-95e7-380d438a1a8f
+            target_type: media
+        linkedin_url:
+          uri: 'https://linkedin.com/'
+          options: {  }
+    -
+      parent_uuid: 77aa1178-17be-4f3e-b61c-0cb1982cb427
+      slot: content
+      uuid: e8ee5157-7e32-4db2-891f-9826888a253c
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Amara Diallo'
+        level: 3
+        text_color: text-white
+        target: _self
+    -
+      parent_uuid: 77aa1178-17be-4f3e-b61c-0cb1982cb427
+      slot: content
+      uuid: b318edf8-75e4-4214-927c-8cba02a28f55
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Communications Manager</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-white
+    -
+      parent_uuid: 27ba25e1-7aec-413a-be2d-7bb9decd28ca
+      slot: footer_slot
+      uuid: 1bf23b4c-60f0-48b9-9646-21d64a378821
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      uuid: 6328e8b2-a3fa-4ff9-bfd6-c40867f87511
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 20-20-20-20-20
+        gutter: 'gx-3 gy-3'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-5
+        margin_block_end: mb-5
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 6328e8b2-a3fa-4ff9-bfd6-c40867f87511
+      slot: header_slot
+      uuid: d2ea7c84-f53b-4f6c-bcbf-7b9bcf9092d8
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: '100'
+        gutter: 'gx-3 gy-3'
+        padding_block_start: pt-0
+        padding_block_end: pb-0
+        padding_inline_start: ps-5
+        padding_inline_end: pe-5
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: d2ea7c84-f53b-4f6c-bcbf-7b9bcf9092d8
+      slot: col_1
+      uuid: 873f94a9-3cd1-4dd0-ae5e-782723e48ebf
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Collaborating With Partners to Drive Community Impact'
+        level: 2
+        align: text-center
+        target: _self
+    -
+      parent_uuid: 6328e8b2-a3fa-4ff9-bfd6-c40867f87511
+      slot: col_1
+      uuid: 4fef811c-149c-46eb-b9b7-37789731138f
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 559f1690-72b0-4373-9c1b-ca2cf833174f
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: none
+        loading: lazy
+    -
+      parent_uuid: 6328e8b2-a3fa-4ff9-bfd6-c40867f87511
+      slot: col_2
+      uuid: 9cd9ec5d-df79-47c1-8274-656ab26adc37
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 76a6a186-65a3-4c80-a494-5d00ff312eae
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: none
+        loading: lazy
+    -
+      parent_uuid: 6328e8b2-a3fa-4ff9-bfd6-c40867f87511
+      slot: col_3
+      uuid: 8a514dca-17a0-49f3-bc8e-a36f7ed0dc77
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: d9b90fa4-cbc0-410f-a2a3-741754126f88
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: none
+        loading: lazy
+    -
+      parent_uuid: 6328e8b2-a3fa-4ff9-bfd6-c40867f87511
+      slot: col_4
+      uuid: d8831bfa-f29e-4b53-b1a3-9aeb9ef776cf
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 970e04cf-e3f9-404d-a572-e575f628a629
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: none
+        loading: lazy
+    -
+      parent_uuid: 6328e8b2-a3fa-4ff9-bfd6-c40867f87511
+      slot: col_5
+      uuid: 44adc708-6837-4933-95a0-2ab75d12bce1
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 38771a02-8334-4057-9022-f7f4d5342612
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: none
+        loading: lazy
+    -
+      uuid: c69823bf-fcce-4551-ae31-dd9fc4b1bff2
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: '100'
+        gutter: 'gx-3 gy-3'
+        padding_block_start: pt-4
+        padding_block_end: pb-4
+        padding_inline_start: ps-5
+        padding_inline_end: pe-5
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: c69823bf-fcce-4551-ae31-dd9fc4b1bff2
+      slot: header_slot
+      uuid: 70ffcf48-af98-43a1-b26e-0028c64e7a89
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: FAQ
+        level: 2
+        target: _self
+    -
+      parent_uuid: c69823bf-fcce-4551-ae31-dd9fc4b1bff2
+      slot: col_1
+      uuid: 4a49ed4e-6416-4a0b-8d0a-d564622b8f8d
+      component_id: sdc.vartheme_bs5_horizonaid.accordion-container
+      inputs:
+        always_open: false
+    -
+      parent_uuid: 4a49ed4e-6416-4a0b-8d0a-d564622b8f8d
+      slot: accordion_content
+      uuid: 52ca1c63-06a7-4405-9cef-c39f60017b3d
+      component_id: sdc.vartheme_bs5_horizonaid.accordion-block
+      inputs:
+        title: 'How is my donation used?'
+        heading_level: 3
+        open_by_default: true
+        always_open: false
+    -
+      parent_uuid: 52ca1c63-06a7-4405-9cef-c39f60017b3d
+      slot: accordion_content
+      uuid: 0a2d1129-cf38-425c-a755-f34257697336
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>100% of public donations go directly to field programmes. Administrative and operational costs are covered separately through institutional grants, so your contribution reaches communities in full.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 4a49ed4e-6416-4a0b-8d0a-d564622b8f8d
+      slot: accordion_content
+      uuid: 163931ec-9828-40e7-aef3-663d8221ebcd
+      component_id: sdc.vartheme_bs5_horizonaid.accordion-block
+      inputs:
+        title: 'Where does Horizon Aid operate?'
+        heading_level: 3
+        open_by_default: false
+        always_open: false
+    -
+      parent_uuid: 163931ec-9828-40e7-aef3-663d8221ebcd
+      slot: accordion_content
+      uuid: 394158ed-2ed0-4007-a589-f2d121523b14
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>100% of public donations go directly to field programmes. Administrative and operational costs are covered separately through institutional grants, so your contribution reaches communities in full.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 4a49ed4e-6416-4a0b-8d0a-d564622b8f8d
+      slot: accordion_content
+      uuid: 7525a31e-c23c-445e-b2cb-47960fe57181
+      component_id: sdc.vartheme_bs5_horizonaid.accordion-block
+      inputs:
+        title: 'How can I get involved beyond donating?'
+        heading_level: 3
+        open_by_default: false
+        always_open: false
+    -
+      parent_uuid: 7525a31e-c23c-445e-b2cb-47960fe57181
+      slot: accordion_content
+      uuid: 24ff1a78-7f51-479a-b1a4-0edcd074c447
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>100% of public donations go directly to field programmes. Administrative and operational costs are covered separately through institutional grants, so your contribution reaches communities in full.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 4a49ed4e-6416-4a0b-8d0a-d564622b8f8d
+      slot: accordion_content
+      uuid: 07002d04-4915-46a0-91da-affc742b3030
+      component_id: sdc.vartheme_bs5_horizonaid.accordion-block
+      inputs:
+        title: 'How do I know my impact?'
+        heading_level: 3
+        open_by_default: false
+        always_open: false
+    -
+      parent_uuid: 07002d04-4915-46a0-91da-affc742b3030
+      slot: accordion_content
+      uuid: 05a7f3ff-c697-42a9-b80c-115a698d4a55
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>100% of public donations go directly to field programmes. Administrative and operational costs are covered separately through institutional grants, so your contribution reaches communities in full.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+  path:
+    -
+      alias: /about
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

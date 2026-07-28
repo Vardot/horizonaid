@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 1007f81d-0c7a-4ef8-beb4-9316aa951d69
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: ecuador-country.png
+  uri:
+  - value: public://2026-07/ecuador-country.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 164794
+  status:
+  - value: true

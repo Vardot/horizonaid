@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 87b051ce-b31d-4586-9704-ffb20ae47b5f
+  bundle: image
+  default_langcode: en
+  depends:
+    43d942a9-b034-4428-ab46-5af093a47f26: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Yemen
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Yemen
+    title: ''
+    width: 261
+    height: 332
+    entity: 43d942a9-b034-4428-ab46-5af093a47f26

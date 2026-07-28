@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 26fbd37d-e0fa-43d2-86eb-123f636b87ce
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: afghanistan.png
+  uri:
+  - value: public://2026-07/afghanistan.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1165971
+  status:
+  - value: true

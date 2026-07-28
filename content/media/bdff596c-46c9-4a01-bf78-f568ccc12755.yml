@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: bdff596c-46c9-4a01-bf78-f568ccc12755
+  bundle: image
+  default_langcode: en
+  depends:
+    a1be58a1-e9f5-4bc2-99db-65533cdd7254: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: No Child Left Without a Classroom
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: No Child Left Without a Classroom
+    title: ''
+    width: 652
+    height: 367
+    entity: a1be58a1-e9f5-4bc2-99db-65533cdd7254

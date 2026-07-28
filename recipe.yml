@@ -25,7 +25,6 @@ recipes:
   - varbase_page_base
   - varbase_blog_base
   - varbase_performance_base
-  - varbase_demo_content
 install:
   - vartheme_bs5_horizonaid
   - better_exposed_filters
@@ -82,7 +81,7 @@ config:
         enabled_sources:
           recommended:
             # @see recommended.yml
-            uri: 'https://git.drupalcode.org/api/v4/projects/201141/repository/files/recommended.yml/raw?ref=HEAD'
+            uri: 'https://git.drupalcode.org/api/v4/projects/225987/repository/files/recommended.yml/raw?ref=HEAD'
             ttl: 1
           drupalorg_jsonapi: []
           varbase_recipes: []
@@ -205,6 +204,54 @@ config:
       disable: []
     canvas.component.sdc.vartheme_bs5_horizonaid.views-view-unformatted:
       disable: []
+    views.view.blog:
+      setViewsComponentStyleTheme:
+        theme: default
+    canvas.content_template.node.blog.card:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.featured_card_large:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.featured_card_medium:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.featured_card_small:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.featured_card_xlarge:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.featured_card_xsmall:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.full:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.impressed_card_large:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.impressed_card_medium:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.impressed_card_small:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.impressed_card_xlarge:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.impressed_card_xsmall:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.overlay_card_large:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.overlay_card_medium:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.overlay_card_xlarge:
+      repointComponentTreeToTheme:
+        theme: default
 extra:
   recipe_installer_kit:
     finish_url: '/admin/dashboard/welcome'

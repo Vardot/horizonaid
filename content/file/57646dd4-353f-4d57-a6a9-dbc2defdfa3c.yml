@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 57646dd4-353f-4d57-a6a9-dbc2defdfa3c
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: vision-partner.png
+  uri:
+  - value: public://2026-07/vision-partner.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1772
+  status:
+  - value: true

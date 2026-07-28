@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: d9b90fa4-cbc0-410f-a2a3-741754126f88
+  bundle: image
+  default_langcode: en
+  depends:
+    9114a38d-4465-49fa-b357-71782b52a60b: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Minty Partner
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Minty Partner
+    title: ''
+    width: 196
+    height: 127
+    entity: 9114a38d-4465-49fa-b357-71782b52a60b

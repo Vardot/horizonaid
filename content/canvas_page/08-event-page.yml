@@ -1,0 +1,463 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 2acd357c-98c2-46cf-8bd6-ad14083a1b7d
+  default_langcode: en
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Updated the Components field'
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Event Page'
+  components:
+    -
+      uuid: f1eec30d-6172-44c1-b703-80314490e137
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: container-fluid
+        background_color: bg-light
+        text_color: auto
+        background_overlay: none
+        columns: 75-25
+        gutter: 'gx-3 gy-3'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-5
+        padding_inline_end: pe-5
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: rounded-4
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: f1eec30d-6172-44c1-b703-80314490e137
+      slot: col_1
+      uuid: af7998ed-34fd-499c-a5d8-13ee95e294b2
+      component_id: sdc.vartheme_bs5_horizonaid.taxonomy
+      inputs:
+        label: Webinar
+        target: _self
+        size: taxonomy-lg
+        color: taxonomy-secondary
+    -
+      parent_uuid: f1eec30d-6172-44c1-b703-80314490e137
+      slot: col_1
+      uuid: aa961609-8090-4e89-a7f2-94061246d4c7
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: f1eec30d-6172-44c1-b703-80314490e137
+      slot: col_1
+      uuid: fc3db8b5-4cba-42a2-8135-6265fc5e2d2a
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Digital Security for Advocacy Groups'
+        level: 1
+        target: _self
+    -
+      parent_uuid: f1eec30d-6172-44c1-b703-80314490e137
+      slot: col_1
+      uuid: 2262f978-f6f4-4ebe-9a2e-48c788515baf
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: f1eec30d-6172-44c1-b703-80314490e137
+      slot: col_1
+      uuid: c3b5e2a0-33b0-45b2-b973-4bb286e6ed8c
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Learn how to protect field communications, secure donor data, and defend your organisation.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: f1eec30d-6172-44c1-b703-80314490e137
+      slot: col_1
+      uuid: 837181e5-0212-4c5c-9269-156b578ea156
+      component_id: sdc.vartheme_bs5_horizonaid.date
+      inputs:
+        date: '2026-07-31'
+        text_color: text-dark
+        size: fs-4
+    -
+      parent_uuid: f1eec30d-6172-44c1-b703-80314490e137
+      slot: col_1
+      uuid: 36ca7f78-1f52-4ede-9162-fad7378e44f8
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: f1eec30d-6172-44c1-b703-80314490e137
+      slot: col_1
+      uuid: 20c5dcd4-0578-4d07-bfee-ca09ec5b2dc9
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-primary
+        outline: false
+        size: btn-md
+        label: 'Register Today'
+        target: self
+        disabled: false
+        icon: arrow-up-right
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-pill
+    -
+      uuid: d2d30e72-099c-4806-befe-358a3c224dd4
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 75-25
+        gutter: 'gx-3 gy-3'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: d2d30e72-099c-4806-befe-358a3c224dd4
+      slot: col_1
+      uuid: b8f04390-3223-4de8-b8bc-41a1fbc5a334
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'About this Event'
+        level: 2
+        target: _self
+    -
+      parent_uuid: d2d30e72-099c-4806-befe-358a3c224dd4
+      slot: col_1
+      uuid: ca08be1c-8569-4dc1-a675-56704b319e6a
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>As humanitarian organisations increasingly rely on digital tools to coordinate field operations and manage donor relationships, the risk of cyber threats has grown significantly. This webinar brings together digital security experts and frontline practitioners to share practical strategies for protecting sensitive information in high-risk environments.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: d2d30e72-099c-4806-befe-358a3c224dd4
+      slot: col_1
+      uuid: 0a416621-98a3-4fc6-ac71-6642354a34f4
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: "<p>Whether you're a field coordinator managing encrypted communications or an advocacy lead handling confidential supporter data, this session will equip you with the frameworks and tools needed to operate securely.</p>"
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: d2d30e72-099c-4806-befe-358a3c224dd4
+      slot: col_1
+      uuid: a8ac9cc1-cff8-4cc5-8f41-06d4774da51a
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p><strong>What Your’ll Learn</strong></p>'
+          format: canvas_html_block
+        text_size: fs-4
+        text_color: text-body
+    -
+      parent_uuid: d2d30e72-099c-4806-befe-358a3c224dd4
+      slot: col_1
+      uuid: bcc7006b-6e00-455c-8f75-bb556026bd23
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<ul><li data-list-item-id="e8a19c7a14d347daae07cfd84969038e2">How to assess your organisation''s current digital vulnerability</li><li data-list-item-id="ee834114c579cbc192073430ebc2be9b3">Best practices for encrypted field communications</li><li data-list-item-id="e44d52fe37ad8f03770fbde8e1a49e1c0">Protecting donor and beneficiary data under GDPR and international standards</li><li data-list-item-id="efb6be4680cd212bdd74974b3591737d5">Responding to a security breach — a step-by-step guide</li></ul>'
+          format: canvas_html_block
+        text_size: fs-5
+        text_color: text-body
+    -
+      parent_uuid: d2d30e72-099c-4806-befe-358a3c224dd4
+      slot: col_1
+      uuid: fdd3c13f-812d-4e0a-8d1e-7531fad24d8e
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p><strong>Speakers</strong></p>'
+          format: canvas_html_block
+        text_size: fs-4
+        text_color: text-body
+    -
+      parent_uuid: d2d30e72-099c-4806-befe-358a3c224dd4
+      slot: col_1
+      uuid: 9b93d135-1d01-4ee9-a35f-b4a0dcb43a07
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p><strong>Rania Aziz </strong>- Digital Security Lead, Frontline Defenders</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: d2d30e72-099c-4806-befe-358a3c224dd4
+      slot: col_1
+      uuid: b5dc435c-4a75-4fce-81a4-67a94754b884
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p><strong>Omar Nasser </strong>- Field Technology Advisor, Horizon Aid</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: d2d30e72-099c-4806-befe-358a3c224dd4
+      slot: col_1
+      uuid: 9caad518-f502-4f71-abbd-232ff1233600
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p><strong>Petra Kovač </strong>- Cybersecurity Consultant, NGO Safety Network</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: d2d30e72-099c-4806-befe-358a3c224dd4
+      slot: col_2
+      uuid: 3513120d-687a-4d63-bf84-f54c135069a4
+      component_id: block.share
+      inputs:
+        label: Share
+        label_display: '0'
+        heading: Share
+        display_title: true
+        alignment: end
+        orientation: vertical
+        mobile_visibility: all
+        native_share: false
+        placement: rail-end
+    -
+      uuid: bba7ab7c-3a3b-43d5-8d9c-cc349ce27755
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 33-33-33
+        gutter: 'gx-3 gy-3'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-5
+        margin_block_end: mb-5
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: true
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: bba7ab7c-3a3b-43d5-8d9c-cc349ce27755
+      slot: header_slot
+      uuid: 3e89cd93-6fd8-413f-ba6d-0e27bc619138
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'More Events'
+        level: 2
+        target: _self
+    -
+      parent_uuid: bba7ab7c-3a3b-43d5-8d9c-cc349ce27755
+      slot: col_1
+      uuid: 6e8c7cad-7c43-4636-a854-51d403e26e67
+      component_id: sdc.vartheme_bs5_horizonaid.card-events
+      inputs:
+        taxonomy_label: Webinar
+        date_start: '12 Aug'
+        date_end: '30 Aug'
+        time: '11:00 - 2:30 CET'
+        card_border: false
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: true
+        link_target: default
+        link_url:
+          uri: 'internal:/event-page'
+          options: {  }
+    -
+      parent_uuid: 6e8c7cad-7c43-4636-a854-51d403e26e67
+      slot: content
+      uuid: 3d78cda5-df75-441b-a3b0-ef162dc3b32b
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Digital Security for Advocacy Groups'
+        level: 3
+        target: _self
+    -
+      parent_uuid: 6e8c7cad-7c43-4636-a854-51d403e26e67
+      slot: content
+      uuid: 1a25ab83-dcdd-48ff-b9ba-dde5ef6d1988
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Learn how to protect field communications, secure donor data, and defend your organisation against cyber threats</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: bba7ab7c-3a3b-43d5-8d9c-cc349ce27755
+      slot: col_2
+      uuid: 8d0f7d4a-ec1e-4573-91e4-98b9ee154018
+      component_id: sdc.vartheme_bs5_horizonaid.card-events
+      inputs:
+        taxonomy_label: Webinar
+        date_start: '3 Aug'
+        date_end: '19 Aug'
+        time: '11:00 - 2:30 CET'
+        card_border: false
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: true
+        link_target: default
+        link_url:
+          uri: 'internal:/event-page'
+          options: {  }
+    -
+      parent_uuid: 8d0f7d4a-ec1e-4573-91e4-98b9ee154018
+      slot: content
+      uuid: 20e0a162-8569-4e56-b5ad-04554c0ebab4
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Digital Security for Advocacy Groups'
+        level: 3
+        target: _self
+    -
+      parent_uuid: 8d0f7d4a-ec1e-4573-91e4-98b9ee154018
+      slot: content
+      uuid: ba3c5e54-60c1-4edf-9e39-df91e1878c72
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Learn how to protect field communications, secure donor data, and defend your organisation against cyber threats</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: bba7ab7c-3a3b-43d5-8d9c-cc349ce27755
+      slot: col_3
+      uuid: 4dfad988-e087-47b2-bea7-84cfa0ed5380
+      component_id: sdc.vartheme_bs5_horizonaid.card-events
+      inputs:
+        taxonomy_label: Webinar
+        date_start: '4 Sep'
+        date_end: '27 Sep'
+        time: '11:00 - 2:30 CET'
+        card_border: false
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: true
+        link_target: default
+        link_url:
+          uri: 'internal:/event-page'
+          options: {  }
+    -
+      parent_uuid: 4dfad988-e087-47b2-bea7-84cfa0ed5380
+      slot: content
+      uuid: 11bde0a9-aca4-43f2-b58c-1ebab45d803e
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Digital Security for Advocacy Groups'
+        level: 3
+        target: _self
+    -
+      parent_uuid: 4dfad988-e087-47b2-bea7-84cfa0ed5380
+      slot: content
+      uuid: adca2f50-53a3-4e89-a64f-86f191d4f392
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Learn how to protect field communications, secure donor data, and defend your organisation against cyber threats</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: bba7ab7c-3a3b-43d5-8d9c-cc349ce27755
+      slot: footer_slot
+      uuid: e3b8cc3d-040f-444c-91de-688269f9dd87
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-primary
+        outline: false
+        size: btn-md
+        label: 'See All Events'
+        href:
+          uri: 'internal:/events'
+          options: {  }
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-pill
+  path:
+    -
+      alias: /event-page
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

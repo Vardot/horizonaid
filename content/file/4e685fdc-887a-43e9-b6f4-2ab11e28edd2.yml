@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 4e685fdc-887a-43e9-b6f4-2ab11e28edd2
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: program-education-tab.png
+  uri:
+  - value: public://2026-07/program-education-tab.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1777955
+  status:
+  - value: true

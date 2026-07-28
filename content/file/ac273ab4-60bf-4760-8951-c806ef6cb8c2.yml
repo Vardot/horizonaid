@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ac273ab4-60bf-4760-8951-c806ef6cb8c2
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: 2026-regional-human-rights-index.png
+  uri:
+  - value: public://2026-07/2026-regional-human-rights-index.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 167192
+  status:
+  - value: true

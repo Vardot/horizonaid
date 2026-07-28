@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: e590a1b0-41c2-42ad-8659-c9f38b586c88
+  bundle: image
+  default_langcode: en
+  depends:
+    e98d0141-f353-4ad2-8541-e3ca21679a63: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Program-woman-tab
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: program-woman-tab
+    title: ''
+    width: 1140
+    height: 641
+    entity: e98d0141-f353-4ad2-8541-e3ca21679a63

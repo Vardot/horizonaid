@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9bec1282-fc07-4df6-956d-f88aba18d38b
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: community-led.png
+  uri:
+  - value: public://2026-07/community-led.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1699
+  status:
+  - value: true

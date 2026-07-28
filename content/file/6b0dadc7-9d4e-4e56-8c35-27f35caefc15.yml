@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6b0dadc7-9d4e-4e56-8c35-27f35caefc15
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: agriculture-program.png
+  uri:
+  - value: public://2026-07/agriculture-program.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1409216
+  status:
+  - value: true

@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 852b3e2a-eaf5-4abd-b6fc-51fde08b96d3
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: cloud-partner.png
+  uri:
+  - value: public://2026-07/cloud-partner.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 2847
+  status:
+  - value: true

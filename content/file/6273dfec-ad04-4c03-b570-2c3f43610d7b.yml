@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6273dfec-ad04-4c03-b570-2c3f43610d7b
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: transparency.png
+  uri:
+  - value: public://2026-07/transparency.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1331
+  status:
+  - value: true

@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6ddcae64-1996-41e0-ab82-aa8085228a1f
+  bundle: image
+  default_langcode: en
+  depends:
+    20647e3f-2a90-4b46-87ad-82d2c3263447: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Where We Work
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Where We Work
+    title: ''
+    width: 1140
+    height: 514
+    entity: 20647e3f-2a90-4b46-87ad-82d2c3263447

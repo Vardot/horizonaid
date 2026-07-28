@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e98d0141-f353-4ad2-8541-e3ca21679a63
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: program-woman-tab.png
+  uri:
+  - value: public://2026-07/program-woman-tab.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 762180
+  status:
+  - value: true

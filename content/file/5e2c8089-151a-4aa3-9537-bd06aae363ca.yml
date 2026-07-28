@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5e2c8089-151a-4aa3-9537-bd06aae363ca
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: cultivating-independence-in-rural-farms.png
+  uri:
+  - value: public://2026-07/cultivating-independence-in-rural-farms.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 163948
+  status:
+  - value: true

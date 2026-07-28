@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f5cd4df6-02f3-4a94-97c0-991f136ce2d9
+  bundle: image
+  default_langcode: en
+  depends:
+    7382f105-6877-4875-a878-c9135626c013: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Somalia
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Somalia
+    title: ''
+    width: 261
+    height: 332
+    entity: 7382f105-6877-4875-a878-c9135626c013

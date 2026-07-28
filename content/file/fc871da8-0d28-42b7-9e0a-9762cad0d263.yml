@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: fc871da8-0d28-42b7-9e0a-9762cad0d263
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: program-agriculture-tab.png
+  uri:
+  - value: public://2026-07/program-agriculture-tab.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 1030285
+  status:
+  - value: true

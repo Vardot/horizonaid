@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9de8bc53-891a-465c-8ff2-0548060532f0
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: james-greenpoint.png
+  uri:
+  - value: public://2026-07/james-greenpoint.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 296922
+  status:
+  - value: true

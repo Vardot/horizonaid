@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 74586f6d-20db-49e1-a114-3d0005dd7761
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: pexels-fauxels-3184325-1-2.png
+  uri:
+  - value: public://2026-07/pexels-fauxels-3184325-1-2.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 986057
+  status:
+  - value: true

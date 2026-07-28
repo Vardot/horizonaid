@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a1be58a1-e9f5-4bc2-99db-65533cdd7254
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: no-child-left-without-a-classroom.png
+  uri:
+  - value: public://2026-07/no-child-left-without-a-classroom.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 449686
+  status:
+  - value: true

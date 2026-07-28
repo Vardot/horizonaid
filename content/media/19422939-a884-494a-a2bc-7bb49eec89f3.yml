@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 19422939-a884-494a-a2bc-7bb49eec89f3
+  bundle: image
+  default_langcode: en
+  depends:
+    759e8faa-b66d-4463-a14b-aa6b689778f3: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Lebanon Country
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Lebanon Country
+    title: ''
+    width: 261
+    height: 332
+    entity: 759e8faa-b66d-4463-a14b-aa6b689778f3

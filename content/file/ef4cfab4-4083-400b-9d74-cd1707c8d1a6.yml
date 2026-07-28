@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ef4cfab4-4083-400b-9d74-cd1707c8d1a6
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: country-syria.png
+  uri:
+  - value: public://2026-07/country-syria.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 169614
+  status:
+  - value: true

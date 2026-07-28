@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ee0c4672-3672-423e-87f3-10aa42804ca7
+  bundle: image
+  default_langcode: en
+  depends:
+    0d3956bd-f55f-4b44-8c8a-dcc12f54c0dc: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Education
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Education
+    title: ''
+    width: 1140
+    height: 488
+    entity: 0d3956bd-f55f-4b44-8c8a-dcc12f54c0dc

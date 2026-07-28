@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 50bf57b5-5c10-4e29-9d6d-23b3ad7ea315
+  bundle: image
+  default_langcode: en
+  depends:
+    1203ea59-e1e2-437e-a45d-22c3d4c2dbe2: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Lebanon
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Lebanon
+    title: ''
+    width: 261
+    height: 332
+    entity: 1203ea59-e1e2-437e-a45d-22c3d4c2dbe2

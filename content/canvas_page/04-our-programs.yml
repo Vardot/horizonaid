@@ -1,0 +1,943 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: deee324d-621b-4d32-9c15-6c9ad5698f5b
+  default_langcode: en
+  depends:
+    450b8a1a-6b49-4edd-b7f8-d3c9686273e6: file
+    528d1bdd-3121-443b-9f66-17eb5b425ac6: media
+    4e685fdc-887a-43e9-b6f4-2ab11e28edd2: file
+    20e27874-e572-4ad3-89a9-42fa60d0a69c: media
+    e98d0141-f353-4ad2-8541-e3ca21679a63: file
+    e590a1b0-41c2-42ad-8659-c9f38b586c88: media
+    6b0dadc7-9d4e-4e56-8c35-27f35caefc15: file
+    20a27553-c0f7-44bf-adb9-383e46972dff: media
+    fc871da8-0d28-42b7-9e0a-9762cad0d263: file
+    eb19191f-3c64-4787-8f4e-c65ae6df3d8e: media
+    107c81b7-1973-4d71-b95f-59e646a5be71: file
+    422af474-8750-4504-b793-fc7d992fffc6: media
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Updated the Components field'
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Our Programs'
+  components:
+    -
+      uuid: ec16a966-2e38-41da-a01c-e453464c53e6
+      component_id: sdc.vartheme_bs5_horizonaid.media-banner
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 528d1bdd-3121-443b-9f66-17eb5b425ac6
+            target_type: media
+        image_radius: rounded-hero
+        content_bg: bg-light
+        content_color: auto
+    -
+      parent_uuid: ec16a966-2e38-41da-a01c-e453464c53e6
+      slot: content
+      uuid: 27668d71-121b-4ce0-8093-d4e9d4031823
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Our Programs'
+        level: 1
+        target: _self
+    -
+      parent_uuid: ec16a966-2e38-41da-a01c-e453464c53e6
+      slot: content
+      uuid: 4c65d5c8-1565-43f1-aef1-bcf3723056e1
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>For over two decades, we’ve supported communities too often overlooked. Learn why.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      uuid: 81044eb1-5aa6-4872-895f-cca5f7438e91
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 40-60
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-5
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-center
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 81044eb1-5aa6-4872-895f-cca5f7438e91
+      slot: col_1
+      uuid: 25285dad-c3e6-4036-a42e-c9e7aceeb341
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+    -
+      parent_uuid: 25285dad-c3e6-4036-a42e-c9e7aceeb341
+      slot: content
+      uuid: 97754496-a4c6-4e30-b1f7-48ffc8db55f7
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 25285dad-c3e6-4036-a42e-c9e7aceeb341
+      slot: content
+      uuid: 3cb581b5-026e-4649-a1df-bc0eacb3a6f4
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: 25285dad-c3e6-4036-a42e-c9e7aceeb341
+      slot: content
+      uuid: 57472326-9f28-481e-9d1e-50437388755f
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Education
+        level: 2
+        target: _self
+    -
+      parent_uuid: 25285dad-c3e6-4036-a42e-c9e7aceeb341
+      slot: content
+      uuid: 12888ffb-e378-42b2-870c-40c9ed520495
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 25285dad-c3e6-4036-a42e-c9e7aceeb341
+      slot: content
+      uuid: da03edd2-fdf6-4ad1-b849-ba95dab50e01
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Building safe schools and training local teachers to give children a clear path to a brighter future.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 25285dad-c3e6-4036-a42e-c9e7aceeb341
+      slot: content
+      uuid: b87472a3-9f0f-4771-85a9-bf9c2db99a13
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 25285dad-c3e6-4036-a42e-c9e7aceeb341
+      slot: content
+      uuid: ba25605b-e9c4-4701-b037-cad6c6bdab58
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-link
+        outline: false
+        size: btn-md
+        label: 'Learn More'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-1
+        href:
+          uri: 'internal:/program-page'
+          options: {  }
+    -
+      parent_uuid: 25285dad-c3e6-4036-a42e-c9e7aceeb341
+      slot: content
+      uuid: 366fb0d1-9669-4fd0-82b4-b694ff244f41
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 25285dad-c3e6-4036-a42e-c9e7aceeb341
+      slot: content
+      uuid: a94bad48-9efc-42aa-9d1d-d039ca1d714e
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: 81044eb1-5aa6-4872-895f-cca5f7438e91
+      slot: col_2
+      uuid: 1c2d6221-b543-4edc-ade7-79a99334a9c4
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 20e27874-e572-4ad3-89a9-42fa60d0a69c
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: rounded-3
+        loading: lazy
+    -
+      uuid: e2f7b64a-e1f1-4f14-9eb3-473f1d18dd10
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 40-60
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-center
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: e2f7b64a-e1f1-4f14-9eb3-473f1d18dd10
+      slot: col_1
+      uuid: b0738c33-8ce4-4a71-bfb4-cd394c5ea4da
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+    -
+      parent_uuid: b0738c33-8ce4-4a71-bfb4-cd394c5ea4da
+      slot: content
+      uuid: 05e785b3-bd7d-4bbe-b304-9377077a9aa2
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: b0738c33-8ce4-4a71-bfb4-cd394c5ea4da
+      slot: content
+      uuid: ea7dcf33-c51b-41ed-ab68-4099f88f154d
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: b0738c33-8ce4-4a71-bfb4-cd394c5ea4da
+      slot: content
+      uuid: 1245ae93-57ca-4c16-bddd-bc9d9e63a5e8
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Women
+        level: 2
+        target: _self
+    -
+      parent_uuid: b0738c33-8ce4-4a71-bfb4-cd394c5ea4da
+      slot: content
+      uuid: 2547270c-b01c-4c27-a236-1e5b17ea0748
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: b0738c33-8ce4-4a71-bfb4-cd394c5ea4da
+      slot: content
+      uuid: 9c56b521-d72f-4a1d-9b33-77b8225c44a0
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Providing legal defense, grants, and leadership training to help women break poverty cycles.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: b0738c33-8ce4-4a71-bfb4-cd394c5ea4da
+      slot: content
+      uuid: d1efdbfd-b8d8-4476-91ba-0c661f4c1d46
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: b0738c33-8ce4-4a71-bfb4-cd394c5ea4da
+      slot: content
+      uuid: f16f8c42-6d79-4a50-98b5-9ac3e48fb0cf
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-link
+        outline: false
+        size: btn-md
+        label: 'Learn More'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-1
+        href:
+          uri: 'internal:/program-page'
+          options: {  }
+    -
+      parent_uuid: b0738c33-8ce4-4a71-bfb4-cd394c5ea4da
+      slot: content
+      uuid: c6647954-ac59-4c5d-b3b8-dcf607156981
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: b0738c33-8ce4-4a71-bfb4-cd394c5ea4da
+      slot: content
+      uuid: 7b416fc0-8358-4266-ab12-d0f6b47f491e
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: e2f7b64a-e1f1-4f14-9eb3-473f1d18dd10
+      slot: col_2
+      uuid: 2f6ecc9e-6582-416d-b70d-9915cbfb6960
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: e590a1b0-41c2-42ad-8659-c9f38b586c88
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: rounded-3
+        loading: lazy
+    -
+      uuid: 7bab7458-60ee-430c-a6ce-9d6be133fdae
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 40-60
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-center
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 7bab7458-60ee-430c-a6ce-9d6be133fdae
+      slot: col_1
+      uuid: 09ce083c-7b7f-424c-b469-579add488940
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+    -
+      parent_uuid: 09ce083c-7b7f-424c-b469-579add488940
+      slot: content
+      uuid: 043f7f7d-a9d3-409f-bb74-86254528d55a
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: 09ce083c-7b7f-424c-b469-579add488940
+      slot: content
+      uuid: 689f961f-6734-4475-9a2e-8704c3b88af9
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 09ce083c-7b7f-424c-b469-579add488940
+      slot: content
+      uuid: 0615dc21-34ff-4454-a3d5-22420bfc466d
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Agriculture
+        level: 2
+        target: _self
+    -
+      parent_uuid: 09ce083c-7b7f-424c-b469-579add488940
+      slot: content
+      uuid: 72dccfb5-7a0c-4ac4-a6e4-e1dddf0aea4d
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 09ce083c-7b7f-424c-b469-579add488940
+      slot: content
+      uuid: c2b2fb53-d9ea-43d5-ad64-c88c973793b7
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Equipping rural farmers with climate-resilient tools and seeds to secure long-term food independence.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 09ce083c-7b7f-424c-b469-579add488940
+      slot: content
+      uuid: 1fe69f0d-d8a2-47d7-ad87-5f501ef138f0
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 09ce083c-7b7f-424c-b469-579add488940
+      slot: content
+      uuid: faf04e3f-f443-47fe-82a1-171cfc7616bf
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-link
+        outline: false
+        size: btn-md
+        label: 'Learn More'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-1
+        href:
+          uri: 'internal:/program-page'
+          options: {  }
+    -
+      parent_uuid: 09ce083c-7b7f-424c-b469-579add488940
+      slot: content
+      uuid: 13b1f17f-968a-47ae-8a38-07c664e5ab97
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 09ce083c-7b7f-424c-b469-579add488940
+      slot: content
+      uuid: 8e435937-d4c2-4ec8-a88f-ccaf3e1a085a
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: 7bab7458-60ee-430c-a6ce-9d6be133fdae
+      slot: col_2
+      uuid: 20702e8e-4ba4-4874-956a-03cfb3a7f8f2
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 20a27553-c0f7-44bf-adb9-383e46972dff
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: rounded-3
+        loading: lazy
+    -
+      uuid: c3241917-31bb-41c5-af6f-4eacf05745d7
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 40-60
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-center
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: c3241917-31bb-41c5-af6f-4eacf05745d7
+      slot: col_1
+      uuid: 6e114adc-5f58-4990-ba2e-32957d6bf330
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+    -
+      parent_uuid: 6e114adc-5f58-4990-ba2e-32957d6bf330
+      slot: content
+      uuid: 7893d9da-ec2e-4dd4-a806-e97bd2b859a7
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: 6e114adc-5f58-4990-ba2e-32957d6bf330
+      slot: content
+      uuid: f6812351-347f-4f22-95be-23819c97e1ca
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 6e114adc-5f58-4990-ba2e-32957d6bf330
+      slot: content
+      uuid: 6c482cbe-7483-4096-9998-26162bcacd21
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Medicine
+        level: 2
+        target: _self
+    -
+      parent_uuid: 6e114adc-5f58-4990-ba2e-32957d6bf330
+      slot: content
+      uuid: 75cb9d1e-70ef-473c-94eb-13e37f87c18d
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 6e114adc-5f58-4990-ba2e-32957d6bf330
+      slot: content
+      uuid: c8f97f23-addd-48cf-8e53-f046d97e34c9
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Delivering emergency surgical supplies, medicines, and doctors directly to active global crisis zones.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 6e114adc-5f58-4990-ba2e-32957d6bf330
+      slot: content
+      uuid: 72fe0193-c102-4846-8900-c44d98e75ff7
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 6e114adc-5f58-4990-ba2e-32957d6bf330
+      slot: content
+      uuid: 2fcc6422-1670-40ca-8df1-a2eb07cd29c3
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-link
+        outline: false
+        size: btn-md
+        label: 'Learn More'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-1
+        href:
+          uri: 'internal:/program-page'
+          options: {  }
+    -
+      parent_uuid: 6e114adc-5f58-4990-ba2e-32957d6bf330
+      slot: content
+      uuid: 887359bf-3e95-4f03-9eb0-94900940c6a3
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 6e114adc-5f58-4990-ba2e-32957d6bf330
+      slot: content
+      uuid: 704e1de3-5b81-41e1-9ab9-307c01f33291
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: c3241917-31bb-41c5-af6f-4eacf05745d7
+      slot: col_2
+      uuid: ca7b4e72-5b28-40e6-a60c-1add97bf2611
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: eb19191f-3c64-4787-8f4e-c65ae6df3d8e
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: rounded-3
+        loading: lazy
+    -
+      uuid: 5a01314c-cbd5-458f-8e70-370fadb16c68
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: 40-60
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-center
+        horizontal_alignment: text-start
+        section_header: false
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 5a01314c-cbd5-458f-8e70-370fadb16c68
+      slot: col_1
+      uuid: 2adc865e-5d24-417f-8a5b-17740a97dbf3
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+    -
+      parent_uuid: 2adc865e-5d24-417f-8a5b-17740a97dbf3
+      slot: content
+      uuid: ca8f878b-42a7-4e47-a778-8cf70ca70604
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: 2adc865e-5d24-417f-8a5b-17740a97dbf3
+      slot: content
+      uuid: 83f244a8-8d49-4894-89cb-ce5e8d853dd1
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 2adc865e-5d24-417f-8a5b-17740a97dbf3
+      slot: content
+      uuid: d4b423e2-07b5-4c97-b3f7-c6ea51e9ea25
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Health
+        level: 2
+        target: _self
+    -
+      parent_uuid: 2adc865e-5d24-417f-8a5b-17740a97dbf3
+      slot: content
+      uuid: 68c0c492-6c2f-463c-8efe-38de860f0d46
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 2adc865e-5d24-417f-8a5b-17740a97dbf3
+      slot: content
+      uuid: 7723fd97-528b-4ef9-be39-e6e82351c1f0
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>Constructing clean water networks and neighborhood clinics to provide vital, everyday preventative care.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: 2adc865e-5d24-417f-8a5b-17740a97dbf3
+      slot: content
+      uuid: 56109b58-ad36-464e-a0fc-a4feee92b073
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: 2adc865e-5d24-417f-8a5b-17740a97dbf3
+      slot: content
+      uuid: 7d5be0bf-58c7-44b0-9975-4ae16308ce95
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-link
+        outline: false
+        size: btn-md
+        label: 'Learn More'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-1
+        href:
+          uri: 'internal:/program-page'
+          options: {  }
+    -
+      parent_uuid: 2adc865e-5d24-417f-8a5b-17740a97dbf3
+      slot: content
+      uuid: 3ee9f1cd-bbc4-4c1e-8253-349a7581c5fc
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-4
+    -
+      parent_uuid: 2adc865e-5d24-417f-8a5b-17740a97dbf3
+      slot: content
+      uuid: 5447f724-6f3b-45cc-8d36-a59472fc4ee9
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-3
+    -
+      parent_uuid: 5a01314c-cbd5-458f-8e70-370fadb16c68
+      slot: col_2
+      uuid: 349f1971-fb0e-4018-9a6d-5ae51047e7ac
+      component_id: sdc.vartheme_bs5_horizonaid.image
+      inputs:
+        media:
+          CANVAS_ENTITY_REFERENCE:
+            target_uuid: 422af474-8750-4504-b793-fc7d992fffc6
+            target_type: media
+        target: self
+        ratio: ratio-auto
+        fit: object-fit-cover
+        align: me-auto
+        width: w-auto
+        rounded: rounded-3
+        loading: lazy
+    -
+      uuid: 826207ba-e9ca-4298-9f76-1a9f5069458e
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        columns: '100'
+        gutter: 'gx-3 gy-3'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        padding_inline_start: ps-5
+        padding_inline_end: pe-5
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_header: true
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+    -
+      parent_uuid: 826207ba-e9ca-4298-9f76-1a9f5069458e
+      slot: header_slot
+      uuid: 3ea2591c-30b1-4b4a-a469-ce7f1683f95d
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: FAQ
+        level: 2
+        target: _self
+    -
+      parent_uuid: 826207ba-e9ca-4298-9f76-1a9f5069458e
+      slot: col_1
+      uuid: a7d6a7a8-8eb2-4117-bbf3-deb1a6892d93
+      component_id: sdc.vartheme_bs5_horizonaid.accordion-container
+      inputs:
+        always_open: false
+    -
+      parent_uuid: a7d6a7a8-8eb2-4117-bbf3-deb1a6892d93
+      slot: accordion_content
+      uuid: 6567e412-6db1-4d62-a726-3036466133b1
+      component_id: sdc.vartheme_bs5_horizonaid.accordion-block
+      inputs:
+        title: 'How is my donation used?'
+        heading_level: 3
+        open_by_default: true
+        always_open: false
+    -
+      parent_uuid: 6567e412-6db1-4d62-a726-3036466133b1
+      slot: accordion_content
+      uuid: 5b323d12-3271-4548-8760-b939e7fcdafc
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>100% of public donations go directly to field programmes. Administrative and operational costs are covered separately through institutional grants, so your contribution reaches communities in full.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: a7d6a7a8-8eb2-4117-bbf3-deb1a6892d93
+      slot: accordion_content
+      uuid: a8286d62-b036-4e29-929b-d77f8dac5994
+      component_id: sdc.vartheme_bs5_horizonaid.accordion-block
+      inputs:
+        title: 'Where does Horizon Aid operate?'
+        heading_level: 3
+        open_by_default: false
+        always_open: false
+    -
+      parent_uuid: a8286d62-b036-4e29-929b-d77f8dac5994
+      slot: accordion_content
+      uuid: 3504bf7d-08f4-46e4-8b20-ce62603cbaba
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>100% of public donations go directly to field programmes. Administrative and operational costs are covered separately through institutional grants, so your contribution reaches communities in full.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: a7d6a7a8-8eb2-4117-bbf3-deb1a6892d93
+      slot: accordion_content
+      uuid: 9de3d046-71ad-44da-ae84-eac6a7ed65af
+      component_id: sdc.vartheme_bs5_horizonaid.accordion-block
+      inputs:
+        title: 'How can I get involved beyond donating?'
+        heading_level: 3
+        open_by_default: false
+        always_open: false
+    -
+      parent_uuid: 9de3d046-71ad-44da-ae84-eac6a7ed65af
+      slot: accordion_content
+      uuid: 420077e2-dfde-4449-8eb7-280e9a84de7a
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>100% of public donations go directly to field programmes. Administrative and operational costs are covered separately through institutional grants, so your contribution reaches communities in full.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+    -
+      parent_uuid: a7d6a7a8-8eb2-4117-bbf3-deb1a6892d93
+      slot: accordion_content
+      uuid: 5c2d7c56-93e2-4d9d-b4be-3a712963b06c
+      component_id: sdc.vartheme_bs5_horizonaid.accordion-block
+      inputs:
+        title: 'How do I know my impact?'
+        heading_level: 3
+        open_by_default: false
+        always_open: false
+    -
+      parent_uuid: 5c2d7c56-93e2-4d9d-b4be-3a712963b06c
+      slot: accordion_content
+      uuid: aba21f0a-b4e0-4fe8-9121-6ca2879c340d
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>100% of public donations go directly to field programmes. Administrative and operational costs are covered separately through institutional grants, so your contribution reaches communities in full.</p>'
+          format: canvas_html_block
+        text_size: none
+        text_color: text-body
+  path:
+    -
+      alias: /programs
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

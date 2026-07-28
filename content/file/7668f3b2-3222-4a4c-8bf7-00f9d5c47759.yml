@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 7668f3b2-3222-4a4c-8bf7-00f9d5c47759
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: bangladesh.png
+  uri:
+  - value: public://2026-07/bangladesh.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 179484
+  status:
+  - value: true

@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f77bfe55-7c7e-45af-95e7-380d438a1a8f
+  bundle: image
+  default_langcode: en
+  depends:
+    e776a5bf-47ec-4511-b74a-6fa90df22ec9: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Amara Diallo
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Amara Diallo
+    title: ''
+    width: 359
+    height: 370
+    entity: e776a5bf-47ec-4511-b74a-6fa90df22ec9

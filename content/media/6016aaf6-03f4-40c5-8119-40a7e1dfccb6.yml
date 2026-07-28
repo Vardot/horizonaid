@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 6016aaf6-03f4-40c5-8119-40a7e1dfccb6
+  bundle: image
+  default_langcode: en
+  depends:
+    316f4645-8229-463d-bdaf-8660db91c3ef: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Dignity
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Dignity
+    title: ''
+    width: 64
+    height: 57
+    entity: 316f4645-8229-463d-bdaf-8660db91c3ef

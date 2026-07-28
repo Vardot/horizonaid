@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: eb19191f-3c64-4787-8f4e-c65ae6df3d8e
+  bundle: image
+  default_langcode: en
+  depends:
+    fc871da8-0d28-42b7-9e0a-9762cad0d263: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Program Agriculture Tab
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Program Agriculture Tab
+    title: ''
+    width: 1140
+    height: 641
+    entity: fc871da8-0d28-42b7-9e0a-9762cad0d263

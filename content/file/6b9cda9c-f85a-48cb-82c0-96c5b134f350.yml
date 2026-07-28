@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6b9cda9c-f85a-48cb-82c0-96c5b134f350
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: venezuelans-ecuador-migration-health-covid-19-jpg-4-8.png
+  uri:
+  - value: public://2026-07/venezuelans-ecuador-migration-health-covid-19-jpg-4-8.png
+  filemime:
+  - value: image/png
+  filesize:
+  - value: 163429
+  status:
+  - value: true

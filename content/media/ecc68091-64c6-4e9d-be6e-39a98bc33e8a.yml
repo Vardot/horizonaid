@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: ecc68091-64c6-4e9d-be6e-39a98bc33e8a
+  bundle: image
+  default_langcode: en
+  depends:
+    cb5bf19f-10d1-4173-b258-42c8b25f5204: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Ecuador
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Ecuador
+    title: ''
+    width: 261
+    height: 332
+    entity: cb5bf19f-10d1-4173-b258-42c8b25f5204
