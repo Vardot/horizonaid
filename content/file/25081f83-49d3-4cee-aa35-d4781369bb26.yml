@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 25081f83-49d3-4cee-aa35-d4781369bb26
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: yemen-country-hero.jpg
+  uri:
+  - value: public://2026-07/yemen-country-hero.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 29846
+  status:
+  - value: true

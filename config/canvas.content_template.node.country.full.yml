@@ -12,6 +12,7 @@ dependencies:
   - field.field.node.country.field_our_role
   - field.field.node.country.field_partners
   - node.type.country
+  - views.view.countries
   module:
   - canvas
 id: node.country.full
@@ -246,8 +247,6 @@ component_tree:
       media:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:country␝field_partners␞0␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src,alt↠alt,width↠width,height↠height}
-      shadow: shadow-none
-      alignment: center
     parent_uuid: d500e527-5aa8-41e3-a441-524a820242c7
     slot: col_1
     component_version: active
@@ -258,8 +257,6 @@ component_tree:
       media:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:country␝field_partners␞1␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src,alt↠alt,width↠width,height↠height}
-      shadow: shadow-none
-      alignment: center
     parent_uuid: d500e527-5aa8-41e3-a441-524a820242c7
     slot: col_2
     component_version: active
@@ -270,8 +267,6 @@ component_tree:
       media:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:country␝field_partners␞2␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src,alt↠alt,width↠width,height↠height}
-      shadow: shadow-none
-      alignment: center
     parent_uuid: d500e527-5aa8-41e3-a441-524a820242c7
     slot: col_3
     component_version: active
@@ -282,8 +277,6 @@ component_tree:
       media:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:country␝field_partners␞3␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src,alt↠alt,width↠width,height↠height}
-      shadow: shadow-none
-      alignment: center
     parent_uuid: d500e527-5aa8-41e3-a441-524a820242c7
     slot: col_4
     component_version: active
@@ -359,4 +352,41 @@ component_tree:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:country␝field_figure_description␞2␟value
       text_size: fs-6
+  63df4e0d-67b3-4a01-afa4-304211f63967:
+    uuid: 63df4e0d-67b3-4a01-afa4-304211f63967
+    component_id: sdc.vartheme_bs5_horizonaid.section
+    component_version: active
+    inputs:
+      bg_edge2edge: false
+      columns: '100'
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      padding_inline_start: ps-5
+      padding_inline_end: pe-5
+      margin_inline_start: ms-5
+      margin_inline_end: me-5
+      radius: none
+      section_header: true
+      section_footer: false
+      aos_once: true
+  121342c4-041e-4edb-ad7c-e8b17c557bf6:
+    uuid: 121342c4-041e-4edb-ad7c-e8b17c557bf6
+    parent_uuid: 63df4e0d-67b3-4a01-afa4-304211f63967
+    slot: header_slot
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    component_version: active
+    inputs:
+      heading_text: See Other Countries
+      level: 2
+  30b064c4-ada7-4da2-ac60-2583e5a8044a:
+    uuid: 30b064c4-ada7-4da2-ac60-2583e5a8044a
+    parent_uuid: 63df4e0d-67b3-4a01-afa4-304211f63967
+    slot: col_1
+    component_id: block.views_block.countries-related
+    component_version: '4503195950845117'
+    inputs:
+      label: See other countries
+      label_display: '0'
+      views_label: ''
+      items_per_page: '4'
 exposed_slots: {}

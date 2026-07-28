@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d5218282-6d7c-44c7-a676-a2d058120998
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: syria-country-hero.jpg
+  uri:
+  - value: public://2026-07/syria-country-hero.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 122498
+  status:
+  - value: true

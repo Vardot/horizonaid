@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 78955e0d-e528-4f3d-a83b-2309330e5549
+  bundle: country
+  default_langcode: en
+  depends:
+    26af9b14-fdfc-4e2f-a313-d00be6b5ea0e: media
+    d9b90fa4-cbc0-410f-a2a3-741754126f88: media
+    38771a02-8334-4057-9022-f7f4d5342612: media
+    76a6a186-65a3-4c80-a494-5d00ff312eae: media
+    970e04cf-e3f9-404d-a572-e575f628a629: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Country
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Yemen
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /countries/yemen
+    langcode: en
+  field_description:
+  - value: Emergency nutrition, water and health support for families living through
+      one of the world's largest hunger crises.
+  field_featured_image:
+  - entity: 26af9b14-fdfc-4e2f-a313-d00be6b5ea0e
+  field_our_role:
+  - value: <p>We run nutrition screening, water trucking and mobile health clinics
+      in governorates where the public system has all but stopped, and we support
+      local health workers who stayed.</p>
+    format: content_format
+  field_on_the_ground:
+  - value: '<p>Fuel and access are the constraints, not willingness: our teams negotiate
+      passage weekly so supplies keep moving.</p>'
+    format: content_format
+  field_on_the_ground_image:
+  - entity: 26af9b14-fdfc-4e2f-a313-d00be6b5ea0e
+  field_figures_description:
+  - value: Our response covers nutrition, water and primary health care.
+  field_figure_number:
+  - value: 57K+
+  - value: 22K+
+  - value: '31'
+  field_figure_description:
+  - value: People reached with food and nutrition support
+  - value: Children screened for malnutrition
+  - value: Health facilities supported
+  field_partners:
+  - entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
+  - entity: 38771a02-8334-4057-9022-f7f4d5342612
+  - entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
+  - entity: 970e04cf-e3f9-404d-a572-e575f628a629

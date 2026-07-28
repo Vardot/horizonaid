@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 651ec8a1-e64e-4e24-a79c-a1f1f6081586
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: colombia-country-hero.jpg
+  uri:
+  - value: public://2026-07/colombia-country-hero.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 117915
+  status:
+  - value: true

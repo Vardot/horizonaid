@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 82b4064b-dbc5-4c07-a323-71a3772dfc4c
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: bangladesh-country-hero.jpg
+  uri:
+  - value: public://2026-07/bangladesh-country-hero.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 65216
+  status:
+  - value: true

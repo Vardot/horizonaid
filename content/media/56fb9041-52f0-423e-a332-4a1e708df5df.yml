@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 56fb9041-52f0-423e-a332-4a1e708df5df
+  bundle: image
+  default_langcode: en
+  depends:
+    d5218282-6d7c-44c7-a676-a2d058120998: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Syria
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Syria country programme
+    title: ''
+    width: 1280
+    height: 853
+    entity: d5218282-6d7c-44c7-a676-a2d058120998

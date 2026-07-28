@@ -1,0 +1,64 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 66ec1f96-5a6b-44ac-a396-5102b47df634
+  bundle: country
+  default_langcode: en
+  depends:
+    d30a48eb-a7b9-4965-a517-1a163a93a9be: media
+    d9b90fa4-cbc0-410f-a2a3-741754126f88: media
+    38771a02-8334-4057-9022-f7f4d5342612: media
+    76a6a186-65a3-4c80-a494-5d00ff312eae: media
+    970e04cf-e3f9-404d-a572-e575f628a629: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Country
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: South Sudan
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /countries/south-sudan
+    langcode: en
+  field_description:
+  - value: Food security, nutrition and protection support for communities facing
+      conflict, flooding and displacement.
+  field_featured_image:
+  - entity: d30a48eb-a7b9-4965-a517-1a163a93a9be
+  field_our_role:
+  - value: <p>We support farming and fishing livelihoods, run nutrition programmes
+      for children under five, and provide protection services in displacement sites.</p>
+    format: content_format
+  field_on_the_ground:
+  - value: <p>Flooding now displaces more people here than conflict in some states,
+      and it returns every year.</p>
+    format: content_format
+  field_on_the_ground_image:
+  - entity: d30a48eb-a7b9-4965-a517-1a163a93a9be
+  field_figures_description:
+  - value: Our programme spans food security, nutrition and protection.
+  field_figure_number:
+  - value: 29K+
+  - value: 10K+
+  - value: '36'
+  field_figure_description:
+  - value: People with improved food security
+  - value: Children in nutrition programmes
+  - value: Displacement sites served
+  field_partners:
+  - entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
+  - entity: 38771a02-8334-4057-9022-f7f4d5342612
+  - entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
+  - entity: 970e04cf-e3f9-404d-a572-e575f628a629

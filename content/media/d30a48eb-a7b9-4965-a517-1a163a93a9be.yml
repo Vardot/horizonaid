@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: d30a48eb-a7b9-4965-a517-1a163a93a9be
+  bundle: image
+  default_langcode: en
+  depends:
+    e126a9bd-1d4b-4e65-a7ed-19b933672c26: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: South Sudan
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: South Sudan country programme
+    title: ''
+    width: 960
+    height: 645
+    entity: e126a9bd-1d4b-4e65-a7ed-19b933672c26

@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1253742d-563d-44ae-a3b2-2687f6caa2e2
+  bundle: image
+  default_langcode: en
+  depends:
+    ba8a556b-c715-45a8-aaf5-bae37a9f1951: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Myanmar
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Myanmar country programme
+    title: ''
+    width: 1180
+    height: 765
+    entity: ba8a556b-c715-45a8-aaf5-bae37a9f1951

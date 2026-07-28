@@ -1,0 +1,64 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 84e59dbf-1e4f-4792-a622-e81893df45d4
+  bundle: country
+  default_langcode: en
+  depends:
+    6f159f66-1671-42eb-adbf-b82d691dd330: media
+    d9b90fa4-cbc0-410f-a2a3-741754126f88: media
+    38771a02-8334-4057-9022-f7f4d5342612: media
+    76a6a186-65a3-4c80-a494-5d00ff312eae: media
+    970e04cf-e3f9-404d-a572-e575f628a629: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Country
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Bangladesh
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /countries/bangladesh
+    langcode: en
+  field_description:
+  - value: Shelter, water and sanitation support in dense displacement settlements
+      exposed to cyclones and monsoon flooding.
+  field_featured_image:
+  - entity: 6f159f66-1671-42eb-adbf-b82d691dd330
+  field_our_role:
+  - value: <p>We upgrade shelters and water systems in high-density settlements, and
+      pre-position supplies before each monsoon and cyclone season.</p>
+    format: content_format
+  field_on_the_ground:
+  - value: '<p>Density is the risk multiplier here: one blocked drain floods hundreds
+      of shelters.</p>'
+    format: content_format
+  field_on_the_ground_image:
+  - entity: 6f159f66-1671-42eb-adbf-b82d691dd330
+  field_figures_description:
+  - value: Our work covers shelter, water, sanitation and disaster readiness.
+  field_figure_number:
+  - value: 61K+
+  - value: 19K+
+  - value: 120+
+  field_figure_description:
+  - value: People reached with shelter and WASH support
+  - value: Shelters upgraded
+  - value: Water points maintained
+  field_partners:
+  - entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
+  - entity: 38771a02-8334-4057-9022-f7f4d5342612
+  - entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
+  - entity: 970e04cf-e3f9-404d-a572-e575f628a629

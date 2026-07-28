@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e4e09abb-659b-4851-a9e1-f51a7ecf075c
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: somalia-country-hero.jpg
+  uri:
+  - value: public://2026-07/somalia-country-hero.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 320529
+  status:
+  - value: true

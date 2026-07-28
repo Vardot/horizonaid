@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 26af9b14-fdfc-4e2f-a313-d00be6b5ea0e
+  bundle: image
+  default_langcode: en
+  depends:
+    25081f83-49d3-4cee-aa35-d4781369bb26: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Yemen
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Yemen country programme
+    title: ''
+    width: 522
+    height: 696
+    entity: 25081f83-49d3-4cee-aa35-d4781369bb26

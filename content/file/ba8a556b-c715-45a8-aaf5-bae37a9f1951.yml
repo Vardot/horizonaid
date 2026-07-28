@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ba8a556b-c715-45a8-aaf5-bae37a9f1951
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: myanmar-country-hero.jpg
+  uri:
+  - value: public://2026-07/myanmar-country-hero.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 200434
+  status:
+  - value: true

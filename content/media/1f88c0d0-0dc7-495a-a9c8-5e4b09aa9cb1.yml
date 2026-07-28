@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 1f88c0d0-0dc7-495a-a9c8-5e4b09aa9cb1
+  bundle: image
+  default_langcode: en
+  depends:
+    e4e09abb-659b-4851-a9e1-f51a7ecf075c: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Somalia
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Somalia country programme
+    title: ''
+    width: 2640
+    height: 1760
+    entity: e4e09abb-659b-4851-a9e1-f51a7ecf075c

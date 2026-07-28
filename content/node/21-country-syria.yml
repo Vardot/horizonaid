@@ -1,0 +1,64 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 279b5acc-6704-45e3-a813-a6e4420deed4
+  bundle: country
+  default_langcode: en
+  depends:
+    56fb9041-52f0-423e-a332-4a1e708df5df: media
+    d9b90fa4-cbc0-410f-a2a3-741754126f88: media
+    38771a02-8334-4057-9022-f7f4d5342612: media
+    76a6a186-65a3-4c80-a494-5d00ff312eae: media
+    970e04cf-e3f9-404d-a572-e575f628a629: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Country
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Syria
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /countries/syria
+    langcode: en
+  field_description:
+  - value: Shelter repair, winter supplies and protection services for displaced families
+      after more than a decade of conflict.
+  field_featured_image:
+  - entity: 56fb9041-52f0-423e-a332-4a1e708df5df
+  field_our_role:
+  - value: <p>We repair damaged homes, deliver winter kits and provide legal and protection
+      services for families who have been displaced repeatedly inside the country.</p>
+    format: content_format
+  field_on_the_ground:
+  - value: <p>Most households we serve have moved three times or more. Rebuilding
+      one room is often what lets a family stop moving.</p>
+    format: content_format
+  field_on_the_ground_image:
+  - entity: 56fb9041-52f0-423e-a332-4a1e708df5df
+  field_figures_description:
+  - value: Our work spans shelter, winterisation and protection.
+  field_figure_number:
+  - value: 43K+
+  - value: 11K+
+  - value: 5K+
+  field_figure_description:
+  - value: People supported with shelter and winter kits
+  - value: Homes repaired
+  - value: Protection cases handled
+  field_partners:
+  - entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
+  - entity: 38771a02-8334-4057-9022-f7f4d5342612
+  - entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
+  - entity: 970e04cf-e3f9-404d-a572-e575f628a629

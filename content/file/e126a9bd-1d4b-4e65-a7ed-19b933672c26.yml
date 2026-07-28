@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e126a9bd-1d4b-4e65-a7ed-19b933672c26
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: southsudan-country-hero.jpg
+  uri:
+  - value: public://2026-07/southsudan-country-hero.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 216996
+  status:
+  - value: true
