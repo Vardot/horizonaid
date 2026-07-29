@@ -4,39 +4,28 @@ _meta:
   uuid: d66edc99-246b-4167-b927-192ed34053fb
   bundle: menu_link_content
   default_langcode: en
+  depends:
+    b4daeb54-5999-4649-ac32-429014f4213e: node
 default:
   revision_log_message:
-    -
-      value: 'Created new Custom menu link'
+  - value: Created new Custom menu link
   enabled:
-    -
-      value: true
+  - value: true
   title:
-    -
-      value: 'Terms and Conditions'
+  - value: Terms and Conditions
   menu_name:
-    -
-      value: footer
+  - value: footer
   link:
-    -
-      uri: 'internal:/terms-and-conditions'
-      title: ''
-      options:
-        attributes:
-          class:
-            - small
+  - target_uuid: b4daeb54-5999-4649-ac32-429014f4213e
+    title: ''
+    options: {}
   external:
-    -
-      value: false
+  - value: false
   rediscover:
-    -
-      value: true
+  - value: true
   weight:
-    -
-      value: 10
+  - value: 10
   expanded:
-    -
-      value: false
+  - value: false
   revision_translation_affected:
-    -
-      value: true
+  - value: true

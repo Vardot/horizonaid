@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b4daeb54-5999-4649-ac32-429014f4213e
+  bundle: page
+  default_langcode: en
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Page
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Terms and Conditions
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /terms-and-conditions
+    langcode: en
+  field_description:
+  - value: The terms that govern the use of this website and the services offered
+      through it.
+  field_content:
+  - value: <h2>Terms and conditions</h2><p>These terms govern the use of this website
+      and the services offered through it. Replace this page with the terms your organisation
+      operates under before launch.</p><h3>Use of this site</h3><p>Content published
+      here is provided for information about our programmes and the communities we
+      work with. Where field data is reported, it reflects the period stated on the
+      page.</p><h3>Donations</h3><p>Donations made through this site are applied to
+      the programmes described in the donation flow. Set out here how funds are allocated,
+      how receipts are issued, and how a donor can request a refund.</p><h3>Contact</h3><p>Questions
+      about these terms should go to the address published on the contact page.</p>
+    format: content_format
