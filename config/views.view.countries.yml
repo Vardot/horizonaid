@@ -786,11 +786,17 @@ display:
         type: components_views_style
         options:
           uses_fields: false
-          component_id: vartheme_bs5:views-view-unformatted
+          component_id: vartheme_bs5:views-view-grid
           rows_slot: rows
           prop_mappings:
-            title: ''
-            default_row_class: 0
+            grid_utility_classes: ''
+            column_utility_classes: ''
+            col_xs: col-12
+            col_sm: ''
+            col_md: col-md-4
+            col_lg: ''
+            col_xl: ''
+            col_xxl: ''
             attributes: ''
       row:
         type: entity:node

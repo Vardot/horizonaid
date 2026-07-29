@@ -167,12 +167,12 @@ component_tree:
     component_version: active
   83f89d83-e92d-4f90-a274-1acf7597641a:
     uuid: 83f89d83-e92d-4f90-a274-1acf7597641a
-    component_id: sdc.vartheme_bs5_horizonaid.rich-text
+    component_id: sdc.vartheme_bs5_horizonaid.text
     inputs:
       text:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:country␝field_on_the_ground␞␟processed
-      trim: false
+      text_color: text-white
     parent_uuid: 14149c90-55e5-4bf8-a015-3fb3b8b7da3d
     slot: content
     component_version: active
