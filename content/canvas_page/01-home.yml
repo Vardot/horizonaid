@@ -391,7 +391,7 @@ default:
       link_label: Learn More
       link_target: default
       link_url:
-        uri: internal:/program-page
+        uri: internal:/programs/education
         options: {}
   - parent_uuid: 19f1dcf8-18ba-4543-a81d-9b94eb0589c6
     slot: tabs
@@ -411,7 +411,7 @@ default:
       link_label: Learn More
       link_target: default
       link_url:
-        uri: internal:/program-page
+        uri: internal:/programs/women
         options: {}
   - parent_uuid: 19f1dcf8-18ba-4543-a81d-9b94eb0589c6
     slot: tabs
@@ -431,7 +431,7 @@ default:
       link_label: Learn More
       link_target: default
       link_url:
-        uri: internal:/program-page
+        uri: internal:/programs/agriculture
         options: {}
   - parent_uuid: 19f1dcf8-18ba-4543-a81d-9b94eb0589c6
     slot: tabs
@@ -451,7 +451,7 @@ default:
       link_label: Learn More
       link_target: default
       link_url:
-        uri: internal:/program-page
+        uri: internal:/programs/medicine
         options: {}
   - parent_uuid: 19f1dcf8-18ba-4543-a81d-9b94eb0589c6
     slot: tabs
@@ -471,7 +471,7 @@ default:
       link_label: Learn More
       link_target: default
       link_url:
-        uri: internal:/program-page
+        uri: internal:/programs/health
         options: {}
   - uuid: b870bd56-8c7e-4be4-bd3b-30f6d308e4bc
     component_id: sdc.vartheme_bs5_horizonaid.section
@@ -508,261 +508,11 @@ default:
     inputs:
       size: py-3
   - parent_uuid: b870bd56-8c7e-4be4-bd3b-30f6d308e4bc
-    slot: col_1
-    uuid: e700b3ae-916b-4544-82c0-5963cfafee49
-    component_id: sdc.vartheme_bs5_horizonaid.country-slider
-    inputs:
-      heading_text: Where We Work
-      heading_level: 2
-      description_text:
-        value: <p>We work where displacement, conflict and climate pressure hit hardest.
-          Each country page sets out our role, the work on the ground, the figures
-          behind it and the partners we work with.</p>
-        format: canvas_html_block
-      container_type: container
-      cta_label: View All Countries
-      cta_target: default
-      cta_url:
-        uri: internal:/countires
-        options: {}
-  - parent_uuid: b870bd56-8c7e-4be4-bd3b-30f6d308e4bc
     slot: footer_slot
     uuid: 46c79647-0ea7-4477-b744-e2d7ff657df6
     component_id: sdc.vartheme_bs5_horizonaid.spacer
     inputs:
       size: py-3
-  - uuid: b358b9bd-0cfd-4351-ba8a-ad8f11ec429e
-    component_id: sdc.vartheme_bs5_horizonaid.impressed-card-slider
-    inputs:
-      bg_edge2edge: true
-      background_color: bg-dark
-      container_type: container
-      heading_text: Latest Updates
-      heading_level: 2
-      link_1_label: Healthcare & Medicine
-      link_1_url:
-        uri: https://example.com/updates/healthcare
-        options: {}
-      link_1_active: true
-      link_2_label: Sustenance & Growth
-      link_2_url:
-        uri: internal:/sustenance
-        options: {}
-      link_2_active: false
-      link_3_label: Universal Education
-      link_3_url:
-        uri: internal:/education
-        options: {}
-      link_3_active: false
-      link_4_url:
-        uri: internal:/updates
-        options: {}
-      link_4_active: false
-      cta_label: Explore More
-      cta_target: default
-      cta_url:
-        uri: internal:/explore-more
-        options: {}
-  - parent_uuid: b358b9bd-0cfd-4351-ba8a-ad8f11ec429e
-    slot: cards
-    uuid: 41c8e634-f262-4086-9e27-17ce76cebcc0
-    component_id: sdc.vartheme_bs5_horizonaid.card-impressed
-    inputs:
-      media_position: top
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 184fa3db-624a-4ccd-9202-012ecfc5be5a
-          target_type: media
-      ratio: ratio-16x9
-      fit: object-fit-cover
-      card_border: false
-      background_color: bg-transparent
-      padded: false
-      box_shadow: shadow-none
-      corner_style: rounded-0
-      equal_height: false
-      stretched_link: false
-      link_target: default
-  - parent_uuid: 41c8e634-f262-4086-9e27-17ce76cebcc0
-    slot: overlay
-    uuid: 21078dae-513b-4665-b41a-90c2c3186dd1
-    component_id: sdc.vartheme_bs5_horizonaid.taxonomy
-    inputs:
-      label: News
-      target: _self
-      size: taxonomy-lg
-      color: taxonomy-primary
-  - parent_uuid: 41c8e634-f262-4086-9e27-17ce76cebcc0
-    slot: content
-    uuid: 7875a1d7-c5f7-438f-9fbc-78424c960951
-    component_id: sdc.vartheme_bs5_horizonaid.heading
-    inputs:
-      heading_text: Bridging Medical Gaps in Border Corridors
-      level: 4
-      target: _self
-      text_size: h4
-      text_color: text-white
-  - parent_uuid: 41c8e634-f262-4086-9e27-17ce76cebcc0
-    slot: content
-    uuid: 979a7dd8-89f5-4292-bb1b-058828e18ad4
-    component_id: sdc.vartheme_bs5_horizonaid.text
-    inputs:
-      text:
-        value: <p>Our mobile health units successfully delivered emergency pediatric
-          medicine and preventativ</p>
-        format: canvas_html_block
-      text_size: none
-      text_color: text-white
-  - parent_uuid: b358b9bd-0cfd-4351-ba8a-ad8f11ec429e
-    slot: cards
-    uuid: b609f24e-efc8-44c6-8ae3-8ae55124390f
-    component_id: sdc.vartheme_bs5_horizonaid.card-impressed
-    inputs:
-      media_position: top
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 7fd1d440-8109-40c6-8f18-a57b015ac54e
-          target_type: media
-      ratio: ratio-16x9
-      fit: object-fit-cover
-      card_border: false
-      background_color: bg-transparent
-      padded: false
-      box_shadow: shadow-none
-      corner_style: rounded-0
-      equal_height: false
-      stretched_link: false
-      link_target: default
-  - parent_uuid: b609f24e-efc8-44c6-8ae3-8ae55124390f
-    slot: overlay
-    uuid: d7763102-aad7-4dfe-8718-67facf280de4
-    component_id: sdc.vartheme_bs5_horizonaid.taxonomy
-    inputs:
-      label: REPORT
-      target: _self
-      size: taxonomy-lg
-      color: taxonomy-secondary
-  - parent_uuid: b609f24e-efc8-44c6-8ae3-8ae55124390f
-    slot: content
-    uuid: c473e54f-9093-4b44-820c-07f4ccca85fd
-    component_id: sdc.vartheme_bs5_horizonaid.heading
-    inputs:
-      heading_text: Cultivating Independence in Rural Farms
-      level: 4
-      target: _self
-      text_size: h4
-      text_color: text-white
-  - parent_uuid: b609f24e-efc8-44c6-8ae3-8ae55124390f
-    slot: content
-    uuid: 66d854b6-2ce1-4668-8018-18fc23ed3d95
-    component_id: sdc.vartheme_bs5_horizonaid.text
-    inputs:
-      text:
-        value: <p>Our mobile health units successfully delivered emergency pediatric
-          medicine and preventativ</p>
-        format: canvas_html_block
-      text_size: none
-      text_color: text-white
-  - parent_uuid: b358b9bd-0cfd-4351-ba8a-ad8f11ec429e
-    slot: cards
-    uuid: 4cb5743e-f43a-4222-92a1-3d7344f1d804
-    component_id: sdc.vartheme_bs5_horizonaid.card-impressed
-    inputs:
-      media_position: top
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: b89c3414-f04f-4498-9169-c344d567426b
-          target_type: media
-      ratio: ratio-16x9
-      fit: object-fit-cover
-      card_border: false
-      background_color: bg-transparent
-      padded: false
-      box_shadow: shadow-none
-      corner_style: rounded-0
-      equal_height: false
-      stretched_link: false
-      link_target: default
-  - parent_uuid: 4cb5743e-f43a-4222-92a1-3d7344f1d804
-    slot: overlay
-    uuid: 8b10516d-da36-45df-adff-8132fc74ac14
-    component_id: sdc.vartheme_bs5_horizonaid.taxonomy
-    inputs:
-      label: News
-      target: _self
-      size: taxonomy-lg
-      color: taxonomy-primary
-  - parent_uuid: 4cb5743e-f43a-4222-92a1-3d7344f1d804
-    slot: content
-    uuid: c1002a86-66af-4471-a63d-7d0066d5a1fb
-    component_id: sdc.vartheme_bs5_horizonaid.heading
-    inputs:
-      heading_text: 2026 Regional Human Rights Index
-      level: 4
-      target: _self
-      text_size: h4
-      text_color: text-white
-  - parent_uuid: 4cb5743e-f43a-4222-92a1-3d7344f1d804
-    slot: content
-    uuid: 7fc4445b-3cdf-4633-8871-2757a658dc0a
-    component_id: sdc.vartheme_bs5_horizonaid.text
-    inputs:
-      text:
-        value: <p>Our mobile health units successfully delivered emergency pediatric
-          medicine and preventativ</p>
-        format: canvas_html_block
-      text_size: none
-      text_color: text-white
-  - parent_uuid: b358b9bd-0cfd-4351-ba8a-ad8f11ec429e
-    slot: cards
-    uuid: 23ec773a-90c1-4d94-87f4-4c40abfce711
-    component_id: sdc.vartheme_bs5_horizonaid.card-impressed
-    inputs:
-      media_position: top
-      media_image:
-        CANVAS_ENTITY_REFERENCE:
-          target_uuid: 9a36d753-9d1e-4913-9c33-14dec94831a5
-          target_type: media
-      ratio: ratio-16x9
-      fit: object-fit-cover
-      card_border: false
-      background_color: bg-transparent
-      padded: false
-      box_shadow: shadow-none
-      corner_style: rounded-0
-      equal_height: false
-      stretched_link: false
-      link_target: default
-  - parent_uuid: 23ec773a-90c1-4d94-87f4-4c40abfce711
-    slot: overlay
-    uuid: 5eacdfad-2651-481e-a6ae-8d8c96caf22b
-    component_id: sdc.vartheme_bs5_horizonaid.taxonomy
-    inputs:
-      label: Taxonomy
-      target: _self
-      size: taxonomy-lg
-      color: taxonomy-tertiary
-  - parent_uuid: 23ec773a-90c1-4d94-87f4-4c40abfce711
-    slot: content
-    uuid: dc4b4209-a660-4215-9ab4-8a3a01a3d694
-    component_id: sdc.vartheme_bs5_horizonaid.heading
-    inputs:
-      heading_text: Bridging Medical Gaps in Border Corridors
-      level: 4
-      target: _self
-      text_size: h4
-      text_color: text-white
-  - parent_uuid: 23ec773a-90c1-4d94-87f4-4c40abfce711
-    slot: content
-    uuid: c8ba1cec-f071-469e-823f-e47fdb2c60d7
-    component_id: sdc.vartheme_bs5_horizonaid.text
-    inputs:
-      text:
-        value: <p>Our mobile health units successfully delivered emergency pediatric
-          medicine and preventativ</p>
-        format: canvas_html_block
-      text_size: none
-      text_color: text-white
   - uuid: 3c6f7564-911f-4563-a4b4-695384ad1d1e
     component_id: sdc.vartheme_bs5_horizonaid.section
     inputs:
@@ -924,7 +674,7 @@ default:
       background_color: none
       text_color: auto
       background_overlay: none
-      columns: 33-33-33
+      columns: '100'
       gutter: gx-3 gy-3
       padding_block_start: pt-5
       padding_block_end: pb-5
@@ -974,16 +724,6 @@ default:
       href:
         uri: internal:/events
         options: {}
-  - parent_uuid: e700b3ae-916b-4544-82c0-5963cfafee49
-    slot: cards
-    uuid: 9c7a6969-277a-40bd-a372-fc755470f40e
-    component_id: block.views_block.countries-latest
-    inputs:
-      label: Where we work
-      label_display: '0'
-      views_label: ''
-      items_per_page: '4'
-      exposed: {}
   - parent_uuid: 6b18bf4c-9667-4fdb-a01e-084c51838498
     slot: col_1
     uuid: e950a489-9a2f-4dcc-a1ea-8763b1772150
@@ -991,6 +731,24 @@ default:
     component_version: 9e5fa8961a428d5e
     inputs:
       label: Upcoming events
+      label_display: '0'
+      views_label: ''
+      items_per_page: 3
+      exposed: {}
+  - parent_uuid: b870bd56-8c7e-4be4-bd3b-30f6d308e4bc
+    slot: col_1
+    uuid: 9c7a6969-277a-40bd-a372-fc755470f40e
+    component_id: block.views_block.countries-latest
+    inputs:
+      label: Where we work
+      label_display: '0'
+      views_label: ''
+      items_per_page: 4
+      exposed: {}
+  - uuid: c9b10410-6673-4263-a8e5-1ad5b0aefe26
+    component_id: block.views_block.blog-latest
+    inputs:
+      label: Latest updates
       label_display: '0'
       views_label: ''
       items_per_page: 3

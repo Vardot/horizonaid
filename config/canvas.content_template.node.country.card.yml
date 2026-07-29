@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.field.node.country.field_description
   - field.field.node.country.field_featured_image
   - node.type.country
   module:
@@ -12,27 +11,34 @@ content_entity_type_id: node
 content_entity_type_bundle: country
 content_entity_type_view_mode: card
 component_tree:
-  7358e3cc-7e74-4531-8931-531236ad67ce:
-    uuid: 7358e3cc-7e74-4531-8931-531236ad67ce
-    component_id: sdc.vartheme_bs5_horizonaid.card
+  acfce303-ce63-42a5-a166-ab08dd1abc4f:
+    uuid: acfce303-ce63-42a5-a166-ab08dd1abc4f
+    component_id: sdc.vartheme_bs5_horizonaid.card-country
+    component_version: active
     inputs:
-      shadow: shadow
-      background: bg-light
-      orientation: image-top
+      card_border: false
+      background_color: bg-dark
+      box_shadow: shadow-none
+      corner_style: rounded-4
+      equal_height: false
+      image:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:country␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src,alt↠alt,width↠width,height↠height}
+      link_text: View Country
+      link_target: default
+      link_url:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:country␝path␞␟alias
+  20939547-5ae4-4a97-a58c-5fefc7da991e:
+    uuid: 20939547-5ae4-4a97-a58c-5fefc7da991e
+    parent_uuid: acfce303-ce63-42a5-a166-ab08dd1abc4f
+    slot: content
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    component_version: active
+    inputs:
       heading_text:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:country␝title␞␟value
-      media:
-        sourceType: entity-field
-        expression: ℹ︎␜entity:node:country␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
-      text:
-        sourceType: entity-field
-        expression: ℹ︎␜entity:node:country␝field_description␞␟value
-      button_label: Learn more
-      button_variant: btn-primary
-      has_padding: false
-      url:
-        sourceType: host-entity-url
-        absolute: false
-    component_version: active
-exposed_slots: []
+      level: 3
+      text_color: text-white
+exposed_slots: {}

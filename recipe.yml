@@ -206,6 +206,27 @@ config:
     canvas.component.sdc.vartheme_bs5_horizonaid.views-view-unformatted:
       disable: []
     views.view.blog:
+      simpleConfigUpdate:
+        display.latest.display_options.defaults.style: false
+        display.latest.display_options.style:
+          type: components_views_style
+          options:
+            uses_fields: false
+            component_id: 'vartheme_bs5:impressed-card-slider'
+            rows_slot: cards
+            prop_mappings:
+              heading_text: 'Latest Updates'
+              heading_level: 2
+              background_color: bg-primary
+              bg_edge2edge: true
+              link_1_label: 'Healthcare & Medicine'
+              link_1_url: /resources
+              link_2_label: 'Sustenance & Growth'
+              link_2_url: /resources
+              link_3_label: 'Universal Education'
+              link_3_url: /resources
+              cta_label: 'Explore More'
+              cta_url: /resources
       setViewsComponentStyleTheme:
         theme: default
     canvas.content_template.node.blog.card:
