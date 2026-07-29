@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a44c00eb-a199-427f-a6bb-26bb1d86283c
+  bundle: blog
+  default_langcode: en
+  depends:
+    67a76fae-bc22-4aa1-a144-4f39e44428ce: media
+    60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
+    3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Documentation as protection
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/documentation-as-protection
+    langcode: en
+  field_description:
+  - value: Without papers a family cannot enrol a child, access a clinic or report
+      abuse. What our legal desks do about it.
+  field_content:
+  - value: <p>Documentation is not paperwork, it is protection.</p><p>Our legal teams
+      take on the documentation, inheritance and protection cases that would otherwise
+      never reach a court.</p>
+    format: content_format
+  field_featured_image:
+  - entity: 67a76fae-bc22-4aa1-a144-4f39e44428ce
+  field_blog_categories:
+  - entity: 60a3f621-9baf-4341-a6ad-b8615f99e6d3
+  field_tags:
+  - entity: 3917245a-e65c-48ed-a00f-f804f38522f1

@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 96aaad5a-8b21-4539-afad-07ed0e67dc20
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: resource-supply-distribution.jpg
+  uri:
+  - value: public://2026-07/resource-supply-distribution.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 733610
+  status:
+  - value: true

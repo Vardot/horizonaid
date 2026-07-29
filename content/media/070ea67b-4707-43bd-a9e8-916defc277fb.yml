@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 070ea67b-4707-43bd-a9e8-916defc277fb
+  bundle: image
+  default_langcode: en
+  depends:
+    6b2af18b-8e96-44c1-ad13-4d105d621c74: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Classroom lesson
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Classroom lesson in a Horizon Aid programme
+    title: ''
+    width: 2640
+    height: 1760
+    entity: 6b2af18b-8e96-44c1-ad13-4d105d621c74

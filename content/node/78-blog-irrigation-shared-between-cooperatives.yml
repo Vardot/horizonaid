@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 867b2e76-f236-4b81-a936-a21e8ebedcfa
+  bundle: blog
+  default_langcode: en
+  depends:
+    7fd1d440-8109-40c6-8f18-a57b015ac54e: media
+    9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
+    6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Irrigation shared between cooperatives
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/irrigation-shared-between-cooperatives
+    langcode: en
+  field_description:
+  - value: A shared pump serving four cooperatives cut water costs and ended a long
+      dispute.
+  field_content:
+  - value: <p>Shared infrastructure only works when the maintenance agreement comes
+      first.</p><p>The cooperatives now fund servicing from a joint reserve.</p>
+    format: content_format
+  field_featured_image:
+  - entity: 7fd1d440-8109-40c6-8f18-a57b015ac54e
+  field_blog_categories:
+  - entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+  field_tags:
+  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

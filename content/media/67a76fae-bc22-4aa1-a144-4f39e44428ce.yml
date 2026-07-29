@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 67a76fae-bc22-4aa1-a144-4f39e44428ce
+  bundle: image
+  default_langcode: en
+  depends:
+    71a86c82-c07d-4c74-a31a-bcdb521402e8: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Shelter repair
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Shelter repair in a Horizon Aid programme
+    title: ''
+    width: 2640
+    height: 1760
+    entity: 71a86c82-c07d-4c74-a31a-bcdb521402e8

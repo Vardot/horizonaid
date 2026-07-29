@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 2a1608f1-be5c-4d4a-acce-854c63dde759
+  bundle: blog
+  default_langcode: en
+  depends:
+    0ec80857-3171-423b-89f7-ce4447adc41b: media
+    d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
+    6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Cash support and market recovery
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/cash-support-and-market-recovery
+    langcode: en
+  field_description:
+  - value: What happened to local markets in districts where we replaced in-kind aid
+      with direct cash.
+  field_content:
+  - value: <p>Cash support lets a household choose what it needs and keeps the local
+      trader in business.</p><p>We track market prices weekly so support does not
+      distort them.</p>
+    format: content_format
+  field_featured_image:
+  - entity: 0ec80857-3171-423b-89f7-ce4447adc41b
+  field_blog_categories:
+  - entity: d762c0cc-2720-4035-a262-0118d74e67b2
+  field_tags:
+  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f98c6cb8-6ead-4187-a9dd-d0cda2ffb793
+  bundle: blog
+  default_langcode: en
+  depends:
+    14c0a2d9-36f9-446e-a974-aa93b5493192: media
+    9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
+    3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Teacher training in displacement settings
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/teacher-training-in-displacement-settings
+    langcode: en
+  field_description:
+  - value: A second cohort of local teachers completed training designed for classrooms
+      that move.
+  field_content:
+  - value: <p>Training local teachers means the classroom survives our departure.</p><p>The
+      curriculum covers trauma-aware teaching and multi-grade classes.</p>
+    format: content_format
+  field_featured_image:
+  - entity: 14c0a2d9-36f9-446e-a974-aa93b5493192
+  field_blog_categories:
+  - entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+  field_tags:
+  - entity: 3917245a-e65c-48ed-a00f-f804f38522f1

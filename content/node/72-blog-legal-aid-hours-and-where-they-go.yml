@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: edf677a2-6489-47f8-a544-04b04c47c4e0
+  bundle: blog
+  default_langcode: en
+  depends:
+    19422939-a884-494a-a2bc-7bb49eec89f3: media
+    60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
+    3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Legal aid hours and where they go
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/legal-aid-hours-and-where-they-go
+    langcode: en
+  field_description:
+  - value: How we decide which corridor or district receives the next tranche of legal
+      aid capacity.
+  field_content:
+  - value: <p>Legal aid capacity is finite, so allocation has to follow measured need.</p><p>The
+      index scores feed directly into next year's placement.</p>
+    format: content_format
+  field_featured_image:
+  - entity: 19422939-a884-494a-a2bc-7bb49eec89f3
+  field_blog_categories:
+  - entity: 60a3f621-9baf-4341-a6ad-b8615f99e6d3
+  field_tags:
+  - entity: 3917245a-e65c-48ed-a00f-f804f38522f1

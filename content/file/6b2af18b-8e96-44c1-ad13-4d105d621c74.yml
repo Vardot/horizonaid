@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6b2af18b-8e96-44c1-ad13-4d105d621c74
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: resource-classroom-lesson.jpg
+  uri:
+  - value: public://2026-07/resource-classroom-lesson.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 617694
+  status:
+  - value: true

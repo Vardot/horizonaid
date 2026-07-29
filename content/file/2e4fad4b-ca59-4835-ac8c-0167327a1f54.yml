@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2e4fad4b-ca59-4835-ac8c-0167327a1f54
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: resource-mobile-health-unit.jpg
+  uri:
+  - value: public://2026-07/resource-mobile-health-unit.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 498781
+  status:
+  - value: true

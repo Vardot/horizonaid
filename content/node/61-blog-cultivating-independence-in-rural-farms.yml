@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 042186ea-5268-45cc-a87a-a58b4be1ef5c
+  bundle: blog
+  default_langcode: en
+  depends:
+    2703edeb-c3da-4295-a7f9-956add15af88: media
+    d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
+    6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Cultivating independence in rural farms
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/cultivating-independence-in-rural-farms
+    langcode: en
+  field_description:
+  - value: Cooperatives using climate-resilient tools secured steady yields for a
+      second consecutive season.
+  field_content:
+  - value: <p>Households that joined two seasons ago now grow enough to feed themselves
+      and sell a surplus at the district market.</p><p>Repayment is made in seed,
+      which stocks the next cooperative's bank and keeps the programme running after
+      we leave.</p>
+    format: content_format
+  field_featured_image:
+  - entity: 2703edeb-c3da-4295-a7f9-956add15af88
+  field_blog_categories:
+  - entity: d762c0cc-2720-4035-a262-0118d74e67b2
+  field_tags:
+  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

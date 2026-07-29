@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 403cd5c7-ed1e-43e1-a975-ab93ff13e8fd
+  bundle: blog
+  default_langcode: en
+  depends:
+    070ea67b-4707-43bd-a9e8-916defc277fb: media
+    60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
+    3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Where the next index will look
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/where-the-next-index-will-look
+    langcode: en
+  field_description:
+  - value: The countries and indicators being added to the next edition of the human
+      rights index.
+  field_content:
+  - value: <p>The index grows where partners tell us the data gap is widest.</p><p>Two
+      new countries and three indicators join the next edition.</p>
+    format: content_format
+  field_featured_image:
+  - entity: 070ea67b-4707-43bd-a9e8-916defc277fb
+  field_blog_categories:
+  - entity: 60a3f621-9baf-4341-a6ad-b8615f99e6d3
+  field_tags:
+  - entity: 3917245a-e65c-48ed-a00f-f804f38522f1

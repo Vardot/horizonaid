@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ddd3e484-bd55-4498-a4b8-0467d9a3062c
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: resource-water-point-queue.jpg
+  uri:
+  - value: public://2026-07/resource-water-point-queue.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 437036
+  status:
+  - value: true

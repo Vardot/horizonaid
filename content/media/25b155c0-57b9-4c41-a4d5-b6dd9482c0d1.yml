@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 25b155c0-57b9-4c41-a4d5-b6dd9482c0d1
+  bundle: image
+  default_langcode: en
+  depends:
+    cd603706-58de-4b64-a735-66f111fb9343: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Legal aid desk
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Legal aid desk in a Horizon Aid programme
+    title: ''
+    width: 2640
+    height: 1760
+    entity: cd603706-58de-4b64-a735-66f111fb9343

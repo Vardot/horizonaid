@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: cd603706-58de-4b64-a735-66f111fb9343
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: resource-legal-aid-desk.jpg
+  uri:
+  - value: public://2026-07/resource-legal-aid-desk.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 708824
+  status:
+  - value: true

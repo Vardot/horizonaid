@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: e58b0f3c-618e-4b64-a5a9-9b33bc534d3c
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: resource-field-clinic-visit.jpg
+  uri:
+  - value: public://2026-07/resource-field-clinic-visit.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 731508
+  status:
+  - value: true

@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b418f17d-8165-40ac-a987-a55a0a55ab58
+  bundle: blog
+  default_langcode: en
+  depends:
+    b89c3414-f04f-4498-9169-c344d567426b: media
+    9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
+    6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Emergency relief in flooded states
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/emergency-relief-in-flooded-states
+    langcode: en
+  field_description:
+  - value: Flooding now displaces more people than conflict in several states we work
+      in.
+  field_content:
+  - value: <p>Flooding returns every year, so the response has to be planned, not
+      improvised.</p><p>Pre-positioned supplies reached families within seventy-two
+      hours.</p>
+    format: content_format
+  field_featured_image:
+  - entity: b89c3414-f04f-4498-9169-c344d567426b
+  field_blog_categories:
+  - entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+  field_tags:
+  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

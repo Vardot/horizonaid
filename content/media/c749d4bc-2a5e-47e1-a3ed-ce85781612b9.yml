@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c749d4bc-2a5e-47e1-a3ed-ce85781612b9
+  bundle: image
+  default_langcode: en
+  depends:
+    96aaad5a-8b21-4539-afad-07ed0e67dc20: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Supply distribution
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Supply distribution in a Horizon Aid programme
+    title: ''
+    width: 2640
+    height: 2377
+    entity: 96aaad5a-8b21-4539-afad-07ed0e67dc20

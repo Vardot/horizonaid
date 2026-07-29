@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 368bad61-0dbd-4fd3-ac9d-b295fcdd7353
+  bundle: image
+  default_langcode: en
+  depends:
+    707f5d01-6b18-4a40-a455-0e94fe9590aa: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Harvest training
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Harvest training in a Horizon Aid programme
+    title: ''
+    width: 2640
+    height: 2558
+    entity: 707f5d01-6b18-4a40-a455-0e94fe9590aa

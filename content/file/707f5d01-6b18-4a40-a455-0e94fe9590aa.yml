@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 707f5d01-6b18-4a40-a455-0e94fe9590aa
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: resource-harvest-training.jpg
+  uri:
+  - value: public://2026-07/resource-harvest-training.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 1046832
+  status:
+  - value: true

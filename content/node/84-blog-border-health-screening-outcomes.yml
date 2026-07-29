@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5da5024e-c56d-4929-aabe-03729f9dd2a6
+  bundle: blog
+  default_langcode: en
+  depends:
+    2703edeb-c3da-4295-a7f9-956add15af88: media
+    d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
+    6100a75e-6da4-4f26-addd-a256e68df3ae: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Border health screening outcomes
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/border-health-screening-outcomes
+    langcode: en
+  field_description:
+  - value: Screening results from four crossings over twelve months.
+  field_content:
+  - value: <p>Screening at a crossing catches what a static clinic never sees.</p><p>Findings
+      are shared with local health authorities each quarter.</p>
+    format: content_format
+  field_featured_image:
+  - entity: 2703edeb-c3da-4295-a7f9-956add15af88
+  field_blog_categories:
+  - entity: d762c0cc-2720-4035-a262-0118d74e67b2
+  field_tags:
+  - entity: 6100a75e-6da4-4f26-addd-a256e68df3ae

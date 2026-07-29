@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 078357f9-f30d-47b3-a053-36e30080e686
+  bundle: blog
+  default_langcode: en
+  depends:
+    48dc41a6-be05-468a-b5ce-0b78bff6358a: media
+    9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
+    6100a75e-6da4-4f26-addd-a256e68df3ae: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Vaccination coverage in border districts
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/vaccination-coverage-in-border-districts
+    langcode: en
+  field_description:
+  - value: Fifteen thousand children were vaccinated in districts where routine services
+      had stopped.
+  field_content:
+  - value: <p>Coverage in border districts had fallen below the level that prevents
+      outbreaks.</p><p>Cold chain was the binding constraint, not willingness.</p>
+    format: content_format
+  field_featured_image:
+  - entity: 48dc41a6-be05-468a-b5ce-0b78bff6358a
+  field_blog_categories:
+  - entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+  field_tags:
+  - entity: 6100a75e-6da4-4f26-addd-a256e68df3ae

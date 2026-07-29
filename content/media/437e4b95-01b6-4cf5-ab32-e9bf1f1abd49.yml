@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 437e4b95-01b6-4cf5-ab32-e9bf1f1abd49
+  bundle: image
+  default_langcode: en
+  depends:
+    2e4fad4b-ca59-4835-ac8c-0167327a1f54: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Mobile health unit
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Mobile health unit in a Horizon Aid programme
+    title: ''
+    width: 2583
+    height: 1920
+    entity: 2e4fad4b-ca59-4835-ac8c-0167327a1f54

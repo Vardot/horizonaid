@@ -1,0 +1,30 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: f749352f-75eb-422e-abca-0696f87555ba
+  bundle: image
+  default_langcode: en
+  depends:
+    e58b0f3c-618e-4b64-a5a9-9b33bc534d3c: file
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Image
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  name:
+  - value: Field clinic visit
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
+  field_media_image:
+  - alt: Field clinic visit in a Horizon Aid programme
+    title: ''
+    width: 2640
+    height: 1760
+    entity: e58b0f3c-618e-4b64-a5a9-9b33bc534d3c

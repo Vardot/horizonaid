@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 2f77ddf7-7412-4bfc-a6c3-e53d5937536f
+  bundle: blog
+  default_langcode: en
+  depends:
+    20e27874-e572-4ad3-89a9-42fa60d0a69c: media
+    d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
+    6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Farmer-to-farmer training results
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/farmer-to-farmer-training-results
+    langcode: en
+  field_description:
+  - value: Average harvest per household rose across every participating village this
+      season.
+  field_content:
+  - value: <p>Farmer-to-farmer training spreads faster than any external curriculum.</p><p>Food-aid
+      dependence fell over the same period.</p>
+    format: content_format
+  field_featured_image:
+  - entity: 20e27874-e572-4ad3-89a9-42fa60d0a69c
+  field_blog_categories:
+  - entity: d762c0cc-2720-4035-a262-0118d74e67b2
+  field_tags:
+  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

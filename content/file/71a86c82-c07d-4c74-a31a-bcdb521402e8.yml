@@ -1,0 +1,18 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 71a86c82-c07d-4c74-a31a-bcdb521402e8
+  default_langcode: en
+default:
+  uid:
+  - target_id: 1
+  filename:
+  - value: resource-shelter-repair.jpg
+  uri:
+  - value: public://2026-07/resource-shelter-repair.jpg
+  filemime:
+  - value: image/jpeg
+  filesize:
+  - value: 445571
+  status:
+  - value: true

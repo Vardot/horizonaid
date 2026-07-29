@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e07304ba-1051-4fba-a073-12c5e055ad4a
+  bundle: blog
+  default_langcode: en
+  depends:
+    ee0c4672-3672-423e-87f3-10aa42804ca7: media
+    d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
+    6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Blog post
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Community-led reconstruction
+  promote:
+  - value: true
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /blog/community-led-reconstruction
+    langcode: en
+  field_description:
+  - value: Households chose and supervised their own repairs in a pilot across two
+      districts.
+  field_content:
+  - value: <p>People rebuild better when they hold the budget.</p><p>Costs came in
+      lower than contractor-led equivalents.</p>
+    format: content_format
+  field_featured_image:
+  - entity: ee0c4672-3672-423e-87f3-10aa42804ca7
+  field_blog_categories:
+  - entity: d762c0cc-2720-4035-a262-0118d74e67b2
+  field_tags:
+  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3
