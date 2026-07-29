@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - node.type.program
+  module:
+  - node
+id: programs
+label: Programs
+type: canonical_entities:node
+pattern: /programs/[node:title]
+selection_criteria:
+  98e24a9d-b9db-4976-b224-04ea079dd48b:
+    id: entity_bundle:node
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      program: program
+    uuid: 98e24a9d-b9db-4976-b224-04ea079dd48b
+selection_logic: and
+weight: -5
+relationships: {}

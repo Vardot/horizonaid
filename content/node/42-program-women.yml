@@ -1,0 +1,51 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3f82db1f-7b88-4106-a6b4-2e08ff62a681
+  bundle: program
+  default_langcode: en
+  depends:
+    e590a1b0-41c2-42ad-8659-c9f38b586c88: media
+    fe8e2180-491d-4717-a0ef-feeb49399391: taxonomy_term
+    aceb71d5-1f56-4882-a8ed-239253b0af3d: node
+    d1a2b3c4-2222-4a2b-ab02-2c3d4e5f6a02: node
+    d1a2b3c4-4444-4a2b-ab04-2c3d4e5f6a04: node
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Program
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Women
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /programs/women
+    langcode: en
+  field_description:
+  - value: Providing legal defense, grants, and leadership training to help women
+      break poverty cycles.
+  field_content:
+  - value: <p>We combine legal defence, small grants and leadership training so women
+      can claim their rights, start a livelihood and take part in the decisions that
+      affect their communities.</p><p>Our legal teams take on documentation, inheritance
+      and protection cases that would otherwise never reach a court.</p>
+    format: content_format
+  field_featured_image:
+  - entity: e590a1b0-41c2-42ad-8659-c9f38b586c88
+  field_program_type:
+  - entity: fe8e2180-491d-4717-a0ef-feeb49399391
+  field_countries:
+  - entity: aceb71d5-1f56-4882-a8ed-239253b0af3d
+  - entity: d1a2b3c4-2222-4a2b-ab02-2c3d4e5f6a02
+  - entity: d1a2b3c4-4444-4a2b-ab04-2c3d4e5f6a04

@@ -1,0 +1,51 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 2a495468-e170-45aa-acb4-d278a9ca2388
+  bundle: program
+  default_langcode: en
+  depends:
+    eb19191f-3c64-4787-8f4e-c65ae6df3d8e: media
+    101b7c20-8088-4293-a744-783adf77c327: taxonomy_term
+    279b5acc-6704-45e3-a813-a6e4420deed4: node
+    d1a2b3c4-5555-4a2b-ab05-2c3d4e5f6a05: node
+    78955e0d-e528-4f3d-a83b-2309330e5549: node
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Program
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Medicine
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /programs/medicine
+    langcode: en
+  field_description:
+  - value: Delivering emergency surgical supplies, medicines, and doctors directly
+      to active global crisis zones.
+  field_content:
+  - value: <p>We move emergency surgical supplies, medicines and medical teams into
+      active crisis zones, and support the hospitals that stayed open when others
+      closed.</p><p>Supply routes are negotiated weekly so deliveries keep moving
+      even when access changes.</p>
+    format: content_format
+  field_featured_image:
+  - entity: eb19191f-3c64-4787-8f4e-c65ae6df3d8e
+  field_program_type:
+  - entity: 101b7c20-8088-4293-a744-783adf77c327
+  field_countries:
+  - entity: 279b5acc-6704-45e3-a813-a6e4420deed4
+  - entity: d1a2b3c4-5555-4a2b-ab05-2c3d4e5f6a05
+  - entity: 78955e0d-e528-4f3d-a83b-2309330e5549

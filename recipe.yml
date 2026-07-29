@@ -271,6 +271,15 @@ config:
     canvas.content_template.node.event.text_card_medium:
       repointComponentTreeToTheme:
         theme: default
+    views.view.programs:
+      setViewsComponentStyleTheme:
+        theme: default
+    canvas.content_template.node.program.full:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.program.text_card_medium:
+      repointComponentTreeToTheme:
+        theme: default
     views.view.countries:
       setViewsComponentStyleTheme:
         theme: default

@@ -1,0 +1,22 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: bf31589a-50ed-4081-a52d-d8a9fa03296e
+  bundle: program_type
+  default_langcode: en
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Program type
+  status:
+  - value: true
+  name:
+  - value: Health
+  weight:
+  - value: 5
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {}
+name: Program type
+vid: program_type
+description: The sector a programme belongs to (for example Education, Health, Agriculture).
+weight: 0
+new_revision: false

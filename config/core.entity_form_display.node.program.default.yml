@@ -1,0 +1,120 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.node.program.field_description
+  - field.field.node.program.field_featured_image
+  - field.field.node.program.field_content
+  - field.field.node.program.field_program_type
+  - field.field.node.program.field_countries
+  - node.type.program
+  module:
+  - media_library
+  - text
+id: node.program.default
+targetEntityType: node
+bundle: program
+mode: default
+content:
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {}
+  field_description:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {}
+  field_featured_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings: {}
+    third_party_settings: {}
+  field_content:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 9
+      placeholder: ''
+    third_party_settings: {}
+  field_program_type:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {}
+    third_party_settings: {}
+  field_countries:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings: {}
+    third_party_settings: {}
+  status:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {}
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {}
+    third_party_settings: {}
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+  path:
+    type: path
+    weight: 9
+    region: content
+    settings: {}
+    third_party_settings: {}
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {}
+    third_party_settings: {}
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {}
+    third_party_settings: {}
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {}
+    third_party_settings: {}
+hidden: {}

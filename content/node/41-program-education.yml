@@ -1,0 +1,52 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: bb46cb54-ef2c-415b-abe6-7fc1375311f0
+  bundle: program
+  default_langcode: en
+  depends:
+    20e27874-e572-4ad3-89a9-42fa60d0a69c: media
+    9598f221-b5f1-43f6-aa8a-b342193720f0: taxonomy_term
+    d1a2b3c4-1111-4a2b-ab01-2c3d4e5f6a01: node
+    84e59dbf-1e4f-4792-a622-e81893df45d4: node
+    d1a2b3c4-3333-4a2b-ab03-2c3d4e5f6a03: node
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Program
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Education
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /programs/education
+    langcode: en
+  field_description:
+  - value: Building safe schools and training local teachers to give children a clear
+      path to a brighter future.
+  field_content:
+  - value: <p>We build and rehabilitate safe learning spaces, train local teachers,
+      and provide the materials a classroom needs to keep running through displacement
+      and drought.</p><p>Where schools have closed, we set up temporary learning spaces
+      so children do not lose a year, and we work with education ministries so the
+      spaces are recognised.</p>
+    format: content_format
+  field_featured_image:
+  - entity: 20e27874-e572-4ad3-89a9-42fa60d0a69c
+  field_program_type:
+  - entity: 9598f221-b5f1-43f6-aa8a-b342193720f0
+  field_countries:
+  - entity: d1a2b3c4-1111-4a2b-ab01-2c3d4e5f6a01
+  - entity: 84e59dbf-1e4f-4792-a622-e81893df45d4
+  - entity: d1a2b3c4-3333-4a2b-ab03-2c3d4e5f6a03

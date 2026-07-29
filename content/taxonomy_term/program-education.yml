@@ -1,0 +1,22 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 9598f221-b5f1-43f6-aa8a-b342193720f0
+  bundle: program_type
+  default_langcode: en
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Program type
+  status:
+  - value: true
+  name:
+  - value: Education
+  weight:
+  - value: 1
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null
