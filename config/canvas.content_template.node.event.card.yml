@@ -1,0 +1,60 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.node.event.field_description
+  - field.field.node.event.field_event_categories
+  - field.field.node.event.field_when
+  - node.type.event
+  module:
+  - canvas
+id: node.event.card
+content_entity_type_id: node
+content_entity_type_bundle: event
+content_entity_type_view_mode: card
+component_tree:
+  d1a7c2e0-4b31-4f88-9c2a-1e5b7f0a3d61:
+    uuid: d1a7c2e0-4b31-4f88-9c2a-1e5b7f0a3d61
+    component_id: sdc.vartheme_bs5_horizonaid.card-events
+    component_version: active
+    inputs:
+      card_border: false
+      box_shadow: shadow-none
+      corner_style: rounded-4
+      equal_height: true
+      stretched_link: true
+      link_target: default
+      taxonomy_label:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:event␝field_event_categories␞0␟entity␜␜entity:taxonomy_term:event_categories␝name␞␟value
+      date_start_timestamp:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:event␝field_when␞0␟value
+      date_end_timestamp:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:event␝field_when␞0␟end_value
+      link_url:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:event␝path␞␟alias
+  d1a7c2e0-4b31-4f88-9c2a-1e5b7f0a3d62:
+    uuid: d1a7c2e0-4b31-4f88-9c2a-1e5b7f0a3d62
+    parent_uuid: d1a7c2e0-4b31-4f88-9c2a-1e5b7f0a3d61
+    slot: content
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    component_version: active
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:event␝title␞␟value
+      level: 3
+  d1a7c2e0-4b31-4f88-9c2a-1e5b7f0a3d63:
+    uuid: d1a7c2e0-4b31-4f88-9c2a-1e5b7f0a3d63
+    parent_uuid: d1a7c2e0-4b31-4f88-9c2a-1e5b7f0a3d61
+    slot: content
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    component_version: active
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:event␝field_description␞0␟value
+exposed_slots: {}

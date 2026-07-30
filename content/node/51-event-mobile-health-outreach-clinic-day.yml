@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 8d51159a-f45c-4552-ae68-11ff149b2f5c
+  bundle: event
+  default_langcode: en
+  depends:
+    5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
+    f749352f-75eb-422e-abca-0696f87555ba: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Mobile health outreach clinic day
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/mobile-health-outreach-clinic-day
+    langcode: en
+  field_description:
+  - value: An open day with the mobile health teams serving remote settlements, for partners and local health authorities.
+  field_location:
+  - value: Mogadishu, Somalia
+  field_event_categories:
+  - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
+  field_event_topics:
+  - entity: cbc4a87a-f190-48f7-9021-a91c81e69161
+  field_when:
+  - value: 1819958400
+    end_value: 1819971000
+    duration: 210
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: f749352f-75eb-422e-abca-0696f87555ba

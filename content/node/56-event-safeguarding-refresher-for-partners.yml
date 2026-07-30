@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: adf91bae-4b95-48e3-a792-a10aacf203ce
+  bundle: event
+  default_langcode: en
+  depends:
+    896a80bb-51f9-4335-ac9f-b2b504e94e72: taxonomy_term
+    bdff596c-46c9-4a01-bf78-f568ccc12755: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Safeguarding refresher for partners
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/safeguarding-refresher-for-partners
+    langcode: en
+  field_description:
+  - value: Mandatory annual refresher on safeguarding standards, reporting routes and survivor-centred practice.
+  field_location:
+  - value: Online
+  field_event_categories:
+  - entity: 896a80bb-51f9-4335-ac9f-b2b504e94e72
+  field_event_topics:
+  - entity: 07af9893-4b7a-4f31-8f79-674d9f613c1b
+  field_when:
+  - value: 1823673600
+    end_value: 1823686200
+    duration: 210
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: bdff596c-46c9-4a01-bf78-f568ccc12755

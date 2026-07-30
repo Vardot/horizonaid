@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0c275a60-aed5-4c68-aa4e-d6ec0c22ee2a
+  bundle: event
+  default_langcode: en
+  depends:
+    5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
+    67a76fae-bc22-4aa1-a144-4f39e44428ce: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Shelter innovation field day
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/shelter-innovation-field-day
+    langcode: en
+  field_description:
+  - value: Two days testing low-cost shelter upgrades with the families who will live in them.
+  field_location:
+  - value: Beirut, Lebanon
+  field_event_categories:
+  - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
+  field_event_topics:
+  - entity: 48f77027-e1b1-4635-a614-ba0558154fec
+  field_when:
+  - value: 1825401600
+    end_value: 1825500600
+    duration: 1650
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: 67a76fae-bc22-4aa1-a144-4f39e44428ce

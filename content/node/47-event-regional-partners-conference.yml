@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 2d2db416-c8ce-4ddb-a914-975b9f2d82ec
+  bundle: event
+  default_langcode: en
+  depends:
+    896a80bb-51f9-4335-ac9f-b2b504e94e72: taxonomy_term
+    559f1690-72b0-4373-9c1b-ca2cf833174f: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Regional partners conference
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/regional-partners-conference
+    langcode: en
+  field_description:
+  - value: Annual gathering of Horizon Aid's implementing partners across Africa and the Middle East.
+  field_location:
+  - value: Online
+  field_event_categories:
+  - entity: 896a80bb-51f9-4335-ac9f-b2b504e94e72
+  field_event_topics:
+  - entity: 150cc2bb-45a9-4e56-b6ce-60c553f0bbb2
+  field_when:
+  - value: 1817020800
+    end_value: 1817033400
+    duration: 210
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: 559f1690-72b0-4373-9c1b-ca2cf833174f

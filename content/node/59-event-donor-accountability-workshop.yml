@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 26f98b3d-7b54-4ad8-ae82-0ec2b2d7b285
+  bundle: event
+  default_langcode: en
+  depends:
+    5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
+    422af474-8750-4504-b793-fc7d992fffc6: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Donor accountability workshop
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/donor-accountability-workshop
+    langcode: en
+  field_description:
+  - value: A working session on reporting standards, audit readiness and how we publish our numbers.
+  field_location:
+  - value: Amman, Jordan
+  field_event_categories:
+  - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
+  field_event_topics:
+  - entity: c4a8576f-91df-4c42-be2f-1d0d2ab2506a
+  field_when:
+  - value: 1826524800
+    end_value: 1826537400
+    duration: 210
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: 422af474-8750-4504-b793-fc7d992fffc6

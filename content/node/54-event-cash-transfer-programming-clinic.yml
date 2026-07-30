@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 17855bbb-214a-4594-a0e4-2e9cb898c378
+  bundle: event
+  default_langcode: en
+  depends:
+    896a80bb-51f9-4335-ac9f-b2b504e94e72: taxonomy_term
+    c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Cash transfer programming clinic
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/cash-transfer-programming-clinic
+    langcode: en
+  field_description:
+  - value: A hands-on clinic on designing, targeting and monitoring multi-purpose cash assistance.
+  field_location:
+  - value: Online
+  field_event_categories:
+  - entity: 896a80bb-51f9-4335-ac9f-b2b504e94e72
+  field_event_topics:
+  - entity: b0174cfe-5c93-4a6b-80c2-d6d7dc6cc3a8
+  field_when:
+  - value: 1822377600
+    end_value: 1822390200
+    duration: 210
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: c749d4bc-2a5e-47e1-a3ed-ce85781612b9

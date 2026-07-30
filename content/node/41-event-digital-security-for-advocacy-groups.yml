@@ -1,12 +1,12 @@
 _meta:
   version: '1.0'
   entity_type: node
-  uuid: 9f1664a2-968b-428c-ab5d-d780394a0c7c
+  uuid: 689fe996-2d4b-4791-adf7-eda791041972
   bundle: event
   default_langcode: en
   depends:
     896a80bb-51f9-4335-ac9f-b2b504e94e72: taxonomy_term
-    ed3320e8-fe39-471f-b6c2-57fdcfac8ab8: media
+    437e4b95-01b6-4cf5-ab32-e9bf1f1abd49: media
 default:
   revision_uid:
   - target_id: 1
@@ -30,18 +30,19 @@ default:
   - alias: /events/digital-security-for-advocacy-groups
     langcode: en
   field_description:
-  - value: Learn how to protect field communications, secure donor data, and defend
-      your organisation against cyber threats.
+  - value: Learn how to protect field communications, secure donor data, and defend your organisation against cyber threats in high-risk environments.
   field_location:
   - value: Online
   field_event_categories:
   - entity: 896a80bb-51f9-4335-ac9f-b2b504e94e72
+  field_event_topics:
+  - entity: 07af9893-4b7a-4f31-8f79-674d9f613c1b
   field_when:
-  - value: 1786532400
-    end_value: 1788100200
-    duration: 26130
+  - value: 1812787200
+    end_value: 1816947000
+    duration: 69330
     rrule: null
     rrule_index: null
     timezone: ''
   field_featured_image:
-  - entity: ed3320e8-fe39-471f-b6c2-57fdcfac8ab8
+  - entity: 437e4b95-01b6-4cf5-ab32-e9bf1f1abd49

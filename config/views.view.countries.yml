@@ -93,8 +93,8 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
-          reset_button: false
+          submit_button: 'Apply Filters'
+          reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: Sort by
           expose_sort_order: true
@@ -118,7 +118,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: <p>There are no blog posts yet.</p>
+            value: <p>There are no countries listed yet.</p>
             format: full_html
           tokenize: false
       sorts:
@@ -287,7 +287,7 @@ display:
         type: entity:node
         options:
           relationship: none
-          view_mode: overlay_card_medium
+          view_mode: card
       query:
         type: views_query
         options:
@@ -340,7 +340,7 @@ display:
       exposed_form:
         type: bef
         options:
-          submit_button: Apply Filter
+          submit_button: 'Apply Filters'
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: Sort by
@@ -586,19 +586,20 @@ display:
           component_id: vartheme_bs5:grid
           rows_slot: items
           prop_mappings:
-            attributes: ''
+            grid_utility_classes: gy-4
+            column_utility_classes: ''
             col_xs: col-12
+            col_sm: col-sm-6
             col_md: col-md-6
             col_lg: col-lg-4
             col_xl: col-xl-4
             col_xxl: col-xxl-4
-            grid_utility_classes: g-4
-            column_utility_classes: ''
+            attributes: ''
       row:
         type: entity:node
         options:
           relationship: none
-          view_mode: overlay_card_medium
+          view_mode: card
       defaults:
         use_ajax: false
         pager: false
@@ -622,7 +623,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: <h2 class="visually-hidden">All blog posts</h2>
+            value: <h2 class="visually-hidden">All countries</h2>
             format: code_html
           tokenize: false
         result:
@@ -634,9 +635,7 @@ display:
           admin_label: ''
           plugin_id: result
           empty: false
-          content: <span class="vb-result-summary"><span class="vb-result-summary__label">Shown
-            articles:</span> <span class="vb-result-summary__count">@start-@end of
-            @total</span></span>
+          content: <span class="vb-result-summary"><span class="vb-result-summary__label">Shown countries:</span> <span class="vb-result-summary__count">@start-@end of @total</span></span>
       exposed_block: true
       display_extenders:
         metatag_display_extender:
@@ -789,20 +788,20 @@ display:
           component_id: vartheme_bs5:views-view-grid
           rows_slot: rows
           prop_mappings:
-            grid_utility_classes: ''
+            grid_utility_classes: gy-4
             column_utility_classes: ''
             col_xs: col-12
-            col_sm: ''
-            col_md: col-md-4
-            col_lg: ''
-            col_xl: ''
-            col_xxl: ''
+            col_sm: col-sm-6
+            col_md: col-md-6
+            col_lg: col-lg-4
+            col_xl: col-xl-4
+            col_xxl: col-xxl-4
             attributes: ''
       row:
         type: entity:node
         options:
           relationship: none
-          view_mode: overlay_card_medium
+          view_mode: card
       defaults:
         empty: false
         title: false
@@ -1228,8 +1227,7 @@ display:
         type: rss
         options:
           uses_fields: false
-          description: Subscribe to our RSS feed to stay up to date with our latest
-            blog posts.
+          description: Subscribe to our RSS feed to stay up to date with our latest countries.
       row:
         type: rss_fields
         options:

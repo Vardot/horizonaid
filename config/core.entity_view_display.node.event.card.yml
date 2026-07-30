@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.card
+  - node.type.event
+  module:
+  - user
+id: node.event.card
+targetEntityType: node
+bundle: event
+mode: card
+content:
+  links:
+    settings: {}
+    third_party_settings: {}
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_featured_image: true
+  field_figure_description: true
+  field_figure_number: true
+  field_figures_description: true
+  field_on_the_ground: true
+  field_on_the_ground_image: true
+  field_our_role: true
+  field_partners: true
+  search_api_excerpt: true

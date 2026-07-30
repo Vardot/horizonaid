@@ -1,0 +1,293 @@
+langcode: en
+status: true
+dependencies:
+  module:
+  - link
+  - options
+  theme:
+  - vartheme_bs5_horizonaid
+active_version: 9257c6ba83d7e726
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        taxonomy_label:
+          required: false
+          field_type: string
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: string_textfield
+          default_value:
+          - value: Webinar
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {}
+        date_start:
+          required: false
+          field_type: string
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: string_textfield
+          default_value:
+          - value: 12 Jun
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {}
+        date_end:
+          required: false
+          field_type: string
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: string_textfield
+          default_value:
+          - value: 30 Jul
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {}
+        date_start_timestamp:
+          required: false
+          field_type: integer
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: number
+          default_value:
+          - value: 1786532400
+          expression: ℹ︎integer␟value
+          derived_schema_metadata: {}
+        date_end_timestamp:
+          required: false
+          field_type: integer
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: number
+          default_value:
+          - value: 1788100200
+          expression: ℹ︎integer␟value
+          derived_schema_metadata: {}
+        time:
+          required: false
+          field_type: string
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: string_textfield
+          default_value:
+          - value: 11:00 - 2:30 CET
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {}
+        card_border:
+          required: false
+          field_type: boolean
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: boolean_checkbox
+          default_value:
+          - value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {}
+        box_shadow:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {}
+          field_widget: options_select
+          default_value:
+          - value: shadow-none
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {}
+        corner_style:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {}
+          field_widget: options_select
+          default_value:
+          - value: rounded-4
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {}
+        equal_height:
+          required: false
+          field_type: boolean
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: boolean_checkbox
+          default_value:
+          - value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {}
+        stretched_link:
+          required: false
+          field_type: boolean
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: boolean_checkbox
+          default_value:
+          - value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {}
+        link_url:
+          required: false
+          field_type: link
+          field_storage_settings: {}
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value: null
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+        link_target:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {}
+          field_widget: options_select
+          default_value:
+          - value: default
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {}
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Card content
+          description: Drag & drop content slot. Drop a Heading and a Text component together to form the event title and description. Headings switch to the accent color on hover (leave their text color
+            empty). Text is visually truncated to 3 lines.
+  fbddca3adf8408e7:
+    settings:
+      prop_field_definitions:
+        taxonomy_label:
+          required: false
+          field_type: string
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: string_textfield
+          default_value:
+          - value: Webinar
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {}
+        date_start:
+          required: false
+          field_type: string
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: string_textfield
+          default_value:
+          - value: 12 Jun
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {}
+        date_end:
+          required: false
+          field_type: string
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: string_textfield
+          default_value:
+          - value: 30 Jul
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {}
+        time:
+          required: false
+          field_type: string
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: string_textfield
+          default_value:
+          - value: 11:00 - 2:30 CET
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {}
+        card_border:
+          required: false
+          field_type: boolean
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: boolean_checkbox
+          default_value:
+          - value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {}
+        box_shadow:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {}
+          field_widget: options_select
+          default_value:
+          - value: shadow-none
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {}
+        corner_style:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {}
+          field_widget: options_select
+          default_value:
+          - value: rounded-4
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {}
+        equal_height:
+          required: false
+          field_type: boolean
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: boolean_checkbox
+          default_value:
+          - value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {}
+        stretched_link:
+          required: false
+          field_type: boolean
+          field_storage_settings: {}
+          field_instance_settings: {}
+          field_widget: boolean_checkbox
+          default_value:
+          - value: false
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {}
+        link_url:
+          required: false
+          field_type: link
+          field_storage_settings: {}
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value: null
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+        link_target:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {}
+          field_widget: options_select
+          default_value:
+          - value: default
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {}
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Card content
+          description: Drag & drop content slot. Drop a Heading and a Text component together to form the event title and description. Headings switch to the accent color on hover (leave their text color
+            empty). Text is visually truncated to 3 lines.
+label: Events Card
+id: sdc.vartheme_bs5_horizonaid.card-events
+provider: vartheme_bs5_horizonaid
+source: sdc
+source_local_id: vartheme_bs5_horizonaid:card-events

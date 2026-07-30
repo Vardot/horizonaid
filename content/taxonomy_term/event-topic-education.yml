@@ -1,0 +1,25 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 03bbde66-c8a5-4c32-bda7-90133328c20a
+  bundle: event_topics
+  default_langcode: en
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Event topic
+  status:
+  - value: true
+  name:
+  - value: Education
+  description:
+  - value: 'Schooling, teacher support and learning continuity.'
+    format: basic_html
+  weight:
+  - value: 1
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null

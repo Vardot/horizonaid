@@ -727,13 +727,12 @@ default:
   - parent_uuid: 6b18bf4c-9667-4fdb-a01e-084c51838498
     slot: col_1
     uuid: e950a489-9a2f-4dcc-a1ea-8763b1772150
-    component_id: block.views_block.events-block_1
-    component_version: 9e5fa8961a428d5e
+    component_id: block.views_block.events-latest
+    component_version: f0323c1d76b867d4
     inputs:
       label: Upcoming events
       label_display: '0'
       views_label: ''
-      items_per_page: 3
       exposed: {}
   - parent_uuid: b870bd56-8c7e-4be4-bd3b-30f6d308e4bc
     slot: col_1

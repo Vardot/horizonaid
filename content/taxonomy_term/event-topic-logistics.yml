@@ -1,0 +1,25 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: c35dcb02-3e59-482f-99f9-632dcfc80c07
+  bundle: event_topics
+  default_langcode: en
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Event topic
+  status:
+  - value: true
+  name:
+  - value: Logistics
+  description:
+  - value: 'Supply chains, procurement and field operations.'
+    format: basic_html
+  weight:
+  - value: 9
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null

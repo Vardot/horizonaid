@@ -473,7 +473,7 @@ default:
       background_color: none
       text_color: auto
       background_overlay: none
-      columns: 25-25-25-25
+      columns: "100"
       gutter: gx-4 gy-4
       padding_block_start: pt-5
       padding_block_end: pb-4

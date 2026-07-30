@@ -1,0 +1,25 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 48f77027-e1b1-4635-a614-ba0558154fec
+  bundle: event_topics
+  default_langcode: en
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Event topic
+  status:
+  - value: true
+  name:
+  - value: Shelter
+  description:
+  - value: 'Emergency shelter, settlements and winterisation.'
+    format: basic_html
+  weight:
+  - value: 4
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null

@@ -1,45 +1,43 @@
 name: Horizon Aid
 type: Site
-description: 'A site template recipe for NGOs, nonprofits and humanitarian/aid organizations, built the Varbase recipe-first way.'
+description: A site template recipe for NGOs, nonprofits and humanitarian/aid organizations, built the Varbase recipe-first way.
 recipes:
-  - varbase_users_base
-  - drupal_cms_admin_ui
-  - drupal_cms_anti_spam
-  - drupal_cms_authentication
-  - drupal_cms_forms
-  - drupal_cms_media
-  - drupal_cms_privacy_basic
-  - drupal_cms_seo_basic
-  - drupal_cms_seo_tools
-  - drupal_cms_accessibility_tools
-  - drupal_cms_search
-  - easy_email_express
-  - varbase_admin_base
-  - varbase_security_base
-  - varbase_media_base
-  - varbase_editor_base
-  - varbase_content_base
-  - varbase_workflow_base
-  - varbase_seo_base
-  - varbase_webform_base
-  - varbase_page_base
-  - varbase_blog_base
-  - varbase_events_base
-  - varbase_performance_base
+- varbase_users_base
+- drupal_cms_admin_ui
+- drupal_cms_anti_spam
+- drupal_cms_authentication
+- drupal_cms_forms
+- drupal_cms_media
+- drupal_cms_privacy_basic
+- drupal_cms_seo_basic
+- drupal_cms_seo_tools
+- drupal_cms_accessibility_tools
+- drupal_cms_search
+- easy_email_express
+- varbase_admin_base
+- varbase_security_base
+- varbase_media_base
+- varbase_editor_base
+- varbase_content_base
+- varbase_workflow_base
+- varbase_seo_base
+- varbase_webform_base
+- varbase_page_base
+- varbase_blog_base
+- varbase_events_base
+- varbase_performance_base
 install:
-  - vartheme_bs5_horizonaid
-  - better_exposed_filters
+- vartheme_bs5_horizonaid
+- better_exposed_filters
 config:
   strict: false
   actions:
     system.site:
       simpleConfigUpdate:
-        page.front: '/home'
+        page.front: /home
     system.theme:
       simpleConfigUpdate:
         default: vartheme_bs5_horizonaid
-    # Override only the Varbase admin/navigation logo + favicon paths with the
-    # site template icon; the rest of the varbase_*_base recipe config is kept.
     gin.settings:
       simpleConfigUpdate:
         logo:
@@ -66,23 +64,22 @@ config:
     package_manager.settings:
       simpleConfigUpdate:
         additional_trusted_composer_plugins:
-          - vardot/varbase
-          - drupal/horizonaid
-          - composer/installers
-          - cweagans/composer-patches
-          - oomphinc/composer-installers-extender
-          - drupal/core-composer-scaffold
-          - drupal/core-project-message
-          - dealerdirect/phpcodesniffer-composer-installer
-          - phpstan/extension-installer
-          - php-http/discovery
-          - tbachert/spi
+        - vardot/varbase
+        - drupal/horizonaid
+        - composer/installers
+        - cweagans/composer-patches
+        - oomphinc/composer-installers-extender
+        - drupal/core-composer-scaffold
+        - drupal/core-project-message
+        - dealerdirect/phpcodesniffer-composer-installer
+        - phpstan/extension-installer
+        - php-http/discovery
+        - tbachert/spi
     project_browser.admin_settings:
       simpleConfigUpdate:
         enabled_sources:
           recommended:
-            # @see recommended.yml
-            uri: 'https://git.drupalcode.org/api/v4/projects/225987/repository/files/recommended.yml/raw?ref=HEAD'
+            uri: https://git.drupalcode.org/api/v4/projects/225987/repository/files/recommended.yml/raw?ref=HEAD
             ttl: 1
           drupalorg_jsonapi: []
           varbase_recipes: []
@@ -195,18 +192,12 @@ config:
       disable: []
     canvas.component.sdc.vartheme_bs5_horizonaid.user:
       disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.views-view:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.views-view-grid:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.views-view-list:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.views-view-summary:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.views-view-unformatted:
-      disable: []
     views.view.blog:
       simpleConfigUpdate:
+        display.all.display_options.exposed_form.options.submit_button: 'Apply Filters'
+        display.all.display_options.exposed_form.options.reset_button: true
+        display.default.display_options.exposed_form.options.submit_button: 'Apply Filters'
+        display.default.display_options.exposed_form.options.reset_button: true
         display.latest.display_options.defaults.style: false
         display.latest.display_options.style:
           type: components_views_style
@@ -283,10 +274,382 @@ config:
     canvas.content_template.node.country.overlay_card_medium:
       repointComponentTreeToTheme:
         theme: default
+    core.entity_form_display.node.event.default:
+      simpleConfigUpdate:
+        content.field_event_topics:
+          type: entity_reference_autocomplete_tags
+          weight: 11
+          region: content
+          settings:
+            match_operator: CONTAINS
+            match_limit: 10
+            size: 60
+            placeholder: ''
+          third_party_settings: {}
     views.view.events:
+      simpleConfigUpdate:
+        display.default.display_options.filters.search_title.expose.label: 'Search Keyword'
+        display.default.display_options.filters.field_event_topics_target_id:
+          id: field_event_topics_target_id
+          table: node__field_event_topics
+          field: field_event_topics_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: {}
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_event_topics_target_id_op
+            label: Topic
+            description: ''
+            use_operator: false
+            operator: field_event_topics_target_id_op
+            operator_limit_selection: false
+            operator_list: {}
+            identifier: event_topics
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {}
+            group_items: {}
+          reduce_duplicates: false
+          vid: event_topics
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        display.default.display_options.exposed_form.options.submit_button: 'Apply Filters'
+        display.default.display_options.exposed_form.options.reset_button: true
+        display.latest:
+          id: latest
+          display_title: Latest
+          display_plugin: block
+          position: 5
+          display_options:
+            title: ''
+            fields:
+              field_when:
+                id: field_when
+                table: node__field_when
+                field: field_when
+                relationship: none
+                group_type: group
+                admin_label: ''
+                plugin_id: field
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: true
+                  ellipsis: true
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: smartdate_default
+                settings:
+                  timezone_override: ''
+                  format: default
+                  force_chronological: false
+                group_column: value
+                group_columns: []
+                group_rows: false
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+              title:
+                id: title
+                table: node_field_data
+                field: title
+                relationship: none
+                group_type: group
+                admin_label: ''
+                entity_type: node
+                entity_field: title
+                plugin_id: field
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  make_link: false
+                  absolute: false
+                  word_boundary: false
+                  ellipsis: false
+                  strip_tags: false
+                  trim: false
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: true
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: string
+                settings:
+                  link_to_entity: true
+                group_column: value
+                group_columns: []
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+            pager:
+              type: some
+              options:
+                offset: 0
+                items_per_page: 3
+            filters:
+              status:
+                id: status
+                table: node_field_data
+                field: status
+                entity_type: node
+                entity_field: status
+                plugin_id: boolean
+                value: '1'
+                group: 1
+                exposed: false
+              type:
+                id: type
+                table: node_field_data
+                field: type
+                entity_type: node
+                entity_field: type
+                plugin_id: bundle
+                value:
+                  event: event
+                exposed: false
+              field_when_end_value:
+                id: field_when_end_value
+                table: node__field_when
+                field: field_when_end_value
+                relationship: none
+                group_type: group
+                admin_label: ''
+                plugin_id: date
+                operator: '>'
+                value:
+                  min: ''
+                  max: ''
+                  value: now
+                  type: offset
+                group: 1
+                exposed: false
+              search_title:
+                id: search_title
+                table: node_field_data
+                field: title
+                relationship: none
+                group_type: group
+                admin_label: ''
+                entity_type: node
+                entity_field: title
+                plugin_id: string
+                operator: contains
+                value: ''
+                group: 1
+                exposed: false
+              field_event_categories_target_id:
+                id: field_event_categories_target_id
+                table: node__field_event_categories
+                field: field_event_categories_target_id
+                relationship: none
+                group_type: group
+                admin_label: ''
+                plugin_id: taxonomy_index_tid
+                operator: or
+                value: []
+                group: 1
+                exposed: false
+                reduce_duplicates: false
+                vid: event_categories
+                type: select
+                hierarchy: false
+                limit: true
+                error_message: true
+            filter_groups:
+              operator: AND
+              groups:
+                '1': AND
+            style:
+              type: components_views_style
+              options:
+                uses_fields: false
+                component_id: vartheme_bs5_horizonaid:views-view-grid
+                rows_slot: rows
+                prop_mappings:
+                  grid_utility_classes: gy-4
+                  column_utility_classes: ''
+                  col_xs: col-12
+                  col_sm: col-sm-6
+                  col_md: col-md-6
+                  col_lg: col-lg-4
+                  col_xl: col-xl-4
+                  col_xxl: col-xxl-4
+                  attributes: ''
+                col_xs: col-12
+                col_sm: col-sm-6
+                col_md: col-md-6
+                col_lg: col-lg-4
+                col_xl: col-xl-4
+                col_xxl: col-xxl-4
+                grid_utility_classes:
+                - gy-4
+                - gx-4
+            row:
+              type: entity:node
+              options:
+                relationship: none
+                view_mode: card
+            defaults:
+              title: false
+              pager: false
+              use_more: false
+              use_more_always: false
+              use_more_text: false
+              link_display: false
+              link_url: false
+              group_by: false
+              style: false
+              row: false
+              fields: false
+              filters: false
+              filter_groups: false
+              header: false
+            group_by: false
+            use_more: false
+            use_more_always: true
+            use_more_text: more
+            link_display: page_1
+            link_url: ''
+            header: []
+            display_extenders: []
+          cache_metadata:
+            max-age: -1
+            contexts:
+            - languages:language_content
+            - languages:language_interface
+            - url
+            - user.node_grants:view
+            - user.permissions
+            tags:
+            - config:field.storage.node.field_when
+        display.default.display_options.row.options.view_mode: card
+        display.default.display_options.pager.options.items_per_page: 9
+        display.block_1.display_options.pager.options.items_per_page: 9
+        display.block_1.display_options.row.options.view_mode: card
+        display.related.display_options.row.options.view_mode: card
+        display.default.display_options.style.options.prop_mappings:
+          grid_utility_classes: gy-4
+          column_utility_classes: ''
+          col_xs: col-12
+          col_sm: col-sm-6
+          col_md: col-md-6
+          col_lg: col-lg-4
+          col_xl: col-xl-4
+          col_xxl: col-xxl-4
+          attributes: ''
+        display.block_1.display_options.style.options.prop_mappings:
+          grid_utility_classes: gy-4
+          column_utility_classes: ''
+          col_xs: col-12
+          col_sm: col-sm-6
+          col_md: col-md-6
+          col_lg: col-lg-4
+          col_xl: col-xl-4
+          col_xxl: col-xxl-4
+          attributes: ''
+        display.latest.display_options.style.options.prop_mappings:
+          grid_utility_classes: gy-4
+          column_utility_classes: ''
+          col_xs: col-12
+          col_sm: col-sm-6
+          col_md: col-md-6
+          col_lg: col-lg-4
+          col_xl: col-xl-4
+          col_xxl: col-xxl-4
+          attributes: ''
+        display.default.display_options.header: &id001
+          result:
+            id: result
+            table: views
+            field: result
+            relationship: none
+            group_type: group
+            admin_label: ''
+            plugin_id: result
+            empty: false
+            content: <div class="views-result-summary mb-4">Showing @start-@end of @total</div>
+        display.block_1.display_options.header: *id001
       setViewsComponentStyleTheme:
         theme: default
     canvas.content_template.node.event.full:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.event.card:
       repointComponentTreeToTheme:
         theme: default
     canvas.content_template.node.event.text_card_medium:
@@ -306,4 +669,4 @@ config:
         theme: default
 extra:
   recipe_installer_kit:
-    finish_url: '/admin/dashboard/welcome'
+    finish_url: /admin/dashboard/welcome

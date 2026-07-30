@@ -1,0 +1,49 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: bb951a4f-e76f-481f-a3f5-bd1f8c5e7485
+  bundle: event
+  default_langcode: en
+  depends:
+    c881662f-29fc-4e71-a6b2-205a516288f8: taxonomy_term
+    d9a8afc7-a393-4489-9ffa-60c3692953d4: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Year in review partners assembly
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/year-in-review-partners-assembly
+    langcode: en
+  field_description:
+  - value: Our implementing partners review the year's results and agree the priorities for the next one.
+  field_location:
+  - value: Amman, Jordan
+  field_event_categories:
+  - entity: c881662f-29fc-4e71-a6b2-205a516288f8
+  field_event_topics:
+  - entity: c4a8576f-91df-4c42-be2f-1d0d2ab2506a
+  - entity: 150cc2bb-45a9-4e56-b6ce-60c553f0bbb2
+  field_when:
+  - value: 1828857600
+    end_value: 1828870200
+    duration: 210
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: d9a8afc7-a393-4489-9ffa-60c3692953d4

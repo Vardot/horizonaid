@@ -1,0 +1,25 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: d812f527-2924-4519-8ade-377e74197246
+  bundle: event_topics
+  default_langcode: en
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Event topic
+  status:
+  - value: true
+  name:
+  - value: Food Security
+  description:
+  - value: 'Nutrition, food assistance and agriculture.'
+    format: basic_html
+  weight:
+  - value: 5
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null

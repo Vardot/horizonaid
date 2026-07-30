@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {}
+name: Event Topics
+vid: event_topics
+description: The subject an event covers (for example Health, Education, Water and Sanitation). Distinct from Event Categories, which holds the event format.
+weight: 0
+new_revision: false

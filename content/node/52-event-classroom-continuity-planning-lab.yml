@@ -1,12 +1,12 @@
 _meta:
   version: '1.0'
   entity_type: node
-  uuid: 1d5c7a66-5198-4c17-a5bc-1882b40ea094
+  uuid: 63b7f02d-2a39-48e6-a031-3b81b16ce5ff
   bundle: event
   default_langcode: en
   depends:
     c881662f-29fc-4e71-a6b2-205a516288f8: taxonomy_term
-    1f88c0d0-0dc7-495a-a9c8-5e4b09aa9cb1: media
+    070ea67b-4707-43bd-a9e8-916defc277fb: media
 default:
   revision_uid:
   - target_id: 1
@@ -17,7 +17,7 @@ default:
   uid:
   - target_id: 1
   title:
-  - value: Grassroots leadership summit
+  - value: Classroom continuity planning lab
   promote:
   - value: false
   sticky:
@@ -27,21 +27,22 @@ default:
   moderation_state:
   - value: published
   path:
-  - alias: /events/grassroots-leadership-summit
+  - alias: /events/classroom-continuity-planning-lab
     langcode: en
   field_description:
-  - value: A two-day convening for community leaders working in displacement and humanitarian
-      response.
+  - value: A working lab on keeping schooling running through displacement, with education ministries and field staff.
   field_location:
-  - value: Nairobi, Kenya
+  - value: Kampala, Uganda
   field_event_categories:
   - entity: c881662f-29fc-4e71-a6b2-205a516288f8
+  field_event_topics:
+  - entity: 03bbde66-c8a5-4c32-bda7-90133328c20a
   field_when:
-  - value: 1788519600
-    end_value: 1790519400
-    duration: 33330
+  - value: 1820908800
+    end_value: 1821007800
+    duration: 1650
     rrule: null
     rrule_index: null
     timezone: ''
   field_featured_image:
-  - entity: 1f88c0d0-0dc7-495a-a9c8-5e4b09aa9cb1
+  - entity: 070ea67b-4707-43bd-a9e8-916defc277fb

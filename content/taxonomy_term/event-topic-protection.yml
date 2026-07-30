@@ -1,0 +1,25 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 07af9893-4b7a-4f31-8f79-674d9f613c1b
+  bundle: event_topics
+  default_langcode: en
+default:
+  revision_user:
+  - target_id: 1
+  revision_log_message:
+  - value: Created new Event topic
+  status:
+  - value: true
+  name:
+  - value: Protection
+  description:
+  - value: 'Safeguarding, legal protection and the rights of displaced people.'
+    format: basic_html
+  weight:
+  - value: 3
+  revision_translation_affected:
+  - value: true
+  path:
+  - langcode: en
+    alias: null

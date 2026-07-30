@@ -1,0 +1,49 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: c417c095-3f0c-466a-a1f0-86d140cd0031
+  bundle: event
+  default_langcode: en
+  depends:
+    5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
+    070ea67b-4707-43bd-a9e8-916defc277fb: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Education in emergencies forum
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/education-in-emergencies-forum
+    langcode: en
+  field_description:
+  - value: Teachers, ministries and partners plan how to keep classrooms open through a second year of displacement.
+  field_location:
+  - value: Kampala, Uganda
+  field_event_categories:
+  - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
+  field_event_topics:
+  - entity: 03bbde66-c8a5-4c32-bda7-90133328c20a
+  - entity: 07af9893-4b7a-4f31-8f79-674d9f613c1b
+  field_when:
+  - value: 1828339200
+    end_value: 1828438200
+    duration: 1650
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: 070ea67b-4707-43bd-a9e8-916defc277fb

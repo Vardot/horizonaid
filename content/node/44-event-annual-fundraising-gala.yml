@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 49d6bfbb-044b-453f-ac5a-1429b9b217a2
+  bundle: event
+  default_langcode: en
+  depends:
+    5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
+    c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Annual fundraising gala
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/annual-fundraising-gala
+    langcode: en
+  field_description:
+  - value: An evening celebrating our donors and partners, with keynote remarks from field programme directors.
+  field_location:
+  - value: Amman, Jordan
+  field_event_categories:
+  - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
+  field_event_topics:
+  - entity: 150cc2bb-45a9-4e56-b6ce-60c553f0bbb2
+  field_when:
+  - value: 1814515200
+    end_value: 1814527800
+    duration: 210
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: c749d4bc-2a5e-47e1-a3ed-ce85781612b9

@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: dfc7511a-11b8-4961-a4e4-e00898419c50
+  bundle: event
+  default_langcode: en
+  depends:
+    5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
+    437e4b95-01b6-4cf5-ab32-e9bf1f1abd49: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Community health worker graduation
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/community-health-worker-graduation
+    langcode: en
+  field_description:
+  - value: Celebrating the sixth cohort of community health workers trained across our clinic network.
+  field_location:
+  - value: Mogadishu, Somalia
+  field_event_categories:
+  - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
+  field_event_topics:
+  - entity: cbc4a87a-f190-48f7-9021-a91c81e69161
+  field_when:
+  - value: 1823068800
+    end_value: 1823081400
+    duration: 210
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: 437e4b95-01b6-4cf5-ab32-e9bf1f1abd49

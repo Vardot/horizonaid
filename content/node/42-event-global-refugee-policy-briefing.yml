@@ -1,12 +1,12 @@
 _meta:
   version: '1.0'
   entity_type: node
-  uuid: 328a0ba5-d043-4f03-a5a5-ba351af7a171
+  uuid: cb69cf8b-0611-49ef-a041-fe85c4f207d8
   bundle: event
   default_langcode: en
   depends:
-    66287fb3-357b-4c3f-ade9-d5f2b7876cec: taxonomy_term
-    efa70a24-8f96-4997-85ca-c5f9bc7c7f55: media
+    5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
+    fbca9adb-bf14-44fb-a1a3-c6f02b725a23: media
 default:
   revision_uid:
   - target_id: 1
@@ -30,18 +30,19 @@ default:
   - alias: /events/global-refugee-policy-briefing
     langcode: en
   field_description:
-  - value: Senior legal advisors present new frameworks on asylum rights and cross-border
-      protection standards.
+  - value: Senior legal advisors present new frameworks on asylum rights and cross-border protection standards.
   field_location:
   - value: Geneva, Switzerland
   field_event_categories:
-  - entity: 66287fb3-357b-4c3f-ade9-d5f2b7876cec
+  - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
+  field_event_topics:
+  - entity: 07af9893-4b7a-4f31-8f79-674d9f613c1b
   field_when:
-  - value: 1785754800
-    end_value: 1787149800
-    duration: 23250
+  - value: 1813219200
+    end_value: 1813231800
+    duration: 210
     rrule: null
     rrule_index: null
     timezone: ''
   field_featured_image:
-  - entity: efa70a24-8f96-4997-85ca-c5f9bc7c7f55
+  - entity: fbca9adb-bf14-44fb-a1a3-c6f02b725a23

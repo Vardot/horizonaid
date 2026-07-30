@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 691153a0-a658-45e2-a6ca-024ca7ff4af7
+  bundle: event
+  default_langcode: en
+  depends:
+    66287fb3-357b-4c3f-ade9-d5f2b7876cec: taxonomy_term
+    67a76fae-bc22-4aa1-a144-4f39e44428ce: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Winterisation readiness briefing
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/winterisation-readiness-briefing
+    langcode: en
+  field_description:
+  - value: Logistics and shelter teams walk through stock, routes and cash plans before the first cold fronts arrive.
+  field_location:
+  - value: Online
+  field_event_categories:
+  - entity: 66287fb3-357b-4c3f-ade9-d5f2b7876cec
+  field_event_topics:
+  - entity: 48f77027-e1b1-4635-a614-ba0558154fec
+  field_when:
+  - value: 1821772800
+    end_value: 1821785400
+    duration: 210
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: 67a76fae-bc22-4aa1-a144-4f39e44428ce

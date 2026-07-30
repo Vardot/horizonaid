@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7a626b32-2b2a-4b31-a40b-482bede750e7
+  bundle: event
+  default_langcode: en
+  depends:
+    c881662f-29fc-4e71-a6b2-205a516288f8: taxonomy_term
+    d9a8afc7-a393-4489-9ffa-60c3692953d4: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Grassroots leadership summit
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/grassroots-leadership-summit
+    langcode: en
+  field_description:
+  - value: A two-day convening for community leaders working in displacement and humanitarian response.
+  field_location:
+  - value: Nairobi, Kenya
+  field_event_categories:
+  - entity: c881662f-29fc-4e71-a6b2-205a516288f8
+  field_event_topics:
+  - entity: 150cc2bb-45a9-4e56-b6ce-60c553f0bbb2
+  field_when:
+  - value: 1814169600
+    end_value: 1814268600
+    duration: 1650
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: d9a8afc7-a393-4489-9ffa-60c3692953d4

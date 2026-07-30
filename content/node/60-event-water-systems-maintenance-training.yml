@@ -1,0 +1,48 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3d306392-bede-42d6-a790-4703281a45b3
+  bundle: event
+  default_langcode: en
+  depends:
+    5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
+    2703edeb-c3da-4295-a7f9-956add15af88: media
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Event
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Water systems maintenance training
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /events/water-systems-maintenance-training
+    langcode: en
+  field_description:
+  - value: Three days of practical training for local technicians maintaining boreholes and distribution points.
+  field_location:
+  - value: Nairobi, Kenya
+  field_event_categories:
+  - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
+  field_event_topics:
+  - entity: c233e008-cb0f-4f67-82f4-425717a7b211
+  field_when:
+  - value: 1827734400
+    end_value: 1827919800
+    duration: 3090
+    rrule: null
+    rrule_index: null
+    timezone: ''
+  field_featured_image:
+  - entity: 2703edeb-c3da-4295-a7f9-956add15af88
