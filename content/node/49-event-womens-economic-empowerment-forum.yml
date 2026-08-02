@@ -7,6 +7,7 @@ _meta:
   depends:
     896a80bb-51f9-4335-ac9f-b2b504e94e72: taxonomy_term
     368bad61-0dbd-4fd3-ac9d-b295fcdd7353: media
+    b0174cfe-5c93-4a6b-80c2-d6d7dc6cc3a8: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 896a80bb-51f9-4335-ac9f-b2b504e94e72
   field_event_topics:
   - entity: b0174cfe-5c93-4a6b-80c2-d6d7dc6cc3a8
+  body:
+  - value: '<p>Practitioners and policymakers discuss scalable models for financial inclusion in refugee communities, with evidence from three country programmes.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Cash and savings models that work in displacement</li><li>Getting past documentation barriers</li><li>Measuring economic outcomes over time</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Fatima Zahra</strong> - Livelihoods Advisor, Horizon Aid</p><p><strong>Kofi Mensah</strong> - Financial Inclusion Specialist, Inclusive Futures</p>'
+    format: full_html
   field_when:
   - value: 1818057600
     end_value: 1818070200

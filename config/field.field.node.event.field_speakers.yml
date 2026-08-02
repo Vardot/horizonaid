@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.node.field_speakers
+  - node.type.event
+  module:
+  - text
+id: node.event.field_speakers
+field_name: field_speakers
+entity_type: node
+bundle: event
+label: Speakers
+description: The people presenting at this event. One per line, name in bold followed
+  by their role.
+required: false
+translatable: true
+default_value: []
+default_value_callback: ''
+settings:
+  allowed_formats: []
+field_type: text_long

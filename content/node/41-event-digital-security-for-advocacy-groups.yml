@@ -7,6 +7,7 @@ _meta:
   depends:
     896a80bb-51f9-4335-ac9f-b2b504e94e72: taxonomy_term
     437e4b95-01b6-4cf5-ab32-e9bf1f1abd49: media
+    07af9893-4b7a-4f31-8f79-674d9f613c1b: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 896a80bb-51f9-4335-ac9f-b2b504e94e72
   field_event_topics:
   - entity: 07af9893-4b7a-4f31-8f79-674d9f613c1b
+  body:
+  - value: '<p>As humanitarian organisations increasingly rely on digital tools to coordinate field operations and manage donor relationships, the risk of cyber threats has grown significantly. This webinar brings together digital security experts and frontline practitioners to share practical strategies for protecting sensitive information in high-risk environments.</p><p>Whether you''re a field coordinator managing encrypted communications or an advocacy lead handling confidential supporter data, this session will equip you with the frameworks and tools needed to operate securely.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>How to assess your organisation''s current digital vulnerability</li><li>Best practices for encrypted field communications</li><li>Protecting donor and beneficiary data under GDPR and international standards</li><li>Responding to a security breach — a step-by-step guide</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Rania Aziz</strong> - Digital Security Lead, Frontline Defenders</p><p><strong>Omar Nasser</strong> - Field Technology Advisor, Horizon Aid</p><p><strong>Petra Kovač</strong> - Cybersecurity Consultant, NGO Safety Network</p>'
+    format: full_html
   field_when:
   - value: 1812787200
     end_value: 1816947000

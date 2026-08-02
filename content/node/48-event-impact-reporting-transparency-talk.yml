@@ -7,6 +7,7 @@ _meta:
   depends:
     5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
     422af474-8750-4504-b793-fc7d992fffc6: media
+    c4a8576f-91df-4c42-be2f-1d0d2ab2506a: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
   field_event_topics:
   - entity: c4a8576f-91df-4c42-be2f-1d0d2ab2506a
+  body:
+  - value: '<p>How we measure, verify and communicate programme outcomes to donors and the public — including where our own reporting has fallen short.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>What we publish, and what we hold back</li><li>Verifying field data before it reaches a report</li><li>Communicating uncertainty honestly</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Hannah Weiss</strong> - Monitoring & Evaluation Lead, Horizon Aid</p><p><strong>Paul Adeyemi</strong> - Independent Evaluator</p>'
+    format: full_html
   field_when:
   - value: 1817107200
     end_value: 1817811000

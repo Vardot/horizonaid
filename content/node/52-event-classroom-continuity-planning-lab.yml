@@ -7,6 +7,7 @@ _meta:
   depends:
     c881662f-29fc-4e71-a6b2-205a516288f8: taxonomy_term
     070ea67b-4707-43bd-a9e8-916defc277fb: media
+    03bbde66-c8a5-4c32-bda7-90133328c20a: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: c881662f-29fc-4e71-a6b2-205a516288f8
   field_event_topics:
   - entity: 03bbde66-c8a5-4c32-bda7-90133328c20a
+  body:
+  - value: '<p>A planning lab for keeping classrooms running through displacement, closure and disruption, using the plans our education teams built this year.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Continuity planning that survives contact with reality</li><li>Supporting teachers who are themselves displaced</li><li>Certifying learning across borders</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Reem Saleh</strong> - Education Programme Lead, Horizon Aid</p><p><strong>Jonas Weber</strong> - Education in Emergencies Advisor, UNICEF</p>'
+    format: full_html
   field_when:
   - value: 1820908800
     end_value: 1821007800

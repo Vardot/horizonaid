@@ -7,6 +7,7 @@ _meta:
   depends:
     896a80bb-51f9-4335-ac9f-b2b504e94e72: taxonomy_term
     c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
+    b0174cfe-5c93-4a6b-80c2-d6d7dc6cc3a8: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 896a80bb-51f9-4335-ac9f-b2b504e94e72
   field_event_topics:
   - entity: b0174cfe-5c93-4a6b-80c2-d6d7dc6cc3a8
+  body:
+  - value: '<p>A clinic on designing and running cash transfer programmes, from targeting through to post-distribution monitoring.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Choosing between cash, voucher and in-kind</li><li>Targeting that communities accept as fair</li><li>Post-distribution monitoring that changes decisions</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Hala Mansour</strong> - Cash Programming Lead, Horizon Aid</p><p><strong>Peter Njoroge</strong> - Social Protection Advisor</p>'
+    format: full_html
   field_when:
   - value: 1822377600
     end_value: 1822390200

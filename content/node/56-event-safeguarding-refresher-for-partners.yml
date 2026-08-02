@@ -7,6 +7,7 @@ _meta:
   depends:
     896a80bb-51f9-4335-ac9f-b2b504e94e72: taxonomy_term
     bdff596c-46c9-4a01-bf78-f568ccc12755: media
+    07af9893-4b7a-4f31-8f79-674d9f613c1b: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 896a80bb-51f9-4335-ac9f-b2b504e94e72
   field_event_topics:
   - entity: 07af9893-4b7a-4f31-8f79-674d9f613c1b
+  body:
+  - value: '<p>A safeguarding refresher for partner organisations, covering reporting duties, investigation practice and the changes to our own policy this year.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Your reporting duties, in plain terms</li><li>Running an investigation that protects survivors</li><li>What changed in our safeguarding policy this year</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Nadia Rahman</strong> - Child Protection Specialist, Horizon Aid</p><p><strong>Claire Dubois</strong> - Safeguarding Advisor, Humanitarian Standards Group</p>'
+    format: full_html
   field_when:
   - value: 1823673600
     end_value: 1823686200

@@ -7,6 +7,7 @@ _meta:
   depends:
     5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
     2703edeb-c3da-4295-a7f9-956add15af88: media
+    c233e008-cb0f-4f67-82f4-425717a7b211: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
   field_event_topics:
   - entity: c233e008-cb0f-4f67-82f4-425717a7b211
+  body:
+  - value: '<p>Field researchers share findings from six months of emergency water, sanitation and hygiene deployment across three regions, including what did not work.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Rapid water-quality assessment in the first 72 hours</li><li>Keeping distribution points safe and accessible</li><li>Handing systems over to local operators</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Amina Yusuf</strong> - WASH Lead, Horizon Aid</p><p><strong>Tomas Neruda</strong> - Water Systems Engineer, AquaRelief</p>'
+    format: full_html
   field_when:
   - value: 1814947200
     end_value: 1814959800

@@ -7,6 +7,7 @@ _meta:
   depends:
     5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
     67a76fae-bc22-4aa1-a144-4f39e44428ce: media
+    48f77027-e1b1-4635-a614-ba0558154fec: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
   field_event_topics:
   - entity: 48f77027-e1b1-4635-a614-ba0558154fec
+  body:
+  - value: '<p>A field day on shelter innovation, showing prototypes now in use and the ones we abandoned after testing.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Prototypes that survived field testing</li><li>Cost per unit against expected lifespan</li><li>Working with local builders on design</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Lars Jensen</strong> - Shelter Coordinator, Horizon Aid</p><p><strong>Rashid Alami</strong> - Design Lead, Open Shelter Lab</p>'
+    format: full_html
   field_when:
   - value: 1825401600
     end_value: 1825500600

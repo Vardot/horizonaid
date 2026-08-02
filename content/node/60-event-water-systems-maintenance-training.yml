@@ -7,6 +7,7 @@ _meta:
   depends:
     5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
     2703edeb-c3da-4295-a7f9-956add15af88: media
+    c233e008-cb0f-4f67-82f4-425717a7b211: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
   field_event_topics:
   - entity: c233e008-cb0f-4f67-82f4-425717a7b211
+  body:
+  - value: '<p>Hands-on training on maintaining water systems after handover, aimed at local technicians and community committees.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Routine maintenance that prevents most failures</li><li>Diagnosing pump and pipeline problems</li><li>Managing spare parts and local supply</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Amina Yusuf</strong> - WASH Lead, Horizon Aid</p><p><strong>Tomas Neruda</strong> - Water Systems Engineer, AquaRelief</p>'
+    format: full_html
   field_when:
   - value: 1827734400
     end_value: 1827919800

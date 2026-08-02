@@ -7,6 +7,7 @@ _meta:
   depends:
     5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
     c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
+    150cc2bb-45a9-4e56-b6ce-60c553f0bbb2: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
   field_event_topics:
   - entity: 150cc2bb-45a9-4e56-b6ce-60c553f0bbb2
+  body:
+  - value: '<p>An evening celebrating our donors and partners, with keynote remarks from field programme directors and a first look at next year''s programme priorities.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Where this year''s funding went, programme by programme</li><li>The priorities shaping next year''s work</li><li>How to get involved beyond giving</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Sara Milton</strong> - Director of Partnerships, Horizon Aid</p><p><strong>Daniel Osei</strong> - Programme Director, West Africa</p>'
+    format: full_html
   field_when:
   - value: 1814515200
     end_value: 1814527800

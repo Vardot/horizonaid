@@ -7,6 +7,8 @@ _meta:
   depends:
     5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
     070ea67b-4707-43bd-a9e8-916defc277fb: media
+    03bbde66-c8a5-4c32-bda7-90133328c20a: taxonomy_term
+    07af9893-4b7a-4f31-8f79-674d9f613c1b: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -38,6 +40,16 @@ default:
   field_event_topics:
   - entity: 03bbde66-c8a5-4c32-bda7-90133328c20a
   - entity: 07af9893-4b7a-4f31-8f79-674d9f613c1b
+  body:
+  - value: '<p>A forum on education in emergencies, focused on keeping children learning and protected through displacement.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Getting classrooms running in the first month</li><li>Protection risks that surface inside schooling</li><li>Recognising learning across borders</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Reem Saleh</strong> - Education Programme Lead, Horizon Aid</p><p><strong>Jonas Weber</strong> - Education in Emergencies Advisor, UNICEF</p>'
+    format: full_html
   field_when:
   - value: 1828339200
     end_value: 1828438200

@@ -13,9 +13,6 @@ default:
   - value: true
   name:
   - value: Education
-  description:
-  - value: 'Schooling, teacher support and learning continuity.'
-    format: basic_html
   weight:
   - value: 1
   revision_translation_affected:

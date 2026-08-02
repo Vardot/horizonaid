@@ -7,6 +7,7 @@ _meta:
   depends:
     5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
     fbca9adb-bf14-44fb-a1a3-c6f02b725a23: media
+    07af9893-4b7a-4f31-8f79-674d9f613c1b: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
   field_event_topics:
   - entity: 07af9893-4b7a-4f31-8f79-674d9f613c1b
+  body:
+  - value: '<p>Senior legal advisors present new frameworks on asylum rights and cross-border protection standards, drawing on case law from the past two years and its practical consequences for field teams.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Where the current asylum frameworks are shifting</li><li>How to document protection needs defensibly</li><li>Working with national legal aid partners</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Leila Haddad</strong> - Protection Coordinator, Horizon Aid</p><p><strong>Marcus Bell</strong> - Refugee Law Advisor, Open Borders Institute</p>'
+    format: full_html
   field_when:
   - value: 1813219200
     end_value: 1813231800

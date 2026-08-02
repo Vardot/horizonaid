@@ -13,9 +13,6 @@ default:
   - value: true
   name:
   - value: Protection
-  description:
-  - value: 'Safeguarding, legal protection and the rights of displaced people.'
-    format: basic_html
   weight:
   - value: 3
   revision_translation_affected:

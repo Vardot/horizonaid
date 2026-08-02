@@ -7,6 +7,7 @@ _meta:
   depends:
     896a80bb-51f9-4335-ac9f-b2b504e94e72: taxonomy_term
     d9a8afc7-a393-4489-9ffa-60c3692953d4: media
+    150cc2bb-45a9-4e56-b6ce-60c553f0bbb2: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 896a80bb-51f9-4335-ac9f-b2b504e94e72
   field_event_topics:
   - entity: 150cc2bb-45a9-4e56-b6ce-60c553f0bbb2
+  body:
+  - value: '<p>A panel on localisation in practice, moving past the principle to the budget lines, contracts and decisions that actually shift power.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>What localisation looks like in a budget</li><li>Contracting that transfers real authority</li><li>Measuring the shift, not just claiming it</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Grace Wanjiru</strong> - Regional Director, Horizon Aid East Africa</p><p><strong>Ibrahim Toure</strong> - Founder, Sahel Community Network</p>'
+    format: full_html
   field_when:
   - value: 1820563200
     end_value: 1820575800

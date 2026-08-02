@@ -7,6 +7,7 @@ _meta:
   depends:
     66287fb3-357b-4c3f-ade9-d5f2b7876cec: taxonomy_term
     c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
+    d812f527-2924-4519-8ade-377e74197246: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 66287fb3-357b-4c3f-ade9-d5f2b7876cec
   field_event_topics:
   - entity: d812f527-2924-4519-8ade-377e74197246
+  body:
+  - value: '<p>A roundtable on the food security outlook for the coming season, combining assessment data with what field teams are already seeing.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Reading the seasonal outlook against field reality</li><li>Early action triggers worth setting now</li><li>Coordinating with national food security bodies</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Joseph Kamau</strong> - Food Security Lead, Horizon Aid</p><p><strong>Lena Fischer</strong> - Agricultural Economist</p>'
+    format: full_html
   field_when:
   - value: 1824278400
     end_value: 1824291000

@@ -7,6 +7,7 @@ _meta:
   depends:
     c881662f-29fc-4e71-a6b2-205a516288f8: taxonomy_term
     d9a8afc7-a393-4489-9ffa-60c3692953d4: media
+    150cc2bb-45a9-4e56-b6ce-60c553f0bbb2: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: c881662f-29fc-4e71-a6b2-205a516288f8
   field_event_topics:
   - entity: 150cc2bb-45a9-4e56-b6ce-60c553f0bbb2
+  body:
+  - value: '<p>A convening for community leaders working in displacement and humanitarian response, focused on shifting decision-making closer to the people affected by it.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Practical models for community-led decision making</li><li>Funding structures that reach local organisations</li><li>Measuring influence, not just participation</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Grace Wanjiru</strong> - Regional Director, Horizon Aid East Africa</p><p><strong>Ibrahim Toure</strong> - Founder, Sahel Community Network</p>'
+    format: full_html
   field_when:
   - value: 1814169600
     end_value: 1814268600

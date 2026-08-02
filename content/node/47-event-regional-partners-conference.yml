@@ -7,6 +7,7 @@ _meta:
   depends:
     896a80bb-51f9-4335-ac9f-b2b504e94e72: taxonomy_term
     559f1690-72b0-4373-9c1b-ca2cf833174f: media
+    150cc2bb-45a9-4e56-b6ce-60c553f0bbb2: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 896a80bb-51f9-4335-ac9f-b2b504e94e72
   field_event_topics:
   - entity: 150cc2bb-45a9-4e56-b6ce-60c553f0bbb2
+  body:
+  - value: '<p>The annual gathering of Horizon Aid''s implementing partners across Africa and the Middle East, with working sessions on coordination, reporting and shared standards.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>What partners told us needs to change</li><li>Simplifying reporting without losing accountability</li><li>Shared standards for joint programming</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Youssef Karim</strong> - Head of Partnerships, Horizon Aid</p><p><strong>Miriam Achieng</strong> - Coordination Lead, East Africa Consortium</p>'
+    format: full_html
   field_when:
   - value: 1817020800
     end_value: 1817033400

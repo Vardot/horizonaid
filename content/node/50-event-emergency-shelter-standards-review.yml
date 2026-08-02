@@ -7,6 +7,7 @@ _meta:
   depends:
     66287fb3-357b-4c3f-ade9-d5f2b7876cec: taxonomy_term
     67a76fae-bc22-4aa1-a144-4f39e44428ce: media
+    48f77027-e1b1-4635-a614-ba0558154fec: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 66287fb3-357b-4c3f-ade9-d5f2b7876cec
   field_event_topics:
   - entity: 48f77027-e1b1-4635-a614-ba0558154fec
+  body:
+  - value: '<p>A technical review of emergency shelter standards, comparing what the guidance requires with what field teams actually build under constraint.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Where standards and reality diverge</li><li>Material choices in constrained supply chains</li><li>Upgrading temporary shelter safely</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Lars Jensen</strong> - Shelter Coordinator, Horizon Aid</p><p><strong>Dina Farouk</strong> - Structural Engineer, ShelterWorks</p>'
+    format: full_html
   field_when:
   - value: 1818748800
     end_value: 1818761400

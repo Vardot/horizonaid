@@ -7,6 +7,7 @@ _meta:
   depends:
     66287fb3-357b-4c3f-ade9-d5f2b7876cec: taxonomy_term
     c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
+    c35dcb02-3e59-482f-99f9-632dcfc80c07: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 66287fb3-357b-4c3f-ade9-d5f2b7876cec
   field_event_topics:
   - entity: c35dcb02-3e59-482f-99f9-632dcfc80c07
+  body:
+  - value: '<p>A review of supply chain resilience, tracing where our chains broke this year and what we have changed in procurement and pre-positioning.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Where our supply chains broke, and why</li><li>Pre-positioning against seasonal risk</li><li>Building supplier redundancy that is affordable</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Viktor Ilic</strong> - Logistics Lead, Horizon Aid</p><p><strong>Chen Wei</strong> - Supply Chain Analyst</p>'
+    format: full_html
   field_when:
   - value: 1827216000
     end_value: 1827228600

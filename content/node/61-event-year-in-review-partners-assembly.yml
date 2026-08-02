@@ -7,6 +7,8 @@ _meta:
   depends:
     c881662f-29fc-4e71-a6b2-205a516288f8: taxonomy_term
     d9a8afc7-a393-4489-9ffa-60c3692953d4: media
+    c4a8576f-91df-4c42-be2f-1d0d2ab2506a: taxonomy_term
+    150cc2bb-45a9-4e56-b6ce-60c553f0bbb2: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -38,6 +40,16 @@ default:
   field_event_topics:
   - entity: c4a8576f-91df-4c42-be2f-1d0d2ab2506a
   - entity: 150cc2bb-45a9-4e56-b6ce-60c553f0bbb2
+  body:
+  - value: '<p>Our year in review with implementing partners — what we delivered, what we missed, and what we are changing as a result.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Programme results across every country of operation</li><li>Where we fell short, and why</li><li>The commitments we are making for next year</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Sara Milton</strong> - Director of Partnerships, Horizon Aid</p><p><strong>Youssef Karim</strong> - Head of Partnerships, Horizon Aid</p>'
+    format: full_html
   field_when:
   - value: 1828857600
     end_value: 1828870200

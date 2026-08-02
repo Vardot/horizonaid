@@ -7,6 +7,7 @@ _meta:
   depends:
     5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
     437e4b95-01b6-4cf5-ab32-e9bf1f1abd49: media
+    cbc4a87a-f190-48f7-9021-a91c81e69161: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
   field_event_topics:
   - entity: cbc4a87a-f190-48f7-9021-a91c81e69161
+  body:
+  - value: '<p>A graduation ceremony for this year''s community health worker cohort, with reflections from graduates on their first months in the field.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>What the training programme covers</li><li>How graduates are supported in their first year</li><li>How to host a cohort in your own community</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Dr Samuel Okoro</strong> - Medical Lead, Horizon Aid</p><p><strong>Beatrice Nyong</strong> - Community Health Training Coordinator</p>'
+    format: full_html
   field_when:
   - value: 1823068800
     end_value: 1823081400

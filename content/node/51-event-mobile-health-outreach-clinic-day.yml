@@ -7,6 +7,7 @@ _meta:
   depends:
     5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31: taxonomy_term
     f749352f-75eb-422e-abca-0696f87555ba: media
+    cbc4a87a-f190-48f7-9021-a91c81e69161: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 5b1d9c74-3e28-4a6f-9c15-7d0e2fa84b31
   field_event_topics:
   - entity: cbc4a87a-f190-48f7-9021-a91c81e69161
+  body:
+  - value: '<p>A field day with our mobile health teams, walking through a full clinic cycle from set-up to referral and close-down.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Setting up a mobile clinic in under two hours</li><li>Triage in high-volume settings</li><li>Referral and follow-up that actually reaches people</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Dr Samuel Okoro</strong> - Medical Lead, Horizon Aid</p><p><strong>Aisha Bello</strong> - Community Health Coordinator</p>'
+    format: full_html
   field_when:
   - value: 1819958400
     end_value: 1819971000

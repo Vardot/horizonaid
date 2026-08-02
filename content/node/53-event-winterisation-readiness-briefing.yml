@@ -7,6 +7,7 @@ _meta:
   depends:
     66287fb3-357b-4c3f-ade9-d5f2b7876cec: taxonomy_term
     67a76fae-bc22-4aa1-a144-4f39e44428ce: media
+    48f77027-e1b1-4635-a614-ba0558154fec: taxonomy_term
 default:
   revision_uid:
   - target_id: 1
@@ -37,6 +38,16 @@ default:
   - entity: 66287fb3-357b-4c3f-ade9-d5f2b7876cec
   field_event_topics:
   - entity: 48f77027-e1b1-4635-a614-ba0558154fec
+  body:
+  - value: '<p>A briefing on winterisation readiness, covering the assessment, procurement and distribution sequence that has to be finished before the first cold week.</p>'
+    format: full_html
+    summary: ''
+  field_what_you_will_learn:
+  - value: '<ul><li>Building a winterisation timeline that holds</li><li>Prioritising households under a fixed budget</li><li>Avoiding last-minute procurement failures</li></ul>'
+    format: full_html
+  field_speakers:
+  - value: '<p><strong>Viktor Ilic</strong> - Logistics Lead, Horizon Aid</p><p><strong>Marta Sokolova</strong> - Emergency Response Coordinator</p>'
+    format: full_html
   field_when:
   - value: 1821772800
     end_value: 1821785400
