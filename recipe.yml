@@ -735,6 +735,28 @@ config:
             validate_options: {}
             break_phrase: false
             not: true
+        display.related.display_options.pager:
+          type: some
+          options:
+            offset: 0
+            items_per_page: 3
+        display.related.display_options.style:
+          type: components_views_style
+          options:
+            uses_fields: false
+            component_id: vartheme_bs5_horizonaid:views-view-grid
+            rows_slot: rows
+            prop_mappings:
+              grid_utility_classes: gy-4 mt-0 mb-block
+              column_utility_classes: ''
+              col_xs: col-12
+              col_sm: col-sm-6
+              col_md: col-md-6
+              col_lg: col-lg-4
+              col_xl: col-xl-4
+              col_xxl: col-xxl-4
+              attributes: ''
+        display.related.display_options.defaults.style: false
       setViewsComponentStyleTheme:
         theme: default
     canvas.content_template.node.event.full:
@@ -888,6 +910,25 @@ config:
               label_display: '0'
               views_label: ''
               exposed: {}
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a10:
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a10
+            component_id: sdc.vartheme_bs5_horizonaid.button
+            component_version: 64089b7681474537
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0d
+            slot: col_1
+            inputs:
+              label: See All Events
+              href: /events
+              variant: btn-primary
+              outline: false
+              size: btn-md
+              target: self
+              disabled: false
+              icon: none
+              icon_first: false
+              alignment: inline
+              full_width: false
+              radius: rounded-pill
     canvas.content_template.node.event.card:
       repointComponentTreeToTheme:
         theme: default
