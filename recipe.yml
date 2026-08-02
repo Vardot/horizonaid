@@ -947,6 +947,20 @@ config:
     views.view.countries:
       setViewsComponentStyleTheme:
         theme: default
+    webshare.settings:
+      simpleConfigUpdate:
+        buttons.facebook_share.enabled: 1
+        buttons.facebook_share.weight: 0
+        buttons.instagram:
+          name: Instagram
+          title: Horizon Aid on Instagram
+          enabled: 1
+          image: instagram.svg
+          weight: 1
+        buttons.linkedin.enabled: 1
+        buttons.linkedin.weight: 2
+        buttons.x.enabled: 1
+        buttons.x.weight: 3
 extra:
   recipe_installer_kit:
     finish_url: /admin/dashboard/welcome
