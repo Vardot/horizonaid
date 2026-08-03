@@ -17,55 +17,118 @@ id: vartheme_bs5_horizonaid.footer
 region: footer
 theme: vartheme_bs5_horizonaid
 component_tree:
-  0:
-    uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
+  '0':
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
     component_id: sdc.vartheme_bs5_horizonaid.section
-    component_version: 4171719f53c41b9d
-    inputs: '{"container_type":"container","text_color":"text-dark","gutter":"gx-3 gy-3","padding_block_start":"pt-5","padding_block_end":"pb-0","section_header":false,"section_footer":true,"bg_edge2edge":true,"aos_once":false,"columns":"50-50","background_color":"bg-light"}'
+    component_version: active
+    inputs: '{"bg_edge2edge":true,"container_type":"container","background_color":"bg-dark","text_color":"text-dark","columns":"33-33-33","gutter":"gx-5 gy-5","padding_block_start":"pt-5","padding_block_end":"pb-4","section_header":true,"section_footer":false,"aos_once":false}'
+  0:header_slot:0:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
+    slot: header_slot
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000002
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    component_version: active
+    inputs: '{"size":"py-2"}'
+  0:col_1:1:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
+    slot: col_1
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000003
+    component_id: sdc.vartheme_bs5_horizonaid.section
+    component_version: active
+    inputs: '{"bg_edge2edge":false,"container_type":"none","background_color":"none","text_color":"auto","columns":"75-25","gutter":"gx-3 gy-3","padding_block_start":"pt-0","padding_block_end":"pb-0","section_header":false,"section_footer":false,"aos_once":false}'
+  0:col_1:1:col_1:0:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000003
+    slot: col_1
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000004
+    component_id: sdc.vartheme_bs5_horizonaid.card-logo
+    component_version: active
+    inputs: '{"media":{"sourceType":"default-relative-url","value":{"src":"/themes/contrib/vartheme_bs5_horizonaid/components/foundation/images/assets/full-logo-light.svg","alt":"Horizon Aid","width":600,"height":240},"jsonSchema":{"type":"object","properties":{"src":{"type":"string","contentMediaType":"image/*","format":"uri-reference","x-allowed-schemes":["http","https"]},"alt":{"type":"string"},"width":{"type":"integer"},"height":{"type":"integer"}},"required":["src"]},"componentId":"sdc.vartheme_bs5_horizonaid.card-logo"},"shadow":"shadow-none","alignment":"left"}'
   0:col_1:2:
-    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
     slot: col_1
-    uuid: 1b8d6230-40b5-4224-b5c1-db5e805d31ac
-    component_id: block.system_menu_block.secondary
-    component_version: 31ecc6cc06f17d4e
-    inputs: '{"label":"Footer sitemap menu","label_display":"0","level":"1","depth":"2","expand_all_items":true}'
-  0:col_2:0:
-    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
-    slot: col_2
-    uuid: 8a0001f5-0e61-4176-b3ff-45bc3a5fde1e
-    component_id: sdc.vartheme_bs5_horizonaid.html-code
-    component_version: 656471f14c4594ec
-    inputs: '{"code":"<div class=\"footer-logo-wrapper\"><p><img class=\"footer-logo-image\" src=\"/themes/contrib/vartheme_bs5_horizonaid/logo.svg\" alt=\"Horizon Aid logo\"></p><p class=\"footer-tagline mt-4\">Independent humanitarian aid, delivered with local partners and full transparency.</p></div>"}'
-  0:col_2:1:
-    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
-    slot: col_2
-    uuid: e40a249a-c360-4f7b-b00f-9b3cbf0b04de
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000005
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    component_version: active
+    inputs: '{"size":"py-2"}'
+  0:col_1:3:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
+    slot: col_1
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000006
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    component_version: active
+    inputs: '{"text":{"value":"<p>A nonprofit fighting poverty, disease, and inequity around the world.</p>","format":"canvas_html_block"},"text_size":"none","text_color":"text-white"}'
+  0:col_1:4:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
+    slot: col_1
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000007
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    component_version: active
+    inputs: '{"size":"py-2"}'
+  0:col_1:5:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
+    slot: col_1
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000008
     component_id: block.system_menu_block.social-media-menu
-    component_version: abcd467f30a079a8
-    inputs: '{"label":"Social media menu","label_display":"0","level":1,"depth":null,"expand_all_items":true}'
-  0:footer_slot:0:
-    parent_uuid: b6a309fb-cbd0-4601-918a-15294d8b1673
-    slot: footer_slot
-    uuid: d3c1cd06-e9bc-4f2e-85fb-f0a3faa8dd1f
-    component_id: sdc.vartheme_bs5_horizonaid.divider
-    component_version: 62f9294bba931609
-    inputs: '{"border_width":"border-1","border_color":"border-light","opacity":"opacity-50","margin_top":"mt-0","margin_bottom":"mb-0"}'
-  1:
-    uuid: 0bf79239-de05-498c-b5f0-2c07794b9444
-    component_id: sdc.vartheme_bs5_horizonaid.section
-    component_version: 4171719f53c41b9d
-    inputs: '{"text_color":"text-dark","columns":"50-50","gutter":"gx-3 gy-3","padding_block_start":"pt-3","padding_block_end":"pb-4","section_header":false,"section_footer":false,"bg_edge2edge":true,"aos_once":false,"vertical_alignment":"align-items-center","background_color":"bg-light","container_type":"container"}'
-  1:col_1:0:
-    parent_uuid: 0bf79239-de05-498c-b5f0-2c07794b9444
-    slot: col_1
-    uuid: 8bea199b-c0d7-4dd3-9540-7be4f4017f47
-    component_id: block.system_menu_block.footer
-    component_version: 68bdb40e1ac48125
-    inputs: '{"label":"Footer menu","label_display":"0","level":1,"depth":null,"expand_all_items":true}'
-  1:col_2:0:
-    parent_uuid: 0bf79239-de05-498c-b5f0-2c07794b9444
+    component_version: active
+    inputs: '{"label":"Social media menu","label_display":"0","level":1,"depth":2,"expand_all_items":true}'
+  0:col_2:6:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
     slot: col_2
-    uuid: 6d18f41a-a332-42fa-b763-35cacb60adbd
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000009
+    component_id: block.system_menu_block.secondary
+    component_version: active
+    inputs: '{"label":"Footer sitemap menu","label_display":"0","level":1,"depth":2,"expand_all_items":true}'
+  0:col_3:7:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
+    slot: col_3
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000010
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    component_version: active
+    inputs: '{"heading_text":"Join Our Mission","level":3,"text_color":"text-white","target":"_self"}'
+  0:col_3:8:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
+    slot: col_3
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000011
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    component_version: active
+    inputs: '{"size":"py-2"}'
+  0:col_3:9:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
+    slot: col_3
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000012
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    component_version: active
+    inputs: '{"text":{"value":"<p>Stay informed about our latest initiatives and how you can help.</p>","format":"canvas_html_block"},"text_size":"none","text_color":"text-white"}'
+  0:col_3:10:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
+    slot: col_3
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000013
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    component_version: active
+    inputs: '{"size":"py-2"}'
+  0:col_3:11:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
+    slot: col_3
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000014
+    component_id: sdc.vartheme_bs5_horizonaid.button
+    component_version: active
+    inputs: '{"variant":"btn-accent","outline":false,"size":"btn-md","label":"Subscribe","target":"self","disabled":false,"icon":"none","icon_first":false,"alignment":"inline","full_width":false,"radius":"rounded-pill"}'
+  '1':
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000020
+    component_id: sdc.vartheme_bs5_horizonaid.section
+    component_version: active
+    inputs: '{"bg_edge2edge":true,"container_type":"container","background_color":"bg-dark","text_color":"text-dark","columns":"50-50","gutter":"gx-3 gy-3","padding_block_start":"pt-4","padding_block_end":"pb-5","vertical_alignment":"align-items-center","section_header":false,"section_footer":false,"aos_once":false}'
+  1:col_1:0:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000020
+    slot: col_1
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000021
+    component_id: block.system_menu_block.footer
+    component_version: active
+    inputs: '{"label":"Footer menu","label_display":"0","level":1,"depth":2,"expand_all_items":true}'
+  1:col_2:1:
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000020
+    slot: col_2
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000022
     component_id: sdc.vartheme_bs5_horizonaid.html-code
-    component_version: 656471f14c4594ec
-    inputs: '{"code":"<div class=\"copyright-text mt-2 mb-0\"><p class=\"mb-0 d-flex align-items-center gap-1 justify-content-start justify-content-md-end\">Powered by <a class=\"d-inline-flex align-items-center\" href=\"https://www.vardot.com/?utm_source=varbase&amp;utm_campaign=varbase%20default%20links\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Vardot\"><img src=\"/themes/contrib/vartheme_bs5_horizonaid/vardot-logo.svg\" alt=\"Vardot\" class=\"powered-by-vardot-logo\"></a></p></div>"}'
+    component_version: active
+    inputs: '{"code":"<div class=\"copyright-text mb-0\"><p class=\"mb-0 d-flex align-items-center gap-1 justify-content-start justify-content-md-end\">Copyright © 2026</p></div>"}'

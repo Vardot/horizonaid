@@ -41,7 +41,7 @@ default:
       value: false
   parent:
     -
-      value: 'menu_link_content:d6d4c475-2a54-4c8c-bf68-ae0e40ccb63d'
+      value: ''
   revision_translation_affected:
     -
       value: true

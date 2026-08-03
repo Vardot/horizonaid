@@ -24,7 +24,7 @@ default:
   rediscover:
   - value: true
   weight:
-  - value: 10
+  - value: -10
   expanded:
   - value: false
   revision_translation_affected:
