@@ -42,7 +42,7 @@ component_tree:
     uuid: 7f1c2a80-5d31-4e07-9a11-f00000000004
     component_id: sdc.vartheme_bs5_horizonaid.card-logo
     component_version: active
-    inputs: '{"media":{"sourceType":"default-relative-url","value":{"src":"/themes/contrib/vartheme_bs5_horizonaid/components/foundation/images/assets/full-logo-light.svg","alt":"Horizon Aid","width":600,"height":240},"jsonSchema":{"type":"object","properties":{"src":{"type":"string","contentMediaType":"image/*","format":"uri-reference","x-allowed-schemes":["http","https"]},"alt":{"type":"string"},"width":{"type":"integer"},"height":{"type":"integer"}},"required":["src"]},"componentId":"sdc.vartheme_bs5_horizonaid.card-logo"},"shadow":"shadow-none","alignment":"left"}'
+    inputs: '{"media":{"sourceType":"default-relative-url","value":{"src":"/themes/contrib/vartheme_bs5_horizonaid/components/foundation/images/assets/full-logo-light.svg","alt":"Horizon Aid","width":600,"height":240},"jsonSchema":{"type":"object","properties":{"src":{"type":"string","contentMediaType":"image/*","format":"uri-reference","x-allowed-schemes":["http","https"]},"alt":{"type":"string"},"width":{"type":"integer"},"height":{"type":"integer"}},"required":["src"]},"componentId":"sdc.vartheme_bs5_horizonaid.card-logo"},"shadow":"shadow-none"}'
   0:col_1:2:
     parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
     slot: col_1

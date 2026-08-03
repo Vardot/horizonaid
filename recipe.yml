@@ -773,264 +773,6 @@ config:
           menu_name: main
       setViewsComponentStyleTheme:
         theme: default
-    canvas.content_template.node.event.full:
-      simpleConfigUpdate:
-        component_tree:
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a01:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a01
-            component_id: block.system_breadcrumb_block
-            component_version: 0d7e961dd03aa710
-            inputs:
-              label: ''
-              label_display: '0'
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
-            component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 9b679273be9319ad
-            inputs:
-              columns: 67-33
-              container_type: container
-              background_color: bg-tertiary
-              radius: rounded-4
-              text_color: auto
-              bg_edge2edge: false
-              background_overlay: none
-              gutter: gx-4 gy-4
-              padding_block_start: pt-5
-              padding_block_end: pb-5
-              padding_inline_start: ps-0
-              padding_inline_end: pe-0
-              margin_block_start: mt-0
-              margin_block_end: mb-5
-              margin_inline_start: ms-0
-              margin_inline_end: me-0
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a21:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a21
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
-            slot: col_1
-            component_id: sdc.vartheme_bs5_horizonaid.taxonomy
-            component_version: 3351b78763f50152
-            inputs:
-              label:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:event␝field_event_categories␞0␟entity␜␜entity:taxonomy_term:event_categories␝name␞␟value
-              url: ''
-              target: _self
-              size: taxonomy-sm
-              color: taxonomy-secondary
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a26:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a26
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
-            slot: col_1
-            component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
-            inputs:
-              size: py-1
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a22:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a22
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
-            slot: col_1
-            component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
-            inputs:
-              heading_text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:event␝title␞␟value
-              level: 1
-              text_size: h1
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a23:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a23
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
-            slot: col_1
-            component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: c4ddb22de87220b3
-            inputs:
-              text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:event␝field_description␞␟value
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a27:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a27
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
-            slot: col_1
-            component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
-            inputs:
-              size: py-1
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a24:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a24
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
-            slot: col_1
-            component_id: sdc.vartheme_bs5_horizonaid.date
-            component_version: d3ef992079effe12
-            inputs:
-              text_color: text-secondary
-              size: fs-6
-              format: j F Y
-              icon: calendar-event
-              weight: fw-bold
-              timestamp:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:event␝field_when␞0␟value
-              display: block
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a28:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a28
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
-            slot: col_1
-            component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
-            inputs:
-              size: py-2
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a25:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a25
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
-            slot: col_1
-            component_id: sdc.vartheme_bs5_horizonaid.button
-            component_version: 64089b7681474537
-            inputs:
-              label: Register Today
-              href:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:event␝field_registration_url␞␟uri
-              variant: btn-primary
-              outline: false
-              size: btn-md
-              target: blank
-              disabled: false
-              icon: arrow-up-right
-              icon_first: false
-              alignment: inline
-              full_width: false
-              radius: rounded-pill
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
-            component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 4171719f53c41b9d
-            inputs:
-              columns: 75-25
-              container_type: container
-              padding_block_start: pt-5
-              padding_block_end: pb-5
-              gutter: gx-4 gy-4
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a06:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a06
-            component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 98b47f40fce531b1
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
-            slot: col_1
-            inputs:
-              heading_text: About this Event
-              level: 2
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a07:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a07
-            component_id: sdc.vartheme_bs5_horizonaid.rich-text
-            component_version: 1f6fe433026fe38e
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
-            slot: col_1
-            inputs:
-              text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:event␝body␞␟processed
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a08:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a08
-            component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 98b47f40fce531b1
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
-            slot: col_1
-            inputs:
-              heading_text: What You'll Learn
-              level: 3
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a09:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a09
-            component_id: sdc.vartheme_bs5_horizonaid.rich-text
-            component_version: 1f6fe433026fe38e
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
-            slot: col_1
-            inputs:
-              text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:event␝field_what_you_will_learn␞␟processed
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0a:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0a
-            component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 98b47f40fce531b1
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
-            slot: col_1
-            inputs:
-              heading_text: Speakers
-              level: 3
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0b:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0b
-            component_id: sdc.vartheme_bs5_horizonaid.rich-text
-            component_version: 1f6fe433026fe38e
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
-            slot: col_1
-            inputs:
-              text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:event␝field_speakers␞␟processed
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0c:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0c
-            component_id: sdc.vartheme_bs5_horizonaid.share
-            component_version: f7aa983e0913e468
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
-            slot: col_2
-            inputs:
-              heading: Share
-              display_title: true
-              alignment: start
-              orientation: vertical
-              mobile_visibility: all
-              native_share: false
-              placement: rail-end
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0d:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0d
-            component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 4171719f53c41b9d
-            inputs:
-              columns: '100'
-              container_type: container
-              padding_block_start: pt-0
-              padding_block_end: pb-5
-              gutter: gx-4 gy-4
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0e:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0e
-            component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 98b47f40fce531b1
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0d
-            slot: col_1
-            inputs:
-              heading_text: More Events
-              level: 2
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0f:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0f
-            component_id: block.views_block.events-related
-            component_version: e2f2eaca342564e5
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0d
-            slot: col_1
-            inputs:
-              label: ''
-              label_display: '0'
-              views_label: ''
-              exposed: {}
-          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a10:
-            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a10
-            component_id: sdc.vartheme_bs5_horizonaid.button
-            component_version: 64089b7681474537
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0d
-            slot: col_1
-            inputs:
-              label: See All Events
-              href: /events
-              variant: btn-primary
-              outline: false
-              size: btn-md
-              target: self
-              disabled: false
-              icon: none
-              icon_first: false
-              alignment: inline
-              full_width: false
-              radius: rounded-pill
     canvas.content_template.node.event.card:
       repointComponentTreeToTheme:
         theme: default
@@ -1075,6 +817,264 @@ config:
       - view terms in event_topics
       - view term names in event_categories
       - view term names in event_topics
+    canvas.content_template.node.event.full:
+      setComponentTreeIfComponentsExist:
+        component_tree:
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a01:
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a01
+            component_id: block.system_breadcrumb_block
+            component_version: 0d7e961dd03aa710
+            inputs:
+              label: ''
+              label_display: '0'
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20:
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
+            component_id: sdc.vartheme_bs5_horizonaid.section
+            component_version: 9b679273be9319ad
+            inputs:
+              bg_edge2edge: false
+              container_type: container
+              background_color: bg-tertiary
+              text_color: auto
+              background_overlay: none
+              columns: 67-33
+              gutter: gx-4 gy-4
+              padding_block_start: pt-5
+              padding_block_end: pb-5
+              padding_inline_start: ps-0
+              padding_inline_end: pe-0
+              margin_block_start: mt-0
+              margin_block_end: mb-5
+              margin_inline_start: ms-0
+              margin_inline_end: me-0
+              radius: rounded-4
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a21:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a21
+            component_id: sdc.vartheme_bs5_horizonaid.taxonomy
+            component_version: 3351b78763f50152
+            inputs:
+              label:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:event␝field_event_categories␞0␟entity␜␜entity:taxonomy_term:event_categories␝name␞␟value
+              url: ''
+              target: _self
+              size: taxonomy-sm
+              color: taxonomy-secondary
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a26:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a26
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-1
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a22:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a22
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 0889e2ce906c3164
+            inputs:
+              heading_text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:event␝title␞␟value
+              level: 1
+              text_size: h1
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a23:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a23
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:event␝field_description␞␟value
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a27:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a27
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-1
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a24:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a24
+            component_id: sdc.vartheme_bs5_horizonaid.date
+            component_version: d3ef992079effe12
+            inputs:
+              timestamp:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:event␝field_when␞0␟value
+              format: j F Y
+              icon: calendar-event
+              display: block
+              weight: fw-bold
+              text_color: text-secondary
+              size: fs-6
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a28:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a28
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-2
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a25:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a20
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a25
+            component_id: sdc.vartheme_bs5_horizonaid.button
+            component_version: 64089b7681474537
+            inputs:
+              variant: btn-primary
+              outline: false
+              size: btn-md
+              label: Register Today
+              href:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:event␝field_registration_url␞␟uri
+              target: blank
+              disabled: false
+              icon: arrow-up-right
+              icon_first: false
+              alignment: inline
+              full_width: false
+              radius: rounded-pill
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05:
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
+            component_id: sdc.vartheme_bs5_horizonaid.section
+            component_version: 4171719f53c41b9d
+            inputs:
+              container_type: container
+              columns: 75-25
+              gutter: gx-4 gy-4
+              padding_block_start: pt-5
+              padding_block_end: pb-5
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a06:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a06
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 98b47f40fce531b1
+            inputs:
+              heading_text: About this Event
+              level: 2
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a07:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a07
+            component_id: sdc.vartheme_bs5_horizonaid.rich-text
+            component_version: 1f6fe433026fe38e
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:event␝body␞␟processed
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a08:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a08
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 98b47f40fce531b1
+            inputs:
+              heading_text: What You'll Learn
+              level: 3
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a09:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a09
+            component_id: sdc.vartheme_bs5_horizonaid.rich-text
+            component_version: 1f6fe433026fe38e
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:event␝field_what_you_will_learn␞␟processed
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0a:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0a
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 98b47f40fce531b1
+            inputs:
+              heading_text: Speakers
+              level: 3
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0b:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0b
+            component_id: sdc.vartheme_bs5_horizonaid.rich-text
+            component_version: 1f6fe433026fe38e
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:event␝field_speakers␞␟processed
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0c:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a05
+            slot: col_2
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0c
+            component_id: sdc.vartheme_bs5_horizonaid.share
+            component_version: f7aa983e0913e468
+            inputs:
+              heading: Share
+              display_title: true
+              alignment: start
+              orientation: vertical
+              mobile_visibility: all
+              native_share: false
+              placement: rail-end
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0d:
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0d
+            component_id: sdc.vartheme_bs5_horizonaid.section
+            component_version: 4171719f53c41b9d
+            inputs:
+              container_type: container
+              columns: '100'
+              gutter: gx-4 gy-4
+              padding_block_start: pt-0
+              padding_block_end: pb-5
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0e:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0d
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0e
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 98b47f40fce531b1
+            inputs:
+              heading_text: More Events
+              level: 2
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0f:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0d
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0f
+            component_id: block.views_block.events-related
+            component_version: e2f2eaca342564e5
+            inputs:
+              label: ''
+              label_display: '0'
+              views_label: ''
+              exposed: []
+          7f1c2a80-5d31-4e07-9a11-c0b3e5f10a10:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a0d
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c0b3e5f10a10
+            component_id: sdc.vartheme_bs5_horizonaid.button
+            component_version: 64089b7681474537
+            inputs:
+              variant: btn-primary
+              outline: false
+              size: btn-md
+              label: See All Events
+              href: /events
+              target: self
+              disabled: false
+              icon: none
+              icon_first: false
+              alignment: inline
+              full_width: false
+              radius: rounded-pill
 extra:
   recipe_installer_kit:
     finish_url: /admin/dashboard/welcome
