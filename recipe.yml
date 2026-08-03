@@ -757,6 +757,11 @@ config:
               col_xxl: col-xxl-4
               attributes: ''
         display.related.display_options.defaults.style: false
+        display.default.display_options.exposed_form.options.reset_button_always_show: true
+        display.default.display_options.pager.options.quantity: 5
+        display.default.display_options.style.options.prop_mappings.grid_utility_classes: gy-grid gx-grid
+        display.block_1.display_options.style.options.prop_mappings.grid_utility_classes: gy-grid gx-grid
+        display.default.display_options.header.result.content: <div class="views-result-summary fs-5 text-secondary mb-block">Showing <strong>@start-@end</strong> of @total</div>
       setViewsComponentStyleTheme:
         theme: default
     canvas.content_template.node.event.full:

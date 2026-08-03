@@ -20,7 +20,7 @@ component_tree:
     inputs:
       card_border: false
       box_shadow: shadow-none
-      corner_style: rounded-4
+      corner_style: rounded-5
       equal_height: true
       stretched_link: true
       link_target: default
