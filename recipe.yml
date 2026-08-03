@@ -762,6 +762,15 @@ config:
         display.default.display_options.style.options.prop_mappings.grid_utility_classes: gy-grid gx-grid
         display.block_1.display_options.style.options.prop_mappings.grid_utility_classes: gy-grid gx-grid
         display.default.display_options.header.result.content: <div class="views-result-summary fs-5 text-secondary mb-block">Showing <strong>@start-@end</strong> of @total</div>
+        display.page_1.display_options.menu:
+          type: none
+          title: ''
+          description: ''
+          expanded: false
+          parent: ''
+          weight: 0
+          context: ''
+          menu_name: main
       setViewsComponentStyleTheme:
         theme: default
     canvas.content_template.node.event.full:
