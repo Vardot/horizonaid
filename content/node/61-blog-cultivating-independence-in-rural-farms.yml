@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
-    2703edeb-c3da-4295-a7f9-956add15af88: media
+    c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'Cooperatives using climate-resilient tools secured steady yields for a second consecutive season.'
   field_featured_image:
     -
-      entity: 2703edeb-c3da-4295-a7f9-956add15af88
+      entity: c749d4bc-2a5e-47e1-a3ed-ce85781612b9
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

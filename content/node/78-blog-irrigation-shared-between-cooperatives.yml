@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
-    7fd1d440-8109-40c6-8f18-a57b015ac54e: media
+    eb19191f-3c64-4787-8f4e-c65ae6df3d8e: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>One scheme, shared by rota, maintained by the cooperative that depends on it. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Rota agreed in writing before the first channel was dug</li><li>Head-works sized for the whole valley, not the nearest plot</li><li>Maintenance days scheduled, with attendance recorded</li><li>Disputes settled by the committee, not the funder</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="7fd1d440-8109-40c6-8f18-a57b015ac54e" data-align="center" alt="Irrigation shared between cooperatives"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="368bad61-0dbd-4fd3-ac9d-b295fcdd7353" data-align="center" alt="Irrigation shared between cooperatives"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Two harvests instead of one</h4>
@@ -71,7 +71,7 @@ default:
       value: 'A shared pump serving four cooperatives cut water costs and ended a long dispute.'
   field_featured_image:
     -
-      entity: 7fd1d440-8109-40c6-8f18-a57b015ac54e
+      entity: eb19191f-3c64-4787-8f4e-c65ae6df3d8e
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

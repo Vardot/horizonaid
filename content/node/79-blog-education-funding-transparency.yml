@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
-    9a36d753-9d1e-4913-9c33-14dec94831a5: media
+    e590a1b0-41c2-42ad-8659-c9f38b586c88: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Published, itemised spending makes the gap between allocation and delivery visible. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Every disbursement published within the quarter it is made</li><li>School-level figures, not district aggregates</li><li>Categories agreed with the ministry so the data can be compared</li><li>An open format any organisation can reuse</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="9a36d753-9d1e-4913-9c33-14dec94831a5" data-align="center" alt="Education funding transparency"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="77f64522-d62e-448c-ab81-5a4137f8057c" data-align="center" alt="Education funding transparency"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Faster correction</h4>
@@ -71,7 +71,7 @@ default:
       value: 'Where education money actually lands, traced from donor to classroom.'
   field_featured_image:
     -
-      entity: 9a36d753-9d1e-4913-9c33-14dec94831a5
+      entity: e590a1b0-41c2-42ad-8659-c9f38b586c88
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1

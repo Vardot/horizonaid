@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
-    0ec80857-3171-423b-89f7-ce4447adc41b: media
+    fbca9adb-bf14-44fb-a1a3-c6f02b725a23: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Cash lets families buy locally, so the market recovers while the household is supported. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Market assessment before any transfer, to confirm supply exists</li><li>Transfer value indexed to a monitored local basket</li><li>Payment through agents families can reach on foot</li><li>Traders monitored for price response</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="0ec80857-3171-423b-89f7-ce4447adc41b" data-align="center" alt="Cash support and market recovery"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="20a27553-c0f7-44bf-adb9-383e46972dff" data-align="center" alt="Cash support and market recovery"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Traders back in business</h4>
@@ -71,7 +71,7 @@ default:
       value: 'What happened to local markets in districts where we replaced in-kind aid with direct cash.'
   field_featured_image:
     -
-      entity: 0ec80857-3171-423b-89f7-ce4447adc41b
+      entity: fbca9adb-bf14-44fb-a1a3-c6f02b725a23
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

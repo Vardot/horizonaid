@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
-    f749352f-75eb-422e-abca-0696f87555ba: media
+    437e4b95-01b6-4cf5-ab32-e9bf1f1abd49: media
     6100a75e-6da4-4f26-addd-a256e68df3ae: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Mobile units cover the gap while the two ministries agree who owns it. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Units staffed to treat, not only to screen</li><li>Medicines matched to what the corridor's clinics actually see</li><li>Case notes shared with both ministries in a format each accepts</li><li>Referral routes tested before a patient needs them</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="f749352f-75eb-422e-abca-0696f87555ba" data-align="center" alt="Bridging medical gaps in border corridors"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="fbca9adb-bf14-44fb-a1a3-c6f02b725a23" data-align="center" alt="Bridging medical gaps in border corridors"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Chronic care that continues</h4>
@@ -71,7 +71,7 @@ default:
       value: 'Mobile health units delivered emergency paediatric care and preventative supplies to more than forty remote settlements this quarter.'
   field_featured_image:
     -
-      entity: f749352f-75eb-422e-abca-0696f87555ba
+      entity: 437e4b95-01b6-4cf5-ab32-e9bf1f1abd49
   field_tags:
     -
       entity: 6100a75e-6da4-4f26-addd-a256e68df3ae

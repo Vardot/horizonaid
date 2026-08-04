@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
-    67a76fae-bc22-4aa1-a144-4f39e44428ce: media
+    20e27874-e572-4ad3-89a9-42fa60d0a69c: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Documentation is treated as protection work, not administration. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Mobile registration desks placed where people already gather</li><li>Legal aid attached to the desk, not referred onward</li><li>Records duplicated and held securely against loss</li><li>Ministry liaison staffed so cases do not stall</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="67a76fae-bc22-4aa1-a144-4f39e44428ce" data-align="center" alt="Documentation as protection"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="934496a2-3f0b-4db3-a54e-b7e706a994dd" data-align="center" alt="Documentation as protection"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Access to school</h4>
@@ -71,7 +71,7 @@ default:
       value: 'Without papers a family cannot enrol a child, access a clinic or report abuse. What our legal desks do about it.'
   field_featured_image:
     -
-      entity: 67a76fae-bc22-4aa1-a144-4f39e44428ce
+      entity: 20e27874-e572-4ad3-89a9-42fa60d0a69c
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1

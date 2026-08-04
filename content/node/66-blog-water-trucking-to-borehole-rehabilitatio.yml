@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
-    fbca9adb-bf14-44fb-a1a3-c6f02b725a23: media
+    20a27553-c0f7-44bf-adb9-383e46972dff: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'Moving from emergency water delivery to permanent infrastructure in drought-affected districts.'
   field_featured_image:
     -
-      entity: fbca9adb-bf14-44fb-a1a3-c6f02b725a23
+      entity: 20a27553-c0f7-44bf-adb9-383e46972dff
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
-    14c0a2d9-36f9-446e-a974-aa93b5493192: media
+    77f64522-d62e-448c-ab81-5a4137f8057c: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Training covers the classroom conditions teachers actually face, not the ones the curriculum assumes. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Training delivered on site, in the classrooms in question</li><li>Large mixed-age groups treated as the norm, not the exception</li><li>Psychosocial first aid included as core, not an add-on</li><li>Mentoring continued after the training week</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="14c0a2d9-36f9-446e-a974-aa93b5493192" data-align="center" alt="Teacher training in displacement settings"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="e590a1b0-41c2-42ad-8659-c9f38b586c88" data-align="center" alt="Teacher training in displacement settings"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Teachers who stay in post</h4>
@@ -71,7 +71,7 @@ default:
       value: 'A second cohort of local teachers completed training designed for classrooms that move.'
   field_featured_image:
     -
-      entity: 14c0a2d9-36f9-446e-a974-aa93b5493192
+      entity: 77f64522-d62e-448c-ab81-5a4137f8057c
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1
