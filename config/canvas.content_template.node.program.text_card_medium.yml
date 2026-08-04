@@ -12,27 +12,150 @@ content_entity_type_id: node
 content_entity_type_bundle: program
 content_entity_type_view_mode: text_card_medium
 component_tree:
-  7358e3cc-7e74-4531-8931-531236ad67ce:
-    uuid: 7358e3cc-7e74-4531-8931-531236ad67ce
-    component_id: sdc.vartheme_bs5_horizonaid.card
+  7f1c2a80-5d31-4e07-9a11-e00000000001:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000001
+    component_id: sdc.vartheme_bs5_horizonaid.section
     inputs:
-      shadow: shadow
-      background: bg-light
-      orientation: image-top
+      bg_edge2edge: false
+      container_type: none
+      background_color: none
+      text_color: auto
+      columns: 40-60
+      gutter: gx-5 gy-5
+      padding_block_start: pt-5
+      padding_block_end: pb-4
+      vertical_alignment: align-items-center
+      horizontal_alignment: text-start
+      section_header: false
+      section_footer: false
+      aos_once: false
+    component_version: active
+  7f1c2a80-5d31-4e07-9a11-e00000000002:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000002
+    component_id: sdc.vartheme_bs5_horizonaid.card-text
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-e00000000001
+    slot: col_1
+    inputs:
+      card_border: false
+      background_color: bg-secondary-subtle
+      padded: true
+      box_shadow: shadow-none
+      corner_style: rounded-4
+      equal_height: false
+      stretched_link: false
+      link_url: ''
+      link_target: default
+      icon_alignment: start
+    component_version: active
+  7f1c2a80-5d31-4e07-9a11-e00000000003:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000003
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-e00000000002
+    slot: content
+    inputs:
+      size: py-4
+    component_version: active
+  7f1c2a80-5d31-4e07-9a11-e00000000004:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000004
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-e00000000002
+    slot: content
+    inputs:
+      size: py-3
+    component_version: active
+  7f1c2a80-5d31-4e07-9a11-e00000000010:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000010
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-e00000000002
+    slot: content
+    inputs:
       heading_text:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:program␝title␞␟value
-      media:
-        sourceType: entity-field
-        expression: ℹ︎␜entity:node:program␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+      level: 2
+      target: _self
+    component_version: active
+  7f1c2a80-5d31-4e07-9a11-e00000000005:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000005
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-e00000000002
+    slot: content
+    inputs:
+      size: py-2
+    component_version: active
+  7f1c2a80-5d31-4e07-9a11-e00000000011:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000011
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-e00000000002
+    slot: content
+    inputs:
       text:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:program␝field_description␞␟value
-      button_label: Learn more
-      button_variant: btn-primary
-      has_padding: false
-      url:
+      text_size: none
+      text_color: text-body
+    component_version: active
+  7f1c2a80-5d31-4e07-9a11-e00000000006:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000006
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-e00000000002
+    slot: content
+    inputs:
+      size: py-2
+    component_version: active
+  7f1c2a80-5d31-4e07-9a11-e00000000012:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000012
+    component_id: sdc.vartheme_bs5_horizonaid.button
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-e00000000002
+    slot: content
+    inputs:
+      variant: btn-link
+      outline: false
+      size: btn-md
+      label: Learn More
+      href:
         sourceType: host-entity-url
         absolute: false
+      target: self
+      disabled: false
+      icon: none
+      icon_first: false
+      alignment: inline
+      full_width: false
+      radius: rounded-1
+    component_version: active
+  7f1c2a80-5d31-4e07-9a11-e00000000007:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000007
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-e00000000002
+    slot: content
+    inputs:
+      size: py-4
+    component_version: active
+  7f1c2a80-5d31-4e07-9a11-e00000000008:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000008
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-e00000000002
+    slot: content
+    inputs:
+      size: py-3
+    component_version: active
+  7f1c2a80-5d31-4e07-9a11-e00000000020:
+    uuid: 7f1c2a80-5d31-4e07-9a11-e00000000020
+    component_id: sdc.vartheme_bs5_horizonaid.image
+    parent_uuid: 7f1c2a80-5d31-4e07-9a11-e00000000001
+    slot: col_2
+    inputs:
+      media:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:program␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+      link_url: ''
+      target: self
+      ratio: ratio-16x9
+      fit: object-fit-cover
+      align: me-auto
+      width: w-100
+      rounded: rounded-3
+      loading: lazy
     component_version: active
 exposed_slots: []

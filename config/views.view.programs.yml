@@ -606,6 +606,7 @@ display:
         exposed_form: false
         style: false
         row: false
+        relationships: false
         filters: false
         filter_groups: false
         header: false
@@ -623,32 +624,36 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: <h2 class="visually-hidden">All blog posts</h2>
+            value: <h2 class="visually-hidden">All programs</h2>
             format: code_html
           tokenize: false
-        result:
-          id: result
-          table: views
-          field: result
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: result
-          empty: false
-          content: <span class="vb-result-summary"><span class="vb-result-summary__label">Shown articles:</span> <span class="vb-result-summary__count">@start-@end of @total</span></span>
       exposed_block: true
       display_extenders:
         metatag_display_extender:
           metatags: {}
           tokenize: false
       title: All programs
-      sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+      relationships:
+        field_program_type:
+          id: field_program_type
+          table: node__field_program_type
+          field: field_program_type
+          relationship: none
+          group_type: group
+          admin_label: Sector
           entity_type: node
-          entity_field: title
+          plugin_id: standard
+          required: false
+      sorts:
+        weight:
+          id: weight
+          table: taxonomy_term_field_data
+          field: weight
+          relationship: field_program_type
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: weight
           plugin_id: standard
           order: ASC
           expose:
@@ -801,7 +806,7 @@ display:
         type: entity:node
         options:
           relationship: none
-          view_mode: text_card_medium
+          view_mode: card
       defaults:
         empty: false
         title: false

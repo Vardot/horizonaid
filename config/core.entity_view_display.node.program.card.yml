@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.card
+  - node.type.program
+  module:
+  - canvas
+id: node.program.card
+targetEntityType: node
+bundle: program
+mode: card
+content: {}
+hidden: {}

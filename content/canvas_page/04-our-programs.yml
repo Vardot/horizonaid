@@ -52,8 +52,8 @@ default:
     component_id: sdc.vartheme_bs5_horizonaid.text
     inputs:
       text:
-        value: <p>For over two decades, we’ve supported communities too often overlooked.
-          Learn why.</p>
+        value: <p>Every programme from legal aid to food security is designed and led
+          by the communities it serves.</p>
         format: canvas_html_block
       text_size: none
       text_color: text-body
@@ -65,7 +65,7 @@ default:
       background_color: none
       text_color: auto
       background_overlay: none
-      columns: 40-60
+      columns: '100'
       gutter: gx-5 gy-5
       padding_block_start: pt-5
       padding_block_end: pb-5
@@ -217,6 +217,12 @@ default:
         format: canvas_html_block
       text_size: none
       text_color: text-body
+  - parent_uuid: 81044eb1-5aa6-4872-895f-cca5f7438e91
+    slot: col_1
+    uuid: 9c2f7a14-6b3d-4e21-8f05-2a7c1d4e6b90
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    inputs:
+      size: py-3
   - parent_uuid: 81044eb1-5aa6-4872-895f-cca5f7438e91
     slot: col_1
     uuid: 237fb187-9e51-4315-ac20-df3e323ecfd5
