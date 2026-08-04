@@ -1513,7 +1513,15 @@ config:
               heading_text:
                 sourceType: entity-field
                 expression: ℹ︎␜entity:node:program␝field_delivery_title␞0␟value
-              level: 3
+              level: 4
+          96e4e712-d60a-52e7-afbf-152964a7aedf:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
+            slot: content
+            uuid: 96e4e712-d60a-52e7-afbf-152964a7aedf
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-0
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b0:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
             slot: content
@@ -1551,7 +1559,15 @@ config:
               heading_text:
                 sourceType: entity-field
                 expression: ℹ︎␜entity:node:program␝field_delivery_title␞1␟value
-              level: 3
+              level: 4
+          a7d56212-2ba4-5a1c-9699-78e16f285978:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
+            slot: content
+            uuid: a7d56212-2ba4-5a1c-9699-78e16f285978
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-0
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b1:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
             slot: content
@@ -1589,7 +1605,15 @@ config:
               heading_text:
                 sourceType: entity-field
                 expression: ℹ︎␜entity:node:program␝field_delivery_title␞2␟value
-              level: 3
+              level: 4
+          3d2edb32-ad81-5115-b4f1-e44b0ee80f82:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
+            slot: content
+            uuid: 3d2edb32-ad81-5115-b4f1-e44b0ee80f82
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-0
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b2:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
             slot: content
@@ -1627,7 +1651,15 @@ config:
               heading_text:
                 sourceType: entity-field
                 expression: ℹ︎␜entity:node:program␝field_delivery_title␞3␟value
-              level: 3
+              level: 4
+          db1ab5a0-02dc-5f6a-8703-24ffdbd2a07c:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
+            slot: content
+            uuid: db1ab5a0-02dc-5f6a-8703-24ffdbd2a07c
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-0
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b3:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
             slot: content
