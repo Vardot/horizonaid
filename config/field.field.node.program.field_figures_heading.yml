@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_figures_heading
+    - node.type.program
+id: node.program.field_figures_heading
+field_name: field_figures_heading
+entity_type: node
+bundle: program
+label: 'Figures heading'
+description: 'Heading for that block on the programme page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

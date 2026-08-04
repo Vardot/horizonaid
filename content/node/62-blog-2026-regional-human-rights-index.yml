@@ -5,43 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    070ea67b-4707-43bd-a9e8-916defc277fb: media
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
+    070ea67b-4707-43bd-a9e8-916defc277fb: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: 2026 regional human rights index
+    -
+      value: '2026 regional human rights index'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/2026-regional-human-rights-index
-    langcode: en
-  field_description:
-  - value: Field data auditing educational safety, funding transparency and legislative
-      progress across the countries we work in.
-  field_content:
-  - value: <p>The index reviews legal aid access, detention practice and freedom of
-      movement in every country where our legal teams operate.</p><p>Partners use
-      the country scores to prioritise where to place legal aid hours in the coming
-      year.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 070ea67b-4707-43bd-a9e8-916defc277fb
+    -
+      alias: /resources/2026-regional-human-rights-index
+      langcode: en
   field_blog_categories:
-  - entity: 60a3f621-9baf-4341-a6ad-b8615f99e6d3
+    -
+      entity: 60a3f621-9baf-4341-a6ad-b8615f99e6d3
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>REGIONAL</strong> — Field data auditing educational safety, funding transparency and legislative progress across the countries we work in. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This brief sets out the evidence, the cost of inaction, and what should follow.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Rights reporting arrives late, in aggregate, and too general to act on. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>An index nobody can check is an opinion. We publish the method so the number can be argued with.</p><p><strong>Dr Leila Mansour</strong>, research lead</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>The index is built from verified case data, published by district and repeated annually. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Cases verified against at least two independent sources</li><li>Published by district so local actors can use it</li><li>Methodology published in full alongside the figures</li><li>The same method repeated each year for comparability</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="070ea67b-4707-43bd-a9e8-916defc277fb" data-align="center" alt="2026 regional human rights index"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Local advocacy</h4>
+        <p>District figures gave community organisations something specific to raise.</p>
+        <h4>2. Comparable years</h4>
+        <p>An unchanged method made the second edition genuinely informative.</p>
+        <h4>3. Contested and improved</h4>
+        <p>Two disputed districts were re-verified and corrected in the published errata.</p>
+        <h3>What comes next</h3>
+        <p>The next edition adds detention data and opens the case-verification protocol to partner review. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Field data auditing educational safety, funding transparency and legislative progress across the countries we work in.'
+  field_featured_image:
+    -
+      entity: 070ea67b-4707-43bd-a9e8-916defc277fb
   field_tags:
-  - entity: 3917245a-e65c-48ed-a00f-f804f38522f1
+    -
+      entity: 3917245a-e65c-48ed-a00f-f804f38522f1

@@ -12,54 +12,76 @@ _meta:
     970e04cf-e3f9-404d-a572-e575f628a629: media
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Country
+    -
+      value: 'Created new Country'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Colombia
+    -
+      value: Colombia
   promote:
-  - value: false
+    -
+      value: false
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
+    -
+      value: true
   path:
-  - alias: /countries/colombia
-    langcode: en
+    -
+      alias: /countries/colombia
+      langcode: en
+  field_country_code:
+    -
+      value: CO
   field_description:
-  - value: Legal aid, documentation and integration support for migrant and host communities
-      along the migration corridor.
+    -
+      value: 'Legal aid, documentation and integration support for migrant and host communities along the migration corridor.'
   field_featured_image:
-  - entity: 77f64522-d62e-448c-ab81-5a4137f8057c
-  field_our_role:
-  - value: <p>We provide legal aid and documentation support so migrant families can
-      access schooling, health care and work, and we support host communities absorbing
-      new arrivals.</p>
-    format: content_format
-  field_on_the_ground:
-  - value: '<p>Documentation is protection: without it, families cannot enrol a child
-      or report abuse.</p>'
-    format: content_format
-  field_on_the_ground_image:
-  - entity: 77f64522-d62e-448c-ab81-5a4137f8057c
+    -
+      entity: 77f64522-d62e-448c-ab81-5a4137f8057c
   field_figures_description:
-  - value: Our teams focus on legal aid, documentation and integration.
-  field_figure_number:
-  - value: 33K+
-  - value: 12K+
-  - value: 9K+
+    -
+      value: 'Our teams focus on legal aid, documentation and integration.'
   field_figure_description:
-  - value: People supported along the corridor
-  - value: Legal consultations delivered
-  - value: Children enrolled in school
+    -
+      value: 'People supported along the corridor'
+    -
+      value: 'Legal consultations delivered'
+    -
+      value: 'Children enrolled in school'
+  field_figure_number:
+    -
+      value: 33K+
+    -
+      value: 12K+
+    -
+      value: 9K+
+  field_on_the_ground:
+    -
+      value: '<p>Documentation is protection: without it, families cannot enrol a child or report abuse.</p>'
+      format: content_format
+  field_on_the_ground_image:
+    -
+      entity: 77f64522-d62e-448c-ab81-5a4137f8057c
+  field_our_role:
+    -
+      value: '<p>We provide legal aid and documentation support so migrant families can access schooling, health care and work, and we support host communities absorbing new arrivals.</p>'
+      format: content_format
   field_partners:
-  - entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
-  - entity: 38771a02-8334-4057-9022-f7f4d5342612
-  - entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
-  - entity: 970e04cf-e3f9-404d-a572-e575f628a629
+    -
+      entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
+    -
+      entity: 38771a02-8334-4057-9022-f7f4d5342612
+    -
+      entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
+    -
+      entity: 970e04cf-e3f9-404d-a572-e575f628a629

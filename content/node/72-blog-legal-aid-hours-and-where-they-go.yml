@@ -5,41 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    19422939-a884-494a-a2bc-7bb49eec89f3: media
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
+    19422939-a884-494a-a2bc-7bb49eec89f3: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Legal aid hours and where they go
+    -
+      value: 'Legal aid hours and where they go'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/legal-aid-hours-and-where-they-go
-    langcode: en
-  field_description:
-  - value: How we decide which corridor or district receives the next tranche of legal
-      aid capacity.
-  field_content:
-  - value: <p>Legal aid capacity is finite, so allocation has to follow measured need.</p><p>The
-      index scores feed directly into next year's placement.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 19422939-a884-494a-a2bc-7bb49eec89f3
+    -
+      alias: /resources/legal-aid-hours-and-where-they-go
+      langcode: en
   field_blog_categories:
-  - entity: 60a3f621-9baf-4341-a6ad-b8615f99e6d3
+    -
+      entity: 60a3f621-9baf-4341-a6ad-b8615f99e6d3
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>AMMAN</strong> — How we decide which corridor or district receives the next tranche of legal aid capacity. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This brief sets out the evidence, the cost of inaction, and what should follow.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Legal aid is scarce, so where the hours go decides who gets protection. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>We could not defend how we spent the hours until we could see how we spent the hours.</p><p><strong>Nour Khalil</strong>, legal aid coordinator</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Hours are logged by case type, and the allocation is published. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Every hour logged against a case category</li><li>Allocation reviewed quarterly against demand</li><li>Waiting times published alongside the split</li><li>Cases that time out counted and reported</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="19422939-a884-494a-a2bc-7bb49eec89f3" data-align="center" alt="Legal aid hours and where they go"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Shorter waits for urgent cases</h4>
+        <p>Reallocation cut the wait for detention cases substantially.</p>
+        <h4>2. Honest capacity limits</h4>
+        <p>Published timing out made the shortfall arguable with funders.</p>
+        <h4>3. Referrals that fit</h4>
+        <p>Partners could see which categories had capacity before referring.</p>
+        <h3>What comes next</h3>
+        <p>The next report adds outcome by category, so hours can be weighed against what they achieve. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'How we decide which corridor or district receives the next tranche of legal aid capacity.'
+  field_featured_image:
+    -
+      entity: 19422939-a884-494a-a2bc-7bb49eec89f3
   field_tags:
-  - entity: 3917245a-e65c-48ed-a00f-f804f38522f1
+    -
+      entity: 3917245a-e65c-48ed-a00f-f804f38522f1

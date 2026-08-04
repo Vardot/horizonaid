@@ -192,6 +192,9 @@ config:
       disable: []
     canvas.component.sdc.vartheme_bs5_horizonaid.user:
       disable: []
+    pathauto.pattern.blog_content:
+      simpleConfigUpdate:
+        pattern: /resources/[node:title]
     views.view.blog:
       simpleConfigUpdate:
         display.all.display_options.exposed_form.options.submit_button: Apply Filters
@@ -199,6 +202,82 @@ config:
         display.default.display_options.exposed_form.options.submit_button: Apply Filters
         display.default.display_options.exposed_form.options.reset_button: true
         display.latest.display_options.defaults.style: false
+        display.latest_light:
+          id: latest_light
+          display_title: Latest light
+          display_plugin: block
+          position: 4
+          display_options:
+            title: Latest blog posts
+            pager:
+              type: some
+              options:
+                offset: 0
+                items_per_page: 3
+            sorts:
+              created:
+                id: created
+                table: node_field_data
+                field: created
+                relationship: none
+                group_type: group
+                admin_label: ''
+                entity_type: node
+                entity_field: created
+                plugin_id: date
+                order: DESC
+                expose:
+                  label: ''
+                  field_identifier: ''
+                exposed: false
+                granularity: second
+            style:
+              type: components_views_style
+              options:
+                uses_fields: false
+                component_id: vartheme_bs5_horizonaid:impressed-card-slider
+                rows_slot: cards
+                prop_mappings:
+                  heading_text: Latest News
+                  heading_level: 2
+                  background_color: bg-tertiary
+                  bg_edge2edge: 1
+                  link_1_label: Healthcare & Medicine
+                  link_1_url: /resources
+                  link_2_label: Sustenance & Growth
+                  link_2_url: /resources
+                  link_3_label: Universal Education
+                  link_3_url: /resources
+                  cta_label: Explore More
+                  cta_url: /resources
+            row:
+              type: entity:node
+              options:
+                relationship: none
+                view_mode: impressed_card_medium
+            defaults:
+              title: false
+              pager: false
+              style: false
+              row: false
+              sorts: false
+              header: false
+              footer: false
+            display_description: ''
+            header: []
+            footer: []
+            display_extenders:
+              metatag_display_extender:
+                metatags: []
+                tokenize: false
+          cache_metadata:
+            max-age: -1
+            contexts:
+            - languages:language_content
+            - languages:language_interface
+            - user.node_grants:view
+            - user.permissions
+            tags: []
         display.latest.display_options.style:
           type: components_views_style
           options:
@@ -208,7 +287,7 @@ config:
             prop_mappings:
               heading_text: Latest Updates
               heading_level: 2
-              background_color: bg-primary
+              background_color: bg-dark
               bg_edge2edge: true
               link_1_label: Healthcare & Medicine
               link_1_url: /resources
@@ -239,6 +318,144 @@ config:
       repointComponentTreeToTheme:
         theme: default
     canvas.content_template.node.blog.full:
+      setComponentTreeIfComponentsExist:
+        component_tree:
+          0f26dedc-d75e-4fc9-b942-726ad8431e86:
+            uuid: 0f26dedc-d75e-4fc9-b942-726ad8431e86
+            component_id: block.system_breadcrumb_block
+            component_version: 0d7e961dd03aa710
+            inputs:
+              label: Breadcrumbs
+              label_display: "0"
+          12f585e3-f476-48b1-a7d2-16614ec08489:
+            uuid: 12f585e3-f476-48b1-a7d2-16614ec08489
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 98b47f40fce531b1
+            inputs:
+              heading_text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:blog␝title␞␟value
+              level: 1
+          61ee420f-a3c5-47da-87d1-8821baf57d7b:
+            uuid: 61ee420f-a3c5-47da-87d1-8821baf57d7b
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 409081be7dd0a59b
+            inputs:
+              size: py-1
+          1a87765a-fb43-4623-b661-2c93b0a6d05d:
+            uuid: 1a87765a-fb43-4623-b661-2c93b0a6d05d
+            component_id: sdc.vartheme_bs5_horizonaid.date
+            component_version: 69cd1843b2f2a0e5
+            inputs:
+              date:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:blog␝created␞␟value
+                adapter: unix_to_date
+          774714fd-ddd4-410f-9047-134d0ba86823:
+            uuid: 774714fd-ddd4-410f-9047-134d0ba86823
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 409081be7dd0a59b
+            inputs:
+              size: py-2
+          02a93dcf-d3fa-4718-b7ef-5a019d0a66b9:
+            uuid: 02a93dcf-d3fa-4718-b7ef-5a019d0a66b9
+            component_id: sdc.vartheme_bs5_horizonaid.image
+            component_version: 5184771bfefa5a67
+            inputs:
+              media:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:blog␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+              target: self
+              ratio: ratio-16x9
+              width: w-100
+              rounded: rounded-3
+              loading: lazy
+          14cca4e1-08cd-455d-abfb-2f398e14a6a1:
+            uuid: 14cca4e1-08cd-455d-abfb-2f398e14a6a1
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 409081be7dd0a59b
+            inputs:
+              size: py-4
+          7dff0181-d5ea-417e-a49d-9f4a2faa29b6:
+            uuid: 7dff0181-d5ea-417e-a49d-9f4a2faa29b6
+            component_id: sdc.vartheme_bs5_horizonaid.share
+            component_version: f7aa983e0913e468
+            inputs:
+              heading: Share
+              display_title: true
+              alignment: end
+              orientation: vertical
+              native_share: false
+              placement: rail-end
+              url:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:blog␝menu_link␞␟entity␜␜entity:menu_link_content␝link␞␟title
+              share_title:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:blog␝title␞␟value
+          cf1edb93-6c5a-4233-ba1a-a6f7ca0558dc:
+            uuid: cf1edb93-6c5a-4233-ba1a-a6f7ca0558dc
+            component_id: sdc.vartheme_bs5_horizonaid.section
+            component_version: 4171719f53c41b9d
+            inputs:
+              bg_edge2edge: false
+              columns: 100
+              padding_inline_start: ps-5
+              padding_inline_end: pe-5
+              margin_inline_start: ms-5
+              margin_inline_end: me-5
+              radius: none
+              section_header: false
+              section_footer: false
+              aos_once: true
+          3cd84d95-0b0c-4fa1-bc29-a1a5a941f076:
+            parent_uuid: cf1edb93-6c5a-4233-ba1a-a6f7ca0558dc
+            slot: col_1
+            uuid: 3cd84d95-0b0c-4fa1-bc29-a1a5a941f076
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 409081be7dd0a59b
+            inputs:
+              size: py-4
+          eb3e968b-08ca-456a-853f-7a62ca1abee3:
+            parent_uuid: cf1edb93-6c5a-4233-ba1a-a6f7ca0558dc
+            slot: col_1
+            uuid: eb3e968b-08ca-456a-853f-7a62ca1abee3
+            component_id: sdc.vartheme_bs5_horizonaid.rich-text
+            component_version: 1f6fe433026fe38e
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:blog␝field_content␞␟processed
+              trim: false
+          7f1c2a80-5d31-4e07-9a11-c1d2e3f40001:
+            uuid: 7f1c2a80-5d31-4e07-9a11-c1d2e3f40001
+            component_id: sdc.vartheme_bs5_horizonaid.section
+            component_version: 9b679273be9319ad
+            inputs:
+              bg_edge2edge: false
+              container_type: none
+              background_color: none
+              text_color: auto
+              columns: 100
+              gutter: gx-5 gy-5
+              padding_block_start: pt-0
+              padding_block_end: pb-0
+              vertical_alignment: align-items-start
+              horizontal_alignment: text-start
+              section_header: false
+              section_footer: false
+              aos_once: false
+          7f1c2a80-5d31-4e07-9a11-c1d2e3f40002:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-c1d2e3f40001
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-c1d2e3f40002
+            component_id: block.views_block.blog-latest_light
+            component_version: bbf13c45f9c9e5f5
+            inputs:
+              label: ''
+              label_display: "0"
+              views_label: ''
+              exposed: []
       repointComponentTreeToTheme:
         theme: default
     canvas.content_template.node.blog.impressed_card_large:
@@ -799,7 +1016,7 @@ config:
             component_version: 0d7e961dd03aa710
             inputs:
               label: ''
-              label_display: '0'
+              label_display: "0"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30010:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30010
             component_id: sdc.vartheme_bs5_horizonaid.section
@@ -807,44 +1024,46 @@ config:
             inputs:
               bg_edge2edge: false
               container_type: container
-              background_color: bg-tertiary
+              background_color: none
               text_color: auto
-              columns: 67-33
-              gutter: gx-4 gy-4
-              padding_block_start: pt-5
-              padding_block_end: pb-5
-              margin_block_end: mb-5
-              vertical_alignment: align-items-center
-              horizontal_alignment: text-start
+              columns: 100
+              gutter: gx-5 gy-5
+              padding_block_start: pt-0
+              padding_block_end: pb-0
+              vertical_alignment: align-items-start
+              horizontal_alignment: text-center
               section_header: false
               section_footer: false
               aos_once: false
-          7f1c2a80-5d31-4e07-9a11-b0a1c2d30011:
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30016:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30010
             slot: col_1
-            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30011
-            component_id: sdc.vartheme_bs5_horizonaid.taxonomy
-            component_version: 3351b78763f50152
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
+            component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+            component_version: ecf7fdb0e8ac5d2e
             inputs:
-              label:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_program_type␞␟entity␜␜entity:taxonomy_term:program_type␝name␞␟value
-              url: ''
-              target: _self
-              size: taxonomy-sm
-              color: taxonomy-secondary
-          7f1c2a80-5d31-4e07-9a11-b0a1c2d30012:
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30010
-            slot: col_1
-            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30012
+              icon_alignment: center
+              card_border: false
+              background_color: bg-accent-subtle
+              padded: true
+              box_shadow: shadow-none
+              corner_style: rounded-4
+              equal_height: false
+              stretched_link: false
+              link_url: ''
+              link_target: default
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30017:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30017
             component_id: sdc.vartheme_bs5_horizonaid.spacer
             component_version: 80de1b3919d08f87
             inputs:
-              size: py-1
-          7f1c2a80-5d31-4e07-9a11-b0a1c2d30013:
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30010
-            slot: col_1
-            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30013
+              size: py-3
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30018:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30018
             component_id: sdc.vartheme_bs5_horizonaid.heading
             component_version: 0889e2ce906c3164
             inputs:
@@ -853,20 +1072,28 @@ config:
                 expression: ℹ︎␜entity:node:program␝title␞␟value
               level: 1
               text_size: h1
-          7f1c2a80-5d31-4e07-9a11-b0a1c2d30014:
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30010
-            slot: col_1
-            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30014
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30019:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30019
             component_id: sdc.vartheme_bs5_horizonaid.text
             component_version: c4ddb22de87220b3
             inputs:
               text:
                 sourceType: entity-field
                 expression: ℹ︎␜entity:node:program␝field_description␞␟value
-          7f1c2a80-5d31-4e07-9a11-b0a1c2d30015:
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30010
-            slot: col_2
-            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30015
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d3001a:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d3001a
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-3
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d3001b:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d3001b
             component_id: sdc.vartheme_bs5_horizonaid.image
             component_version: 20b07c548b4cf729
             inputs:
@@ -875,19 +1102,27 @@ config:
                 expression: ℹ︎␜entity:node:program␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
               link_url: ''
               target: self
-              ratio: ratio-4x3
+              ratio: ratio-16x9
               fit: object-fit-cover
-              align: me-auto
+              align: mx-auto
               width: w-100
               rounded: rounded-3
-              loading: lazy
+              loading: eager
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d3001c:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d3001c
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-3
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30020:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30020
             component_id: sdc.vartheme_bs5_horizonaid.section
             component_version: 9b679273be9319ad
             inputs:
               container_type: container
-              columns: 75-25
+              columns: 100
               gutter: gx-4 gy-4
               padding_block_start: pt-5
               padding_block_end: pb-5
@@ -910,62 +1145,663 @@ config:
               text:
                 sourceType: entity-field
                 expression: ℹ︎␜entity:node:program␝field_content␞␟processed
-          7f1c2a80-5d31-4e07-9a11-b0a1c2d30023:
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30020
-            slot: col_2
-            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30023
-            component_id: sdc.vartheme_bs5_horizonaid.share
-            component_version: 24d3cc5800d6bb4f
-            inputs:
-              heading: Share
-              display_title: true
-              alignment: start
-              orientation: vertical
-              mobile_visibility: all
-              native_share: false
-              placement: rail-end
-          7f1c2a80-5d31-4e07-9a11-b0a1c2d30030:
-            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30030
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30050:
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30050
             component_id: sdc.vartheme_bs5_horizonaid.section
             component_version: 9b679273be9319ad
             inputs:
+              bg_edge2edge: false
               container_type: container
-              columns: '100'
-              gutter: gx-4 gy-4
-              padding_block_start: pt-0
+              background_color: none
+              text_color: auto
+              columns: 40-60
+              gutter: gx-5 gy-5
+              padding_block_start: pt-5
               padding_block_end: pb-5
-          7f1c2a80-5d31-4e07-9a11-b0a1c2d30031:
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30030
+              vertical_alignment: align-items-center
+              horizontal_alignment: text-start
+              section_header: false
+              section_footer: false
+              aos_once: false
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30051:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30050
             slot: col_1
-            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30031
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
+            component_id: sdc.vartheme_bs5_horizonaid.card-text
+            component_version: e029fefa26d20f4f
+            inputs:
+              card_border: false
+              background_color: bg-secondary-subtle
+              padded: true
+              box_shadow: shadow-none
+              corner_style: rounded-4
+              equal_height: false
+              stretched_link: false
+              link_url: ''
+              link_target: default
+              icon_alignment: start
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30052:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30052
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-3
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30053:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30053
             component_id: sdc.vartheme_bs5_horizonaid.heading
             component_version: 0889e2ce906c3164
             inputs:
-              heading_text: More Programs
+              heading_text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_headline␞␟value
               level: 2
-          7f1c2a80-5d31-4e07-9a11-b0a1c2d30032:
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30030
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30054:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30054
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-2
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30055:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30055
+            component_id: sdc.vartheme_bs5_horizonaid.rich-text
+            component_version: 82cd1f087fd469f4
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_on_the_ground␞␟processed
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30056:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30056
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-3
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30057:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30050
+            slot: col_2
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30057
+            component_id: sdc.vartheme_bs5_horizonaid.image
+            component_version: 20b07c548b4cf729
+            inputs:
+              media:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_on_the_ground_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+              link_url: ''
+              target: self
+              ratio: ratio-16x9
+              fit: object-fit-cover
+              align: me-auto
+              width: w-100
+              rounded: rounded-3
+              loading: lazy
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30060:
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
+            component_id: sdc.vartheme_bs5_horizonaid.section
+            component_version: 9b679273be9319ad
+            inputs:
+              bg_edge2edge: false
+              container_type: container
+              background_color: bg-tertiary
+              text_color: auto
+              columns: 33-33-33
+              gutter: gx-5 gy-5
+              padding_block_start: pt-5
+              padding_block_end: pb-5
+              radius: rounded-4
+              vertical_alignment: align-items-start
+              horizontal_alignment: text-center
+              section_header: true
+              section_footer: false
+              aos_once: false
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30061:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
+            slot: header_slot
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30061
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 0889e2ce906c3164
+            inputs:
+              heading_text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_figures_heading␞␟value
+              level: 2
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30062:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
+            slot: header_slot
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30062
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_figures_description␞␟value
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30070:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
             slot: col_1
-            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30032
-            component_id: block.views_block.programs-related
-            component_version: 2cab3aa63cfa8107
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30070
+            component_id: sdc.vartheme_bs5_horizonaid.figure
+            component_version: 0a31ebc5be5d97a1
+            inputs:
+              number:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_figure_number␞0␟value
+              description:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_figure_description␞0␟value
+              background_color: none
+              align: text-center
+              number_size: display-3
+              number_color: text-secondary
+              description_size: fs-6
+              description_color: text-body
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30071:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
+            slot: col_2
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30071
+            component_id: sdc.vartheme_bs5_horizonaid.figure
+            component_version: 0a31ebc5be5d97a1
+            inputs:
+              number:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_figure_number␞1␟value
+              description:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_figure_description␞1␟value
+              background_color: none
+              align: text-center
+              number_size: display-3
+              number_color: text-secondary
+              description_size: fs-6
+              description_color: text-body
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30072:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
+            slot: col_3
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30072
+            component_id: sdc.vartheme_bs5_horizonaid.figure
+            component_version: 0a31ebc5be5d97a1
+            inputs:
+              number:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_figure_number␞2␟value
+              description:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_figure_description␞2␟value
+              background_color: none
+              align: text-center
+              number_size: display-3
+              number_color: text-secondary
+              description_size: fs-6
+              description_color: text-body
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30080:
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30080
+            component_id: sdc.vartheme_bs5_horizonaid.section
+            component_version: 9b679273be9319ad
+            inputs:
+              bg_edge2edge: false
+              container_type: container
+              background_color: none
+              text_color: auto
+              columns: 33-67
+              gutter: gx-5 gy-5
+              padding_block_start: pt-5
+              padding_block_end: pb-5
+              vertical_alignment: align-items-start
+              horizontal_alignment: text-start
+              section_header: false
+              section_footer: false
+              aos_once: false
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30081:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30080
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30081
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 0889e2ce906c3164
+            inputs:
+              heading_text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_delivery_heading␞␟value
+              level: 2
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30082:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30080
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30082
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-2
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30083:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30080
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30083
+            component_id: sdc.vartheme_bs5_horizonaid.rich-text
+            component_version: 82cd1f087fd469f4
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_our_role␞␟processed
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30084:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30080
+            slot: col_2
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
+            component_id: sdc.vartheme_bs5_horizonaid.section
+            component_version: 9b679273be9319ad
+            inputs:
+              bg_edge2edge: false
+              container_type: none
+              background_color: none
+              text_color: auto
+              columns: 50-50
+              gutter: gx-4 gy-4
+              padding_block_start: pt-0
+              padding_block_end: pb-0
+              vertical_alignment: align-items-stretch
+              horizontal_alignment: text-start
+              section_header: false
+              section_footer: false
+              aos_once: false
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30090:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
+            component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+            component_version: ecf7fdb0e8ac5d2e
+            inputs:
+              icon_alignment: start
+              card_border: false
+              background_color: bg-accent-subtle
+              padded: true
+              box_shadow: shadow-none
+              corner_style: rounded-4
+              equal_height: false
+              stretched_link: false
+              link_url: ''
+              link_target: default
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300a0:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a0
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 0889e2ce906c3164
+            inputs:
+              heading_text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_delivery_title␞0␟value
+              level: 3
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300b0:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b0
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_delivery_text␞0␟value
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30091:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
+            slot: col_2
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
+            component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+            component_version: ecf7fdb0e8ac5d2e
+            inputs:
+              icon_alignment: start
+              card_border: false
+              background_color: bg-primary-subtle
+              padded: true
+              box_shadow: shadow-none
+              corner_style: rounded-4
+              equal_height: false
+              stretched_link: false
+              link_url: ''
+              link_target: default
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300a1:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a1
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 0889e2ce906c3164
+            inputs:
+              heading_text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_delivery_title␞1␟value
+              level: 3
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300b1:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b1
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_delivery_text␞1␟value
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30092:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
+            component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+            component_version: ecf7fdb0e8ac5d2e
+            inputs:
+              icon_alignment: start
+              card_border: false
+              background_color: bg-primary-subtle
+              padded: true
+              box_shadow: shadow-none
+              corner_style: rounded-4
+              equal_height: false
+              stretched_link: false
+              link_url: ''
+              link_target: default
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300a2:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a2
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 0889e2ce906c3164
+            inputs:
+              heading_text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_delivery_title␞2␟value
+              level: 3
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300b2:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b2
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_delivery_text␞2␟value
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30093:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
+            slot: col_2
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
+            component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
+            component_version: ecf7fdb0e8ac5d2e
+            inputs:
+              icon_alignment: start
+              card_border: false
+              background_color: bg-accent-subtle
+              padded: true
+              box_shadow: shadow-none
+              corner_style: rounded-4
+              equal_height: false
+              stretched_link: false
+              link_url: ''
+              link_target: default
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300a3:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a3
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 0889e2ce906c3164
+            inputs:
+              heading_text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_delivery_title␞3␟value
+              level: 3
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300b3:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b3
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_delivery_text␞3␟value
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300d0:
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d0
+            component_id: sdc.vartheme_bs5_horizonaid.section
+            component_version: 9b679273be9319ad
+            inputs:
+              bg_edge2edge: false
+              container_type: container
+              background_color: none
+              text_color: auto
+              columns: 100
+              gutter: gx-5 gy-5
+              padding_block_start: pt-5
+              padding_block_end: pb-5
+              vertical_alignment: align-items-start
+              horizontal_alignment: text-start
+              section_header: false
+              section_footer: false
+              aos_once: false
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d0
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
+            component_id: sdc.vartheme_bs5_horizonaid.map
+            component_version: 15729bf098abe7a0
+            inputs:
+              map_height: lg
+              corner_style: rounded-4
+              background_color: bg-tertiary
+              box_shadow: shadow-none
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300d2:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d2
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 0889e2ce906c3164
+            inputs:
+              heading_text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_map_heading␞␟value
+              level: 2
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300d3:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d3
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-2
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300d4:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d4
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_map_text␞␟value
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300e0:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
+            slot: countries
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300e0
+            component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+            component_version: e8af5ab2d49aae2e
+            inputs:
+              country_code:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞0␟entity␜␜entity:node:country␝field_country_code␞␟value
+              heading:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞0␟entity␜␜entity:node:country␝title␞␟value
+              description:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞0␟entity␜␜entity:node:country␝field_description␞␟value
+              stat_1_value: ''
+              stat_1_label: ''
+              stat_2_value: ''
+              stat_2_label: ''
+              link_url:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞0␟entity␜␜entity:node:country␝path␞␟alias
+              link_text: Learn More
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300e1:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
+            slot: countries
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300e1
+            component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+            component_version: e8af5ab2d49aae2e
+            inputs:
+              country_code:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞1␟entity␜␜entity:node:country␝field_country_code␞␟value
+              heading:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞1␟entity␜␜entity:node:country␝title␞␟value
+              description:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞1␟entity␜␜entity:node:country␝field_description␞␟value
+              stat_1_value: ''
+              stat_1_label: ''
+              stat_2_value: ''
+              stat_2_label: ''
+              link_url:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞1␟entity␜␜entity:node:country␝path␞␟alias
+              link_text: Learn More
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300e2:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
+            slot: countries
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300e2
+            component_id: sdc.vartheme_bs5_horizonaid.map-info-card
+            component_version: e8af5ab2d49aae2e
+            inputs:
+              country_code:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞2␟entity␜␜entity:node:country␝field_country_code␞␟value
+              heading:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞2␟entity␜␜entity:node:country␝title␞␟value
+              description:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞2␟entity␜␜entity:node:country␝field_description␞␟value
+              stat_1_value: ''
+              stat_1_label: ''
+              stat_2_value: ''
+              stat_2_label: ''
+              link_url:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_countries␞2␟entity␜␜entity:node:country␝path␞␟alias
+              link_text: Learn More
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30040:
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30040
+            component_id: sdc.vartheme_bs5_horizonaid.section
+            component_version: 9b679273be9319ad
+            inputs:
+              bg_edge2edge: false
+              container_type: none
+              background_color: none
+              text_color: auto
+              columns: 100
+              gutter: gx-5 gy-5
+              padding_block_start: pt-0
+              padding_block_end: pb-0
+              vertical_alignment: align-items-start
+              horizontal_alignment: text-start
+              section_header: false
+              section_footer: false
+              aos_once: false
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d30044:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30040
+            slot: col_1
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30044
+            component_id: block.views_block.blog-latest_light
+            component_version: bbf13c45f9c9e5f5
             inputs:
               label: ''
-              label_display: '0'
+              label_display: "0"
               views_label: ''
               exposed: []
-          7f1c2a80-5d31-4e07-9a11-b0a1c2d30033:
-            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30030
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300c0:
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c0
+            component_id: sdc.vartheme_bs5_horizonaid.section
+            component_version: 9b679273be9319ad
+            inputs:
+              bg_edge2edge: false
+              container_type: container
+              background_color: none
+              text_color: auto
+              columns: 100
+              gutter: gx-5 gy-5
+              padding_block_start: pt-5
+              padding_block_end: pb-5
+              vertical_alignment: align-items-start
+              horizontal_alignment: text-start
+              section_header: false
+              section_footer: false
+              aos_once: false
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c0
             slot: col_1
-            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30033
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
+            component_id: sdc.vartheme_bs5_horizonaid.card-text
+            component_version: e029fefa26d20f4f
+            inputs:
+              card_border: false
+              background_color: bg-primary-subtle
+              padded: true
+              box_shadow: shadow-none
+              corner_style: rounded-4
+              equal_height: false
+              stretched_link: false
+              link_url: ''
+              link_target: default
+              icon_alignment: start
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300c2:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c2
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 0889e2ce906c3164
+            inputs:
+              heading_text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_cta_heading␞␟value
+              level: 2
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300c3:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c3
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-2
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300c4:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c4
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: entity-field
+                expression: ℹ︎␜entity:node:program␝field_cta_text␞␟value
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300c5:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c5
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: 80de1b3919d08f87
+            inputs:
+              size: py-3
+          7f1c2a80-5d31-4e07-9a11-b0a1c2d300c6:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
+            slot: content
+            uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c6
             component_id: sdc.vartheme_bs5_horizonaid.button
             component_version: 64089b7681474537
             inputs:
               variant: btn-primary
               outline: false
               size: btn-md
-              label: See All Programs
-              href: /programs
+              label: Donate Today
+              href: /donate
               target: self
               disabled: false
               icon: none
@@ -1274,4 +2110,4 @@ config:
               radius: rounded-pill
 extra:
   recipe_installer_kit:
-    finish_url: /admin/dashboard/welcome
+    finish_url: 'admin/dashboard/welcome'

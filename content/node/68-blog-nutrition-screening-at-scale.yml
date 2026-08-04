@@ -5,42 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    25b155c0-57b9-4c41-a4d5-b6dd9482c0d1: media
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
+    25b155c0-57b9-4c41-a4d5-b6dd9482c0d1: media
     6100a75e-6da4-4f26-addd-a256e68df3ae: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Nutrition screening at scale
+    -
+      value: 'Nutrition screening at scale'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/nutrition-screening-at-scale
-    langcode: en
-  field_description:
-  - value: Twenty-two thousand children were screened for malnutrition across three
-      governorates.
-  field_content:
-  - value: <p>Screening at this scale depends on community health workers who live
-      in the communities they serve.</p><p>Referral pathways were agreed with two
-      regional hospitals before the programme began.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 25b155c0-57b9-4c41-a4d5-b6dd9482c0d1
+    -
+      alias: /resources/nutrition-screening-scale
+      langcode: en
   field_blog_categories:
-  - entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+    -
+      entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>MOGADISHU</strong> — Twenty-two thousand children were screened for malnutrition across three governorates. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Malnutrition found late is a hospital admission; found early it is a food ration. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>The measurement takes a minute. Getting the minute to happen near the family is the whole programme.</p><p><strong>Halima Nur</strong>, nutrition officer</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Screening is pushed out to community volunteers so it happens near where families live. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Volunteers trained on mid-upper-arm measurement and referral</li><li>Screening held on the same day each month at fixed points</li><li>Supplementary feeding stocked before screening begins</li><li>Severe cases moved the same day, not booked for later</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="25b155c0-57b9-4c41-a4d5-b6dd9482c0d1" data-align="center" alt="Nutrition screening at scale"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Fewer inpatient admissions</h4>
+        <p>More cases were caught at moderate stage, which is treated at home.</p>
+        <h4>2. Volunteers who stay</h4>
+        <p>Paid transport and clear referral kept the volunteer network intact between rounds.</p>
+        <h4>3. Data that guides stock</h4>
+        <p>Monthly figures made supplementary feeding orders match actual need.</p>
+        <h3>What comes next</h3>
+        <p>The next round extends screening to two further districts and adds growth monitoring for under-twos. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Twenty-two thousand children were screened for malnutrition across three governorates.'
+  field_featured_image:
+    -
+      entity: 25b155c0-57b9-4c41-a4d5-b6dd9482c0d1
   field_tags:
-  - entity: 6100a75e-6da4-4f26-addd-a256e68df3ae
+    -
+      entity: 6100a75e-6da4-4f26-addd-a256e68df3ae

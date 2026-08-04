@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cta_heading
+    - node.type.program
+id: node.program.field_cta_heading
+field_name: field_cta_heading
+entity_type: node
+bundle: program
+label: 'Call to action heading'
+description: 'The closing call to action on the programme page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

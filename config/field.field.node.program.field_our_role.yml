@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_our_role
+    - node.type.program
+  module:
+    - text
+id: node.program.field_our_role
+field_name: field_our_role
+entity_type: node
+bundle: program
+label: 'Our role'
+description: 'How the programme is delivered.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

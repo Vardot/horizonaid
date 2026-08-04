@@ -5,47 +5,124 @@ _meta:
   bundle: program
   default_langcode: en
   depends:
-    e590a1b0-41c2-42ad-8659-c9f38b586c88: media
-    fe8e2180-491d-4717-a0ef-feeb49399391: taxonomy_term
     aceb71d5-1f56-4882-a8ed-239253b0af3d: node
     d1a2b3c4-2222-4a2b-ab02-2c3d4e5f6a02: node
     d1a2b3c4-4444-4a2b-ab04-2c3d4e5f6a04: node
+    e590a1b0-41c2-42ad-8659-c9f38b586c88: media
+    fe8e2180-491d-4717-a0ef-feeb49399391: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Program
+    -
+      value: 'Created new Program'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Women
+    -
+      value: Women
   promote:
-  - value: false
+    -
+      value: false
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
+    -
+      value: true
   path:
-  - alias: /programs/women
-    langcode: en
-  field_description:
-  - value: Providing legal defense, grants, and leadership training to help women
-      break poverty cycles.
+    -
+      alias: /programs/women
+      langcode: en
   field_content:
-  - value: <p>We combine legal defence, small grants and leadership training so women
-      can claim their rights, start a livelihood and take part in the decisions that
-      affect their communities.</p><p>Our legal teams take on documentation, inheritance
-      and protection cases that would otherwise never reach a court.</p>
-    format: content_format
-  field_featured_image:
-  - entity: e590a1b0-41c2-42ad-8659-c9f38b586c88
-  field_program_type:
-  - entity: fe8e2180-491d-4717-a0ef-feeb49399391
+    -
+      value: '<p>We combine legal defence, small grants and leadership training so women can claim their rights, start a livelihood and take part in the decisions that affect their communities.</p><p>Our legal teams take on documentation, inheritance and protection cases that would otherwise never reach a court.</p>'
+      format: content_format
   field_countries:
-  - entity: aceb71d5-1f56-4882-a8ed-239253b0af3d
-  - entity: d1a2b3c4-2222-4a2b-ab02-2c3d4e5f6a02
-  - entity: d1a2b3c4-4444-4a2b-ab04-2c3d4e5f6a04
+    -
+      entity: aceb71d5-1f56-4882-a8ed-239253b0af3d
+    -
+      entity: d1a2b3c4-2222-4a2b-ab02-2c3d4e5f6a02
+    -
+      entity: d1a2b3c4-4444-4a2b-ab04-2c3d4e5f6a04
+  field_cta_heading:
+    -
+      value: 'Fund a Case, a Grant, a Seat at the Table'
+  field_cta_text:
+    -
+      value: 'Your support pays for legal defence, business grants and leadership training led by women themselves.'
+  field_delivery_heading:
+    -
+      value: 'How We Deliver for Women'
+  field_delivery_text:
+    -
+      value: 'Representation in court for women whose rights are contested or ignored.'
+    -
+      value: 'Small capital paid directly to women-led enterprises, with no intermediary.'
+    -
+      value: 'Preparing women to hold the seats where community decisions are made.'
+    -
+      value: 'Funding women-led organisations so the work outlasts our involvement.'
+  field_delivery_title:
+    -
+      value: 'Legal Defence'
+    -
+      value: 'Grants That Start Businesses'
+    -
+      value: 'Leadership Training'
+    -
+      value: 'Local Ownership'
+  field_description:
+    -
+      value: 'Providing legal defense, grants, and leadership training to help women break poverty cycles.'
+  field_featured_image:
+    -
+      entity: e590a1b0-41c2-42ad-8659-c9f38b586c88
+  field_figures_description:
+    -
+      value: 'Our Women programme works through local partners in 11 countries, combining legal aid, small grants and leadership training.'
+  field_figures_heading:
+    -
+      value: 'Women’s Rights by the Numbers'
+  field_figure_description:
+    -
+      value: 'Women supported through legal defence'
+    -
+      value: 'Grants awarded to women-led businesses'
+    -
+      value: 'Community leaders trained each year'
+  field_figure_number:
+    -
+      value: 3.2k
+    -
+      value: '640'
+    -
+      value: '92'
+  field_headline:
+    -
+      value: 'Rights That Hold After We Leave'
+  field_map_heading:
+    -
+      value: 'Where This Work Runs'
+  field_map_text:
+    -
+      value: 'Our Women programme works through local partners across the countries where legal protection is thinnest and women-led organisations are strongest.'
+  field_on_the_ground:
+    -
+      value: 'We pair legal defence with grants and leadership training, so women win cases, run businesses and hold the seats where decisions are made.'
+      format: content_format
+  field_on_the_ground_image:
+    -
+      entity: e590a1b0-41c2-42ad-8659-c9f38b586c88
+  field_our_role:
+    -
+      value: 'We fund women-led organisations, defend legal rights in court, and train the next round of community leaders.'
+      format: content_format
+  field_program_type:
+    -
+      entity: fe8e2180-491d-4717-a0ef-feeb49399391

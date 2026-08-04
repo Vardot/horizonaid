@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headline
+    - node.type.program
+id: node.program.field_headline
+field_name: field_headline
+entity_type: node
+bundle: program
+label: Headline
+description: 'A short headline for the programme feature block.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

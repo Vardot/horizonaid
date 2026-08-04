@@ -5,42 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
+    c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Seed banks that outlast the programme
+    -
+      value: 'Seed banks that outlast the programme'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/seed-banks-that-outlast-the-programme
-    langcode: en
-  field_description:
-  - value: How repayment in seed rather than cash keeps a cooperative viable after
-      external funding ends.
-  field_content:
-  - value: <p>A seed bank turns one season of support into a standing asset the cooperative
-      owns.</p><p>We measure success by what still runs two years after our team has
-      gone.</p>
-    format: content_format
-  field_featured_image:
-  - entity: c749d4bc-2a5e-47e1-a3ed-ce85781612b9
+    -
+      alias: /resources/seed-banks-outlast-programme
+      langcode: en
   field_blog_categories:
-  - entity: d762c0cc-2720-4035-a262-0118d74e67b2
+    -
+      entity: d762c0cc-2720-4035-a262-0118d74e67b2
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>GEDAREF</strong> — How repayment in seed rather than cash keeps a cooperative viable after external funding ends. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Seed distributed as aid disappears in one season; seed lent against a harvest does not. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>The bank does not belong to us. We lend it, we get it back, and next year it belongs to the village down the road.</p><p><strong>Yusuf Adam</strong>, cooperative chair</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Cooperatives borrow from a seed bank and repay in kind after harvest, stocking the next community's bank. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Varieties chosen with farmers, matched to the local rainfall pattern</li><li>Repayment set in seed, not cash, so a bad market does not break the loan</li><li>Storage built to a design a cooperative can repair with local materials</li><li>Committee bookkeeping taught alongside the agronomy</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="c749d4bc-2a5e-47e1-a3ed-ce85781612b9" data-align="center" alt="Seed banks that outlast the programme"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Independence from procurement</h4>
+        <p>Cooperatives running a full cycle no longer need a purchase order to plant, which removes the single longest delay in the season.</p>
+        <h4>2. Varieties that keep improving</h4>
+        <p>Farmers return the seed that performed, so each cycle concentrates what actually works on that soil.</p>
+        <h4>3. A model that travels</h4>
+        <p>Three neighbouring villages built their own banks after visiting, with no funding from us at all.</p>
+        <h3>What comes next</h3>
+        <p>The coming phase hands the audit to a federation of cooperatives and reduces our role to the initial stock. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'How repayment in seed rather than cash keeps a cooperative viable after external funding ends.'
+  field_featured_image:
+    -
+      entity: c749d4bc-2a5e-47e1-a3ed-ce85781612b9
   field_tags:
-  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3
+    -
+      entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

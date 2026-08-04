@@ -5,41 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    fbca9adb-bf14-44fb-a1a3-c6f02b725a23: media
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
+    fbca9adb-bf14-44fb-a1a3-c6f02b725a23: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Water trucking to borehole rehabilitation
+    -
+      value: 'Water trucking to borehole rehabilitation'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/water-trucking-to-borehole-rehabilitation
-    langcode: en
-  field_description:
-  - value: Moving from emergency water delivery to permanent infrastructure in drought-affected
-      districts.
-  field_content:
-  - value: <p>Emergency trucking buys time; a rehabilitated borehole changes a district
-      permanently.</p><p>Sixty-two boreholes were returned to service this year.</p>
-    format: content_format
-  field_featured_image:
-  - entity: fbca9adb-bf14-44fb-a1a3-c6f02b725a23
+    -
+      alias: /resources/water-trucking-borehole-rehabilitation
+      langcode: en
   field_blog_categories:
-  - entity: d762c0cc-2720-4035-a262-0118d74e67b2
+    -
+      entity: d762c0cc-2720-4035-a262-0118d74e67b2
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>MAI AINI</strong> — Moving from emergency water delivery to permanent infrastructure in drought-affected districts. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Trucking water is fast, expensive and endless; a rehabilitated borehole is slow, cheap and permanent. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>Trucking buys time. If you are not spending that time drilling, you are just buying it again next month.</p><p><strong>Rahel Tesfay</strong>, water engineer</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Every trucked litre is treated as a countdown to the borehole that replaces it. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Trucking contracted month to month, never annually, so it can end quickly</li><li>Boreholes surveyed while trucking runs, not after it stops</li><li>Pumps specified for parts available in the nearest market town</li><li>A water committee trained and paid before the handover, not after</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="fbca9adb-bf14-44fb-a1a3-c6f02b725a23" data-align="center" alt="Water trucking to borehole rehabilitation"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Cost that falls to nothing</h4>
+        <p>A rehabilitated borehole costs a fraction of a year of trucking, and the saving compounds every month it runs.</p>
+        <h4>2. Water that survives access loss</h4>
+        <p>When a road closed for six weeks, the settlements on boreholes were unaffected.</p>
+        <h4>3. Committees with a real budget</h4>
+        <p>Tariffs set by the committee cover parts and a caretaker, which is what keeps the pump turning.</p>
+        <h3>What comes next</h3>
+        <p>The next stage retires trucking at four more sites and moves the saved budget into spare-part stockpiles. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Moving from emergency water delivery to permanent infrastructure in drought-affected districts.'
+  field_featured_image:
+    -
+      entity: fbca9adb-bf14-44fb-a1a3-c6f02b725a23
   field_tags:
-  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3
+    -
+      entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

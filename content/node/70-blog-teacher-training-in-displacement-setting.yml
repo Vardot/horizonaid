@@ -5,41 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    14c0a2d9-36f9-446e-a974-aa93b5493192: media
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
+    14c0a2d9-36f9-446e-a974-aa93b5493192: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Teacher training in displacement settings
+    -
+      value: 'Teacher training in displacement settings'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/teacher-training-in-displacement-settings
-    langcode: en
-  field_description:
-  - value: A second cohort of local teachers completed training designed for classrooms
-      that move.
-  field_content:
-  - value: <p>Training local teachers means the classroom survives our departure.</p><p>The
-      curriculum covers trauma-aware teaching and multi-grade classes.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 14c0a2d9-36f9-446e-a974-aa93b5493192
+    -
+      alias: /resources/teacher-training-displacement-settings
+      langcode: en
   field_blog_categories:
-  - entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+    -
+      entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>COX'S BAZAR</strong> — A second cohort of local teachers completed training designed for classrooms that move. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Teaching in displacement is a different job, and teachers are rarely trained for it. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>Nobody trained me for sixty children of five different ages who have all lost something. So we trained for that.</p><p><strong>Rehana Begum</strong>, teacher trainer</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Training covers the classroom conditions teachers actually face, not the ones the curriculum assumes. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Training delivered on site, in the classrooms in question</li><li>Large mixed-age groups treated as the norm, not the exception</li><li>Psychosocial first aid included as core, not an add-on</li><li>Mentoring continued after the training week</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="14c0a2d9-36f9-446e-a974-aa93b5493192" data-align="center" alt="Teacher training in displacement settings"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Teachers who stay in post</h4>
+        <p>Mentored teachers were far more likely to still be teaching a year later.</p>
+        <h4>2. Calmer classrooms</h4>
+        <p>Psychosocial techniques reduced the disruption that ends lessons early.</p>
+        <h4>3. Training that spreads</h4>
+        <p>Mentored teachers began running sessions for new arrivals themselves.</p>
+        <h3>What comes next</h3>
+        <p>The next cohort trains mentors rather than teachers, so the programme grows without us. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'A second cohort of local teachers completed training designed for classrooms that move.'
+  field_featured_image:
+    -
+      entity: 14c0a2d9-36f9-446e-a974-aa93b5493192
   field_tags:
-  - entity: 3917245a-e65c-48ed-a00f-f804f38522f1
+    -
+      entity: 3917245a-e65c-48ed-a00f-f804f38522f1

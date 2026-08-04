@@ -5,41 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    7fd1d440-8109-40c6-8f18-a57b015ac54e: media
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
+    7fd1d440-8109-40c6-8f18-a57b015ac54e: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Irrigation shared between cooperatives
+    -
+      value: 'Irrigation shared between cooperatives'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/irrigation-shared-between-cooperatives
-    langcode: en
-  field_description:
-  - value: A shared pump serving four cooperatives cut water costs and ended a long
-      dispute.
-  field_content:
-  - value: <p>Shared infrastructure only works when the maintenance agreement comes
-      first.</p><p>The cooperatives now fund servicing from a joint reserve.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 7fd1d440-8109-40c6-8f18-a57b015ac54e
+    -
+      alias: /resources/irrigation-shared-between-cooperatives
+      langcode: en
   field_blog_categories:
-  - entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+    -
+      entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>KASSALA</strong> — A shared pump serving four cooperatives cut water costs and ended a long dispute. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Irrigation built for one farm starves the next; irrigation built for a valley does not. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>The water was never the hard part. Agreeing the order of turns was the hard part, and we did it first.</p><p><strong>Fatima Ibrahim</strong>, scheme committee secretary</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>One scheme, shared by rota, maintained by the cooperative that depends on it. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Rota agreed in writing before the first channel was dug</li><li>Head-works sized for the whole valley, not the nearest plot</li><li>Maintenance days scheduled, with attendance recorded</li><li>Disputes settled by the committee, not the funder</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="7fd1d440-8109-40c6-8f18-a57b015ac54e" data-align="center" alt="Irrigation shared between cooperatives"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Two harvests instead of one</h4>
+        <p>Reliable turns let farmers plant a second season they previously could not risk.</p>
+        <h4>2. Less conflict over water</h4>
+        <p>A written rota gives the committee something to point at, which ends most disputes before they start.</p>
+        <h4>3. Maintenance that happens</h4>
+        <p>Because every member has a turn to lose, the channels get cleared without anyone chasing them.</p>
+        <h3>What comes next</h3>
+        <p>The next phase links the scheme to a second valley and hands the rota entirely to the joint committee. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'A shared pump serving four cooperatives cut water costs and ended a long dispute.'
+  field_featured_image:
+    -
+      entity: 7fd1d440-8109-40c6-8f18-a57b015ac54e
   field_tags:
-  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3
+    -
+      entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

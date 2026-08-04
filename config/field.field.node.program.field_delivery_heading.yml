@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_delivery_heading
+    - node.type.program
+id: node.program.field_delivery_heading
+field_name: field_delivery_heading
+entity_type: node
+bundle: program
+label: 'Delivery heading'
+description: 'Heading for that block on the programme page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

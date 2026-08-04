@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_figures_description
+    - node.type.program
+id: node.program.field_figures_description
+field_name: field_figures_description
+entity_type: node
+bundle: program
+label: 'Figures description'
+description: 'The lead-in above the programme figures.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

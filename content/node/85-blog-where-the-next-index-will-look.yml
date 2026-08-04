@@ -28,7 +28,7 @@ default:
   moderation_state:
   - value: published
   path:
-  - alias: /blog/where-the-next-index-will-look
+  - alias: /resources/where-the-next-index-will-look
     langcode: en
   field_description:
   - value: The countries and indicators being added to the next edition of the human

@@ -5,41 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    ee0c4672-3672-423e-87f3-10aa42804ca7: media
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
+    ee0c4672-3672-423e-87f3-10aa42804ca7: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Community-led reconstruction
+    -
+      value: 'Community-led reconstruction'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/community-led-reconstruction
-    langcode: en
-  field_description:
-  - value: Households chose and supervised their own repairs in a pilot across two
-      districts.
-  field_content:
-  - value: <p>People rebuild better when they hold the budget.</p><p>Costs came in
-      lower than contractor-led equivalents.</p>
-    format: content_format
-  field_featured_image:
-  - entity: ee0c4672-3672-423e-87f3-10aa42804ca7
+    -
+      alias: /resources/community-led-reconstruction
+      langcode: en
   field_blog_categories:
-  - entity: d762c0cc-2720-4035-a262-0118d74e67b2
+    -
+      entity: d762c0cc-2720-4035-a262-0118d74e67b2
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>SANA'A</strong> — Households chose and supervised their own repairs in a pilot across two districts. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Rebuilt without the community, a settlement is repaired once and never maintained. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>It is their house. We check the structure. They decide everything else.</p><p><strong>Ahmed Saleh</strong>, shelter engineer</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Households choose the design, hold the budget, and hire the labour. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Design chosen by the household from technically approved options</li><li>Budget released in stages against completed work</li><li>Local labour hired directly by the household</li><li>Technical supervision offered, not imposed</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="ee0c4672-3672-423e-87f3-10aa42804ca7" data-align="center" alt="Community-led reconstruction"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Repairs that continue</h4>
+        <p>Households that managed the build carried on maintaining it afterwards.</p>
+        <h4>2. Money staying local</h4>
+        <p>Direct hiring kept the labour budget inside the community.</p>
+        <h4>3. Fewer disputes</h4>
+        <p>Owner-led decisions removed most of the conflict that contractor-led rebuilding creates.</p>
+        <h3>What comes next</h3>
+        <p>The next phase moves technical supervision to a local engineering firm under community contract. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Households chose and supervised their own repairs in a pilot across two districts.'
+  field_featured_image:
+    -
+      entity: ee0c4672-3672-423e-87f3-10aa42804ca7
   field_tags:
-  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3
+    -
+      entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

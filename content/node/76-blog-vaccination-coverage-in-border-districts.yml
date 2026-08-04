@@ -5,41 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    48dc41a6-be05-468a-b5ce-0b78bff6358a: media
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
+    48dc41a6-be05-468a-b5ce-0b78bff6358a: media
     6100a75e-6da4-4f26-addd-a256e68df3ae: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Vaccination coverage in border districts
+    -
+      value: 'Vaccination coverage in border districts'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/vaccination-coverage-in-border-districts
-    langcode: en
-  field_description:
-  - value: Fifteen thousand children were vaccinated in districts where routine services
-      had stopped.
-  field_content:
-  - value: <p>Coverage in border districts had fallen below the level that prevents
-      outbreaks.</p><p>Cold chain was the binding constraint, not willingness.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 48dc41a6-be05-468a-b5ce-0b78bff6358a
+    -
+      alias: /resources/vaccination-coverage-border-districts
+      langcode: en
   field_blog_categories:
-  - entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+    -
+      entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>METEMA</strong> — Fifteen thousand children were vaccinated in districts where routine services had stopped. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Vaccination coverage falls off exactly where districts meet and neither owns the map. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>Two districts each reporting ninety per cent can still leave the middle uncovered. The map has to be one map.</p><p><strong>Dr Tigist Alemu</strong>, immunisation officer</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Border districts are treated as one catchment with one microplan. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>A single microplan covering both sides of the district line</li><li>Cold chain checked end to end before each round</li><li>Mobile teams for settlements no fixed post reaches</li><li>Coverage reported against the joint catchment, not each district</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="48dc41a6-be05-468a-b5ce-0b78bff6358a" data-align="center" alt="Vaccination coverage in border districts"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Gaps that became visible</h4>
+        <p>Joint reporting exposed the under-covered strip both districts had been counting as the other's.</p>
+        <h4>2. Fewer missed rounds</h4>
+        <p>Verified cold chain removed the doses lost between the store and the post.</p>
+        <h4>3. Mobile teams reaching last</h4>
+        <p>Settlements previously listed as unreachable were covered in the same round.</p>
+        <h3>What comes next</h3>
+        <p>The next round extends the joint microplan to two further district pairs along the corridor. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Fifteen thousand children were vaccinated in districts where routine services had stopped.'
+  field_featured_image:
+    -
+      entity: 48dc41a6-be05-468a-b5ce-0b78bff6358a
   field_tags:
-  - entity: 6100a75e-6da4-4f26-addd-a256e68df3ae
+    -
+      entity: 6100a75e-6da4-4f26-addd-a256e68df3ae

@@ -5,48 +5,125 @@ _meta:
   bundle: program
   default_langcode: en
   depends:
-    20e27874-e572-4ad3-89a9-42fa60d0a69c: media
-    9598f221-b5f1-43f6-aa8a-b342193720f0: taxonomy_term
     d1a2b3c4-1111-4a2b-ab01-2c3d4e5f6a01: node
     84e59dbf-1e4f-4792-a622-e81893df45d4: node
     d1a2b3c4-3333-4a2b-ab03-2c3d4e5f6a03: node
+    20e27874-e572-4ad3-89a9-42fa60d0a69c: media
+    bdff596c-46c9-4a01-bf78-f568ccc12755: media
+    9598f221-b5f1-43f6-aa8a-b342193720f0: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Program
+    -
+      value: 'Created new Program'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Education
+    -
+      value: Education
   promote:
-  - value: false
+    -
+      value: false
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
+    -
+      value: true
   path:
-  - alias: /programs/education
-    langcode: en
-  field_description:
-  - value: Building safe schools and training local teachers to give children a clear
-      path to a brighter future.
+    -
+      alias: /programs/education
+      langcode: en
   field_content:
-  - value: <p>We build and rehabilitate safe learning spaces, train local teachers,
-      and provide the materials a classroom needs to keep running through displacement
-      and drought.</p><p>Where schools have closed, we set up temporary learning spaces
-      so children do not lose a year, and we work with education ministries so the
-      spaces are recognised.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 20e27874-e572-4ad3-89a9-42fa60d0a69c
-  field_program_type:
-  - entity: 9598f221-b5f1-43f6-aa8a-b342193720f0
+    -
+      value: '<p>We build and rehabilitate safe learning spaces, train local teachers, and provide the materials a classroom needs to keep running through displacement and drought.</p><p>Where schools have closed, we set up temporary learning spaces so children do not lose a year, and we work with education ministries so the spaces are recognised.</p>'
+      format: content_format
   field_countries:
-  - entity: d1a2b3c4-1111-4a2b-ab01-2c3d4e5f6a01
-  - entity: 84e59dbf-1e4f-4792-a622-e81893df45d4
-  - entity: d1a2b3c4-3333-4a2b-ab03-2c3d4e5f6a03
+    -
+      entity: d1a2b3c4-1111-4a2b-ab01-2c3d4e5f6a01
+    -
+      entity: 84e59dbf-1e4f-4792-a622-e81893df45d4
+    -
+      entity: d1a2b3c4-3333-4a2b-ab03-2c3d4e5f6a03
+  field_cta_heading:
+    -
+      value: 'Help Us Keep Every Classroom Open'
+  field_cta_text:
+    -
+      value: 'Your support funds safe learning spaces and trained teachers for children who have lost everything else.'
+  field_delivery_heading:
+    -
+      value: 'How We Deliver Education'
+  field_delivery_text:
+    -
+      value: 'Safe, inclusive learning spaces built and designed with local communities.'
+    -
+      value: 'Local educators trained with the tools and curriculum to teach effectively in crisis conditions.'
+    -
+      value: 'Removing barriers to attendance — safety concerns, gender gaps, and displacement disruptions.'
+    -
+      value: 'Programmes designed to transition to local ownership and sustain impact independently.'
+  field_delivery_title:
+    -
+      value: 'Community Classrooms'
+    -
+      value: 'Teacher Training'
+    -
+      value: 'Safe Enrollment'
+    -
+      value: 'Long-Term Continuity'
+  field_description:
+    -
+      value: 'Building safe schools and training local teachers to give children a clear path to a brighter future.'
+  field_featured_image:
+    -
+      entity: 20e27874-e572-4ad3-89a9-42fa60d0a69c
+  field_figures_description:
+    -
+      value: 'Since 2008, our Education programme has reached children and teachers across 16 countries — building safe learning environments and training local educators to give every child a path forward.'
+  field_figures_heading:
+    -
+      value: 'Education by the Numbers'
+  field_figure_description:
+    -
+      value: 'Children enrolled in safe learning spaces'
+    -
+      value: 'Teaching hours delivered by trained educators'
+    -
+      value: 'Schools built or rehabilitated'
+  field_figure_number:
+    -
+      value: 8k+
+    -
+      value: 20K+
+    -
+      value: '488'
+  field_headline:
+    -
+      value: 'No Child Left Without a Classroom'
+  field_map_heading:
+    -
+      value: 'Where Education Runs'
+  field_map_text:
+    -
+      value: 'Horizon Aid’s Education programme operates across more than 16 countries, working alongside communities facing conflict, displacement, and chronic poverty — where children are most at risk of losing access to learning entirely.'
+  field_on_the_ground:
+    -
+      value: 'We build safe schools, train local teachers, and design every programme around the community it serves — so learning continues no matter what.'
+      format: content_format
+  field_on_the_ground_image:
+    -
+      entity: bdff596c-46c9-4a01-bf78-f568ccc12755
+  field_our_role:
+    -
+      value: 'We equip local educators, protect learning spaces, and ensure no child loses access to education because of conflict or displacement.'
+      format: content_format
+  field_program_type:
+    -
+      entity: 9598f221-b5f1-43f6-aa8a-b342193720f0

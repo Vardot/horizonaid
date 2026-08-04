@@ -5,41 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    eb19191f-3c64-4787-8f4e-c65ae6df3d8e: media
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
+    eb19191f-3c64-4787-8f4e-c65ae6df3d8e: media
     6100a75e-6da4-4f26-addd-a256e68df3ae: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Maternal health in mobile clinics
+    -
+      value: 'Maternal health in mobile clinics'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/maternal-health-in-mobile-clinics
-    langcode: en
-  field_description:
-  - value: Antenatal care delivered by units that follow the routes families actually
-      travel.
-  field_content:
-  - value: <p>A clinic that does not move cannot serve a population that does.</p><p>Referral
-      for complicated deliveries is arranged before a unit deploys.</p>
-    format: content_format
-  field_featured_image:
-  - entity: eb19191f-3c64-4787-8f4e-c65ae6df3d8e
+    -
+      alias: /resources/maternal-health-mobile-clinics
+      langcode: en
   field_blog_categories:
-  - entity: d762c0cc-2720-4035-a262-0118d74e67b2
+    -
+      entity: d762c0cc-2720-4035-a262-0118d74e67b2
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>BENTIU</strong> — Antenatal care delivered by units that follow the routes families actually travel. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>The distance to a delivery room decides whether a complication is survivable. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>A mother will walk two hours for a clinic she knows will be there. She will not walk two hours to find out.</p><p><strong>Dr Amal Deng</strong>, obstetrician</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Clinics travel to a fixed weekly schedule so mothers can plan a visit rather than gamble on one. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Routes fixed and published, so the visit is predictable</li><li>Midwives recruited locally and paid through the health ministry</li><li>Referral transport arranged before it is needed</li><li>Records held by the mother, so care continues if the clinic moves</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="eb19191f-3c64-4787-8f4e-c65ae6df3d8e" data-align="center" alt="Maternal health in mobile clinics"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Earlier detection</h4>
+        <p>Complications found at a routine visit rather than in an emergency at night, which changes the outcome entirely.</p>
+        <h4>2. Vaccination alongside</h4>
+        <p>Infants reached on the same visit, because the queue is already there.</p>
+        <h4>3. Fewer unattended births</h4>
+        <p>Attendance rose steadily once the schedule had held for three consecutive months.</p>
+        <h3>What comes next</h3>
+        <p>The next phase adds two routes and puts an ultrasound on the vehicle that covers the longest circuit. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Antenatal care delivered by units that follow the routes families actually travel.'
+  field_featured_image:
+    -
+      entity: eb19191f-3c64-4787-8f4e-c65ae6df3d8e
   field_tags:
-  - entity: 6100a75e-6da4-4f26-addd-a256e68df3ae
+    -
+      entity: 6100a75e-6da4-4f26-addd-a256e68df3ae

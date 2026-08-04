@@ -5,47 +5,125 @@ _meta:
   bundle: program
   default_langcode: en
   depends:
-    20a27553-c0f7-44bf-adb9-383e46972dff: media
-    8c70ebd1-3906-49e7-a05c-1a9929013425: taxonomy_term
     d1a2b3c4-3333-4a2b-ab03-2c3d4e5f6a03: node
     947f4ea9-048e-4e0f-a75c-23ebc9d272a7: node
     66ec1f96-5a6b-44ac-a396-5102b47df634: node
+    20a27553-c0f7-44bf-adb9-383e46972dff: media
+    7fd1d440-8109-40c6-8f18-a57b015ac54e: media
+    8c70ebd1-3906-49e7-a05c-1a9929013425: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Program
+    -
+      value: 'Created new Program'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Agriculture
+    -
+      value: Agriculture
   promote:
-  - value: false
+    -
+      value: false
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
+    -
+      value: true
   path:
-  - alias: /programs/agriculture
-    langcode: en
-  field_description:
-  - value: Equipping rural farmers with climate-resilient tools and seeds to secure
-      long-term food independence.
+    -
+      alias: /programs/agriculture
+      langcode: en
   field_content:
-  - value: <p>We supply drought-tolerant seed, shared irrigation and farmer-to-farmer
-      training, so households move from food aid to their own harvest within two seasons.</p><p>Cooperatives
-      repay in seed, which stocks the next cooperative's bank and keeps the programme
-      running after we leave.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 20a27553-c0f7-44bf-adb9-383e46972dff
-  field_program_type:
-  - entity: 8c70ebd1-3906-49e7-a05c-1a9929013425
+    -
+      value: "<p>We supply drought-tolerant seed, shared irrigation and farmer-to-farmer training, so households move from food aid to their own harvest within two seasons.</p><p>Cooperatives repay in seed, which stocks the next cooperative's bank and keeps the programme running after we leave.</p>"
+      format: content_format
   field_countries:
-  - entity: d1a2b3c4-3333-4a2b-ab03-2c3d4e5f6a03
-  - entity: 947f4ea9-048e-4e0f-a75c-23ebc9d272a7
-  - entity: 66ec1f96-5a6b-44ac-a396-5102b47df634
+    -
+      entity: d1a2b3c4-3333-4a2b-ab03-2c3d4e5f6a03
+    -
+      entity: 947f4ea9-048e-4e0f-a75c-23ebc9d272a7
+    -
+      entity: 66ec1f96-5a6b-44ac-a396-5102b47df634
+  field_cta_heading:
+    -
+      value: 'Help a Household Grow Its Own Food'
+  field_cta_text:
+    -
+      value: 'Your support buys climate-resilient seed and the shared irrigation a cooperative can run itself.'
+  field_delivery_heading:
+    -
+      value: 'How We Deliver Agriculture'
+  field_delivery_text:
+    -
+      value: 'Drought-tolerant varieties matched to the season and the soil.'
+    -
+      value: 'Water infrastructure a cooperative can run and repair itself.'
+    -
+      value: 'Techniques passed between neighbours, not taught from outside.'
+    -
+      value: 'Cooperatives repay in seed, stocking the next community’s bank.'
+  field_delivery_title:
+    -
+      value: 'Climate-Resilient Seed'
+    -
+      value: 'Shared Irrigation'
+    -
+      value: 'Farmer-to-Farmer Training'
+    -
+      value: 'Seed Repayment'
+  field_description:
+    -
+      value: 'Equipping rural farmers with climate-resilient tools and seeds to secure long-term food independence.'
+  field_featured_image:
+    -
+      entity: 20a27553-c0f7-44bf-adb9-383e46972dff
+  field_figures_description:
+    -
+      value: 'Cooperatives repay in seed, which stocks the next cooperative’s bank and keeps the programme running after we leave.'
+  field_figures_heading:
+    -
+      value: 'Agriculture by the Numbers'
+  field_figure_description:
+    -
+      value: 'Households farming independently'
+    -
+      value: 'Kilograms of seed distributed'
+    -
+      value: 'Cooperatives running without us'
+  field_figure_number:
+    -
+      value: 12k
+    -
+      value: 1.8M
+    -
+      value: '74'
+  field_headline:
+    -
+      value: 'From Food Aid to Their Own Harvest'
+  field_map_heading:
+    -
+      value: 'Where Agriculture Runs'
+  field_map_text:
+    -
+      value: 'We work in drylands and flood-prone valleys alike, wherever a season lost means a year of food aid.'
+  field_on_the_ground:
+    -
+      value: 'Drought-tolerant seed, shared irrigation and farmer-to-farmer training move households off food aid within two seasons.'
+      format: content_format
+  field_on_the_ground_image:
+    -
+      entity: 7fd1d440-8109-40c6-8f18-a57b015ac54e
+  field_our_role:
+    -
+      value: 'We supply climate-resilient inputs, build shared irrigation, and hand cooperatives the training to run both.'
+      format: content_format
+  field_program_type:
+    -
+      entity: 8c70ebd1-3906-49e7-a05c-1a9929013425

@@ -5,47 +5,125 @@ _meta:
   bundle: program
   default_langcode: en
   depends:
-    eb19191f-3c64-4787-8f4e-c65ae6df3d8e: media
-    101b7c20-8088-4293-a744-783adf77c327: taxonomy_term
     279b5acc-6704-45e3-a813-a6e4420deed4: node
     d1a2b3c4-5555-4a2b-ab05-2c3d4e5f6a05: node
     78955e0d-e528-4f3d-a83b-2309330e5549: node
+    eb19191f-3c64-4787-8f4e-c65ae6df3d8e: media
+    437e4b95-01b6-4cf5-ab32-e9bf1f1abd49: media
+    101b7c20-8088-4293-a744-783adf77c327: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Program
+    -
+      value: 'Created new Program'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Medicine
+    -
+      value: Medicine
   promote:
-  - value: false
+    -
+      value: false
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
+    -
+      value: true
   path:
-  - alias: /programs/medicine
-    langcode: en
-  field_description:
-  - value: Delivering emergency surgical supplies, medicines, and doctors directly
-      to active global crisis zones.
+    -
+      alias: /programs/medicine
+      langcode: en
   field_content:
-  - value: <p>We move emergency surgical supplies, medicines and medical teams into
-      active crisis zones, and support the hospitals that stayed open when others
-      closed.</p><p>Supply routes are negotiated weekly so deliveries keep moving
-      even when access changes.</p>
-    format: content_format
-  field_featured_image:
-  - entity: eb19191f-3c64-4787-8f4e-c65ae6df3d8e
-  field_program_type:
-  - entity: 101b7c20-8088-4293-a744-783adf77c327
+    -
+      value: '<p>We move emergency surgical supplies, medicines and medical teams into active crisis zones, and support the hospitals that stayed open when others closed.</p><p>Supply routes are negotiated weekly so deliveries keep moving even when access changes.</p>'
+      format: content_format
   field_countries:
-  - entity: 279b5acc-6704-45e3-a813-a6e4420deed4
-  - entity: d1a2b3c4-5555-4a2b-ab05-2c3d4e5f6a05
-  - entity: 78955e0d-e528-4f3d-a83b-2309330e5549
+    -
+      entity: 279b5acc-6704-45e3-a813-a6e4420deed4
+    -
+      entity: d1a2b3c4-5555-4a2b-ab05-2c3d4e5f6a05
+    -
+      entity: 78955e0d-e528-4f3d-a83b-2309330e5549
+  field_cta_heading:
+    -
+      value: 'Get Supplies There While They Matter'
+  field_cta_text:
+    -
+      value: 'Your support keeps stock pre-positioned and surgical teams ready to move into active crisis zones.'
+  field_delivery_heading:
+    -
+      value: 'How We Deliver Medicine'
+  field_delivery_text:
+    -
+      value: 'Supplies held near likely crises so delivery is measured in hours.'
+    -
+      value: 'Clinicians deployed with the equipment an emergency theatre needs.'
+    -
+      value: 'Temperature-controlled transport all the way to the point of care.'
+    -
+      value: 'Care continues under national health services once the crisis eases.'
+  field_delivery_title:
+    -
+      value: 'Pre-Positioned Stock'
+    -
+      value: 'Surgical Teams'
+    -
+      value: 'Cold Chain Intact'
+    -
+      value: 'Handover to Ministries'
+  field_description:
+    -
+      value: 'Delivering emergency surgical supplies, medicines, and doctors directly to active global crisis zones.'
+  field_featured_image:
+    -
+      entity: eb19191f-3c64-4787-8f4e-c65ae6df3d8e
+  field_figures_description:
+    -
+      value: 'Our Medicine programme delivers into active conflict and disaster zones, working alongside national health services.'
+  field_figures_heading:
+    -
+      value: 'Medicine by the Numbers'
+  field_figure_description:
+    -
+      value: 'Tonnes of medical supplies delivered'
+    -
+      value: 'Surgical teams deployed'
+    -
+      value: 'Crisis zones reached'
+  field_figure_number:
+    -
+      value: '420'
+    -
+      value: '66'
+    -
+      value: '19'
+  field_headline:
+    -
+      value: 'Supplies That Arrive While They Matter'
+  field_map_heading:
+    -
+      value: 'Where Medicine Runs'
+  field_map_text:
+    -
+      value: 'Our Medicine programme delivers into active conflict and disaster zones, alongside national health services.'
+  field_on_the_ground:
+    -
+      value: 'We move emergency surgical supplies, medicines and clinicians into active crisis zones, and keep the cold chain intact on the way.'
+      format: content_format
+  field_on_the_ground_image:
+    -
+      entity: 437e4b95-01b6-4cf5-ab32-e9bf1f1abd49
+  field_our_role:
+    -
+      value: 'We pre-position stock near likely crises, fly in surgical teams, and hand over to local health ministries.'
+      format: content_format
+  field_program_type:
+    -
+      entity: 101b7c20-8088-4293-a744-783adf77c327

@@ -12,54 +12,76 @@ _meta:
     970e04cf-e3f9-404d-a572-e575f628a629: media
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Country
+    -
+      value: 'Created new Country'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Somalia
+    -
+      value: Somalia
   promote:
-  - value: false
+    -
+      value: false
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
+    -
+      value: true
   path:
-  - alias: /countries/somalia
-    langcode: en
+    -
+      alias: /countries/somalia
+      langcode: en
+  field_country_code:
+    -
+      value: SO
   field_description:
-  - value: Drought response, livestock support and safe water for pastoralist communities
-      facing repeated failed rains.
+    -
+      value: 'Drought response, livestock support and safe water for pastoralist communities facing repeated failed rains.'
   field_featured_image:
-  - entity: 1f88c0d0-0dc7-495a-a9c8-5e4b09aa9cb1
-  field_our_role:
-  - value: <p>We combine emergency water trucking with longer-term borehole rehabilitation
-      and livestock support, so pastoralist families are not forced to sell the herd
-      that feeds them.</p>
-    format: content_format
-  field_on_the_ground:
-  - value: <p>After four failed rainy seasons, water is the whole conversation. A
-      rehabilitated borehole changes a district.</p>
-    format: content_format
-  field_on_the_ground_image:
-  - entity: 1f88c0d0-0dc7-495a-a9c8-5e4b09aa9cb1
+    -
+      entity: 1f88c0d0-0dc7-495a-a9c8-5e4b09aa9cb1
   field_figures_description:
-  - value: Our drought response works through water, livestock and cash support.
-  field_figure_number:
-  - value: 38K+
-  - value: 14K+
-  - value: '62'
+    -
+      value: 'Our drought response works through water, livestock and cash support.'
   field_figure_description:
-  - value: People with reliable access to safe water
-  - value: Households receiving cash support
-  - value: Boreholes rehabilitated
+    -
+      value: 'People with reliable access to safe water'
+    -
+      value: 'Households receiving cash support'
+    -
+      value: 'Boreholes rehabilitated'
+  field_figure_number:
+    -
+      value: 38K+
+    -
+      value: 14K+
+    -
+      value: '62'
+  field_on_the_ground:
+    -
+      value: '<p>After four failed rainy seasons, water is the whole conversation. A rehabilitated borehole changes a district.</p>'
+      format: content_format
+  field_on_the_ground_image:
+    -
+      entity: 1f88c0d0-0dc7-495a-a9c8-5e4b09aa9cb1
+  field_our_role:
+    -
+      value: '<p>We combine emergency water trucking with longer-term borehole rehabilitation and livestock support, so pastoralist families are not forced to sell the herd that feeds them.</p>'
+      format: content_format
   field_partners:
-  - entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
-  - entity: 38771a02-8334-4057-9022-f7f4d5342612
-  - entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
-  - entity: 970e04cf-e3f9-404d-a572-e575f628a629
+    -
+      entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
+    -
+      entity: 38771a02-8334-4057-9022-f7f4d5342612
+    -
+      entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
+    -
+      entity: 970e04cf-e3f9-404d-a572-e575f628a629

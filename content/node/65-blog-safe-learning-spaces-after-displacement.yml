@@ -5,42 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    437e4b95-01b6-4cf5-ab32-e9bf1f1abd49: media
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
+    437e4b95-01b6-4cf5-ab32-e9bf1f1abd49: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Safe learning spaces after displacement
+    -
+      value: 'Safe learning spaces after displacement'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/safe-learning-spaces-after-displacement
-    langcode: en
-  field_description:
-  - value: Temporary classrooms kept nine thousand children in lessons through a year
-      of repeated displacement.
-  field_content:
-  - value: <p>When schools close, a temporary learning space stops a child losing
-      a year of education.</p><p>We work with education ministries so the spaces are
-      recognised and the year counts.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 437e4b95-01b6-4cf5-ab32-e9bf1f1abd49
+    -
+      alias: /resources/safe-learning-spaces-after-displacement
+      langcode: en
   field_blog_categories:
-  - entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+    -
+      entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>ZAATARI</strong> — Temporary classrooms kept nine thousand children in lessons through a year of repeated displacement. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>A displaced child loses a year of school for every year the site lacks a classroom. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>If the year does not count, the building is just shelter with desks in it.</p><p><strong>Mahmoud Sror</strong>, education adviser</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Temporary learning spaces go up in weeks and are recognised by the education ministry. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Structures designed to be assembled by the community that will use them</li><li>Curriculum aligned so the year counts towards certification</li><li>Teachers drawn from the displaced population and trained on site</li><li>Ministry recognition negotiated before the first class</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="437e4b95-01b6-4cf5-ab32-e9bf1f1abd49" data-align="center" alt="Safe learning spaces after displacement"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Certification that transfers</h4>
+        <p>Pupils moving on carried recognised credit rather than starting again.</p>
+        <h4>2. Employment for teachers</h4>
+        <p>Displaced teachers returned to their profession instead of leaving it.</p>
+        <h4>3. A centre for everything else</h4>
+        <p>The space doubled as the site for vaccination days and community meetings.</p>
+        <h3>What comes next</h3>
+        <p>The next stage converts three temporary spaces into permanent schools under ministry management. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Temporary classrooms kept nine thousand children in lessons through a year of repeated displacement.'
+  field_featured_image:
+    -
+      entity: 437e4b95-01b6-4cf5-ab32-e9bf1f1abd49
   field_tags:
-  - entity: 3917245a-e65c-48ed-a00f-f804f38522f1
+    -
+      entity: 3917245a-e65c-48ed-a00f-f804f38522f1

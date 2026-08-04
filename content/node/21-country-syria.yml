@@ -12,53 +12,76 @@ _meta:
     970e04cf-e3f9-404d-a572-e575f628a629: media
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Country
+    -
+      value: 'Created new Country'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Syria
+    -
+      value: Syria
   promote:
-  - value: false
+    -
+      value: false
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
+    -
+      value: true
   path:
-  - alias: /countries/syria
-    langcode: en
+    -
+      alias: /countries/syria
+      langcode: en
+  field_country_code:
+    -
+      value: SY
   field_description:
-  - value: Shelter repair, winter supplies and protection services for displaced families
-      after more than a decade of conflict.
+    -
+      value: 'Shelter repair, winter supplies and protection services for displaced families after more than a decade of conflict.'
   field_featured_image:
-  - entity: 56fb9041-52f0-423e-a332-4a1e708df5df
-  field_our_role:
-  - value: <p>We repair damaged homes, deliver winter kits and provide legal and protection
-      services for families who have been displaced repeatedly inside the country.</p>
-    format: content_format
-  field_on_the_ground:
-  - value: <p>Most households we serve have moved three times or more. Rebuilding
-      one room is often what lets a family stop moving.</p>
-    format: content_format
-  field_on_the_ground_image:
-  - entity: 56fb9041-52f0-423e-a332-4a1e708df5df
+    -
+      entity: 56fb9041-52f0-423e-a332-4a1e708df5df
   field_figures_description:
-  - value: Our work spans shelter, winterisation and protection.
-  field_figure_number:
-  - value: 43K+
-  - value: 11K+
-  - value: 5K+
+    -
+      value: 'Our work spans shelter, winterisation and protection.'
   field_figure_description:
-  - value: People supported with shelter and winter kits
-  - value: Homes repaired
-  - value: Protection cases handled
+    -
+      value: 'People supported with shelter and winter kits'
+    -
+      value: 'Homes repaired'
+    -
+      value: 'Protection cases handled'
+  field_figure_number:
+    -
+      value: 43K+
+    -
+      value: 11K+
+    -
+      value: 5K+
+  field_on_the_ground:
+    -
+      value: '<p>Most households we serve have moved three times or more. Rebuilding one room is often what lets a family stop moving.</p>'
+      format: content_format
+  field_on_the_ground_image:
+    -
+      entity: 56fb9041-52f0-423e-a332-4a1e708df5df
+  field_our_role:
+    -
+      value: '<p>We repair damaged homes, deliver winter kits and provide legal and protection services for families who have been displaced repeatedly inside the country.</p>'
+      format: content_format
   field_partners:
-  - entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
-  - entity: 38771a02-8334-4057-9022-f7f4d5342612
-  - entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
-  - entity: 970e04cf-e3f9-404d-a572-e575f628a629
+    -
+      entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
+    -
+      entity: 38771a02-8334-4057-9022-f7f4d5342612
+    -
+      entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
+    -
+      entity: 970e04cf-e3f9-404d-a572-e575f628a629

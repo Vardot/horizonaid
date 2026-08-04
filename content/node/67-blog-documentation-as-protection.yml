@@ -5,42 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    67a76fae-bc22-4aa1-a144-4f39e44428ce: media
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
+    67a76fae-bc22-4aa1-a144-4f39e44428ce: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Documentation as protection
+    -
+      value: 'Documentation as protection'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/documentation-as-protection
-    langcode: en
-  field_description:
-  - value: Without papers a family cannot enrol a child, access a clinic or report
-      abuse. What our legal desks do about it.
-  field_content:
-  - value: <p>Documentation is not paperwork, it is protection.</p><p>Our legal teams
-      take on the documentation, inheritance and protection cases that would otherwise
-      never reach a court.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 67a76fae-bc22-4aa1-a144-4f39e44428ce
+    -
+      alias: /resources/documentation-protection
+      langcode: en
   field_blog_categories:
-  - entity: 60a3f621-9baf-4341-a6ad-b8615f99e6d3
+    -
+      entity: 60a3f621-9baf-4341-a6ad-b8615f99e6d3
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>BEIRUT</strong> — Without papers a family cannot enrol a child, access a clinic or report abuse. What our legal desks do about it. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This brief sets out the evidence, the cost of inaction, and what should follow.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Without papers, a person cannot be treated, enrolled, employed or protected. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>A birth certificate is not paperwork. It is the difference between a child existing and not existing.</p><p><strong>Karim Haddad</strong>, protection lawyer</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Documentation is treated as protection work, not administration. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Mobile registration desks placed where people already gather</li><li>Legal aid attached to the desk, not referred onward</li><li>Records duplicated and held securely against loss</li><li>Ministry liaison staffed so cases do not stall</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="67a76fae-bc22-4aa1-a144-4f39e44428ce" data-align="center" alt="Documentation as protection"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Access to school</h4>
+        <p>Enrolment refusals fell sharply once families arrived with documents in hand.</p>
+        <h4>2. Safer movement</h4>
+        <p>Documented travellers were far less likely to be detained at checkpoints.</p>
+        <h4>3. Claims that survive</h4>
+        <p>Property and inheritance claims filed with correct papers are still standing years later.</p>
+        <h3>What comes next</h3>
+        <p>The next phase trains ministry staff to run the desks and reduces our role to legal support. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Without papers a family cannot enrol a child, access a clinic or report abuse. What our legal desks do about it.'
+  field_featured_image:
+    -
+      entity: 67a76fae-bc22-4aa1-a144-4f39e44428ce
   field_tags:
-  - entity: 3917245a-e65c-48ed-a00f-f804f38522f1
+    -
+      entity: 3917245a-e65c-48ed-a00f-f804f38522f1

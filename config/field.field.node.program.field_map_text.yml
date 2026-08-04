@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map_text
+    - node.type.program
+id: node.program.field_map_text
+field_name: field_map_text
+entity_type: node
+bundle: program
+label: 'Map text'
+description: 'The where-we-run map block on the programme page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -5,42 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    b89c3414-f04f-4498-9169-c344d567426b: media
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
+    b89c3414-f04f-4498-9169-c344d567426b: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Emergency relief in flooded states
+    -
+      value: 'Emergency relief in flooded states'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/emergency-relief-in-flooded-states
-    langcode: en
-  field_description:
-  - value: Flooding now displaces more people than conflict in several states we work
-      in.
-  field_content:
-  - value: <p>Flooding returns every year, so the response has to be planned, not
-      improvised.</p><p>Pre-positioned supplies reached families within seventy-two
-      hours.</p>
-    format: content_format
-  field_featured_image:
-  - entity: b89c3414-f04f-4498-9169-c344d567426b
+    -
+      alias: /resources/emergency-relief-flooded-states
+      langcode: en
   field_blog_categories:
-  - entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+    -
+      entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>KASSALA</strong> — Flooding now displaces more people than conflict in several states we work in. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Seasonal flooding now arrives faster and deeper than the drainage built for it. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>We stopped treating the flood as a surprise. It is a date in the calendar, and the supplies are packed before it arrives.</p><p><strong>Nadia Osman</strong>, logistics lead</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Pre-positioning let the first trucks move before the water had finished rising. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Stock held in three depots outside the flood line, rotated every quarter</li><li>Household kits packed to a fixed list, so loading needs no decisions</li><li>Boat crews contracted ahead of the season, not during it</li><li>Distribution points agreed with village committees in the dry months</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="b89c3414-f04f-4498-9169-c344d567426b" data-align="center" alt="Emergency relief in flooded states"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Faster medical response</h4>
+        <p>Clinics kept working because their stock had already moved to higher ground, so treatment did not pause while roads were under water.</p>
+        <h4>2. Less distress selling</h4>
+        <p>Families who received kits in the first week were far less likely to sell livestock or tools to cover the gap.</p>
+        <h4>3. Trust that carries forward</h4>
+        <p>Committees that helped plan the response are the same ones now mapping next season's routes.</p>
+        <h3>What comes next</h3>
+        <p>The next season's plan adds two depots and moves the stock rotation to a schedule the committees hold themselves. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Flooding now displaces more people than conflict in several states we work in.'
+  field_featured_image:
+    -
+      entity: b89c3414-f04f-4498-9169-c344d567426b
   field_tags:
-  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3
+    -
+      entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

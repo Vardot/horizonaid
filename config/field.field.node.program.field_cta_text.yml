@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cta_text
+    - node.type.program
+id: node.program.field_cta_text
+field_name: field_cta_text
+entity_type: node
+bundle: program
+label: 'Call to action text'
+description: 'The closing call to action on the programme page.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -12,53 +12,76 @@ _meta:
     970e04cf-e3f9-404d-a572-e575f628a629: media
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Country
+    -
+      value: 'Created new Country'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Myanmar
+    -
+      value: Myanmar
   promote:
-  - value: false
+    -
+      value: false
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
-  moderation_state:
-  - value: published
+    -
+      value: true
   path:
-  - alias: /countries/myanmar
-    langcode: en
+    -
+      alias: /countries/myanmar
+      langcode: en
+  field_country_code:
+    -
+      value: MM
   field_description:
-  - value: Protection, education support and emergency relief for communities displaced
-      by conflict and flooding.
+    -
+      value: 'Protection, education support and emergency relief for communities displaced by conflict and flooding.'
   field_featured_image:
-  - entity: 1253742d-563d-44ae-a3b2-2687f6caa2e2
-  field_our_role:
-  - value: <p>We work with community organisations to keep children learning through
-      displacement, and to deliver emergency relief where formal access is limited.</p>
-    format: content_format
-  field_on_the_ground:
-  - value: <p>Local partners carry this response. Our role is funding, supplies and
-      technical support, not visibility.</p>
-    format: content_format
-  field_on_the_ground_image:
-  - entity: 1253742d-563d-44ae-a3b2-2687f6caa2e2
+    -
+      entity: 1253742d-563d-44ae-a3b2-2687f6caa2e2
   field_figures_description:
-  - value: Our programme centres on protection, education and emergency relief.
-  field_figure_number:
-  - value: 26K+
-  - value: 8K+
-  - value: '47'
+    -
+      value: 'Our programme centres on protection, education and emergency relief.'
   field_figure_description:
-  - value: People reached with emergency relief
-  - value: Children in temporary learning spaces
-  - value: Community partners supported
+    -
+      value: 'People reached with emergency relief'
+    -
+      value: 'Children in temporary learning spaces'
+    -
+      value: 'Community partners supported'
+  field_figure_number:
+    -
+      value: 26K+
+    -
+      value: 8K+
+    -
+      value: '47'
+  field_on_the_ground:
+    -
+      value: '<p>Local partners carry this response. Our role is funding, supplies and technical support, not visibility.</p>'
+      format: content_format
+  field_on_the_ground_image:
+    -
+      entity: 1253742d-563d-44ae-a3b2-2687f6caa2e2
+  field_our_role:
+    -
+      value: '<p>We work with community organisations to keep children learning through displacement, and to deliver emergency relief where formal access is limited.</p>'
+      format: content_format
   field_partners:
-  - entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
-  - entity: 38771a02-8334-4057-9022-f7f4d5342612
-  - entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
-  - entity: 970e04cf-e3f9-404d-a572-e575f628a629
+    -
+      entity: d9b90fa4-cbc0-410f-a2a3-741754126f88
+    -
+      entity: 38771a02-8334-4057-9022-f7f4d5342612
+    -
+      entity: 76a6a186-65a3-4c80-a494-5d00ff312eae
+    -
+      entity: 970e04cf-e3f9-404d-a572-e575f628a629

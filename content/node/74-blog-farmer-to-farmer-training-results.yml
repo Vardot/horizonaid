@@ -5,41 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    20e27874-e572-4ad3-89a9-42fa60d0a69c: media
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
+    20e27874-e572-4ad3-89a9-42fa60d0a69c: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Farmer-to-farmer training results
+    -
+      value: 'Farmer-to-farmer training results'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/farmer-to-farmer-training-results
-    langcode: en
-  field_description:
-  - value: Average harvest per household rose across every participating village this
-      season.
-  field_content:
-  - value: <p>Farmer-to-farmer training spreads faster than any external curriculum.</p><p>Food-aid
-      dependence fell over the same period.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 20e27874-e572-4ad3-89a9-42fa60d0a69c
+    -
+      alias: /resources/farmer-farmer-training-results
+      langcode: en
   field_blog_categories:
-  - entity: d762c0cc-2720-4035-a262-0118d74e67b2
+    -
+      entity: d762c0cc-2720-4035-a262-0118d74e67b2
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>GEDAREF</strong> — Average harvest per household rose across every participating village this season. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Techniques taught by an outsider are tried once; techniques shown by a neighbour are adopted. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>They watched me do it on my own land, with my own risk. That is why they copied it.</p><p><strong>Ibrahim Musa</strong>, lead farmer</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Training runs farmer to farmer, on a working plot, in the season it applies to. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Lead farmers selected by their own cooperative</li><li>Training on a real plot, in the relevant season</li><li>A small stipend for the lead farmer's time</li><li>Follow-up visits scheduled rather than promised</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="20e27874-e572-4ad3-89a9-42fa60d0a69c" data-align="center" alt="Farmer-to-farmer training results"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Adoption that holds</h4>
+        <p>Techniques were still in use a full season later, which extension days rarely achieve.</p>
+        <h4>2. Faster spread</h4>
+        <p>Each lead farmer reached neighbours we never met.</p>
+        <h4>3. Advice that fits</h4>
+        <p>Because it is local, the advice already accounts for the soil and the rainfall.</p>
+        <h3>What comes next</h3>
+        <p>The next season doubles the lead-farmer network and adds seed selection to the curriculum. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Average harvest per household rose across every participating village this season.'
+  field_featured_image:
+    -
+      entity: 20e27874-e572-4ad3-89a9-42fa60d0a69c
   field_tags:
-  - entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3
+    -
+      entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

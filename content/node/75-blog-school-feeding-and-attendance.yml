@@ -5,40 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    422af474-8750-4504-b793-fc7d992fffc6: media
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
+    422af474-8750-4504-b793-fc7d992fffc6: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: School feeding and attendance
+    -
+      value: 'School feeding and attendance'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/school-feeding-and-attendance
-    langcode: en
-  field_description:
-  - value: Attendance data from twelve schools where a daily meal was introduced.
-  field_content:
-  - value: <p>A daily meal changes attendance more reliably than any campaign.</p><p>We
-      publish the attendance data so ministries can verify it.</p>
-    format: content_format
-  field_featured_image:
-  - entity: 422af474-8750-4504-b793-fc7d992fffc6
+    -
+      alias: /resources/school-feeding-and-attendance
+      langcode: en
   field_blog_categories:
-  - entity: d762c0cc-2720-4035-a262-0118d74e67b2
+    -
+      entity: d762c0cc-2720-4035-a262-0118d74e67b2
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>LILONGWE</strong> — Attendance data from twelve schools where a daily meal was introduced. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>A hungry child attends irregularly and learns little when present. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>We did not set out to buy attendance. We set out to feed children. Attendance came with it.</p><p><strong>Chikondi Banda</strong>, school feeding coordinator</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>A meal at school is the cheapest attendance intervention available. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Meals sourced locally, on contracts smallholders can win</li><li>Cooking managed by a parent committee</li><li>Attendance recorded daily against the meal register</li><li>Menu set with a nutritionist, not by what is cheapest</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="422af474-8750-4504-b793-fc7d992fffc6" data-align="center" alt="School feeding and attendance"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Attendance that holds</h4>
+        <p>Enrolment and daily attendance both rose and stayed up across the term.</p>
+        <h4>2. Local income</h4>
+        <p>Contracts kept the food budget circulating among nearby smallholders.</p>
+        <h4>3. Girls staying enrolled</h4>
+        <p>The gap between girls' and boys' attendance narrowed markedly.</p>
+        <h3>What comes next</h3>
+        <p>The next phase extends to twelve more schools and moves procurement to the parent committees. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Attendance data from twelve schools where a daily meal was introduced.'
+  field_featured_image:
+    -
+      entity: 422af474-8750-4504-b793-fc7d992fffc6
   field_tags:
-  - entity: 3917245a-e65c-48ed-a00f-f804f38522f1
+    -
+      entity: 3917245a-e65c-48ed-a00f-f804f38522f1

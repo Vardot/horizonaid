@@ -5,41 +5,73 @@ _meta:
   bundle: blog
   default_langcode: en
   depends:
-    f749352f-75eb-422e-abca-0696f87555ba: media
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
+    f749352f-75eb-422e-abca-0696f87555ba: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
-  - target_id: 1
+    -
+      target_id: 1
   revision_log:
-  - value: Created new Blog post
+    -
+      value: 'Created new Blog post'
   status:
-  - value: true
+    -
+      value: true
   uid:
-  - target_id: 1
+    -
+      target_id: 1
   title:
-  - value: Winter learning continuity
+    -
+      value: 'Winter learning continuity'
   promote:
-  - value: true
+    -
+      value: true
   sticky:
-  - value: false
+    -
+      value: false
   revision_translation_affected:
-  - value: true
+    -
+      value: true
   moderation_state:
-  - value: published
+    -
+      value: published
   path:
-  - alias: /blog/winter-learning-continuity
-    langcode: en
-  field_description:
-  - value: Heating and materials kept temporary classrooms open through the coldest
-      months.
-  field_content:
-  - value: <p>An unheated classroom empties in January regardless of enrolment.</p><p>Fuel
-      was budgeted as an education cost, not a facilities one.</p>
-    format: content_format
-  field_featured_image:
-  - entity: f749352f-75eb-422e-abca-0696f87555ba
+    -
+      alias: /resources/winter-learning-continuity
+      langcode: en
   field_blog_categories:
-  - entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+    -
+      entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba
+  field_content:
+    -
+      value: |-
+        <h3>Introduction</h3>
+        <p><strong>ERBIL</strong> — Heating and materials kept temporary classrooms open through the coldest months. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
+        <h3>The problem, before the work started</h3>
+        <p>Winter closes informal schools first, and attendance rarely recovers on its own. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <blockquote><p>A child who stops in November does not come back in March. The whole year goes with it.</p><p><strong>Layla Haddad</strong>, education coordinator</p></blockquote>
+        <h3>How the work was delivered</h3>
+        <p>Heating, boots and a shorter timetable keep the classroom open through the cold months. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <ul><li>Classrooms insulated before the first frost, not after</li><li>Fuel budgeted for the whole season up front</li><li>Timetable shortened rather than suspended</li><li>Teachers paid through winter so they are still there in spring</li></ul>
+        <drupal-media data-entity-type="media" data-entity-uuid="f749352f-75eb-422e-abca-0696f87555ba" data-align="center" alt="Winter learning continuity"></drupal-media>
+        <h3>What changed beyond the immediate goal</h3>
+        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <h4>1. Retention through the term</h4>
+        <p>Attendance held within a few points of the autumn figure, where previous winters saw it halve.</p>
+        <h4>2. Teachers who stay</h4>
+        <p>Continuous pay kept the same teachers in place, which matters more than any material.</p>
+        <h4>3. A warm place to be</h4>
+        <p>For many families the classroom was the only heated room they could reach.</p>
+        <h3>What comes next</h3>
+        <p>The next winter's plan pre-positions fuel in September and extends heating to two more sites. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+      format: content_format
+  field_description:
+    -
+      value: 'Heating and materials kept temporary classrooms open through the coldest months.'
+  field_featured_image:
+    -
+      entity: f749352f-75eb-422e-abca-0696f87555ba
   field_tags:
-  - entity: 3917245a-e65c-48ed-a00f-f804f38522f1
+    -
+      entity: 3917245a-e65c-48ed-a00f-f804f38522f1
