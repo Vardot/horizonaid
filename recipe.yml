@@ -2015,16 +2015,10 @@ config:
       simpleConfigUpdate:
         buttons.facebook_share.enabled: 1
         buttons.facebook_share.weight: 0
-        buttons.instagram:
-          name: Instagram
-          title: Horizon Aid on Instagram
-          enabled: 1
-          image: instagram.svg
-          weight: 1
         buttons.linkedin.enabled: 1
-        buttons.linkedin.weight: 2
+        buttons.linkedin.weight: 1
         buttons.x.enabled: 1
-        buttons.x.weight: 3
+        buttons.x.weight: 2
     user.role.anonymous:
       grantPermissions:
       - view terms in event_categories
