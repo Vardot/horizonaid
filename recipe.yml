@@ -1077,4 +1077,4 @@ config:
               radius: rounded-pill
 extra:
   recipe_installer_kit:
-    finish_url: /admin/dashboard/welcome
+    finish_url: 'admin/dashboard/welcome'
