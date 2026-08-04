@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
-    6e55f5d3-20dc-4f24-ad34-04266b987d0e: media
+    20e27874-e572-4ad3-89a9-42fa60d0a69c: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Temporary learning spaces go up in weeks and are recognised by the education ministry. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Structures designed to be assembled by the community that will use them</li><li>Curriculum aligned so the year counts towards certification</li><li>Teachers drawn from the displaced population and trained on site</li><li>Ministry recognition negotiated before the first class</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="070ea67b-4707-43bd-a9e8-916defc277fb" data-align="center" alt="Safe learning spaces after displacement"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="e590a1b0-41c2-42ad-8659-c9f38b586c88" data-align="center" alt="Safe learning spaces after displacement"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Certification that transfers</h4>
@@ -71,7 +71,7 @@ default:
       value: 'Temporary classrooms kept nine thousand children in lessons through a year of repeated displacement.'
   field_featured_image:
     -
-      entity: 6e55f5d3-20dc-4f24-ad34-04266b987d0e
+      entity: 20e27874-e572-4ad3-89a9-42fa60d0a69c
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1

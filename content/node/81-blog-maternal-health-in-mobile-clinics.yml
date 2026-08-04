@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
-    f749352f-75eb-422e-abca-0696f87555ba: media
+    fbca9adb-bf14-44fb-a1a3-c6f02b725a23: media
     6100a75e-6da4-4f26-addd-a256e68df3ae: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Clinics travel to a fixed weekly schedule so mothers can plan a visit rather than gamble on one. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Routes fixed and published, so the visit is predictable</li><li>Midwives recruited locally and paid through the health ministry</li><li>Referral transport arranged before it is needed</li><li>Records held by the mother, so care continues if the clinic moves</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="422af474-8750-4504-b793-fc7d992fffc6" data-align="center" alt="Maternal health in mobile clinics"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="67a76fae-bc22-4aa1-a144-4f39e44428ce" data-align="center" alt="Maternal health in mobile clinics"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Earlier detection</h4>
@@ -71,7 +71,7 @@ default:
       value: 'Antenatal care delivered by units that follow the routes families actually travel.'
   field_featured_image:
     -
-      entity: f749352f-75eb-422e-abca-0696f87555ba
+      entity: fbca9adb-bf14-44fb-a1a3-c6f02b725a23
   field_tags:
     -
       entity: 6100a75e-6da4-4f26-addd-a256e68df3ae

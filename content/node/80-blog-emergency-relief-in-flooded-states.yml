@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
-    368bad61-0dbd-4fd3-ac9d-b295fcdd7353: media
+    63c0f85c-2459-4aa2-af2c-4b012f5857c6: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Pre-positioning let the first trucks move before the water had finished rising. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Stock held in three depots outside the flood line, rotated every quarter</li><li>Household kits packed to a fixed list, so loading needs no decisions</li><li>Boat crews contracted ahead of the season, not during it</li><li>Distribution points agreed with village committees in the dry months</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="eb19191f-3c64-4787-8f4e-c65ae6df3d8e" data-align="center" alt="Emergency relief in flooded states"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="e590a1b0-41c2-42ad-8659-c9f38b586c88" data-align="center" alt="Emergency relief in flooded states"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Faster medical response</h4>
@@ -71,7 +71,7 @@ default:
       value: 'Flooding now displaces more people than conflict in several states we work in.'
   field_featured_image:
     -
-      entity: 368bad61-0dbd-4fd3-ac9d-b295fcdd7353
+      entity: 63c0f85c-2459-4aa2-af2c-4b012f5857c6
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

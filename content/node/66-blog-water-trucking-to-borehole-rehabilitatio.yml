@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
-    20a27553-c0f7-44bf-adb9-383e46972dff: media
+    368bad61-0dbd-4fd3-ac9d-b295fcdd7353: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Every trucked litre is treated as a countdown to the borehole that replaces it. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Trucking contracted month to month, never annually, so it can end quickly</li><li>Boreholes surveyed while trucking runs, not after it stops</li><li>Pumps specified for parts available in the nearest market town</li><li>A water committee trained and paid before the handover, not after</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="fbca9adb-bf14-44fb-a1a3-c6f02b725a23" data-align="center" alt="Water trucking to borehole rehabilitation"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="c749d4bc-2a5e-47e1-a3ed-ce85781612b9" data-align="center" alt="Water trucking to borehole rehabilitation"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Cost that falls to nothing</h4>
@@ -71,7 +71,7 @@ default:
       value: 'Moving from emergency water delivery to permanent infrastructure in drought-affected districts.'
   field_featured_image:
     -
-      entity: 20a27553-c0f7-44bf-adb9-383e46972dff
+      entity: 368bad61-0dbd-4fd3-ac9d-b295fcdd7353
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

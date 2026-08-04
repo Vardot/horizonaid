@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
-    2703edeb-c3da-4295-a7f9-956add15af88: media
+    6f159f66-1671-42eb-adbf-b82d691dd330: media
     6100a75e-6da4-4f26-addd-a256e68df3ae: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Border districts are treated as one catchment with one microplan. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>A single microplan covering both sides of the district line</li><li>Cold chain checked end to end before each round</li><li>Mobile teams for settlements no fixed post reaches</li><li>Coverage reported against the joint catchment, not each district</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="67a76fae-bc22-4aa1-a144-4f39e44428ce" data-align="center" alt="Vaccination coverage in border districts"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="2703edeb-c3da-4295-a7f9-956add15af88" data-align="center" alt="Vaccination coverage in border districts"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Gaps that became visible</h4>
@@ -71,7 +71,7 @@ default:
       value: 'Fifteen thousand children were vaccinated in districts where routine services had stopped.'
   field_featured_image:
     -
-      entity: 2703edeb-c3da-4295-a7f9-956add15af88
+      entity: 6f159f66-1671-42eb-adbf-b82d691dd330
   field_tags:
     -
       entity: 6100a75e-6da4-4f26-addd-a256e68df3ae

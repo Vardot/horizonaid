@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
-    c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
+    437e4b95-01b6-4cf5-ab32-e9bf1f1abd49: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Inputs, irrigation and training are delivered together, because any one alone fails. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Seed, tools and irrigation delivered as one package</li><li>Training tied to the season the technique belongs to</li><li>Cooperative registered before the first distribution</li><li>Exit measured by harvest, not by months elapsed</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="2703edeb-c3da-4295-a7f9-956add15af88" data-align="center" alt="Cultivating independence in rural farms"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="934496a2-3f0b-4db3-a54e-b7e706a994dd" data-align="center" alt="Cultivating independence in rural farms"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Households off assistance</h4>
@@ -71,7 +71,7 @@ default:
       value: 'Cooperatives using climate-resilient tools secured steady yields for a second consecutive season.'
   field_featured_image:
     -
-      entity: c749d4bc-2a5e-47e1-a3ed-ce85781612b9
+      entity: 437e4b95-01b6-4cf5-ab32-e9bf1f1abd49
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

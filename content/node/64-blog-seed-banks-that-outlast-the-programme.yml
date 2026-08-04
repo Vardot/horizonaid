@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
-    c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
+    77f64522-d62e-448c-ab81-5a4137f8057c: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Cooperatives borrow from a seed bank and repay in kind after harvest, stocking the next community's bank. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Varieties chosen with farmers, matched to the local rainfall pattern</li><li>Repayment set in seed, not cash, so a bad market does not break the loan</li><li>Storage built to a design a cooperative can repair with local materials</li><li>Committee bookkeeping taught alongside the agronomy</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="2703edeb-c3da-4295-a7f9-956add15af88" data-align="center" alt="Seed banks that outlast the programme"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="eb19191f-3c64-4787-8f4e-c65ae6df3d8e" data-align="center" alt="Seed banks that outlast the programme"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Independence from procurement</h4>
@@ -71,7 +71,7 @@ default:
       value: 'How repayment in seed rather than cash keeps a cooperative viable after external funding ends.'
   field_featured_image:
     -
-      entity: c749d4bc-2a5e-47e1-a3ed-ce85781612b9
+      entity: 77f64522-d62e-448c-ab81-5a4137f8057c
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

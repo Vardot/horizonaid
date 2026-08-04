@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
-    2703edeb-c3da-4295-a7f9-956add15af88: media
+    3db67d5a-439a-4486-a6fd-bdf32ce1795a: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Training runs farmer to farmer, on a working plot, in the season it applies to. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Lead farmers selected by their own cooperative</li><li>Training on a real plot, in the relevant season</li><li>A small stipend for the lead farmer's time</li><li>Follow-up visits scheduled rather than promised</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="c749d4bc-2a5e-47e1-a3ed-ce85781612b9" data-align="center" alt="Farmer-to-farmer training results"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="e1408d47-fc69-4b5e-a7bb-38ea345953f5" data-align="center" alt="Farmer-to-farmer training results"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Adoption that holds</h4>
@@ -71,7 +71,7 @@ default:
       value: 'Average harvest per household rose across every participating village this season.'
   field_featured_image:
     -
-      entity: 2703edeb-c3da-4295-a7f9-956add15af88
+      entity: 3db67d5a-439a-4486-a6fd-bdf32ce1795a
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

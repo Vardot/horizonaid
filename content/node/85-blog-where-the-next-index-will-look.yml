@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
-    e590a1b0-41c2-42ad-8659-c9f38b586c88: media
+    20a27553-c0f7-44bf-adb9-383e46972dff: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>The next edition's scope is set in public before the data is collected. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Proposed indicators published for comment before collection</li><li>Selection criteria stated, including what was rejected and why</li><li>Partner organisations invited to propose districts</li><li>Scope fixed before fieldwork, then not changed</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="77f64522-d62e-448c-ab81-5a4137f8057c" data-align="center" alt="Where the next index will look"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="f749352f-75eb-422e-abca-0696f87555ba" data-align="center" alt="Where the next index will look"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Fewer disputes later</h4>
@@ -71,7 +71,7 @@ default:
       value: 'The countries and indicators being added to the next edition of the human rights index.'
   field_featured_image:
     -
-      entity: e590a1b0-41c2-42ad-8659-c9f38b586c88
+      entity: 20a27553-c0f7-44bf-adb9-383e46972dff
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1

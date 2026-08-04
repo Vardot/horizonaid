@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
-    934496a2-3f0b-4db3-a54e-b7e706a994dd: media
+    2703edeb-c3da-4295-a7f9-956add15af88: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>Hours are logged by case type, and the allocation is published. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Every hour logged against a case category</li><li>Allocation reviewed quarterly against demand</li><li>Waiting times published alongside the split</li><li>Cases that time out counted and reported</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="20e27874-e572-4ad3-89a9-42fa60d0a69c" data-align="center" alt="Legal aid hours and where they go"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="fbca9adb-bf14-44fb-a1a3-c6f02b725a23" data-align="center" alt="Legal aid hours and where they go"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Shorter waits for urgent cases</h4>
@@ -71,7 +71,7 @@ default:
       value: 'How we decide which corridor or district receives the next tranche of legal aid capacity.'
   field_featured_image:
     -
-      entity: 934496a2-3f0b-4db3-a54e-b7e706a994dd
+      entity: 2703edeb-c3da-4295-a7f9-956add15af88
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1

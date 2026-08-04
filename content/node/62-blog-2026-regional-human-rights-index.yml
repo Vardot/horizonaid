@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
-    20e27874-e572-4ad3-89a9-42fa60d0a69c: media
+    1253742d-563d-44ae-a3b2-2687f6caa2e2: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -54,7 +54,7 @@ default:
         <h3>How the work was delivered</h3>
         <p>The index is built from verified case data, published by district and repeated annually. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Cases verified against at least two independent sources</li><li>Published by district so local actors can use it</li><li>Methodology published in full alongside the figures</li><li>The same method repeated each year for comparability</li></ul>
-        <drupal-media data-entity-type="media" data-entity-uuid="934496a2-3f0b-4db3-a54e-b7e706a994dd" data-align="center" alt="2026 regional human rights index"></drupal-media>
+        <drupal-media data-entity-type="media" data-entity-uuid="e1408d47-fc69-4b5e-a7bb-38ea345953f5" data-align="center" alt="2026 regional human rights index"></drupal-media>
         <h3>What changed beyond the immediate goal</h3>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
         <h4>1. Local advocacy</h4>
@@ -71,7 +71,7 @@ default:
       value: 'Field data auditing educational safety, funding transparency and legislative progress across the countries we work in.'
   field_featured_image:
     -
-      entity: 20e27874-e572-4ad3-89a9-42fa60d0a69c
+      entity: 1253742d-563d-44ae-a3b2-2687f6caa2e2
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1
