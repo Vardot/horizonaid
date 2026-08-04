@@ -1092,25 +1092,25 @@ config:
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30001:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30001
             component_id: block.system_breadcrumb_block
-            component_version: 0d7e961dd03aa710
+            component_version: active
             inputs:
               label: ''
               label_display: "0"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30010:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30010
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 9b679273be9319ad
+            component_version: active
             inputs:
               bg_edge2edge: false
-              container_type: container
-              background_color: none
-              text_color: auto
+              container_type: "container"
+              background_color: "none"
+              text_color: "auto"
               columns: 100
-              gutter: gx-5 gy-5
-              padding_block_start: pt-0
-              padding_block_end: pb-0
-              vertical_alignment: align-items-start
-              horizontal_alignment: text-center
+              gutter: "gx-5 gy-5"
+              padding_block_start: "pt-0"
+              padding_block_end: "pb-0"
+              vertical_alignment: "align-items-start"
+              horizontal_alignment: "text-center"
               section_header: false
               section_footer: false
               aos_once: false
@@ -1119,126 +1119,126 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
             component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
-            component_version: ecf7fdb0e8ac5d2e
+            component_version: active
             inputs:
-              icon_alignment: center
+              icon_alignment: "center"
               card_border: false
-              background_color: bg-accent-subtle
+              background_color: "bg-accent-subtle"
               padded: true
-              box_shadow: shadow-none
-              corner_style: rounded-4
+              box_shadow: "shadow-none"
+              corner_style: "rounded-4"
               equal_height: false
               stretched_link: false
               link_url: ''
-              link_target: default
+              link_target: "default"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30017:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30017
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-3
+              size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30018:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30018
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
+            component_version: active
             inputs:
               heading_text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝title␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dtitle\u241e\u241fvalue"
               level: 1
-              text_size: h1
+              text_size: "h1"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30019:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30019
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: c4ddb22de87220b3
+            component_version: active
             inputs:
               text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_description␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_description\u241e\u241fvalue"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d3001a:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d3001a
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-3
+              size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d3001b:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d3001b
             component_id: sdc.vartheme_bs5_horizonaid.image
-            component_version: 20b07c548b4cf729
+            component_version: active
             inputs:
               media:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_featured_image\u241e\u241fentity\u241c\u241centity:media:image\u241dfield_media_image\u241e\u241f{src\u21a0src_with_alternate_widths,alt\u21a0alt,width\u21a0width,height\u21a0height}"
               link_url: ''
-              target: self
-              ratio: ratio-16x9
-              fit: object-fit-cover
-              align: mx-auto
-              width: w-100
-              rounded: rounded-3
-              loading: eager
+              target: "self"
+              ratio: "ratio-16x9"
+              fit: "object-fit-cover"
+              align: "mx-auto"
+              width: "w-100"
+              rounded: "rounded-3"
+              loading: "eager"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d3001c:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d3001c
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-3
+              size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30020:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30020
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 9b679273be9319ad
+            component_version: active
             inputs:
-              container_type: container
+              container_type: "container"
               columns: 100
-              gutter: gx-4 gy-4
-              padding_block_start: pt-5
-              padding_block_end: pb-5
+              gutter: "gx-4 gy-4"
+              padding_block_start: "pt-5"
+              padding_block_end: "pb-5"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30021:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30020
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30021
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
+            component_version: active
             inputs:
-              heading_text: About This Program
+              heading_text: "About This Program"
               level: 2
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30022:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30020
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30022
             component_id: sdc.vartheme_bs5_horizonaid.rich-text
-            component_version: 82cd1f087fd469f4
+            component_version: active
             inputs:
               text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_content␞␟processed
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_content\u241e\u241fprocessed"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30050:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30050
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 9b679273be9319ad
+            component_version: active
             inputs:
               bg_edge2edge: false
-              container_type: container
-              background_color: none
-              text_color: auto
-              columns: 40-60
-              gutter: gx-5 gy-5
-              padding_block_start: pt-5
-              padding_block_end: pb-5
-              vertical_alignment: align-items-center
-              horizontal_alignment: text-start
+              container_type: "container"
+              background_color: "none"
+              text_color: "auto"
+              columns: "40-60"
+              gutter: "gx-5 gy-5"
+              padding_block_start: "pt-5"
+              padding_block_end: "pb-5"
+              vertical_alignment: "align-items-center"
+              horizontal_alignment: "text-start"
               section_header: false
               section_footer: false
               aos_once: false
@@ -1247,97 +1247,97 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
             component_id: sdc.vartheme_bs5_horizonaid.card-text
-            component_version: e029fefa26d20f4f
+            component_version: active
             inputs:
               card_border: false
-              background_color: bg-secondary-subtle
+              background_color: "bg-secondary-subtle"
               padded: true
-              box_shadow: shadow-none
-              corner_style: rounded-4
+              box_shadow: "shadow-none"
+              corner_style: "rounded-4"
               equal_height: false
               stretched_link: false
               link_url: ''
-              link_target: default
-              icon_alignment: start
+              link_target: "default"
+              icon_alignment: "start"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30052:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30052
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-3
+              size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30053:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30053
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
+            component_version: active
             inputs:
               heading_text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_headline␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_headline\u241e\u241fvalue"
               level: 2
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30054:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30054
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-2
+              size: "py-2"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30055:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30055
             component_id: sdc.vartheme_bs5_horizonaid.rich-text
-            component_version: 82cd1f087fd469f4
+            component_version: active
             inputs:
               text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_on_the_ground␞␟processed
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_on_the_ground\u241e\u241fprocessed"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30056:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30056
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-3
+              size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30057:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30050
             slot: col_2
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30057
             component_id: sdc.vartheme_bs5_horizonaid.image
-            component_version: 20b07c548b4cf729
+            component_version: active
             inputs:
               media:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_on_the_ground_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_on_the_ground_image\u241e\u241fentity\u241c\u241centity:media:image\u241dfield_media_image\u241e\u241f{src\u21a0src_with_alternate_widths,alt\u21a0alt,width\u21a0width,height\u21a0height}"
               link_url: ''
-              target: self
-              ratio: ratio-16x9
-              fit: object-fit-cover
-              align: me-auto
-              width: w-100
-              rounded: rounded-3
-              loading: lazy
+              target: "self"
+              ratio: "ratio-16x9"
+              fit: "object-fit-cover"
+              align: "me-auto"
+              width: "w-100"
+              rounded: "rounded-3"
+              loading: "lazy"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30060:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 9b679273be9319ad
+            component_version: active
             inputs:
               bg_edge2edge: false
-              container_type: container
-              background_color: bg-tertiary
-              text_color: auto
-              columns: 33-33-33
-              gutter: gx-5 gy-5
-              padding_block_start: pt-5
-              padding_block_end: pb-5
-              radius: rounded-4
-              vertical_alignment: align-items-start
-              horizontal_alignment: text-center
+              container_type: "container"
+              background_color: "bg-tertiary"
+              text_color: "auto"
+              columns: "33-33-33"
+              gutter: "gx-5 gy-5"
+              padding_block_start: "pt-5"
+              padding_block_end: "pb-5"
+              radius: "rounded-4"
+              vertical_alignment: "align-items-start"
+              horizontal_alignment: "text-center"
               section_header: true
               section_footer: false
               aos_once: false
@@ -1346,94 +1346,94 @@ config:
             slot: header_slot
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30061
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
+            component_version: active
             inputs:
               heading_text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_figures_heading␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_figures_heading\u241e\u241fvalue"
               level: 2
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30062:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
             slot: header_slot
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30062
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: c4ddb22de87220b3
+            component_version: active
             inputs:
               text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_figures_description␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_figures_description\u241e\u241fvalue"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30070:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30070
             component_id: sdc.vartheme_bs5_horizonaid.figure
-            component_version: 0a31ebc5be5d97a1
+            component_version: active
             inputs:
               number:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_figure_number␞0␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_figure_number\u241e0\u241fvalue"
               description:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_figure_description␞0␟value
-              background_color: none
-              align: text-center
-              number_size: display-3
-              number_color: text-secondary
-              description_size: fs-6
-              description_color: text-body
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_figure_description\u241e0\u241fvalue"
+              background_color: "none"
+              align: "text-center"
+              number_size: "display-3"
+              number_color: "text-secondary"
+              description_size: "fs-6"
+              description_color: "text-body"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30071:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
             slot: col_2
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30071
             component_id: sdc.vartheme_bs5_horizonaid.figure
-            component_version: 0a31ebc5be5d97a1
+            component_version: active
             inputs:
               number:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_figure_number␞1␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_figure_number\u241e1\u241fvalue"
               description:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_figure_description␞1␟value
-              background_color: none
-              align: text-center
-              number_size: display-3
-              number_color: text-secondary
-              description_size: fs-6
-              description_color: text-body
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_figure_description\u241e1\u241fvalue"
+              background_color: "none"
+              align: "text-center"
+              number_size: "display-3"
+              number_color: "text-secondary"
+              description_size: "fs-6"
+              description_color: "text-body"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30072:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
             slot: col_3
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30072
             component_id: sdc.vartheme_bs5_horizonaid.figure
-            component_version: 0a31ebc5be5d97a1
+            component_version: active
             inputs:
               number:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_figure_number␞2␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_figure_number\u241e2\u241fvalue"
               description:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_figure_description␞2␟value
-              background_color: none
-              align: text-center
-              number_size: display-3
-              number_color: text-secondary
-              description_size: fs-6
-              description_color: text-body
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_figure_description\u241e2\u241fvalue"
+              background_color: "none"
+              align: "text-center"
+              number_size: "display-3"
+              number_color: "text-secondary"
+              description_size: "fs-6"
+              description_color: "text-body"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30080:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30080
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 9b679273be9319ad
+            component_version: active
             inputs:
               bg_edge2edge: false
-              container_type: container
-              background_color: none
-              text_color: auto
-              columns: 33-67
-              gutter: gx-5 gy-5
-              padding_block_start: pt-5
-              padding_block_end: pb-5
-              vertical_alignment: align-items-start
-              horizontal_alignment: text-start
+              container_type: "container"
+              background_color: "none"
+              text_color: "auto"
+              columns: "33-67"
+              gutter: "gx-5 gy-5"
+              padding_block_start: "pt-5"
+              padding_block_end: "pb-5"
+              vertical_alignment: "align-items-start"
+              horizontal_alignment: "text-start"
               section_header: false
               section_footer: false
               aos_once: false
@@ -1442,47 +1442,47 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30081
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
+            component_version: active
             inputs:
               heading_text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_delivery_heading␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_heading\u241e\u241fvalue"
               level: 2
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30082:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30080
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30082
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-2
+              size: "py-2"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30083:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30080
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30083
             component_id: sdc.vartheme_bs5_horizonaid.rich-text
-            component_version: 82cd1f087fd469f4
+            component_version: active
             inputs:
               text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_our_role␞␟processed
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_our_role\u241e\u241fprocessed"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30084:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30080
             slot: col_2
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 9b679273be9319ad
+            component_version: active
             inputs:
               bg_edge2edge: false
-              container_type: none
-              background_color: none
-              text_color: auto
-              columns: 50-50
-              gutter: gx-4 gy-4
-              padding_block_start: pt-0
-              padding_block_end: pb-0
-              vertical_alignment: align-items-stretch
-              horizontal_alignment: text-start
+              container_type: "none"
+              background_color: "none"
+              text_color: "auto"
+              columns: "50-50"
+              gutter: "gx-4 gy-4"
+              padding_block_start: "pt-0"
+              padding_block_end: "pb-0"
+              vertical_alignment: "align-items-stretch"
+              horizontal_alignment: "text-start"
               section_header: false
               section_footer: false
               aos_once: false
@@ -1491,200 +1491,280 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
             component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
-            component_version: ecf7fdb0e8ac5d2e
+            component_version: active
             inputs:
-              icon_alignment: start
+              icon_alignment: "start"
               card_border: false
-              background_color: bg-accent-subtle
+              background_color: "bg-accent-subtle"
               padded: true
-              box_shadow: shadow-none
-              corner_style: rounded-4
+              box_shadow: "shadow-none"
+              corner_style: "rounded-4"
               equal_height: false
               stretched_link: false
               link_url: ''
-              link_target: default
+              link_target: "default"
+          53e4beb0-2210-4fb3-b4be-712d464de737:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
+            slot: content
+            uuid: 53e4beb0-2210-4fb3-b4be-712d464de737
+            component_id: sdc.vartheme_bs5_horizonaid.html-code
+            component_version: active
+            inputs:
+              code: "<span class=\"d-inline-flex align-items-center justify-content-center rounded-3 bg-accent\" style=\"width:3.5rem;height:3.5rem\"><img src=\"/themes/contrib/vartheme_bs5_horizonaid/components/foundation/images/assets/icon-people.svg\" alt=\"Community\" style=\"width:1.75rem;height:1.75rem\"></span>"
+          6b150324-e90a-483d-bed5-a9da407d9eca:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
+            slot: content
+            uuid: 6b150324-e90a-483d-bed5-a9da407d9eca
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: active
+            inputs:
+              size: "py-5"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300a0:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a0
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
+            component_version: active
             inputs:
               heading_text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_delivery_title␞0␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_title\u241e0\u241fvalue"
               level: 4
           96e4e712-d60a-52e7-afbf-152964a7aedf:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
             slot: content
             uuid: 96e4e712-d60a-52e7-afbf-152964a7aedf
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-0
+              size: "py-0"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b0:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b0
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: c4ddb22de87220b3
+            component_version: active
             inputs:
               text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_delivery_text␞0␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_text\u241e0\u241fvalue"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30091:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
             slot: col_2
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
             component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
-            component_version: ecf7fdb0e8ac5d2e
+            component_version: active
             inputs:
-              icon_alignment: start
+              icon_alignment: "start"
               card_border: false
-              background_color: bg-primary-subtle
+              background_color: "bg-primary-subtle"
               padded: true
-              box_shadow: shadow-none
-              corner_style: rounded-4
+              box_shadow: "shadow-none"
+              corner_style: "rounded-4"
               equal_height: false
               stretched_link: false
               link_url: ''
-              link_target: default
+              link_target: "default"
+          9cce79ef-d156-478b-8ada-fa5039a25d2f:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
+            slot: content
+            uuid: 9cce79ef-d156-478b-8ada-fa5039a25d2f
+            component_id: sdc.vartheme_bs5_horizonaid.html-code
+            component_version: active
+            inputs:
+              code: "<span class=\"d-inline-flex align-items-center justify-content-center rounded-3 bg-primary\" style=\"width:3.5rem;height:3.5rem\"><img src=\"/themes/contrib/vartheme_bs5_horizonaid/components/foundation/images/assets/icon-check.svg\" alt=\"Verified\" style=\"width:1.75rem;height:1.75rem\"></span>"
+          4288fe5b-3f37-45d7-99cb-ab5070a61cd0:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
+            slot: content
+            uuid: 4288fe5b-3f37-45d7-99cb-ab5070a61cd0
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: active
+            inputs:
+              size: "py-5"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300a1:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a1
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
+            component_version: active
             inputs:
               heading_text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_delivery_title␞1␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_title\u241e1\u241fvalue"
               level: 4
           a7d56212-2ba4-5a1c-9699-78e16f285978:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
             slot: content
             uuid: a7d56212-2ba4-5a1c-9699-78e16f285978
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-0
+              size: "py-0"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b1:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b1
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: c4ddb22de87220b3
+            component_version: active
             inputs:
               text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_delivery_text␞1␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_text\u241e1\u241fvalue"
+          adcad2a0-b900-4381-8c7c-d56d24141a4f:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
+            slot: col_1
+            uuid: adcad2a0-b900-4381-8c7c-d56d24141a4f
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: active
+            inputs:
+              size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30092:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
             component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
-            component_version: ecf7fdb0e8ac5d2e
+            component_version: active
             inputs:
-              icon_alignment: start
+              icon_alignment: "start"
               card_border: false
-              background_color: bg-primary-subtle
+              background_color: "bg-primary-subtle"
               padded: true
-              box_shadow: shadow-none
-              corner_style: rounded-4
+              box_shadow: "shadow-none"
+              corner_style: "rounded-4"
               equal_height: false
               stretched_link: false
               link_url: ''
-              link_target: default
+              link_target: "default"
+          54f8ac76-f73f-415f-a528-86454f725f0d:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
+            slot: content
+            uuid: 54f8ac76-f73f-415f-a528-86454f725f0d
+            component_id: sdc.vartheme_bs5_horizonaid.html-code
+            component_version: active
+            inputs:
+              code: "<span class=\"d-inline-flex align-items-center justify-content-center rounded-3 bg-primary\" style=\"width:3.5rem;height:3.5rem\"><img src=\"/themes/contrib/vartheme_bs5_horizonaid/components/foundation/images/assets/icon-handshake.svg\" alt=\"Partnership\" style=\"width:1.75rem;height:1.75rem\"></span>"
+          11548433-d47a-4021-924a-fc20a607873e:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
+            slot: content
+            uuid: 11548433-d47a-4021-924a-fc20a607873e
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: active
+            inputs:
+              size: "py-5"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300a2:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a2
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
+            component_version: active
             inputs:
               heading_text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_delivery_title␞2␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_title\u241e2\u241fvalue"
               level: 4
           3d2edb32-ad81-5115-b4f1-e44b0ee80f82:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
             slot: content
             uuid: 3d2edb32-ad81-5115-b4f1-e44b0ee80f82
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-0
+              size: "py-0"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b2:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b2
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: c4ddb22de87220b3
+            component_version: active
             inputs:
               text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_delivery_text␞2␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_text\u241e2\u241fvalue"
+          b2bef87d-9e83-4420-a3b7-bb93b9bc9046:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
+            slot: col_2
+            uuid: b2bef87d-9e83-4420-a3b7-bb93b9bc9046
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: active
+            inputs:
+              size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30093:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
             slot: col_2
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
             component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
-            component_version: ecf7fdb0e8ac5d2e
+            component_version: active
             inputs:
-              icon_alignment: start
+              icon_alignment: "start"
               card_border: false
-              background_color: bg-accent-subtle
+              background_color: "bg-accent-subtle"
               padded: true
-              box_shadow: shadow-none
-              corner_style: rounded-4
+              box_shadow: "shadow-none"
+              corner_style: "rounded-4"
               equal_height: false
               stretched_link: false
               link_url: ''
-              link_target: default
+              link_target: "default"
+          71dcc6d5-5363-465d-a255-174cd3b0fab1:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
+            slot: content
+            uuid: 71dcc6d5-5363-465d-a255-174cd3b0fab1
+            component_id: sdc.vartheme_bs5_horizonaid.html-code
+            component_version: active
+            inputs:
+              code: "<span class=\"d-inline-flex align-items-center justify-content-center rounded-3 bg-accent\" style=\"width:3.5rem;height:3.5rem\"><img src=\"/themes/contrib/vartheme_bs5_horizonaid/components/foundation/images/assets/icon-search.svg\" alt=\"Continuity\" style=\"width:1.75rem;height:1.75rem\"></span>"
+          722efca9-c7ac-4fd1-af3b-8800878f7878:
+            parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
+            slot: content
+            uuid: 722efca9-c7ac-4fd1-af3b-8800878f7878
+            component_id: sdc.vartheme_bs5_horizonaid.spacer
+            component_version: active
+            inputs:
+              size: "py-5"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300a3:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a3
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
+            component_version: active
             inputs:
               heading_text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_delivery_title␞3␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_title\u241e3\u241fvalue"
               level: 4
           db1ab5a0-02dc-5f6a-8703-24ffdbd2a07c:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
             slot: content
             uuid: db1ab5a0-02dc-5f6a-8703-24ffdbd2a07c
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-0
+              size: "py-0"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b3:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b3
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: c4ddb22de87220b3
+            component_version: active
             inputs:
               text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_delivery_text␞3␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_text\u241e3\u241fvalue"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300d0:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d0
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 9b679273be9319ad
+            component_version: active
             inputs:
               bg_edge2edge: false
-              container_type: container
-              background_color: none
-              text_color: auto
+              container_type: "container"
+              background_color: "none"
+              text_color: "auto"
               columns: 100
-              gutter: gx-5 gy-5
-              padding_block_start: pt-5
-              padding_block_end: pb-5
-              vertical_alignment: align-items-start
-              horizontal_alignment: text-start
+              gutter: "gx-5 gy-5"
+              padding_block_start: "pt-5"
+              padding_block_end: "pb-5"
+              vertical_alignment: "align-items-start"
+              horizontal_alignment: "text-start"
               section_header: false
               section_footer: false
               aos_once: false
@@ -1693,128 +1773,128 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
             component_id: sdc.vartheme_bs5_horizonaid.map
-            component_version: 15729bf098abe7a0
+            component_version: active
             inputs:
-              map_height: lg
-              corner_style: rounded-4
-              background_color: bg-tertiary
-              box_shadow: shadow-none
+              map_height: "lg"
+              corner_style: "rounded-4"
+              background_color: "bg-tertiary"
+              box_shadow: "shadow-none"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300d2:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d2
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
+            component_version: active
             inputs:
               heading_text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_map_heading␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_map_heading\u241e\u241fvalue"
               level: 2
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300d3:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d3
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-2
+              size: "py-2"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300d4:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d4
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: c4ddb22de87220b3
+            component_version: active
             inputs:
               text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_map_text␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_map_text\u241e\u241fvalue"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300e0:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
             slot: countries
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300e0
             component_id: sdc.vartheme_bs5_horizonaid.map-info-card
-            component_version: e8af5ab2d49aae2e
+            component_version: active
             inputs:
               country_code:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞0␟entity␜␜entity:node:country␝field_country_code␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e0\u241fentity\u241c\u241centity:node:country\u241dfield_country_code\u241e\u241fvalue"
               heading:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞0␟entity␜␜entity:node:country␝title␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e0\u241fentity\u241c\u241centity:node:country\u241dtitle\u241e\u241fvalue"
               description:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞0␟entity␜␜entity:node:country␝field_description␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e0\u241fentity\u241c\u241centity:node:country\u241dfield_description\u241e\u241fvalue"
               stat_1_value: ''
               stat_1_label: ''
               stat_2_value: ''
               stat_2_label: ''
               link_url:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞0␟entity␜␜entity:node:country␝path␞␟alias
-              link_text: Learn More
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e0\u241fentity\u241c\u241centity:node:country\u241dpath\u241e\u241falias"
+              link_text: "Learn More"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300e1:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
             slot: countries
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300e1
             component_id: sdc.vartheme_bs5_horizonaid.map-info-card
-            component_version: e8af5ab2d49aae2e
+            component_version: active
             inputs:
               country_code:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞1␟entity␜␜entity:node:country␝field_country_code␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e1\u241fentity\u241c\u241centity:node:country\u241dfield_country_code\u241e\u241fvalue"
               heading:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞1␟entity␜␜entity:node:country␝title␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e1\u241fentity\u241c\u241centity:node:country\u241dtitle\u241e\u241fvalue"
               description:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞1␟entity␜␜entity:node:country␝field_description␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e1\u241fentity\u241c\u241centity:node:country\u241dfield_description\u241e\u241fvalue"
               stat_1_value: ''
               stat_1_label: ''
               stat_2_value: ''
               stat_2_label: ''
               link_url:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞1␟entity␜␜entity:node:country␝path␞␟alias
-              link_text: Learn More
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e1\u241fentity\u241c\u241centity:node:country\u241dpath\u241e\u241falias"
+              link_text: "Learn More"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300e2:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
             slot: countries
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300e2
             component_id: sdc.vartheme_bs5_horizonaid.map-info-card
-            component_version: e8af5ab2d49aae2e
+            component_version: active
             inputs:
               country_code:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞2␟entity␜␜entity:node:country␝field_country_code␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e2\u241fentity\u241c\u241centity:node:country\u241dfield_country_code\u241e\u241fvalue"
               heading:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞2␟entity␜␜entity:node:country␝title␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e2\u241fentity\u241c\u241centity:node:country\u241dtitle\u241e\u241fvalue"
               description:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞2␟entity␜␜entity:node:country␝field_description␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e2\u241fentity\u241c\u241centity:node:country\u241dfield_description\u241e\u241fvalue"
               stat_1_value: ''
               stat_1_label: ''
               stat_2_value: ''
               stat_2_label: ''
               link_url:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_countries␞2␟entity␜␜entity:node:country␝path␞␟alias
-              link_text: Learn More
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_countries\u241e2\u241fentity\u241c\u241centity:node:country\u241dpath\u241e\u241falias"
+              link_text: "Learn More"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30040:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30040
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 9b679273be9319ad
+            component_version: active
             inputs:
               bg_edge2edge: false
-              container_type: none
-              background_color: none
-              text_color: auto
+              container_type: "none"
+              background_color: "none"
+              text_color: "auto"
               columns: 100
-              gutter: gx-5 gy-5
-              padding_block_start: pt-0
-              padding_block_end: pb-0
-              vertical_alignment: align-items-start
-              horizontal_alignment: text-start
+              gutter: "gx-5 gy-5"
+              padding_block_start: "pt-0"
+              padding_block_end: "pb-0"
+              vertical_alignment: "align-items-start"
+              horizontal_alignment: "text-start"
               section_header: false
               section_footer: false
               aos_once: false
@@ -1823,7 +1903,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30044
             component_id: block.views_block.blog-latest_light
-            component_version: bbf13c45f9c9e5f5
+            component_version: active
             inputs:
               label: ''
               label_display: "0"
@@ -1832,18 +1912,18 @@ config:
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300c0:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c0
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: 9b679273be9319ad
+            component_version: active
             inputs:
               bg_edge2edge: false
-              container_type: container
-              background_color: none
-              text_color: auto
+              container_type: "container"
+              background_color: "none"
+              text_color: "auto"
               columns: 100
-              gutter: gx-5 gy-5
-              padding_block_start: pt-5
-              padding_block_end: pb-5
-              vertical_alignment: align-items-start
-              horizontal_alignment: text-start
+              gutter: "gx-5 gy-5"
+              padding_block_start: "pt-5"
+              padding_block_end: "pb-5"
+              vertical_alignment: "align-items-start"
+              horizontal_alignment: "text-start"
               section_header: false
               section_footer: false
               aos_once: false
@@ -1852,74 +1932,74 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
             component_id: sdc.vartheme_bs5_horizonaid.card-text
-            component_version: e029fefa26d20f4f
+            component_version: active
             inputs:
               card_border: false
-              background_color: bg-primary-subtle
+              background_color: "bg-primary-subtle"
               padded: true
-              box_shadow: shadow-none
-              corner_style: rounded-4
+              box_shadow: "shadow-none"
+              corner_style: "rounded-4"
               equal_height: false
               stretched_link: false
               link_url: ''
-              link_target: default
-              icon_alignment: start
+              link_target: "default"
+              icon_alignment: "start"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300c2:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c2
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: 0889e2ce906c3164
+            component_version: active
             inputs:
               heading_text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_cta_heading␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_cta_heading\u241e\u241fvalue"
               level: 2
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300c3:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c3
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-2
+              size: "py-2"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300c4:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c4
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: c4ddb22de87220b3
+            component_version: active
             inputs:
               text:
-                sourceType: entity-field
-                expression: ℹ︎␜entity:node:program␝field_cta_text␞␟value
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_cta_text\u241e\u241fvalue"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300c5:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c5
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: 80de1b3919d08f87
+            component_version: active
             inputs:
-              size: py-3
+              size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300c6:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c6
             component_id: sdc.vartheme_bs5_horizonaid.button
-            component_version: 64089b7681474537
+            component_version: active
             inputs:
-              variant: btn-primary
+              variant: "btn-primary"
               outline: false
-              size: btn-md
-              label: Donate Today
-              href: /donate
-              target: self
+              size: "btn-md"
+              label: "Donate Today"
+              href: "/donate"
+              target: "self"
               disabled: false
-              icon: none
+              icon: "none"
               icon_first: false
-              alignment: inline
+              alignment: "inline"
               full_width: false
-              radius: rounded-pill
+              radius: "rounded-pill"
       repointComponentTreeToTheme:
         theme: default
     canvas.content_template.node.program.text_card_medium:
