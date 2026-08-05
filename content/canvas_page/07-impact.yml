@@ -1,0 +1,284 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 1ebcac10-de6d-466f-aa03-b499f85609e3
+  default_langcode: en
+default:
+  revision_user:
+    -
+      target_id: 1
+  revision_log:
+    -
+      value: 'Created new Page'
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Our Impact'
+  components:
+    -
+      uuid: d22f8fb0-6e41-4e85-8ffa-d33a91c1a515
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: true
+        container_type: container
+        background_color: bg-dark
+        text_color: auto
+        columns: '100'
+        gutter: 'gx-4 gy-4'
+        padding_block_start: pt-5
+        padding_block_end: pb-5
+        vertical_alignment: align-items-center
+        horizontal_alignment: text-center
+        section_header: false
+        section_footer: false
+        aos_once: false
+    -
+      parent_uuid: d22f8fb0-6e41-4e85-8ffa-d33a91c1a515
+      slot: col_1
+      uuid: 1cb92e7c-40ce-4280-8dc4-da3246470698
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Our Impact'
+        level: 1
+        align: text-center
+    -
+      parent_uuid: d22f8fb0-6e41-4e85-8ffa-d33a91c1a515
+      slot: col_1
+      uuid: bd5cd163-39de-4bd1-95be-b87c7db32142
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+    -
+      parent_uuid: d22f8fb0-6e41-4e85-8ffa-d33a91c1a515
+      slot: col_1
+      uuid: e250233a-4ae0-4c7a-9b85-44d0a0b268a8
+      component_id: sdc.vartheme_bs5_horizonaid.text
+      inputs:
+        text:
+          value: '<p>We believe in absolute transparency. Through partnerships and direct community funding, we track every dollar to ensure your support creates immediate, sustainable protection for human rights worldwide.</p>'
+          format: content_format
+        text_color: text-white
+    -
+      uuid: 58e778f4-e7b7-4a50-9945-fc13c6af5a8b
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: container
+        background_color: none
+        text_color: auto
+        columns: 33-33-33
+        gutter: 'gx-4 gy-4'
+        padding_block_start: pt-5
+        padding_block_end: pb-4
+        vertical_alignment: align-items-center
+        horizontal_alignment: text-center
+        section_header: false
+        section_footer: false
+        aos_once: false
+    -
+      parent_uuid: 58e778f4-e7b7-4a50-9945-fc13c6af5a8b
+      slot: col_1
+      uuid: b833231d-e390-48fe-891c-4521d71acedf
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: 20K+
+        description: 'Lives Protected'
+        background_color: none
+        number_size: display-1
+        number_color: text-primary
+        description_size: fs-6
+        description_color: text-body
+        align: text-center
+    -
+      parent_uuid: 58e778f4-e7b7-4a50-9945-fc13c6af5a8b
+      slot: col_2
+      uuid: baa3eb2f-b7c7-4b43-9919-2ff9d8411c32
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: 137K+
+        description: 'Legal Aid Hours'
+        background_color: none
+        number_size: display-1
+        number_color: text-primary
+        description_size: fs-6
+        description_color: text-body
+        align: text-center
+    -
+      parent_uuid: 58e778f4-e7b7-4a50-9945-fc13c6af5a8b
+      slot: col_3
+      uuid: 19ca9695-88e0-4a34-bc06-3e10654bc0dc
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: 11K+
+        description: 'Communities Served'
+        background_color: none
+        number_size: display-1
+        number_color: text-primary
+        description_size: fs-6
+        description_color: text-body
+        align: text-center
+    -
+      uuid: 55414d5e-3fdd-4f26-bbaa-2b8fe80d3fdc
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: container
+        background_color: none
+        text_color: auto
+        columns: '100'
+        gutter: 'gx-4 gy-4'
+        padding_block_start: pt-5
+        padding_block_end: pb-3
+        vertical_alignment: align-items-center
+        horizontal_alignment: text-center
+        section_header: false
+        section_footer: false
+        aos_once: false
+    -
+      parent_uuid: 55414d5e-3fdd-4f26-bbaa-2b8fe80d3fdc
+      slot: col_1
+      uuid: 70a39047-683c-462b-9830-740c5661b2fc
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Impact by Programme'
+        level: 2
+        align: text-center
+    -
+      uuid: 0b9cb95b-57f0-40b0-8082-2829671fb4df
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: container
+        background_color: none
+        text_color: auto
+        columns: 20-20-20-20-20
+        gutter: 'gx-4 gy-4'
+        padding_block_start: pt-0
+        padding_block_end: pb-5
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-center
+        section_header: false
+        section_footer: false
+        aos_once: false
+    -
+      parent_uuid: 0b9cb95b-57f0-40b0-8082-2829671fb4df
+      slot: col_1
+      uuid: 5c345806-af5a-4405-b71e-f4b6b55f7da4
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: 12K
+        description: 'Households farming independently'
+        background_color: none
+        number_size: display-4
+        number_color: text-secondary
+        description_size: fs-6
+        description_color: text-body
+        align: text-center
+    -
+      parent_uuid: 0b9cb95b-57f0-40b0-8082-2829671fb4df
+      slot: col_2
+      uuid: 69f4f1e1-739c-4dd6-9105-e921ae893496
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: 8K+
+        description: 'Children enrolled in safe learning spaces'
+        background_color: none
+        number_size: display-4
+        number_color: text-secondary
+        description_size: fs-6
+        description_color: text-body
+        align: text-center
+    -
+      parent_uuid: 0b9cb95b-57f0-40b0-8082-2829671fb4df
+      slot: col_3
+      uuid: 50de1c97-901f-48b5-a19e-fbd7ac2dd926
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: 3.2K
+        description: 'Women supported through legal defence'
+        background_color: none
+        number_size: display-4
+        number_color: text-secondary
+        description_size: fs-6
+        description_color: text-body
+        align: text-center
+    -
+      parent_uuid: 0b9cb95b-57f0-40b0-8082-2829671fb4df
+      slot: col_4
+      uuid: bf8831be-e6b8-45ee-9e0b-f081528997fe
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: '58'
+        description: 'Clinics built or rehabilitated'
+        background_color: none
+        number_size: display-4
+        number_color: text-secondary
+        description_size: fs-6
+        description_color: text-body
+        align: text-center
+    -
+      parent_uuid: 0b9cb95b-57f0-40b0-8082-2829671fb4df
+      slot: col_5
+      uuid: a5b9e17a-ac31-42aa-85ce-65a1c47f3d2a
+      component_id: sdc.vartheme_bs5_horizonaid.figure
+      inputs:
+        number: '420'
+        description: 'Tonnes of medical supplies delivered'
+        background_color: none
+        number_size: display-4
+        number_color: text-secondary
+        description_size: fs-6
+        description_color: text-body
+        align: text-center
+    -
+      uuid: f26185a0-e490-4504-b98b-6700f2168157
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: container
+        background_color: none
+        text_color: auto
+        columns: '100'
+        gutter: 'gx-4 gy-4'
+        padding_block_start: pt-4
+        padding_block_end: pb-5
+        vertical_alignment: align-items-center
+        horizontal_alignment: text-center
+        section_header: false
+        section_footer: false
+        aos_once: false
+    -
+      parent_uuid: f26185a0-e490-4504-b98b-6700f2168157
+      slot: col_1
+      uuid: 2a1e7e4d-1cea-49be-a5a9-5837dde9ffd3
+      component_id: sdc.vartheme_bs5_horizonaid.button
+      inputs:
+        variant: btn-primary
+        outline: false
+        size: btn-md
+        label: 'See Where We Work'
+        target: self
+        disabled: false
+        icon: none
+        icon_first: false
+        alignment: inline
+        full_width: false
+        radius: rounded-pill
+        href:
+          uri: 'internal:/countries'
+          options: {  }
+  path:
+    -
+      alias: /impact
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","image_src":"[canvas_page:image:entity:field_media_image:entity:url]","title":"[canvas_page:title] | [site:name]"}'

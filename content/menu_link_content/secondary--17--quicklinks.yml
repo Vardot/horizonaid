@@ -13,7 +13,7 @@ default:
       value: 'Created new Custom menu link'
   enabled:
     -
-      value: false
+      value: true
   title:
     -
       value: Quicklinks
