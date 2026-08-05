@@ -540,18 +540,402 @@ config:
     canvas.content_template.node.blog.impressed_card_large:
       repointComponentTreeToTheme:
         theme: default
+      setComponentTreeIfComponentsExist:
+        component_tree:
+          1acc5cc6-57db-4cb0-8a82-bd8fce040599:
+            uuid: 1acc5cc6-57db-4cb0-8a82-bd8fce040599
+            component_id: sdc.vartheme_bs5_horizonaid.card-impressed
+            component_version: aa6c2c2cab020330
+            inputs:
+              media_position: "top"
+              media_image:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_featured_image\u241e\u241fentity\u241c\u241centity:media:image\u241dfield_media_image\u241e\u241f{src\u21a0src_with_alternate_widths,alt\u21a0alt,width\u21a0width,height\u21a0height}"
+              ratio: "ratio-16x9"
+              fit: "object-fit-cover"
+              card_border: false
+              padded: false
+              box_shadow: "shadow-none"
+              corner_style: "rounded-3"
+              equal_height: true
+              stretched_link: true
+              link_url:
+                sourceType: "host-entity-url"
+                absolute: false
+          45de38cb-d018-4f49-b06c-28a6b75cd4fa:
+            parent_uuid: 1acc5cc6-57db-4cb0-8a82-bd8fce040599
+            slot: content
+            uuid: 45de38cb-d018-4f49-b06c-28a6b75cd4fa
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 98b47f40fce531b1
+            inputs:
+              heading_text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"
+              level: 3
+              text_color: "text-white"
+          70440ead-7416-4807-8493-8f2f716d89c4:
+            parent_uuid: 1acc5cc6-57db-4cb0-8a82-bd8fce040599
+            slot: content
+            uuid: 70440ead-7416-4807-8493-8f2f716d89c4
+            component_id: sdc.vartheme_bs5_horizonaid.rich-text
+            component_version: 1f6fe433026fe38e
+            inputs:
+              text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_content\u241e\u241fprocessed"
+              trim: true
+              trim_length: 40
+              trim_units: "words"
+              suffix: " ..."
+              strip_html: true
+          aa2fea80-0aec-4390-a6d4-006a6c67a369:
+            parent_uuid: 1acc5cc6-57db-4cb0-8a82-bd8fce040599
+            slot: content
+            uuid: aa2fea80-0aec-4390-a6d4-006a6c67a369
+            component_id: sdc.vartheme_bs5_horizonaid.date
+            component_version: 69cd1843b2f2a0e5
+            inputs:
+              date:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dcreated\u241e\u241fvalue"
+                adapter: "unix_to_date"
+              text_color: "text-white"
+          24ba3122-db28-40e3-bc50-72642df36880:
+            parent_uuid: 1acc5cc6-57db-4cb0-8a82-bd8fce040599
+            slot: overlay
+            uuid: 24ba3122-db28-40e3-bc50-72642df36880
+            component_id: sdc.vartheme_bs5_horizonaid.badge
+            component_version: 13d91759ac4fcdfe
+            inputs:
+              label:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_blog_categories\u241e0\u241fentity\u241c\u241centity:taxonomy_term:blog_categories\u241dname\u241e\u241fvalue"
+              url: ''
+              variant: "text-bg-dark"
+              size: "fs-6 px-3 py-2"
+              icon: "none"
+              icon_first: true
+              radius: "rounded-pill"
+              indicator: "none"
+              indicator_text: "99+"
+          86e6beae-4dc5-4539-adec-61ca0338b4de:
+            parent_uuid: 1acc5cc6-57db-4cb0-8a82-bd8fce040599
+            slot: content
+            uuid: 86e6beae-4dc5-4539-adec-61ca0338b4de
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_description\u241e\u241fvalue"
+              text_size: "fs-6"
+              text_color: "text-white"
     canvas.content_template.node.blog.impressed_card_medium:
       repointComponentTreeToTheme:
         theme: default
+      setComponentTreeIfComponentsExist:
+        component_tree:
+          89b58bd7-8727-4b98-b2d7-8726085c7951:
+            uuid: 89b58bd7-8727-4b98-b2d7-8726085c7951
+            component_id: sdc.vartheme_bs5_horizonaid.card-impressed
+            component_version: aa6c2c2cab020330
+            inputs:
+              media_position: "top"
+              media_image:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_featured_image\u241e\u241fentity\u241c\u241centity:media:image\u241dfield_media_image\u241e\u241f{src\u21a0src_with_alternate_widths,alt\u21a0alt,width\u21a0width,height\u21a0height}"
+              ratio: "ratio-4x3"
+              fit: "object-fit-cover"
+              card_border: false
+              padded: false
+              box_shadow: "shadow-none"
+              corner_style: "rounded-3"
+              equal_height: true
+              stretched_link: true
+              link_url:
+                sourceType: "host-entity-url"
+                absolute: false
+          10923ba4-b5af-4fa1-918e-143feb8ca8c4:
+            parent_uuid: 89b58bd7-8727-4b98-b2d7-8726085c7951
+            slot: content
+            uuid: 10923ba4-b5af-4fa1-918e-143feb8ca8c4
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 98b47f40fce531b1
+            inputs:
+              heading_text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"
+              level: 3
+              text_color: "text-white"
+          3efbb442-1e3d-4085-be67-3a0894eb5a1b:
+            parent_uuid: 89b58bd7-8727-4b98-b2d7-8726085c7951
+            slot: content
+            uuid: 3efbb442-1e3d-4085-be67-3a0894eb5a1b
+            component_id: sdc.vartheme_bs5_horizonaid.date
+            component_version: 69cd1843b2f2a0e5
+            inputs:
+              date:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dcreated\u241e\u241fvalue"
+                adapter: "unix_to_date"
+              text_color: "text-white"
+          6a36a2fa-5c91-4f98-94a3-c044481a8421:
+            parent_uuid: 89b58bd7-8727-4b98-b2d7-8726085c7951
+            slot: overlay
+            uuid: 6a36a2fa-5c91-4f98-94a3-c044481a8421
+            component_id: sdc.vartheme_bs5_horizonaid.badge
+            component_version: 13d91759ac4fcdfe
+            inputs:
+              label:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_blog_categories\u241e0\u241fentity\u241c\u241centity:taxonomy_term:blog_categories\u241dname\u241e\u241fvalue"
+              url: ''
+              variant: "text-bg-dark"
+              size: "fs-6 px-3 py-2"
+              icon: "none"
+              icon_first: true
+              radius: "rounded-pill"
+              indicator: "none"
+              indicator_text: "99+"
+          a57f12e8-650a-4496-9571-7cf2f71cc7f0:
+            parent_uuid: 89b58bd7-8727-4b98-b2d7-8726085c7951
+            slot: content
+            uuid: a57f12e8-650a-4496-9571-7cf2f71cc7f0
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_description\u241e\u241fvalue"
+              text_size: "fs-6"
+              text_color: "text-white"
     canvas.content_template.node.blog.impressed_card_small:
       repointComponentTreeToTheme:
         theme: default
+      setComponentTreeIfComponentsExist:
+        component_tree:
+          6a94ee03-0d3b-40b5-9448-17a4d9978d74:
+            uuid: 6a94ee03-0d3b-40b5-9448-17a4d9978d74
+            component_id: sdc.vartheme_bs5_horizonaid.card-impressed
+            component_version: aa6c2c2cab020330
+            inputs:
+              media_position: "top"
+              media_image:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_featured_image\u241e\u241fentity\u241c\u241centity:media:image\u241dfield_media_image\u241e\u241f{src\u21a0src_with_alternate_widths,alt\u21a0alt,width\u21a0width,height\u21a0height}"
+              ratio: "ratio-16x9"
+              fit: "object-fit-cover"
+              card_border: false
+              padded: false
+              corner_style: "rounded-3"
+              equal_height: true
+              stretched_link: true
+              link_url:
+                sourceType: "host-entity-url"
+                absolute: false
+          1f53f146-64c0-4c2f-a9e3-e32f0097dac6:
+            parent_uuid: 6a94ee03-0d3b-40b5-9448-17a4d9978d74
+            slot: content
+            uuid: 1f53f146-64c0-4c2f-a9e3-e32f0097dac6
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 98b47f40fce531b1
+            inputs:
+              heading_text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"
+              level: 3
+              text_color: "text-white"
+          0a5985f5-2264-461b-8da4-a5316727a311:
+            parent_uuid: 6a94ee03-0d3b-40b5-9448-17a4d9978d74
+            slot: overlay
+            uuid: 0a5985f5-2264-461b-8da4-a5316727a311
+            component_id: sdc.vartheme_bs5_horizonaid.badge
+            component_version: 13d91759ac4fcdfe
+            inputs:
+              label:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_blog_categories\u241e0\u241fentity\u241c\u241centity:taxonomy_term:blog_categories\u241dname\u241e\u241fvalue"
+              url: ''
+              variant: "text-bg-dark"
+              size: "fs-6 px-3 py-2"
+              icon: "none"
+              icon_first: true
+              radius: "rounded-pill"
+              indicator: "none"
+              indicator_text: "99+"
+          fae2e0a0-cf50-4de6-901a-72be3161b1ab:
+            parent_uuid: 6a94ee03-0d3b-40b5-9448-17a4d9978d74
+            slot: content
+            uuid: fae2e0a0-cf50-4de6-901a-72be3161b1ab
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_description\u241e\u241fvalue"
+              text_size: "fs-6"
+              text_color: "text-white"
     canvas.content_template.node.blog.impressed_card_xlarge:
       repointComponentTreeToTheme:
         theme: default
+      setComponentTreeIfComponentsExist:
+        component_tree:
+          9d045856-dab4-4f82-843a-76538cdedd3b:
+            uuid: 9d045856-dab4-4f82-843a-76538cdedd3b
+            component_id: sdc.vartheme_bs5_horizonaid.card-impressed
+            component_version: aa6c2c2cab020330
+            inputs:
+              media_position: "top"
+              media_image:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_featured_image\u241e\u241fentity\u241c\u241centity:media:image\u241dfield_media_image\u241e\u241f{src\u21a0src_with_alternate_widths,alt\u21a0alt,width\u21a0width,height\u21a0height}"
+              ratio: "ratio-21x9"
+              fit: "object-fit-cover"
+              card_border: false
+              padded: false
+              box_shadow: "shadow-none"
+              corner_style: "rounded-3"
+              equal_height: true
+              stretched_link: true
+              link_url:
+                sourceType: "host-entity-url"
+                absolute: false
+          f27e2b01-0a43-42ae-af5f-478f5a805fa5:
+            parent_uuid: 9d045856-dab4-4f82-843a-76538cdedd3b
+            slot: content
+            uuid: f27e2b01-0a43-42ae-af5f-478f5a805fa5
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 98b47f40fce531b1
+            inputs:
+              heading_text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"
+              level: 3
+              text_color: "text-white"
+          a382ec53-20ed-4ae0-a028-1dad2e8a9be5:
+            parent_uuid: 9d045856-dab4-4f82-843a-76538cdedd3b
+            slot: content
+            uuid: a382ec53-20ed-4ae0-a028-1dad2e8a9be5
+            component_id: sdc.vartheme_bs5_horizonaid.rich-text
+            component_version: 1f6fe433026fe38e
+            inputs:
+              text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_content\u241e\u241fprocessed"
+              trim: true
+              trim_length: 40
+              trim_units: "words"
+              suffix: " ..."
+              strip_html: true
+          22eb0f66-dc53-4f4a-8eff-80b5a86c675b:
+            parent_uuid: 9d045856-dab4-4f82-843a-76538cdedd3b
+            slot: content
+            uuid: 22eb0f66-dc53-4f4a-8eff-80b5a86c675b
+            component_id: sdc.vartheme_bs5_horizonaid.date
+            component_version: 69cd1843b2f2a0e5
+            inputs:
+              date:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dcreated\u241e\u241fvalue"
+                adapter: "unix_to_date"
+              text_color: "text-white"
+          29d6d42e-a905-4453-b234-6e7c3faf90e5:
+            parent_uuid: 9d045856-dab4-4f82-843a-76538cdedd3b
+            slot: overlay
+            uuid: 29d6d42e-a905-4453-b234-6e7c3faf90e5
+            component_id: sdc.vartheme_bs5_horizonaid.badge
+            component_version: 13d91759ac4fcdfe
+            inputs:
+              label:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_blog_categories\u241e0\u241fentity\u241c\u241centity:taxonomy_term:blog_categories\u241dname\u241e\u241fvalue"
+              url: ''
+              variant: "text-bg-dark"
+              size: "fs-6 px-3 py-2"
+              icon: "none"
+              icon_first: true
+              radius: "rounded-pill"
+              indicator: "none"
+              indicator_text: "99+"
+          9fabc1cb-0b01-40db-a553-9c8779f60ad9:
+            parent_uuid: 9d045856-dab4-4f82-843a-76538cdedd3b
+            slot: content
+            uuid: 9fabc1cb-0b01-40db-a553-9c8779f60ad9
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_description\u241e\u241fvalue"
+              text_size: "fs-6"
+              text_color: "text-white"
     canvas.content_template.node.blog.impressed_card_xsmall:
       repointComponentTreeToTheme:
         theme: default
+      setComponentTreeIfComponentsExist:
+        component_tree:
+          75d1b88b-9b9f-4525-8fc0-3dde57e49f32:
+            parent_uuid: e74677f9-f0a2-4cea-9393-a003f327ea2c
+            slot: content
+            uuid: 75d1b88b-9b9f-4525-8fc0-3dde57e49f32
+            component_id: sdc.vartheme_bs5_horizonaid.heading
+            component_version: 98b47f40fce531b1
+            inputs:
+              heading_text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dtitle\u241e\u241fvalue"
+              level: 3
+              text_color: "text-white"
+          e74677f9-f0a2-4cea-9393-a003f327ea2c:
+            uuid: e74677f9-f0a2-4cea-9393-a003f327ea2c
+            component_id: sdc.vartheme_bs5_horizonaid.card-impressed
+            component_version: aa6c2c2cab020330
+            inputs:
+              media_position: "top"
+              media_image:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_featured_image\u241e\u241fentity\u241c\u241centity:media:image\u241dfield_media_image\u241e\u241f{src\u21a0src_with_alternate_widths,alt\u21a0alt,width\u21a0width,height\u21a0height}"
+              ratio: "ratio-1x1"
+              fit: "object-fit-cover"
+              card_border: false
+              padded: false
+              corner_style: "rounded-3"
+              equal_height: true
+              stretched_link: true
+              link_url:
+                sourceType: "host-entity-url"
+                absolute: false
+          3da6f0c5-7a02-476d-9d5b-fd4056445889:
+            parent_uuid: e74677f9-f0a2-4cea-9393-a003f327ea2c
+            slot: overlay
+            uuid: 3da6f0c5-7a02-476d-9d5b-fd4056445889
+            component_id: sdc.vartheme_bs5_horizonaid.badge
+            component_version: 13d91759ac4fcdfe
+            inputs:
+              label:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_blog_categories\u241e0\u241fentity\u241c\u241centity:taxonomy_term:blog_categories\u241dname\u241e\u241fvalue"
+              url: ''
+              variant: "text-bg-dark"
+              size: "fs-6 px-3 py-2"
+              icon: "none"
+              icon_first: true
+              radius: "rounded-pill"
+              indicator: "none"
+              indicator_text: "99+"
+          08a45813-f367-49cd-a526-fd73ceccf74f:
+            parent_uuid: e74677f9-f0a2-4cea-9393-a003f327ea2c
+            slot: content
+            uuid: 08a45813-f367-49cd-a526-fd73ceccf74f
+            component_id: sdc.vartheme_bs5_horizonaid.text
+            component_version: c4ddb22de87220b3
+            inputs:
+              text:
+                sourceType: "entity-field"
+                expression: "\u2139\ufe0e\u241centity:node:blog\u241dfield_description\u241e\u241fvalue"
+              text_size: "fs-6"
+              text_color: "text-white"
     canvas.content_template.node.blog.overlay_card_large:
       repointComponentTreeToTheme:
         theme: default
@@ -2024,17 +2408,21 @@ config:
       - view terms in event_categories
       - view terms in event_topics
       - view terms in program_type
+      - view terms in blog_categories
       - view term names in event_categories
       - view term names in event_topics
       - view term names in program_type
+      - view term names in blog_categories
     user.role.authenticated:
       grantPermissions:
       - view terms in event_categories
       - view terms in event_topics
       - view terms in program_type
+      - view terms in blog_categories
       - view term names in event_categories
       - view term names in event_topics
       - view term names in program_type
+      - view term names in blog_categories
     canvas.content_template.node.event.full:
       setComponentTreeIfComponentsExist:
         component_tree:
