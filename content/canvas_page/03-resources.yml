@@ -24,6 +24,13 @@ default:
       value: Resources
   components:
     -
+      uuid: 3a10cb4f-373b-4d6d-bf44-4e50f69f9d6a
+      component_id: block.system_breadcrumb_block
+      component_version: 0d7e961dd03aa710
+      inputs:
+        label: ''
+        label_display: '0'
+    -
       uuid: ea2bc356-1f7b-42d1-9917-c58cdc67848e
       component_id: sdc.vartheme_bs5_horizonaid.media-banner
       inputs:

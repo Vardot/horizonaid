@@ -21,6 +21,13 @@ default:
       value: 'Our Impact'
   components:
     -
+      uuid: a7c7bc4c-bc66-47de-8f59-0f79ebd4c72f
+      component_id: block.system_breadcrumb_block
+      component_version: 0d7e961dd03aa710
+      inputs:
+        label: ''
+        label_display: '0'
+    -
       uuid: d22f8fb0-6e41-4e85-8ffa-d33a91c1a515
       component_id: sdc.vartheme_bs5_horizonaid.section
       inputs:

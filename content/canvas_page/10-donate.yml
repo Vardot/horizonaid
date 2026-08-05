@@ -24,6 +24,13 @@ default:
       value: Donate
   components:
     -
+      uuid: 1e07b799-c8bd-4ed7-9fa0-4ef0bd5475e6
+      component_id: block.system_breadcrumb_block
+      component_version: 0d7e961dd03aa710
+      inputs:
+        label: ''
+        label_display: '0'
+    -
       uuid: 259f9fc8-8b3c-4308-a8c5-27cba0a965ce
       component_id: sdc.vartheme_bs5_horizonaid.media-banner
       inputs:

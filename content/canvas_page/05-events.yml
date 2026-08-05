@@ -18,6 +18,12 @@ default:
   title:
   - value: Events
   components:
+  - uuid: 06d7c9b0-dc37-41a5-a9ad-940a521ced4f
+    component_id: block.system_breadcrumb_block
+    component_version: 0d7e961dd03aa710
+    inputs:
+      label: ''
+      label_display: '0'
   - uuid: 4b2da0b4-eced-47ac-b52b-867ba55b9348
     component_id: sdc.vartheme_bs5_horizonaid.media-banner
     inputs:

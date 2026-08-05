@@ -2407,6 +2407,24 @@ config:
     views.view.countries:
       setViewsComponentStyleTheme:
         theme: default
+      simpleConfigUpdate:
+        display.all.display_options.style.options.prop_mappings.col_lg: col-lg-3
+        display.all.display_options.style.options.prop_mappings.col_xl: col-xl-3
+        display.all.display_options.style.options.prop_mappings.col_xxl: col-xxl-3
+        display.all.display_options.header:
+          area:
+            id: area
+            table: views
+            field: area
+            relationship: none
+            group_type: group
+            admin_label: ''
+            plugin_id: text
+            empty: true
+            content:
+              value: '<h2 class="visually-hidden">All countries</h2>'
+              format: code_html
+            tokenize: false
     webshare.settings:
       simpleConfigUpdate:
         buttons.facebook_share.enabled: 1

@@ -28,6 +28,12 @@ default:
   title:
   - value: Our Programs
   components:
+  - uuid: 6629d8c3-7c22-4a19-9ae3-9f1768bb578a
+    component_id: block.system_breadcrumb_block
+    component_version: 0d7e961dd03aa710
+    inputs:
+      label: ''
+      label_display: '0'
   - uuid: ec16a966-2e38-41da-a01c-e453464c53e6
     component_id: sdc.vartheme_bs5_horizonaid.media-banner
     inputs:

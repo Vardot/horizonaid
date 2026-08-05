@@ -58,6 +58,13 @@ default:
       value: About
   components:
     -
+      uuid: aed52a92-364c-4222-b255-221489756f74
+      component_id: block.system_breadcrumb_block
+      component_version: 0d7e961dd03aa710
+      inputs:
+        label: ''
+        label_display: '0'
+    -
       uuid: a69fb162-6a38-4eb0-8176-a6bf6f8c142a
       component_id: sdc.vartheme_bs5_horizonaid.media-banner
       inputs:
