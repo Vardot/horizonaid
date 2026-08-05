@@ -1092,14 +1092,14 @@ config:
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30001:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30001
             component_id: block.system_breadcrumb_block
-            component_version: active
+            component_version: 0d7e961dd03aa710
             inputs:
               label: ''
               label_display: "0"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30010:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30010
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: active
+            component_version: 9b679273be9319ad
             inputs:
               bg_edge2edge: false
               container_type: "container"
@@ -1119,7 +1119,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30016
             component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
-            component_version: active
+            component_version: ecf7fdb0e8ac5d2e
             inputs:
               icon_alignment: "center"
               card_border: false
@@ -1136,7 +1136,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30017
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30018:
@@ -1144,7 +1144,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30018
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: active
+            component_version: 0889e2ce906c3164
             inputs:
               heading_text:
                 sourceType: "entity-field"
@@ -1156,7 +1156,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30019
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: active
+            component_version: c4ddb22de87220b3
             inputs:
               text:
                 sourceType: "entity-field"
@@ -1166,7 +1166,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d3001a
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d3001b:
@@ -1174,7 +1174,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d3001b
             component_id: sdc.vartheme_bs5_horizonaid.image
-            component_version: active
+            component_version: 20b07c548b4cf729
             inputs:
               media:
                 sourceType: "entity-field"
@@ -1192,13 +1192,13 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d3001c
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30020:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30020
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: active
+            component_version: 9b679273be9319ad
             inputs:
               container_type: "container"
               columns: 100
@@ -1210,7 +1210,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30021
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: active
+            component_version: 0889e2ce906c3164
             inputs:
               heading_text: "About This Program"
               level: 2
@@ -1219,7 +1219,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30022
             component_id: sdc.vartheme_bs5_horizonaid.rich-text
-            component_version: active
+            component_version: 82cd1f087fd469f4
             inputs:
               text:
                 sourceType: "entity-field"
@@ -1227,7 +1227,7 @@ config:
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30050:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30050
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: active
+            component_version: 9b679273be9319ad
             inputs:
               bg_edge2edge: false
               container_type: "container"
@@ -1247,7 +1247,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30051
             component_id: sdc.vartheme_bs5_horizonaid.card-text
-            component_version: active
+            component_version: e029fefa26d20f4f
             inputs:
               card_border: false
               background_color: "bg-secondary-subtle"
@@ -1264,7 +1264,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30052
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30053:
@@ -1272,7 +1272,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30053
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: active
+            component_version: 0889e2ce906c3164
             inputs:
               heading_text:
                 sourceType: "entity-field"
@@ -1283,7 +1283,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30054
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-2"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30055:
@@ -1291,7 +1291,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30055
             component_id: sdc.vartheme_bs5_horizonaid.rich-text
-            component_version: active
+            component_version: 82cd1f087fd469f4
             inputs:
               text:
                 sourceType: "entity-field"
@@ -1301,7 +1301,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30056
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30057:
@@ -1309,7 +1309,7 @@ config:
             slot: col_2
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30057
             component_id: sdc.vartheme_bs5_horizonaid.image
-            component_version: active
+            component_version: 20b07c548b4cf729
             inputs:
               media:
                 sourceType: "entity-field"
@@ -1325,7 +1325,7 @@ config:
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30060:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30060
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: active
+            component_version: 9b679273be9319ad
             inputs:
               bg_edge2edge: false
               container_type: "container"
@@ -1346,7 +1346,7 @@ config:
             slot: header_slot
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30061
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: active
+            component_version: 0889e2ce906c3164
             inputs:
               heading_text:
                 sourceType: "entity-field"
@@ -1357,7 +1357,7 @@ config:
             slot: header_slot
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30062
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: active
+            component_version: c4ddb22de87220b3
             inputs:
               text:
                 sourceType: "entity-field"
@@ -1367,7 +1367,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30070
             component_id: sdc.vartheme_bs5_horizonaid.figure
-            component_version: active
+            component_version: 0a31ebc5be5d97a1
             inputs:
               number:
                 sourceType: "entity-field"
@@ -1386,7 +1386,7 @@ config:
             slot: col_2
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30071
             component_id: sdc.vartheme_bs5_horizonaid.figure
-            component_version: active
+            component_version: 0a31ebc5be5d97a1
             inputs:
               number:
                 sourceType: "entity-field"
@@ -1405,7 +1405,7 @@ config:
             slot: col_3
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30072
             component_id: sdc.vartheme_bs5_horizonaid.figure
-            component_version: active
+            component_version: 0a31ebc5be5d97a1
             inputs:
               number:
                 sourceType: "entity-field"
@@ -1422,7 +1422,7 @@ config:
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30080:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30080
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: active
+            component_version: 9b679273be9319ad
             inputs:
               bg_edge2edge: false
               container_type: "container"
@@ -1442,7 +1442,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30081
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: active
+            component_version: 0889e2ce906c3164
             inputs:
               heading_text:
                 sourceType: "entity-field"
@@ -1453,7 +1453,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30082
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-2"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30083:
@@ -1461,7 +1461,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30083
             component_id: sdc.vartheme_bs5_horizonaid.rich-text
-            component_version: active
+            component_version: 82cd1f087fd469f4
             inputs:
               text:
                 sourceType: "entity-field"
@@ -1471,7 +1471,7 @@ config:
             slot: col_2
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30084
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: active
+            component_version: 9b679273be9319ad
             inputs:
               bg_edge2edge: false
               container_type: "none"
@@ -1491,7 +1491,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
             component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
-            component_version: active
+            component_version: ecf7fdb0e8ac5d2e
             inputs:
               icon_alignment: "start"
               card_border: false
@@ -1508,7 +1508,7 @@ config:
             slot: content
             uuid: 53e4beb0-2210-4fb3-b4be-712d464de737
             component_id: sdc.vartheme_bs5_horizonaid.html-code
-            component_version: active
+            component_version: 656471f14c4594ec
             inputs:
               code: "<span class=\"d-inline-flex align-items-center justify-content-center rounded-3 bg-accent\" style=\"width:3.5rem;height:3.5rem\"><img src=\"/themes/contrib/vartheme_bs5_horizonaid/components/foundation/images/assets/icon-people.svg\" alt=\"Community\" style=\"width:1.75rem;height:1.75rem\"></span>"
           6b150324-e90a-483d-bed5-a9da407d9eca:
@@ -1516,7 +1516,7 @@ config:
             slot: content
             uuid: 6b150324-e90a-483d-bed5-a9da407d9eca
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-5"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300a0:
@@ -1524,7 +1524,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a0
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: active
+            component_version: 0889e2ce906c3164
             inputs:
               heading_text:
                 sourceType: "entity-field"
@@ -1535,7 +1535,7 @@ config:
             slot: content
             uuid: 96e4e712-d60a-52e7-afbf-152964a7aedf
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-0"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b0:
@@ -1543,7 +1543,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b0
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: active
+            component_version: c4ddb22de87220b3
             inputs:
               text:
                 sourceType: "entity-field"
@@ -1553,7 +1553,7 @@ config:
             slot: col_2
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
             component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
-            component_version: active
+            component_version: ecf7fdb0e8ac5d2e
             inputs:
               icon_alignment: "start"
               card_border: false
@@ -1570,7 +1570,7 @@ config:
             slot: content
             uuid: 9cce79ef-d156-478b-8ada-fa5039a25d2f
             component_id: sdc.vartheme_bs5_horizonaid.html-code
-            component_version: active
+            component_version: 656471f14c4594ec
             inputs:
               code: "<span class=\"d-inline-flex align-items-center justify-content-center rounded-3 bg-primary\" style=\"width:3.5rem;height:3.5rem\"><img src=\"/themes/contrib/vartheme_bs5_horizonaid/components/foundation/images/assets/icon-check.svg\" alt=\"Verified\" style=\"width:1.75rem;height:1.75rem\"></span>"
           4288fe5b-3f37-45d7-99cb-ab5070a61cd0:
@@ -1578,7 +1578,7 @@ config:
             slot: content
             uuid: 4288fe5b-3f37-45d7-99cb-ab5070a61cd0
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-5"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300a1:
@@ -1586,7 +1586,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a1
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: active
+            component_version: 0889e2ce906c3164
             inputs:
               heading_text:
                 sourceType: "entity-field"
@@ -1597,7 +1597,7 @@ config:
             slot: content
             uuid: a7d56212-2ba4-5a1c-9699-78e16f285978
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-0"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b1:
@@ -1605,7 +1605,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b1
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: active
+            component_version: c4ddb22de87220b3
             inputs:
               text:
                 sourceType: "entity-field"
@@ -1615,7 +1615,7 @@ config:
             slot: col_1
             uuid: adcad2a0-b900-4381-8c7c-d56d24141a4f
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30092:
@@ -1623,7 +1623,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
             component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
-            component_version: active
+            component_version: ecf7fdb0e8ac5d2e
             inputs:
               icon_alignment: "start"
               card_border: false
@@ -1640,7 +1640,7 @@ config:
             slot: content
             uuid: 54f8ac76-f73f-415f-a528-86454f725f0d
             component_id: sdc.vartheme_bs5_horizonaid.html-code
-            component_version: active
+            component_version: 656471f14c4594ec
             inputs:
               code: "<span class=\"d-inline-flex align-items-center justify-content-center rounded-3 bg-primary\" style=\"width:3.5rem;height:3.5rem\"><img src=\"/themes/contrib/vartheme_bs5_horizonaid/components/foundation/images/assets/icon-handshake.svg\" alt=\"Partnership\" style=\"width:1.75rem;height:1.75rem\"></span>"
           11548433-d47a-4021-924a-fc20a607873e:
@@ -1648,7 +1648,7 @@ config:
             slot: content
             uuid: 11548433-d47a-4021-924a-fc20a607873e
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-5"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300a2:
@@ -1656,7 +1656,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a2
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: active
+            component_version: 0889e2ce906c3164
             inputs:
               heading_text:
                 sourceType: "entity-field"
@@ -1667,7 +1667,7 @@ config:
             slot: content
             uuid: 3d2edb32-ad81-5115-b4f1-e44b0ee80f82
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-0"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b2:
@@ -1675,7 +1675,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b2
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: active
+            component_version: c4ddb22de87220b3
             inputs:
               text:
                 sourceType: "entity-field"
@@ -1685,7 +1685,7 @@ config:
             slot: col_2
             uuid: b2bef87d-9e83-4420-a3b7-bb93b9bc9046
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30093:
@@ -1693,7 +1693,7 @@ config:
             slot: col_2
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
             component_id: sdc.vartheme_bs5_horizonaid.card-icon-text
-            component_version: active
+            component_version: ecf7fdb0e8ac5d2e
             inputs:
               icon_alignment: "start"
               card_border: false
@@ -1710,7 +1710,7 @@ config:
             slot: content
             uuid: 71dcc6d5-5363-465d-a255-174cd3b0fab1
             component_id: sdc.vartheme_bs5_horizonaid.html-code
-            component_version: active
+            component_version: 656471f14c4594ec
             inputs:
               code: "<span class=\"d-inline-flex align-items-center justify-content-center rounded-3 bg-accent\" style=\"width:3.5rem;height:3.5rem\"><img src=\"/themes/contrib/vartheme_bs5_horizonaid/components/foundation/images/assets/icon-search.svg\" alt=\"Continuity\" style=\"width:1.75rem;height:1.75rem\"></span>"
           722efca9-c7ac-4fd1-af3b-8800878f7878:
@@ -1718,7 +1718,7 @@ config:
             slot: content
             uuid: 722efca9-c7ac-4fd1-af3b-8800878f7878
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-5"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300a3:
@@ -1726,7 +1726,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300a3
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: active
+            component_version: 0889e2ce906c3164
             inputs:
               heading_text:
                 sourceType: "entity-field"
@@ -1737,7 +1737,7 @@ config:
             slot: content
             uuid: db1ab5a0-02dc-5f6a-8703-24ffdbd2a07c
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-0"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300b3:
@@ -1745,7 +1745,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300b3
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: active
+            component_version: c4ddb22de87220b3
             inputs:
               text:
                 sourceType: "entity-field"
@@ -1753,7 +1753,7 @@ config:
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300d0:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d0
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: active
+            component_version: 9b679273be9319ad
             inputs:
               bg_edge2edge: false
               container_type: "container"
@@ -1773,7 +1773,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d1
             component_id: sdc.vartheme_bs5_horizonaid.map
-            component_version: active
+            component_version: 15729bf098abe7a0
             inputs:
               map_height: "lg"
               corner_style: "rounded-4"
@@ -1784,7 +1784,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d2
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: active
+            component_version: 0889e2ce906c3164
             inputs:
               heading_text:
                 sourceType: "entity-field"
@@ -1795,7 +1795,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d3
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-2"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300d4:
@@ -1803,7 +1803,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300d4
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: active
+            component_version: c4ddb22de87220b3
             inputs:
               text:
                 sourceType: "entity-field"
@@ -1813,7 +1813,7 @@ config:
             slot: countries
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300e0
             component_id: sdc.vartheme_bs5_horizonaid.map-info-card
-            component_version: active
+            component_version: e8af5ab2d49aae2e
             inputs:
               country_code:
                 sourceType: "entity-field"
@@ -1837,7 +1837,7 @@ config:
             slot: countries
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300e1
             component_id: sdc.vartheme_bs5_horizonaid.map-info-card
-            component_version: active
+            component_version: e8af5ab2d49aae2e
             inputs:
               country_code:
                 sourceType: "entity-field"
@@ -1861,7 +1861,7 @@ config:
             slot: countries
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300e2
             component_id: sdc.vartheme_bs5_horizonaid.map-info-card
-            component_version: active
+            component_version: e8af5ab2d49aae2e
             inputs:
               country_code:
                 sourceType: "entity-field"
@@ -1883,7 +1883,7 @@ config:
           7f1c2a80-5d31-4e07-9a11-b0a1c2d30040:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30040
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: active
+            component_version: 9b679273be9319ad
             inputs:
               bg_edge2edge: false
               container_type: "none"
@@ -1903,7 +1903,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30044
             component_id: block.views_block.blog-latest_light
-            component_version: active
+            component_version: bbf13c45f9c9e5f5
             inputs:
               label: ''
               label_display: "0"
@@ -1912,7 +1912,7 @@ config:
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300c0:
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c0
             component_id: sdc.vartheme_bs5_horizonaid.section
-            component_version: active
+            component_version: 9b679273be9319ad
             inputs:
               bg_edge2edge: false
               container_type: "container"
@@ -1932,7 +1932,7 @@ config:
             slot: col_1
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c1
             component_id: sdc.vartheme_bs5_horizonaid.card-text
-            component_version: active
+            component_version: e029fefa26d20f4f
             inputs:
               card_border: false
               background_color: "bg-primary-subtle"
@@ -1949,7 +1949,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c2
             component_id: sdc.vartheme_bs5_horizonaid.heading
-            component_version: active
+            component_version: 0889e2ce906c3164
             inputs:
               heading_text:
                 sourceType: "entity-field"
@@ -1960,7 +1960,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c3
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-2"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300c4:
@@ -1968,7 +1968,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c4
             component_id: sdc.vartheme_bs5_horizonaid.text
-            component_version: active
+            component_version: c4ddb22de87220b3
             inputs:
               text:
                 sourceType: "entity-field"
@@ -1978,7 +1978,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c5
             component_id: sdc.vartheme_bs5_horizonaid.spacer
-            component_version: active
+            component_version: 80de1b3919d08f87
             inputs:
               size: "py-3"
           7f1c2a80-5d31-4e07-9a11-b0a1c2d300c6:
@@ -1986,7 +1986,7 @@ config:
             slot: content
             uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d300c6
             component_id: sdc.vartheme_bs5_horizonaid.button
-            component_version: active
+            component_version: 64089b7681474537
             inputs:
               variant: "btn-primary"
               outline: false
