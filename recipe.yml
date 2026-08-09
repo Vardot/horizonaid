@@ -2426,13 +2426,14 @@ config:
               format: code_html
             tokenize: false
     webshare.settings:
-      simpleConfigUpdate:
-        buttons.facebook_share.enabled: 1
-        buttons.facebook_share.weight: 0
-        buttons.linkedin.enabled: 1
-        buttons.linkedin.weight: 1
-        buttons.x.enabled: 1
-        buttons.x.weight: 2
+      setSocialPlatforms:
+        - facebook_share
+        - platform_id: instagram
+          name: Instagram
+          title: 'Share on Instagram'
+          url_template: 'https://www.instagram.com/'
+        - linkedin
+        - x
     user.role.anonymous:
       grantPermissions:
       - view terms in event_categories
