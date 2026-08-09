@@ -348,7 +348,7 @@ config:
               type: entity:node
               options:
                 relationship: none
-                view_mode: impressed_card_medium
+                view_mode: impressed_card_medium_light
             defaults:
               title: false
               pager: false

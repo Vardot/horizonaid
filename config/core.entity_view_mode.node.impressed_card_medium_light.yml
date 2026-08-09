@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.impressed_card_medium_light
+label: 'Impressed card - medium light'
+description: 'Impressed card for light backgrounds: dark text instead of white.'
+targetEntityType: node
+cache: true
