@@ -2434,6 +2434,10 @@ config:
               format: code_html
             tokenize: false
     webshare.settings:
+      simpleConfigUpdate:
+        icon_map.instagram:
+          pack: 'vartheme_social'
+          icon: 'instagram'
       setSocialPlatforms:
         - facebook_share
         - platform_id: instagram
