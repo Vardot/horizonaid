@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
-    c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
+    25b155c0-57b9-4c41-a4d5-b6dd9482c0d1: media
     6100a75e-6da4-4f26-addd-a256e68df3ae: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'What our protection teams handle when courts and police are no longer functioning.'
   field_featured_image:
     -
-      entity: c749d4bc-2a5e-47e1-a3ed-ce85781612b9
+      entity: 25b155c0-57b9-4c41-a4d5-b6dd9482c0d1
   field_tags:
     -
       entity: 6100a75e-6da4-4f26-addd-a256e68df3ae

@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
-    20a27553-c0f7-44bf-adb9-383e46972dff: media
+    c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'The countries and indicators being added to the next edition of the human rights index.'
   field_featured_image:
     -
-      entity: 20a27553-c0f7-44bf-adb9-383e46972dff
+      entity: c749d4bc-2a5e-47e1-a3ed-ce85781612b9
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1

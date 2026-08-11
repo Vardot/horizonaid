@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
-    1253742d-563d-44ae-a3b2-2687f6caa2e2: media
+    437e4b95-01b6-4cf5-ab32-e9bf1f1abd49: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'Field data auditing educational safety, funding transparency and legislative progress across the countries we work in.'
   field_featured_image:
     -
-      entity: 1253742d-563d-44ae-a3b2-2687f6caa2e2
+      entity: 437e4b95-01b6-4cf5-ab32-e9bf1f1abd49
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1

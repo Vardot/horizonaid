@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
-    26af9b14-fdfc-4e2f-a313-d00be6b5ea0e: media
+    ee0c4672-3672-423e-87f3-10aa42804ca7: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'A second cohort of local teachers completed training designed for classrooms that move.'
   field_featured_image:
     -
-      entity: 26af9b14-fdfc-4e2f-a313-d00be6b5ea0e
+      entity: ee0c4672-3672-423e-87f3-10aa42804ca7
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1

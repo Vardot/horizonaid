@@ -16,14 +16,14 @@ default:
   uid:
   - target_id: 1
   name:
-  - value: Community meeting
+  - value: Cooking oil handed out at a distribution point
   revision_translation_affected:
   - value: true
   path:
   - langcode: en
     alias: null
   field_media_image:
-  - alt: Community meeting in a Horizon Aid programme
+  - alt: An aid worker handing cooking oil to a man at a distribution point
     title: ''
     width: 2640
     height: 1760

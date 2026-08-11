@@ -16,14 +16,14 @@ default:
   uid:
   - target_id: 1
   name:
-  - value: Health Program
+  - value: Health programme
   revision_translation_affected:
   - value: true
   path:
   - langcode: en
     alias: null
   field_media_image:
-  - alt: Health Program
+  - alt: A mother washing her child in a basin outside a tent
     title: ''
     width: 1140
     height: 641

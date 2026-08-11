@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
-    67a76fae-bc22-4aa1-a144-4f39e44428ce: media
+    20a27553-c0f7-44bf-adb9-383e46972dff: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'A shared pump serving four cooperatives cut water costs and ended a long dispute.'
   field_featured_image:
     -
-      entity: 67a76fae-bc22-4aa1-a144-4f39e44428ce
+      entity: 20a27553-c0f7-44bf-adb9-383e46972dff
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

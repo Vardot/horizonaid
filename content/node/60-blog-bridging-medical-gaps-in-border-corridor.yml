@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
-    f749352f-75eb-422e-abca-0696f87555ba: media
+    070ea67b-4707-43bd-a9e8-916defc277fb: media
     6100a75e-6da4-4f26-addd-a256e68df3ae: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'Mobile health units delivered emergency paediatric care and preventative supplies to more than forty remote settlements this quarter.'
   field_featured_image:
     -
-      entity: f749352f-75eb-422e-abca-0696f87555ba
+      entity: 070ea67b-4707-43bd-a9e8-916defc277fb
   field_tags:
     -
       entity: 6100a75e-6da4-4f26-addd-a256e68df3ae

@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
-    6f159f66-1671-42eb-adbf-b82d691dd330: media
+    437e4b95-01b6-4cf5-ab32-e9bf1f1abd49: media
     6100a75e-6da4-4f26-addd-a256e68df3ae: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'Fifteen thousand children were vaccinated in districts where routine services had stopped.'
   field_featured_image:
     -
-      entity: 6f159f66-1671-42eb-adbf-b82d691dd330
+      entity: 437e4b95-01b6-4cf5-ab32-e9bf1f1abd49
   field_tags:
     -
       entity: 6100a75e-6da4-4f26-addd-a256e68df3ae

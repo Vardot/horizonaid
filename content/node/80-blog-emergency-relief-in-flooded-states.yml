@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     9e318a9b-b0f1-4be1-a443-ca0ddcee9eba: taxonomy_term
-    63c0f85c-2459-4aa2-af2c-4b012f5857c6: media
+    fbca9adb-bf14-44fb-a1a3-c6f02b725a23: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'Flooding now displaces more people than conflict in several states we work in.'
   field_featured_image:
     -
-      entity: 63c0f85c-2459-4aa2-af2c-4b012f5857c6
+      entity: fbca9adb-bf14-44fb-a1a3-c6f02b725a23
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

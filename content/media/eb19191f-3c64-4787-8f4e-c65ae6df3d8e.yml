@@ -16,14 +16,14 @@ default:
   uid:
   - target_id: 1
   name:
-  - value: Program Agriculture Tab
+  - value: Medicine packed for dispatch
   revision_translation_affected:
   - value: true
   path:
   - langcode: en
     alias: null
   field_media_image:
-  - alt: Program Agriculture Tab
+  - alt: A worker packing boxes of medicine for dispatch
     title: ''
     width: 1140
     height: 641

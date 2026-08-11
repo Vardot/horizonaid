@@ -16,14 +16,14 @@ default:
   uid:
   - target_id: 1
   name:
-  - value: Legal aid desk
+  - value: Carrying water through a camp
   revision_translation_affected:
   - value: true
   path:
   - langcode: en
     alias: null
   field_media_image:
-  - alt: Legal aid desk in a Horizon Aid programme
+  - alt: A child carrying water containers past tents in a displacement camp
     title: ''
     width: 2640
     height: 1760

@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     c881662f-29fc-4e71-a6b2-205a516288f8: taxonomy_term
-    d9a8afc7-a393-4489-9ffa-60c3692953d4: media
+    c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
     150cc2bb-45a9-4e56-b6ce-60c553f0bbb2: taxonomy_term
 default:
   revision_uid:
@@ -56,4 +56,4 @@ default:
     rrule_index: null
     timezone: ''
   field_featured_image:
-  - entity: d9a8afc7-a393-4489-9ffa-60c3692953d4
+  - entity: c749d4bc-2a5e-47e1-a3ed-ce85781612b9

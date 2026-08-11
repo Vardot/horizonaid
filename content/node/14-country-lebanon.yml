@@ -6,7 +6,6 @@ _meta:
   default_langcode: en
   depends:
     3db67d5a-439a-4486-a6fd-bdf32ce1795a: media
-    50bf57b5-5c10-4e29-9d6d-23b3ad7ea315: media
     d9b90fa4-cbc0-410f-a2a3-741754126f88: media
     38771a02-8334-4057-9022-f7f4d5342612: media
     76a6a186-65a3-4c80-a494-5d00ff312eae: media
@@ -72,7 +71,7 @@ default:
       format: content_format
   field_on_the_ground_image:
     -
-      entity: 50bf57b5-5c10-4e29-9d6d-23b3ad7ea315
+      entity: 3db67d5a-439a-4486-a6fd-bdf32ce1795a
   field_our_role:
     -
       value: '<p>We distribute vital medical supplies and run neighbourhood clinics that deliver preventative healthcare in areas where the public system has been stretched past capacity.</p>'

@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
-    25b155c0-57b9-4c41-a4d5-b6dd9482c0d1: media
+    bdff596c-46c9-4a01-bf78-f568ccc12755: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'Attendance data from twelve schools where a daily meal was introduced.'
   field_featured_image:
     -
-      entity: 25b155c0-57b9-4c41-a4d5-b6dd9482c0d1
+      entity: bdff596c-46c9-4a01-bf78-f568ccc12755
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1

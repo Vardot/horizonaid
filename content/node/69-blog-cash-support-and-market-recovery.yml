@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
-    6e55f5d3-20dc-4f24-ad34-04266b987d0e: media
+    fbca9adb-bf14-44fb-a1a3-c6f02b725a23: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'What happened to local markets in districts where we replaced in-kind aid with direct cash.'
   field_featured_image:
     -
-      entity: 6e55f5d3-20dc-4f24-ad34-04266b987d0e
+      entity: fbca9adb-bf14-44fb-a1a3-c6f02b725a23
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

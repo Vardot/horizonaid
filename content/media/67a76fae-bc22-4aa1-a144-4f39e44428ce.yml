@@ -16,14 +16,14 @@ default:
   uid:
   - target_id: 1
   name:
-  - value: Shelter repair
+  - value: Registering families in the field
   revision_translation_affected:
   - value: true
   path:
   - langcode: en
     alias: null
   field_media_image:
-  - alt: Shelter repair in a Horizon Aid programme
+  - alt: An aid worker registering families on a mobile device
     title: ''
     width: 2640
     height: 1760

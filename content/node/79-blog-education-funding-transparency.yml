@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
-    1f88c0d0-0dc7-495a-a9c8-5e4b09aa9cb1: media
+    ee0c4672-3672-423e-87f3-10aa42804ca7: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'Where education money actually lands, traced from donor to classroom.'
   field_featured_image:
     -
-      entity: 1f88c0d0-0dc7-495a-a9c8-5e4b09aa9cb1
+      entity: ee0c4672-3672-423e-87f3-10aa42804ca7
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1

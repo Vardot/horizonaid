@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     60a3f621-9baf-4341-a6ad-b8615f99e6d3: taxonomy_term
-    2703edeb-c3da-4295-a7f9-956add15af88: media
+    67a76fae-bc22-4aa1-a144-4f39e44428ce: media
     3917245a-e65c-48ed-a00f-f804f38522f1: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'How we decide which corridor or district receives the next tranche of legal aid capacity.'
   field_featured_image:
     -
-      entity: 2703edeb-c3da-4295-a7f9-956add15af88
+      entity: 67a76fae-bc22-4aa1-a144-4f39e44428ce
   field_tags:
     -
       entity: 3917245a-e65c-48ed-a00f-f804f38522f1

@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     e1408d47-fc69-4b5e-a7bb-38ea345953f5: media
-    14c0a2d9-36f9-446e-a974-aa93b5493192: media
+    b000fa17-bc94-4a03-815b-95504499c4ae: media
     d9b90fa4-cbc0-410f-a2a3-741754126f88: media
     38771a02-8334-4057-9022-f7f4d5342612: media
     76a6a186-65a3-4c80-a494-5d00ff312eae: media
@@ -72,7 +72,7 @@ default:
       format: content_format
   field_on_the_ground_image:
     -
-      entity: 14c0a2d9-36f9-446e-a974-aa93b5493192
+      entity: b000fa17-bc94-4a03-815b-95504499c4ae
   field_our_role:
     -
       value: "<p>Afghanistan faces intersecting crises: decades of conflict, severe drought, economic collapse and one of the world's largest displacement crises. We partner with local organisations to deliver emergency shelter, clean water, education support and legal protection to families who have been displaced multiple times.</p>"

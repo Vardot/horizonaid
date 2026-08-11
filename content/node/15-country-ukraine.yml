@@ -6,7 +6,6 @@ _meta:
   default_langcode: en
   depends:
     934496a2-3f0b-4db3-a54e-b7e706a994dd: media
-    87b051ce-b31d-4586-9704-ffb20ae47b5f: media
     d9b90fa4-cbc0-410f-a2a3-741754126f88: media
     38771a02-8334-4057-9022-f7f4d5342612: media
     76a6a186-65a3-4c80-a494-5d00ff312eae: media
@@ -72,7 +71,7 @@ default:
       format: content_format
   field_on_the_ground_image:
     -
-      entity: 87b051ce-b31d-4586-9704-ffb20ae47b5f
+      entity: 934496a2-3f0b-4db3-a54e-b7e706a994dd
   field_our_role:
     -
       value: '<p>We coordinate rapid emergency relief, temporary shelter restoration and essential winterization supplies for families living close to active front lines.</p>'

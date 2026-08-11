@@ -16,14 +16,14 @@ default:
   uid:
   - target_id: 1
   name:
-  - value: Classroom lesson
+  - value: Supplies handed out from a mobile clinic
   revision_translation_affected:
   - value: true
   path:
   - langcode: en
     alias: null
   field_media_image:
-  - alt: Classroom lesson in a Horizon Aid programme
+  - alt: An aid worker handing supplies to a man beside a mobile clinic van
     title: ''
     width: 2640
     height: 1760

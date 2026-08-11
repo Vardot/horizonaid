@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
   depends:
     d762c0cc-2720-4035-a262-0118d74e67b2: taxonomy_term
-    77f64522-d62e-448c-ab81-5a4137f8057c: media
+    20a27553-c0f7-44bf-adb9-383e46972dff: media
     6f0b13b7-61bb-4552-a6e1-17c268467ea3: taxonomy_term
 default:
   revision_uid:
@@ -71,7 +71,7 @@ default:
       value: 'How repayment in seed rather than cash keeps a cooperative viable after external funding ends.'
   field_featured_image:
     -
-      entity: 77f64522-d62e-448c-ab81-5a4137f8057c
+      entity: 20a27553-c0f7-44bf-adb9-383e46972dff
   field_tags:
     -
       entity: 6f0b13b7-61bb-4552-a6e1-17c268467ea3

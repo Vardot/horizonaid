@@ -16,14 +16,14 @@ default:
   uid:
   - target_id: 1
   name:
-  - value: Program-education-tab
+  - value: Children in a displacement camp
   revision_translation_affected:
   - value: true
   path:
   - langcode: en
     alias: null
   field_media_image:
-  - alt: program-education-tab
+  - alt: Children sitting together outside tents in a camp
     title: ''
     width: 1140
     height: 641
