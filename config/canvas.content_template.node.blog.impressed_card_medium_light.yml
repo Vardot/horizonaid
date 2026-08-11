@@ -89,5 +89,5 @@ component_tree:
       text:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:blog␝field_description␞␟value
-      text_size: fs-6
+      text_size: fs-5
       text_color: text-dark

@@ -197,6 +197,14 @@ config:
         pattern: /resources/[node:title]
     views.view.blog:
       simpleConfigUpdate:
+        display.all.display_options.row.options.view_mode: impressed_card_medium_light
+        display.all.display_options.filters.field_tags_target_id.expose.identifier: program
+        display.all.display_options.exposed_form.options.bef.filter.field_tags_target_id.advanced.rewrite.filter_rewrite_values: "- Any -|Search Program"
+        display.all.display_options.exposed_form.options.bef.filter.search_title.advanced.placeholder_text: 'Search keywords'
+        display.all.display_options.exposed_form.options.bef.filter.search_title.advanced.hide_label: false
+        display.all.display_options.filters.search_title.expose.label: 'Search Keyword'
+        display.all.display_options.filters.field_tags_target_id.expose.label: Program
+        display.all.display_options.header.result.content: '<span class="vb-result-summary"><span class="vb-result-summary__label">Showing</span> <span class="vb-result-summary__count"><strong>@start-@end</strong> of @total</span></span>'
         display.all.display_options.exposed_form.options.submit_button: Apply Filters
         display.all.display_options.exposed_form.options.reset_button: true
         display.default.display_options.exposed_form.options.submit_button: Apply Filters
