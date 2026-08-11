@@ -1,0 +1,22 @@
+{
+  "css": {
+    "site header": "header[role=\"banner\"]",
+    "footer": "footer[role=\"contentinfo\"]",
+    "main content": "main",
+    "main nav": "header[role=\"banner\"] nav",
+    "site branding": ".block-system-branding-block",
+    "skip link": ".skip-link",
+    "breadcrumb": "nav[aria-label=\"breadcrumb\"]",
+    "news view": ".view-news",
+    "events view": ".view-events",
+    "programs view": ".view-programs",
+    "exposed filters form": "form.views-exposed-form",
+    "share heading": ".webshare__heading",
+    "nav toggle": "header[role=\"banner\"] button.navbar-toggler",
+    "pagination": "nav[aria-label=\"Pagination\"]",
+    "study level filter": "form.views-exposed-form .bef-links",
+    "contact form": "form.webform-submission-form",
+    "main nav menu": "header[role=\"banner\"] .navbar-collapse"
+  },
+  "xpath": {}
+}

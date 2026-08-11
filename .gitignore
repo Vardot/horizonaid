@@ -1,1 +1,19 @@
 .DS_Store
+
+# Node / varbase-e2e functional testing suite
+/node_modules
+/.yarn
+/.yarnrc.yml
+/.pnp.*
+yarn.lock
+package-lock.json
+.cache/
+
+# Test run artifacts (generated) - keep the tree, ignore outputs.
+/tests/screenshots
+/tests/videos
+/tests/reports/*.json
+/tests/reports/*.html
+/tests/reports/*.pdf
+/tests/auth
+.playwright-mcp

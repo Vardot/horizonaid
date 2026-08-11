@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.countries
+  module:
+    - views
+active_version: 7beaf6210d28a957
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:countries-all'
+        label: 'Countries: All countries'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+        exposed: {  }
+    fallback_metadata:
+      slot_definitions: null
+label: 'Countries: All countries'
+id: block.views_block.countries-all
+provider: views
+source: block
+source_local_id: 'views_block:countries-all'

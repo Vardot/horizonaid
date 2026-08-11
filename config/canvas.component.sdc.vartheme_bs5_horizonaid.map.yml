@@ -1,0 +1,73 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - vartheme_bs5_horizonaid
+active_version: 15729bf098abe7a0
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        map_height:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: md
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        corner_style:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: rounded-4
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        background_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: bg-body-tertiary
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        box_shadow:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: shadow-none
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: 'Above-map content'
+          description: 'Optional drag & drop content shown above the map (e.g. a heading and intro paragraph).'
+        countries:
+          title: Countries
+          description: 'Add one or more molecules/map-info-card components here (unlimited, drag & drop reorder) — set each one''s "Country code" prop to the ISO 3166-1 alpha-2 code it represents (e.g. "SO" for Somalia). The map highlights every country with a matching code and opens that exact card when it''s clicked.'
+label: Map
+id: sdc.vartheme_bs5_horizonaid.map
+provider: vartheme_bs5_horizonaid
+source: sdc
+source_local_id: 'vartheme_bs5_horizonaid:map'

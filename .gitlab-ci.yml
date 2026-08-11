@@ -1,21 +1,41 @@
 ################################################################################
-# Basic build + validate GitLab CI for the Varbase recipe release.
+# GitLab CI for the Horizon Aid site template recipe.
 #
-# Mirrors the build / validate stages of the Varbase project template, reduced
-# to the minimum a recipe needs: validate composer.json (build) and lint every
-# YAML file - recipe.yml + config (validate). No dependency install / browser
-# tests here (kept basic).
+# build    - validate the recipe's composer.json.
+# validate - lint YAML, spell-check + ESLint the suite, and a Cucumber dry-run
+#            that proves every step phrasing in the Varbase functional testing
+#            suite resolves (all reproducible offline in gitlab-ci-local).
+# test     - build a Varbase 11 project, require the checked-out Horizon Aid recipe,
+#            install it with `drush site:install recipes/horizonaid`, serve it and
+#            drive the whole site through the browser with the Varbase functional
+#            testing suite (varbase-e2e / Playwright / Cucumber-js), then build the
+#            HTML + PDF report. Self-contained: no oversized artifacts passed
+#            between jobs, so it runs the same locally (gitlab-ci-local) and on
+#            git.drupalcode.org.
+#
+#            The test stage fans out over `parallel: matrix` with one job per
+#            tests/features/NN-* folder. The whole suite in a single job exceeds
+#            the runner's 30-minute script limit, and grouping folders into fewer
+#            buckets still did: a heavy React editor (Canvas) sharing a bucket
+#            with page-load-heavy scans (quality/SEO) blew the cap under CI
+#            load even when each scenario passed on its own. One job per folder
+#            also names the failing area in the job list directly. Each job
+#            builds its own site and writes its own report, keyed by $SUITE.
 ################################################################################
 
 stages:
   - build
   - validate
+  - test
 
 variables:
   COMPOSER_ALLOW_SUPERUSER: "1"
   COMPOSER_MEMORY_LIMIT: "-1"
+  COMPOSER_NO_INTERACTION: "1"
+  VARBASE_PROJECT: "drupal/varbase_project:11.0.x-dev"
+  DRUPAL_ADMIN_USERNAME: "webmaster"
+  DRUPAL_ADMIN_PASSWORD: "dD.123123ddd"
 
-# Run for merge requests and branch pushes.
 workflow:
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
@@ -23,7 +43,7 @@ workflow:
     - if: $CI_COMMIT_TAG
 
 # = build = validate the recipe's composer.json (schema + metadata, offline).
-build:composer-validate:
+"📦 Composer validate":
   stage: build
   image: composer:2
   script:
@@ -31,21 +51,188 @@ build:composer-validate:
     - composer validate --no-check-all --no-check-publish
 
 # = validate = lint every YAML file (recipe.yml + config/*) for syntax errors.
-validate:yaml-lint:
+"📐 YAML lint":
   stage: validate
   image: python:3.12-slim
+  needs: []
+  before_script:
+    - pip install --no-cache-dir pyyaml
   script:
-    - python --version
-    - pip install --quiet pyyaml
     - |
       python - <<'PY'
-      import glob, sys, yaml
-      bad = 0
-      for f in sorted(glob.glob('**/*.yml', recursive=True)):
+      import sys, yaml
+      from pathlib import Path
+      class Loader(yaml.SafeLoader):
+          pass
+      Loader.add_multi_constructor('', lambda loader, suffix, node: None)
+      SKIP = ('node_modules/', '.cache/', 'tests/reports/')
+      errors = count = 0
+      for path in sorted(Path('.').rglob('*.y*ml')):
+          rel = str(path)
+          if any(s in rel for s in SKIP):
+              continue
+          count += 1
           try:
-              list(yaml.safe_load_all(open(f, encoding='utf-8')))
-          except Exception as e:
-              print('YAML ERROR:', f, '->', e); bad += 1
-      print('Checked YAML files; errors:', bad)
-      sys.exit(1 if bad else 0)
+              with open(path) as fh:
+                  list(yaml.load_all(fh, Loader=Loader))
+          except yaml.YAMLError as e:
+              errors += 1
+              print(f"INVALID: {rel}\n  {e}")
+      print(f"Checked {count} YAML files, {errors} invalid.")
+      sys.exit(1 if errors else 0)
       PY
+  allow_failure: false
+
+"🔤 Cspell":
+  stage: validate
+  image: node:20
+  needs: []
+  before_script:
+    - npm install -g cspell
+  script:
+    # Spell-check the suite's own prose + features + JS config (the recipe's
+    # config/content machine names are out of scope). Config in .cspell.json.
+    - cspell "tests/**/*.feature" "tests/README.md" "cucumber.js" "eslint.config.js" --no-progress
+  allow_failure: false
+
+# Lint the suite's JS step definitions and config with ESLint (flat config).
+"🟨 ESLint":
+  stage: validate
+  image: node:20
+  needs: []
+  before_script:
+    - npm install --no-audit --no-fund
+  script:
+    - node --version
+    - ./node_modules/.bin/eslint .
+  allow_failure: false
+
+# = Cucumber dry-run =
+#
+# Loads the varbase-e2e core + Horizon Aid step definitions and matches every step in
+# every .feature against them WITHOUT a browser or a running site. Fails on any
+# undefined or ambiguous step. Fully reproducible in gitlab-ci-local.
+"🧩 Cucumber dry-run":
+  stage: validate
+  image: node:20
+  needs: []
+  before_script:
+    - npm install --no-audit --no-fund
+  script:
+    - VARBASE_E2E_REPORT_DISABLE=1 ./node_modules/.bin/cucumber-js --config cucumber.js --dry-run
+  allow_failure: false
+
+# = Automated Functional Testing - build, install, drive the browser, report =
+"🧪 Automated Functional Testing":
+  stage: test
+  image: mcr.microsoft.com/playwright:v1.56.0-noble
+  needs: ["📦 Composer validate"]
+  timeout: 3h
+  # composer pulls dists from github.com unauthenticated; a rate limit there is
+  # transient, so let the runner re-attempt before the pipeline goes red.
+  retry:
+    max: 2
+    when:
+      - script_failure
+      - runner_system_failure
+      - stuck_or_timeout_failure
+  parallel:
+    matrix:
+      # One bucket per feature folder. Grouping folders (three buckets: public /
+      # quality / editorial) previously exhausted the unauthenticated GitHub
+      # rate limit at four-at-once ("Could not authenticate against github.com",
+      # exit 100) and still blew the runner's 30-minute script limit once a
+      # heavy React editor (Canvas) shared a bucket with page-load-heavy scans
+      # (quality/SEO) under CI load. Splitting all the way to one folder per job
+      # gives every folder the full time budget and isolates its own browser
+      # session's cumulative load; if the GitHub rate limit resurfaces at this
+      # count, the fix is composer auth (a CI variable), not re-grouping.
+      - SUITE: "01-website-base-requirements"
+        FEATURES_GLOB: "tests/features/01-website-base-requirements/**/*.feature"
+      - SUITE: "02-editorial"
+        FEATURES_GLOB: "tests/features/02-editorial/**/*.feature"
+      - SUITE: "03-permissions"
+        FEATURES_GLOB: "tests/features/03-permissions/**/*.feature"
+  services:
+    - name: mariadb:10.11
+      alias: database
+      variables:
+        MARIADB_DATABASE: drupal
+        MARIADB_USER: drupal
+        MARIADB_PASSWORD: drupal
+        MARIADB_ROOT_PASSWORD: root
+  variables:
+    DB_URL: "mysql://drupal:drupal@database/drupal"
+    SITE_DIR: "$CI_PROJECT_DIR/testsite"
+    WEB_ROOT: "$CI_PROJECT_DIR/testsite/web"
+    LAUNCH_URL: "http://127.0.0.1:8888"
+    FORCE_COLOR: "1"
+    VARBASE_E2E_REPORT_DISABLE: "1"
+  artifacts:
+    when: always
+    paths:
+      - tests/reports/
+      - tests/screenshots/
+      - tests/videos/
+    expire_in: 30 days
+  before_script:
+    # The Playwright image is Ubuntu noble (PHP 8.3 default); add the ondrej/php
+    # PPA for PHP 8.4, then install PHP + Composer + ImageMagick/WebP (drimage
+    # derivatives) + a MySQL client.
+    - export DEBIAN_FRONTEND=noninteractive
+    - apt-get update -y
+    - apt-get install -y --no-install-recommends software-properties-common ca-certificates curl gnupg lsb-release
+    - add-apt-repository -y ppa:ondrej/php
+    - apt-get update -y
+    # --no-install-recommends keeps the layer small (skips ImageMagick's heavy
+    # Ghostscript/fonts recommends); the WebP delegate lib is added explicitly.
+    - apt-get install -y --no-install-recommends php8.4-cli php8.4-mysql php8.4-gd php8.4-curl php8.4-xml php8.4-mbstring php8.4-zip php8.4-intl unzip git default-mysql-client webp imagemagick libmagickcore-6.q16-6-extra
+    - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+    # Varbase's composer scripts run Yarn (drupal-libraries-sync); the image
+    # ships an old Yarn, so activate Yarn 4 via corepack before create-project.
+    - corepack enable || true
+    - composer --version && php --version
+    # Allow ImageMagick to read/write WebP so drimage derivatives generate.
+    - sed -i 's/rights="none"\s*pattern="WEBP"/rights="read|write" pattern="WEBP"/I' /etc/ImageMagick-*/policy.xml 2>/dev/null || true
+  script:
+    # = Build a Varbase 11 project, then require the checked-out recipe =
+    # --no-scripts too: with --no-install the varbase_starter recipe isn't on disk
+    # yet, so the post-create-project yarn sync (which reads a script from that
+    # recipe) would fail; the sync runs later, after `composer require` installs.
+    - composer create-project $VARBASE_PROJECT "$SITE_DIR" --no-interaction --no-install --no-scripts
+    - cd "$SITE_DIR"
+    - composer config minimum-stability dev
+    - composer config repositories.horizonaid path "$CI_PROJECT_DIR"
+    - composer require drupal/horizonaid:@dev --no-interaction --no-progress --prefer-dist --with-all-dependencies
+    # = Install the site from the Horizon Aid recipe =
+    - ./bin/drush site:install recipes/horizonaid --db-url=$DB_URL
+        --account-name=$DRUPAL_ADMIN_USERNAME --account-pass=$DRUPAL_ADMIN_PASSWORD
+        --account-mail=webmaster@vardot.com --site-name="Horizon Aid" --locale=en -y
+    # = Prepare for deterministic testing =
+    - ./bin/drush pm:uninstall antibot -y || true
+    - ./bin/drush config:set user.flood ip_limit 1000000 -y
+    - ./bin/drush config:set user.flood user_limit 1000000 -y
+    - ./bin/drush config:set system.logging error_level all -y
+    - ./bin/drush cache:rebuild
+    # = Serve the site with PHP's built-in server =
+    - ./bin/drush runserver 127.0.0.1:8888 > $CI_PROJECT_DIR/runserver.log 2>&1 &
+    - sleep 8
+    # = Run the whole suite from the recipe root =
+    - cd "$CI_PROJECT_DIR"
+    - npm install --no-audit --no-fund
+    # varbase-e2e's Playwright version may differ from the image's preinstalled
+    # browser, so install the matching Chromium (system deps already present).
+    - ./node_modules/.bin/playwright install chromium
+    # One feature folder per matrix job. cucumber.js reads FEATURES.
+    - FEATURES="${FEATURES_GLOB}" VARBASE_E2E_REPORT_DISABLE=1 CUCUMBER_JSON="cucumber_report--${SUITE}" ./node_modules/.bin/cucumber-js --config cucumber.js --tags "not @wip"
+  after_script:
+    # Build the HTML + PDF report from the run's JSON (best-effort).
+    - cd "$CI_PROJECT_DIR"
+    # ${SUITE} keeps each matrix job's report and JSON distinct in the artifacts.
+    - export REPORT="horizonaid--${CI_COMMIT_REF_SLUG:-local}--${SUITE}--automated-functional-testing-report--$(date +%Y-%m-%d)--$(date +%H-%M)"
+    - node ./node_modules/@vardot/varbase-e2e/bin/generate-reports.js
+        --json "tests/reports/cucumber_report--${SUITE}.json"
+        --out  "tests/reports/${REPORT}.html"
+        --format all
+        --pdf-out "tests/reports/${REPORT}.pdf" || true
+  allow_failure: false

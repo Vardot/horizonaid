@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - vartheme_bs5_horizonaid
+active_version: f06c2977458e1ec9
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        tabs_id:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: programs-tabs
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        container_type:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: container
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions:
+        tabs:
+          title: 'Program tabs'
+          description: 'Add one or more "Program Tab" components here (unlimited, drag & drop reorder).'
+label: Programs
+id: sdc.vartheme_bs5_horizonaid.programs
+provider: vartheme_bs5_horizonaid
+source: sdc
+source_local_id: 'vartheme_bs5_horizonaid:programs'
