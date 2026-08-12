@@ -97,7 +97,7 @@ default:
         description: 'Lives Protected'
         background_color: none
         number_size: display-1
-        number_color: text-primary
+        number_color: text-black
         description_size: fs-6
         description_color: text-body
         align: text-center
@@ -111,7 +111,7 @@ default:
         description: 'Legal Aid Hours'
         background_color: none
         number_size: display-1
-        number_color: text-primary
+        number_color: text-black
         description_size: fs-6
         description_color: text-body
         align: text-center
@@ -125,7 +125,7 @@ default:
         description: 'Communities Served'
         background_color: none
         number_size: display-1
-        number_color: text-primary
+        number_color: text-black
         description_size: fs-6
         description_color: text-body
         align: text-center
