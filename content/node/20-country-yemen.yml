@@ -50,7 +50,7 @@ default:
       entity: 26af9b14-fdfc-4e2f-a313-d00be6b5ea0e
   field_figures_description:
     -
-      value: 'Our response covers nutrition, water and primary health care.'
+      value: 'Our response covers nutrition, water and primary health care in governorates where most families are more than a day from a working clinic.'
   field_figure_description:
     -
       value: 'People reached with food and nutrition support'
@@ -74,7 +74,7 @@ default:
       entity: 26af9b14-fdfc-4e2f-a313-d00be6b5ea0e
   field_our_role:
     -
-      value: '<p>We run nutrition screening, water trucking and mobile health clinics in governorates where the public system has all but stopped, and we support local health workers who stayed.</p>'
+      value: '<p>Yemen remains one of the world''s largest hunger crises, and in several governorates the public system has all but stopped. We run nutrition screening, water trucking and mobile health clinics, and we support the local health facilities still standing with supplies and staff costs. Malnutrition cases are followed from screening through treatment rather than counted once and closed. Fuel and access are the binding constraints, so our teams negotiate passage weekly to keep supplies moving.</p>'
       format: content_format
   field_partners:
     -

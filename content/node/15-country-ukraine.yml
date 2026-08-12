@@ -50,7 +50,7 @@ default:
       entity: 934496a2-3f0b-4db3-a54e-b7e706a994dd
   field_figures_description:
     -
-      value: 'Our emergency response focuses on frontline communities and the winter months.'
+      value: 'Our emergency response concentrates on frontline communities and on the winter months, when a cold home becomes a medical emergency.'
   field_figure_description:
     -
       value: 'People reached with emergency relief'
@@ -74,7 +74,7 @@ default:
       entity: 934496a2-3f0b-4db3-a54e-b7e706a994dd
   field_our_role:
     -
-      value: '<p>We coordinate rapid emergency relief, temporary shelter restoration and essential winterization supplies for families living close to active front lines.</p>'
+      value: '<p>Front lines in Ukraine move, and the households closest to them lose power, water and heat first. We coordinate rapid emergency relief, temporary shelter restoration and winterisation supplies for families living near active fighting. Generators, insulation kits and fuel are pre-positioned before the first freeze so settlements are not cut off when the roads close. Local volunteer networks lead distribution, which is what lets us reach villages that formal convoys cannot.</p>'
       format: content_format
   field_partners:
     -

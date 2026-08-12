@@ -5,7 +5,7 @@ _meta:
   bundle: country
   default_langcode: en
   depends:
-    e1408d47-fc69-4b5e-a7bb-38ea345953f5: media
+    5af448c1-49fa-4ac2-8c3d-284c881ca48b: media
     b000fa17-bc94-4a03-815b-95504499c4ae: media
     d9b90fa4-cbc0-410f-a2a3-741754126f88: media
     38771a02-8334-4057-9022-f7f4d5342612: media
@@ -48,10 +48,10 @@ default:
       value: 'One of the most complex humanitarian contexts in the world. We have worked alongside Afghan communities through displacement, conflict and recovery for over a decade.'
   field_featured_image:
     -
-      entity: e1408d47-fc69-4b5e-a7bb-38ea345953f5
+      entity: b000fa17-bc94-4a03-815b-95504499c4ae
   field_figures_description:
     -
-      value: "Our presence in Afghanistan spans 12 provinces and reaches some of the country's most isolated communities."
+      value: 'Our presence in Afghanistan spans 12 provinces and reaches communities that sit furthest from any formal service, including districts no other agency reaches.'
   field_figure_description:
     -
       value: 'People reached with emergency assistance'
@@ -72,10 +72,10 @@ default:
       format: content_format
   field_on_the_ground_image:
     -
-      entity: b000fa17-bc94-4a03-815b-95504499c4ae
+      entity: 5af448c1-49fa-4ac2-8c3d-284c881ca48b
   field_our_role:
     -
-      value: "<p>Afghanistan faces intersecting crises: decades of conflict, severe drought, economic collapse and one of the world's largest displacement crises. We partner with local organisations to deliver emergency shelter, clean water, education support and legal protection to families who have been displaced multiple times.</p>"
+      value: '<p>Afghanistan faces intersecting crises: decades of conflict, severe drought, economic collapse and one of the world''s largest displacement crises. We work in partnership with local organisations across Kabul, Kandahar and the northeastern provinces, delivering emergency shelter, clean water, education support and legal protection to families who have been displaced more than once. Because access shifts week to week, our teams plan in short cycles and pre-position supplies wherever roads stay open. Our approach is community led: we follow the priorities of the people we serve rather than the agendas of external donors.</p>'
       format: content_format
   field_partners:
     -

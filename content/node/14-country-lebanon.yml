@@ -50,7 +50,7 @@ default:
       entity: 3db67d5a-439a-4486-a6fd-bdf32ce1795a
   field_figures_description:
     -
-      value: 'Our health programme runs through neighbourhood clinics and mobile units.'
+      value: 'Our health programme runs through neighbourhood clinics and mobile units, in areas where the nearest working hospital can be hours away.'
   field_figure_description:
     -
       value: 'Medical consultations provided'
@@ -74,7 +74,7 @@ default:
       entity: 3db67d5a-439a-4486-a6fd-bdf32ce1795a
   field_our_role:
     -
-      value: '<p>We distribute vital medical supplies and run neighbourhood clinics that deliver preventative healthcare in areas where the public system has been stretched past capacity.</p>'
+      value: '<p>Lebanon''s economic collapse has left large parts of the public health system unable to function, and the cost falls on the households least able to absorb it. We distribute vital medical supplies and run neighbourhood clinics that deliver preventative care, maternal health and childhood vaccination in underserved areas. Each clinic is staffed by local practitioners and backed by a mobile unit that reaches informal settlements twice a week. We keep consultations free at the point of care, for Lebanese and refugee families on the same terms.</p>'
       format: content_format
   field_partners:
     -

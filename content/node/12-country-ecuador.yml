@@ -51,7 +51,7 @@ default:
       entity: 63c0f85c-2459-4aa2-af2c-4b012f5857c6
   field_figures_description:
     -
-      value: 'Our teams cover the border corridors where the need is highest and formal services are thinnest.'
+      value: 'Our teams cover the border corridors where the need is highest and formal services are thinnest, and where most families stay only a few days.'
   field_figure_description:
     -
       value: 'People supported at border crossings'
@@ -75,7 +75,7 @@ default:
       entity: ecc68091-64c6-4e9d-be6e-39a98bc33e8a
   field_our_role:
     -
-      value: '<p>We provide emergency legal aid and critical protection services for migrant families navigating the northern border corridors, with mobile teams that follow the routes people actually travel.</p>'
+      value: '<p>Ecuador is a transit country for hundreds of thousands of people moving north, and the pressure lands on a handful of border towns. We provide emergency legal aid and protection services for migrant families along the northern corridors, with mobile teams at four crossings and casework that continues after families move on. Our lawyers handle documentation, family reunification and referrals for people who arrive after weeks on the road. We work with municipalities and host communities so services stay open to residents and new arrivals alike.</p>'
       format: content_format
   field_partners:
     -

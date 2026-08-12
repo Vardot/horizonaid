@@ -50,7 +50,7 @@ default:
       entity: 1253742d-563d-44ae-a3b2-2687f6caa2e2
   field_figures_description:
     -
-      value: 'Our programme centres on protection, education and emergency relief.'
+      value: 'Our programme centres on protection, education and emergency relief, delivered almost entirely through local partner organisations.'
   field_figure_description:
     -
       value: 'People reached with emergency relief'
@@ -74,7 +74,7 @@ default:
       entity: 1253742d-563d-44ae-a3b2-2687f6caa2e2
   field_our_role:
     -
-      value: '<p>We work with community organisations to keep children learning through displacement, and to deliver emergency relief where formal access is limited.</p>'
+      value: '<p>Conflict and flooding in Myanmar have displaced communities repeatedly, and formal humanitarian access is limited. We work through community organisations to keep children learning through displacement and to deliver emergency relief where larger agencies cannot operate. Our role is funding, supplies and technical support rather than visibility, because local partners carry the risk and the relationships. Temporary learning spaces are set up within weeks of a displacement, so children lose months of school rather than years.</p>'
       format: content_format
   field_partners:
     -

@@ -50,7 +50,7 @@ default:
       entity: 6f159f66-1671-42eb-adbf-b82d691dd330
   field_figures_description:
     -
-      value: 'Our work covers shelter, water, sanitation and disaster readiness.'
+      value: 'Our work covers shelter, water, sanitation and disaster readiness in settlements where density multiplies every risk.'
   field_figure_description:
     -
       value: 'People reached with shelter and WASH support'
@@ -74,7 +74,7 @@ default:
       entity: 6f159f66-1671-42eb-adbf-b82d691dd330
   field_our_role:
     -
-      value: '<p>We upgrade shelters and water systems in high-density settlements, and pre-position supplies before each monsoon and cyclone season.</p>'
+      value: '<p>The displacement settlements we serve in Bangladesh are among the densest in the world, and they sit in the path of cyclones and monsoon flooding. We upgrade shelters and water systems in these settlements and pre-position supplies before each storm season. Drainage is treated as protection work, because one blocked channel floods hundreds of shelters at once. Site volunteers maintain the water points and report damage, which is how repairs happen in days rather than weeks.</p>'
       format: content_format
   field_partners:
     -

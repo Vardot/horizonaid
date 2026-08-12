@@ -50,7 +50,7 @@ default:
       entity: 1f88c0d0-0dc7-495a-a9c8-5e4b09aa9cb1
   field_figures_description:
     -
-      value: 'Our drought response works through water, livestock and cash support.'
+      value: 'Our drought response works through water, livestock and cash support, in districts where one rehabilitated borehole serves several villages.'
   field_figure_description:
     -
       value: 'People with reliable access to safe water'
@@ -74,7 +74,7 @@ default:
       entity: 1f88c0d0-0dc7-495a-a9c8-5e4b09aa9cb1
   field_our_role:
     -
-      value: '<p>We combine emergency water trucking with longer-term borehole rehabilitation and livestock support, so pastoralist families are not forced to sell the herd that feeds them.</p>'
+      value: '<p>Four consecutive failed rainy seasons have emptied wells and thinned herds across Somalia, and pastoralist families are selling the animals their livelihoods depend on. We combine emergency water trucking with borehole rehabilitation and livestock support, so households are not forced into distress sales. Water committees run the rehabilitated boreholes and collect small tariffs for maintenance, which keeps them working after the emergency ends. Cash support goes alongside, because markets here have stock but families have no money.</p>'
       format: content_format
   field_partners:
     -

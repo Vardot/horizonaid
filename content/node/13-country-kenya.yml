@@ -51,7 +51,7 @@ default:
       entity: 6e55f5d3-20dc-4f24-ad34-04266b987d0e
   field_figures_description:
     -
-      value: 'Our agricultural programme works with cooperatives across the drylands.'
+      value: 'Our agricultural programme works through cooperatives across the drylands, where a single failed season can undo years of progress.'
   field_figure_description:
     -
       value: 'People with improved food security'
@@ -75,7 +75,7 @@ default:
       entity: e6275459-a7b4-4662-919b-6c03c02524c6
   field_our_role:
     -
-      value: '<p>We equip rural agricultural communities with climate-resilient seed, shared irrigation and farmer-to-farmer training, so households move from food aid to their own harvest.</p>'
+      value: '<p>Repeated failed rains have pushed farming households in Kenya''s drylands from a difficult season into a permanent emergency. We equip rural agricultural communities with climate-resilient seed, shared irrigation and farmer-to-farmer training, so households move from food aid towards their own harvests. Cooperatives run the seed banks themselves and repay loans in seed, which stocks the next cooperative. Our field officers stay with a cooperative for at least three seasons, long enough for the practice to hold after we leave.</p>'
       format: content_format
   field_partners:
     -

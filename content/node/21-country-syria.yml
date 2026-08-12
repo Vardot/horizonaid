@@ -50,7 +50,7 @@ default:
       entity: 56fb9041-52f0-423e-a332-4a1e708df5df
   field_figures_description:
     -
-      value: 'Our work spans shelter, winterisation and protection.'
+      value: 'Our work spans shelter, winterisation and protection, in communities where a third of homes are damaged or unsafe.'
   field_figure_description:
     -
       value: 'People supported with shelter and winter kits'
@@ -74,7 +74,7 @@ default:
       entity: 56fb9041-52f0-423e-a332-4a1e708df5df
   field_our_role:
     -
-      value: '<p>We repair damaged homes, deliver winter kits and provide legal and protection services for families who have been displaced repeatedly inside the country.</p>'
+      value: '<p>After more than a decade of conflict, most families we serve in Syria have been displaced three times or more. We repair damaged homes, deliver winter kits and provide legal and protection services for households moving inside the country. Rebuilding a single room is often what allows a family to stop moving, so shelter work is sequenced ahead of everything else. Our protection caseworkers handle documentation, housing claims and referrals, which is slow work that decides whether a return holds.</p>'
       format: content_format
   field_partners:
     -

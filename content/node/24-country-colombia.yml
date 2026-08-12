@@ -50,7 +50,7 @@ default:
       entity: 77f64522-d62e-448c-ab81-5a4137f8057c
   field_figures_description:
     -
-      value: 'Our teams focus on legal aid, documentation and integration.'
+      value: 'Our teams focus on legal aid, documentation and integration along the corridor, where most families have no papers when they arrive.'
   field_figure_description:
     -
       value: 'People supported along the corridor'
@@ -74,7 +74,7 @@ default:
       entity: 77f64522-d62e-448c-ab81-5a4137f8057c
   field_our_role:
     -
-      value: '<p>We provide legal aid and documentation support so migrant families can access schooling, health care and work, and we support host communities absorbing new arrivals.</p>'
+      value: '<p>Colombia hosts the largest number of Venezuelan migrants in the region, and documentation decides what a family can access. We provide legal aid and documentation support so migrant families can enrol children in school, register for health care and work legally. We also support host communities absorbing the arrivals, because services stretched past their limit fail residents and newcomers together. Our clinics travel the corridor, holding sessions in the towns where families stop for a few days.</p>'
       format: content_format
   field_partners:
     -

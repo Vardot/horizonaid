@@ -50,7 +50,7 @@ default:
       entity: d30a48eb-a7b9-4965-a517-1a163a93a9be
   field_figures_description:
     -
-      value: 'Our programme spans food security, nutrition and protection.'
+      value: 'Our programme spans food security, nutrition and protection in states where the flood season now lasts most of the year.'
   field_figure_description:
     -
       value: 'People with improved food security'
@@ -74,7 +74,7 @@ default:
       entity: d30a48eb-a7b9-4965-a517-1a163a93a9be
   field_our_role:
     -
-      value: '<p>We support farming and fishing livelihoods, run nutrition programmes for children under five, and provide protection services in displacement sites.</p>'
+      value: '<p>In parts of South Sudan flooding now displaces more people than conflict, and it returns every year. We support farming and fishing livelihoods, run nutrition programmes for children under five, and provide protection services in displacement sites. Seed and fishing gear are distributed to match the flood calendar rather than the funding calendar. Nutrition screening runs through the same community workers year round, so cases are caught before they become emergencies.</p>'
       format: content_format
   field_partners:
     -

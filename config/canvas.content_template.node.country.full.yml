@@ -31,19 +31,20 @@ component_tree:
     uuid: 714e727b-c0fc-4c16-a447-8a28e184b681
     component_id: sdc.vartheme_bs5_horizonaid.section
     inputs:
+      horizontal_alignment: text-center
       bg_edge2edge: false
       columns: '100'
       padding_block_start: pt-5
       padding_block_end: pb-5
       padding_inline_start: ps-5
       padding_inline_end: pe-5
-      margin_inline_start: ms-5
-      margin_inline_end: me-5
+      margin_inline_start: ms-3
+      margin_inline_end: me-3
       radius: rounded-4
       section_header: false
       section_footer: false
       aos_once: true
-      background_color: bg-body-secondary
+      background_color: bg-primary-subtle
     component_version: active
   e633b3ac-1aa8-4ba4-a71d-d2a666c4804a:
     uuid: e633b3ac-1aa8-4ba4-a71d-d2a666c4804a
@@ -64,7 +65,15 @@ component_tree:
       text:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:country␝field_description␞␟value
-      text_size: fs-5
+      text_size: none
+    parent_uuid: 714e727b-c0fc-4c16-a447-8a28e184b681
+    slot: col_1
+    component_version: active
+  c9c8e4a1-6f1b-4d5a-9d0e-2f7a1b4c8e31:
+    uuid: c9c8e4a1-6f1b-4d5a-9d0e-2f7a1b4c8e31
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    inputs:
+      size: py-3
     parent_uuid: 714e727b-c0fc-4c16-a447-8a28e184b681
     slot: col_1
     component_version: active
@@ -76,7 +85,7 @@ component_tree:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:country␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src,alt↠alt,width↠width,height↠height}
       target: self
-      ratio: ratio-16x9
+      ratio: ratio-21x9
       fit: object-fit-cover
       width: w-100
       rounded: rounded-4
@@ -89,7 +98,7 @@ component_tree:
     component_id: sdc.vartheme_bs5_horizonaid.section
     inputs:
       bg_edge2edge: false
-      columns: '100'
+      columns: '75-25'
       padding_block_start: pt-5
       padding_block_end: pb-5
       padding_inline_start: ps-5
@@ -107,6 +116,14 @@ component_tree:
     inputs:
       heading_text: Our Role
       level: 2
+    parent_uuid: 7f71243c-56f4-4816-acef-985ccd8ea3c8
+    slot: col_1
+    component_version: active
+  d41f7b2e-8a53-4c96-b1d7-6e3c95f2a8b4:
+    uuid: d41f7b2e-8a53-4c96-b1d7-6e3c95f2a8b4
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    inputs:
+      size: py-1
     parent_uuid: 7f71243c-56f4-4816-acef-985ccd8ea3c8
     slot: col_1
     component_version: active
@@ -200,6 +217,14 @@ component_tree:
     inputs:
       heading_text: By the Numbers
       level: 2
+    parent_uuid: 2f2c6adc-9384-4686-aa28-362708c6a717
+    slot: header_slot
+    component_version: active
+  e7a3c519-2b64-4f81-8c2a-5d90b7e14f63:
+    uuid: e7a3c519-2b64-4f81-8c2a-5d90b7e14f63
+    component_id: sdc.vartheme_bs5_horizonaid.spacer
+    inputs:
+      size: py-2
     parent_uuid: 2f2c6adc-9384-4686-aa28-362708c6a717
     slot: header_slot
     component_version: active
@@ -369,24 +394,15 @@ component_tree:
       section_header: true
       section_footer: false
       aos_once: true
-  121342c4-041e-4edb-ad7c-e8b17c557bf6:
-    uuid: 121342c4-041e-4edb-ad7c-e8b17c557bf6
-    parent_uuid: 63df4e0d-67b3-4a01-afa4-304211f63967
-    slot: header_slot
-    component_id: sdc.vartheme_bs5_horizonaid.heading
-    component_version: active
-    inputs:
-      heading_text: See Other Countries
-      level: 2
   30b064c4-ada7-4da2-ac60-2583e5a8044a:
     uuid: 30b064c4-ada7-4da2-ac60-2583e5a8044a
     parent_uuid: 63df4e0d-67b3-4a01-afa4-304211f63967
     slot: col_1
-    component_id: block.views_block.countries-related
+    component_id: block.views_block.countries-related_slider
     component_version: '4503195950845117'
     inputs:
       label: See other countries
       label_display: '0'
       views_label: ''
-      items_per_page: '4'
+      items_per_page: '12'
 exposed_slots: {}
