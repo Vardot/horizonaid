@@ -254,6 +254,9 @@ default:
         alignment: inline
         full_width: false
         radius: rounded-1
+        href:
+          uri: internal:/impact
+          options: {  }
     -
       parent_uuid: 532b7623-1aec-46f1-a5c1-edfcbb6c6476
       slot: content
@@ -391,6 +394,9 @@ default:
         alignment: inline
         full_width: false
         radius: rounded-1
+        href:
+          uri: internal:/programs
+          options: {  }
     -
       parent_uuid: 54fd81b4-b76e-409f-9bb1-cb9e7b8555ff
       slot: content
@@ -474,6 +480,9 @@ default:
         alignment: inline
         full_width: false
         radius: rounded-1
+        href:
+          uri: internal:/resources
+          options: {  }
     -
       parent_uuid: 6ff7e757-e528-40e6-bc27-01991e3e82e7
       slot: col_2

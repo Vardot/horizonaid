@@ -177,6 +177,9 @@ default:
       alignment: inline
       full_width: false
       radius: rounded-pill
+      href:
+        uri: internal:/impact
+        options: {  }
   - parent_uuid: c307133d-2034-4e34-a970-800ccaee80e6
     slot: col_1
     uuid: a7b41432-751d-4bf5-a484-71385707846a
