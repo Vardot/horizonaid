@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+  - field.field.node.country.field_description
   - field.field.node.country.field_featured_image
   - node.type.country
   module:
@@ -40,5 +41,16 @@ component_tree:
         sourceType: entity-field
         expression: ℹ︎␜entity:node:country␝title␞␟value
       level: 3
+      text_color: text-white
+  a303084f-9ca2-4dbe-a424-53e27daf0e84:
+    uuid: a303084f-9ca2-4dbe-a424-53e27daf0e84
+    parent_uuid: acfce303-ce63-42a5-a166-ab08dd1abc4f
+    slot: content
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    component_version: active
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:country␝field_description␞␟value
       text_color: text-white
 exposed_slots: {}
