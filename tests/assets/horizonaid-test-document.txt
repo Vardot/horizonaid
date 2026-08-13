@@ -1,0 +1,1 @@
+Horizon Aid functional testing suite fixture document.

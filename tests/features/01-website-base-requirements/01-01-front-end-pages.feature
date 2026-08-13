@@ -8,7 +8,7 @@ Feature: Website Base Requirements - Front-end pages render
   # alias, title or render pipeline breaks when the recipe is re-applied fails
   # its own named row instead of a vague "something broke".
 
-  @check @local @development @staging @production
+  @check @regression @local @development @staging @production @navigation
   Scenario Outline: The <name> page renders for an anonymous visitor
     Given I am an anonymous user
      When I go to "<path>"
@@ -29,7 +29,7 @@ Feature: Website Base Requirements - Front-end pages render
 
   # The front page setting points "/" at /home; a regression in that config
   # action would leave the default Drupal front page in place.
-  @check @local @development @staging @production
+  @check @smoke @fast @local @development @staging @production @navigation
   Scenario: The site front page is the Horizon Aid home page
     Given I am an anonymous user
      When I go to "/"

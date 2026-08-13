@@ -1,6 +1,6 @@
 // cucumber-js configuration for the Horizon Aid Varbase functional testing suite.
 //
-// Drives the whole Horizon Aid site through the browser with @vardot/varbase-e2e (>= 2.0.1).
+// Drives the whole Horizon Aid site through the browser with @vardot/varbase-e2e (>= 2.0.3).
 //   yarn test                # all features (tests/features/**)
 //   yarn test:chromium       # force chromium
 //   yarn test:headed         # headed debug run

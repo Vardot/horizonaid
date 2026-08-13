@@ -10,10 +10,16 @@
     "test:webkit": "BROWSER=webkit cucumber-js --config cucumber.js",
     "test:headed": "HEADLESS=false cucumber-js --config cucumber.js",
     "test:fast": "SLOW_MO=0 cucumber-js --config cucumber.js",
+    "test:ci": "cucumber-js --config cucumber.js --tags \"not @wip and not @flaky and not @skip\"",
+    "test:smoke": "cucumber-js --config cucumber.js --tags \"@smoke and not @wip\"",
+    "test:hotfix": "cucumber-js --config cucumber.js --tags \"(@smoke or @critical) and not @wip and not @flaky\"",
+    "test:lane:fast": "cucumber-js --config cucumber.js --tags \"@fast and not @wip\"",
+    "test:production": "cucumber-js --config cucumber.js --tags \"@production and not @wip and not @slow\"",
+    "test:nightly": "cucumber-js --config cucumber.js --tags \"not @wip and not @skip\"",
     "generate-reports": "node ./node_modules/@vardot/varbase-e2e/bin/generate-reports.js"
   },
   "devDependencies": {
     "eslint": "^9.0.0",
-    "@vardot/varbase-e2e": "^2.0.1"
+    "@vardot/varbase-e2e": "^2.0.3"
   }
 }

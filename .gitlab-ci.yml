@@ -149,10 +149,54 @@ workflow:
       # count, the fix is composer auth (a CI variable), not re-grouping.
       - SUITE: "01-website-base-requirements"
         FEATURES_GLOB: "tests/features/01-website-base-requirements/**/*.feature"
-      - SUITE: "02-editorial"
-        FEATURES_GLOB: "tests/features/02-editorial/**/*.feature"
-      - SUITE: "03-permissions"
-        FEATURES_GLOB: "tests/features/03-permissions/**/*.feature"
+      - SUITE: "02-countries"
+        FEATURES_GLOB: "tests/features/02-countries/**/*.feature"
+      - SUITE: "03-programs"
+        FEATURES_GLOB: "tests/features/03-programs/**/*.feature"
+      - SUITE: "04-resources"
+        FEATURES_GLOB: "tests/features/04-resources/**/*.feature"
+      - SUITE: "05-events"
+        FEATURES_GLOB: "tests/features/05-events/**/*.feature"
+      - SUITE: "06-impact-and-donate"
+        FEATURES_GLOB: "tests/features/06-impact-and-donate/**/*.feature"
+      - SUITE: "07-quality"
+        FEATURES_GLOB: "tests/features/07-quality/**/*.feature"
+      - SUITE: "08-seo"
+        FEATURES_GLOB: "tests/features/08-seo/**/*.feature"
+      # 09-editorial is split per content type rather than run as one folder: each
+      # scenario creates a node through the real editorial form, verifies it on its
+      # own page and then deletes and purges it, so seven files in one job exceeded
+      # the runner's 30-minute script limit once a couple of scenarios retried.
+      - SUITE: "09-01-country-crud"
+        FEATURES_GLOB: "tests/features/09-editorial/09-01-country-crud.feature"
+      - SUITE: "09-02-program-crud"
+        FEATURES_GLOB: "tests/features/09-editorial/09-02-program-crud.feature"
+      - SUITE: "09-03-resource-crud"
+        FEATURES_GLOB: "tests/features/09-editorial/09-03-resource-crud.feature"
+      - SUITE: "09-04-event-crud"
+        FEATURES_GLOB: "tests/features/09-editorial/09-04-event-crud.feature"
+      - SUITE: "09-05-utility-page-crud"
+        FEATURES_GLOB: "tests/features/09-editorial/09-05-utility-page-crud.feature"
+      - SUITE: "09-06-media-crud"
+        FEATURES_GLOB: "tests/features/09-editorial/09-06-media-crud.feature"
+      - SUITE: "09-07-editorial-access"
+        FEATURES_GLOB: "tests/features/09-editorial/09-07-editorial-access.feature"
+      # 10-drupal-canvas gets one bucket per page group, not one for the whole
+      # folder: opening the Canvas editor is a heavy React SPA mount, and a file
+      # that mounts it for every shipped page would spend a whole job on the
+      # first few. Splitting the page groups bounds each job to two mounts.
+      - SUITE: "10-01-canvas-pages-listed"
+        FEATURES_GLOB: "tests/features/10-drupal-canvas/10-01-canvas-pages-listed.feature"
+      - SUITE: "10-02-canvas-home-about"
+        FEATURES_GLOB: "tests/features/10-drupal-canvas/10-02-canvas-editor-home-about.feature"
+      - SUITE: "10-03-canvas-countries-programs"
+        FEATURES_GLOB: "tests/features/10-drupal-canvas/10-03-canvas-editor-countries-programs.feature"
+      - SUITE: "10-04-canvas-resources-events"
+        FEATURES_GLOB: "tests/features/10-drupal-canvas/10-04-canvas-editor-resources-events.feature"
+      - SUITE: "10-05-canvas-impact-donate"
+        FEATURES_GLOB: "tests/features/10-drupal-canvas/10-05-canvas-editor-impact-donate.feature"
+      - SUITE: "11-permissions"
+        FEATURES_GLOB: "tests/features/11-permissions/**/*.feature"
   services:
     - name: mariadb:10.11
       alias: database
@@ -204,6 +248,25 @@ workflow:
     - composer config minimum-stability dev
     - composer config repositories.horizonaid path "$CI_PROJECT_DIR"
     - composer require drupal/horizonaid:@dev --no-interaction --no-progress --prefer-dist --with-all-dependencies
+    # = Sync the front-end libraries =
+    # create-project ran with --no-scripts (the varbase_starter recipe that owns the
+    # sync script was not on disk yet) and `composer require` does not re-fire
+    # post-create-project-cmd, so web/libraries would stay empty. Without it
+    # CKEditor 5 boots with missing plugin libraries and throws
+    # plugincollection-plugin-not-found, no rich text field ever mounts, and every
+    # editorial scenario that types into one fails on a site that looks fine
+    # otherwise. `yarn install` runs inside this composer script.
+    # Yarn 4 turns immutable installs on by itself whenever CI is set, and the site
+    # this job just assembled carries varbase_project's committed yarn.lock, which no
+    # longer matches the package.json Varbase's own sync writes: the lock keys
+    # @vardot/varbase-e2e as "^2.0.1" while the project asks for "^2.0.0", so yarn
+    # refuses to touch the lock and the whole job dies before a single scenario runs.
+    # This site is a throwaway build and its lockfile is not an artifact anybody
+    # keeps, so let this one install refresh it. The real fix belongs upstream, in
+    # varbase_project 11.0.x, where the constraint and the lockfile have drifted apart.
+    - export YARN_ENABLE_IMMUTABLE_INSTALLS=false
+    - composer drupal-libraries-sync
+    - ls -1 web/libraries | head -20
     # = Install the site from the Horizon Aid recipe =
     - ./bin/drush site:install recipes/horizonaid --db-url=$DB_URL
         --account-name=$DRUPAL_ADMIN_USERNAME --account-pass=$DRUPAL_ADMIN_PASSWORD
@@ -213,6 +276,28 @@ workflow:
     - ./bin/drush config:set user.flood ip_limit 1000000 -y
     - ./bin/drush config:set user.flood user_limit 1000000 -y
     - ./bin/drush config:set system.logging error_level all -y
+    # The role boundary scenarios log in as each Varbase role, so those accounts
+    # have to exist. They are created here rather than by the suite: cucumber.js
+    # already declares them in worldParameters, and a scenario that created its
+    # own login would prove the fixture rather than the boundary. Same names,
+    # addresses and password as scripts/add-testing-users.sh, called directly so
+    # the job does not depend on that script's path assumptions.
+    - |
+      set -e
+      while IFS='|' read -r name mail role; do
+        [ -z "$name" ] && continue
+        ./bin/drush user:create "$name" --mail="$mail" --password="$DRUPAL_ADMIN_PASSWORD"
+        if [ "$role" != "_none_" ]; then
+          ./bin/drush user:role:add "$role" "$name"
+        fi
+      done <<'USERS'
+      Normal user|test.authenticated@vardot.com|_none_
+      Content editor|test.content_editor@vardot.com|content_editor
+      Content admin|test.content_admin@vardot.com|content_admin
+      SEO admin|test.seo_admin@vardot.com|seo_admin
+      Site admin|test.site_admin@vardot.com|site_admin
+      Super admin|test.super_admin@vardot.com|administrator
+      USERS
     - ./bin/drush cache:rebuild
     # = Serve the site with PHP's built-in server =
     - ./bin/drush runserver 127.0.0.1:8888 > $CI_PROJECT_DIR/runserver.log 2>&1 &

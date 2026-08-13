@@ -8,7 +8,7 @@ Feature: Website Base Requirements - Main navigation and footer
   # heading is not a way to navigate. A menu link lost when the recipe is
   # re-applied fails its own named row.
 
-  @check @local @development @staging @production
+  @check @smoke @fast @local @development @staging @production @navigation
   Scenario Outline: The main navigation links to the <name> section
     Given I am an anonymous user
      When I go to "/"
@@ -26,7 +26,7 @@ Feature: Website Base Requirements - Main navigation and footer
 
   # The header navigation is global: it is rendered from the Canvas Header
   # region, so it must be the same on an interior page as on the home page.
-  @check @local @development @staging @production
+  @check @smoke @fast @local @development @staging @production @navigation
   Scenario: The main navigation is the same on an interior page
     Given I am an anonymous user
      When I go to "/about"
@@ -37,7 +37,7 @@ Feature: Website Base Requirements - Main navigation and footer
 
   # The social profiles are icon links, so their accessible names are the only
   # thing a screen reader (or this test) can identify them by.
-  @check @local @development @staging @production
+  @check @regression @fast @local @development @staging @production @navigation
   Scenario: The footer links the organization's social profiles
     Given I am an anonymous user
      When I go to "/"
