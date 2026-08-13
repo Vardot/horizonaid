@@ -84,7 +84,7 @@ component_tree:
     uuid: 7f1c2a80-5d31-4e07-9a11-f00000000010
     component_id: sdc.vartheme_bs5_horizonaid.heading
     component_version: active
-    inputs: '{"heading_text":"Join Our Mission","level":3,"text_color":"text-white","target":"_self"}'
+    inputs: '{"heading_text":"Join Our Mission","level":2,"text_size":"h3","text_color":"text-white","target":"_self"}'
   0:col_3:8:
     parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000001
     slot: col_3
