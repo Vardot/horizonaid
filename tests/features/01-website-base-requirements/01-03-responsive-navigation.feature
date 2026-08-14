@@ -1,3 +1,4 @@
+@any @regression @smoke
 Feature: Website Base Requirements - Responsive navigation - Header collapse and listings at small viewports
       As a site visitor on a phone
       I want the main navigation and the listings to work at a small viewport

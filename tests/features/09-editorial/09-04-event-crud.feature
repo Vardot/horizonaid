@@ -1,3 +1,4 @@
+@any @regression @content @editorial @acceptance
 Feature: Editorial - Event - create, read, update and delete
       As a content editor
       I want to create, read, update and delete an Event through the admin UI

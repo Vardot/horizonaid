@@ -1,3 +1,4 @@
+@any @regression @content @editorial @acceptance
 Feature: Editorial - Utility page - create, read, update and delete
       As a content editor
       I want to create, read, update and delete a Utility page through the admin UI

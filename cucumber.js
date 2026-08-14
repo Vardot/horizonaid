@@ -32,11 +32,13 @@ module.exports = {
     // unset locally runs the whole suite.
     paths: [process.env.FEATURES || 'tests/features/**/*.feature'],
     format: [
-      // Built-in progress formatter: the standalone @cucumber/pretty-formatter
+      // Coloured Gherkin output so the CI log shows every Feature / Scenario /
+      // Step. @cucumber/pretty-formatter is pinned to a cucumber-js-compatible
+      // version via package.json overrides (npm) + resolutions (yarn). The old
       // package resolves to a version whose plugin API does not match the
       // installed cucumber-js, so it fails to load in CI. The JSON report below
       // is what the HTML/PDF report is generated from.
-      'progress',
+      '@cucumber/pretty-formatter',
       'json:tests/reports/' + (process.env.CUCUMBER_JSON || 'cucumber_report') + '.json',
     ],
     formatOptions: {

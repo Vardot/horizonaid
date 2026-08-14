@@ -1,3 +1,4 @@
+@any @regression @content @programs
 Feature: Programs - Programs listing - Rows, keyword filter and donation FAQ
       As a supporter deciding what to fund
       I want the Our Programs page to name every programme with a way into it

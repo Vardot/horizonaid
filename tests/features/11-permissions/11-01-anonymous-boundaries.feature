@@ -1,3 +1,4 @@
+@any @regression @auth @security @acceptance
 Feature: Permissions - Anonymous - the editorial back end is closed to visitors
       As a security-conscious site owner
       I want anonymous visitors kept out of every administrative surface

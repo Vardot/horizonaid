@@ -1,3 +1,4 @@
+@any @regression @content @resources
 Feature: Resources - Resource article - Story, share actions and related reading
       As a site visitor
       I want a resource article page with its story, share actions and related reading

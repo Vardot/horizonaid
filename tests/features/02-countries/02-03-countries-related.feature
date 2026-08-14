@@ -1,3 +1,4 @@
+@any @regression @content @countries
 Feature: Countries - Related countries - The See Other Countries block
       As a site visitor
       I want a country page to point me at the other countries we work in

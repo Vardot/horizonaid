@@ -1,3 +1,4 @@
+@any @regression @content @events @exploratory
 Feature: Events - Filtering and paging - Keyword, Type and Topic over the listing
       As a site visitor
       I want to narrow the Events listing with its filters and page through the rest

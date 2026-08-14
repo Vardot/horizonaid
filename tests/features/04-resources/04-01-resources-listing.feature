@@ -1,3 +1,4 @@
+@any @regression @content @resources
 Feature: Resources - Resources listing - Cards, pager and exposed filters
       As a site visitor
       I want a Resources listing at /resources with cards and filters

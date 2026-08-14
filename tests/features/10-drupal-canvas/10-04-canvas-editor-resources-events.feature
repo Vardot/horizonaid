@@ -1,3 +1,4 @@
+@any @regression @canvas @content @slow
 Feature: Drupal Canvas - Editor - Resources and Events open in the Canvas editor
       As a site builder taking over a Horizon Aid site
       I want the Resources and Events Canvas pages to open in the Canvas editor

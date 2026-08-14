@@ -1,3 +1,4 @@
+@any @regression @smoke
 Feature: Website Base Requirements - Main navigation and footer
       As a site visitor
       I want the main navigation and footer to name and reach every section

@@ -1,3 +1,4 @@
+@any @regression @auth @security @acceptance
 Feature: Permissions - Roles - what each Horizon Aid role may and may not do
       As the owner of a Horizon Aid site
       I want each role held to the permissions the recipe grants it

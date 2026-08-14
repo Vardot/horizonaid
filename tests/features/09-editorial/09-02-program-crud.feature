@@ -1,3 +1,4 @@
+@any @regression @content @editorial @acceptance
 Feature: Editorial - Program - create, read, update and delete
       As a content editor
       I want to create, read, update and delete a Program through the admin UI

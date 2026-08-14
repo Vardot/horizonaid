@@ -1,3 +1,4 @@
+@any @regression @canvas @content @slow
 Feature: Drupal Canvas - Editor - Countries and Our Programs open in the Canvas editor
       As a site builder taking over a Horizon Aid site
       I want the Countries and Our Programs Canvas pages to open in the Canvas editor

@@ -1,3 +1,4 @@
+@any @regression @content @programs
 Feature: Programs - Programme page - Sections, country map and breadcrumb
       As a supporter deciding what to fund
       I want a programme page to explain the work, the figures behind it and where

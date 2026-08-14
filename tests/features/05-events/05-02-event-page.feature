@@ -1,3 +1,4 @@
+@any @regression @content @events
 Feature: Events - Event page - Date, programme and registration
       As a site visitor
       I want an event page with its date, programme and registration action

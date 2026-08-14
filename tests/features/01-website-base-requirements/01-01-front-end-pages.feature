@@ -1,3 +1,4 @@
+@any @regression @smoke
 Feature: Website Base Requirements - Front-end pages render
       As a site visitor
       I want every section the Horizon Aid template ships to load without errors

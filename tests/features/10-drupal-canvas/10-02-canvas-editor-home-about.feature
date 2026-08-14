@@ -1,3 +1,4 @@
+@any @regression @canvas @content @slow
 Feature: Drupal Canvas - Editor - Home and About open in the Canvas editor
       As a site builder taking over a Horizon Aid site
       I want the Home and About Canvas pages to open in the Canvas editor

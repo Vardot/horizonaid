@@ -1,3 +1,4 @@
+@any @regression @content @countries
 Feature: Countries - Country page - Sections, aliases and breadcrumb
       As a site visitor
       I want a country page to set out our role, the work on the ground, the

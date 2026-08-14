@@ -1,3 +1,4 @@
+@any @regression @content @editorial @acceptance
 Feature: Editorial - Access - the webmaster reaches the editorial surfaces
       As a site builder
       I want the admin account to reach the content, media and page-creation surfaces

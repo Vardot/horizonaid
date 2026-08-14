@@ -1,3 +1,4 @@
+@any @regression @content @impact @donate
 Feature: Impact and Donate - Donate page - The site-wide donate call to action
       As a visitor who has decided to give
       I want the Donate call to action to be reachable from anywhere and to land on a real page

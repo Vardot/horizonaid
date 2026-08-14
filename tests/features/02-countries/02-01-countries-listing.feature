@@ -1,3 +1,4 @@
+@any @regression @content @countries
 Feature: Countries - Countries listing - Cards, keyword filter and ordering
       As a site visitor
       I want the Countries page to name every country Horizon Aid works in and to

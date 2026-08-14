@@ -1,3 +1,4 @@
+@any @regression @content @editorial @acceptance
 Feature: Editorial - Country - create, read, update and delete
       As a content editor
       I want to create, read, update and delete a Country through the admin UI

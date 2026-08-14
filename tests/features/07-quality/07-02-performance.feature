@@ -1,3 +1,4 @@
+@any @regression @perf
 Feature: Quality - Performance - Page load budgets on the Horizon Aid pages
       As a site owner
       I want every Horizon Aid page to load within a budget

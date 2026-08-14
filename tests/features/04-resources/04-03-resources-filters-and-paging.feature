@@ -1,3 +1,4 @@
+@any @regression @content @resources @exploratory
 Feature: Resources - Filtering and paging - Keyword, Program and Type over the listing
       As a site visitor
       I want to narrow the Resources listing with its filters and page through the rest

@@ -1,3 +1,4 @@
+@any @regression @seo
 Feature: SEO - Metatags - Canonical URLs, titles and sharing previews
       As a communications team
       I want every page to declare its own title, canonical URL and share preview

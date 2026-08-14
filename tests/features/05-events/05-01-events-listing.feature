@@ -1,3 +1,4 @@
+@any @regression @content @events
 Feature: Events - Events listing - Cards, pager and exposed filters
       As a site visitor
       I want an Events listing at /events with cards, a summary and filters

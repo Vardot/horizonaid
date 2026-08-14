@@ -1,3 +1,4 @@
+@any @regression @a11y
 Feature: Quality - Accessibility - Every page the Horizon Aid template ships
       As a visitor using assistive technology
       I want every Horizon Aid page to be perceivable and operable

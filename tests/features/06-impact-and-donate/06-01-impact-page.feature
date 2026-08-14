@@ -1,3 +1,4 @@
+@any @regression @content @impact @donate
 Feature: Impact and Donate - Our Impact page - Transparency statement and animated figures
       As a donor, partner or grant officer
       I want the Our Impact page to state what the organisation has achieved

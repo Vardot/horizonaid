@@ -1,3 +1,4 @@
+@any @regression @canvas @content
 Feature: Drupal Canvas - Pages - the shipped Horizon Aid Canvas pages are listed
       As a site builder taking over a Horizon Aid site
       I want every Canvas page the recipe ships to be listed for editing
