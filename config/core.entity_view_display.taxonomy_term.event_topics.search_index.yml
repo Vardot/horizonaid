@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.search_index
+    - taxonomy.vocabulary.event_topics
+id: taxonomy_term.event_topics.search_index
+targetEntityType: taxonomy_term
+bundle: event_topics
+mode: search_index
+content: {  }
+hidden: {  }

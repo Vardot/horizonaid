@@ -1,0 +1,10 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - canvas
+id: canvas_page.search_index
+label: 'Search index'
+description: ''
+targetEntityType: canvas_page
+cache: true

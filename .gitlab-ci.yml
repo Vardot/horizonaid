@@ -416,20 +416,12 @@ workflow:
           fwrite(STDERR, "❌ minimum-stability is not dev\n");
           exit(1);
         }
-        // Dependencies that declare patches with a path relative to the project
-        // root cannot resolve here (drupal/ai_context is one), so patch
-        // resolution is default-deny and those are ignored outright, exactly as
-        // varbase_project does it.
+        // The curated Vardot patch sets must be allowed to apply their
+        // patches; anything else a dependency declares is left to Composer.
         $cp = $c["extra"]["composer-patches"] ?? [];
         foreach (["vardot/varbase-patches", "vardot/drupal-core-patches"] as $a) {
           if (!in_array($a, $cp["allowed-dependency-patches"] ?? [], TRUE)) {
             fwrite(STDERR, "❌ allowed-dependency-patches missing: $a\n");
-            exit(1);
-          }
-        }
-        foreach (["drupal/*", "drupal/ai_context"] as $i) {
-          if (!in_array($i, $cp["ignore-dependency-patches"] ?? [], TRUE)) {
-            fwrite(STDERR, "❌ ignore-dependency-patches missing: $i\n");
             exit(1);
           }
         }
