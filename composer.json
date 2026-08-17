@@ -42,5 +42,5 @@
         "drupal/varbase_workflow_base": "~1.0.0-rc1",
         "drupal/vartheme_bs5_horizonaid": "~1.0.0-alpha2"
     },
-    "version": "1.0.0-alpha1"
+    "version": "1.0.x-dev"
 }
