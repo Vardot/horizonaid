@@ -47,8 +47,8 @@ component_tree:
     slot: content
     uuid: 832987db-bd19-4634-8d3f-d5e6c95bb149
     component_id: sdc.vartheme_bs5_horizonaid.icon-toggle
-    component_version: 9b4c690eb740a9bd
-    inputs: '{"icon":"search","label":"Search","open_label":"Close search","placement":"end"}'
+    component_version: c42c2d3c773c4f6c
+    inputs: '{"icon":"search","label":"Search","open_label":"Close search","placement":"end","panel":"bar","expand_in_editor":true}'
   '0:col_2:0:content:1:content:0':
     parent_uuid: 832987db-bd19-4634-8d3f-d5e6c95bb149
     slot: content

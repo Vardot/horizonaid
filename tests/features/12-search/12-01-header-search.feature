@@ -44,20 +44,31 @@ Feature: Search - The header search toggle - Reaching the results page from any 
 
   # Opening and closing again must leave the header as it was found, so the
   # control is usable more than once per page load.
+  #
+  # The panel is an inline bar, and the bar takes the toggle button's place on
+  # the header row while it is open: the button is hidden and the bar carries its
+  # own close control. So closing is a click on that close button, not a second
+  # click on the toggle.
   @check @exploratory @local @development @staging @production @navigation @search
-  Scenario: Verify the toggle closes the panel again
+  Scenario: Verify the bar closes again and gives the header back
     Given I am an anonymous user
      When I go to "/home"
       And I wait until the page is loaded
       And I click on the element "header[role='banner'] .icon-toggle__button"
      Then "header[role='banner'] .icon-toggle__panel" should be visible within 10 seconds
-     When I click on the element "header[role='banner'] .icon-toggle__button"
+      And "header[role='banner'] .icon-toggle__close" should be visible
+     When I click on the element "header[role='banner'] .icon-toggle__close"
      Then "header[role='banner'] .icon-toggle__panel" should be hidden within 10 seconds
+      And "header[role='banner'] .icon-toggle__button" should be visible
       And "header[role='banner'] .icon-toggle__button" should have attribute "aria-expanded" with value "false"
 
   # The point of the header box: what is typed there has to arrive on the
   # results page, in the URL and back in the results page's own field, not just
   # land the visitor on an empty /search.
+  #
+  # The inline bar shows the icon, the field and a close button on one line, and
+  # deliberately hides the exposed form's submit button, so the query is sent the
+  # way the design intends: Enter in the field.
   @check @acceptance @critical @local @development @staging @production @navigation @search
   Scenario: Check searching from the header lands on the results page carrying the query
     Given I am an anonymous user
@@ -66,7 +77,7 @@ Feature: Search - The header search toggle - Reaching the results page from any 
       And I click on the element "header[role='banner'] .icon-toggle__button"
      Then "header[role='banner'] .icon-toggle__panel input[name='keywords']" should be visible within 10 seconds
      When I fill in the field "header[role='banner'] .icon-toggle__panel input[name='keywords']" with "water"
-      And I click on the element "header[role='banner'] .icon-toggle__panel .form-submit"
+      And I press the key "Enter" on the element "header[role='banner'] .icon-toggle__panel input[name='keywords']"
       And I wait until the page is loaded
      Then the url should match "/search"
       And the url should match "keywords=water"

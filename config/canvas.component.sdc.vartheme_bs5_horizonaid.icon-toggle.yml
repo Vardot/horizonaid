@@ -5,7 +5,7 @@ dependencies:
     - options
   theme:
     - vartheme_bs5_horizonaid
-active_version: 9b4c690eb740a9bd
+active_version: c42c2d3c773c4f6c
 versioned_properties:
   active:
     settings:
@@ -56,6 +56,29 @@ versioned_properties:
           default_value:
             -
               value: end
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        expand_in_editor:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value:
+            -
+              value: true
+          expression: ℹ︎boolean␟value
+          derived_schema_metadata: {  }
+        panel:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: popover
           expression: ℹ︎list_string␟value
           derived_schema_metadata: {  }
     fallback_metadata:
