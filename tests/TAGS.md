@@ -81,7 +81,8 @@ never carries `@production`.
 ## Domain — which part of the template
 
 `@navigation`, `@countries`, `@programs`, `@resources`, `@events`, `@impact`, `@donate`,
-`@editorial`, `@crud`, `@canvas`, `@permissions`, `@security`, `@seo`, `@a11y`, `@perf`.
+`@search`, `@editorial`, `@crud`, `@canvas`, `@permissions`, `@security`, `@seo`, `@a11y`,
+`@perf`.
 
 ## The canonical runs
 

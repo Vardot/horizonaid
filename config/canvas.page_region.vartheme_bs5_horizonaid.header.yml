@@ -4,7 +4,9 @@ dependencies:
   config:
     - canvas.component.block.system_branding_block
     - canvas.component.block.system_menu_block.main
+    - canvas.component.block.views_exposed_filter_block.search-block_1
     - canvas.component.sdc.vartheme_bs5_horizonaid.group
+    - canvas.component.sdc.vartheme_bs5_horizonaid.icon-toggle
     - canvas.component.sdc.vartheme_bs5_horizonaid.section
   module:
     - options
@@ -40,3 +42,17 @@ component_tree:
     component_id: block.system_menu_block.main
     component_version: 023ff7ba63f80798
     inputs: '{"label":"Main navigation","label_display":"0","level":1,"depth":3,"expand_all_items":true}'
+  '0:col_2:0:content:1':
+    parent_uuid: b7d6ef10-663c-4e98-9e2d-982dc7573a4c
+    slot: content
+    uuid: 832987db-bd19-4634-8d3f-d5e6c95bb149
+    component_id: sdc.vartheme_bs5_horizonaid.icon-toggle
+    component_version: 9b4c690eb740a9bd
+    inputs: '{"icon":"search","label":"Search","open_label":"Close search","placement":"end"}'
+  '0:col_2:0:content:1:content:0':
+    parent_uuid: 832987db-bd19-4634-8d3f-d5e6c95bb149
+    slot: content
+    uuid: 5ec8ad86-8eff-4273-88a0-978047c73da6
+    component_id: block.views_exposed_filter_block.search-block_1
+    component_version: abd3c7419d413cec
+    inputs: '{"label":"Search","label_display":"0","views_label":""}'

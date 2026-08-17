@@ -517,6 +517,8 @@ workflow:
         FEATURES_GLOB: "tests/features/10-drupal-canvas/10-05-canvas-editor-impact-donate.feature"
       - SUITE: "11-permissions"
         FEATURES_GLOB: "tests/features/11-permissions/**/*.feature"
+      - SUITE: "12-search"
+        FEATURES_GLOB: "tests/features/12-search/**/*.feature"
   services:
     - name: mariadb:10.11
       alias: database
