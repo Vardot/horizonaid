@@ -340,7 +340,8 @@ workflow:
 # run scripts/drupal-cms-wiring.php on it, require this recipe and install the
 # site template through the Drupal CMS installer. This is the only job that
 # exercises Horizon Aid off a Varbase base, so it guards the wiring script and the
-# vardot/varbase-patches requirement against drifting out of use.
+# root-level vardot/varbase-patches requirement that script instructs. A Composer
+# plugin only works from the root composer.json, so the recipe cannot require it.
 "🧩 (Drupal CMS) Install Horizon Aid site template":
   stage: pre-test
   rules:
