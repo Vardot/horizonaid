@@ -473,6 +473,80 @@ workflow:
       THEME=$(./vendor/bin/drush config:get system.theme default --format=string)
       echo "default theme: $THEME"
       test "$THEME" = "vartheme_bs5_horizonaid" || (echo "❌ vartheme_bs5_horizonaid is not the default theme" && exit 1)
+    # = Quick light smoke checks: the installed site actually serves =
+    # Deliberately cheap - seconds, not minutes: a served front page, a couple of
+    # routes, the recipe's own content, a clean log. No cucumber, no browser. The
+    # functional testing suite (🧪 varbase-e2e) deliberately runs on the Varbase
+    # base only; this lane tests the Drupal CMS INSTALL, and these checks prove
+    # that install is not merely applied but genuinely serving.
+    - |
+      PHP_CLI_SERVER_WORKERS=4 ./vendor/bin/drush runserver 127.0.0.1:8888 > "$CI_PROJECT_DIR/runserver-cms.log" 2>&1 &
+      echo $! > "$CI_PROJECT_DIR/runserver-cms.pid"
+      for i in $(seq 1 30); do
+        curl -sS -o /dev/null "http://127.0.0.1:8888/" && break
+        echo "waiting for drush runserver ($i/30)"
+        sleep 2
+      done
+    - |
+      FAILED=0
+      # HTTP 200 on the paths a working site must always answer.
+      for ROUTE in / /user/login /search; do
+        CODE=$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:8888${ROUTE}")
+        if [ "$CODE" = "200" ]; then
+          echo "✅ ${ROUTE} → ${CODE}"
+        else
+          echo "❌ ${ROUTE} → ${CODE}, expected 200"
+          FAILED=1
+        fi
+      done
+      # Drush bootstraps the installed site.
+      BOOTSTRAP=$(./vendor/bin/drush status --field=bootstrap)
+      case "$BOOTSTRAP" in
+        *uccessful*) echo "✅ drush bootstrap: $BOOTSTRAP" ;;
+        *) echo "❌ drush did not bootstrap the site (bootstrap: '$BOOTSTRAP')"; FAILED=1 ;;
+      esac
+      # The recipe's content landed. Asserted as greater than zero, not against a
+      # fixed total, so curating the content does not turn CI red.
+      NODES=$(./vendor/bin/drush ev 'print \Drupal::entityQuery("node")->accessCheck(FALSE)->count()->execute();')
+      case "$NODES" in
+        ''|*[!0-9]*) echo "❌ could not count nodes (got '$NODES')"; FAILED=1 ;;
+        *) if [ "$NODES" -gt 0 ]; then echo "✅ $NODES nodes"; else echo "❌ the install created no nodes"; FAILED=1; fi ;;
+      esac
+      PAGES=$(./vendor/bin/drush ev 'print \Drupal::entityQuery("canvas_page")->accessCheck(FALSE)->count()->execute();')
+      case "$PAGES" in
+        ''|*[!0-9]*) echo "❌ could not count canvas pages (got '$PAGES')"; FAILED=1 ;;
+        *) if [ "$PAGES" -gt 0 ]; then echo "✅ $PAGES canvas pages"; else echo "❌ the install created no canvas pages"; FAILED=1; fi ;;
+      esac
+      # Nothing fatal was logged while the site template was being applied.
+      # Counted straight out of the log table: `drush watchdog:show --type=php`
+      # aborts with "Unrecognized message type: php" when the log holds no php
+      # entry at all, which is the passing case, so it cannot be the gate. It is
+      # only called afterwards, to print what was found.
+      DBLOG=$(./vendor/bin/drush ev 'print \Drupal::moduleHandler()->moduleExists("dblog") ? "yes" : "no";')
+      if [ "$DBLOG" = "yes" ]; then
+        PHP_ERRORS=$(./vendor/bin/drush ev 'print \Drupal::database()->select("watchdog")->condition("type", "php")->condition("severity", 3, "<=")->countQuery()->execute()->fetchField();')
+        case "$PHP_ERRORS" in
+          ''|*[!0-9]*) echo "❌ could not read the log (got '$PHP_ERRORS')"; FAILED=1 ;;
+          0) echo "✅ no PHP errors logged during the install" ;;
+          *)
+            echo "❌ $PHP_ERRORS PHP errors were logged during the install:"
+            ./vendor/bin/drush watchdog:show --type=php --severity=Error --count=10
+            FAILED=1
+            ;;
+        esac
+      else
+        echo "❌ dblog is not enabled, so PHP errors during the install cannot be checked"
+        FAILED=1
+      fi
+      # Stop the webserver, then report.
+      if [ -f "$CI_PROJECT_DIR/runserver-cms.pid" ]; then
+        kill "$(cat "$CI_PROJECT_DIR/runserver-cms.pid")" || echo "drush runserver had already stopped"
+      fi
+      if [ "$FAILED" -ne 0 ]; then
+        echo "❌ the Drupal CMS install did not pass the smoke checks"
+        exit 1
+      fi
+      echo "✅ the Drupal CMS install serves"
   artifacts:
     when: always
     expire_in: 1 day
