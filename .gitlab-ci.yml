@@ -337,11 +337,12 @@ workflow:
 
 
 # = pre-test = prove the Drupal CMS wiring: build a plain drupal/cms codebase,
-# run scripts/drupal-cms-wiring.php on it, require this recipe and install the
-# site template through the Drupal CMS installer. This is the only job that
-# exercises Horizon Aid off a Varbase base, so it guards the wiring script and the
-# root-level vardot/varbase-patches requirement that script instructs. A Composer
-# plugin only works from the root composer.json, so the recipe cannot require it.
+# wire it inline with composer config, place the front-end library sync from
+# scripts/, require this recipe and install the site template through the Drupal
+# CMS installer. This is the only job that exercises Horizon Aid off a Varbase
+# base, so it guards both the composer wiring a plain Drupal CMS root needs and
+# the root-level vardot/varbase-patches requirement. A Composer plugin only works
+# from the root composer.json, so the recipe cannot require it.
 "🧩 (Drupal CMS) Install Horizon Aid site template":
   stage: pre-test
   rules:
@@ -380,10 +381,20 @@ workflow:
     # = Build a plain Drupal CMS project — no Varbase wiring of any kind =
     - composer create-project drupal/cms "$CMS_SITE_DIR" --no-interaction --no-install --no-scripts
     - cd "$CMS_SITE_DIR"
-    # = Wire it for a Site recipe: dev stability, allow-plugins, the patches
-    #   allowlist, the drupal-libraries block and Yarn's node-modules linker.
-    #   Run from the project root; the script resolves the root from getcwd().
-    - php "$CI_PROJECT_DIR/scripts/drupal-cms-wiring.php"
+    # = Wire the plain Drupal CMS root for a Site recipe, inline. Formerly the
+    #   composer half of scripts/drupal-cms-wiring.php: dev stability for the
+    #   1.0.x-dev requirements, the allow-plugins the patch plugins need to run
+    #   at all, and the default-deny patch allowlist.
+    - composer config minimum-stability dev
+    - composer config prefer-stable true
+    - composer config allow-plugins.cweagans/composer-patches true
+    - composer config allow-plugins.vardot/varbase-patches true
+    - composer config allow-plugins.oomphinc/composer-installers-extender true
+    - composer config extra.enable-patching true
+    - composer config extra.composer-exit-on-patch-failure true
+    - composer config extra.composer-patches.allowed-dependency-patches
+      '["vardot/varbase-patches","vardot/drupal-core-patches"]' --json
+    - composer config extra.drupal-recipe-unpack.on-require false
     # = Point at the checked-out recipe and require it. --with-all-dependencies is
     #   required: a partial update keeps the locked symfony/css-selector, which
     #   drupal/storybook (via varbase_dev_base) conflicts with.
@@ -429,6 +440,16 @@ workflow:
         print "✅ composer wiring in place\n";
       '
     # = Sync the front-end libraries the recipe components expect =
+    # = package.json: the drupal-libraries block drupal-libraries-sync.js reads,
+    #   plus the postinstall that runs it.
+    - cp "$CI_PROJECT_DIR/scripts/assets/drupal-libraries.package.json" package.json
+    # = Yarn 4 defaults to PnP and writes no node_modules/ for the sync script to
+    #   copy from.
+    - |
+      printf 'nodeLinker: node-modules\n\nenableScripts: true\n\nnpmMinimalAgeGate: 0\n' > .yarnrc.yml
+    # = The sync script itself, next to package.json where postinstall expects it.
+    - mkdir -p scripts
+    - cp "$CI_PROJECT_DIR/scripts/drupal-libraries-sync.js" scripts/drupal-libraries-sync.js
     - corepack enable && corepack yarn install --no-immutable
     - |
       php -r '
