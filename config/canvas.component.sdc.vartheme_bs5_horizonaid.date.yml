@@ -2,18 +2,224 @@ langcode: en
 status: true
 dependencies:
   module:
+    - canvas_icon_picker
     - datetime
     - options
   theme:
     - vartheme_bs5_horizonaid
-label: Date
-id: sdc.vartheme_bs5_horizonaid.date
-source: sdc
-source_local_id: 'vartheme_bs5_horizonaid:date'
-provider: vartheme_bs5_horizonaid
-active_version: 69cd1843b2f2a0e5
+active_version: 7b870a5d2bc56530
 versioned_properties:
   active:
+    settings:
+      prop_field_definitions:
+        date:
+          required: false
+          field_type: datetime
+          field_storage_settings:
+            datetime_type: date
+          field_instance_settings: {  }
+          field_widget: datetime_default
+          default_value: null
+          expression: ℹ︎datetime␟value
+          derived_schema_metadata: {  }
+        timestamp:
+          required: false
+          field_type: integer
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: number
+          default_value: null
+          expression: ℹ︎integer␟value
+          derived_schema_metadata: {  }
+        format:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: 'j F Y'
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        icon:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_icon_pack:
+              - bootstrap_icons
+            allowed_icon_ids:
+              - none
+              - calendar
+              - calendar-event
+              - calendar-week
+              - calendar-check
+              - clock
+              - geo-alt
+          field_widget: canvas_icon_picker
+          default_value:
+            -
+              value: calendar-event
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        display:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: block
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        weight:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: fw-bold
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        text_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: text-primary
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        size:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: fs-4
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+  d3ef992079effe12:
+    settings:
+      prop_field_definitions:
+        date:
+          required: false
+          field_type: datetime
+          field_storage_settings:
+            datetime_type: date
+          field_instance_settings: {  }
+          field_widget: datetime_default
+          default_value: null
+          expression: ℹ︎datetime␟value
+          derived_schema_metadata: {  }
+        timestamp:
+          required: false
+          field_type: integer
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: number
+          default_value: null
+          expression: ℹ︎integer␟value
+          derived_schema_metadata: {  }
+        format:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: 'j F Y'
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        icon:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings:
+            allowed_icon_pack:
+              - bootstrap_icons
+            allowed_icon_ids:
+              - none
+              - calendar
+              - calendar-event
+              - calendar-week
+              - calendar-check
+              - clock
+              - geo-alt
+          field_widget: canvas_icon_picker
+          default_value:
+            -
+              value: calendar-event
+          expression: ℹ︎string␟value
+          derived_schema_metadata: {  }
+        display:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: block
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        weight:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: fw-bold
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        text_color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: text-primary
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        size:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: fs-4
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions: {  }
+  69cd1843b2f2a0e5:
     settings:
       prop_field_definitions:
         date:
@@ -25,6 +231,7 @@ versioned_properties:
           field_widget: datetime_default
           default_value: null
           expression: ℹ︎datetime␟value
+          derived_schema_metadata: {  }
         text_color:
           required: false
           field_type: list_string
@@ -36,6 +243,7 @@ versioned_properties:
             -
               value: text-primary
           expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
         size:
           required: false
           field_type: list_string
@@ -47,5 +255,11 @@ versioned_properties:
             -
               value: fs-4
           expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
     fallback_metadata:
       slot_definitions: {  }
+label: Date
+id: sdc.vartheme_bs5_horizonaid.date
+provider: vartheme_bs5_horizonaid
+source: sdc
+source_local_id: 'vartheme_bs5_horizonaid:date'
