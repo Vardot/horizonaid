@@ -12,13 +12,13 @@ recipes:
 - drupal_cms_seo_basic
 - drupal_cms_seo_tools
 - drupal_cms_accessibility_tools
-- drupal_cms_search
 - easy_email_express
 - varbase_admin_base
 - varbase_security_base
 - varbase_media_base
 - varbase_editor_base
 - varbase_content_base
+- drupal_cms_search
 - varbase_workflow_base
 - varbase_seo_base
 - varbase_webform_base
