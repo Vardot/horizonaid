@@ -26,7 +26,7 @@ component_tree:
     slot: col_1
     uuid: 589cc59f-4a7b-42c2-b285-8fd7b65e6439
     component_id: block.system_branding_block
-    component_version: b168140fdcaebae5
+    component_version: active
     inputs: '{"label":"Site branding","label_display":"0","use_site_logo":true,"use_site_name":false,"use_site_slogan":false}'
   '0:col_2:0':
     parent_uuid: baa39131-18c3-466a-95ea-15034b6fb94a
@@ -40,7 +40,7 @@ component_tree:
     slot: content
     uuid: d5f18bf8-f056-4581-a814-029b8c567d0b
     component_id: block.system_menu_block.main
-    component_version: 023ff7ba63f80798
+    component_version: active
     inputs: '{"label":"Main navigation","label_display":"0","level":1,"depth":3,"expand_all_items":true}'
   '0:col_2:0:content:1':
     parent_uuid: b7d6ef10-663c-4e98-9e2d-982dc7573a4c
@@ -54,5 +54,5 @@ component_tree:
     slot: content
     uuid: 5ec8ad86-8eff-4273-88a0-978047c73da6
     component_id: block.views_exposed_filter_block.search-block_1
-    component_version: abd3c7419d413cec
+    component_version: active
     inputs: '{"label":"Search","label_display":"0","views_label":""}'
