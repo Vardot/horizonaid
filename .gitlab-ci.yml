@@ -282,17 +282,11 @@ workflow:
     - composer config minimum-stability dev
     - composer config repositories.horizonaid path "$CI_PROJECT_DIR"
     - composer require drupal/horizonaid:@dev --no-interaction --no-progress --prefer-dist --with-all-dependencies
-    # = Sync the front-end libraries the recipe components expect =
-    # create-project ran with --no-scripts, because the varbase_starter recipe that
-    # owns the sync script is not on disk until the require above, and `composer
-    # require` does not re-fire post-create-project-cmd. Without this web/libraries
-    # stays empty: CKEditor 5 then boots without its plugin libraries, throws
-    # plugincollection-plugin-not-found, and no rich text field ever mounts, so
-    # every editorial scenario that types into one fails while the site otherwise
-    # looks healthy. The host's package.json runs the sync from its postinstall
-    # hook, so a plain install is enough. --no-immutable because Yarn 4 turns
-    # --immutable on whenever CI is set and this throwaway lock is not kept.
-    - corepack enable && corepack yarn install --no-immutable
+    # = The front-end libraries come from Composer =
+    # Each one is a drupal-library package required by the module or the
+    # varbase_* recipe that loads it, so the require above already installed
+    # them. Nothing copies files out of node_modules, and no Yarn step is
+    # needed to populate web/libraries.
     - ls web/libraries
     # = Install the site from the Horizon Aid recipe =
     - ./bin/drush site:install recipes/horizonaid --db-url=$DB_URL
@@ -408,6 +402,15 @@ workflow:
     # null". The allow-list the wiring script writes only permits these patches,
     # it does not pull them in, and neither the recipe nor drupal/cms requires it.
     - composer require vardot/varbase-patches --no-interaction --no-progress
+    # = Test the module under review, not the last release of it =
+    #   ace is the one front-end library whose require lives in a MODULE rather
+    #   than a recipe: drupal/ace_editor requires vardot/ace, the way
+    #   drupal/anchor_link requires vardot/ckeditor5-anchor-drupal. The recipe
+    #   chain takes drupal/ace_editor at ~2, which resolves to the 2.0.4
+    #   release, and 2.0.4 predates that require - it still lists only
+    #   drupal/core. The 2.0.x branch carries vardot/ace ^1.44.0.
+    #   Remove this pin once ace_editor 2.0.5 or later is released.
+    - composer require drupal/ace_editor:2.0.x-dev --no-update
     - composer require drupal/horizonaid:@dev --no-interaction --no-progress --prefer-dist --with-all-dependencies
     # = Assert the wiring took effect, so a silent no-op cannot pass =
     - test -d recipes/horizonaid || (echo "❌ recipes/horizonaid missing" && exit 1)
@@ -439,26 +442,42 @@ workflow:
         }
         print "✅ composer wiring in place\n";
       '
-    # = Sync the front-end libraries the recipe components expect =
-    # = package.json: the drupal-libraries block drupal-libraries-sync.js reads,
-    #   plus the postinstall that runs it.
-    - cp "$CI_PROJECT_DIR/scripts/assets/drupal-libraries.package.json" package.json
-    # = Yarn 4 defaults to PnP and writes no node_modules/ for the sync script to
-    #   copy from.
-    - |
-      printf 'nodeLinker: node-modules\n\nenableScripts: true\n\nnpmMinimalAgeGate: 0\n' > .yarnrc.yml
-    # = The sync script itself, next to package.json where postinstall expects it.
-    - mkdir -p scripts
-    - cp "$CI_PROJECT_DIR/scripts/drupal-libraries-sync.js" scripts/drupal-libraries-sync.js
-    - corepack enable && corepack yarn install --no-immutable
+    # = Assert the front-end libraries the recipe components expect are on disk =
+    #   They come from Composer: each one is a drupal-library package required by
+    #   the module or the varbase_* recipe that loads it, so requiring the recipe
+    #   above installed them. Checking the FILES the .libraries.yml entries load,
+    #   rather than a declaration, is what catches a repackaged upstream layout
+    #   or a package that stops placing itself.
+    #
+    #   Two of the six place themselves in ways worth knowing about, because
+    #   neither needs anything in this project's composer.json:
+    #     - vardot/swagger-ui is a drupal-library repackage of the Swagger UI
+    #       dist that replaces swagger-api/swagger-ui, which upstream publishes
+    #       as composer type `library` and composer/installers cannot place.
+    #     - vardot/ckeditor5-media-embed-drupal declares composer/installers'
+    #       extra.installer-name, which overrides {$name} for that package only
+    #       and accepts a nested value, so it lands under
+    #       web/libraries/ckeditor5/plugins/media-embed on its own.
     - |
       php -r '
-        $libs = json_decode(file_get_contents("package.json"), TRUE)["drupal-libraries"]["libraries"] ?? [];
-        if (count($libs) < 6) {
-          fwrite(STDERR, "❌ the drupal-libraries block is not wired\n");
+        $need = [
+          "web/libraries/ace/src-min-noconflict/ace.js",
+          "web/libraries/aos/aos.js",
+          "web/libraries/aos/aos.css",
+          "web/libraries/dropzone/dropzone-min.js",
+          "web/libraries/dropzone/dropzone.css",
+          "web/libraries/jquery.fancytree/dist/jquery.fancytree.min.js",
+          "web/libraries/jquery.fancytree/dist/skin-lion/ui.fancytree.min.css",
+          "web/libraries/swagger-ui/dist/swagger-ui-bundle.js",
+          "web/libraries/swagger-ui/dist/swagger-ui.css",
+          "web/libraries/ckeditor5/plugins/media-embed/build/media-embed.js",
+        ];
+        $missing = array_values(array_filter($need, fn($f) => !is_file($f)));
+        if ($missing) {
+          fwrite(STDERR, "❌ front-end libraries missing:\n  " . implode("\n  ", $missing) . "\n");
           exit(1);
         }
-        printf("✅ %d libraries declared\n", count($libs));
+        printf("✅ %d front-end library files in place\n", count($need));
       '
     - ls web/libraries
     # = Install the site template through the Drupal CMS installer =
