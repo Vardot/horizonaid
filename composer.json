@@ -28,7 +28,6 @@
         "drupal/varbase_auth_base": "1.0.x-dev",
         "drupal/varbase_blog_base": "1.0.x-dev",
         "drupal/varbase_content_base": "1.0.x-dev",
-        "drupal/varbase_dev_base": "1.0.x-dev",
         "drupal/varbase_editor_base": "1.0.x-dev",
         "drupal/varbase_events_base": "1.0.x-dev",
         "drupal/varbase_i18n_base": "1.0.x-dev",
