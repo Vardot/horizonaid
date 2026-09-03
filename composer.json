@@ -24,7 +24,6 @@
         "drupal/recipe_installer_kit": "~1",
         "drupal/varbase_admin_base": "1.0.x-dev",
         "drupal/varbase_ai_base": "1.0.x-dev",
-        "drupal/varbase_api_base": "1.0.x-dev",
         "drupal/varbase_auth_base": "1.0.x-dev",
         "drupal/varbase_blog_base": "1.0.x-dev",
         "drupal/varbase_content_base": "1.0.x-dev",
