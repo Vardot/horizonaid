@@ -449,11 +449,8 @@ workflow:
     #   rather than a declaration, is what catches a repackaged upstream layout
     #   or a package that stops placing itself.
     #
-    #   Two of the six place themselves in ways worth knowing about, because
-    #   neither needs anything in this project's composer.json:
-    #     - vardot/swagger-ui is a drupal-library repackage of the Swagger UI
-    #       dist that replaces swagger-api/swagger-ui, which upstream publishes
-    #       as composer type `library` and composer/installers cannot place.
+    #   One of the five places itself in a way worth knowing about, because it
+    #   needs nothing in this project's composer.json:
     #     - vardot/ckeditor5-media-embed-drupal declares composer/installers'
     #       extra.installer-name, which overrides {$name} for that package only
     #       and accepts a nested value, so it lands under
@@ -468,8 +465,6 @@ workflow:
           "web/libraries/dropzone/dropzone.css",
           "web/libraries/jquery.fancytree/dist/jquery.fancytree.min.js",
           "web/libraries/jquery.fancytree/dist/skin-lion/ui.fancytree.min.css",
-          "web/libraries/swagger-ui/dist/swagger-ui-bundle.js",
-          "web/libraries/swagger-ui/dist/swagger-ui.css",
           "web/libraries/ckeditor5/plugins/media-embed/build/media-embed.js",
         ];
         $missing = array_values(array_filter($need, fn($f) => !is_file($f)));
