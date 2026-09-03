@@ -19,7 +19,7 @@ component_tree:
   0:
     uuid: baa39131-18c3-466a-95ea-15034b6fb94a
     component_id: sdc.vartheme_bs5_horizonaid.section
-    component_version: 4171719f53c41b9d
+    component_version: active
     inputs: '{"container_type":"container","background_color":"none","text_color":"auto","columns":"25-75","gutter":"gx-3 gy-3","padding_block_start":"pt-3","padding_block_end":"pb-3","section_header":false,"section_footer":false,"bg_edge2edge":true}'
   '0:col_1:0':
     parent_uuid: baa39131-18c3-466a-95ea-15034b6fb94a
@@ -33,7 +33,7 @@ component_tree:
     slot: col_2
     uuid: b7d6ef10-663c-4e98-9e2d-982dc7573a4c
     component_id: sdc.vartheme_bs5_horizonaid.group
-    component_version: aef7f7b22127c944
+    component_version: active
     inputs: '{"direction":"horizontal","gap":"gap-3","wrap":"wrap","align_items":"align-items-center","justify_content":"justify-content-end"}'
   '0:col_2:0:content:0':
     parent_uuid: b7d6ef10-663c-4e98-9e2d-982dc7573a4c
@@ -47,7 +47,7 @@ component_tree:
     slot: content
     uuid: 832987db-bd19-4634-8d3f-d5e6c95bb149
     component_id: sdc.vartheme_bs5_horizonaid.icon-toggle
-    component_version: c42c2d3c773c4f6c
+    component_version: active
     inputs: '{"icon":"search","label":"Search","open_label":"Close search","placement":"end","panel":"bar","expand_in_editor":true}'
   '0:col_2:0:content:1:content:0':
     parent_uuid: 832987db-bd19-4634-8d3f-d5e6c95bb149
