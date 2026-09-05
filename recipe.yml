@@ -1,6 +1,6 @@
 name: Horizon Aid
 type: Site
-description: A site template recipe for NGOs, nonprofits and humanitarian/aid organizations, built the Varbase recipe-first way.
+description: Designed for NGOs, nonprofits and humanitarian aid organizations. Includes country and programme profiles, events, a resource library and a donation page.
 recipes:
 - varbase_users_base
 - drupal_cms_admin_ui
