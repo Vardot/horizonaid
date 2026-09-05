@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0-beta1] - 2026-09-05
+### Fixed
+- Reshoot the installer card at 500x400, the aspect ratio the Drupal CMS site-template picker
+  actually renders. The picker draws the card in a 368x294 box (ratio 1.25) with `object-fit: cover`,
+  so the previous 632x304 image (ratio 2.08) had roughly 40% of its width discarded, cutting the logo
+  and nav off the preview. Every other site template ships 500x400
+  ([#3620998](https://www.drupal.org/i/3620998)).
+- Rewrite the recipe description in the house style of the other site templates, opening with what
+  the template is designed for and naming what it ships ([#3620998](https://www.drupal.org/i/3620998)).
+
 ## [1.0.0-alpha2] - 2026-09-05
 ### Added
 - Re-export the Drupal Canvas component configs so the Canvas Icon Picker is available on the shipped
@@ -61,6 +71,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   query with Enter in the field.
 - Update the version badge to `1.0.0-alpha1` in `README.md`.
 
-[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.0-alpha2...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.0-beta1...1.0.x
+[1.0.0-beta1]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.0-alpha2...1.0.0-beta1
 [1.0.0-alpha2]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.0-alpha1...1.0.0-alpha2
 [1.0.0-alpha1]: https://git.drupalcode.org/project/horizonaid/-/tags/1.0.0-alpha1
