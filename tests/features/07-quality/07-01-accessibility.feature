@@ -233,3 +233,25 @@ Feature: Quality - Accessibility - Every page the Horizon Aid template ships
       | Events    | /events    |
       | Impact    | /impact    |
       | Donate    | /donate    |
+
+  # Two rules a sibling template regressed on: footer social icons rendered a
+  # link colour that failed AA against the section background, and a front page
+  # whose title came out as an h2 so there was no h1 to jump to. Named here so a
+  # regression on the home page reads as the rule that broke rather than as a
+  # count.
+  #
+  # What color-contrast does and does not cover is worth stating. axe measures
+  # rendered text. The footer social links carry an icon-font glyph on a label
+  # sized to zero, so that rule never evaluates them; a contrast regression in
+  # those icons would pass this scenario. Covering them needs an assertion on
+  # the icon colour itself, not an axe rule.
+  #
+  # No speed tag: this scenario has not been measured on a shared runner.
+  @check @a11y @regression @local @development @staging @production
+  Scenario: Check the Home page holds the two rules a sibling template regressed on
+    Given I am an anonymous user
+     When I go to "/"
+      And I wait until the page is loaded
+     Then the page should not violate the accessibility rule "color-contrast"
+      And the page should not violate the accessibility rule "page-has-heading-one"
+      And the page should have exactly one h1
