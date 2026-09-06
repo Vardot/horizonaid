@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-09-06
+### Changed
+- First stable release. Promotes 1.0.0-rc1 to 1.0.0 with no functional change to the recipe.
+- A stock `drupal/cms` root ships `minimum-stability: stable`. While every published version was a
+  pre-release, a site builder had to run `composer config minimum-stability dev` before
+  `drupal/horizonaid` would resolve. The stability setting was the gate rather than the version
+  constraint: `~1` normalizes to a lower bound of 1.0.0.0-dev and an upper bound below 2.0.0.0, so it
+  already admitted a pre-release once stability permitted. With 1.0.0 stable,
+  `composer require drupal/horizonaid` works on an untouched Drupal CMS root.
+- Every cross-dependency now names a stable constraint: the sixteen `varbase_*_base` recipes and
+  `drupal/vartheme_bs5_horizonaid`, all at `~1.0.0`, all resolving to a published stable 1.0.0.
+
+### Added
+- test: [#3621203](https://www.drupal.org/i/3621203) Name the `color-contrast` and
+  `page-has-heading-one` accessibility rules in the home page regression scenarios, with an explicit
+  single-`h1` assertion. Both rules had regressed on a sibling Varbase site template.
+
 ## [1.0.0-rc1] - 2026-09-06
 ### Changed
 - Promote the recipe to a release candidate. This release carries no functional change over
