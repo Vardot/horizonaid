@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0-rc1] - 2026-09-06
+### Changed
+- Promote the recipe to a release candidate. This release carries no functional change over
+  1.0.0-beta1; it is a maturity step on the way to 1.0.0 stable, so that the Horizon Aid site
+  template recipe works with Drupal CMS by default, on stable releases. Today
+  `drupal/horizonaid:~1` resolves only after `minimum-stability` is loosened to `dev`, because every
+  published version is still a pre-release. The constraint is not the blocker: `~1` normalizes to
+  `>=1.0.0.0-dev <2.0.0.0`, so a pre-release does satisfy the range once the stability setting
+  permits it. Once 1.0.0 stable exists, `composer require drupal/horizonaid` works against a stock
+  `drupal/cms` root with its default `minimum-stability: stable` and no extra configuration.
+- Re-pin every cross-dependency to its published constraint after the Back to DEV change: the
+  sixteen `varbase_*_base` recipes at the floors verified for 1.0.0-beta1, and
+  `drupal/vartheme_bs5_horizonaid` at `~1.0.0-rc1`.
+- Update the version badge and the Composer install command to `1.0.0-rc1` in `README.md`.
+
 ## [1.0.0-beta1] - 2026-09-05
 ### Fixed
 - Reshoot the installer card at 500x400, the aspect ratio the Drupal CMS site-template picker
