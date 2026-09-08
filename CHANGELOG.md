@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-09-08
+### Fixed
+- fix: [#3621336](https://www.drupal.org/i/3621336) Remove the three never-applied base recipes, so
+  the template resolves on Stable for Drupal CMS.
+
 ## [1.0.0] - 2026-09-06
 ### Changed
 - First stable release. Promotes 1.0.0-rc1 to 1.0.0 with no functional change to the recipe.
