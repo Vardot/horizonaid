@@ -156,42 +156,6 @@ config:
       disable: []
     canvas.component.sdc.navigation.title:
       disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.details:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.field:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.fieldset:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.form:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.form-element:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.form-element-radiocheckbox:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.input-checkbox:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.input-submit:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.links-dropbutton:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.list:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.local-tasks:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.page:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.page-footer:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.radios:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.region:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.select:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.social-auth:
-      disable: []
-    canvas.component.sdc.vartheme_bs5_horizonaid.user:
-      disable: []
     pathauto.pattern.blog_content:
       simpleConfigUpdate:
         pattern: /resources/[node:title]

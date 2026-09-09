@@ -6,13 +6,76 @@ dependencies:
     - options
   theme:
     - vartheme_bs5_horizonaid
-active_version: fallback
+label: Taxonomy
+id: sdc.vartheme_bs5_horizonaid.taxonomy
+source: sdc
+source_local_id: 'vartheme_bs5_horizonaid:taxonomy'
+provider: vartheme_bs5_horizonaid
+active_version: 3351b78763f50152
 versioned_properties:
   active:
     settings:
-      last_active_version: ''
-label: Taxonomy
-id: sdc.vartheme_bs5_horizonaid.taxonomy
-provider: vartheme_bs5_horizonaid
-source: sdc
-source_local_id: 'vartheme_bs5_horizonaid:taxonomy'
+      prop_field_definitions:
+        label:
+          required: true
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value:
+            -
+              value: Taxonomy
+          expression: ℹ︎string␟value
+          derived_schema_metadata:
+            string_shape: {  }
+        url:
+          required: false
+          field_type: link
+          field_storage_settings: {  }
+          field_instance_settings:
+            title: 0
+            link_type: 17
+          field_widget: link_default
+          default_value: null
+          expression: ℹ︎link␟url
+          derived_schema_metadata:
+            string_shape:
+              format: uri-reference
+        target:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: _self
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        size:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: taxonomy-lg
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+        color:
+          required: false
+          field_type: list_string
+          field_storage_settings:
+            allowed_values_function: canvas_load_allowed_values_for_component_prop
+          field_instance_settings: {  }
+          field_widget: options_select
+          default_value:
+            -
+              value: taxonomy-primary
+          expression: ℹ︎list_string␟value
+          derived_schema_metadata: {  }
+    fallback_metadata:
+      slot_definitions: {  }
