@@ -285,6 +285,9 @@ workflow:
     - !reference [.fragments, host_php_setup]
   script:
     # = Build a plain Drupal CMS project — no Varbase wiring of any kind =
+    # The build cache restores cmssite/, and composer create-project refuses a
+    # non-empty target, so start from a clean directory on every run.
+    - rm -rf "$SITE_DIR"
     - composer create-project drupal/cms "$SITE_DIR" --no-interaction --no-install --no-scripts
     - cd "$SITE_DIR"
     # = Wire the plain Drupal CMS root for a Site recipe, inline: dev stability
