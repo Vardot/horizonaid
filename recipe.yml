@@ -29,6 +29,7 @@ recipes:
 install:
 - vartheme_bs5_horizonaid
 - better_exposed_filters
+- canvas_page_template_component
 config:
   strict: false
   actions:
