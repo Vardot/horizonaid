@@ -5,7 +5,7 @@
 # validate - lint YAML, spell-check + ESLint the suite, and a Cucumber dry-run
 #            that proves every step phrasing in the Varbase functional testing
 #            suite resolves (all reproducible offline in gitlab-ci-local).
-# pre-test - 🧩 (Drupal CMS) Install Horizon Aid site template: build a plain
+# pre-test - 🧩 Drupal CMS - Horizon Aid: build a plain
 #            drupal/cms host project, require the checked-out Horizon Aid recipe,
 #            install it through the Drupal CMS installer's site-template step,
 #            prepare it for deterministic testing, then DUMP the DB (gzip). The
@@ -86,7 +86,7 @@ workflow:
   - "eslint.config.js"
   - "playwright.config.ts"
 
-# Build cache populated by 🧩 (Drupal CMS) Install Horizon Aid site template:
+# Build cache populated by 🧩 Drupal CMS - Horizon Aid:
 # the built host site (cmssite/), the varbase-e2e node_modules and the composer
 # + Playwright download caches. The test jobs pull this (see .test_cache) so
 # they skip the whole host build and only restore the DB dump.
@@ -253,7 +253,7 @@ workflow:
 # with no patches of any kind, so requiring vardot/varbase-patches only coupled
 # this pipeline to a curated patch set whose drift then failed the build before
 # a single Drupal command ran.
-"🧩 (Drupal CMS) Install Horizon Aid site template":
+"🧩 Drupal CMS - Horizon Aid":
   stage: pre-test
   rules:
     - <<: *run_on_release_refs
@@ -451,6 +451,18 @@ workflow:
     - ./vendor/bin/drush config:set user.flood user_limit 1000000 -y
     - ./vendor/bin/drush config:set system.logging error_level all -y
     - ./vendor/bin/drush cache:rebuild
+    # The Drupal CMS installer's account step has no username field, so
+    # --account-name is silently ignored and user 1 is always "admin". The
+    # functional suite logs in as $DRUPAL_ADMIN_USERNAME, so rename user 1 and
+    # set its password explicitly - otherwise every scenario that needs an
+    # authenticated user fails on "Then I should see Log out".
+    - |
+      ./vendor/bin/drush ev '
+        $u = \Drupal\user\Entity\User::load(1);
+        $u->setUsername(getenv("DRUPAL_ADMIN_USERNAME"))->save();
+        printf("user 1 is now %s\n", \Drupal\user\Entity\User::load(1)->getAccountName());
+      '
+    - ./vendor/bin/drush user:password "$DRUPAL_ADMIN_USERNAME" "$DRUPAL_ADMIN_PASSWORD"
     # Seed the per-role testing users the permission and editorial features log
     # in as. The "I am a logged in user with the ... user" step only submits the
     # login form - it does not create the account - so without these every
@@ -486,8 +498,8 @@ workflow:
 
 # = Automated Functional Acceptance Testing - one parallel job per feature
 # bucket. Restores the built site + DB dump from
-# 🧩 (Drupal CMS) Install Horizon Aid site template.
-"🧪 Functional testing":
+# 🧩 Drupal CMS - Horizon Aid.
+"🧪 Functional":
   stage: test
   rules:
     - <<: *run_on_release_refs
@@ -496,7 +508,7 @@ workflow:
     - when: manual
       allow_failure: false
   image: mcr.microsoft.com/playwright:v1.56.0-noble
-  needs: ["🧩 (Drupal CMS) Install Horizon Aid site template"]
+  needs: ["🧩 Drupal CMS - Horizon Aid"]
   timeout: 2h
   retry:
     max: 2
@@ -598,9 +610,9 @@ workflow:
       when: always
     - when: never
   image: node:20
-  needs: ["🧪 Functional testing"]
+  needs: ["🧪 Functional"]
   dependencies:
-    - "🧪 Functional testing"
+    - "🧪 Functional"
   before_script:
     - apt-get update -y && apt-get install -y jq
     - npm install --no-save --no-audit --no-fund @vardot/varbase-e2e
