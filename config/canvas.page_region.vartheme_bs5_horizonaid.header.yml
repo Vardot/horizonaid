@@ -4,7 +4,7 @@ dependencies:
   config:
     - canvas.component.block.system_branding_block
     - canvas.component.block.system_menu_block.main
-    - canvas.component.block.views_exposed_filter_block.search-block_1
+    - canvas.component.block.views_exposed_filter_block.search-page
     - canvas.component.sdc.vartheme_bs5_horizonaid.group
     - canvas.component.sdc.vartheme_bs5_horizonaid.icon-toggle
     - canvas.component.sdc.vartheme_bs5_horizonaid.section
@@ -53,6 +53,6 @@ component_tree:
     parent_uuid: 832987db-bd19-4634-8d3f-d5e6c95bb149
     slot: content
     uuid: 5ec8ad86-8eff-4273-88a0-978047c73da6
-    component_id: block.views_exposed_filter_block.search-block_1
+    component_id: block.views_exposed_filter_block.search-page
     component_version: active
     inputs: '{"label":"Search","label_display":"0","views_label":""}'

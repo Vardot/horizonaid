@@ -176,25 +176,21 @@ config:
     # repeats it. The result summary is the same markup every other listing
     # uses.
     #
-    # The search box belongs on the results page, so the page display renders
-    # its exposed form inline. The header panel keeps a block of its own through
-    # a dedicated block display, because turning the page display's exposed
-    # block off would otherwise remove the block the header points at.
+    # The header panel carries the one search box the site has, as the page
+    # display's own exposed block (`views_exposed_filter_block:search-page`),
+    # which Drupal CMS Search already switches on. A dedicated `block_1` display
+    # was used here before and cannot work: a recipe applies its config actions
+    # AFTER its config, so the block plugin derivative did not exist yet when the
+    # Canvas Component config entity naming it was created. Drupal logged
+    # "The \"views_exposed_filter_block:search-block_1\" block plugin was not
+    # found" three times and saved that Component with no dependencies at all.
+    # Reusing the page display's block also stops /search rendering a second
+    # search box below the header one.
     views.view.search:
       simpleConfigUpdate:
         display.default.display_options.filters.search_api_fulltext.expose.placeholder: 'Search by keyword'
         display.default.display_options.filters.search_api_fulltext.expose.label: 'Search by keyword'
-        display.page.display_options.exposed_block: false
         display.default.display_options.exposed_form.options.text_input_required: '<p>Enter a keyword to search Horizon Aid.</p>'
-        display.block_1:
-          id: block_1
-          display_title: 'Header search form'
-          display_plugin: block
-          position: 3
-          display_options:
-            exposed_block: true
-            display_extenders: {  }
-            display_description: 'Exposed search form for the header region.'
         display.default.display_options.style:
           type: default
           options:
