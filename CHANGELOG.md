@@ -7,6 +7,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-09-10
+### Fixed
+- fix: [#3622092](https://www.drupal.org/i/3622092) Install `canvas_page_template_component` from the
+  recipe so Canvas does not install it during `RecipeAppliedEvent`. Installing the site template with
+  `drush site:install recipes/horizonaid` on a stock `drupal/cms` build aborted with
+  `You have requested a synthetic service ("kernel")`; it now exits 0, with no patches of any kind.
+- fix: [#3621847](https://www.drupal.org/i/3621847) Remove the nineteen Canvas Component config
+  entities shipped in the fallback state, which logged 477 PHP warnings from
+  `Drupal\canvas\Entity\Component::getSlotDefinitions()` on every install. The install now logs
+  zero warnings and zero PHP errors.
+- fix: [#3621848](https://www.drupal.org/i/3621848) Point the header search box at a plain form
+  instead of the search page's Views exposed block, so the Component keeps its dependencies.
+- fix: [#3622140](https://www.drupal.org/i/3622140) Restore the inline exposed form on the search
+  results page, so the page renders its own search box again.
+- fix: [#3622112](https://www.drupal.org/i/3622112) Rename user 1 so the functional suite can log in,
+  and shorten the two job names.
+- fix: [#3622114](https://www.drupal.org/i/3622114) Clear the restored `cmssite` directory before
+  `composer create-project`, so a cached CI run no longer fails.
+
+### Changed
+- task: [#3622094](https://www.drupal.org/i/3622094) Test Horizon Aid on Drupal CMS only, and rename
+  the test job to functional testing. CI now builds a single Drupal CMS host and runs the functional
+  suite against it, as `🧩 Drupal CMS - Horizon Aid` and `🧪 Functional`, and the
+  `vardot/varbase-patches` wiring was removed from the pipeline.
+
+### Known issues
+- [#3620718](https://www.drupal.org/i/3620718) A fresh install can leave a stale cache such that the
+  first web request fatals site-wide with
+  `PluginNotFoundException: The "redirect" entity type does not exist`. Running `drush cr` clears it
+  immediately and the site is then fully correct. Not fixed in this release.
+
 ## [1.0.1] - 2026-09-08
 ### Fixed
 - fix: [#3621336](https://www.drupal.org/i/3621336) Remove the three never-applied base recipes, so
@@ -108,7 +139,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   query with Enter in the field.
 - Update the version badge to `1.0.0-alpha1` in `README.md`.
 
-[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.0-beta1...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.2...1.0.x
+[1.0.2]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.1...1.0.2
 [1.0.0-beta1]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.0-alpha2...1.0.0-beta1
 [1.0.0-alpha2]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.0-alpha1...1.0.0-alpha2
 [1.0.0-alpha1]: https://git.drupalcode.org/project/horizonaid/-/tags/1.0.0-alpha1
