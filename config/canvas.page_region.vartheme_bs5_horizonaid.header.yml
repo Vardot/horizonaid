@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - canvas.component.block.system_branding_block
-    - canvas.component.block.system_menu_block.main
-    - canvas.component.block.views_exposed_filter_block.search-page
-    - canvas.component.sdc.vartheme_bs5_horizonaid.group
-    - canvas.component.sdc.vartheme_bs5_horizonaid.icon-toggle
-    - canvas.component.sdc.vartheme_bs5_horizonaid.section
+  - canvas.component.block.system_branding_block
+  - canvas.component.block.system_menu_block.main
+  - canvas.component.sdc.vartheme_bs5_horizonaid.group
+  - canvas.component.sdc.vartheme_bs5_horizonaid.html-code
+  - canvas.component.sdc.vartheme_bs5_horizonaid.icon-toggle
+  - canvas.component.sdc.vartheme_bs5_horizonaid.section
   module:
-    - options
+  - options
   theme:
-    - vartheme_bs5_horizonaid
+  - vartheme_bs5_horizonaid
 id: vartheme_bs5_horizonaid.header
 region: header
 theme: vartheme_bs5_horizonaid
@@ -21,38 +21,38 @@ component_tree:
     component_id: sdc.vartheme_bs5_horizonaid.section
     component_version: active
     inputs: '{"container_type":"container","background_color":"none","text_color":"auto","columns":"25-75","gutter":"gx-3 gy-3","padding_block_start":"pt-3","padding_block_end":"pb-3","section_header":false,"section_footer":false,"bg_edge2edge":true}'
-  '0:col_1:0':
+  0:col_1:0:
     parent_uuid: baa39131-18c3-466a-95ea-15034b6fb94a
     slot: col_1
     uuid: 589cc59f-4a7b-42c2-b285-8fd7b65e6439
     component_id: block.system_branding_block
     component_version: active
     inputs: '{"label":"Site branding","label_display":"0","use_site_logo":true,"use_site_name":false,"use_site_slogan":false}'
-  '0:col_2:0':
+  0:col_2:0:
     parent_uuid: baa39131-18c3-466a-95ea-15034b6fb94a
     slot: col_2
     uuid: b7d6ef10-663c-4e98-9e2d-982dc7573a4c
     component_id: sdc.vartheme_bs5_horizonaid.group
     component_version: active
     inputs: '{"direction":"horizontal","gap":"gap-3","wrap":"wrap","align_items":"align-items-center","justify_content":"justify-content-end"}'
-  '0:col_2:0:content:0':
+  0:col_2:0:content:0:
     parent_uuid: b7d6ef10-663c-4e98-9e2d-982dc7573a4c
     slot: content
     uuid: d5f18bf8-f056-4581-a814-029b8c567d0b
     component_id: block.system_menu_block.main
     component_version: active
     inputs: '{"label":"Main navigation","label_display":"0","level":1,"depth":3,"expand_all_items":true}'
-  '0:col_2:0:content:1':
+  0:col_2:0:content:1:
     parent_uuid: b7d6ef10-663c-4e98-9e2d-982dc7573a4c
     slot: content
     uuid: 832987db-bd19-4634-8d3f-d5e6c95bb149
     component_id: sdc.vartheme_bs5_horizonaid.icon-toggle
     component_version: active
     inputs: '{"icon":"search","label":"Search","open_label":"Close search","placement":"end","panel":"bar","expand_in_editor":true}'
-  '0:col_2:0:content:1:content:0':
+  0:col_2:0:content:1:content:0:
     parent_uuid: 832987db-bd19-4634-8d3f-d5e6c95bb149
     slot: content
     uuid: 5ec8ad86-8eff-4273-88a0-978047c73da6
-    component_id: block.views_exposed_filter_block.search-page
+    component_id: sdc.vartheme_bs5_horizonaid.html-code
     component_version: active
-    inputs: '{"label":"Search","label_display":"0","views_label":""}'
+    inputs: '{"code":"<form action=\"/search\" method=\"get\" role=\"search\" class=\"views-exposed-form views-exposed-form--search header-search-form d-flex align-items-center gap-2\"><label class=\"visually-hidden\" for=\"header-search-keywords\">Search by keyword</label><input type=\"search\" id=\"header-search-keywords\" name=\"keywords\" value=\"\" class=\"form-text form-control\" placeholder=\"Search by keyword\" /><button type=\"submit\" class=\"button js-form-submit form-submit btn btn-primary\">Search</button></form>"}'

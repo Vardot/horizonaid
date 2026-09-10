@@ -177,20 +177,28 @@ config:
     # repeats it. The result summary is the same markup every other listing
     # uses.
     #
-    # The header panel carries the one search box the site has, as the page
-    # display's own exposed block (`views_exposed_filter_block:search-page`),
-    # which Drupal CMS Search already switches on. A dedicated `block_1` display
-    # was used here before and cannot work: a recipe applies its config actions
-    # AFTER its config, so the block plugin derivative did not exist yet when the
-    # Canvas Component config entity naming it was created. Drupal logged
-    # "The \"views_exposed_filter_block:search-block_1\" block plugin was not
-    # found" three times and saved that Component with no dependencies at all.
-    # Reusing the page display's block also stops /search rendering a second
-    # search box below the header one.
+    # The search box belongs on the results page, so the page display renders
+    # its exposed form INLINE (`exposed_block: false`). A results page whose only
+    # search box is behind the header toggle cannot be refined, and the "Enter a
+    # keyword" message below would have no field to type into.
+    #
+    # Views renders an exposed form either inline OR as a block, never both, so
+    # the header cannot reuse this display's block. Nor can it use a dedicated
+    # `block_1` display: a recipe imports its config BEFORE it runs its actions,
+    # and even from an action the new display's block plugin derivative is not
+    # discoverable in the same run - Drupal logs "The
+    # \"views_exposed_filter_block:search-block_1\" block plugin was not found"
+    # and saves the Canvas Component with no dependencies at all.
+    #
+    # So the header panel carries a plain GET form to /search built with the
+    # html-code component instead. It needs no Views block, no derivative and no
+    # extra display, and it submits `keywords` exactly as the exposed form does.
+    # @see canvas.page_region.vartheme_bs5_horizonaid.header
     views.view.search:
       simpleConfigUpdate:
         display.default.display_options.filters.search_api_fulltext.expose.placeholder: 'Search by keyword'
         display.default.display_options.filters.search_api_fulltext.expose.label: 'Search by keyword'
+        display.page.display_options.exposed_block: false
         display.default.display_options.exposed_form.options.text_input_required: '<p>Enter a keyword to search Horizon Aid.</p>'
         display.default.display_options.style:
           type: default
