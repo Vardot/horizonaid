@@ -1,0 +1,268 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 7f1c2a80-5d31-4e07-9a11-f00000000100
+  default_langcode: en
+  depends:
+    67a76fae-bc22-4aa1-a144-4f39e44428ce: media
+default:
+  revision_user:
+  - target_id: 1
+  revision_log:
+  - value: Created the Newsletter page
+  status:
+  - value: true
+  owner:
+  - target_id: 1
+  title:
+  - value: Newsletter
+  components:
+  - uuid: 7f1c2a80-5d31-4e07-9a11-f00000000201
+    component_id: block.system_breadcrumb_block
+    inputs:
+      label: ''
+      label_display: '0'
+  - uuid: 7f1c2a80-5d31-4e07-9a11-f00000000202
+    component_id: sdc.vartheme_bs5_horizonaid.media-banner
+    inputs:
+      media:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: 67a76fae-bc22-4aa1-a144-4f39e44428ce
+          target_type: media
+      image_radius: rounded-hero
+      content_bg: bg-light
+      content_color: auto
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000202
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000203
+    component_id: sdc.vartheme_bs5_horizonaid.badge
+    inputs:
+      label: Newsletter
+      variant: text-bg-warning
+      size: fs-6 px-3 py-2
+      radius: rounded-pill
+      icon: none
+      icon_first: true
+      indicator: none
+      url: ''
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000202
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000204
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    inputs:
+      heading_text: Stay informed
+      level: 1
+      text_size: h2
+      target: _self
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000202
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000205
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    inputs:
+      text:
+        value: <p>Stay informed about our latest initiatives and how you can help.</p>
+        format: canvas_html_block
+      text_size: none
+      text_color: text-body
+  - uuid: 7f1c2a80-5d31-4e07-9a11-f00000000206
+    component_id: sdc.vartheme_bs5_horizonaid.section
+    inputs:
+      bg_edge2edge: false
+      container_type: container
+      background_color: none
+      text_color: text-body
+      columns: '100'
+      gutter: gx-3 gy-3
+      padding_block_start: pt-5
+      padding_block_end: pb-4
+      section_header: false
+      section_footer: false
+      aos_once: false
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000206
+    slot: col_1
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000207
+    component_id: sdc.vartheme_bs5_horizonaid.group
+    inputs:
+      background_color: none
+      direction: vertical
+      gap: gap-2
+      align_items: align-items-center
+      justify_content: justify-content-center
+      padding_block_start: pt-0
+      padding_block_end: pb-0
+      padding_inline_start: ps-0
+      padding_inline_end: pe-0
+      margin_block_start: mt-0
+      margin_block_end: mb-0
+      margin_inline_start: ms-0
+      margin_inline_end: me-0
+      radius: none
+      border: none
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000207
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000208
+    component_id: block.webform_block
+    inputs:
+      label: Newsletter Subscribe
+      label_display: '0'
+      webform_id: newsletter_subscribe
+      default_data: ''
+      redirect: false
+      lazy: false
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000207
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000209
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    inputs:
+      text:
+        value: <p>No spam. Unsubscribe any time.</p>
+        format: canvas_html_block
+      text_size: none
+      text_color: text-muted
+  - uuid: 7f1c2a80-5d31-4e07-9a11-f00000000210
+    component_id: sdc.vartheme_bs5_horizonaid.section
+    inputs:
+      bg_edge2edge: false
+      container_type: container
+      background_color: none
+      text_color: text-body
+      columns: 33-33-33
+      gutter: gx-5 gy-5
+      padding_block_start: pt-2
+      padding_block_end: pb-5
+      section_header: false
+      section_footer: false
+      aos_once: false
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000210
+    slot: col_1
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000220
+    component_id: sdc.vartheme_bs5_horizonaid.card-text
+    inputs:
+      card_border: false
+      background_color: bg-primary-subtle
+      padded: true
+      box_shadow: shadow-none
+      corner_style: rounded-4
+      equal_height: true
+      stretched_link: false
+      link_url: ''
+      link_target: default
+      icon_alignment: start
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000220
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000211
+    component_id: sdc.vartheme_bs5_horizonaid.icon
+    inputs:
+      icon: people
+      icon_size: fs-2
+      color: text-primary
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000220
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000212
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    inputs:
+      heading_text: Field updates
+      level: 2
+      text_size: h5
+      target: _self
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000220
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000213
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    inputs:
+      text:
+        value: <p>Stories from the countries where we work.</p>
+        format: canvas_html_block
+      text_size: none
+      text_color: text-body
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000210
+    slot: col_2
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000221
+    component_id: sdc.vartheme_bs5_horizonaid.card-text
+    inputs:
+      card_border: false
+      background_color: bg-primary-subtle
+      padded: true
+      box_shadow: shadow-none
+      corner_style: rounded-4
+      equal_height: true
+      stretched_link: false
+      link_url: ''
+      link_target: default
+      icon_alignment: start
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000221
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000214
+    component_id: sdc.vartheme_bs5_horizonaid.icon
+    inputs:
+      icon: check
+      icon_size: fs-2
+      color: text-primary
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000221
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000215
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    inputs:
+      heading_text: Impact reports
+      level: 2
+      text_size: h5
+      target: _self
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000221
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000216
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    inputs:
+      text:
+        value: <p>What your support made possible.</p>
+        format: canvas_html_block
+      text_size: none
+      text_color: text-body
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000210
+    slot: col_3
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000222
+    component_id: sdc.vartheme_bs5_horizonaid.card-text
+    inputs:
+      card_border: false
+      background_color: bg-primary-subtle
+      padded: true
+      box_shadow: shadow-none
+      corner_style: rounded-4
+      equal_height: true
+      stretched_link: false
+      link_url: ''
+      link_target: default
+      icon_alignment: start
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000222
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000217
+    component_id: sdc.vartheme_bs5_horizonaid.icon
+    inputs:
+      icon: laptop
+      icon_size: fs-2
+      color: text-primary
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000222
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000218
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    inputs:
+      heading_text: Events
+      level: 2
+      text_size: h5
+      target: _self
+  - parent_uuid: 7f1c2a80-5d31-4e07-9a11-f00000000222
+    slot: content
+    uuid: 7f1c2a80-5d31-4e07-9a11-f00000000219
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    inputs:
+      text:
+        value: <p>Briefings and webinars, before they fill up.</p>
+        format: canvas_html_block
+      text_size: none
+      text_color: text-body
+  path:
+  - alias: /newsletter
+    langcode: en
+  revision_translation_affected:
+  - value: true
+  metatags:
+  - value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","title":"[canvas_page:title] | [site:name]"}'
