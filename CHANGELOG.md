@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-09-14
+### Added
+- feat: [#3622833](https://www.drupal.org/i/3622833) Add a Newsletter Canvas page at `/newsletter` and
+  point the footer Subscribe button at it. The page is built from the existing template components (a
+  media banner, a heading, supporting text, the Newsletter Subscribe webform block and three icon
+  cards), so it stays editable in Canvas and a submission renders its confirmation message inside the
+  page instead of on a bare form route.
+
+### Fixed
+- fix: [#3622817](https://www.drupal.org/i/3622817) Give the footer Subscribe button a link
+  destination. It rendered as a button with no target, so the footer newsletter call to action did
+  nothing when clicked.
+
+### Changed
+- Require `drupal/varbase_webform_base:~1.0.2`, which carries the email field height fixes the
+  Newsletter page depends on, and `drupal/vartheme_bs5_horizonaid:~1.0.2`. The remaining
+  `varbase_*_base` recipes stay at `~1.0.0`.
+
+### Known issues
+- [#3620718](https://www.drupal.org/i/3620718) A fresh install can leave a stale cache such that the
+  first web request fatals site-wide with
+  `PluginNotFoundException: The "redirect" entity type does not exist`. Running `drush cr` clears it
+  immediately and the site is then fully correct. Not fixed in this release.
+
 ## [1.0.2] - 2026-09-10
 ### Fixed
 - fix: [#3622092](https://www.drupal.org/i/3622092) Install `canvas_page_template_component` from the
