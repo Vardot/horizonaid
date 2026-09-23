@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-09-23
+### Fixed
+- fix: [#3625359](https://www.drupal.org/i/3625359) Meet WCAG 2.2 AA. Basic pages now render their
+  title as the `h1` through a Canvas content template, program delivery card headings move from `h4` to
+  `h3` (same visual size), and blog bodies start at `h2`. The accessibility test now checks every public
+  page against WCAG 2.2 AA.
+
+### Changed
+- task: [#3625354](https://www.drupal.org/i/3625354) Update `@vardot/varbase-e2e` to 2.0.6.
+- Pin `drupal/vartheme_bs5_horizonaid` and every `drupal/varbase_*` recipe to `~1.0.0`.
+
+### Known issues
+- [#3620718](https://www.drupal.org/i/3620718) A fresh install can leave a stale cache such that the
+  first web request fatals site-wide with
+  `PluginNotFoundException: The "redirect" entity type does not exist`. Running `drush cr` clears it.
+  Not fixed in this release.
+
 ## [1.0.3] - 2026-09-14
 ### Added
 - feat: [#3622833](https://www.drupal.org/i/3622833) Add a Newsletter Canvas page at `/newsletter` and
