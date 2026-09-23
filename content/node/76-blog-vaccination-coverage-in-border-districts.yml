@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>METEMA</strong> — Fifteen thousand children were vaccinated in districts where routine services had stopped. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Vaccination coverage falls off exactly where districts meet and neither owns the map. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>Two districts each reporting ninety per cent can still leave the middle uncovered. The map has to be one map.</p><p><strong>Dr Tigist Alemu</strong>, immunisation officer</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Border districts are treated as one catchment with one microplan. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>A single microplan covering both sides of the district line</li><li>Cold chain checked end to end before each round</li><li>Mobile teams for settlements no fixed post reaches</li><li>Coverage reported against the joint catchment, not each district</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="2703edeb-c3da-4295-a7f9-956add15af88" data-align="center" alt="Vaccination coverage in border districts"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Gaps that became visible</h4>
+        <h3>1. Gaps that became visible</h3>
         <p>Joint reporting exposed the under-covered strip both districts had been counting as the other's.</p>
-        <h4>2. Fewer missed rounds</h4>
+        <h3>2. Fewer missed rounds</h3>
         <p>Verified cold chain removed the doses lost between the store and the post.</p>
-        <h4>3. Mobile teams reaching last</h4>
+        <h3>3. Mobile teams reaching last</h3>
         <p>Settlements previously listed as unreachable were covered in the same round.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next round extends the joint microplan to two further district pairs along the corridor. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

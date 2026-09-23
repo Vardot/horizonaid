@@ -4,51 +4,9 @@ Feature: Quality - Accessibility - Every page the Horizon Aid template ships
       I want every Horizon Aid page to be perceivable and operable
       So that a disability never stands between me and the aid information I came for.
 
-  # Horizon Aid is aimed at NGOs, humanitarian agencies and intergovernmental
-  # funders, where WCAG 2.1 AA is a procurement requirement rather than an
-  # aspiration. The pages were audited with axe-core on 12 August 2026 against
-  # the 1.0.x recipe. What that audit found, and how each finding is handled
-  # here, is written out below so nothing is silently absent.
-  #
-  # Clean today, therefore gated: / , /about, /programs, /donate.
-  #
-  # Open findings, each asserted by its own named scenario or documented as a
-  # row that is deliberately not in the severity gate:
-  #
-  #   1. /impact - [serious] color-contrast, 3 nodes. The three headline
-  #      counters (20K+, 137K+, 11K+) render brand yellow #ffc72c on white:
-  #      1.56:1 where large text needs 3:1. Gated below by name, so this suite
-  #      is red until the figure colour is fixed. That is the point: the number
-  #      a donor is meant to read is the least readable thing on the page.
-  #
-  #   2. /donate and /terms-and-conditions - [moderate] page-has-heading-one.
-  #      Neither page renders an h1; the page title comes out as an h2, so a
-  #      screen-reader user gets no top-level heading to jump to. Gated below in
-  #      the structural scenario, so it is red until the heading level is fixed.
-  #
-  #   3. /countries - [serious] nested-interactive, 1 node. The interactive map
-  #      canvas has focusable descendants. /countries is therefore not in the
-  #      severity gate; the countries feature folder owns that page, and adding
-  #      the row here would double-report one defect.
-  #
-  #   4. /resources and /events - [serious] list, 1 node each. The pager renders
-  #      role="presentation" children directly inside its list element. This is
-  #      Varbase pager markup, not Horizon Aid's, so it is a fix in a dependency
-  #      rather than in this recipe, and the two rows are left out of the
-  #      severity gate rather than shipped permanently red against code this
-  #      repo does not own.
-  #
-  # When a finding is fixed, add its path back into the severity gate and
-  # delete its note. Nothing here is muted, ignored or tagged out.
-  #
-  # On tags: @javascript is deliberately absent (it switches JS error capture
-  # into fail mode, and drimage_improved's on-demand derivatives make console
-  # 404s normal on a freshly installed site), and nothing here is
-  # @no-javascript - an axe audit reads the DOM the browser actually built, and
-  # the phone sweep depends on the collapsed navigation. Speed tags come from
-  # measured runs; where the rows of one outline straddle the 5 second line, the
-  # Examples block is split so the tag is true of every row under it. See
-  # tests/TAGS.md.
+  # WCAG 2.2 AA, anonymous visitor, every public page in the severity gate.
+  # Audited with axe-core 4.13 on 23 September 2026: 0 violations.
+  # A new finding is fixed or asserted by name, never muted. Tags: tests/TAGS.md.
 
   @check @a11y @acceptance @local @development @staging @production
   Scenario Outline: Check the <name> page has no critical or serious accessibility violations
@@ -58,17 +16,24 @@ Feature: Quality - Accessibility - Every page the Horizon Aid template ships
      Then the page should have no critical accessibility violations
       And the page should have no serious accessibility violations
 
-    Examples: Canvas pages that are clean today
-      | name     | path      |
-      | Home     | /         |
-      | About    | /about    |
-      | Programs | /programs |
-      | Donate   | /donate   |
+    Examples: every public page, all clean as of the 23 September 2026 audit
+      | name                 | path                  |
+      | Home                 | /                     |
+      | About                | /about                |
+      | Programs             | /programs             |
+      | Donate               | /donate               |
+      | Impact               | /impact               |
+      | Resources            | /resources            |
+      | Events               | /events               |
+      | Terms and Conditions | /terms-and-conditions |
 
-  # Finding 1, gated by name so the failure reads "color-contrast" and not a
-  # violation total. The rest of the Our Impact page's rule set is asserted in
-  # the same scenario, so a second regression on that page cannot hide behind
-  # the known one.
+    # 34.6s measured: the countries map page pays for the most audited nodes.
+    @slow
+    Examples:
+      | name      | path       |
+      | Countries | /countries |
+
+  # Named so a contrast regression reads "color-contrast", not a total.
   @check @a11y @regression @slow @local @development @staging @production
   Scenario: Verify the Our Impact headline figures are readable against their background
     Given I am an anonymous user
@@ -117,8 +82,7 @@ Feature: Quality - Accessibility - Every page the Horizon Aid template ships
   # image, an accessible name on every control, resolvable ARIA, and a tab order
   # nobody has overridden with positive tabindex values.
   #
-  # /donate is in this table on purpose (finding 2): it is the revenue page and
-  # it is the one that has no h1.
+  # /donate and /terms-and-conditions once rendered no h1.
   @check @a11y @acceptance @local @development @staging @production
   Scenario Outline: Check the <name> page is navigable by assistive technology
     Given I am an anonymous user
@@ -143,6 +107,7 @@ Feature: Quality - Accessibility - Every page the Horizon Aid template ships
       | Resources | /resources |
       | Events    | /events    |
       | Donate    | /donate    |
+      | Terms     | /terms-and-conditions |
 
     # 27-30s measured: both pages render a listing or a counter set.
     Examples:

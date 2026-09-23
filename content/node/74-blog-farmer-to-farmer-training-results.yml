@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>GEDAREF</strong> — Average harvest per household rose across every participating village this season. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Techniques taught by an outsider are tried once; techniques shown by a neighbour are adopted. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>They watched me do it on my own land, with my own risk. That is why they copied it.</p><p><strong>Ibrahim Musa</strong>, lead farmer</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Training runs farmer to farmer, on a working plot, in the season it applies to. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Lead farmers selected by their own cooperative</li><li>Training on a real plot, in the relevant season</li><li>A small stipend for the lead farmer's time</li><li>Follow-up visits scheduled rather than promised</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="e1408d47-fc69-4b5e-a7bb-38ea345953f5" data-align="center" alt="Farmer-to-farmer training results"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Adoption that holds</h4>
+        <h3>1. Adoption that holds</h3>
         <p>Techniques were still in use a full season later, which extension days rarely achieve.</p>
-        <h4>2. Faster spread</h4>
+        <h3>2. Faster spread</h3>
         <p>Each lead farmer reached neighbours we never met.</p>
-        <h4>3. Advice that fits</h4>
+        <h3>3. Advice that fits</h3>
         <p>Because it is local, the advice already accounts for the soil and the rainfall.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next season doubles the lead-farmer network and adds seed selection to the curriculum. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

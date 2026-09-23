@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>BENTIU</strong> — Antenatal care delivered by units that follow the routes families actually travel. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>The distance to a delivery room decides whether a complication is survivable. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>A mother will walk two hours for a clinic she knows will be there. She will not walk two hours to find out.</p><p><strong>Dr Amal Deng</strong>, obstetrician</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Clinics travel to a fixed weekly schedule so mothers can plan a visit rather than gamble on one. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Routes fixed and published, so the visit is predictable</li><li>Midwives recruited locally and paid through the health ministry</li><li>Referral transport arranged before it is needed</li><li>Records held by the mother, so care continues if the clinic moves</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="67a76fae-bc22-4aa1-a144-4f39e44428ce" data-align="center" alt="Maternal health in mobile clinics"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Earlier detection</h4>
+        <h3>1. Earlier detection</h3>
         <p>Complications found at a routine visit rather than in an emergency at night, which changes the outcome entirely.</p>
-        <h4>2. Vaccination alongside</h4>
+        <h3>2. Vaccination alongside</h3>
         <p>Infants reached on the same visit, because the queue is already there.</p>
-        <h4>3. Fewer unattended births</h4>
+        <h3>3. Fewer unattended births</h3>
         <p>Attendance rose steadily once the schedule had held for three consecutive months.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next phase adds two routes and puts an ultrasound on the vehicle that covers the longest circuit. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

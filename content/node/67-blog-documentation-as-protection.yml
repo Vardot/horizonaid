@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>BEIRUT</strong> — Without papers a family cannot enrol a child, access a clinic or report abuse. What our legal desks do about it. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This brief sets out the evidence, the cost of inaction, and what should follow.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Without papers, a person cannot be treated, enrolled, employed or protected. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>A birth certificate is not paperwork. It is the difference between a child existing and not existing.</p><p><strong>Karim Haddad</strong>, protection lawyer</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Documentation is treated as protection work, not administration. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Mobile registration desks placed where people already gather</li><li>Legal aid attached to the desk, not referred onward</li><li>Records duplicated and held securely against loss</li><li>Ministry liaison staffed so cases do not stall</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="c749d4bc-2a5e-47e1-a3ed-ce85781612b9" data-align="center" alt="Documentation as protection"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Access to school</h4>
+        <h3>1. Access to school</h3>
         <p>Enrolment refusals fell sharply once families arrived with documents in hand.</p>
-        <h4>2. Safer movement</h4>
+        <h3>2. Safer movement</h3>
         <p>Documented travellers were far less likely to be detained at checkpoints.</p>
-        <h4>3. Claims that survive</h4>
+        <h3>3. Claims that survive</h3>
         <p>Property and inheritance claims filed with correct papers are still standing years later.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next phase trains ministry staff to run the desks and reduces our role to legal support. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

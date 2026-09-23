@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>GOMA</strong> — What our protection teams handle when courts and police are no longer functioning. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This brief sets out the evidence, the cost of inaction, and what should follow.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Protection work in an active conflict cannot wait for the conflict to end. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>The case does not pause because the road does. Neither can we.</p><p><strong>Josephine Mwamba</strong>, protection officer</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Caseworkers stay reachable, and referrals are built to work when movement is restricted. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Caseworkers recruited from the communities they serve</li><li>Referral partners confirmed weekly, because availability changes</li><li>Case files encrypted and mirrored outside the area</li><li>Support continued remotely when access closes</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="368bad61-0dbd-4fd3-ac9d-b295fcdd7353" data-align="center" alt="Protection cases in active conflict"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Continuity through closures</h4>
+        <h3>1. Continuity through closures</h3>
         <p>Cases stayed open during access interruptions instead of restarting afterwards.</p>
-        <h4>2. Local trust</h4>
+        <h3>2. Local trust</h3>
         <p>Caseworkers from the community reached people who would not approach an outside agency.</p>
-        <h4>3. Records that survive</h4>
+        <h3>3. Records that survive</h3>
         <p>Mirrored files meant a destroyed office did not mean destroyed cases.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next phase adds two caseworkers per site and formalises the remote-support protocol. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

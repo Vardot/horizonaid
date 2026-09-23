@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>MAIDUGURI</strong> — What happened to local markets in districts where we replaced in-kind aid with direct cash. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Goods distributed compete with the traders a recovering market needs. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>Hand out food and the shop closes. Hand out cash and the shop restocks.</p><p><strong>Aisha Bukar</strong>, markets adviser</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Cash lets families buy locally, so the market recovers while the household is supported. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Market assessment before any transfer, to confirm supply exists</li><li>Transfer value indexed to a monitored local basket</li><li>Payment through agents families can reach on foot</li><li>Traders monitored for price response</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="d30a48eb-a7b9-4965-a517-1a163a93a9be" data-align="center" alt="Cash support and market recovery"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Traders back in business</h4>
+        <h3>1. Traders back in business</h3>
         <p>Shops that had closed reopened within the first two transfer rounds.</p>
-        <h4>2. Choice for households</h4>
+        <h3>2. Choice for households</h3>
         <p>Families bought what they actually lacked, which differed household to household.</p>
-        <h4>3. Lower delivery cost</h4>
+        <h3>3. Lower delivery cost</h3>
         <p>Cash cost a fraction of the logistics an equivalent in-kind distribution needs.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next phase links transfers to the national social register so support continues beyond us. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

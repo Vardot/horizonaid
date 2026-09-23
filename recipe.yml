@@ -2206,7 +2206,8 @@ config:
               heading_text:
                 sourceType: "entity-field"
                 expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_title\u241e0\u241fvalue"
-              level: 4
+              level: 3
+              text_size: "h4"
           96e4e712-d60a-52e7-afbf-152964a7aedf:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30090
             slot: content
@@ -2268,7 +2269,8 @@ config:
               heading_text:
                 sourceType: "entity-field"
                 expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_title\u241e1\u241fvalue"
-              level: 4
+              level: 3
+              text_size: "h4"
           a7d56212-2ba4-5a1c-9699-78e16f285978:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30091
             slot: content
@@ -2330,7 +2332,8 @@ config:
               heading_text:
                 sourceType: "entity-field"
                 expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_title\u241e2\u241fvalue"
-              level: 4
+              level: 3
+              text_size: "h4"
           3d2edb32-ad81-5115-b4f1-e44b0ee80f82:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30092
             slot: content
@@ -2392,7 +2395,8 @@ config:
               heading_text:
                 sourceType: "entity-field"
                 expression: "\u2139\ufe0e\u241centity:node:program\u241dfield_delivery_title\u241e3\u241fvalue"
-              level: 4
+              level: 3
+              text_size: "h4"
           db1ab5a0-02dc-5f6a-8703-24ffdbd2a07c:
             parent_uuid: 7f1c2a80-5d31-4e07-9a11-b0a1c2d30093
             slot: content

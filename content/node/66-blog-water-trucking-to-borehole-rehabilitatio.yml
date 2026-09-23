@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>MAI AINI</strong> — Moving from emergency water delivery to permanent infrastructure in drought-affected districts. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Trucking water is fast, expensive and endless; a rehabilitated borehole is slow, cheap and permanent. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>Trucking buys time. If you are not spending that time drilling, you are just buying it again next month.</p><p><strong>Rahel Tesfay</strong>, water engineer</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Every trucked litre is treated as a countdown to the borehole that replaces it. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Trucking contracted month to month, never annually, so it can end quickly</li><li>Boreholes surveyed while trucking runs, not after it stops</li><li>Pumps specified for parts available in the nearest market town</li><li>A water committee trained and paid before the handover, not after</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="c749d4bc-2a5e-47e1-a3ed-ce85781612b9" data-align="center" alt="Water trucking to borehole rehabilitation"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Cost that falls to nothing</h4>
+        <h3>1. Cost that falls to nothing</h3>
         <p>A rehabilitated borehole costs a fraction of a year of trucking, and the saving compounds every month it runs.</p>
-        <h4>2. Water that survives access loss</h4>
+        <h3>2. Water that survives access loss</h3>
         <p>When a road closed for six weeks, the settlements on boreholes were unaffected.</p>
-        <h4>3. Committees with a real budget</h4>
+        <h3>3. Committees with a real budget</h3>
         <p>Tariffs set by the committee cover parts and a caretaker, which is what keeps the pump turning.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next stage retires trucking at four more sites and moves the saved budget into spare-part stockpiles. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

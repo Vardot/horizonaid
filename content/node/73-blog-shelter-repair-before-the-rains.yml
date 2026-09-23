@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>SANA'A</strong> — Nineteen thousand shelters were upgraded ahead of the monsoon season. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>A roof repaired after the rains start is a roof repaired twice. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>Everything we do in March costs half what it costs in June, and it lasts twice as long.</p><p><strong>Mohammed Qasim</strong>, shelter officer</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Repairs are sequenced by the weather calendar rather than the funding calendar. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Damage surveyed in the dry weeks, not the wet ones</li><li>Materials delivered before roads soften</li><li>Households ranked by exposure, then by vulnerability</li><li>Crews sized so the queue clears before the season turns</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="437e4b95-01b6-4cf5-ab32-e9bf1f1abd49" data-align="center" alt="Shelter repair before the rains"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Less repeat damage</h4>
+        <h3>1. Less repeat damage</h3>
         <p>Homes repaired before the rains needed no second intervention that season.</p>
-        <h4>2. Cheaper materials</h4>
+        <h3>2. Cheaper materials</h3>
         <p>Pre-season purchasing avoided both the price rise and the transport premium.</p>
-        <h4>3. Crews that stay busy</h4>
+        <h3>3. Crews that stay busy</h3>
         <p>Sequenced work kept crews employed continuously rather than in bursts.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next season starts the survey a month earlier and adds drainage to the standard repair. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

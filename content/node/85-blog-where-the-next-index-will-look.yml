@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>REGIONAL</strong> — The countries and indicators being added to the next edition of the human rights index. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This brief sets out the evidence, the cost of inaction, and what should follow.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>An index measures what it chose to measure, and the choice is the argument. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>Deciding what to count after you have seen the data is how an index becomes advocacy.</p><p><strong>Dr Leila Mansour</strong>, research lead</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>The next edition's scope is set in public before the data is collected. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Proposed indicators published for comment before collection</li><li>Selection criteria stated, including what was rejected and why</li><li>Partner organisations invited to propose districts</li><li>Scope fixed before fieldwork, then not changed</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="f749352f-75eb-422e-abca-0696f87555ba" data-align="center" alt="Where the next index will look"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Fewer disputes later</h4>
+        <h3>1. Fewer disputes later</h3>
         <p>Agreeing scope in advance removed most of the objections the first edition attracted.</p>
-        <h4>2. Better coverage</h4>
+        <h3>2. Better coverage</h3>
         <p>Partners proposed districts the research team would not have reached.</p>
-        <h4>3. A method others reuse</h4>
+        <h3>3. A method others reuse</h3>
         <p>Two organisations adopted the criteria for their own reporting.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>Consultation closes at the end of the quarter and fieldwork begins on the fixed scope. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>ERBIL</strong> — Heating and materials kept temporary classrooms open through the coldest months. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Winter closes informal schools first, and attendance rarely recovers on its own. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>A child who stops in November does not come back in March. The whole year goes with it.</p><p><strong>Layla Haddad</strong>, education coordinator</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Heating, boots and a shorter timetable keep the classroom open through the cold months. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Classrooms insulated before the first frost, not after</li><li>Fuel budgeted for the whole season up front</li><li>Timetable shortened rather than suspended</li><li>Teachers paid through winter so they are still there in spring</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="934496a2-3f0b-4db3-a54e-b7e706a994dd" data-align="center" alt="Winter learning continuity"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Retention through the term</h4>
+        <h3>1. Retention through the term</h3>
         <p>Attendance held within a few points of the autumn figure, where previous winters saw it halve.</p>
-        <h4>2. Teachers who stay</h4>
+        <h3>2. Teachers who stay</h3>
         <p>Continuous pay kept the same teachers in place, which matters more than any material.</p>
-        <h4>3. A warm place to be</h4>
+        <h3>3. A warm place to be</h3>
         <p>For many families the classroom was the only heated room they could reach.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next winter's plan pre-positions fuel in September and extends heating to two more sites. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

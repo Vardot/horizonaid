@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>KASSALA</strong> — Cooperatives using climate-resilient tools secured steady yields for a second consecutive season. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Food aid sustains a household; a harvest ends the need for it. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>Seed without water is a wasted season. Water without training is a broken pump. It has to arrive together.</p><p><strong>Amna Hassan</strong>, agriculture officer</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Inputs, irrigation and training are delivered together, because any one alone fails. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Seed, tools and irrigation delivered as one package</li><li>Training tied to the season the technique belongs to</li><li>Cooperative registered before the first distribution</li><li>Exit measured by harvest, not by months elapsed</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="934496a2-3f0b-4db3-a54e-b7e706a994dd" data-align="center" alt="Cultivating independence in rural farms"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Households off assistance</h4>
+        <h3>1. Households off assistance</h3>
         <p>Most participating households were meeting their own food needs within two seasons.</p>
-        <h4>2. Surplus reaching market</h4>
+        <h3>2. Surplus reaching market</h3>
         <p>The second harvest produced enough surplus for cooperatives to begin selling.</p>
-        <h4>3. Cooperatives that outlast us</h4>
+        <h3>3. Cooperatives that outlast us</h3>
         <p>Registered cooperatives kept operating after the programme closed.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next phase moves input supply to the cooperatives themselves and keeps only technical support. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

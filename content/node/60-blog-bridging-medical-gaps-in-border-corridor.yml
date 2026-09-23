@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>AMMAN</strong> — Mobile health units delivered emergency paediatric care and preventative supplies to more than forty remote settlements this quarter. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Border corridors sit between health systems, and neither treats them as its responsibility. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>You cannot talk about nutrition or education when the nearest doctor is on the other side of a line on a map.</p><p><strong>Dr Amina Al-Sayed</strong>, paediatrician</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Mobile units cover the gap while the two ministries agree who owns it. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Units staffed to treat, not only to screen</li><li>Medicines matched to what the corridor's clinics actually see</li><li>Case notes shared with both ministries in a format each accepts</li><li>Referral routes tested before a patient needs them</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="56fb9041-52f0-423e-a332-4a1e708df5df" data-align="center" alt="Bridging medical gaps in border corridors"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Chronic care that continues</h4>
+        <h3>1. Chronic care that continues</h3>
         <p>Patients on long-term medication kept their supply instead of restarting treatment each time they moved.</p>
-        <h4>2. Outbreaks caught early</h4>
+        <h3>2. Outbreaks caught early</h3>
         <p>Shared case notes let both ministries see the same curve at the same time.</p>
-        <h4>3. A record that stands up</h4>
+        <h3>3. A record that stands up</h3>
         <p>The corridor now appears in both countries' health data, which is the first step to it being funded.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The coming year converts two mobile routes into fixed clinics under a memorandum both ministries have signed. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

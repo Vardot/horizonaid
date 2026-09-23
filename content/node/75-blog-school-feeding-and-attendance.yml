@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>LILONGWE</strong> — Attendance data from twelve schools where a daily meal was introduced. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>A hungry child attends irregularly and learns little when present. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>We did not set out to buy attendance. We set out to feed children. Attendance came with it.</p><p><strong>Chikondi Banda</strong>, school feeding coordinator</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>A meal at school is the cheapest attendance intervention available. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Meals sourced locally, on contracts smallholders can win</li><li>Cooking managed by a parent committee</li><li>Attendance recorded daily against the meal register</li><li>Menu set with a nutritionist, not by what is cheapest</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="6f159f66-1671-42eb-adbf-b82d691dd330" data-align="center" alt="School feeding and attendance"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Attendance that holds</h4>
+        <h3>1. Attendance that holds</h3>
         <p>Enrolment and daily attendance both rose and stayed up across the term.</p>
-        <h4>2. Local income</h4>
+        <h3>2. Local income</h3>
         <p>Contracts kept the food budget circulating among nearby smallholders.</p>
-        <h4>3. Girls staying enrolled</h4>
+        <h3>3. Girls staying enrolled</h3>
         <p>The gap between girls' and boys' attendance narrowed markedly.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next phase extends to twelve more schools and moves procurement to the parent committees. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

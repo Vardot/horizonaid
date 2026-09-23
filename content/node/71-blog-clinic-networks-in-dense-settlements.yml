@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>NAIROBI</strong> — Neighbourhood clinics and a twice-weekly mobile unit now serve informal settlements. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>In dense settlements the barrier is not distance but hours; a clinic thirty minutes away is closed by the time you arrive. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>People do not skip care because it is far. They skip it because they cannot lose the working day.</p><p><strong>Dr Peter Kimani</strong>, clinical lead</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>A network of small clinics with staggered hours covers the day between them. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Opening hours staggered across the network, including evenings</li><li>Shared referral so a full clinic sends rather than turns away</li><li>Stock pooled and moved between sites weekly</li><li>One patient record used across the network</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="77f64522-d62e-448c-ab81-5a4137f8057c" data-align="center" alt="Clinic networks in dense settlements"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Evening attendance</h4>
+        <h3>1. Evening attendance</h3>
         <p>A large share of visits arrived after five, from people who could not come earlier.</p>
-        <h4>2. Fewer wasted trips</h4>
+        <h3>2. Fewer wasted trips</h3>
         <p>Shared referral meant a full clinic redirected instead of sending people home.</p>
-        <h4>3. Stock where it is needed</h4>
+        <h3>3. Stock where it is needed</h3>
         <p>Pooling reduced both stockouts and expiry across the network.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next phase adds two evening-only sites and puts the shared record on the district system. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

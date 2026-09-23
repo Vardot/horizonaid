@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>REGIONAL</strong> — Field data auditing educational safety, funding transparency and legislative progress across the countries we work in. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This brief sets out the evidence, the cost of inaction, and what should follow.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Rights reporting arrives late, in aggregate, and too general to act on. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>An index nobody can check is an opinion. We publish the method so the number can be argued with.</p><p><strong>Dr Leila Mansour</strong>, research lead</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>The index is built from verified case data, published by district and repeated annually. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Cases verified against at least two independent sources</li><li>Published by district so local actors can use it</li><li>Methodology published in full alongside the figures</li><li>The same method repeated each year for comparability</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="e1408d47-fc69-4b5e-a7bb-38ea345953f5" data-align="center" alt="2026 regional human rights index"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Local advocacy</h4>
+        <h3>1. Local advocacy</h3>
         <p>District figures gave community organisations something specific to raise.</p>
-        <h4>2. Comparable years</h4>
+        <h3>2. Comparable years</h3>
         <p>An unchanged method made the second edition genuinely informative.</p>
-        <h4>3. Contested and improved</h4>
+        <h3>3. Contested and improved</h3>
         <p>Two disputed districts were re-verified and corrected in the published errata.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next edition adds detention data and opens the case-verification protocol to partner review. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

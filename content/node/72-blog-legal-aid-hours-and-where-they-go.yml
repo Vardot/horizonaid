@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>AMMAN</strong> — How we decide which corridor or district receives the next tranche of legal aid capacity. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This brief sets out the evidence, the cost of inaction, and what should follow.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Legal aid is scarce, so where the hours go decides who gets protection. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>We could not defend how we spent the hours until we could see how we spent the hours.</p><p><strong>Nour Khalil</strong>, legal aid coordinator</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Hours are logged by case type, and the allocation is published. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Every hour logged against a case category</li><li>Allocation reviewed quarterly against demand</li><li>Waiting times published alongside the split</li><li>Cases that time out counted and reported</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="fbca9adb-bf14-44fb-a1a3-c6f02b725a23" data-align="center" alt="Legal aid hours and where they go"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Shorter waits for urgent cases</h4>
+        <h3>1. Shorter waits for urgent cases</h3>
         <p>Reallocation cut the wait for detention cases substantially.</p>
-        <h4>2. Honest capacity limits</h4>
+        <h3>2. Honest capacity limits</h3>
         <p>Published timing out made the shortfall arguable with funders.</p>
-        <h4>3. Referrals that fit</h4>
+        <h3>3. Referrals that fit</h3>
         <p>Partners could see which categories had capacity before referring.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next report adds outcome by category, so hours can be weighed against what they achieve. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

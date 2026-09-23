@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>METEMA</strong> — Screening results from four crossings over twelve months. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>Screening at a border is only useful if what it finds leads somewhere. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>A screening programme that only counts people is surveillance. Attach a clinic and it becomes health care.</p><p><strong>Dr Solomon Bekele</strong>, district health officer</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Every positive screen is attached to a named clinic before the traveller moves on. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Screening points staffed by health workers, not administrators</li><li>Treatment started at the point of screening where possible</li><li>Onward referral written down and given to the patient</li><li>Results shared with the district health office weekly</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="63c0f85c-2459-4aa2-af2c-4b012f5857c6" data-align="center" alt="Border health screening outcomes"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Treatment actually started</h4>
+        <h3>1. Treatment actually started</h3>
         <p>The proportion of positive screens reaching treatment rose once referral was written, not spoken.</p>
-        <h4>2. Earlier district response</h4>
+        <h3>2. Earlier district response</h3>
         <p>Weekly reporting let the district see a rise while it was still small.</p>
-        <h4>3. Less duplication</h4>
+        <h3>3. Less duplication</h3>
         <p>Travellers screened once and documented were not screened repeatedly down the corridor.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next phase links the screening record to the district system so referral can be confirmed. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:

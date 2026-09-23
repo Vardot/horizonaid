@@ -46,24 +46,24 @@ default:
   field_content:
     -
       value: |-
-        <h3>Introduction</h3>
+        <h2>Introduction</h2>
         <p><strong>ZAATARI</strong> — Temporary classrooms kept nine thousand children in lessons through a year of repeated displacement. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
-        <h3>The problem, before the work started</h3>
+        <h2>The problem, before the work started</h2>
         <p>A displaced child loses a year of school for every year the site lacks a classroom. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
         <blockquote><p>If the year does not count, the building is just shelter with desks in it.</p><p><strong>Mahmoud Sror</strong>, education adviser</p></blockquote>
-        <h3>How the work was delivered</h3>
+        <h2>How the work was delivered</h2>
         <p>Temporary learning spaces go up in weeks and are recognised by the education ministry. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
         <ul><li>Structures designed to be assembled by the community that will use them</li><li>Curriculum aligned so the year counts towards certification</li><li>Teachers drawn from the displaced population and trained on site</li><li>Ministry recognition negotiated before the first class</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="e590a1b0-41c2-42ad-8659-c9f38b586c88" data-align="center" alt="Safe learning spaces after displacement"></drupal-media>
-        <h3>What changed beyond the immediate goal</h3>
+        <h2>What changed beyond the immediate goal</h2>
         <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
-        <h4>1. Certification that transfers</h4>
+        <h3>1. Certification that transfers</h3>
         <p>Pupils moving on carried recognised credit rather than starting again.</p>
-        <h4>2. Employment for teachers</h4>
+        <h3>2. Employment for teachers</h3>
         <p>Displaced teachers returned to their profession instead of leaving it.</p>
-        <h4>3. A centre for everything else</h4>
+        <h3>3. A centre for everything else</h3>
         <p>The space doubled as the site for vaccination days and community meetings.</p>
-        <h3>What comes next</h3>
+        <h2>What comes next</h2>
         <p>The next stage converts three temporary spaces into permanent schools under ministry management. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
       format: content_format
   field_description:
