@@ -23,7 +23,7 @@ Browser-driven BDD suite for the Horizon Aid site template, built on
 | `04-resources` | The Resources listing, a resource article, and the keyword and Program filters plus the pager. |
 | `05-events` | The Events listing, an event page, and its filters and paging. |
 | `06-impact-and-donate` | The Our Impact page's figures and the Donate page. |
-| `07-quality` | Accessibility and front-end performance of the shipped pages. |
+| `07-quality` | A serious accessibility gate on every public page (detail pages, search, login and the 404 included), the full check on the key page types, named axe rules, the document structure of each page type, and front-end performance. |
 | `08-seo` | The metatags each page type emits. |
 | `09-editorial` | A webmaster can reach the editorial surfaces and can create, verify and delete each content type the template ships, leaving the site as it found it. |
 | `10-drupal-canvas` | Every Canvas page the recipe ships opens in the Canvas editor, not just in the front end. One file per page group, because each editor mount is a heavy React SPA. |
