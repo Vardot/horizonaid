@@ -16,7 +16,7 @@ default:
       value: true
   title:
     -
-      value: Linkedin
+      value: LinkedIn
   menu_name:
     -
       value: social-media-menu
@@ -30,9 +30,6 @@ default:
           class:
             - bi
             - bi-linkedin
-            - fs-4
-            - ps-2
-            - pe-2
   external:
     -
       value: false
@@ -41,7 +38,7 @@ default:
       value: false
   weight:
     -
-      value: 1
+      value: 3
   expanded:
     -
       value: false

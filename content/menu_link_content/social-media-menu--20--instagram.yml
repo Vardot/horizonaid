@@ -30,9 +30,6 @@ default:
           class:
             - bi
             - bi-instagram
-            - fs-4
-            - ps-2
-            - pe-2
   external:
     -
       value: false
@@ -41,7 +38,7 @@ default:
       value: false
   weight:
     -
-      value: 3
+      value: 2
   expanded:
     -
       value: false

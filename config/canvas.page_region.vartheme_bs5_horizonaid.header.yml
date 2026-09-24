@@ -20,7 +20,7 @@ component_tree:
     uuid: baa39131-18c3-466a-95ea-15034b6fb94a
     component_id: sdc.vartheme_bs5_horizonaid.section
     component_version: active
-    inputs: '{"container_type":"container","background_color":"none","text_color":"auto","columns":"25-75","gutter":"gx-3 gy-3","padding_block_start":"pt-3","padding_block_end":"pb-3","section_header":false,"section_footer":false,"bg_edge2edge":true}'
+    inputs: '{"container_type":"container","background_color":"none","text_color":"auto","columns":"25-75","gutter":"gx-3 gy-3","padding_block_start":"pt-3","padding_block_end":"pb-3","vertical_alignment":"align-items-center","section_header":false,"section_footer":false,"bg_edge2edge":true}'
   0:col_1:0:
     parent_uuid: baa39131-18c3-466a-95ea-15034b6fb94a
     slot: col_1

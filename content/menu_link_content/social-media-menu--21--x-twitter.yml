@@ -16,7 +16,7 @@ default:
       value: true
   title:
     -
-      value: X-Twitter
+      value: X
   menu_name:
     -
       value: social-media-menu
@@ -30,9 +30,6 @@ default:
           class:
             - bi
             - bi-twitter-x
-            - fs-4
-            - ps-2
-            - pe-1
   external:
     -
       value: false

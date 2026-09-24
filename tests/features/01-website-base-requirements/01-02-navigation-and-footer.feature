@@ -37,13 +37,14 @@ Feature: Website Base Requirements - Main navigation and footer
       And the link "Donate" with the href "/donate" within the element "header[role='banner']" should exist
 
   # The social profiles are icon links, so their accessible names are the only
-  # thing a screen reader (or this test) can identify them by.
+  # thing a screen reader can identify them by. "X" is too short for a name
+  # match (it is a substring of other links), so that one is found by its URL.
   @check @regression @fast @local @development @staging @production @navigation
   Scenario: The footer links the organization's social profiles
     Given I am an anonymous user
      When I go to "/"
       And I wait until the page is loaded
-     Then the "Linkedin" link should be visible
+     Then the "LinkedIn" link should be visible
       And the "Facebook" link should be visible
       And the "Instagram" link should be visible
-      And the "X-Twitter" link should be visible
+      And the element "a" with the attribute "href" and the value "https://x.com/Vardot" should exist

@@ -30,9 +30,6 @@ default:
           class:
             - bi
             - bi-facebook
-            - fs-4
-            - ps-1
-            - pe-2
   external:
     -
       value: false
@@ -41,7 +38,7 @@ default:
       value: false
   weight:
     -
-      value: 2
+      value: 1
   expanded:
     -
       value: false
