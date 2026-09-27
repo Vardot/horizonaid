@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2026-09-27
+### Fixed
+- fix: [#3626228](https://www.drupal.org/i/3626228) Store the header and footer Canvas inputs as
+  mappings, so a fresh install on Drupal CMS 2.2 no longer fails.
+- fix: [#3625661](https://www.drupal.org/i/3625661) Name the program Learn More links for screen
+  readers and order the footer social links as designed.
+
+### Changed
+- task: [#3625670](https://www.drupal.org/i/3625670) Require `drupal/varbase_canvas_base` in
+  `composer.json`.
+- task: [#3625580](https://www.drupal.org/i/3625580) Update `@vardot/varbase-e2e` to 2.0.7 and
+  tighten the accessibility checks.
+- Pin `drupal/vartheme_bs5_horizonaid` and every `drupal/varbase_*` recipe to `~1.0.0`.
+
+### Known issues
+- [#3620718](https://www.drupal.org/i/3620718) A fresh install can leave a stale cache such that the
+  first web request fatals site-wide with
+  `PluginNotFoundException: The "redirect" entity type does not exist`. Running `drush cr` clears it.
+  Not fixed in this release.
+
 ## [1.0.4] - 2026-09-23
 ### Fixed
 - fix: [#3625359](https://www.drupal.org/i/3625359) Meet WCAG 2.2 AA. Basic pages now render their
