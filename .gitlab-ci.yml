@@ -312,6 +312,9 @@ workflow:
     #   drupal/core. The 2.0.x branch carries vardot/ace ^1.44.0.
     #   Remove this pin once ace_editor 2.0.5 or later is released.
     - composer require drupal/ace_editor:2.0.x-dev --no-update
+    # svg_image 3.x caps enshrined/svg-sanitize below 1.0, and the 2026-10-08
+    # advisories block every 0.x. Alias the fixed 1.0.0 until svg_image allows it.
+    - composer require "enshrined/svg-sanitize:1.0.0 as 0.22.1" --no-update
     - composer require drupal/horizonaid:@dev --no-interaction --no-progress --prefer-dist --with-all-dependencies
     # = Assert the wiring took effect, so a silent no-op cannot pass =
     - test -d recipes/horizonaid || (echo "❌ recipes/horizonaid missing" && exit 1)
@@ -488,6 +491,9 @@ workflow:
     - cd "$CI_PROJECT_DIR"
     - npm install --no-audit --no-fund
     - ./node_modules/.bin/playwright install chromium
+    # Answer the Drupal CMS telemetry prompt. Unanswered, its dialog form takes
+    # Gin's sticky actions on admin pages, so node forms lose "Published".
+    - $SITE_DIR/vendor/bin/drush --root=$WEB_ROOT state:set drupal_cms_telemetry false --input-format=json
     # = Dump the prepared DB for the parallel functional jobs =
     - $SITE_DIR/vendor/bin/drush --root=$WEB_ROOT sql:dump --gzip --result-file=$CI_PROJECT_DIR/horizonaid-db.sql
   artifacts:
