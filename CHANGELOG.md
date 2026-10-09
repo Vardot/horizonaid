@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.6] - 2026-10-09
+### Fixed
+- fix: [#3629200](https://www.drupal.org/i/3629200) Stop requiring the `drupal_cms_admin_ui`,
+  `drupal_cms_media` and `drupal_cms_privacy_basic` recipes, which Drupal CMS 2.2 removed, so Horizon
+  Aid installs on Drupal CMS 2.2.3 and later. Editors now land on the Varbase welcome dashboard from
+  Varbase Admin Base.
+
+### Changed
+- task: [#3629200](https://www.drupal.org/i/3629200) Cover the Varbase welcome dashboard in the Varbase
+  functional testing suite.
+- Pin `drupal/vartheme_bs5_horizonaid` and every `drupal/varbase_*` recipe to `~1.0.0`.
+
+### Known issues
+- Composer blocks every `enshrined/svg-sanitize` 0.x release since the 2026-10-08 advisories, and
+  `drupal/svg_image` 3.x (required through Varbase Media Base) does not allow 1.0 yet. Run
+  `ddev composer require "enshrined/svg-sanitize:1.0.0 as 0.22.1" --no-update` right after
+  `ddev composer create-project drupal/cms`.
+- On Drupal CMS, the Country and Program add forms do not show the "Published" checkbox until an
+  administrator answers the Drupal CMS telemetry opt-in dialog, so new items save unpublished. Answer
+  the dialog first. It appears on admin pages after install.
+- [#3620718](https://www.drupal.org/i/3620718) A fresh install can leave a stale cache such that the
+  first web request fatals site-wide with
+  `PluginNotFoundException: The "redirect" entity type does not exist`. Running `drush cr` clears it.
+  Not fixed in this release.
+
 ## [1.0.5] - 2026-09-27
 ### Fixed
 - fix: [#3626228](https://www.drupal.org/i/3626228) Store the header and footer Canvas inputs as
