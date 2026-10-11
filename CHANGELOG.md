@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.7] - 2026-10-11
+### Changed
+- task: [#3629800](https://www.drupal.org/i/3629800) Remove the temporary CI-only `enshrined/svg-sanitize`
+  alias. `drupal/svg_image` 3.2.5 allows svg-sanitize 1.0, so installs no longer need the 1.0.6
+  workaround.
+- Pin `drupal/vartheme_bs5_horizonaid` and every `drupal/varbase_*` recipe to `~1.0.0`.
+
+### Known issues
+- On Drupal CMS, the Country and Program add forms do not show the "Published" checkbox until an
+  administrator answers the Drupal CMS telemetry opt-in dialog, so new items save unpublished. Answer
+  the dialog first. It appears on admin pages after install.
+- [#3620718](https://www.drupal.org/i/3620718) A fresh install can leave a stale cache such that the
+  first web request fatals site-wide with
+  `PluginNotFoundException: The "redirect" entity type does not exist`. Running `drush cr` clears it.
+  Not fixed in this release.
+
 ## [1.0.6] - 2026-10-09
 ### Fixed
 - fix: [#3629200](https://www.drupal.org/i/3629200) Stop requiring the `drupal_cms_admin_ui`,
