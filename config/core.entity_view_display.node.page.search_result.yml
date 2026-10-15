@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.search_result
+  - node.type.page
+  module:
+  - canvas
+id: node.page.search_result
+targetEntityType: node
+bundle: page
+mode: search_result
+content: {}
+hidden: {}

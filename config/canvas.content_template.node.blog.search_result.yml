@@ -1,0 +1,75 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.search_result
+  - field.field.node.blog.field_description
+  - field.field.node.blog.field_featured_image
+  - node.type.blog
+  module:
+  - canvas
+id: node.blog.search_result
+content_entity_type_id: node
+content_entity_type_bundle: blog
+content_entity_type_view_mode: search_result
+component_tree:
+  74f7810d-26a9-5dc0-9861-9f90f4e4993f:
+    uuid: 74f7810d-26a9-5dc0-9861-9f90f4e4993f
+    component_id: sdc.vartheme_bs5_horizonaid.card-impressed
+    component_version: active
+    inputs:
+      media_position: top
+      media_image:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+      ratio: ratio-4x3
+      fit: object-fit-cover
+      card_border: false
+      padded: false
+      box_shadow: shadow-none
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: true
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+  f2e2dcb5-6454-5a78-a230-42f74327e61a:
+    parent_uuid: 74f7810d-26a9-5dc0-9861-9f90f4e4993f
+    slot: overlay
+    uuid: f2e2dcb5-6454-5a78-a230-42f74327e61a
+    component_id: sdc.vartheme_bs5_horizonaid.badge
+    component_version: active
+    inputs:
+      label: 'Blog post'
+      variant: text-bg-dark
+      size: 'fs-6 px-3 py-2'
+      icon: none
+      icon_first: true
+      radius: rounded-pill
+      indicator: none
+  726fb86f-85a2-5f5d-a724-0c832c07c04f:
+    parent_uuid: 74f7810d-26a9-5dc0-9861-9f90f4e4993f
+    slot: content
+    uuid: 726fb86f-85a2-5f5d-a724-0c832c07c04f
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    component_version: active
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝title␞␟value
+      level: 2
+      text_size: h4
+      text_color: text-dark
+  62bf9bd8-b219-5972-b4e6-3d2892633a60:
+    parent_uuid: 74f7810d-26a9-5dc0-9861-9f90f4e4993f
+    slot: content
+    uuid: 62bf9bd8-b219-5972-b4e6-3d2892633a60
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    component_version: active
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:blog␝field_description␞␟value
+      text_size: none
+      text_color: text-body
+exposed_slots: []

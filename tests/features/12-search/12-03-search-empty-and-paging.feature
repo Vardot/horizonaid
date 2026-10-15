@@ -18,20 +18,19 @@ Feature: Search - Empty results and paging - What the results page does at its t
      When I go to "/search?keywords=telescope"
       And I wait until the page is loaded
      Then "main h1" should have a count of 1
-      And ".view-search-results .view-empty" should be visible
+      And ".view-display-id-results_block .view-empty" should be visible
       And I should see "There are no results for your search, please try another query."
-      And ".view-search-results .views-row" should have a count of 0
+      And ".view-display-id-results_block .card-impressed" should have a count of 0
       And I don't see pagination
 
-  # The empty notice is a panel, not loose text, and it has to keep the body
-  # colour readable on whatever surface it is given.
+  # The empty notice has to be part of the results block, not loose text.
   @check @regression @a11y @local @development @staging @production @search
-  Scenario: Check the empty notice renders as a readable panel
+  Scenario: Check the empty notice renders inside the results block
     Given I am an anonymous user
      When I go to "/search?keywords=telescope"
       And I wait until the page is loaded
-     Then ".view-search-results .view-empty--notice" should have a count of 1
-      And ".view-search-results .view-empty--notice" should be visible
+     Then ".view-display-id-results_block .view-empty" should have a count of 1
+      And ".view-display-id-results_block .view-empty" should be visible
 
   # A failed search must leave the box usable, with the query still in it, so
   # the visitor can correct a typo rather than start again.
@@ -40,12 +39,12 @@ Feature: Search - Empty results and paging - What the results page does at its t
     Given I am an anonymous user
      When I go to "/search?keywords=telescope"
       And I wait until the page is loaded
-     Then ".view-search-results input[name='keywords']" should be visible
-      And ".view-search-results input[name='keywords']" should have value "telescope"
-     When I fill in the field ".view-search-results input[name='keywords']" with "water"
-      And I click on the element ".view-search-results .views-exposed-form .form-submit"
+     Then "#views-exposed-form-search-results-block input[name='keywords']" should be visible
+      And "#views-exposed-form-search-results-block input[name='keywords']" should have value "telescope"
+     When I fill in the field "#views-exposed-form-search-results-block input[name='keywords']" with "water"
+      And I click on the element "#views-exposed-form-search-results-block .form-submit"
       And I wait until the page is loaded
-     Then ".view-search-results .views-row" should be visible
+     Then ".view-display-id-results_block .card-impressed" should be visible
       And I should not see "There are no results for your search, please try another query."
 
   # Arriving at /search with no query at all is the state the header toggle
@@ -58,10 +57,10 @@ Feature: Search - Empty results and paging - What the results page does at its t
       And I wait until the page is loaded
      Then "main h1" should have a count of 1
       And I should not see "Page not found"
-      And ".view-search-results input[name='keywords']" should be visible
-      And ".view-search-results input[name='keywords']" should have value ""
+      And "#views-exposed-form-search-results-block input[name='keywords']" should be visible
+      And "#views-exposed-form-search-results-block input[name='keywords']" should have value ""
       And I should see "Enter a keyword to search Horizon Aid."
-      And ".view-search-results .views-row" should have a count of 0
+      And ".view-display-id-results_block .card-impressed" should have a count of 0
 
   # The pager is the view's own, so what is asserted is that it appears when the
   # results outrun one page, moves the range on, and carries the query with it.
@@ -78,4 +77,4 @@ Feature: Search - Empty results and paging - What the results page does at its t
       And the url should match "keywords=the"
       And I should see text matching "Showing 11-\d+ of \d+"
       And I should not see text matching "Showing 1-10 of"
-      And ".view-search-results input[name='keywords']" should have value "the"
+      And "#views-exposed-form-search-results-block input[name='keywords']" should have value "the"

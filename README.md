@@ -22,9 +22,16 @@ ddev drush recipe ../recipes/contrib/horizonaid
 ddev drush cache:rebuild
 ```
 
+## Search
+
+Search comes from [Varbase Search Base](https://www.drupal.org/project/varbase_search_base). The
+results page at `/search` is a Canvas page with a keyword box, a filter rail (Category, Content
+Type, Date Published) and the results as cards. Category combines the resource and event
+categories.
 
 ## Learn More
 
 - [Issue #3607228](https://www.drupal.org/project/horizonaid/issues/3607228)
+- [Varbase Search Base](https://www.drupal.org/project/varbase_search_base)
 - [Drupal Recipes](https://www.drupal.org/docs/extending-drupal/drupal-recipes)
 - [Varbase Starter](https://www.drupal.org/project/varbase_starter)

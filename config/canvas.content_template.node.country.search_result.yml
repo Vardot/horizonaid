@@ -1,0 +1,75 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.search_result
+  - field.field.node.country.field_description
+  - field.field.node.country.field_featured_image
+  - node.type.country
+  module:
+  - canvas
+id: node.country.search_result
+content_entity_type_id: node
+content_entity_type_bundle: country
+content_entity_type_view_mode: search_result
+component_tree:
+  368effed-ea08-57dc-8fa9-8dd969ca0cb9:
+    uuid: 368effed-ea08-57dc-8fa9-8dd969ca0cb9
+    component_id: sdc.vartheme_bs5_horizonaid.card-impressed
+    component_version: active
+    inputs:
+      media_position: top
+      media_image:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:country␝field_featured_image␞␟entity␜␜entity:media:image␝field_media_image␞␟{src↠src_with_alternate_widths,alt↠alt,width↠width,height↠height}
+      ratio: ratio-4x3
+      fit: object-fit-cover
+      card_border: false
+      padded: false
+      box_shadow: shadow-none
+      corner_style: rounded-3
+      equal_height: true
+      stretched_link: true
+      link_url:
+        sourceType: host-entity-url
+        absolute: false
+  2f1cd42b-dd76-54f8-a489-dd88cafb9dbd:
+    parent_uuid: 368effed-ea08-57dc-8fa9-8dd969ca0cb9
+    slot: overlay
+    uuid: 2f1cd42b-dd76-54f8-a489-dd88cafb9dbd
+    component_id: sdc.vartheme_bs5_horizonaid.badge
+    component_version: active
+    inputs:
+      label: 'Country'
+      variant: text-bg-dark
+      size: 'fs-6 px-3 py-2'
+      icon: none
+      icon_first: true
+      radius: rounded-pill
+      indicator: none
+  ba2d7c06-b3ce-5010-a86c-da0ba234187f:
+    parent_uuid: 368effed-ea08-57dc-8fa9-8dd969ca0cb9
+    slot: content
+    uuid: ba2d7c06-b3ce-5010-a86c-da0ba234187f
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    component_version: active
+    inputs:
+      heading_text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:country␝title␞␟value
+      level: 2
+      text_size: h4
+      text_color: text-dark
+  05f21905-8b27-5f60-86ae-8170e2ba5027:
+    parent_uuid: 368effed-ea08-57dc-8fa9-8dd969ca0cb9
+    slot: content
+    uuid: 05f21905-8b27-5f60-86ae-8170e2ba5027
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    component_version: active
+    inputs:
+      text:
+        sourceType: entity-field
+        expression: ℹ︎␜entity:node:country␝field_description␞␟value
+      text_size: none
+      text_color: text-body
+exposed_slots: []

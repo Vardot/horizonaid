@@ -1,0 +1,226 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: 01692a59-cb17-55dd-9295-577c62f4dcf1
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  owner:
+    -
+      target_id: 1
+  title:
+    -
+      value: Search
+  components:
+  -
+      uuid: c8f44716-9fac-547b-b0e0-901fc075e447
+      component_id: block.system_breadcrumb_block
+      inputs:
+        label: ''
+        label_display: '0'
+  -
+      uuid: fd5e8279-9a8e-5c67-8fe0-762de5211b5e
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+        columns: '100'
+        gutter: 'gx-3 gy-3'
+        padding_block_start: pt-5
+        padding_block_end: pb-4
+        margin_block_start: mt-0
+        margin_block_end: mb-0
+        section_header: true
+  -
+      parent_uuid: fd5e8279-9a8e-5c67-8fe0-762de5211b5e
+      slot: header_slot
+      uuid: b00611f1-aaa8-5f4b-a21b-64cd9cbc459e
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: Search
+        level: 1
+        target: _self
+  -
+      parent_uuid: fd5e8279-9a8e-5c67-8fe0-762de5211b5e
+      slot: col_1
+      uuid: 110e4baa-cfc9-559d-a1bc-482b3938b67a
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+  -
+      parent_uuid: 110e4baa-cfc9-559d-a1bc-482b3938b67a
+      slot: content
+      uuid: 62df8a51-d5c9-502f-a2b4-7fa36fa950b4
+      component_id: block.views_exposed_filter_block.search-results_block
+      inputs:
+        label: 'Exposed form: search-results_block'
+        label_display: '0'
+        views_label: ''
+  -
+      uuid: 9500f07f-e49b-50ae-8339-c6dcfa5e9ea0
+      component_id: sdc.vartheme_bs5_horizonaid.section
+      inputs:
+        bg_edge2edge: false
+        container_type: none
+        background_color: none
+        text_color: auto
+        background_overlay: none
+        padding_inline_start: ps-0
+        padding_inline_end: pe-0
+        margin_inline_start: ms-0
+        margin_inline_end: me-0
+        shadow: none
+        radius: none
+        border: none
+        border_color: none
+        border_width: none
+        vertical_alignment: align-items-start
+        horizontal_alignment: text-start
+        section_footer: false
+        aos_animation: none
+        aos_duration: default
+        aos_delay: '0'
+        aos_once: true
+        columns: '25-75'
+        gutter: 'gx-5 gy-5'
+        padding_block_start: pt-0
+        padding_block_end: pb-5
+        margin_block_start: mt-0
+        margin_block_end: mb-5
+        section_header: false
+  -
+      parent_uuid: 9500f07f-e49b-50ae-8339-c6dcfa5e9ea0
+      slot: col_1
+      uuid: 3196d26b-aea9-5b2a-b379-fd2114a46d24
+      component_id: sdc.vartheme_bs5_horizonaid.card-text
+      inputs:
+        card_border: false
+        background_color: bg-secondary-subtle
+        padded: true
+        box_shadow: shadow-none
+        corner_style: rounded-4
+        equal_height: false
+        stretched_link: false
+        link_target: default
+        icon_image: null
+        icon_alignment: start
+  -
+      parent_uuid: 3196d26b-aea9-5b2a-b379-fd2114a46d24
+      slot: content
+      uuid: 05c83788-928b-5b48-b55e-b37f47806aad
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Category'
+        level: 2
+        text_size: h6
+        font_weight: fw-semibold
+        target: _self
+  -
+      parent_uuid: 3196d26b-aea9-5b2a-b379-fd2114a46d24
+      slot: content
+      uuid: dd895aab-bd4f-53dd-ba10-2ba9073ad739
+      component_id: block.facet_block.search_category
+      inputs:
+        label: Category
+        label_display: '0'
+  -
+      parent_uuid: 3196d26b-aea9-5b2a-b379-fd2114a46d24
+      slot: content
+      uuid: 2c1e27aa-d6d5-551e-98ed-0bd7b0845c2e
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+  -
+      parent_uuid: 3196d26b-aea9-5b2a-b379-fd2114a46d24
+      slot: content
+      uuid: f44c7e40-377a-55b9-9c5f-008c8e6b4ce4
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Content Type'
+        level: 2
+        text_size: h6
+        font_weight: fw-semibold
+        target: _self
+  -
+      parent_uuid: 3196d26b-aea9-5b2a-b379-fd2114a46d24
+      slot: content
+      uuid: 5bb9d626-1838-5c3d-8a2e-c29e8b7ef333
+      component_id: block.facet_block.search_content_type
+      inputs:
+        label: 'Content Type'
+        label_display: '0'
+  -
+      parent_uuid: 3196d26b-aea9-5b2a-b379-fd2114a46d24
+      slot: content
+      uuid: 1db609b2-18c4-586a-95fd-abfcf473e63c
+      component_id: sdc.vartheme_bs5_horizonaid.spacer
+      inputs:
+        size: py-2
+  -
+      parent_uuid: 3196d26b-aea9-5b2a-b379-fd2114a46d24
+      slot: content
+      uuid: ebc87681-561b-56c9-9886-fbf8847550d2
+      component_id: sdc.vartheme_bs5_horizonaid.heading
+      inputs:
+        heading_text: 'Date Published'
+        level: 2
+        text_size: h6
+        font_weight: fw-semibold
+        target: _self
+  -
+      parent_uuid: 3196d26b-aea9-5b2a-b379-fd2114a46d24
+      slot: content
+      uuid: d467492d-7a5d-58d5-8a51-3b703bd499e0
+      component_id: block.views_exposed_filter_block.search-date_block
+      inputs:
+        label: 'Date Published'
+        label_display: '0'
+        views_label: ''
+  -
+      parent_uuid: 9500f07f-e49b-50ae-8339-c6dcfa5e9ea0
+      slot: col_2
+      uuid: 954a9332-60de-5728-874f-5ece3df8f8b8
+      component_id: block.views_block.search-results_block
+      inputs:
+        label: 'Search results'
+        label_display: '0'
+        views_label: ''
+        items_per_page: null
+        exposed: {  }
+  path:
+    -
+      alias: /search
+      langcode: en
+  metatags:
+    -
+      value: '{"canonical_url":"[canvas_page:url]","description":"Search the resources, events, programs and countries of [site:name].","title":"[canvas_page:title] | [site:name]"}'

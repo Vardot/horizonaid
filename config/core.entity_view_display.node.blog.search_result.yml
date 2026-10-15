@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.search_result
+  - node.type.blog
+  module:
+  - canvas
+id: node.blog.search_result
+targetEntityType: node
+bundle: blog
+mode: search_result
+content: {}
+hidden: {}

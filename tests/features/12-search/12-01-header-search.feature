@@ -9,7 +9,7 @@ Feature: Search - The header search toggle - Reaching the results page from any 
   # visitor asks for search.
   #
   # Two inputs on this site are named "keywords": the one in this header panel
-  # and the one in the filter bar on the results page. Every step here scopes to
+  # and the one in the keyword bar on the results page. Every step here scopes to
   # the header panel, because an unscoped selector matches the header's hidden
   # input first and would assert against a zero-sized element.
 
@@ -21,6 +21,7 @@ Feature: Search - The header search toggle - Reaching the results page from any 
      Then "header[role='banner'] .icon-toggle__button" should have a count of 1
       And "header[role='banner'] .icon-toggle__button" should be visible
       And "header[role='banner'] .icon-toggle__button" should have attribute "aria-expanded" with value "false"
+      And "header[role='banner'] .icon-toggle__button" should have attribute "aria-label" with value "Search"
 
   # Collapsed at rest is the whole point of a toggle: the search box must not be
   # occupying header space, or reachable by tab, before it is asked for.
@@ -41,6 +42,8 @@ Feature: Search - The header search toggle - Reaching the results page from any 
      Then "header[role='banner'] .icon-toggle__panel" should be visible within 10 seconds
       And "header[role='banner'] .icon-toggle__panel input[name='keywords']" should be visible
       And "header[role='banner'] .icon-toggle__button" should have attribute "aria-expanded" with value "true"
+      And "header[role='banner'] .icon-toggle__button" should have attribute "aria-label" with value "Close search"
+      And "header[role='banner'] .icon-toggle__panel label[for='header-search-keywords']" should have text "Search by keyword"
 
   # Opening and closing again must leave the header as it was found, so the
   # control is usable more than once per page load.
@@ -81,8 +84,9 @@ Feature: Search - The header search toggle - Reaching the results page from any 
       And I wait until the page is loaded
      Then the url should match "/search"
       And the url should match "keywords=water"
-      And ".view-search-results" should be visible
-      And ".view-search-results input[name='keywords']" should have value "water"
+      And ".view-display-id-results_block" should be visible
+      And "#views-exposed-form-search-results-block input[name='keywords']" should have value "water"
+      And ".view-display-id-results_block .card-impressed" should be visible
 
   # The toggle is part of the global header region, so it has to be on an
   # interior page too, not only on the front page where it was first placed.

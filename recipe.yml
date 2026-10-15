@@ -16,6 +16,7 @@ recipes:
 - varbase_editor_base
 - varbase_content_base
 - drupal_cms_search
+- varbase_search_base
 - varbase_workflow_base
 - varbase_seo_base
 - varbase_webform_base
@@ -157,51 +158,10 @@ config:
     pathauto.pattern.blog_content:
       simpleConfigUpdate:
         pattern: /resources/[node:title]
-    # The search box shows its placeholder as the visible prompt, so it carries
-    # Horizon Aid's own wording rather than the Drupal CMS Search default. It also
-    # carries a real label: a placeholder is not an accessible name, and with the
-    # label empty Views renders no <label> at all, which leaves the field
-    # unlabelled for a screen reader and fails the suite's accessibility check.
-    # The design shows no visible label, so the theme renders it visually hidden.
-    #
-    # The results page needs one readable result per row. The index holds both
-    # nodes and Canvas pages, so the view ships one title field per entity type
-    # and only ever fills one of them, which left an empty heading beside the
-    # real one in every row. Both are carried as sources now and a single linked
-    # heading is built from whichever is set, sized at the design system's h4
-    # step instead of the display h2 step, and followed by the excerpt. The page
-    # title comes from the search results view component, so no header area
-    # repeats it. The result summary is the same markup every other listing
-    # uses.
-    #
-    # The search box belongs on the results page, so the page display renders
-    # its exposed form INLINE (`exposed_block: false`). A results page whose only
-    # search box is behind the header toggle cannot be refined, and the "Enter a
-    # keyword" message below would have no field to type into.
-    #
-    # Views renders an exposed form either inline OR as a block, never both, so
-    # the header cannot reuse this display's block. Nor can it use a dedicated
-    # `block_1` display: a recipe imports its config BEFORE it runs its actions,
-    # and even from an action the new display's block plugin derivative is not
-    # discoverable in the same run - Drupal logs "The
-    # \"views_exposed_filter_block:search-block_1\" block plugin was not found"
-    # and saves the Canvas Component with no dependencies at all.
-    #
-    # So the header panel carries a plain GET form to /search built with the
-    # html-code component instead. It needs no Views block, no derivative and no
-    # extra display, and it submits `keywords` exactly as the exposed form does.
-    # @see canvas.page_region.vartheme_bs5_horizonaid.header
+    # /search is a Canvas page; only keys the base recipe does not write.
     views.view.search:
-      simpleConfigUpdate:
+      setProperties:
         display.default.display_options.filters.search_api_fulltext.expose.placeholder: 'Search by keyword'
-        display.default.display_options.filters.search_api_fulltext.expose.label: 'Search by keyword'
-        display.page.display_options.exposed_block: false
-        display.default.display_options.exposed_form.options.text_input_required: '<p>Enter a keyword to search Horizon Aid.</p>'
-        display.default.display_options.style:
-          type: default
-          options:
-            row_class: mb-5
-            default_row_class: true
         display.default.display_options.header:
           result:
             id: result
@@ -213,290 +173,269 @@ config:
             plugin_id: result
             empty: false
             content: '<span class="vb-result-summary"><span class="vb-result-summary__label">Showing</span> <span class="vb-result-summary__count"><strong>@start-@end</strong> of @total</span></span>'
-        display.default.display_options.fields:
-          title:
-            id: title
-            table: search_api_datasource_content_entity_node
-            field: title
-            relationship: none
-            group_type: group
-            admin_label: '(Title) (node)'
-            entity_type: node
-            plugin_id: search_api_field
-            label: ''
-            exclude: true
-            alter:
-              alter_text: false
-              text: ''
-              make_link: false
-              path: ''
-              absolute: false
-              external: false
-              replace_spaces: false
-              path_case: none
-              trim_whitespace: false
-              alt: ''
-              rel: ''
-              link_class: ''
-              prefix: ''
-              suffix: ''
-              target: ''
-              nl2br: false
-              max_length: 0
-              word_boundary: true
-              ellipsis: true
-              more_link: false
-              more_link_text: ''
-              more_link_path: ''
-              strip_tags: false
-              trim: false
-              preserve_tags: ''
-              html: false
-            element_type: ''
-            element_class: ''
-            element_label_type: ''
-            element_label_class: ''
-            element_label_colon: false
-            element_wrapper_type: ''
-            element_wrapper_class: ''
-            element_default_classes: true
-            empty: ''
-            hide_empty: true
-            empty_zero: false
-            hide_alter_empty: true
-            click_sort_column: value
-            type: string
-            settings:
-              link_to_entity: false
-            group_column: value
-            group_columns: {  }
-            group_rows: true
-            delta_limit: 0
-            delta_offset: 0
-            delta_reversed: false
-            delta_first_last: false
-            multi_type: separator
-            separator: ', '
-            field_api_classes: false
-            field_rendering: true
-            fallback_handler: search_api
-            fallback_options:
-              link_to_item: false
-              use_highlighting: false
-              multi_type: separator
-              multi_separator: ', '
-          title_1:
-            id: title_1
-            table: search_api_datasource_content_entity_canvas_page
-            field: title
-            relationship: none
-            group_type: group
-            admin_label: 'Title (Canvas page)'
-            entity_type: canvas_page
-            plugin_id: search_api_field
-            label: ''
-            exclude: true
-            alter:
-              alter_text: false
-              text: ''
-              make_link: false
-              path: ''
-              absolute: false
-              external: false
-              replace_spaces: false
-              path_case: none
-              trim_whitespace: false
-              alt: ''
-              rel: ''
-              link_class: ''
-              prefix: ''
-              suffix: ''
-              target: ''
-              nl2br: false
-              max_length: 0
-              word_boundary: true
-              ellipsis: true
-              more_link: false
-              more_link_text: ''
-              more_link_path: ''
-              strip_tags: false
-              trim: false
-              preserve_tags: ''
-              html: false
-            element_type: ''
-            element_class: ''
-            element_label_type: ''
-            element_label_class: ''
-            element_label_colon: false
-            element_wrapper_type: ''
-            element_wrapper_class: ''
-            element_default_classes: true
-            empty: ''
-            hide_empty: true
-            empty_zero: false
-            hide_alter_empty: true
-            click_sort_column: value
-            type: string
-            settings:
-              link_to_entity: false
-            group_column: value
-            group_columns: {  }
-            group_rows: true
-            delta_limit: 0
-            delta_offset: 0
-            delta_reversed: false
-            delta_first_last: false
-            multi_type: separator
-            separator: ', '
-            field_api_classes: false
-            field_rendering: true
-            fallback_handler: search_api
-            fallback_options:
-              link_to_item: false
-              use_highlighting: false
-              multi_type: separator
-              multi_separator: ', '
-          search_api_url:
-            id: search_api_url
+        display.page.display_options.enabled: false
+        'display.results_block.display_options.defaults.style': false
+        'display.results_block.display_options.style':
+          type: components_views_style
+          options:
+            uses_fields: false
+            component_id: 'vartheme_bs5_horizonaid:grid'
+            rows_slot: items
+            prop_mappings:
+              attributes: ''
+              col_xs: col-12
+              col_md: col-md-6
+              col_lg: col-lg-6
+              col_xl: col-xl-6
+              col_xxl: col-xxl-6
+              grid_utility_classes: g-4
+              column_utility_classes: ''
+        'display.results_block.display_options.row.options.view_modes.entity:node.blog': search_result
+        'display.results_block.display_options.row.options.view_modes.entity:node.country': search_result
+        'display.results_block.display_options.row.options.view_modes.entity:node.event': search_result
+        'display.results_block.display_options.row.options.view_modes.entity:node.page': search_result
+        'display.results_block.display_options.row.options.view_modes.entity:node.program': search_result
+        # Each form shows its own field and carries the other's as hidden.
+        'display.results_block.display_options.defaults.exposed_form': false
+        'display.results_block.display_options.exposed_form':
+          type: bef
+          options:
+            submit_button: Search
+            reset_button: false
+            reset_button_label: Reset
+            exposed_sorts_label: 'Sort by'
+            expose_sort_order: false
+            sort_asc_label: Asc
+            sort_desc_label: Desc
+            text_input_required: '<p>Enter a keyword to search Horizon Aid.</p>'
+            text_input_required_format: content_format
+            bef:
+              general:
+                input_required: true
+              filter:
+                search_api_fulltext:
+                  plugin_id: default
+                  advanced:
+                    hide_label: true
+                created:
+                  plugin_id: bef_hidden
+        'display.date_block.display_options.defaults.filters': false
+        'display.date_block.display_options.defaults.filter_groups': false
+        'display.date_block.display_options.filter_groups':
+          operator: AND
+          groups:
+            1: AND
+        'display.date_block.display_options.filters':
+          carried_keywords:
+            id: carried_keywords
             table: search_api_index_content
-            field: search_api_url
+            field: search_api_fulltext
             relationship: none
             group_type: group
             admin_label: ''
-            plugin_id: search_api_url
-            label: ''
-            exclude: true
-            alter:
-              alter_text: false
-              make_link: false
-              path: ''
-              absolute: false
-              external: false
-              replace_spaces: false
-              trim_whitespace: false
-              alt: ''
-              rel: ''
-              link_class: ''
-              prefix: ''
-              suffix: ''
-              target: ''
-              nl2br: false
-              max_length: 0
-              word_boundary: true
-              ellipsis: true
-              strip_tags: false
-              trim: false
-              html: false
-            element_type: ''
-            element_class: ''
-            element_label_type: ''
-            element_label_class: ''
-            element_label_colon: false
-            element_wrapper_type: '0'
-            element_wrapper_class: ''
-            element_default_classes: true
-            empty: ''
-            hide_empty: false
-            empty_zero: false
-            hide_alter_empty: true
-            display_as_link: false
-          nothing:
-            id: nothing
-            table: views
-            field: nothing
-            relationship: none
-            group_type: group
-            admin_label: ''
-            plugin_id: custom
-            label: ''
-            exclude: false
-            alter:
-              alter_text: true
-              text: '{{ title }}{{ title_1 }}'
-              make_link: true
-              path: '{{ search_api_url }}'
-              absolute: false
-              external: false
-              replace_spaces: false
-              trim_whitespace: false
-              alt: ''
-              rel: ''
-              link_class: ''
-              prefix: ''
-              suffix: ''
-              target: ''
-              nl2br: false
-              max_length: 0
-              word_boundary: true
-              ellipsis: true
-              strip_tags: false
-              trim: false
-              html: false
-            element_type: h2
-            element_class: 'h4 mb-1'
-            element_label_type: ''
-            element_label_class: ''
-            element_label_colon: false
-            element_wrapper_type: '0'
-            element_wrapper_class: ''
-            element_default_classes: true
-            empty: ''
-            hide_empty: true
-            empty_zero: false
-            hide_alter_empty: false
-          search_api_excerpt:
-            id: search_api_excerpt
+            plugin_id: search_api_fulltext
+            operator: or
+            value: ''
+            group: 1
+            exposed: true
+            expose:
+              operator_id: search_api_fulltext_op
+              label: 'Search by keyword'
+              description: ''
+              use_operator: false
+              operator: search_api_fulltext_op
+              operator_limit_selection: false
+              operator_list: {  }
+              identifier: keywords
+              required: false
+              remember: false
+              multiple: false
+              remember_roles:
+                authenticated: authenticated
+              expose_fields: false
+              placeholder: ''
+              searched_fields_id: search_api_fulltext_searched_fields
+              value_maxlength: 128
+              value_max_words: null
+            is_grouped: false
+            group_info:
+              label: ''
+              description: ''
+              identifier: ''
+              optional: true
+              widget: select
+              multiple: false
+              remember: false
+              default_group: All
+              default_group_multiple: {  }
+              group_items: {  }
+            parse_mode: terms
+            min_length: null
+            fields: {  }
+          created:
+            id: created
             table: search_api_index_content
-            field: search_api_excerpt
+            field: created
             relationship: none
             group_type: group
             admin_label: ''
-            plugin_id: search_api
-            label: ''
-            exclude: false
-            alter:
-              alter_text: false
-              text: ''
-              make_link: false
-              path: ''
-              absolute: false
-              external: false
-              replace_spaces: false
-              path_case: none
-              trim_whitespace: false
-              alt: ''
-              rel: ''
-              link_class: ''
-              prefix: ''
-              suffix: ''
-              target: ''
-              nl2br: false
-              max_length: 0
-              word_boundary: true
-              ellipsis: true
-              more_link: false
-              more_link_text: ''
-              more_link_path: ''
-              strip_tags: false
-              trim: false
-              preserve_tags: ''
-              html: false
-            element_type: p
-            element_class: 'text-subtle-text mb-1'
-            element_label_type: ''
-            element_label_class: ''
-            element_label_colon: false
-            element_wrapper_type: ''
-            element_wrapper_class: ''
-            element_default_classes: true
-            empty: ''
-            hide_empty: false
-            empty_zero: false
-            hide_alter_empty: true
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
+            plugin_id: search_api_date
+            operator: '>='
+            value:
+              min: ''
+              max: ''
+              value: ''
+              type: offset
+            group: 1
+            exposed: true
+            expose:
+              operator_id: created_op
+              label: 'Date Published'
+              description: ''
+              use_operator: false
+              operator: created_op
+              operator_limit_selection: false
+              operator_list: {  }
+              identifier: published
+              required: false
+              remember: false
+              multiple: false
+              remember_roles:
+                authenticated: authenticated
+            is_grouped: true
+            group_info:
+              label: 'Date Published'
+              description: ''
+              identifier: published
+              optional: true
+              widget: select
+              multiple: false
+              remember: false
+              default_group: All
+              default_group_multiple: {  }
+              group_items:
+                1:
+                  title: 'Past 24 Hours'
+                  operator: '>='
+                  value:
+                    min: ''
+                    max: ''
+                    value: '-24 hours'
+                    type: offset
+                2:
+                  title: 'Past Week'
+                  operator: '>='
+                  value:
+                    min: ''
+                    max: ''
+                    value: '-1 week'
+                    type: offset
+                3:
+                  title: 'Past Month'
+                  operator: '>='
+                  value:
+                    min: ''
+                    max: ''
+                    value: '-1 month'
+                    type: offset
+                4:
+                  title: 'Past Year'
+                  operator: '>='
+                  value:
+                    min: ''
+                    max: ''
+                    value: '-1 year'
+                    type: offset
+        'display.date_block.display_options.exposed_form.options.bef.filter.carried_keywords.plugin_id': bef_hidden
+        'display.date_block.display_options.exposed_form.options.bef.filter.created.plugin_id': default
+        'display.date_block.display_options.exposed_form.options.bef.filter.created.advanced.hide_label': true
+        'display.date_block.display_options.exposed_form.options.bef.filter.created.advanced.rewrite.filter_rewrite_values': '- Any -|Any time'
+        'display.date_block.display_options.exposed_form.options.bef.filter.created.advanced.rewrite.filter_rewrite_values_key': false
+    search_api.index.content:
+      setProperties:
+        field_settings.category_name:
+          label: Category
+          property_path: aggregated_field
+          type: string
+          configuration:
+            type: union
+            fields:
+              - 'entity:node/field_blog_categories:entity:name'
+              - 'entity:node/field_event_categories:entity:name'
+    facets.facet.search_category:
+      createIfNotExists:
+        status: true
+        dependencies:
+          config:
+          - search_api.index.content
+          - views.view.search
+          module:
+          - search_api
+        id: search_category
+        name: Category
+        weight: 0
+        min_count: 1
+        missing: false
+        missing_label: others
+        url_alias: category
+        facet_source_id: search_api:views_block__search__results_block
+        field_identifier: category_name
+        query_operator: or
+        hard_limit: null
+        exclude: false
+        use_hierarchy: false
+        keep_hierarchy_parents_active: false
+        hierarchy:
+          type: taxonomy
+          config: []
+        expand_hierarchy: false
+        enable_parent_when_child_gets_disabled: true
+        widget:
+          type: checkbox
+          config:
+            show_numbers: true
+        empty_behavior:
+          behavior: none
+        only_visible_when_facet_source_is_visible: null
+        show_only_one_result: false
+        show_title: null
+        processor_configs:
+          url_processor_handler:
+            processor_id: url_processor_handler
+            weights:
+              pre_query: -10
+              build: -10
+            settings: []
+          display_value_widget_order:
+            processor_id: display_value_widget_order
+            weights:
+              sort: 20
+            settings:
+              sort: ASC
+    canvas.component.block.facet_block.search_category:
+      createIfNotExists:
+        status: true
+        dependencies:
+          config:
+          - facets.facet.search_category
+          module:
+          - facets
+        active_version: 513d724f7a4634c4
+        versioned_properties:
+          active:
+            settings:
+              default_settings:
+                id: facet_block:search_category
+                label: Category
+                label_display: '0'
+                provider: facets
+            fallback_metadata:
+              slot_definitions: null
+        label: Category
+        id: block.facet_block.search_category
+        provider: facets
+        source: block
+        source_local_id: facet_block:search_category
     views.view.blog:
       simpleConfigUpdate:
         display.all.display_options.row.options.view_mode: impressed_card_medium_light

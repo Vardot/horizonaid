@@ -28,7 +28,7 @@ Browser-driven BDD suite for the Horizon Aid site template, built on
 | `09-editorial` | A webmaster can reach the editorial surfaces and can create, verify and delete each content type the template ships, leaving the site as it found it. |
 | `10-drupal-canvas` | Every Canvas page the recipe ships opens in the Canvas editor, not just in the front end. One file per page group, because each editor mount is a heavy React SPA. |
 | `11-permissions` | Anonymous visitors are denied every administrative surface, and each role reaches only what it should. |
-| `12-search` | The header search toggle, the results page's heading, inline search box and row shape, and what the page does when a query finds nothing or more than one page. |
+| `12-search` | The header search toggle, the results page's heading, keyword bar and result cards, the filter rail (Category, Content Type, Date Published) alone and combined, a card for every indexed content type, 1440 and 390 widths, and what the page does when a query finds nothing or more than one page. The `@wip` scenario in `12-05` records a known gap: a new keyword drops a ticked facet, because the keyword form does not carry `f[]`. |
 
 ## Running locally
 

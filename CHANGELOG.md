@@ -10,6 +10,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - A Copy link item in the Social media menu, shipped disabled because the design does not show it
   in the footer. Enable it to copy the page address, through the HTMX handler in Vartheme BS5 Horizon Aid
   (#3631095) (#3631096).
+- Search on Varbase Search Base. `/search` is now a
+  Canvas page with the keyword bar, a filter rail (Category, Content Type, Date Published) and the
+  results as image cards, one `search_result` Canvas template per content type. Category combines
+  the resource and event categories (#3631112).
+
+### Changed
+- The search view's page display is disabled; the Canvas page owns `/search`. The header search form
+  still submits `keywords` to it (#3631112).
 
 ## [1.0.7] - 2026-10-11
 ### Changed
