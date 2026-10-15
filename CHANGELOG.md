@@ -16,6 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   the resource and event categories (#3631112).
 
 ### Changed
+- Date Published in the search filter rail is a list of radio buttons instead of a select,
+  like the facets above it (#3631112).
+- The Category facet shows its first 8 items, with Show more and Show less (#3631112).
 - The search view's page display is disabled; the Canvas page owns `/search`. The header search form
   still submits `keywords` to it (#3631112).
 

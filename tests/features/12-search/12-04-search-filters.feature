@@ -19,7 +19,7 @@ Feature: Search - The filter rail - Category, Content Type and Date Published
       And I should see "Date Published"
       And ".block-facets[class*='search-category'] .facet-item" should be visible
       And ".block-facets[class*='search-content-type'] .facet-item" should be visible
-      And "#views-exposed-form-search-date-block select[name='published'] option" should have a count of 5
+      And "#views-exposed-form-search-date-block input[type='radio'][name='published']" should have a count of 5
 
   @check @acceptance @local @development @staging @production @search
   Scenario: Check a Content Type facet narrows the results to that type
@@ -45,6 +45,6 @@ Feature: Search - The filter rail - Category, Content Type and Date Published
      When I go to "/search?keywords=the&f[0]=content_type:event&published=4"
       And I wait until the page is loaded
      Then "main h1" should have a count of 1
-      And "#views-exposed-form-search-date-block select[name='published']" should have value "4"
+      And "#views-exposed-form-search-date-block input[name='published'][value='4']:checked" should have a count of 1
       And "#views-exposed-form-search-results-block input[name='keywords']" should have value "the"
       And I should not see "Page not found"

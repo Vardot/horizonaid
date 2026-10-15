@@ -78,11 +78,11 @@ Feature: Search - Content types and combined filters - Every indexed type render
     Given I am an anonymous user
      When I go to "/search?keywords=the"
       And I wait until the page is loaded
-      And I select "Past Year" from "#views-exposed-form-search-date-block select[name='published']"
+      And I click on the element "#views-exposed-form-search-date-block input[name='published'][value='4']"
       And I wait until the URL contains "published=4"
       And I wait until the page is loaded
      Then the url should match "keywords=the"
-      And "#views-exposed-form-search-date-block select[name='published']" should have value "4"
+      And "#views-exposed-form-search-date-block input[name='published'][value='4']:checked" should have a count of 1
 
   @check @acceptance @local @development @staging @production @search
   Scenario: Check a new keyword keeps the chosen date
@@ -116,7 +116,7 @@ Feature: Search - Content types and combined filters - Every indexed type render
      Then "#views-exposed-form-search-results-block input[name='keywords']" should be visible
       And "[data-drupal-facet-id='search_category'] .facets-checkbox" should be visible
       And "[data-drupal-facet-id='search_content_type'] .facets-checkbox" should be visible
-      And "#views-exposed-form-search-date-block select[name='published']" should be visible
+      And "#views-exposed-form-search-date-block input[name='published'][value='All']" should be visible
       And ".view-display-id-results_block .card-impressed" should be visible
       And I see visible pagination
       And JavaScript errors should not match "^(?!Failed to load resource)"

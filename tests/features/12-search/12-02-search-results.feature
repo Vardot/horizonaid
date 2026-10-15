@@ -39,9 +39,9 @@ Feature: Search - The results page - A heading, a keyword bar, a filter rail and
     Given I am an anonymous user
      When I go to "/search?keywords=water"
       And I wait until the page is loaded
-     Then "#views-exposed-form-search-results-block select[name='published']" should have a count of 0
+     Then "#views-exposed-form-search-results-block input[name='published'][type='radio']" should have a count of 0
       And "#views-exposed-form-search-date-block input[name='keywords']" should not be visible
-      And "#views-exposed-form-search-date-block select[name='published'] option" should have a count of 5
+      And "#views-exposed-form-search-date-block input[type='radio'][name='published']" should have a count of 5
 
   @check @regression @local @development @staging @production @search
   Scenario: Check the result summary sits above the result cards
