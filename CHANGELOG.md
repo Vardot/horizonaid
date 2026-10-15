@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- A Copy link item in the Social media menu, shipped disabled because the design does not show it
+  in the footer. Enable it to copy the page address, through the HTMX handler in Vartheme BS5 Horizon Aid
+  (#3631095) (#3631096).
 
 ## [1.0.7] - 2026-10-11
 ### Changed
