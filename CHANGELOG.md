@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.8] - 2026-10-19
 ### Added
 - A Copy link item in the Social media menu, shipped disabled because the design does not show it
   in the footer. Enable it to copy the page address, through the HTMX handler in Vartheme BS5 Horizon Aid
@@ -256,7 +258,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   query with Enter in the field.
 - Update the version badge to `1.0.0-alpha1` in `README.md`.
 
-[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.2...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.8...1.0.x
+[1.0.8]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.7...1.0.8
 [1.0.2]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.1...1.0.2
 [1.0.0-beta1]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.0-alpha2...1.0.0-beta1
 [1.0.0-alpha2]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.0-alpha1...1.0.0-alpha2
