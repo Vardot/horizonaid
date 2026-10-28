@@ -173,7 +173,6 @@ config:
             plugin_id: result
             empty: false
             content: '<span class="vb-result-summary"><span class="vb-result-summary__label">Showing</span> <span class="vb-result-summary__count"><strong>@start-@end</strong> of @total</span></span>'
-        display.page.display_options.enabled: false
         'display.results_block.display_options.defaults.style': false
         'display.results_block.display_options.style':
           type: components_views_style

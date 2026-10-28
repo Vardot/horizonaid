@@ -14,7 +14,7 @@
         "drupal/drupal_cms_forms": "~2",
         "drupal/drupal_cms_google_analytics": "~2",
         "drupal/drupal_cms_helper": "~2",
-        "drupal/drupal_cms_search": "~2",
+        "drupal/drupal_cms_search": "^2.2.7",
         "drupal/drupal_cms_seo_basic": "~2",
         "drupal/drupal_cms_seo_tools": "~2",
         "drupal/easy_email_express": "~1",

@@ -29,6 +29,10 @@ results page at `/search` is a Canvas page with a keyword box, a filter rail (Ca
 Type, Date Published) and the results as cards. Category combines the resource and event
 categories.
 
+## Telemetry
+
+Drupal CMS telemetry is off in this project's CI (`DRUPAL_CMS_TELEMETRY=0`). To keep it off on your own install, set `DRUPAL_CMS_TELEMETRY=0` in the environment before installing the site template.
+
 ## Learn More
 
 - [Issue #3607228](https://www.drupal.org/project/horizonaid/issues/3607228)
