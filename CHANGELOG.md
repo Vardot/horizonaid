@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.9] - 2026-11-01
+### Changed
+- Drupal CMS telemetry is off in CI (`DRUPAL_CMS_TELEMETRY=0`), and the README says how to turn it
+  off on your own install (#3633830).
+- Require `drupal/drupal_cms_search` `^2.2.7`, and leave the search view's page display enabled in
+  `recipe.yml` (#3633830).
+
 ## [1.0.8] - 2026-10-19
 ### Added
 - A Copy link item in the Social media menu, shipped disabled because the design does not show it
@@ -258,7 +265,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   query with Enter in the field.
 - Update the version badge to `1.0.0-alpha1` in `README.md`.
 
-[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.8...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.9...1.0.x
+[1.0.9]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.8...1.0.9
 [1.0.8]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.7...1.0.8
 [1.0.2]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.1...1.0.2
 [1.0.0-beta1]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.0-alpha2...1.0.0-beta1
