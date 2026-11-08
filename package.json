@@ -3,6 +3,9 @@
   "description": "Varbase functional testing suite (varbase-e2e) for the Horizon Aid site template recipe.",
   "license": "GPL-2.0-or-later",
   "private": true,
+  "engines": {
+    "node": ">= 24.0"
+  },
   "scripts": {
     "test": "cucumber-js --config cucumber.js",
     "test:chromium": "BROWSER=chromium cucumber-js --config cucumber.js",
