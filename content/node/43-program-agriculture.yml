@@ -39,7 +39,6 @@ default:
   path:
     -
       alias: /programs/agriculture
-      langcode: en
   field_content:
     -
       value: "<p>We supply drought-tolerant seed, shared irrigation and farmer-to-farmer training, so households move from food aid to their own harvest within two seasons.</p><p>Cooperatives repay in seed, which stocks the next cooperative's bank and keeps the programme running after we leave.</p>"

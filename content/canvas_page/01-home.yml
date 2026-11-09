@@ -754,7 +754,6 @@ default:
       exposed: {}
   path:
   - alias: /home
-    langcode: en
   revision_translation_affected:
   - value: true
   metatags:

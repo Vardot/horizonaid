@@ -39,7 +39,6 @@ default:
   path:
     -
       alias: /programs/medicine
-      langcode: en
   field_content:
     -
       value: '<p>We move emergency surgical supplies, medicines and medical teams into active crisis zones, and support the hospitals that stayed open when others closed.</p><p>Supply routes are negotiated weekly so deliveries keep moving even when access changes.</p>'

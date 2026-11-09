@@ -39,7 +39,6 @@ default:
   path:
     -
       alias: /programs/health
-      langcode: en
   field_content:
     -
       value: '<p>We build clean water networks and neighbourhood clinics that deliver everyday preventative care: vaccination, maternal health, nutrition screening and safe water.</p><p>Each clinic is staffed by local practitioners and backed by a mobile unit reaching settlements twice a week.</p>'

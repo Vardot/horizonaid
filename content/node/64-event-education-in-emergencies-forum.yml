@@ -30,7 +30,6 @@ default:
   - value: published
   path:
   - alias: /events/education-in-emergencies-forum
-    langcode: en
   field_description:
   - value: Teachers, ministries and partners plan how to keep classrooms open through a second year of displacement.
   field_location:

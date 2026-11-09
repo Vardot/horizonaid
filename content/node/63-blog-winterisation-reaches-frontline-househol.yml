@@ -39,7 +39,6 @@ default:
   path:
     -
       alias: /resources/winterisation-reaches-frontline-households
-      langcode: en
   field_blog_categories:
     -
       entity: 9e318a9b-b0f1-4be1-a443-ca0ddcee9eba

@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /events/community-health-worker-graduation
-    langcode: en
   field_description:
   - value: Celebrating the sixth cohort of community health workers trained across our clinic network.
   field_location:

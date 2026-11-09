@@ -38,7 +38,6 @@ default:
   path:
     -
       alias: /programs/women
-      langcode: en
   field_content:
     -
       value: '<p>We combine legal defence, small grants and leadership training so women can claim their rights, start a livelihood and take part in the decisions that affect their communities.</p><p>Our legal teams take on documentation, inheritance and protection cases that would otherwise never reach a court.</p>'

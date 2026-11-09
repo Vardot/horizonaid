@@ -18,5 +18,4 @@ default:
   revision_translation_affected:
   - value: true
   path:
-  - langcode: en
-    alias: null
+  - alias: null

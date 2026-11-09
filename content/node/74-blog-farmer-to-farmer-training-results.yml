@@ -39,7 +39,6 @@ default:
   path:
     -
       alias: /resources/farmer-farmer-training-results
-      langcode: en
   field_blog_categories:
     -
       entity: d762c0cc-2720-4035-a262-0118d74e67b2

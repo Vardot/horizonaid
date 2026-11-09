@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /events/shelter-innovation-field-day
-    langcode: en
   field_description:
   - value: Two days testing low-cost shelter upgrades with the families who will live in them.
   field_location:

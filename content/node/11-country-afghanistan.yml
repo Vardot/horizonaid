@@ -39,7 +39,6 @@ default:
   path:
     -
       alias: /countries/afghanistan
-      langcode: en
   field_country_code:
     -
       value: AF

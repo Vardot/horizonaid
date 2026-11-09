@@ -1270,7 +1270,6 @@ default:
   path:
     -
       alias: /about
-      langcode: en
   revision_translation_affected:
     -
       value: true

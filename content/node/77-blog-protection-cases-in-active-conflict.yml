@@ -39,7 +39,6 @@ default:
   path:
     -
       alias: /resources/protection-cases-active-conflict
-      langcode: en
   field_blog_categories:
     -
       entity: 60a3f621-9baf-4341-a6ad-b8615f99e6d3

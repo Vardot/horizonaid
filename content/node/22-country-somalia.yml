@@ -38,7 +38,6 @@ default:
   path:
     -
       alias: /countries/somalia
-      langcode: en
   field_country_code:
     -
       value: SO

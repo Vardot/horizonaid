@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /events/winterisation-readiness-briefing
-    langcode: en
   field_description:
   - value: Logistics and shelter teams walk through stock, routes and cash plans before the first cold fronts arrive.
   field_location:

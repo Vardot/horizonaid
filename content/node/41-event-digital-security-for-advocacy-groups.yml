@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /events/digital-security-for-advocacy-groups
-    langcode: en
   field_description:
   - value: Learn how to protect field communications, secure donor data, and defend your organisation against cyber threats in high-risk environments.
   field_location:

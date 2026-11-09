@@ -261,7 +261,6 @@ default:
       text_color: text-body
   path:
   - alias: /newsletter
-    langcode: en
   revision_translation_affected:
   - value: true
   metatags:

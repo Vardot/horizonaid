@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /events/emergency-shelter-standards-review
-    langcode: en
   field_description:
   - value: A technical review of shelter specifications used across our winterisation responses.
   field_location:

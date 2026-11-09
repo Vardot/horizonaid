@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /events/mobile-health-outreach-clinic-day
-    langcode: en
   field_description:
   - value: An open day with the mobile health teams serving remote settlements, for partners and local health authorities.
   field_location:

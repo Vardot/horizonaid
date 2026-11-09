@@ -537,7 +537,6 @@ default:
       exposed: {}
   path:
   - alias: /countries
-    langcode: en
   revision_translation_affected:
   - value: true
   metatags:

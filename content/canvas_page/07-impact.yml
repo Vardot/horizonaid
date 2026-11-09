@@ -282,7 +282,6 @@ default:
   path:
     -
       alias: /impact
-      langcode: en
   revision_translation_affected:
     -
       value: true

@@ -148,7 +148,6 @@ default:
   path:
     -
       alias: /resources
-      langcode: en
   revision_translation_affected:
     -
       value: true

@@ -39,7 +39,6 @@ default:
   path:
     -
       alias: /programs/education
-      langcode: en
   field_content:
     -
       value: '<p>We build and rehabilitate safe learning spaces, train local teachers, and provide the materials a classroom needs to keep running through displacement and drought.</p><p>Where schools have closed, we set up temporary learning spaces so children do not lose a year, and we work with education ministries so the spaces are recognised.</p>'

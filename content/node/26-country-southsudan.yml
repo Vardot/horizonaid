@@ -38,7 +38,6 @@ default:
   path:
     -
       alias: /countries/south-sudan
-      langcode: en
   field_country_code:
     -
       value: SS

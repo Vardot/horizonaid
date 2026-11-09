@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /events/classroom-continuity-planning-lab
-    langcode: en
   field_description:
   - value: A working lab on keeping schooling running through displacement, with education ministries and field staff.
   field_location:

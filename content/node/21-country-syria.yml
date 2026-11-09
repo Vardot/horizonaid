@@ -38,7 +38,6 @@ default:
   path:
     -
       alias: /countries/syria
-      langcode: en
   field_country_code:
     -
       value: SY

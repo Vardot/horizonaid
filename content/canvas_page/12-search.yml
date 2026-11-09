@@ -220,7 +220,6 @@ default:
   path:
     -
       alias: /search
-      langcode: en
   metatags:
     -
       value: '{"canonical_url":"[canvas_page:url]","description":"Search the resources, events, programs and countries of [site:name].","title":"[canvas_page:title] | [site:name]"}'

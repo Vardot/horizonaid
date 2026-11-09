@@ -29,7 +29,6 @@ default:
   - value: published
   path:
   - alias: /events/supply-chain-resilience-review
-    langcode: en
   field_description:
   - value: Procurement and logistics leads review lead times, prepositioning and what failed during the last surge.
   field_location:

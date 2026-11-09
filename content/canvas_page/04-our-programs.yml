@@ -233,7 +233,6 @@ default:
       exposed: {}
   path:
   - alias: /programs
-    langcode: en
   revision_translation_affected:
   - value: true
   metatags:

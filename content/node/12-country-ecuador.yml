@@ -39,7 +39,6 @@ default:
   path:
     -
       alias: /countries/ecuador
-      langcode: en
   field_country_code:
     -
       value: EC

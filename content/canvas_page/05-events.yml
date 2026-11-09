@@ -132,7 +132,6 @@ default:
       exposed: {}
   path:
   - alias: /events
-    langcode: en
   revision_translation_affected:
   - value: true
   metatags:
