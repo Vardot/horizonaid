@@ -47,16 +47,16 @@ default:
     -
       value: |-
         <h2>Introduction</h2>
-        <p><strong>NAIROBI</strong> — Where education money actually lands, traced from donor to classroom. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This brief sets out the evidence, the cost of inaction, and what should follow.</p>
+        <p><strong>NAIROBI</strong> — Where education money actually lands, traced from donor to classroom. We followed each tranche of education funding from donor to the school that spent it. This brief sets out where the money went and where it stalled.</p>
         <h2>The problem, before the work started</h2>
-        <p>Money reaches education budgets and then becomes difficult to follow. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <p>Money reaches education budgets and then becomes difficult to follow. Schools reported missing salaries and supplies that had been funded on paper, and nobody could show where the money stopped.</p>
         <blockquote><p>You cannot argue about a shortfall until everyone can see the same number.</p><p><strong>Grace Wanjiru</strong>, policy analyst</p></blockquote>
         <h2>How the work was delivered</h2>
-        <p>Published, itemised spending makes the gap between allocation and delivery visible. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <p>Published, itemised spending makes the gap between allocation and delivery visible. Spending is published by school and by quarter, in a format a parent committee can read.</p>
         <ul><li>Every disbursement published within the quarter it is made</li><li>School-level figures, not district aggregates</li><li>Categories agreed with the ministry so the data can be compared</li><li>An open format any organisation can reuse</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="d30a48eb-a7b9-4965-a517-1a163a93a9be" data-align="center" alt="Education funding transparency"></drupal-media>
         <h2>What changed beyond the immediate goal</h2>
-        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <p>Funding gaps were found and closed, and publishing the data had effects beyond the audit.</p>
         <h3>1. Faster correction</h3>
         <p>Schools missing a disbursement were identified in weeks rather than at the annual audit.</p>
         <h3>2. Better questions</h3>
@@ -64,7 +64,7 @@ default:
         <h3>3. Comparable years</h3>
         <p>A stable format made the second year's data worth something, which the first year's alone was not.</p>
         <h2>What comes next</h2>
-        <p>The next release adds teacher deployment alongside spending, so both can be read together. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+        <p>The next release adds teacher deployment alongside spending, so both can be read together. Success is the ministry publishing these figures itself.</p>
       format: content_format
   field_description:
     -

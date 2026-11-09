@@ -47,16 +47,16 @@ default:
     -
       value: |-
         <h2>Introduction</h2>
-        <p><strong>KASSALA</strong> — A shared pump serving four cooperatives cut water costs and ended a long dispute. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
+        <p><strong>KASSALA</strong> — A shared pump serving four cooperatives cut water costs and ended a long dispute. The four cooperatives had argued over water from the same river for a decade. This update covers what the shared pump cost, what it delivers, and how the rota is kept.</p>
         <h2>The problem, before the work started</h2>
-        <p>Irrigation built for one farm starves the next; irrigation built for a valley does not. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <p>Irrigation built for one farm starves the next; irrigation built for a valley does not. Upstream farms drew water first, and downstream plots dried out in the weeks that mattered most.</p>
         <blockquote><p>The water was never the hard part. Agreeing the order of turns was the hard part, and we did it first.</p><p><strong>Fatima Ibrahim</strong>, scheme committee secretary</p></blockquote>
         <h2>How the work was delivered</h2>
-        <p>One scheme, shared by rota, maintained by the cooperative that depends on it. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <p>One scheme, shared by rota, maintained by the cooperative that depends on it. A joint committee sets the rota and collects a small fee from each cooperative for repairs.</p>
         <ul><li>Rota agreed in writing before the first channel was dug</li><li>Head-works sized for the whole valley, not the nearest plot</li><li>Maintenance days scheduled, with attendance recorded</li><li>Disputes settled by the committee, not the funder</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="fbca9adb-bf14-44fb-a1a3-c6f02b725a23" data-align="center" alt="Irrigation shared between cooperatives"></drupal-media>
         <h2>What changed beyond the immediate goal</h2>
-        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <p>Water costs fell for all four cooperatives, and the shared scheme changed relations between them.</p>
         <h3>1. Two harvests instead of one</h3>
         <p>Reliable turns let farmers plant a second season they previously could not risk.</p>
         <h3>2. Less conflict over water</h3>
@@ -64,7 +64,7 @@ default:
         <h3>3. Maintenance that happens</h3>
         <p>Because every member has a turn to lose, the channels get cleared without anyone chasing them.</p>
         <h2>What comes next</h2>
-        <p>The next phase links the scheme to a second valley and hands the rota entirely to the joint committee. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+        <p>The next phase links the scheme to a second valley and hands the rota entirely to the joint committee. We count this a success if the committee still keeps the rota and pays for repairs ten years on.</p>
       format: content_format
   field_description:
     -

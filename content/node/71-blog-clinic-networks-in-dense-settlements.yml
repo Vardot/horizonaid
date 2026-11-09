@@ -47,16 +47,16 @@ default:
     -
       value: |-
         <h2>Introduction</h2>
-        <p><strong>NAIROBI</strong> — Neighbourhood clinics and a twice-weekly mobile unit now serve informal settlements. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
+        <p><strong>NAIROBI</strong> — Neighbourhood clinics and a twice-weekly mobile unit now serve informal settlements. Between the fixed sites and the mobile unit, care is now available from early morning to late evening. This report covers who uses it and when.</p>
         <h2>The problem, before the work started</h2>
-        <p>In dense settlements the barrier is not distance but hours; a clinic thirty minutes away is closed by the time you arrive. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <p>In dense settlements the barrier is not distance but hours; a clinic thirty minutes away is closed by the time you arrive. Day labourers lost a day's wage for every clinic visit, so minor illnesses went untreated until they became serious.</p>
         <blockquote><p>People do not skip care because it is far. They skip it because they cannot lose the working day.</p><p><strong>Dr Peter Kimani</strong>, clinical lead</p></blockquote>
         <h2>How the work was delivered</h2>
-        <p>A network of small clinics with staggered hours covers the day between them. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <p>A network of small clinics with staggered hours covers the day between them. Staggered hours and a shared patient record let a patient seen at one clinic follow up at another.</p>
         <ul><li>Opening hours staggered across the network, including evenings</li><li>Shared referral so a full clinic sends rather than turns away</li><li>Stock pooled and moved between sites weekly</li><li>One patient record used across the network</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="77f64522-d62e-448c-ab81-5a4137f8057c" data-align="center" alt="Clinic networks in dense settlements"></drupal-media>
         <h2>What changed beyond the immediate goal</h2>
-        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <p>Patient numbers rose across the network, and three changes followed that were not in the plan.</p>
         <h3>1. Evening attendance</h3>
         <p>A large share of visits arrived after five, from people who could not come earlier.</p>
         <h3>2. Fewer wasted trips</h3>
@@ -64,7 +64,7 @@ default:
         <h3>3. Stock where it is needed</h3>
         <p>Pooling reduced both stockouts and expiry across the network.</p>
         <h2>What comes next</h2>
-        <p>The next phase adds two evening-only sites and puts the shared record on the district system. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+        <p>The next phase adds two evening-only sites and puts the shared record on the district system. Success is the district health office keeping the evening hours once it takes over.</p>
       format: content_format
   field_description:
     -

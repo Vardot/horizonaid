@@ -47,16 +47,16 @@ default:
     -
       value: |-
         <h2>Introduction</h2>
-        <p><strong>MOGADISHU</strong> — Twenty-two thousand children were screened for malnutrition across three governorates. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This update reports what the teams found, what it cost, and what changed.</p>
+        <p><strong>MOGADISHU</strong> — Twenty-two thousand children were screened for malnutrition across three governorates. Most of those children were screened by volunteers in their own neighbourhoods. This report covers what was found, how quickly it was treated, and what it cost per child.</p>
         <h2>The problem, before the work started</h2>
-        <p>Malnutrition found late is a hospital admission; found early it is a food ration. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <p>Malnutrition found late is a hospital admission; found early it is a food ration. Families usually reached a clinic only when a child was already severely malnourished. By then treatment meant weeks in a stabilisation centre.</p>
         <blockquote><p>The measurement takes a minute. Getting the minute to happen near the family is the whole programme.</p><p><strong>Halima Nur</strong>, nutrition officer</p></blockquote>
         <h2>How the work was delivered</h2>
-        <p>Screening is pushed out to community volunteers so it happens near where families live. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <p>Screening is pushed out to community volunteers so it happens near where families live. A volunteer who lives on the street can screen a child in minutes and refer the same day.</p>
         <ul><li>Volunteers trained on mid-upper-arm measurement and referral</li><li>Screening held on the same day each month at fixed points</li><li>Supplementary feeding stocked before screening begins</li><li>Severe cases moved the same day, not booked for later</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="3db67d5a-439a-4486-a6fd-bdf32ce1795a" data-align="center" alt="Nutrition screening at scale"></drupal-media>
         <h2>What changed beyond the immediate goal</h2>
-        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <p>Screening coverage reached its target, and finding cases early changed how the health system works.</p>
         <h3>1. Fewer inpatient admissions</h3>
         <p>More cases were caught at moderate stage, which is treated at home.</p>
         <h3>2. Volunteers who stay</h3>
@@ -64,7 +64,7 @@ default:
         <h3>3. Data that guides stock</h3>
         <p>Monthly figures made supplementary feeding orders match actual need.</p>
         <h2>What comes next</h2>
-        <p>The next round extends screening to two further districts and adds growth monitoring for under-twos. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+        <p>The next round extends screening to two further districts and adds growth monitoring for under-twos. Success is screening continuing under the governorate health office after our funding ends.</p>
       format: content_format
   field_description:
     -

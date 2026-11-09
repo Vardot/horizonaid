@@ -226,7 +226,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Founded in 2008, Horizon Aid grew from a three-person team in Lebanon to work in 16 countries. Our mission remains the same: empower communities with the resources and protection to rebuild.</p>'
+          value: '<p>Founded in 2004, Horizon Aid grew from a three-person team in Lebanon to work in 16 countries. Our mission remains the same: empower communities with the resources and protection to rebuild.</p>'
           format: canvas_html_block
         text_size: none
         text_color: text-body
@@ -366,7 +366,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>Founded in 2008, Horizon Aid grew from a three-person team in Lebanon to work in 16 countries. Our mission remains the same: empower communities with the resources and protection to rebuild.</p>'
+          value: '<p>Founded in 2004, Horizon Aid grew from a three-person team in Lebanon to work in 16 countries. Our mission remains the same: empower communities with the resources and protection to rebuild.</p>'
           format: canvas_html_block
         text_size: none
         text_color: text-body
@@ -1221,7 +1221,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>100% of public donations go directly to field programmes. Administrative and operational costs are covered separately through institutional grants, so your contribution reaches communities in full.</p>'
+          value: '<p>We work in 16 countries across the Middle East, Africa, Asia and Latin America, from Lebanon and Yemen to Kenya, Ukraine and Colombia. The Countries page shows each one and the programmes running there.</p>'
           format: canvas_html_block
         text_size: none
         text_color: text-body
@@ -1242,7 +1242,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>100% of public donations go directly to field programmes. Administrative and operational costs are covered separately through institutional grants, so your contribution reaches communities in full.</p>'
+          value: '<p>Join one of our events, fundraise with friends or colleagues, or sign up to the newsletter and share our field updates. Companies and foundations can also partner with us on a programme or through in-kind support.</p>'
           format: canvas_html_block
         text_size: none
         text_color: text-body
@@ -1263,7 +1263,7 @@ default:
       component_id: sdc.vartheme_bs5_horizonaid.text
       inputs:
         text:
-          value: '<p>100% of public donations go directly to field programmes. Administrative and operational costs are covered separately through institutional grants, so your contribution reaches communities in full.</p>'
+          value: '<p>Donors receive updates from the programmes they support, and we publish field reports throughout the year. The Our Impact page sets out results by programme and by country.</p>'
           format: canvas_html_block
         text_size: none
         text_color: text-body

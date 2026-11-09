@@ -47,16 +47,16 @@ default:
     -
       value: |-
         <h2>Introduction</h2>
-        <p><strong>KASSALA</strong> — Cooperatives using climate-resilient tools secured steady yields for a second consecutive season. What began as a local difficulty is now a structural one, and it shapes daily life for every household here. This report sets out what was measured, what it cost, and what changed.</p>
+        <p><strong>KASSALA</strong> — Cooperatives using climate-resilient tools secured steady yields for a second consecutive season. Two seasons ago most of these households relied on food parcels. This report covers yields, input costs and how many families no longer need assistance.</p>
         <h2>The problem, before the work started</h2>
-        <p>Food aid sustains a household; a harvest ends the need for it. Households absorbed the difference themselves — in time, in money, and in risks they would not otherwise take. Those costs rarely appear in a budget line, but they decide whether a family recovers or slips further.</p>
+        <p>Food aid sustains a household; a harvest ends the need for it. Every failed season meant selling livestock or seed stock to buy food. That kept households one bad harvest away from returning to aid.</p>
         <blockquote><p>Seed without water is a wasted season. Water without training is a broken pump. It has to arrive together.</p><p><strong>Amna Hassan</strong>, agriculture officer</p></blockquote>
         <h2>How the work was delivered</h2>
-        <p>Inputs, irrigation and training are delivered together, because any one alone fails. The approach was chosen because it survives the conditions here: staff turnover, seasonal access, and a population that may move at short notice.</p>
+        <p>Inputs, irrigation and training are delivered together, because any one alone fails. Drought-tolerant seed only pays when water arrives on time and farmers know when to plant it.</p>
         <ul><li>Seed, tools and irrigation delivered as one package</li><li>Training tied to the season the technique belongs to</li><li>Cooperative registered before the first distribution</li><li>Exit measured by harvest, not by months elapsed</li></ul>
         <drupal-media data-entity-type="media" data-entity-uuid="934496a2-3f0b-4db3-a54e-b7e706a994dd" data-align="center" alt="Cultivating independence in rural farms"></drupal-media>
         <h2>What changed beyond the immediate goal</h2>
-        <p>The direct objective was met, but the effects that matter most were the ones we did not set out to produce.</p>
+        <p>Yields held for a second season, and that steadiness changed more than the harvest figures show.</p>
         <h3>1. Households off assistance</h3>
         <p>Most participating households were meeting their own food needs within two seasons.</p>
         <h3>2. Surplus reaching market</h3>
@@ -64,7 +64,7 @@ default:
         <h3>3. Cooperatives that outlast us</h3>
         <p>Registered cooperatives kept operating after the programme closed.</p>
         <h2>What comes next</h2>
-        <p>The next phase moves input supply to the cooperatives themselves and keeps only technical support. The measure of success is not how long we stay, but whether the work continues once we have gone.</p>
+        <p>The next phase moves input supply to the cooperatives themselves and keeps only technical support. We will count this a success when the cooperatives buy their own inputs for three seasons running.</p>
       format: content_format
   field_description:
     -
