@@ -789,6 +789,9 @@ config:
               exposed: []
       repointComponentTreeToTheme:
         theme: default
+    canvas.content_template.node.blog.hero_card:
+      repointComponentTreeToTheme:
+        theme: default
     canvas.content_template.node.blog.impressed_card_large:
       repointComponentTreeToTheme:
         theme: default
@@ -1195,6 +1198,15 @@ config:
       repointComponentTreeToTheme:
         theme: default
     canvas.content_template.node.blog.overlay_card_xlarge:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.text_card_large:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.text_card_medium:
+      repointComponentTreeToTheme:
+        theme: default
+    canvas.content_template.node.blog.text_card_small:
       repointComponentTreeToTheme:
         theme: default
     canvas.content_template.node.country.full:
