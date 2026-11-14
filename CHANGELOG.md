@@ -6,14 +6,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.10] - 2026-11-14
 ### Fixed
 - Installing in a language other than English no longer stops with "is not a version that exists
   on component config entity": the recipe keeps the English version of each block component it
   pins, beside the one Canvas made in the install language.
+  [#3638220](https://www.drupal.org/i/3638220)
+- Find the home page when the site's default language is not English.
+  [#3629922](https://www.drupal.org/i/3629922)
+- Use the Vartheme BS5 Horizon Aid PNG email logo (`logo-email.png`) in HTML emails instead of the
+  SVG site logo, which many email clients do not show. Needs Vartheme BS5 Horizon Aid 1.0.10 or
+  later. [#3637904](https://www.drupal.org/i/3637904)
+- Repoint the blog hero card and text card Canvas templates to the Horizon Aid theme.
+  [#3636885](https://www.drupal.org/i/3636885)
+- Give each FAQ answer and field report in the demo content its own wording.
+  [#3636086](https://www.drupal.org/i/3636086)
 
 ### Changed
-- HTML emails use the Horizon Aid theme's PNG email logo (`logo-email.png`) instead of the SVG
-  site logo, which many email clients do not show (#3637904).
+- Require Node.js 24 or later for the test tooling, and run the CI Node jobs on `node:24`.
+  [#3635693](https://www.drupal.org/i/3635693)
 
 ## [1.0.9] - 2026-11-01
 ### Changed
@@ -273,7 +285,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   query with Enter in the field.
 - Update the version badge to `1.0.0-alpha1` in `README.md`.
 
-[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.9...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.10...1.0.x
+[1.0.10]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.9...1.0.10
 [1.0.9]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.8...1.0.9
 [1.0.8]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.7...1.0.8
 [1.0.2]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.1...1.0.2
