@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 035866f7-6635-4696-8393-89c56519bb89
+name: 'Border'
+cssVariable: '--bs-border-color'
+value:
+  colorSpace: srgb
+  components:
+    - 0.870588
+    - 0.886275
+    - 0.901961
+  hex: '#dee2e6'
+displayFormat: hex
+weight: 18

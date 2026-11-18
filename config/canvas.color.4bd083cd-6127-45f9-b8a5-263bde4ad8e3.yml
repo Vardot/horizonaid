@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 4bd083cd-6127-45f9-b8a5-263bde4ad8e3
+name: 'Yellow'
+cssVariable: '--bs-yellow'
+value:
+  colorSpace: srgb
+  components:
+    - 1.0
+    - 0.756863
+    - 0.027451
+  hex: '#ffc107'
+displayFormat: hex
+weight: 28

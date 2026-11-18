@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 08f005d7-c346-43f5-aa32-f691194b3711
+name: 'Primary'
+cssVariable: '--bs-primary'
+value:
+  colorSpace: srgb
+  components:
+    - 1.0
+    - 0.780392
+    - 0.172549
+  hex: '#ffc72c'
+displayFormat: hex
+weight: 0

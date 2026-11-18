@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 90b202f6-314b-4672-a4fc-7e8dae0a0f96
+name: 'Indigo'
+cssVariable: '--bs-indigo'
+value:
+  colorSpace: srgb
+  components:
+    - 0.4
+    - 0.062745
+    - 0.94902
+  hex: '#6610f2'
+displayFormat: hex
+weight: 23

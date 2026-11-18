@@ -2752,6 +2752,481 @@ config:
           url_template: 'https://www.instagram.com/'
         - linkedin
         - x
+    # Brand kit: the palette (config/canvas.color.*) is Bootstrap's own --bs-*
+    # colours; this global CSS derives what Bootstrap compiles as literals.
+    canvas.asset_library.global:
+      setProperties:
+        css.original: &horizonaid_brand_kit_css |
+          /* Horizon Aid brand kit. Canvas > Brand kit sets Bootstrap's own colour
+             variables (--bs-primary, --bs-body-color, --bs-link-color...). Bootstrap
+             compiles some colours as literals or rgb triplets; this file derives them
+             from the --bs-* colours so they follow too. It loads before the theme, so
+             selectors are doubled to beat Bootstrap's literals while the theme's own
+             component rules still win. Button and text-on-colour contrast use relative
+             colours: older browsers keep the theme's compiled buttons. */
+          :root:root {
+            --bs-accent: var(--bs-link-color);
+            --bs-accent-bg-subtle: color-mix(in srgb, var(--bs-link-color) 8%, #fff);
+            --bs-focus-ring-color: color-mix(in srgb, var(--bs-primary) 25%, transparent);
+            --bs-primary-bg-subtle: color-mix(in srgb, var(--bs-primary) 11%, #fff);
+            --bs-primary-border-subtle: color-mix(in srgb, var(--bs-primary) 11%, #fff);
+            --bs-primary-text-emphasis: color-mix(in srgb, var(--bs-primary) 60%, #000);
+            --bs-secondary-bg-subtle: color-mix(in srgb, var(--bs-secondary) 3%, #fff);
+            --bs-secondary-border-subtle: color-mix(in srgb, var(--bs-secondary) 40%, #fff);
+            --bs-secondary-text-emphasis: color-mix(in srgb, var(--bs-secondary) 56%, #000);
+            --bs-success-bg-subtle: color-mix(in srgb, var(--bs-success) 20%, #fff);
+            --bs-success-border-subtle: color-mix(in srgb, var(--bs-success) 40%, #fff);
+            --bs-success-text-emphasis: color-mix(in srgb, var(--bs-success) 80%, #000);
+            --bs-info-bg-subtle: color-mix(in srgb, var(--bs-info) 20%, #fff);
+            --bs-info-border-subtle: color-mix(in srgb, var(--bs-info) 40%, #fff);
+            --bs-info-text-emphasis: color-mix(in srgb, var(--bs-info) 80%, #000);
+            --bs-warning-bg-subtle: color-mix(in srgb, var(--bs-warning) 11%, #fff);
+            --bs-warning-border-subtle: color-mix(in srgb, var(--bs-warning) 47%, #fff);
+            --bs-warning-text-emphasis: color-mix(in srgb, var(--bs-warning) 80%, #000);
+            --bs-danger-bg-subtle: color-mix(in srgb, var(--bs-danger) 20%, #fff);
+            --bs-danger-border-subtle: color-mix(in srgb, var(--bs-danger) 40%, #fff);
+            --bs-danger-text-emphasis: color-mix(in srgb, var(--bs-danger) 80%, #000);
+          }
+
+          html a { color: color-mix(in srgb, var(--bs-link-color) calc(var(--bs-link-opacity, 1) * 100%), transparent); }
+          html a:hover { --bs-link-color: var(--bs-link-hover-color); }
+          .text-body.text-body { color: color-mix(in srgb, var(--bs-body-color) calc(var(--bs-text-opacity, 1) * 100%), transparent) !important; }
+          .bg-body.bg-body { background-color: color-mix(in srgb, var(--bs-body-bg) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .bg-body-secondary.bg-body-secondary { background-color: color-mix(in srgb, var(--bs-secondary-bg) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .bg-body-tertiary.bg-body-tertiary { background-color: color-mix(in srgb, var(--bs-tertiary-bg) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .link-body-emphasis.link-body-emphasis { color: color-mix(in srgb, var(--bs-emphasis-color) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; text-decoration-color: color-mix(in srgb, var(--bs-emphasis-color) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .link-body-emphasis.link-body-emphasis:hover,
+          .link-body-emphasis.link-body-emphasis:focus { color: color-mix(in srgb, var(--bs-emphasis-color) calc(var(--bs-link-opacity, 0.75) * 100%), transparent) !important; text-decoration-color: color-mix(in srgb, var(--bs-emphasis-color) calc(var(--bs-link-underline-opacity, 0.75) * 100%), transparent) !important; }
+          .link-underline.link-underline { text-decoration-color: color-mix(in srgb, var(--bs-link-color) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .icon-link.icon-link { text-decoration-color: color-mix(in srgb, var(--bs-link-color) calc(var(--bs-link-opacity, 0.5) * 100%), transparent); }
+          .table:not(.table-primary, .table-secondary, .table-success, .table-info, .table-warning, .table-danger, .table-light, .table-dark, .table-active) { --bs-table-striped-bg: color-mix(in srgb, var(--bs-emphasis-color) 5%, transparent); --bs-table-active-bg: color-mix(in srgb, var(--bs-emphasis-color) 10%, transparent); --bs-table-hover-bg: color-mix(in srgb, var(--bs-emphasis-color) 7.5%, transparent); }
+          .table-dark.table-dark { --bs-table-bg: var(--bs-dark); }
+          .navbar:not(.navbar-dark, [data-bs-theme="dark"]) { --bs-navbar-color: color-mix(in srgb, var(--bs-emphasis-color) 65%, transparent); --bs-navbar-hover-color: color-mix(in srgb, var(--bs-emphasis-color) 80%, transparent); --bs-navbar-disabled-color: color-mix(in srgb, var(--bs-emphasis-color) 30%, transparent); --bs-navbar-active-color: color-mix(in srgb, var(--bs-emphasis-color) 100%, transparent); --bs-navbar-brand-color: color-mix(in srgb, var(--bs-emphasis-color) 100%, transparent); --bs-navbar-brand-hover-color: color-mix(in srgb, var(--bs-emphasis-color) 100%, transparent); --bs-navbar-toggler-border-color: color-mix(in srgb, var(--bs-emphasis-color) 15%, transparent); }
+          .card.card { --bs-card-cap-bg: color-mix(in srgb, var(--bs-body-color) 3%, transparent); }
+          .toast.toast { --bs-toast-bg: color-mix(in srgb, var(--bs-body-bg) 85%, transparent); --bs-toast-header-bg: color-mix(in srgb, var(--bs-body-bg) 85%, transparent); }
+          .form-floating.form-floating > label { color: color-mix(in srgb, var(--bs-body-color) 65%, transparent); }
+
+          .text-primary.text-primary { color: color-mix(in srgb, var(--bs-primary) calc(var(--bs-text-opacity, 1) * 100%), transparent) !important; }
+          .bg-primary.bg-primary { background-color: color-mix(in srgb, var(--bs-primary) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .border-primary.border-primary { border-color: color-mix(in srgb, var(--bs-primary) calc(var(--bs-border-opacity, 1) * 100%), transparent) !important; }
+          .text-bg-primary.text-bg-primary { background-color: color-mix(in srgb, var(--bs-primary) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .link-primary.link-primary { color: color-mix(in srgb, var(--bs-primary) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; text-decoration-color: color-mix(in srgb, var(--bs-primary) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .link-underline-primary.link-underline-primary { text-decoration-color: color-mix(in srgb, var(--bs-primary) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .focus-ring-primary.focus-ring-primary { --bs-focus-ring-color: color-mix(in srgb, var(--bs-primary) calc(var(--bs-focus-ring-opacity, 0.25) * 100%), transparent); }
+          .text-secondary.text-secondary { color: color-mix(in srgb, var(--bs-secondary) calc(var(--bs-text-opacity, 1) * 100%), transparent) !important; }
+          .bg-secondary.bg-secondary { background-color: color-mix(in srgb, var(--bs-secondary) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .border-secondary.border-secondary { border-color: color-mix(in srgb, var(--bs-secondary) calc(var(--bs-border-opacity, 1) * 100%), transparent) !important; }
+          .text-bg-secondary.text-bg-secondary { background-color: color-mix(in srgb, var(--bs-secondary) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .link-secondary.link-secondary { color: color-mix(in srgb, var(--bs-secondary) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; text-decoration-color: color-mix(in srgb, var(--bs-secondary) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .link-underline-secondary.link-underline-secondary { text-decoration-color: color-mix(in srgb, var(--bs-secondary) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .focus-ring-secondary.focus-ring-secondary { --bs-focus-ring-color: color-mix(in srgb, var(--bs-secondary) calc(var(--bs-focus-ring-opacity, 0.25) * 100%), transparent); }
+          .text-success.text-success { color: color-mix(in srgb, var(--bs-success) calc(var(--bs-text-opacity, 1) * 100%), transparent) !important; }
+          .bg-success.bg-success { background-color: color-mix(in srgb, var(--bs-success) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .border-success.border-success { border-color: color-mix(in srgb, var(--bs-success) calc(var(--bs-border-opacity, 1) * 100%), transparent) !important; }
+          .text-bg-success.text-bg-success { background-color: color-mix(in srgb, var(--bs-success) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .link-success.link-success { color: color-mix(in srgb, var(--bs-success) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; text-decoration-color: color-mix(in srgb, var(--bs-success) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .link-underline-success.link-underline-success { text-decoration-color: color-mix(in srgb, var(--bs-success) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .focus-ring-success.focus-ring-success { --bs-focus-ring-color: color-mix(in srgb, var(--bs-success) calc(var(--bs-focus-ring-opacity, 0.25) * 100%), transparent); }
+          .text-info.text-info { color: color-mix(in srgb, var(--bs-info) calc(var(--bs-text-opacity, 1) * 100%), transparent) !important; }
+          .bg-info.bg-info { background-color: color-mix(in srgb, var(--bs-info) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .border-info.border-info { border-color: color-mix(in srgb, var(--bs-info) calc(var(--bs-border-opacity, 1) * 100%), transparent) !important; }
+          .text-bg-info.text-bg-info { background-color: color-mix(in srgb, var(--bs-info) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .link-info.link-info { color: color-mix(in srgb, var(--bs-info) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; text-decoration-color: color-mix(in srgb, var(--bs-info) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .link-underline-info.link-underline-info { text-decoration-color: color-mix(in srgb, var(--bs-info) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .focus-ring-info.focus-ring-info { --bs-focus-ring-color: color-mix(in srgb, var(--bs-info) calc(var(--bs-focus-ring-opacity, 0.25) * 100%), transparent); }
+          .text-warning.text-warning { color: color-mix(in srgb, var(--bs-warning) calc(var(--bs-text-opacity, 1) * 100%), transparent) !important; }
+          .bg-warning.bg-warning { background-color: color-mix(in srgb, var(--bs-warning) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .border-warning.border-warning { border-color: color-mix(in srgb, var(--bs-warning) calc(var(--bs-border-opacity, 1) * 100%), transparent) !important; }
+          .text-bg-warning.text-bg-warning { background-color: color-mix(in srgb, var(--bs-warning) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .link-warning.link-warning { color: color-mix(in srgb, var(--bs-warning) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; text-decoration-color: color-mix(in srgb, var(--bs-warning) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .link-underline-warning.link-underline-warning { text-decoration-color: color-mix(in srgb, var(--bs-warning) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .focus-ring-warning.focus-ring-warning { --bs-focus-ring-color: color-mix(in srgb, var(--bs-warning) calc(var(--bs-focus-ring-opacity, 0.25) * 100%), transparent); }
+          .text-danger.text-danger { color: color-mix(in srgb, var(--bs-danger) calc(var(--bs-text-opacity, 1) * 100%), transparent) !important; }
+          .bg-danger.bg-danger { background-color: color-mix(in srgb, var(--bs-danger) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .border-danger.border-danger { border-color: color-mix(in srgb, var(--bs-danger) calc(var(--bs-border-opacity, 1) * 100%), transparent) !important; }
+          .text-bg-danger.text-bg-danger { background-color: color-mix(in srgb, var(--bs-danger) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .link-danger.link-danger { color: color-mix(in srgb, var(--bs-danger) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; text-decoration-color: color-mix(in srgb, var(--bs-danger) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .link-underline-danger.link-underline-danger { text-decoration-color: color-mix(in srgb, var(--bs-danger) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .focus-ring-danger.focus-ring-danger { --bs-focus-ring-color: color-mix(in srgb, var(--bs-danger) calc(var(--bs-focus-ring-opacity, 0.25) * 100%), transparent); }
+          .text-light.text-light { color: color-mix(in srgb, var(--bs-light) calc(var(--bs-text-opacity, 1) * 100%), transparent) !important; }
+          .bg-light.bg-light { background-color: color-mix(in srgb, var(--bs-light) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .border-light.border-light { border-color: color-mix(in srgb, var(--bs-light) calc(var(--bs-border-opacity, 1) * 100%), transparent) !important; }
+          .text-bg-light.text-bg-light { background-color: color-mix(in srgb, var(--bs-light) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .link-light.link-light { color: color-mix(in srgb, var(--bs-light) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; text-decoration-color: color-mix(in srgb, var(--bs-light) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .link-underline-light.link-underline-light { text-decoration-color: color-mix(in srgb, var(--bs-light) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .focus-ring-light.focus-ring-light { --bs-focus-ring-color: color-mix(in srgb, var(--bs-light) calc(var(--bs-focus-ring-opacity, 0.25) * 100%), transparent); }
+          .text-dark.text-dark { color: color-mix(in srgb, var(--bs-dark) calc(var(--bs-text-opacity, 1) * 100%), transparent) !important; }
+          .bg-dark.bg-dark { background-color: color-mix(in srgb, var(--bs-dark) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .border-dark.border-dark { border-color: color-mix(in srgb, var(--bs-dark) calc(var(--bs-border-opacity, 1) * 100%), transparent) !important; }
+          .text-bg-dark.text-bg-dark { background-color: color-mix(in srgb, var(--bs-dark) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .link-dark.link-dark { color: color-mix(in srgb, var(--bs-dark) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; text-decoration-color: color-mix(in srgb, var(--bs-dark) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .link-underline-dark.link-underline-dark { text-decoration-color: color-mix(in srgb, var(--bs-dark) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .focus-ring-dark.focus-ring-dark { --bs-focus-ring-color: color-mix(in srgb, var(--bs-dark) calc(var(--bs-focus-ring-opacity, 0.25) * 100%), transparent); }
+          .text-accent.text-accent { color: color-mix(in srgb, var(--bs-accent) calc(var(--bs-text-opacity, 1) * 100%), transparent) !important; }
+          .bg-accent.bg-accent { background-color: color-mix(in srgb, var(--bs-accent) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .border-accent.border-accent { border-color: color-mix(in srgb, var(--bs-accent) calc(var(--bs-border-opacity, 1) * 100%), transparent) !important; }
+          .text-bg-accent.text-bg-accent { background-color: color-mix(in srgb, var(--bs-accent) calc(var(--bs-bg-opacity, 1) * 100%), transparent) !important; }
+          .link-accent.link-accent { color: color-mix(in srgb, var(--bs-accent) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; text-decoration-color: color-mix(in srgb, var(--bs-accent) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .link-underline-accent.link-underline-accent { text-decoration-color: color-mix(in srgb, var(--bs-accent) calc(var(--bs-link-underline-opacity, 1) * 100%), transparent) !important; }
+          .focus-ring-accent.focus-ring-accent { --bs-focus-ring-color: color-mix(in srgb, var(--bs-accent) calc(var(--bs-focus-ring-opacity, 0.25) * 100%), transparent); }
+          html body .border-top-primary { border-top-color: var(--bs-primary) !important; }
+          html body .border-bottom-primary { border-bottom-color: var(--bs-primary) !important; }
+          html body .border-start-primary, html body .border-left-primary { border-left-color: var(--bs-primary) !important; }
+          html body .border-end-primary, html body .border-right-primary { border-right-color: var(--bs-primary) !important; }
+          html[dir="rtl"] body .border-start-primary, html[dir="rtl"] body .border-left-primary { border-left-color: inherit !important; border-right-color: var(--bs-primary) !important; }
+          html[dir="rtl"] body .border-end-primary, html[dir="rtl"] body .border-right-primary { border-right-color: inherit !important; border-left-color: var(--bs-primary) !important; }
+          html body .border-top-secondary { border-top-color: var(--bs-secondary) !important; }
+          html body .border-bottom-secondary { border-bottom-color: var(--bs-secondary) !important; }
+          html body .border-start-secondary, html body .border-left-secondary { border-left-color: var(--bs-secondary) !important; }
+          html body .border-end-secondary, html body .border-right-secondary { border-right-color: var(--bs-secondary) !important; }
+          html[dir="rtl"] body .border-start-secondary, html[dir="rtl"] body .border-left-secondary { border-left-color: inherit !important; border-right-color: var(--bs-secondary) !important; }
+          html[dir="rtl"] body .border-end-secondary, html[dir="rtl"] body .border-right-secondary { border-right-color: inherit !important; border-left-color: var(--bs-secondary) !important; }
+          html body .border-top-warning { border-top-color: var(--bs-warning) !important; }
+          html body .border-bottom-warning { border-bottom-color: var(--bs-warning) !important; }
+          html body .border-start-warning, html body .border-left-warning { border-left-color: var(--bs-warning) !important; }
+          html body .border-end-warning, html body .border-right-warning { border-right-color: var(--bs-warning) !important; }
+          html[dir="rtl"] body .border-start-warning, html[dir="rtl"] body .border-left-warning { border-left-color: inherit !important; border-right-color: var(--bs-warning) !important; }
+          html[dir="rtl"] body .border-end-warning, html[dir="rtl"] body .border-right-warning { border-right-color: inherit !important; border-left-color: var(--bs-warning) !important; }
+          html body .border-top-dark { border-top-color: var(--bs-dark) !important; }
+          html body .border-bottom-dark { border-bottom-color: var(--bs-dark) !important; }
+          html body .border-start-dark, html body .border-left-dark { border-left-color: var(--bs-dark) !important; }
+          html body .border-end-dark, html body .border-right-dark { border-right-color: var(--bs-dark) !important; }
+          html[dir="rtl"] body .border-start-dark, html[dir="rtl"] body .border-left-dark { border-left-color: inherit !important; border-right-color: var(--bs-dark) !important; }
+          html[dir="rtl"] body .border-end-dark, html[dir="rtl"] body .border-right-dark { border-right-color: inherit !important; border-left-color: var(--bs-dark) !important; }
+          html body .border-top-accent { border-top-color: var(--bs-accent) !important; }
+          html body .border-bottom-accent { border-bottom-color: var(--bs-accent) !important; }
+          html body .border-start-accent, html body .border-left-accent { border-left-color: var(--bs-accent) !important; }
+          html body .border-end-accent, html body .border-right-accent { border-right-color: var(--bs-accent) !important; }
+          html[dir="rtl"] body .border-start-accent, html[dir="rtl"] body .border-left-accent { border-left-color: inherit !important; border-right-color: var(--bs-accent) !important; }
+          html[dir="rtl"] body .border-end-accent, html[dir="rtl"] body .border-right-accent { border-right-color: inherit !important; border-left-color: var(--bs-accent) !important; }
+
+          .nav-pills.nav-pills { --bs-nav-pills-link-active-bg: var(--bs-primary); }
+          .dropdown-menu.dropdown-menu { --bs-dropdown-link-active-bg: var(--bs-primary); }
+          .list-group.list-group { --bs-list-group-active-bg: var(--bs-primary); --bs-list-group-active-border-color: var(--bs-primary); }
+          .pagination.pagination { --bs-pagination-active-border-color: var(--bs-primary); --bs-pagination-focus-box-shadow: 0 0 0 0.25rem var(--bs-focus-ring-color); }
+          .progress.progress,
+          .progress-stacked.progress-stacked { --bs-progress-bar-bg: var(--bs-primary); }
+          .form-check-input.form-check-input:checked,
+          .form-check-input.form-check-input[type="checkbox"]:indeterminate { border-color: var(--bs-primary); background-color: var(--bs-primary); }
+          .form-control.form-control:focus,
+          .form-select.form-select:focus,
+          .form-check-input.form-check-input:focus { border-color: color-mix(in srgb, var(--bs-primary) 50%, #fff); box-shadow: 0 0 0 0.25rem var(--bs-focus-ring-color); }
+          .form-range.form-range::-webkit-slider-thumb { background-color: var(--bs-primary); }
+          .form-range.form-range::-moz-range-thumb { background-color: var(--bs-primary); }
+          .form-range.form-range:focus::-webkit-slider-thumb { box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem var(--bs-focus-ring-color); }
+          .form-range.form-range:focus::-moz-range-thumb { box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem var(--bs-focus-ring-color); }
+          .nav-link.nav-link:focus-visible { box-shadow: 0 0 0 0.25rem var(--bs-focus-ring-color); }
+          .views-exposed-form.views-exposed-form { --views-exposed-filters-input-focus-ring: color-mix(in srgb, var(--bs-primary) 15%, transparent); }
+          .vmh-container.vmh-container { background-color: var(--bs-primary); }
+          .popover.popover { --bs-popover-header-color: var(--bs-heading-color); }
+          .icon-toggle.icon-toggle { --icon-toggle-button-color: var(--bs-secondary); --icon-toggle-panel-border: color-mix(in srgb, var(--bs-secondary) 50%, transparent); }
+          .alert-primary.alert-dismissible .btn-close.btn-close { background: var(--bs-primary); }
+          .alert-secondary.alert-dismissible .btn-close.btn-close { background: var(--bs-secondary); }
+          .alert-warning.alert-dismissible .btn-close.btn-close { background: color-mix(in srgb, var(--bs-warning) 80%, #fff); }
+          .alert-accent.alert-dismissible .btn-close.btn-close { background: var(--bs-accent); }
+          html .breadcrumb .breadcrumb-item a:hover,
+          html .breadcrumb .breadcrumb-item a:focus { color: var(--bs-body-color); }
+          html .page > header[role="banner"].scrolled { box-shadow: 0 0.3125rem 0.625rem 0 color-mix(in srgb, var(--bs-body-color) 10%, transparent); }
+          html .page > header[role="banner"] .nav-link:not(.nav-link--cta)::before,
+          html .page > header[role="banner"] .nav-link:not(.nav-link--cta):hover::before,
+          html .page > header[role="banner"] .nav-link:not(.nav-link--cta):focus-visible::before { background: var(--bs-accent); }
+          html footer.footer .block-system-menu-blocksocial-media-menu li.nav-item > a:hover,
+          html footer.footer .block-system-menu-blocksocial-media-menu li.nav-item > a:focus,
+          html footer.footer .block-system-menu-blocksocial-media-menu li.nav-item > a:active { color: var(--bs-accent); }
+
+          @supports (color: oklch(from red l c h)) {
+            /* The theme's gold emphasis keeps its hue: scale lightness and chroma. */
+            :root:root {
+              --bs-primary-text-emphasis: oklch(from var(--bs-primary) calc(l * 0.6767) calc(c * 0.7107) h);
+              --bs-warning-text-emphasis: oklch(from var(--bs-warning) calc(l * 0.8336) calc(c * 0.8779) h);
+            }
+            .btn-primary.btn-primary {
+              --bs-btn-color: oklch(from var(--bs-primary) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-hover-color: var(--bs-btn-color);
+              --bs-btn-active-color: var(--bs-btn-color);
+              --bs-btn-disabled-color: var(--bs-btn-color);
+              --bs-btn-bg: var(--bs-primary);
+              --bs-btn-border-color: var(--bs-primary);
+              --bs-btn-disabled-bg: var(--bs-primary);
+              --bs-btn-disabled-border-color: var(--bs-primary);
+              --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary) 85%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-primary) 90%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-bg: color-mix(in srgb, var(--bs-primary) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-border-color: color-mix(in srgb, var(--bs-primary) 90%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, color-mix(in srgb, var(--bs-primary) 85%, var(--bs-btn-color)) 50%, transparent);
+            }
+            .btn-outline-primary.btn-outline-primary {
+              --bs-btn-color: var(--bs-primary);
+              --bs-btn-border-color: var(--bs-primary);
+              --bs-btn-hover-bg: var(--bs-primary);
+              --bs-btn-hover-border-color: var(--bs-primary);
+              --bs-btn-active-bg: var(--bs-primary);
+              --bs-btn-active-border-color: var(--bs-primary);
+              --bs-btn-disabled-color: var(--bs-primary);
+              --bs-btn-disabled-border-color: var(--bs-primary);
+              --bs-btn-hover-color: oklch(from var(--bs-primary) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-active-color: var(--bs-btn-hover-color);
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--bs-primary) 50%, transparent);
+            }
+            .text-bg-primary.text-bg-primary { color: oklch(from var(--bs-primary) clamp(0, (0.65 - l) * 1000, 1) 0 0) !important; }
+            .link-primary.link-primary:hover,
+            .link-primary.link-primary:focus { color: color-mix(in srgb, color-mix(in srgb, var(--bs-primary) 80%, oklch(from var(--bs-primary) clamp(0, (l - 0.65) * 1000, 1) 0 0)) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; }
+            .btn-secondary.btn-secondary {
+              --bs-btn-color: oklch(from var(--bs-secondary) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-hover-color: var(--bs-btn-color);
+              --bs-btn-active-color: var(--bs-btn-color);
+              --bs-btn-disabled-color: var(--bs-btn-color);
+              --bs-btn-bg: var(--bs-secondary);
+              --bs-btn-border-color: var(--bs-secondary);
+              --bs-btn-disabled-bg: var(--bs-secondary);
+              --bs-btn-disabled-border-color: var(--bs-secondary);
+              --bs-btn-hover-bg: color-mix(in srgb, var(--bs-secondary) 85%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-secondary) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-bg: color-mix(in srgb, var(--bs-secondary) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-border-color: color-mix(in srgb, var(--bs-secondary) 75%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, color-mix(in srgb, var(--bs-secondary) 85%, var(--bs-btn-color)) 50%, transparent);
+            }
+            .btn-outline-secondary.btn-outline-secondary {
+              --bs-btn-color: var(--bs-secondary);
+              --bs-btn-border-color: var(--bs-secondary);
+              --bs-btn-hover-bg: var(--bs-secondary);
+              --bs-btn-hover-border-color: var(--bs-secondary);
+              --bs-btn-active-bg: var(--bs-secondary);
+              --bs-btn-active-border-color: var(--bs-secondary);
+              --bs-btn-disabled-color: var(--bs-secondary);
+              --bs-btn-disabled-border-color: var(--bs-secondary);
+              --bs-btn-hover-color: oklch(from var(--bs-secondary) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-active-color: var(--bs-btn-hover-color);
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--bs-secondary) 50%, transparent);
+            }
+            .text-bg-secondary.text-bg-secondary { color: oklch(from var(--bs-secondary) clamp(0, (0.65 - l) * 1000, 1) 0 0) !important; }
+            .link-secondary.link-secondary:hover,
+            .link-secondary.link-secondary:focus { color: color-mix(in srgb, color-mix(in srgb, var(--bs-secondary) 80%, oklch(from var(--bs-secondary) clamp(0, (l - 0.65) * 1000, 1) 0 0)) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; }
+            .btn-success.btn-success {
+              --bs-btn-color: oklch(from var(--bs-success) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-hover-color: var(--bs-btn-color);
+              --bs-btn-active-color: var(--bs-btn-color);
+              --bs-btn-disabled-color: var(--bs-btn-color);
+              --bs-btn-bg: var(--bs-success);
+              --bs-btn-border-color: var(--bs-success);
+              --bs-btn-disabled-bg: var(--bs-success);
+              --bs-btn-disabled-border-color: var(--bs-success);
+              --bs-btn-hover-bg: color-mix(in srgb, var(--bs-success) 85%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-success) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-bg: color-mix(in srgb, var(--bs-success) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-border-color: color-mix(in srgb, var(--bs-success) 75%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, color-mix(in srgb, var(--bs-success) 85%, var(--bs-btn-color)) 50%, transparent);
+            }
+            .btn-outline-success.btn-outline-success {
+              --bs-btn-color: var(--bs-success);
+              --bs-btn-border-color: var(--bs-success);
+              --bs-btn-hover-bg: var(--bs-success);
+              --bs-btn-hover-border-color: var(--bs-success);
+              --bs-btn-active-bg: var(--bs-success);
+              --bs-btn-active-border-color: var(--bs-success);
+              --bs-btn-disabled-color: var(--bs-success);
+              --bs-btn-disabled-border-color: var(--bs-success);
+              --bs-btn-hover-color: oklch(from var(--bs-success) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-active-color: var(--bs-btn-hover-color);
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--bs-success) 50%, transparent);
+            }
+            .text-bg-success.text-bg-success { color: oklch(from var(--bs-success) clamp(0, (0.65 - l) * 1000, 1) 0 0) !important; }
+            .link-success.link-success:hover,
+            .link-success.link-success:focus { color: color-mix(in srgb, color-mix(in srgb, var(--bs-success) 80%, oklch(from var(--bs-success) clamp(0, (l - 0.65) * 1000, 1) 0 0)) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; }
+            .btn-info.btn-info {
+              --bs-btn-color: oklch(from var(--bs-info) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-hover-color: var(--bs-btn-color);
+              --bs-btn-active-color: var(--bs-btn-color);
+              --bs-btn-disabled-color: var(--bs-btn-color);
+              --bs-btn-bg: var(--bs-info);
+              --bs-btn-border-color: var(--bs-info);
+              --bs-btn-disabled-bg: var(--bs-info);
+              --bs-btn-disabled-border-color: var(--bs-info);
+              --bs-btn-hover-bg: color-mix(in srgb, var(--bs-info) 85%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-info) 90%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-bg: color-mix(in srgb, var(--bs-info) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-border-color: color-mix(in srgb, var(--bs-info) 90%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, color-mix(in srgb, var(--bs-info) 85%, var(--bs-btn-color)) 50%, transparent);
+            }
+            .btn-outline-info.btn-outline-info {
+              --bs-btn-color: var(--bs-info);
+              --bs-btn-border-color: var(--bs-info);
+              --bs-btn-hover-bg: var(--bs-info);
+              --bs-btn-hover-border-color: var(--bs-info);
+              --bs-btn-active-bg: var(--bs-info);
+              --bs-btn-active-border-color: var(--bs-info);
+              --bs-btn-disabled-color: var(--bs-info);
+              --bs-btn-disabled-border-color: var(--bs-info);
+              --bs-btn-hover-color: oklch(from var(--bs-info) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-active-color: var(--bs-btn-hover-color);
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--bs-info) 50%, transparent);
+            }
+            .text-bg-info.text-bg-info { color: oklch(from var(--bs-info) clamp(0, (0.65 - l) * 1000, 1) 0 0) !important; }
+            .link-info.link-info:hover,
+            .link-info.link-info:focus { color: color-mix(in srgb, color-mix(in srgb, var(--bs-info) 80%, oklch(from var(--bs-info) clamp(0, (l - 0.65) * 1000, 1) 0 0)) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; }
+            .btn-warning.btn-warning {
+              --bs-btn-color: oklch(from var(--bs-warning) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-hover-color: var(--bs-btn-color);
+              --bs-btn-active-color: var(--bs-btn-color);
+              --bs-btn-disabled-color: var(--bs-btn-color);
+              --bs-btn-bg: var(--bs-warning);
+              --bs-btn-border-color: var(--bs-warning);
+              --bs-btn-disabled-bg: var(--bs-warning);
+              --bs-btn-disabled-border-color: var(--bs-warning);
+              --bs-btn-hover-bg: color-mix(in srgb, var(--bs-warning) 85%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-warning) 90%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-bg: color-mix(in srgb, var(--bs-warning) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-border-color: color-mix(in srgb, var(--bs-warning) 90%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, color-mix(in srgb, var(--bs-warning) 85%, var(--bs-btn-color)) 50%, transparent);
+            }
+            .btn-outline-warning.btn-outline-warning {
+              --bs-btn-color: var(--bs-warning);
+              --bs-btn-border-color: var(--bs-warning);
+              --bs-btn-hover-bg: var(--bs-warning);
+              --bs-btn-hover-border-color: var(--bs-warning);
+              --bs-btn-active-bg: var(--bs-warning);
+              --bs-btn-active-border-color: var(--bs-warning);
+              --bs-btn-disabled-color: var(--bs-warning);
+              --bs-btn-disabled-border-color: var(--bs-warning);
+              --bs-btn-hover-color: oklch(from var(--bs-warning) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-active-color: var(--bs-btn-hover-color);
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--bs-warning) 50%, transparent);
+            }
+            .text-bg-warning.text-bg-warning { color: oklch(from var(--bs-warning) clamp(0, (0.65 - l) * 1000, 1) 0 0) !important; }
+            .link-warning.link-warning:hover,
+            .link-warning.link-warning:focus { color: color-mix(in srgb, color-mix(in srgb, var(--bs-warning) 80%, oklch(from var(--bs-warning) clamp(0, (l - 0.65) * 1000, 1) 0 0)) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; }
+            .btn-danger.btn-danger {
+              --bs-btn-color: oklch(from var(--bs-danger) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-hover-color: var(--bs-btn-color);
+              --bs-btn-active-color: var(--bs-btn-color);
+              --bs-btn-disabled-color: var(--bs-btn-color);
+              --bs-btn-bg: var(--bs-danger);
+              --bs-btn-border-color: var(--bs-danger);
+              --bs-btn-disabled-bg: var(--bs-danger);
+              --bs-btn-disabled-border-color: var(--bs-danger);
+              --bs-btn-hover-bg: color-mix(in srgb, var(--bs-danger) 85%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-danger) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-bg: color-mix(in srgb, var(--bs-danger) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-border-color: color-mix(in srgb, var(--bs-danger) 75%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, color-mix(in srgb, var(--bs-danger) 85%, var(--bs-btn-color)) 50%, transparent);
+            }
+            .btn-outline-danger.btn-outline-danger {
+              --bs-btn-color: var(--bs-danger);
+              --bs-btn-border-color: var(--bs-danger);
+              --bs-btn-hover-bg: var(--bs-danger);
+              --bs-btn-hover-border-color: var(--bs-danger);
+              --bs-btn-active-bg: var(--bs-danger);
+              --bs-btn-active-border-color: var(--bs-danger);
+              --bs-btn-disabled-color: var(--bs-danger);
+              --bs-btn-disabled-border-color: var(--bs-danger);
+              --bs-btn-hover-color: oklch(from var(--bs-danger) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-active-color: var(--bs-btn-hover-color);
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--bs-danger) 50%, transparent);
+            }
+            .text-bg-danger.text-bg-danger { color: oklch(from var(--bs-danger) clamp(0, (0.65 - l) * 1000, 1) 0 0) !important; }
+            .link-danger.link-danger:hover,
+            .link-danger.link-danger:focus { color: color-mix(in srgb, color-mix(in srgb, var(--bs-danger) 80%, oklch(from var(--bs-danger) clamp(0, (l - 0.65) * 1000, 1) 0 0)) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; }
+            .btn-light.btn-light {
+              --bs-btn-color: oklch(from var(--bs-light) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-hover-color: var(--bs-btn-color);
+              --bs-btn-active-color: var(--bs-btn-color);
+              --bs-btn-disabled-color: var(--bs-btn-color);
+              --bs-btn-bg: var(--bs-light);
+              --bs-btn-border-color: var(--bs-light);
+              --bs-btn-disabled-bg: var(--bs-light);
+              --bs-btn-disabled-border-color: var(--bs-light);
+              --bs-btn-hover-bg: color-mix(in srgb, var(--bs-light) 85%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-light) 90%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-bg: color-mix(in srgb, var(--bs-light) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-border-color: color-mix(in srgb, var(--bs-light) 90%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, color-mix(in srgb, var(--bs-light) 85%, var(--bs-btn-color)) 50%, transparent);
+            }
+            .btn-outline-light.btn-outline-light {
+              --bs-btn-color: var(--bs-light);
+              --bs-btn-border-color: var(--bs-light);
+              --bs-btn-hover-bg: var(--bs-light);
+              --bs-btn-hover-border-color: var(--bs-light);
+              --bs-btn-active-bg: var(--bs-light);
+              --bs-btn-active-border-color: var(--bs-light);
+              --bs-btn-disabled-color: var(--bs-light);
+              --bs-btn-disabled-border-color: var(--bs-light);
+              --bs-btn-hover-color: oklch(from var(--bs-light) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-active-color: var(--bs-btn-hover-color);
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--bs-light) 50%, transparent);
+            }
+            .text-bg-light.text-bg-light { color: oklch(from var(--bs-light) clamp(0, (0.65 - l) * 1000, 1) 0 0) !important; }
+            .link-light.link-light:hover,
+            .link-light.link-light:focus { color: color-mix(in srgb, color-mix(in srgb, var(--bs-light) 80%, oklch(from var(--bs-light) clamp(0, (l - 0.65) * 1000, 1) 0 0)) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; }
+            .btn-dark.btn-dark {
+              --bs-btn-color: oklch(from var(--bs-dark) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-hover-color: var(--bs-btn-color);
+              --bs-btn-active-color: var(--bs-btn-color);
+              --bs-btn-disabled-color: var(--bs-btn-color);
+              --bs-btn-bg: var(--bs-dark);
+              --bs-btn-border-color: var(--bs-dark);
+              --bs-btn-disabled-bg: var(--bs-dark);
+              --bs-btn-disabled-border-color: var(--bs-dark);
+              --bs-btn-hover-bg: color-mix(in srgb, var(--bs-dark) 85%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-dark) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-bg: color-mix(in srgb, var(--bs-dark) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-border-color: color-mix(in srgb, var(--bs-dark) 75%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, color-mix(in srgb, var(--bs-dark) 85%, var(--bs-btn-color)) 50%, transparent);
+            }
+            .btn-outline-dark.btn-outline-dark {
+              --bs-btn-color: var(--bs-dark);
+              --bs-btn-border-color: var(--bs-dark);
+              --bs-btn-hover-bg: var(--bs-dark);
+              --bs-btn-hover-border-color: var(--bs-dark);
+              --bs-btn-active-bg: var(--bs-dark);
+              --bs-btn-active-border-color: var(--bs-dark);
+              --bs-btn-disabled-color: var(--bs-dark);
+              --bs-btn-disabled-border-color: var(--bs-dark);
+              --bs-btn-hover-color: oklch(from var(--bs-dark) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-active-color: var(--bs-btn-hover-color);
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--bs-dark) 50%, transparent);
+            }
+            .text-bg-dark.text-bg-dark { color: oklch(from var(--bs-dark) clamp(0, (0.65 - l) * 1000, 1) 0 0) !important; }
+            .link-dark.link-dark:hover,
+            .link-dark.link-dark:focus { color: color-mix(in srgb, color-mix(in srgb, var(--bs-dark) 80%, oklch(from var(--bs-dark) clamp(0, (l - 0.65) * 1000, 1) 0 0)) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; }
+            .btn-accent.btn-accent {
+              --bs-btn-color: oklch(from var(--bs-accent) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-hover-color: var(--bs-btn-color);
+              --bs-btn-active-color: var(--bs-btn-color);
+              --bs-btn-disabled-color: var(--bs-btn-color);
+              --bs-btn-bg: var(--bs-accent);
+              --bs-btn-border-color: var(--bs-accent);
+              --bs-btn-disabled-bg: var(--bs-accent);
+              --bs-btn-disabled-border-color: var(--bs-accent);
+              --bs-btn-hover-bg: color-mix(in srgb, var(--bs-accent) 85%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-accent) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-bg: color-mix(in srgb, var(--bs-accent) 80%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-active-border-color: color-mix(in srgb, var(--bs-accent) 75%, oklch(from var(--bs-btn-color) calc(1 - l) 0 0));
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, color-mix(in srgb, var(--bs-accent) 85%, var(--bs-btn-color)) 50%, transparent);
+            }
+            .btn-outline-accent.btn-outline-accent {
+              --bs-btn-color: var(--bs-accent);
+              --bs-btn-border-color: var(--bs-accent);
+              --bs-btn-hover-bg: var(--bs-accent);
+              --bs-btn-hover-border-color: var(--bs-accent);
+              --bs-btn-active-bg: var(--bs-accent);
+              --bs-btn-active-border-color: var(--bs-accent);
+              --bs-btn-disabled-color: var(--bs-accent);
+              --bs-btn-disabled-border-color: var(--bs-accent);
+              --bs-btn-hover-color: oklch(from var(--bs-accent) clamp(0, (0.65 - l) * 1000, 1) 0 0);
+              --bs-btn-active-color: var(--bs-btn-hover-color);
+              --bs-btn-focus-box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--bs-accent) 50%, transparent);
+            }
+            .text-bg-accent.text-bg-accent { color: oklch(from var(--bs-accent) clamp(0, (0.65 - l) * 1000, 1) 0 0) !important; }
+            .link-accent.link-accent:hover,
+            .link-accent.link-accent:focus { color: color-mix(in srgb, color-mix(in srgb, var(--bs-accent) 80%, oklch(from var(--bs-accent) clamp(0, (l - 0.65) * 1000, 1) 0 0)) calc(var(--bs-link-opacity, 1) * 100%), transparent) !important; }
+          }
+        css.compiled: *horizonaid_brand_kit_css
+    user.role.content_editor:
+      grantPermissions:
+      - 'administer brand kit'
+    user.role.content_admin:
+      grantPermissions:
+      - 'administer brand kit'
     user.role.anonymous:
       grantPermissions:
       - view terms in event_categories

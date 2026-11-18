@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 14203a5f-98f3-45de-aedb-0a4a428df5e2
+name: 'Secondary text'
+cssVariable: '--bs-secondary-color'
+value:
+  colorSpace: srgb
+  components:
+    - 0.129412
+    - 0.145098
+    - 0.160784
+  alpha: 0.75
+  hex: '#212529'
+displayFormat: rgb
+weight: 11

@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 94cf6719-ef0b-4243-9bae-cdeb0423d7ae
+name: 'Secondary background'
+cssVariable: '--bs-secondary-bg'
+value:
+  colorSpace: srgb
+  components:
+    - 0.913725
+    - 0.92549
+    - 0.937255
+  hex: '#e9ecef'
+displayFormat: hex
+weight: 12

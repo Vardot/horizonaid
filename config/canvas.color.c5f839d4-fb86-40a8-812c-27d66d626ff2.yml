@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: c5f839d4-fb86-40a8-812c-27d66d626ff2
+name: 'Dark'
+cssVariable: '--bs-dark'
+value:
+  colorSpace: srgb
+  components:
+    - 0.05098
+    - 0.172549
+    - 0.329412
+  hex: '#0d2c54'
+displayFormat: hex
+weight: 7

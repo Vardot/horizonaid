@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 38e7fbd8-df90-4b4b-9c5d-0eba40bd9ac1
+name: 'Orange'
+cssVariable: '--bs-orange'
+value:
+  colorSpace: srgb
+  components:
+    - 0.992157
+    - 0.494118
+    - 0.078431
+  hex: '#fd7e14'
+displayFormat: hex
+weight: 27

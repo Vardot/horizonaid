@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 58311e31-e291-44b1-873c-e0329f820263
+name: 'Emphasis'
+cssVariable: '--bs-emphasis-color'
+value:
+  colorSpace: srgb
+  components:
+    - 0.0
+    - 0.0
+    - 0.0
+  hex: '#000000'
+displayFormat: hex
+weight: 10

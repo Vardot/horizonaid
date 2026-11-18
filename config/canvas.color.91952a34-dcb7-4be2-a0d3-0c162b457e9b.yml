@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: 91952a34-dcb7-4be2-a0d3-0c162b457e9b
+name: 'Secondary'
+cssVariable: '--bs-secondary'
+value:
+  colorSpace: srgb
+  components:
+    - 0.05098
+    - 0.172549
+    - 0.329412
+  hex: '#0d2c54'
+displayFormat: hex
+weight: 1

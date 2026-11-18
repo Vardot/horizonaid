@@ -29,6 +29,18 @@ results page at `/search` is a Canvas page with a keyword box, a filter rail (Ca
 Type, Date Published) and the results as cards. Category combines the resource and event
 categories.
 
+## Brand kit
+
+Change the site's colours in **Canvas > Brand kit**, no code needed. The palette is Bootstrap's own
+colour variables with this theme's values: the eight theme colours (Primary to Dark) plus body text
+and background, emphasis, secondary and tertiary text and backgrounds, headings, link and link hover,
+border, code and highlight, plus Bootstrap's named colours (Blue to Gray dark). Editing one restyles the whole site: buttons, links, bands, tints, forms.
+
+Canvas global CSS (`canvas.asset_library.global`) derives the colours Bootstrap compiles as literals
+(tints, focus ring, button states, utilities); keep it when you add your own global CSS. Content
+editors and content admins have the `administer brand kit` permission. The theme loads the brand kit
+CSS after its own, so these colours win over its defaults.
+
 ## Telemetry
 
 Drupal CMS telemetry is off in this project's CI (`DRUPAL_CMS_TELEMETRY=0`). To keep it off on your own install, set `DRUPAL_CMS_TELEMETRY=0` in the environment before installing the site template.

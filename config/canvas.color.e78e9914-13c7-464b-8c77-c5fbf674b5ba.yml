@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies: {  }
+uuid: e78e9914-13c7-464b-8c77-c5fbf674b5ba
+name: 'Tertiary text'
+cssVariable: '--bs-tertiary-color'
+value:
+  colorSpace: srgb
+  components:
+    - 0.129412
+    - 0.145098
+    - 0.160784
+  hex: '#212529'
+displayFormat: hex
+weight: 13
