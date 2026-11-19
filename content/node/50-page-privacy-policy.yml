@@ -1,0 +1,37 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 7b6734d6-31f5-4c19-a67c-a90083f97d33
+  bundle: page
+  default_langcode: en
+default:
+  revision_uid:
+  - target_id: 1
+  revision_log:
+  - value: Created new Page
+  status:
+  - value: true
+  uid:
+  - target_id: 1
+  title:
+  - value: Privacy policy
+  promote:
+  - value: false
+  sticky:
+  - value: false
+  revision_translation_affected:
+  - value: true
+  moderation_state:
+  - value: published
+  path:
+  - alias: /privacy-policy
+    pathauto: 0
+  field_description:
+  - value: How this site collects, uses and protects personal data.
+  field_content:
+  - value: <p><strong>Draft for demo only.</strong> This privacy policy is placeholder
+      text. Editors must edit it and replace it with this site's own privacy statement
+      before launch.</p><h2>Privacy policy</h2><p>Set out here what personal data this
+      site collects, why, how long it is kept, who it is shared with, and how a visitor
+      can ask to see or delete it.</p>
+    format: content_format

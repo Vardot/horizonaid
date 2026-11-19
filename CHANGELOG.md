@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- Ship a published Privacy policy page at `/privacy-policy`, with a draft-for-demo warning that
+  tells editors to replace it with the site's own privacy statement before launch, so the contact
+  form consent link no longer lands on an unpublished page.
+  [#3639416](https://www.drupal.org/i/3639416)
 
 ## [1.0.10] - 2026-11-14
 ### Fixed
