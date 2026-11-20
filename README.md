@@ -14,13 +14,28 @@ To install the most recent release of Varbase 11.0.x, run this command:
 composer create-project drupal/varbase_project:~11.0.0 PROJECT_DIR_NAME --no-dev --no-interaction
 ```
 
-Then require the recipe and apply it with DDEV:
+Then require the Horizon Aid site template:
 
 ```bash
-ddev composer require drupal/horizonaid:~1.0.0
-ddev drush recipe ../recipes/contrib/horizonaid
-ddev drush cache:rebuild
+composer require drupal/horizonaid:~1.0.0
 ```
+
+## Local setup with DDEV
+
+```bash
+mkdir my_horizonaid_site
+cd my_horizonaid_site
+ddev config --project-type=drupal11 --docroot=web --php-version=8.4
+ddev start
+ddev composer create-project "drupal/varbase_project:~11.0.0"
+ddev composer require drupal/horizonaid:~1.0.0
+ddev launch
+```
+
+Finish the installation in the browser and choose **Horizon Aid** in the *Choose a site template* step.
+
+Horizon Aid is a `type: Site` recipe: it is applied **during** the site install, by the site-template
+picker, not with `drush recipe` on a site that is already installed.
 
 ## Search
 
