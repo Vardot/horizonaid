@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Fixed
+- Fresh installs no longer report the Navbar Component config as invalid under Canvas data
+  health. The recipe no longer ships it: Canvas disables it (the theme's Navbar has an empty value
+  in its Placement options) and so could never bring it up to date.
+  [#3639418](https://git.drupalcode.org/project/horizonaid/-/work_items/3639418)
 - Ship a published Privacy policy page at `/privacy-policy`, with a draft-for-demo warning that
   tells editors to replace it with the site's own privacy statement before launch, so the contact
   form consent link no longer lands on an unpublished page.
