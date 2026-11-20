@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   tells editors to replace it with the site's own privacy statement before launch, so the contact
   form consent link no longer lands on an unpublished page.
   [#3639416](https://www.drupal.org/i/3639416)
+- Link the Privacy Policy page from the footer menu, after Terms and Conditions, so visitors can
+  reach it. Horizon Aid had no footer link of its own, and the one Varbase Page Base adds opens
+  that recipe's unpublished draft, which visitors cannot see. [#3639417](https://git.drupalcode.org/project/horizonaid/-/work_items/3639417)
 
 ## [1.0.10] - 2026-11-14
 ### Fixed

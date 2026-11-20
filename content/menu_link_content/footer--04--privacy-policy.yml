@@ -1,0 +1,31 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: d00d78a5-7672-4d9d-96c3-a7e997be4d62
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    7b6734d6-31f5-4c19-a67c-a90083f97d33: node
+default:
+  revision_log_message:
+  - value: Created new Custom menu link
+  enabled:
+  - value: true
+  title:
+  - value: Privacy Policy
+  menu_name:
+  - value: footer
+  link:
+  - target_uuid: 7b6734d6-31f5-4c19-a67c-a90083f97d33
+    title: ''
+    options: {}
+  external:
+  - value: false
+  rediscover:
+  - value: true
+  weight:
+  - value: -9
+  expanded:
+  - value: false
+  revision_translation_affected:
+  - value: true

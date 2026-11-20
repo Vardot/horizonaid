@@ -48,3 +48,14 @@ Feature: Website Base Requirements - Main navigation and footer
       And the "Facebook" link should be visible
       And the "Instagram" link should be visible
       And the element "a" with the attribute "href" and the value "https://x.com/Vardot" should exist
+
+  # The footer's legal links lead to the published pages the site template
+  # ships, and the privacy policy is listed once.
+  @check @regression @fast @local @development @staging @production @navigation
+  Scenario: The footer links the Terms and Conditions and Privacy Policy pages
+    Given I am an anonymous user
+     When I go to "/"
+      And I wait until the page is loaded
+     Then the link "Terms and Conditions" with the href "/terms-and-conditions" within the element "footer[role='contentinfo']" should exist
+      And the link "Privacy Policy" with the href "/privacy-policy" within the element "footer[role='contentinfo']" should exist
+      And "footer[role='contentinfo'] a[href$='/privacy-policy']" should have a count of 1
