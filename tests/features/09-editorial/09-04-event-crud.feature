@@ -99,6 +99,9 @@ Feature: Editorial - Event - create, read, update and delete
     Given I am an anonymous user
      When I go to "/events/functional-testing-suite-event"
       And I wait until the page is loaded
+      # varbase-e2e 2.0.8 reads the status of the response the browser already has,
+      # here its cached copy from before the purge, so reload to ask the site.
+      And I reload the page
      Then the response status code should be 404
 
   # Moving an event is the commonest edit there is, and the one an audience notices
