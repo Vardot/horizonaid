@@ -27,6 +27,7 @@ Feature: Website Base Requirements - Front-end pages render
       | events    | /events     | Events       |
       | countries | /countries  | Countries    |
       | donate    | /donate     | Donate       |
+      | contact   | /contact-us | Get in touch |
 
   # The front page setting points "/" at /home; a regression in that config
   # action would leave the default Drupal front page in place.

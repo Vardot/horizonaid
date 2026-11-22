@@ -1,0 +1,139 @@
+_meta:
+  version: '1.0'
+  entity_type: canvas_page
+  uuid: d3032b1a-e5f5-4ae4-a1ea-b6b06385497d
+  default_langcode: en
+  depends:
+    c749d4bc-2a5e-47e1-a3ed-ce85781612b9: media
+default:
+  revision_user:
+  - target_id: 1
+  revision_log:
+  - value: Created the Contact us page
+  status:
+  - value: true
+  owner:
+  - target_id: 1
+  title:
+  - value: Contact us
+  components:
+  - uuid: 9285dbb6-1bcb-4776-acb2-e8c13e3f76d4
+    component_id: block.system_breadcrumb_block
+    inputs:
+      label: ''
+      label_display: '0'
+  - uuid: 3104e31c-4125-4822-82df-f8642e1f8df3
+    component_id: sdc.vartheme_bs5_horizonaid.media-banner
+    inputs:
+      media:
+        CANVAS_ENTITY_REFERENCE:
+          target_uuid: c749d4bc-2a5e-47e1-a3ed-ce85781612b9
+          target_type: media
+      image_radius: rounded-hero
+      content_bg: bg-light
+      content_color: auto
+  - parent_uuid: 3104e31c-4125-4822-82df-f8642e1f8df3
+    slot: content
+    uuid: 0256ef0c-8bfa-4f2b-9b8b-02c3326bd97f
+    component_id: sdc.vartheme_bs5_horizonaid.badge
+    inputs:
+      label: Contact
+      variant: text-bg-warning
+      size: fs-6 px-3 py-2
+      radius: rounded-pill
+      icon: none
+      icon_first: true
+      indicator: none
+      url: ''
+  - parent_uuid: 3104e31c-4125-4822-82df-f8642e1f8df3
+    slot: content
+    uuid: ab08d501-42e8-411b-b6f5-326933647cfb
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    inputs:
+      heading_text: Get in touch
+      level: 1
+      text_size: h2
+      target: _self
+  - parent_uuid: 3104e31c-4125-4822-82df-f8642e1f8df3
+    slot: content
+    uuid: 0a6dd76a-c494-4e12-9682-90b12546020c
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    inputs:
+      text:
+        value: <p>Questions about our programs, partnerships or giving? Send us a message and our team will get back to you.</p>
+        format: canvas_html_block
+      text_size: none
+      text_color: text-body
+  - uuid: 5ab2f421-3856-4366-90a8-7b7459f23c49
+    component_id: sdc.vartheme_bs5_horizonaid.section
+    inputs:
+      bg_edge2edge: false
+      container_type: container
+      background_color: none
+      text_color: text-body
+      columns: 67-33
+      gutter: gx-5 gy-5
+      padding_block_start: pt-5
+      padding_block_end: pb-5
+      section_header: false
+      section_footer: false
+      aos_once: false
+  - parent_uuid: 5ab2f421-3856-4366-90a8-7b7459f23c49
+    slot: col_1
+    uuid: e6317aa7-53bf-4021-ac9a-f19b94df34ed
+    component_id: block.webform_block
+    inputs:
+      label: Business Contact
+      label_display: '0'
+      webform_id: business_contact
+      default_data: ''
+      redirect: false
+      lazy: false
+  - parent_uuid: 5ab2f421-3856-4366-90a8-7b7459f23c49
+    slot: col_2
+    uuid: a31b4843-c540-47af-84be-2e7685a6daeb
+    component_id: sdc.vartheme_bs5_horizonaid.card-text
+    inputs:
+      card_border: true
+      background_color: none
+      padded: true
+      box_shadow: shadow-none
+      corner_style: rounded-4
+      equal_height: false
+      stretched_link: false
+      link_url: ''
+      link_target: default
+      icon_alignment: start
+  - parent_uuid: a31b4843-c540-47af-84be-2e7685a6daeb
+    slot: content
+    uuid: 61907e7c-7ef6-44bd-94a9-ad57078d7f53
+    component_id: sdc.vartheme_bs5_horizonaid.icon
+    inputs:
+      icon: people
+      icon_size: fs-2
+      color: text-primary
+  - parent_uuid: a31b4843-c540-47af-84be-2e7685a6daeb
+    slot: content
+    uuid: 1d4d4886-392c-4936-8480-709b114c5e5c
+    component_id: sdc.vartheme_bs5_horizonaid.heading
+    inputs:
+      heading_text: Looking for something else?
+      level: 2
+      text_size: h5
+      target: _self
+  - parent_uuid: a31b4843-c540-47af-84be-2e7685a6daeb
+    slot: content
+    uuid: 624f123a-c786-4fe7-af9e-4422810f29c4
+    component_id: sdc.vartheme_bs5_horizonaid.text
+    inputs:
+      text:
+        value: <p>Our reports and stories are in <a href="/resources">Resources</a>. To support our work, visit <a href="/donate">Donate</a>, or sign up for the <a href="/newsletter">Newsletter</a>.</p>
+        format: canvas_html_block
+      text_size: none
+      text_color: text-body
+  path:
+  - alias: /contact-us
+  revision_translation_affected:
+  - value: true
+  metatags:
+  - value: '{"canonical_url":"[canvas_page:url]","description":"[canvas_page:description]","title":"[canvas_page:title] | [site:name]"}'

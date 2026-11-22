@@ -27,6 +27,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   Media banner config is the current version of the component instead of an older export, so
   Canvas keeps one version of it instead of two.
   [#3639421](https://git.drupalcode.org/project/horizonaid/-/work_items/3639421)
+- Add a Contact us page at `/contact-us` with the Business Contact form, linked from the footer
+  Quicklinks. The form was reachable only by typing `/form/business-contact`. It now thanks the
+  visitor in place of the form instead of sending them to the home page with only a generic
+  message.
+  [#3639423](https://git.drupalcode.org/project/horizonaid/-/work_items/3639423)
 
 ## [1.0.10] - 2026-11-14
 ### Fixed

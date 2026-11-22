@@ -59,3 +59,12 @@ Feature: Website Base Requirements - Main navigation and footer
      Then the link "Terms and Conditions" with the href "/terms-and-conditions" within the element "footer[role='contentinfo']" should exist
       And the link "Privacy Policy" with the href "/privacy-policy" within the element "footer[role='contentinfo']" should exist
       And "footer[role='contentinfo'] a[href$='/privacy-policy']" should have a count of 1
+
+  # Business Contact is the template's contact form, so a visitor must be able to
+  # find it without typing its URL.
+  @check @regression @fast @local @development @staging @production @navigation
+  Scenario: The footer links the Contact us page
+    Given I am an anonymous user
+     When I go to "/"
+      And I wait until the page is loaded
+     Then the link "Contact" with the href "/contact-us" within the element "footer[role='contentinfo']" should exist

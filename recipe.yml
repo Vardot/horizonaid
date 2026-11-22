@@ -67,6 +67,12 @@ config:
     system.theme:
       simpleConfigUpdate:
         default: vartheme_bs5_horizonaid
+    # Thank the visitor in place of the form on the Contact us page, instead of
+    # sending them to the home page with only a generic message.
+    webform.webform.business_contact:
+      simpleConfigUpdate:
+        settings.confirmation_type: inline
+        settings.confirmation_message: 'Thank you for contacting us. We will get back to you soon.'
     gin.settings:
       simpleConfigUpdate:
         logo:

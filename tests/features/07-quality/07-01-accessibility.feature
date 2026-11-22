@@ -25,6 +25,7 @@ Feature: Quality - Accessibility - Every page the Horizon Aid template ships
       | Impact               | /impact                                     |
       | Donate               | /donate                                     |
       | Newsletter           | /newsletter                                 |
+      | Contact us           | /contact-us                                 |
       | Search               | /search                                     |
       | Terms and Conditions | /terms-and-conditions                       |
       | Login                | /user/login                                 |
@@ -82,6 +83,7 @@ Feature: Quality - Accessibility - Every page the Horizon Aid template ships
       | Events           | /events                                     | label                |
       | Donate           | /donate                                     | color-contrast       |
       | Newsletter       | /newsletter                                 | label                |
+      | Contact us       | /contact-us                                 | label                |
       | Search           | /search                                     | label                |
       | Login            | /user/login                                 | label                |
 
