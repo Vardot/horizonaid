@@ -74,8 +74,7 @@ versioned_properties:
       slot_definitions:
         content:
           title: 'Content box (slot)'
-          description: |
-            Content rendered inside the floating content box — drop in a heading, text, button, or any other component.
+          description: 'Content rendered inside the floating content box — drop in a heading, text, button, or any other component.'
 label: 'Hero Banner'
 id: sdc.vartheme_bs5_horizonaid.hero-banner
 provider: vartheme_bs5_horizonaid

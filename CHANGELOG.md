@@ -22,6 +22,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   and programs, and use the Program type and Event topics terms, as they can blog posts, events and
   utility pages. Only administrators could; the others got "Access denied".
   [#3639422](https://git.drupalcode.org/project/horizonaid/-/work_items/3639422)
+- Fresh installs no longer report the Hero banner and Media banner Components as invalid under
+  Canvas data health. The Hero banner config writes its slot description on one line, and the
+  Media banner config is the current version of the component instead of an older export, so
+  Canvas keeps one version of it instead of two.
+  [#3639421](https://git.drupalcode.org/project/horizonaid/-/work_items/3639421)
 
 ## [1.0.10] - 2026-11-14
 ### Fixed
