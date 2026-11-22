@@ -18,6 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Link the Privacy Policy page from the footer menu, after Terms and Conditions, so visitors can
   reach it. Horizon Aid had no footer link of its own, and the one Varbase Page Base adds opens
   that recipe's unpublished draft, which visitors cannot see. [#3639417](https://git.drupalcode.org/project/horizonaid/-/work_items/3639417)
+- Content editors, Content admins, SEO admins and Site admins can add, edit and delete countries
+  and programs, and use the Program type and Event topics terms, as they can blog posts, events and
+  utility pages. Only administrators could; the others got "Access denied".
+  [#3639422](https://git.drupalcode.org/project/horizonaid/-/work_items/3639422)
 
 ## [1.0.10] - 2026-11-14
 ### Fixed

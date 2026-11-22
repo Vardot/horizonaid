@@ -33,8 +33,9 @@ Feature: Permissions - Roles - what each Horizon Aid role may and may not do
   # The expectations were read off the running site, one path at a time, with one
   # account per role. They encode the grants the recipe actually makes:
   #
-  #   Content editor, Content admin and SEO admin author the editorial bundles -
-  #   Blog post, Event and Utility page - and reach the content and media overviews.
+  #   Content editor, Content admin, SEO admin and Site admin author the editorial
+  #   bundles - Blog post, Event, Utility page, Country and Program - and reach the
+  #   content and media overviews.
   #
   #   SEO admin is the sharpest boundary in the template: it authors and tunes
   #   content and has no business in Drupal Canvas. It holds neither the Canvas pages
@@ -45,15 +46,6 @@ Feature: Permissions - Roles - what each Horizon Aid role may and may not do
   #
   #   Normal user gets nothing editorial at all. That is the boundary a site with
   #   open registration depends on.
-  #
-  # WHAT IS DELIBERATELY NOT ASSERTED HERE
-  #
-  # Country and Program authoring by the shipped roles. On this build no role except
-  # the administrator ones can create or edit either bundle, which reads as a gap in
-  # the recipe's permission grants rather than an intended boundary, since Country and
-  # Program are the two bundles the whole template is about. It is reported to the
-  # maintainers instead of being frozen into a passing test: encoding it here would
-  # make the eventual fix look like a regression.
   #
   # Every role gets its refusals AND one thing it must still be able to do. A role
   # locked out of everything would otherwise pass every refusal in the file.
@@ -93,6 +85,26 @@ Feature: Permissions - Roles - what each Horizon Aid role may and may not do
       | the appearance page | /admin/appearance      |
       | content type admin  | /admin/structure/types |
       | the status report   | /admin/reports/status  |
+
+  # Country and Program are the two bundles the template is about, so every
+  # editorial role must reach both forms.
+  @check @regression @slow @security @permissions @local @development
+  Scenario Outline: Check that a <role> may author countries and programs
+    Given I am a logged in user with the "<role>" user
+     Then I should see "Log out"
+     When I go to "/node/add/country"
+      And I wait until the page is loaded
+     Then "h1" should have text "Create Country" within 10 seconds
+     When I go to "/node/add/program"
+      And I wait until the page is loaded
+     Then "h1" should have text "Create Program" within 10 seconds
+
+    Examples: The editorial roles
+      | role           |
+      | Content editor |
+      | Content admin  |
+      | SEO admin      |
+      | Site admin     |
 
   # SEO admin authors and tunes content and must not reach Drupal Canvas at all. Both
   # halves are in one scenario so the pair cannot drift apart.
@@ -196,10 +208,9 @@ Feature: Permissions - Roles - what each Horizon Aid role may and may not do
       | the Country form    | /node/add/country    |
       | the people listing  | /admin/people        |
 
-  # Super admin is the account that must be able to do everything, including the two
-  # bundles no other role can author. It is the positive counterweight to every
-  # refusal above: if these were refused too, the site would be broken rather than
-  # locked down.
+  # Super admin is the account that must be able to do everything. It is the positive
+  # counterweight to every refusal above: if these were refused too, the site would be
+  # broken rather than locked down.
   @check @regression @slow @security @permissions @local @development
   Scenario Outline: Check that a Super admin reaches <area>
     Given I am a logged in user with the "Super admin" user
