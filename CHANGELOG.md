@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.0.11] - 2026-11-22
+### Added
+- A Drupal Canvas brand kit: the colours set in Canvas > Brand kit now restyle the Horizon Aid
+  site through Bootstrap's own CSS variables.
+  [#3638672](https://git.drupalcode.org/project/horizonaid/-/work_items/3638672)
+
 ### Fixed
 - Fresh installs no longer report the Navbar Component config as invalid under Canvas data
   health. The recipe no longer ships it: Canvas disables it (the theme's Navbar has an empty value
@@ -32,6 +39,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   visitor in place of the form instead of sending them to the home page with only a generic
   message.
   [#3639423](https://git.drupalcode.org/project/horizonaid/-/work_items/3639423)
+
+### Changed
+- The README installs Horizon Aid through the Drupal CMS installer's site template step.
+  [#3639420](https://git.drupalcode.org/project/horizonaid/-/work_items/3639420)
 
 ## [1.0.10] - 2026-11-14
 ### Fixed
@@ -311,7 +322,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   query with Enter in the field.
 - Update the version badge to `1.0.0-alpha1` in `README.md`.
 
-[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.10...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.11...1.0.x
+[1.0.11]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.10...1.0.11
 [1.0.10]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.9...1.0.10
 [1.0.9]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.8...1.0.9
 [1.0.8]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.7...1.0.8
