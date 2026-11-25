@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.12] - 2026-11-25
+### Changed
+- Use caret constraints and allow Drupal 11.4 and later and Drupal 12
+  ([#3639457](https://git.drupalcode.org/project/horizonaid/-/work_items/3639457)).
+- Update the DDEV PHP version to 8.5 in the README
+  ([#3639425](https://git.drupalcode.org/project/horizonaid/-/work_items/3639425)).
+- Set the recipe version to `1.0.12`
+  ([#3639458](https://git.drupalcode.org/project/horizonaid/-/work_items/3639458)).
+
 ## [1.0.11] - 2026-11-22
 ### Added
 - A Drupal Canvas brand kit: the colours set in Canvas > Brand kit now restyle the Horizon Aid
@@ -322,7 +331,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   query with Enter in the field.
 - Update the version badge to `1.0.0-alpha1` in `README.md`.
 
-[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.11...1.0.x
+[Unreleased]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.12...1.0.x
+[1.0.12]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.11...1.0.12
 [1.0.11]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.10...1.0.11
 [1.0.10]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.9...1.0.10
 [1.0.9]: https://git.drupalcode.org/project/horizonaid/-/compare/1.0.8...1.0.9
